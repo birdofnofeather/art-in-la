@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "vielmetter-2026-03-13-karl-haendel-glass-half-22bff93788",
+    "venue_id": "vielmetter",
+    "title": "Karl Haendel: Glass half",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-03-13T17:00:00-07:00",
+    "end": "2026-04-24T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://vielmetter.com/exhibitions/karl-haendel-2026/",
+    "image": "https://vielmetter.com/wp-content/uploads/2026/03/Haendel_2026_GlassHalf_Install21_Crop_hires-1024x719.jpg",
+    "artists": [],
+    "location_override": "VIELMETTER LOS ANGELES, Culver City",
+    "source": "vielmetter.com",
+    "scraped_at": "2026-04-24T18:56:11+00:00"
+  },
+  {
+    "id": "vielmetter-2026-04-03-alec-egan-groundskeeper-f44077aec2",
+    "venue_id": "vielmetter",
+    "title": "Alec Egan: Groundskeeper",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-04-03T17:00:00-07:00",
+    "end": "2026-05-15T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://vielmetter.com/exhibitions/alec-egan-2026/",
+    "image": "https://vielmetter.com/wp-content/uploads/2026/03/Egan_2026_Groundskeeper_Install05_hires-1024x727.jpg",
+    "artists": [],
+    "location_override": "VIELMETTER LOS ANGELES, Culver City",
+    "source": "vielmetter.com",
+    "scraped_at": "2026-04-24T18:56:11+00:00"
+  },
+  {
+    "id": "vielmetter-2026-05-08-edgar-arceneaux-we-are-gods-2f488f2a80",
+    "venue_id": "vielmetter",
+    "title": "Edgar Arceneaux: We Are Gods",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-05-08T17:00:00-07:00",
+    "end": "2026-06-26T17:00:00-07:00",
+    "all_day": false,
+    "url": "",
+    "image": null,
+    "artists": [],
+    "location_override": "VIELMETTER LOS ANGELES, Culver City",
+    "source": "vielmetter.com",
+    "scraped_at": "2026-04-24T18:56:11+00:00"
+  }
+]
