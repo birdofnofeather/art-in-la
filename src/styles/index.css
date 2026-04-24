@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+    font-feature-settings: "ss01", "cv02";
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-medium text-ink/80 hover:border-ink/30;
+  }
+  .chip-active {
+    @apply border-ink bg-ink text-white hover:border-ink;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-md border border-black/10 bg-white px-3 py-1.5 text-sm font-medium hover:border-ink/30;
+  }
+  .btn-primary {
+    @apply border-ink bg-ink text-white hover:bg-black;
+  }
+  .panel {
+    @apply rounded-lg border border-black/10 bg-white;
+  }
+}
+
+/* Leaflet tweaks */
+.leaflet-container {
+  background: #eaeaea;
+  font-family: inherit;
+}
+.leaflet-popup-content-wrapper {
+  @apply rounded-lg shadow-md;
+}
+.leaflet-popup-content {
+  margin: 10px 14px;
+  line-height: 1.4;
+}
+.custom-marker {
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0,0,0,.25);
+  border: none;
+}
+.custom-marker.event::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  background: #f59e0b;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px #fff;
+}

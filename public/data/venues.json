@@ -1,0 +1,2651 @@
+[
+  {
+    "id": "lacma",
+    "name": "Los Angeles County Museum of Art",
+    "short_name": "LACMA",
+    "type": "museum",
+    "description": "The largest art museum in the western U.S., with encyclopedic collections spanning antiquity to the present.",
+    "website": "https://www.lacma.org",
+    "events_url": "https://www.lacma.org/events",
+    "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
+    "lat": 34.0638,
+    "lng": -118.3594,
+    "region": "central",
+    "neighborhood": "Miracle Mile",
+    "socials": {
+      "instagram": "https://instagram.com/lacma",
+      "twitter": "https://twitter.com/LACMA",
+      "facebook": "https://facebook.com/LACMA",
+      "tiktok": "https://tiktok.com/@lacma",
+      "youtube": "https://youtube.com/@lacma"
+    }
+  },
+  {
+    "id": "the_broad",
+    "name": "The Broad",
+    "short_name": "The Broad",
+    "type": "museum",
+    "description": "Free contemporary art museum housing the Broad collection of postwar and contemporary art.",
+    "website": "https://www.thebroad.org",
+    "events_url": "https://www.thebroad.org/events",
+    "address": "221 S Grand Ave, Los Angeles, CA 90012",
+    "lat": 34.0547,
+    "lng": -118.2505,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/thebroadmuseum",
+      "twitter": "https://twitter.com/thebroad",
+      "facebook": "https://facebook.com/thebroadmuseum",
+      "tiktok": "https://tiktok.com/@thebroadmuseum",
+      "youtube": "https://youtube.com/@thebroadmuseum"
+    }
+  },
+  {
+    "id": "moca_grand",
+    "name": "Museum of Contemporary Art, Grand Avenue",
+    "short_name": "MOCA Grand",
+    "type": "museum",
+    "description": "MOCA's flagship building on Grand Avenue, home to its permanent contemporary art collection.",
+    "website": "https://www.moca.org",
+    "events_url": "https://www.moca.org/events",
+    "address": "250 S Grand Ave, Los Angeles, CA 90012",
+    "lat": 34.0535,
+    "lng": -118.2506,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/moca",
+      "twitter": "https://twitter.com/MOCAlosangeles",
+      "facebook": "https://facebook.com/MOCAlosangeles",
+      "tiktok": "https://tiktok.com/@mocalosangeles",
+      "youtube": "https://youtube.com/@MOCAlosangeles"
+    }
+  },
+  {
+    "id": "moca_geffen",
+    "name": "The Geffen Contemporary at MOCA",
+    "short_name": "Geffen Contemporary",
+    "type": "museum",
+    "description": "MOCA's Little Tokyo satellite space for large-scale contemporary installations and exhibitions.",
+    "website": "https://www.moca.org/visit/geffen-contemporary",
+    "events_url": "https://www.moca.org/events",
+    "address": "152 N Central Ave, Los Angeles, CA 90012",
+    "lat": 34.0536,
+    "lng": -118.2386,
+    "region": "eastside",
+    "neighborhood": "Little Tokyo",
+    "socials": {
+      "instagram": "https://instagram.com/moca",
+      "twitter": "https://twitter.com/MOCAlosangeles",
+      "facebook": "https://facebook.com/MOCAlosangeles"
+    }
+  },
+  {
+    "id": "hammer",
+    "name": "Hammer Museum",
+    "short_name": "Hammer",
+    "type": "museum",
+    "description": "UCLA-affiliated museum known for contemporary art exhibitions, the biennial Made in L.A., and free public programs.",
+    "website": "https://hammer.ucla.edu",
+    "events_url": "https://hammer.ucla.edu/programs-events",
+    "address": "10899 Wilshire Blvd, Los Angeles, CA 90024",
+    "lat": 34.0594,
+    "lng": -118.4438,
+    "region": "westside",
+    "neighborhood": "Westwood",
+    "socials": {
+      "instagram": "https://instagram.com/hammer_museum",
+      "twitter": "https://twitter.com/hammer_museum",
+      "facebook": "https://facebook.com/hammermuseum",
+      "tiktok": "https://tiktok.com/@hammer_museum",
+      "youtube": "https://youtube.com/@hammermuseum"
+    }
+  },
+  {
+    "id": "getty_center",
+    "name": "The Getty Center",
+    "short_name": "Getty Center",
+    "type": "museum",
+    "description": "Hilltop campus of the J. Paul Getty Museum with European paintings, drawings, sculpture, photography, and manuscripts.",
+    "website": "https://www.getty.edu",
+    "events_url": "https://www.getty.edu/visit/events/",
+    "address": "1200 Getty Center Dr, Los Angeles, CA 90049",
+    "lat": 34.0781,
+    "lng": -118.4741,
+    "region": "westside",
+    "neighborhood": "Brentwood",
+    "socials": {
+      "instagram": "https://instagram.com/gettymuseum",
+      "twitter": "https://twitter.com/GettyMuseum",
+      "facebook": "https://facebook.com/gettymuseum",
+      "tiktok": "https://tiktok.com/@gettymuseum",
+      "youtube": "https://youtube.com/@gettymuseum"
+    }
+  },
+  {
+    "id": "getty_villa",
+    "name": "The Getty Villa",
+    "short_name": "Getty Villa",
+    "type": "museum",
+    "description": "Pacific Palisades museum dedicated to the arts and cultures of ancient Greece, Rome, and Etruria.",
+    "website": "https://www.getty.edu/visit/villa/",
+    "events_url": "https://www.getty.edu/visit/events/",
+    "address": "17985 Pacific Coast Hwy, Pacific Palisades, CA 90272",
+    "lat": 34.0453,
+    "lng": -118.5647,
+    "region": "westside",
+    "neighborhood": "Pacific Palisades",
+    "socials": {
+      "instagram": "https://instagram.com/gettymuseum",
+      "twitter": "https://twitter.com/GettyMuseum",
+      "facebook": "https://facebook.com/gettymuseum"
+    }
+  },
+  {
+    "id": "norton_simon",
+    "name": "Norton Simon Museum",
+    "short_name": "Norton Simon",
+    "type": "museum",
+    "description": "Seven centuries of European art from the Renaissance to the 20th century, plus South and Southeast Asian art.",
+    "website": "https://www.nortonsimon.org",
+    "events_url": "https://www.nortonsimon.org/events/",
+    "address": "411 W Colorado Blvd, Pasadena, CA 91105",
+    "lat": 34.1456,
+    "lng": -118.1598,
+    "region": "pasadena",
+    "neighborhood": "Pasadena",
+    "socials": {
+      "instagram": "https://instagram.com/nortonsimonmuseum",
+      "twitter": "https://twitter.com/nortonsimon",
+      "facebook": "https://facebook.com/nortonsimonmuseum",
+      "youtube": "https://youtube.com/@nortonsimonmuseum"
+    }
+  },
+  {
+    "id": "huntington",
+    "name": "The Huntington Library, Art Museum, and Botanical Gardens",
+    "short_name": "The Huntington",
+    "type": "museum",
+    "description": "Collections-based research and cultural institution with American and European art, rare books, and 120 acres of gardens.",
+    "website": "https://huntington.org",
+    "events_url": "https://huntington.org/calendar",
+    "address": "1151 Oxford Rd, San Marino, CA 91108",
+    "lat": 34.129,
+    "lng": -118.1147,
+    "region": "pasadena",
+    "neighborhood": "San Marino",
+    "socials": {
+      "instagram": "https://instagram.com/thehuntingtonlibrary",
+      "twitter": "https://twitter.com/TheHuntington",
+      "facebook": "https://facebook.com/TheHuntingtonLibrary",
+      "youtube": "https://youtube.com/@thehuntingtonlibrary"
+    }
+  },
+  {
+    "id": "academy_museum",
+    "name": "Academy Museum of Motion Pictures",
+    "short_name": "Academy Museum",
+    "type": "museum",
+    "description": "Museum dedicated to the art, science, and artists of moviemaking, with exhibitions on cinema history and visual culture.",
+    "website": "https://www.academymuseum.org",
+    "events_url": "https://www.academymuseum.org/en/programs",
+    "address": "6067 Wilshire Blvd, Los Angeles, CA 90036",
+    "lat": 34.0635,
+    "lng": -118.361,
+    "region": "central",
+    "neighborhood": "Miracle Mile",
+    "socials": {
+      "instagram": "https://instagram.com/academymuseum",
+      "twitter": "https://twitter.com/AcademyMuseum",
+      "facebook": "https://facebook.com/AcademyMuseum",
+      "tiktok": "https://tiktok.com/@academymuseum",
+      "youtube": "https://youtube.com/@academymuseum"
+    }
+  },
+  {
+    "id": "caam",
+    "name": "California African American Museum",
+    "short_name": "CAAM",
+    "type": "museum",
+    "description": "Museum researching, collecting, and preserving the art, history, and culture of African Americans with a focus on California and the West.",
+    "website": "https://caamuseum.org",
+    "events_url": "https://caamuseum.org/programs",
+    "address": "600 State Dr, Los Angeles, CA 90037",
+    "lat": 34.0159,
+    "lng": -118.2866,
+    "region": "south",
+    "neighborhood": "Exposition Park",
+    "socials": {
+      "instagram": "https://instagram.com/caamuseum",
+      "twitter": "https://twitter.com/caamuseum",
+      "facebook": "https://facebook.com/CAAMinLA",
+      "youtube": "https://youtube.com/@caamuseum"
+    }
+  },
+  {
+    "id": "janm",
+    "name": "Japanese American National Museum",
+    "short_name": "JANM",
+    "type": "museum",
+    "description": "Museum sharing the experience of Americans of Japanese ancestry through exhibitions, programs, and a national resource center.",
+    "website": "https://www.janm.org",
+    "events_url": "https://www.janm.org/events",
+    "address": "100 N Central Ave, Los Angeles, CA 90012",
+    "lat": 34.0499,
+    "lng": -118.2386,
+    "region": "eastside",
+    "neighborhood": "Little Tokyo",
+    "socials": {
+      "instagram": "https://instagram.com/jamuseum",
+      "twitter": "https://twitter.com/jamuseum",
+      "facebook": "https://facebook.com/jamuseum",
+      "youtube": "https://youtube.com/@jamuseum"
+    }
+  },
+  {
+    "id": "autry",
+    "name": "Autry Museum of the American West",
+    "short_name": "Autry",
+    "type": "museum",
+    "description": "Museum exploring the experiences and perceptions of diverse peoples of the American West through art, artifacts, and programs.",
+    "website": "https://theautry.org",
+    "events_url": "https://theautry.org/events",
+    "address": "4700 Western Heritage Way, Los Angeles, CA 90027",
+    "lat": 34.1483,
+    "lng": -118.284,
+    "region": "central",
+    "neighborhood": "Griffith Park",
+    "socials": {
+      "instagram": "https://instagram.com/theautry",
+      "twitter": "https://twitter.com/theautry",
+      "facebook": "https://facebook.com/theautry",
+      "youtube": "https://youtube.com/@theautry"
+    }
+  },
+  {
+    "id": "fowler",
+    "name": "Fowler Museum at UCLA",
+    "short_name": "Fowler",
+    "type": "museum",
+    "description": "Free museum at UCLA exploring the arts and cultures of Africa, Asia, the Pacific, and the Americas, past and present.",
+    "website": "https://fowler.ucla.edu",
+    "events_url": "https://fowler.ucla.edu/events/",
+    "address": "308 Charles E Young Dr N, Los Angeles, CA 90024",
+    "lat": 34.074,
+    "lng": -118.4432,
+    "region": "westside",
+    "neighborhood": "Westwood",
+    "socials": {
+      "instagram": "https://instagram.com/fowlermuseum",
+      "twitter": "https://twitter.com/fowlermuseum",
+      "facebook": "https://facebook.com/fowlermuseum",
+      "youtube": "https://youtube.com/@fowlermuseum"
+    }
+  },
+  {
+    "id": "ica_la",
+    "name": "Institute of Contemporary Art, Los Angeles",
+    "short_name": "ICA LA",
+    "type": "museum",
+    "description": "Non-collecting contemporary art museum presenting emerging and underrepresented artists through exhibitions and public programs.",
+    "website": "https://theicala.org",
+    "events_url": "https://theicala.org/en/events",
+    "address": "1717 E 7th St, Los Angeles, CA 90021",
+    "lat": 34.0352,
+    "lng": -118.2307,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/theicala",
+      "twitter": "https://twitter.com/TheICALA",
+      "facebook": "https://facebook.com/theicala"
+    }
+  },
+  {
+    "id": "craft_contemporary",
+    "name": "Craft Contemporary",
+    "short_name": "Craft Contemporary",
+    "type": "museum",
+    "description": "Museum focused on contemporary craft and folk art practices across cultures and communities.",
+    "website": "https://www.craftcontemporary.org",
+    "events_url": "https://www.craftcontemporary.org/events/",
+    "address": "5814 Wilshire Blvd, Los Angeles, CA 90036",
+    "lat": 34.0626,
+    "lng": -118.3577,
+    "region": "central",
+    "neighborhood": "Miracle Mile",
+    "socials": {
+      "instagram": "https://instagram.com/craftcontemporary",
+      "twitter": "https://twitter.com/CraftContemp",
+      "facebook": "https://facebook.com/craftcontemporary"
+    }
+  },
+  {
+    "id": "skirball",
+    "name": "Skirball Cultural Center",
+    "short_name": "Skirball",
+    "type": "museum",
+    "description": "Cultural institution with exhibitions on Jewish heritage, American democratic ideals, and cross-cultural connections.",
+    "website": "https://www.skirball.org",
+    "events_url": "https://www.skirball.org/events",
+    "address": "2701 N Sepulveda Blvd, Los Angeles, CA 90049",
+    "lat": 34.1163,
+    "lng": -118.4745,
+    "region": "westside",
+    "neighborhood": "Brentwood",
+    "socials": {
+      "instagram": "https://instagram.com/skirball_cultural_center",
+      "twitter": "https://twitter.com/skirball_la",
+      "facebook": "https://facebook.com/SkirballCulturalCenter"
+    }
+  },
+  {
+    "id": "wende",
+    "name": "Wende Museum",
+    "short_name": "Wende",
+    "type": "museum",
+    "description": "Museum of the Cold War preserving art, artifacts, and personal histories from Soviet Bloc countries.",
+    "website": "https://www.wendemuseum.org",
+    "events_url": "https://www.wendemuseum.org/events",
+    "address": "10808 Culver Blvd, Culver City, CA 90230",
+    "lat": 34.006,
+    "lng": -118.4018,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/wendemuseum",
+      "twitter": "https://twitter.com/WendeMuseum",
+      "facebook": "https://facebook.com/WendeMuseum"
+    }
+  },
+  {
+    "id": "mak_center",
+    "name": "MAK Center for Art and Architecture",
+    "short_name": "MAK Center",
+    "type": "museum",
+    "description": "Experimental contemporary art and architecture programs at the historic Schindler House.",
+    "website": "https://www.makcenter.org",
+    "events_url": "https://www.makcenter.org/events",
+    "address": "835 N Kings Rd, West Hollywood, CA 90069",
+    "lat": 34.0856,
+    "lng": -118.3749,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/makcenter",
+      "twitter": "https://twitter.com/MAKCenter",
+      "facebook": "https://facebook.com/makcenter"
+    }
+  },
+  {
+    "id": "molaa",
+    "name": "Museum of Latin American Art",
+    "short_name": "MOLAA",
+    "type": "museum",
+    "description": "The only museum in the U.S. dedicated exclusively to modern and contemporary Latin American and Latino art.",
+    "website": "https://molaa.org",
+    "events_url": "https://molaa.org/events",
+    "address": "628 Alamitos Ave, Long Beach, CA 90802",
+    "lat": 33.7746,
+    "lng": -118.1812,
+    "region": "longbeach",
+    "neighborhood": "East Village Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/molaa_museum",
+      "twitter": "https://twitter.com/MOLAA_Museum",
+      "facebook": "https://facebook.com/molaaartmuseum"
+    }
+  },
+  {
+    "id": "lbma",
+    "name": "Long Beach Museum of Art",
+    "short_name": "LBMA",
+    "type": "museum",
+    "description": "Oceanfront museum with a collection focused on American modernism and contemporary California art.",
+    "website": "https://www.lbma.org",
+    "events_url": "https://www.lbma.org/calendar",
+    "address": "2300 E Ocean Blvd, Long Beach, CA 90803",
+    "lat": 33.7621,
+    "lng": -118.1605,
+    "region": "longbeach",
+    "neighborhood": "Long Beach",
+    "socials": {
+      "instagram": "https://instagram.com/lbma_museum",
+      "facebook": "https://facebook.com/LongBeachMuseumOfArt"
+    }
+  },
+  {
+    "id": "armory_pasadena",
+    "name": "Armory Center for the Arts",
+    "short_name": "Armory",
+    "type": "community",
+    "description": "Pasadena nonprofit offering contemporary art exhibitions and extensive arts education programs.",
+    "website": "https://armoryarts.org",
+    "events_url": "https://armoryarts.org/events",
+    "address": "145 N Raymond Ave, Pasadena, CA 91103",
+    "lat": 34.1484,
+    "lng": -118.1494,
+    "region": "pasadena",
+    "neighborhood": "Pasadena",
+    "socials": {
+      "instagram": "https://instagram.com/armorycenter",
+      "twitter": "https://twitter.com/ArmoryArts",
+      "facebook": "https://facebook.com/ArmoryCenterForTheArts"
+    }
+  },
+  {
+    "id": "vincent_price",
+    "name": "Vincent Price Art Museum",
+    "short_name": "VPAM",
+    "type": "academic",
+    "description": "Teaching museum at East Los Angeles College focused on community engagement and cultural education.",
+    "website": "https://vincentpriceartmuseum.org",
+    "events_url": "https://vincentpriceartmuseum.org/events",
+    "address": "1301 Avenida Cesar Chavez, Monterey Park, CA 91754",
+    "lat": 34.0437,
+    "lng": -118.1581,
+    "region": "eastside",
+    "neighborhood": "Monterey Park",
+    "socials": {
+      "instagram": "https://instagram.com/vincentpriceartmuseum",
+      "facebook": "https://facebook.com/VincentPriceArtMuseum"
+    }
+  },
+  {
+    "id": "usc_fisher",
+    "name": "USC Fisher Museum of Art",
+    "short_name": "USC Fisher",
+    "type": "academic",
+    "description": "University art museum presenting historical and contemporary exhibitions, with a focus on Los Angeles.",
+    "website": "https://fisher.usc.edu",
+    "events_url": "https://fisher.usc.edu/events",
+    "address": "823 Exposition Blvd, Los Angeles, CA 90089",
+    "lat": 34.0207,
+    "lng": -118.2888,
+    "region": "south",
+    "neighborhood": "University Park",
+    "socials": {
+      "instagram": "https://instagram.com/uscfishermuseum",
+      "twitter": "https://twitter.com/USCFisher",
+      "facebook": "https://facebook.com/USCFisherMuseum"
+    }
+  },
+  {
+    "id": "ucla_broad",
+    "name": "Broad Art Center Galleries at UCLA",
+    "short_name": "UCLA Broad",
+    "type": "academic",
+    "description": "Exhibition spaces within UCLA's School of the Arts and Architecture showing student, faculty, and visiting artist work.",
+    "website": "https://www.arts.ucla.edu",
+    "events_url": "https://www.arts.ucla.edu/events/",
+    "address": "240 Charles E Young Dr, Los Angeles, CA 90095",
+    "lat": 34.0744,
+    "lng": -118.4394,
+    "region": "westside",
+    "neighborhood": "Westwood",
+    "socials": {
+      "instagram": "https://instagram.com/uclaarts",
+      "twitter": "https://twitter.com/uclaarts"
+    }
+  },
+  {
+    "id": "benton",
+    "name": "Benton Museum of Art at Pomona College",
+    "short_name": "Benton",
+    "type": "academic",
+    "description": "Teaching museum on the Pomona College campus with rotating exhibitions of modern and contemporary art.",
+    "website": "https://www.pomona.edu/museum",
+    "events_url": "https://www.pomona.edu/museum/events",
+    "address": "120 W Bonita Ave, Claremont, CA 91711",
+    "lat": 34.0973,
+    "lng": -117.7105,
+    "region": "pasadena",
+    "neighborhood": "Claremont",
+    "socials": {
+      "instagram": "https://instagram.com/bentonmuseum",
+      "facebook": "https://facebook.com/pomonacollegemuseumofart"
+    }
+  },
+  {
+    "id": "williamson_scripps",
+    "name": "Ruth Chandler Williamson Gallery at Scripps College",
+    "short_name": "Williamson",
+    "type": "academic",
+    "description": "Scripps College gallery with a permanent collection and rotating exhibitions, including the annual Ceramic Annual.",
+    "website": "https://www.scrippscollege.edu/galleries",
+    "events_url": "https://www.scrippscollege.edu/galleries/exhibitions",
+    "address": "1030 Columbia Ave, Claremont, CA 91711",
+    "lat": 34.1035,
+    "lng": -117.7086,
+    "region": "pasadena",
+    "neighborhood": "Claremont",
+    "socials": {
+      "instagram": "https://instagram.com/scrippsart"
+    }
+  },
+  {
+    "id": "laband",
+    "name": "Laband Art Gallery at LMU",
+    "short_name": "Laband",
+    "type": "academic",
+    "description": "Loyola Marymount University gallery presenting exhibitions addressing social issues and Jesuit educational values.",
+    "website": "https://cfa.lmu.edu/galleries/",
+    "events_url": "https://cfa.lmu.edu/galleries/",
+    "address": "1 LMU Dr, Los Angeles, CA 90045",
+    "lat": 33.9699,
+    "lng": -118.4186,
+    "region": "westside",
+    "neighborhood": "Westchester",
+    "socials": {
+      "instagram": "https://instagram.com/labandgallery"
+    }
+  },
+  {
+    "id": "csulb_kleefeld",
+    "name": "Carolyn Campagna Kleefeld Contemporary Art Museum",
+    "short_name": "Kleefeld CSULB",
+    "type": "academic",
+    "description": "CSU Long Beach's contemporary art museum with a collection strong in California modernism and contemporary practice.",
+    "website": "https://www.csulb.edu/kleefeld-contemporary-art-museum",
+    "events_url": "https://www.csulb.edu/kleefeld-contemporary-art-museum/events",
+    "address": "1250 Bellflower Blvd, Long Beach, CA 90840",
+    "lat": 33.7838,
+    "lng": -118.1156,
+    "region": "longbeach",
+    "neighborhood": "Long Beach",
+    "socials": {
+      "instagram": "https://instagram.com/kleefeldcam"
+    }
+  },
+  {
+    "id": "moah",
+    "name": "Museum of Art and History (MOAH)",
+    "short_name": "MOAH",
+    "type": "museum",
+    "description": "Contemporary art and regional history museum in Lancaster serving the Antelope Valley.",
+    "website": "https://www.lancastermoah.org",
+    "events_url": "https://www.lancastermoah.org/events",
+    "address": "665 W Lancaster Blvd, Lancaster, CA 93534",
+    "lat": 34.6974,
+    "lng": -118.1402,
+    "region": "antelope",
+    "neighborhood": "Lancaster",
+    "socials": {
+      "instagram": "https://instagram.com/lancastermoah",
+      "facebook": "https://facebook.com/lancastermoah"
+    }
+  },
+  {
+    "id": "mona",
+    "name": "Museum of Neon Art",
+    "short_name": "MONA",
+    "type": "museum",
+    "description": "Glendale museum devoted to the preservation, exhibition, and celebration of neon, electric, and kinetic art.",
+    "website": "https://www.neonmona.org",
+    "events_url": "https://www.neonmona.org/events",
+    "address": "216 S Brand Blvd, Glendale, CA 91204",
+    "lat": 34.1446,
+    "lng": -118.2553,
+    "region": "northeast",
+    "neighborhood": "Glendale",
+    "socials": {
+      "instagram": "https://instagram.com/neonmona",
+      "facebook": "https://facebook.com/neonmona"
+    }
+  },
+  {
+    "id": "forest_lawn",
+    "name": "Forest Lawn Museum",
+    "short_name": "Forest Lawn",
+    "type": "museum",
+    "description": "Museum in Glendale presenting rotating exhibitions ranging from American illustration to global fine art.",
+    "website": "https://forestlawn.com/museum",
+    "events_url": "https://forestlawn.com/museum",
+    "address": "1712 S Glendale Ave, Glendale, CA 91205",
+    "lat": 34.1245,
+    "lng": -118.2413,
+    "region": "northeast",
+    "neighborhood": "Glendale",
+    "socials": {
+      "instagram": "https://instagram.com/forestlawnmuseum"
+    }
+  },
+  {
+    "id": "brand_library",
+    "name": "Brand Library & Art Center",
+    "short_name": "Brand Library",
+    "type": "community",
+    "description": "Historic Glendale landmark housing an art and music library and galleries for rotating contemporary exhibitions.",
+    "website": "https://brandlibrary.org",
+    "events_url": "https://brandlibrary.org/events",
+    "address": "1601 W Mountain St, Glendale, CA 91201",
+    "lat": 34.1623,
+    "lng": -118.2706,
+    "region": "northeast",
+    "neighborhood": "Glendale",
+    "socials": {
+      "instagram": "https://instagram.com/brandlibrary",
+      "facebook": "https://facebook.com/BrandLibrary"
+    }
+  },
+  {
+    "id": "lamag",
+    "name": "Los Angeles Municipal Art Gallery (Barnsdall)",
+    "short_name": "LAMAG",
+    "type": "community",
+    "description": "City-run gallery at Barnsdall Art Park presenting contemporary art with a focus on Southern California artists.",
+    "website": "https://www.lamag.org",
+    "events_url": "https://www.lamag.org/exhibitions",
+    "address": "4800 Hollywood Blvd, Los Angeles, CA 90027",
+    "lat": 34.101,
+    "lng": -118.2937,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/lamag_barnsdall",
+      "facebook": "https://facebook.com/LAMAG.Barnsdall"
+    }
+  },
+  {
+    "id": "lucas_museum",
+    "name": "Lucas Museum of Narrative Art",
+    "short_name": "Lucas Museum",
+    "type": "museum",
+    "description": "Museum dedicated to narrative art across cultures, scheduled to open in Exposition Park.",
+    "website": "https://lucasmuseum.org",
+    "events_url": "https://lucasmuseum.org/events",
+    "address": "700 Exposition Park Dr, Los Angeles, CA 90037",
+    "lat": 34.016,
+    "lng": -118.2881,
+    "region": "south",
+    "neighborhood": "Exposition Park",
+    "socials": {
+      "instagram": "https://instagram.com/lucasmuseum",
+      "twitter": "https://twitter.com/lucasmuseum",
+      "facebook": "https://facebook.com/lucasmuseum"
+    }
+  },
+  {
+    "id": "marciano",
+    "name": "Marciano Art Foundation",
+    "short_name": "Marciano",
+    "type": "museum",
+    "description": "Private foundation in the former Scottish Rite Masonic Temple presenting contemporary art from the Marciano collection.",
+    "website": "https://www.marcianoartfoundation.org",
+    "events_url": "https://www.marcianoartfoundation.org/exhibitions",
+    "address": "4357 Wilshire Blvd, Los Angeles, CA 90010",
+    "lat": 34.0614,
+    "lng": -118.32,
+    "region": "central",
+    "neighborhood": "Mid-Wilshire",
+    "socials": {
+      "instagram": "https://instagram.com/marcianoartfoundation",
+      "facebook": "https://facebook.com/marcianoartfoundation"
+    }
+  },
+  {
+    "id": "torrance_art_museum",
+    "name": "Torrance Art Museum",
+    "short_name": "Torrance Art Museum",
+    "type": "museum",
+    "description": "City-affiliated museum in the South Bay with a program focused on emerging and international contemporary artists.",
+    "website": "https://www.torranceartmuseum.com",
+    "events_url": "https://www.torranceartmuseum.com/exhibitions",
+    "address": "3320 Civic Center Dr, Torrance, CA 90503",
+    "lat": 33.8352,
+    "lng": -118.3403,
+    "region": "southbay",
+    "neighborhood": "Torrance",
+    "socials": {
+      "instagram": "https://instagram.com/torranceartmuseum",
+      "facebook": "https://facebook.com/TorranceArtMuseum"
+    }
+  },
+  {
+    "id": "pvac",
+    "name": "Palos Verdes Art Center",
+    "short_name": "PVAC",
+    "type": "community",
+    "description": "Nonprofit art center in the South Bay offering exhibitions and extensive arts education.",
+    "website": "https://pvartcenter.org",
+    "events_url": "https://pvartcenter.org/events",
+    "address": "5504 W Crestridge Rd, Rancho Palos Verdes, CA 90275",
+    "lat": 33.7655,
+    "lng": -118.378,
+    "region": "southbay",
+    "neighborhood": "Rancho Palos Verdes",
+    "socials": {
+      "instagram": "https://instagram.com/pvartcenter",
+      "facebook": "https://facebook.com/pvartcenter"
+    }
+  },
+  {
+    "id": "angels_gate",
+    "name": "Angels Gate Cultural Center",
+    "short_name": "Angels Gate",
+    "type": "community",
+    "description": "Harbor-area arts center in San Pedro with artist studios, galleries, and arts education programs.",
+    "website": "https://angelsgateart.org",
+    "events_url": "https://angelsgateart.org/events",
+    "address": "3601 S Gaffey St, San Pedro, CA 90731",
+    "lat": 33.7107,
+    "lng": -118.2903,
+    "region": "southbay",
+    "neighborhood": "San Pedro",
+    "socials": {
+      "instagram": "https://instagram.com/angelsgatecc",
+      "facebook": "https://facebook.com/angelsgatecc"
+    }
+  },
+  {
+    "id": "hauser_wirth",
+    "name": "Hauser & Wirth Los Angeles",
+    "short_name": "Hauser & Wirth",
+    "type": "gallery",
+    "description": "International gallery representing leading contemporary artists and historic estates, in the DTLA Arts District.",
+    "website": "https://www.hauserwirth.com/locations/los-angeles/",
+    "events_url": "https://www.hauserwirth.com/hauser-wirth-exhibitions/?location=1160",
+    "address": "901 E 3rd St, Los Angeles, CA 90013",
+    "lat": 34.0456,
+    "lng": -118.2323,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/hauserwirth",
+      "twitter": "https://twitter.com/hauserwirth",
+      "facebook": "https://facebook.com/hauserwirthgallery",
+      "youtube": "https://youtube.com/@hauserwirth"
+    }
+  },
+  {
+    "id": "hauser_wirth_weho",
+    "name": "Hauser & Wirth West Hollywood",
+    "short_name": "Hauser & Wirth WeHo",
+    "type": "gallery",
+    "description": "Hauser & Wirth's West Hollywood outpost on Wilshire, with a rotating program of international contemporary artists.",
+    "website": "https://www.hauserwirth.com/locations/west-hollywood/",
+    "events_url": "https://www.hauserwirth.com/hauser-wirth-exhibitions/",
+    "address": "8980 Santa Monica Blvd, West Hollywood, CA 90069",
+    "lat": 34.082,
+    "lng": -118.3887,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/hauserwirth"
+    }
+  },
+  {
+    "id": "david_kordansky",
+    "name": "David Kordansky Gallery",
+    "short_name": "Kordansky",
+    "type": "gallery",
+    "description": "Contemporary gallery representing an international roster of painters, sculptors, and multimedia artists.",
+    "website": "https://www.davidkordanskygallery.com",
+    "events_url": "https://www.davidkordanskygallery.com/exhibitions",
+    "address": "5130 W Edgewood Pl, Los Angeles, CA 90019",
+    "lat": 34.0529,
+    "lng": -118.3405,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/davidkordanskygallery",
+      "twitter": "https://twitter.com/DKGallery",
+      "facebook": "https://facebook.com/davidkordanskygallery"
+    }
+  },
+  {
+    "id": "regen_projects",
+    "name": "Regen Projects",
+    "short_name": "Regen Projects",
+    "type": "gallery",
+    "description": "Influential contemporary gallery founded in 1989 representing a celebrated international program.",
+    "website": "https://www.regenprojects.com",
+    "events_url": "https://www.regenprojects.com/exhibitions",
+    "address": "6750 Santa Monica Blvd, Los Angeles, CA 90038",
+    "lat": 34.0899,
+    "lng": -118.3363,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/regenprojects",
+      "twitter": "https://twitter.com/regen_projects",
+      "facebook": "https://facebook.com/RegenProjects"
+    }
+  },
+  {
+    "id": "blum",
+    "name": "BLUM Los Angeles",
+    "short_name": "BLUM",
+    "type": "gallery",
+    "description": "Contemporary gallery with a strong focus on Japanese and Asian-diaspora artists alongside an international roster.",
+    "website": "https://www.blumgallery.com",
+    "events_url": "https://www.blumgallery.com/exhibitions",
+    "address": "2727 S La Cienega Blvd, Los Angeles, CA 90034",
+    "lat": 34.0302,
+    "lng": -118.3774,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/blumgallery",
+      "twitter": "https://twitter.com/blumgallery",
+      "facebook": "https://facebook.com/blumandpoe"
+    }
+  },
+  {
+    "id": "matthew_marks",
+    "name": "Matthew Marks Gallery",
+    "short_name": "Matthew Marks",
+    "type": "gallery",
+    "description": "Los Angeles outpost of the New York gallery, representing established contemporary artists.",
+    "website": "https://matthewmarks.com",
+    "events_url": "https://matthewmarks.com/exhibitions",
+    "address": "1062 N Orange Grove Ave, Los Angeles, CA 90046",
+    "lat": 34.0896,
+    "lng": -118.3635,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/matthewmarksgallery"
+    }
+  },
+  {
+    "id": "marian_goodman",
+    "name": "Marian Goodman Gallery Los Angeles",
+    "short_name": "Marian Goodman",
+    "type": "gallery",
+    "description": "LA outpost of the international gallery known for representing conceptual, post-war, and contemporary artists.",
+    "website": "https://www.mariangoodman.com",
+    "events_url": "https://www.mariangoodman.com/exhibitions",
+    "address": "1120 Seward St, Los Angeles, CA 90038",
+    "lat": 34.0894,
+    "lng": -118.3346,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/mariangoodmangallery"
+    }
+  },
+  {
+    "id": "gagosian_bh",
+    "name": "Gagosian Beverly Hills",
+    "short_name": "Gagosian",
+    "type": "gallery",
+    "description": "Beverly Hills flagship of the international Gagosian gallery network, showing modern and contemporary masters.",
+    "website": "https://gagosian.com/locations/beverly-hills/",
+    "events_url": "https://gagosian.com/exhibitions/",
+    "address": "456 N Camden Dr, Beverly Hills, CA 90210",
+    "lat": 34.0689,
+    "lng": -118.4005,
+    "region": "westside",
+    "neighborhood": "Beverly Hills",
+    "socials": {
+      "instagram": "https://instagram.com/gagosian",
+      "twitter": "https://twitter.com/gagosian",
+      "facebook": "https://facebook.com/gagosian"
+    }
+  },
+  {
+    "id": "pace_la",
+    "name": "Pace Gallery Los Angeles",
+    "short_name": "Pace",
+    "type": "gallery",
+    "description": "LA gallery of the international Pace network, representing leading modern and contemporary artists.",
+    "website": "https://www.pacegallery.com",
+    "events_url": "https://www.pacegallery.com/exhibitions/",
+    "address": "1201 S La Brea Ave, Los Angeles, CA 90019",
+    "lat": 34.0411,
+    "lng": -118.3442,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/pacegallery",
+      "twitter": "https://twitter.com/pacegallery",
+      "facebook": "https://facebook.com/PaceGallery"
+    }
+  },
+  {
+    "id": "zwirner_la",
+    "name": "David Zwirner Los Angeles",
+    "short_name": "David Zwirner",
+    "type": "gallery",
+    "description": "West Hollywood gallery representing a celebrated international program of contemporary artists and estates.",
+    "website": "https://www.davidzwirner.com",
+    "events_url": "https://www.davidzwirner.com/exhibitions",
+    "address": "606 N Western Ave, Los Angeles, CA 90004",
+    "lat": 34.0856,
+    "lng": -118.3091,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/davidzwirner",
+      "twitter": "https://twitter.com/DavidZwirner",
+      "facebook": "https://facebook.com/davidzwirnergallery",
+      "youtube": "https://youtube.com/@DavidZwirnerGallery"
+    }
+  },
+  {
+    "id": "lisson_la",
+    "name": "Lisson Gallery Los Angeles",
+    "short_name": "Lisson",
+    "type": "gallery",
+    "description": "LA outpost of the London-based gallery presenting minimalism, conceptualism, and contemporary practices.",
+    "website": "https://www.lissongallery.com",
+    "events_url": "https://www.lissongallery.com/exhibitions",
+    "address": "1037 N Sycamore Ave, Los Angeles, CA 90038",
+    "lat": 34.0906,
+    "lng": -118.3378,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/lisson_gallery",
+      "twitter": "https://twitter.com/Lisson_Gallery"
+    }
+  },
+  {
+    "id": "lehmann_maupin_la",
+    "name": "Lehmann Maupin Los Angeles",
+    "short_name": "Lehmann Maupin",
+    "type": "gallery",
+    "description": "LA outpost of the international gallery known for championing diverse, globally-minded contemporary artists.",
+    "website": "https://www.lehmannmaupin.com",
+    "events_url": "https://www.lehmannmaupin.com/exhibitions",
+    "address": "940 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0901,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/lehmannmaupin",
+      "twitter": "https://twitter.com/lehmannmaupin"
+    }
+  },
+  {
+    "id": "sprueth_magers",
+    "name": "Sprüth Magers Los Angeles",
+    "short_name": "Sprüth Magers",
+    "type": "gallery",
+    "description": "Miracle Mile gallery representing a pioneering international program of contemporary artists.",
+    "website": "https://spruethmagers.com",
+    "events_url": "https://spruethmagers.com/exhibitions/",
+    "address": "5900 Wilshire Blvd, Los Angeles, CA 90036",
+    "lat": 34.0637,
+    "lng": -118.3585,
+    "region": "central",
+    "neighborhood": "Miracle Mile",
+    "socials": {
+      "instagram": "https://instagram.com/spruethmagers",
+      "twitter": "https://twitter.com/spruethmagers"
+    }
+  },
+  {
+    "id": "perrotin_la",
+    "name": "Perrotin Los Angeles",
+    "short_name": "Perrotin",
+    "type": "gallery",
+    "description": "Melrose Hill gallery from the international Perrotin network, showing contemporary artists from around the world.",
+    "website": "https://www.perrotin.com",
+    "events_url": "https://www.perrotin.com/exhibitions",
+    "address": "5036 W Pico Blvd, Los Angeles, CA 90019",
+    "lat": 34.0481,
+    "lng": -118.3478,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/galerieperrotin",
+      "twitter": "https://twitter.com/GalerieperrotiN"
+    }
+  },
+  {
+    "id": "jeffrey_deitch",
+    "name": "Jeffrey Deitch Los Angeles",
+    "short_name": "Jeffrey Deitch",
+    "type": "gallery",
+    "description": "Hollywood gallery from the former director of MOCA, presenting ambitious exhibitions that bridge contemporary art and pop culture.",
+    "website": "https://www.deitch.com",
+    "events_url": "https://www.deitch.com/los-angeles",
+    "address": "925 N Orange Dr, Los Angeles, CA 90038",
+    "lat": 34.0898,
+    "lng": -118.3439,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/jeffreydeitch",
+      "twitter": "https://twitter.com/JeffreyDeitch"
+    }
+  },
+  {
+    "id": "tanya_bonakdar",
+    "name": "Tanya Bonakdar Gallery Los Angeles",
+    "short_name": "Tanya Bonakdar",
+    "type": "gallery",
+    "description": "LA branch of the New York gallery, representing internationally acclaimed contemporary artists.",
+    "website": "https://www.tanyabonakdargallery.com",
+    "events_url": "https://www.tanyabonakdargallery.com/exhibitions",
+    "address": "1010 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0903,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/tanyabonakdargallery"
+    }
+  },
+  {
+    "id": "1301pe",
+    "name": "1301PE",
+    "short_name": "1301PE",
+    "type": "gallery",
+    "description": "Established LA gallery with a program rooted in conceptual art and international contemporary practice.",
+    "website": "https://www.1301pe.com",
+    "events_url": "https://www.1301pe.com/exhibitions",
+    "address": "6150 Wilshire Blvd, Los Angeles, CA 90048",
+    "lat": 34.063,
+    "lng": -118.3651,
+    "region": "central",
+    "neighborhood": "Miracle Mile",
+    "socials": {
+      "instagram": "https://instagram.com/1301pe"
+    }
+  },
+  {
+    "id": "karma_la",
+    "name": "Karma Los Angeles",
+    "short_name": "Karma",
+    "type": "gallery",
+    "description": "West Hollywood location of the New York gallery known for championing overlooked postwar and contemporary artists.",
+    "website": "https://karmakarma.org",
+    "events_url": "https://karmakarma.org/exhibitions/",
+    "address": "7351 Santa Monica Blvd, West Hollywood, CA 90046",
+    "lat": 34.0898,
+    "lng": -118.3511,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/karma.gallery",
+      "twitter": "https://twitter.com/karma_gallery"
+    }
+  },
+  {
+    "id": "commonwealth_council",
+    "name": "Commonwealth and Council",
+    "short_name": "Commonwealth and Council",
+    "type": "gallery",
+    "description": "Koreatown gallery centered on community, collaboration, and artists of color, queer artists, and women.",
+    "website": "https://commonwealthandcouncil.com",
+    "events_url": "https://commonwealthandcouncil.com/exhibitions",
+    "address": "3006 W 7th St, Los Angeles, CA 90005",
+    "lat": 34.0609,
+    "lng": -118.2937,
+    "region": "central",
+    "neighborhood": "Koreatown",
+    "socials": {
+      "instagram": "https://instagram.com/commonwealthandcouncil"
+    }
+  },
+  {
+    "id": "parrasch_heijnen",
+    "name": "Parrasch Heijnen",
+    "short_name": "Parrasch Heijnen",
+    "type": "gallery",
+    "description": "Arts District gallery presenting contemporary art alongside a program of reappraised historical figures.",
+    "website": "https://parraschheijnen.com",
+    "events_url": "https://parraschheijnen.com/exhibitions",
+    "address": "1326 S Boyle Ave, Los Angeles, CA 90023",
+    "lat": 34.0246,
+    "lng": -118.2138,
+    "region": "eastside",
+    "neighborhood": "Boyle Heights",
+    "socials": {
+      "instagram": "https://instagram.com/parraschheijnen"
+    }
+  },
+  {
+    "id": "night_gallery",
+    "name": "Night Gallery",
+    "short_name": "Night Gallery",
+    "type": "gallery",
+    "description": "Lincoln Heights gallery founded in 2010 known for launching the careers of many contemporary LA artists.",
+    "website": "https://nightgallery.ca",
+    "events_url": "https://nightgallery.ca/exhibitions",
+    "address": "2276 E 16th St, Los Angeles, CA 90021",
+    "lat": 34.0291,
+    "lng": -118.2214,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/nightgallery",
+      "twitter": "https://twitter.com/NightGalleryLA"
+    }
+  },
+  {
+    "id": "the_pit",
+    "name": "The Pit",
+    "short_name": "The Pit",
+    "type": "gallery",
+    "description": "Glendale gallery with a vibrant program of emerging and mid-career artists, plus a growing presence in Palm Springs.",
+    "website": "https://the-pit.la",
+    "events_url": "https://the-pit.la/exhibitions",
+    "address": "918 Ruberta Ave, Glendale, CA 91201",
+    "lat": 34.1728,
+    "lng": -118.28,
+    "region": "northeast",
+    "neighborhood": "Glendale",
+    "socials": {
+      "instagram": "https://instagram.com/thepitla"
+    }
+  },
+  {
+    "id": "anat_ebgi",
+    "name": "Anat Ebgi",
+    "short_name": "Anat Ebgi",
+    "type": "gallery",
+    "description": "Gallery with two LA locations (Mid-Wilshire and Culver City) championing a diverse contemporary program.",
+    "website": "https://www.anatebgi.com",
+    "events_url": "https://www.anatebgi.com/exhibitions",
+    "address": "4859 Fountain Ave, Los Angeles, CA 90029",
+    "lat": 34.0955,
+    "lng": -118.3022,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/anatebgi"
+    }
+  },
+  {
+    "id": "various_small_fires",
+    "name": "Various Small Fires",
+    "short_name": "VSF",
+    "type": "gallery",
+    "description": "Contemporary gallery with LA, Seoul, and Dallas spaces championing emerging and mid-career international artists.",
+    "website": "https://vsf.la",
+    "events_url": "https://vsf.la/exhibitions",
+    "address": "812 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0863,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/various_smallfires"
+    }
+  },
+  {
+    "id": "roberts_projects",
+    "name": "Roberts Projects",
+    "short_name": "Roberts Projects",
+    "type": "gallery",
+    "description": "Gallery known for its long-standing commitment to Black artists and championing diverse contemporary practices.",
+    "website": "https://www.robertsprojectsla.com",
+    "events_url": "https://www.robertsprojectsla.com/exhibitions",
+    "address": "442 S La Brea Ave, Los Angeles, CA 90036",
+    "lat": 34.064,
+    "lng": -118.3444,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/robertsprojects"
+    }
+  },
+  {
+    "id": "vielmetter",
+    "name": "Vielmetter Los Angeles",
+    "short_name": "Vielmetter",
+    "type": "gallery",
+    "description": "Gallery representing an international roster known for championing painting, sculpture, and politically engaged practices.",
+    "website": "https://vielmetter.com",
+    "events_url": "https://vielmetter.com/exhibitions",
+    "address": "1700 S Santa Fe Ave #101, Los Angeles, CA 90021",
+    "lat": 34.028,
+    "lng": -118.2333,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/vielmetterlosangeles"
+    }
+  },
+  {
+    "id": "charlie_james",
+    "name": "Charlie James Gallery",
+    "short_name": "Charlie James",
+    "type": "gallery",
+    "description": "Chinatown gallery with an engaged program of contemporary artists, often with strong political and cultural themes.",
+    "website": "https://www.cjamesgallery.com",
+    "events_url": "https://www.cjamesgallery.com/exhibitions",
+    "address": "961-969 Chung King Rd, Los Angeles, CA 90012",
+    "lat": 34.0617,
+    "lng": -118.2385,
+    "region": "eastside",
+    "neighborhood": "Chinatown",
+    "socials": {
+      "instagram": "https://instagram.com/charliejamesgallery"
+    }
+  },
+  {
+    "id": "nonaka_hill",
+    "name": "Nonaka-Hill",
+    "short_name": "Nonaka-Hill",
+    "type": "gallery",
+    "description": "Melrose gallery with a strong focus on Japanese contemporary and modern art alongside Western peers.",
+    "website": "https://nonaka-hill.com",
+    "events_url": "https://nonaka-hill.com/exhibitions",
+    "address": "720 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0848,
+    "lng": -118.3386,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/nonakahill"
+    }
+  },
+  {
+    "id": "francois_ghebaly",
+    "name": "François Ghebaly",
+    "short_name": "Ghebaly",
+    "type": "gallery",
+    "description": "Adventurous contemporary gallery representing emerging and established international artists across diverse media.",
+    "website": "https://www.ghebaly.com",
+    "events_url": "https://www.ghebaly.com/exhibitions",
+    "address": "2245 E Washington Blvd, Los Angeles, CA 90021",
+    "lat": 34.0215,
+    "lng": -118.2213,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/francoisghebaly"
+    }
+  },
+  {
+    "id": "chateau_shatto",
+    "name": "Château Shatto",
+    "short_name": "Château Shatto",
+    "type": "gallery",
+    "description": "Downtown gallery presenting a rigorous international program with a focus on emerging contemporary practices.",
+    "website": "https://chateaushatto.com",
+    "events_url": "https://chateaushatto.com/exhibitions",
+    "address": "1206 S Maple Ave, Ste 1030, Los Angeles, CA 90015",
+    "lat": 34.0313,
+    "lng": -118.2564,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/chateaushatto"
+    }
+  },
+  {
+    "id": "moran_moran",
+    "name": "Morán Morán",
+    "short_name": "Morán Morán",
+    "type": "gallery",
+    "description": "West Hollywood gallery with a program centered on emerging international and LA-based contemporary artists.",
+    "website": "https://moranmorangallery.com",
+    "events_url": "https://moranmorangallery.com/exhibitions",
+    "address": "641 N Western Ave, Los Angeles, CA 90004",
+    "lat": 34.0862,
+    "lng": -118.3092,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/moranmorangallery"
+    }
+  },
+  {
+    "id": "shulamit_nazarian",
+    "name": "Shulamit Nazarian",
+    "short_name": "Shulamit Nazarian",
+    "type": "gallery",
+    "description": "Mid-City gallery focused on emerging and established contemporary artists exploring identity, culture, and place.",
+    "website": "https://www.shulamitnazarian.com",
+    "events_url": "https://www.shulamitnazarian.com/exhibitions",
+    "address": "616 N La Brea Ave, Los Angeles, CA 90036",
+    "lat": 34.0822,
+    "lng": -118.3444,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/shulamitnazarian"
+    }
+  },
+  {
+    "id": "diane_rosenstein",
+    "name": "Diane Rosenstein Gallery",
+    "short_name": "Diane Rosenstein",
+    "type": "gallery",
+    "description": "Contemporary gallery with a program that spans painting, sculpture, and photography by established and emerging artists.",
+    "website": "https://dianerosenstein.com",
+    "events_url": "https://dianerosenstein.com/exhibitions",
+    "address": "831 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0868,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/dianerosensteingallery"
+    }
+  },
+  {
+    "id": "la_louver",
+    "name": "L.A. Louver",
+    "short_name": "L.A. Louver",
+    "type": "gallery",
+    "description": "Longtime Venice gallery presenting modern and contemporary art, with particular emphasis on British and Californian artists.",
+    "website": "https://www.lalouver.com",
+    "events_url": "https://www.lalouver.com/exhibitions.cfm",
+    "address": "45 N Venice Blvd, Venice, CA 90291",
+    "lat": 33.9857,
+    "lng": -118.4712,
+    "region": "westside",
+    "neighborhood": "Venice",
+    "socials": {
+      "instagram": "https://instagram.com/lalouvergallery",
+      "facebook": "https://facebook.com/lalouver"
+    }
+  },
+  {
+    "id": "kohn_gallery",
+    "name": "Kohn Gallery",
+    "short_name": "Kohn Gallery",
+    "type": "gallery",
+    "description": "Hollywood gallery with 40+ years of history, representing a mix of historical and contemporary artists.",
+    "website": "https://www.kohngallery.com",
+    "events_url": "https://www.kohngallery.com/exhibitions",
+    "address": "1227 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0925,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/kohngallery"
+    }
+  },
+  {
+    "id": "track_16",
+    "name": "Track 16 Gallery",
+    "short_name": "Track 16",
+    "type": "gallery",
+    "description": "Downtown gallery with a program spanning contemporary artists, underground culture, and archival presentations.",
+    "website": "https://track16.com",
+    "events_url": "https://track16.com/exhibitions",
+    "address": "1206 Maple Ave #1005, Los Angeles, CA 90015",
+    "lat": 34.0311,
+    "lng": -118.2564,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/track16gallery"
+    }
+  },
+  {
+    "id": "philip_martin",
+    "name": "Philip Martin Gallery",
+    "short_name": "Philip Martin",
+    "type": "gallery",
+    "description": "Culver City gallery showing emerging and mid-career contemporary artists working across media.",
+    "website": "https://philipmartingallery.com",
+    "events_url": "https://philipmartingallery.com/exhibitions",
+    "address": "2712 S La Cienega Blvd, Los Angeles, CA 90034",
+    "lat": 34.0303,
+    "lng": -118.378,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/philipmartingallery"
+    }
+  },
+  {
+    "id": "make_room",
+    "name": "Make Room Los Angeles",
+    "short_name": "Make Room",
+    "type": "gallery",
+    "description": "Hollywood gallery with an international program championing contemporary painters and multimedia artists.",
+    "website": "https://makeroom.la",
+    "events_url": "https://makeroom.la/exhibitions",
+    "address": "5119 Melrose Ave, Los Angeles, CA 90038",
+    "lat": 34.0835,
+    "lng": -118.3083,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/makeroomla"
+    }
+  },
+  {
+    "id": "uta_artist_space",
+    "name": "UTA Artist Space",
+    "short_name": "UTA Artist Space",
+    "type": "gallery",
+    "description": "Gallery affiliated with United Talent Agency, presenting ambitious contemporary exhibitions and cultural programming.",
+    "website": "https://www.utaartistspace.com",
+    "events_url": "https://www.utaartistspace.com/exhibitions",
+    "address": "403 Foothill Rd, Beverly Hills, CA 90210",
+    "lat": 34.0743,
+    "lng": -118.3977,
+    "region": "westside",
+    "neighborhood": "Beverly Hills",
+    "socials": {
+      "instagram": "https://instagram.com/utaartistspace"
+    }
+  },
+  {
+    "id": "hannah_hoffman",
+    "name": "Hannah Hoffman Gallery",
+    "short_name": "Hannah Hoffman",
+    "type": "gallery",
+    "description": "Hollywood gallery known for rigorous, often conceptually-oriented contemporary exhibitions.",
+    "website": "https://hannahhoffmangallery.com",
+    "events_url": "https://hannahhoffmangallery.com/exhibitions",
+    "address": "1010 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0903,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/hannahhoffmangallery"
+    }
+  },
+  {
+    "id": "harpers",
+    "name": "Harper's Gallery Los Angeles",
+    "short_name": "Harper's",
+    "type": "gallery",
+    "description": "LA outpost of Harper's gallery, with a program spanning contemporary painting and sculpture.",
+    "website": "https://harpersgallery.com",
+    "events_url": "https://harpersgallery.com/exhibitions",
+    "address": "8115 Melrose Ave, Los Angeles, CA 90046",
+    "lat": 34.0835,
+    "lng": -118.3688,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/harpersgallery"
+    }
+  },
+  {
+    "id": "in_lieu",
+    "name": "In Lieu",
+    "short_name": "In Lieu",
+    "type": "gallery",
+    "description": "Contemporary gallery on Beverly focused on emerging artists working across painting, sculpture, and new media.",
+    "website": "https://inlieugallery.com",
+    "events_url": "https://inlieugallery.com/exhibitions",
+    "address": "5904 W Pico Blvd, Los Angeles, CA 90035",
+    "lat": 34.0481,
+    "lng": -118.3644,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/inlieugallery"
+    }
+  },
+  {
+    "id": "sow_and_tailor",
+    "name": "Sow & Tailor",
+    "short_name": "Sow & Tailor",
+    "type": "gallery",
+    "description": "Downtown gallery with a program focused on emerging contemporary artists, often from diasporic and marginalized communities.",
+    "website": "https://www.sowandtailor.com",
+    "events_url": "https://www.sowandtailor.com/exhibitions",
+    "address": "1504 W Olympic Blvd, Los Angeles, CA 90015",
+    "lat": 34.0459,
+    "lng": -118.2727,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/sowandtailor"
+    }
+  },
+  {
+    "id": "parker_gallery",
+    "name": "Parker Gallery",
+    "short_name": "Parker Gallery",
+    "type": "gallery",
+    "description": "Los Feliz gallery mixing contemporary exhibitions with thoughtful historical projects and editions.",
+    "website": "https://parkergallery.com",
+    "events_url": "https://parkergallery.com/exhibitions",
+    "address": "2441 Glendower Ave, Los Angeles, CA 90027",
+    "lat": 34.1088,
+    "lng": -118.2886,
+    "region": "central",
+    "neighborhood": "Los Feliz",
+    "socials": {
+      "instagram": "https://instagram.com/parker__gallery"
+    }
+  },
+  {
+    "id": "as_is_la",
+    "name": "as-is.la",
+    "short_name": "as-is.la",
+    "type": "gallery",
+    "description": "Experimental contemporary gallery with a program rooted in emerging artists and unconventional presentations.",
+    "website": "https://as-is.la",
+    "events_url": "https://as-is.la",
+    "address": "1133 Venice Blvd, Los Angeles, CA 90015",
+    "lat": 34.039,
+    "lng": -118.2672,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/as_is.la"
+    }
+  },
+  {
+    "id": "ochi",
+    "name": "Ochi Gallery",
+    "short_name": "Ochi",
+    "type": "gallery",
+    "description": "Contemporary gallery with locations in LA and Sun Valley, focused on painting, sculpture, and works on paper.",
+    "website": "https://www.ochigallery.com",
+    "events_url": "https://www.ochigallery.com/exhibitions",
+    "address": "3301 W Washington Blvd, Los Angeles, CA 90018",
+    "lat": 34.0392,
+    "lng": -118.3144,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/ochi_gallery"
+    }
+  },
+  {
+    "id": "murmurs",
+    "name": "Murmurs",
+    "short_name": "Murmurs",
+    "type": "alternative",
+    "description": "Hybrid gallery, performance space, and creative hub in the Arts District with an interdisciplinary program.",
+    "website": "https://murmursla.com",
+    "events_url": "https://murmursla.com/events",
+    "address": "1411 Newton St, Los Angeles, CA 90021",
+    "lat": 34.0322,
+    "lng": -118.2411,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/murmursla"
+    }
+  },
+  {
+    "id": "monte_vista",
+    "name": "Monte Vista Projects",
+    "short_name": "Monte Vista",
+    "type": "alternative",
+    "description": "Highland Park artist-run gallery with a collective, experimental approach to contemporary exhibitions.",
+    "website": "https://montevistaprojects.com",
+    "events_url": "https://montevistaprojects.com/exhibitions",
+    "address": "5442 Monte Vista St, Los Angeles, CA 90042",
+    "lat": 34.1199,
+    "lng": -118.1953,
+    "region": "eastside",
+    "neighborhood": "Highland Park",
+    "socials": {
+      "instagram": "https://instagram.com/montevistaprojects"
+    }
+  },
+  {
+    "id": "coaxial",
+    "name": "Coaxial Arts Foundation",
+    "short_name": "Coaxial",
+    "type": "alternative",
+    "description": "Experimental arts nonprofit in Downtown LA presenting film, performance, and media art by emerging artists.",
+    "website": "https://www.coaxialarts.org",
+    "events_url": "https://www.coaxialarts.org/events",
+    "address": "1815 S Main St, Los Angeles, CA 90015",
+    "lat": 34.0296,
+    "lng": -118.2589,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/coaxialarts"
+    }
+  },
+  {
+    "id": "navel",
+    "name": "Navel Los Angeles",
+    "short_name": "Navel",
+    "type": "alternative",
+    "description": "Member-supported cultural space hosting exhibitions, performances, talks, and residencies in Downtown LA.",
+    "website": "https://navel.la",
+    "events_url": "https://navel.la/program",
+    "address": "1611 S Hope St, Los Angeles, CA 90015",
+    "lat": 34.0354,
+    "lng": -118.2683,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/navel_la"
+    }
+  },
+  {
+    "id": "human_resources",
+    "name": "Human Resources Los Angeles",
+    "short_name": "Human Resources",
+    "type": "alternative",
+    "description": "Artist-run Chinatown space dedicated to performance, installation, time-based and experimental work.",
+    "website": "https://humanresourcesla.com",
+    "events_url": "https://humanresourcesla.com/events",
+    "address": "410 Cottage Home St, Los Angeles, CA 90012",
+    "lat": 34.068,
+    "lng": -118.2389,
+    "region": "eastside",
+    "neighborhood": "Chinatown",
+    "socials": {
+      "instagram": "https://instagram.com/humanresourcesla"
+    }
+  },
+  {
+    "id": "lace",
+    "name": "Los Angeles Contemporary Exhibitions",
+    "short_name": "LACE",
+    "type": "alternative",
+    "description": "Nonprofit on Hollywood Boulevard presenting experimental contemporary art, performance, and public programming since 1978.",
+    "website": "https://welcometolace.org",
+    "events_url": "https://welcometolace.org/programs",
+    "address": "6522 Hollywood Blvd, Los Angeles, CA 90028",
+    "lat": 34.1019,
+    "lng": -118.3296,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/welcometolace",
+      "twitter": "https://twitter.com/welcometolace",
+      "facebook": "https://facebook.com/welcometolace"
+    }
+  },
+  {
+    "id": "redcat",
+    "name": "REDCAT",
+    "short_name": "REDCAT",
+    "type": "alternative",
+    "description": "Roy and Edna Disney/CalArts Theater — a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
+    "website": "https://www.redcat.org",
+    "events_url": "https://www.redcat.org/events",
+    "address": "631 W 2nd St, Los Angeles, CA 90012",
+    "lat": 34.0552,
+    "lng": -118.2508,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/redcatla",
+      "twitter": "https://twitter.com/REDCAT",
+      "facebook": "https://facebook.com/REDCAT"
+    }
+  },
+  {
+    "id": "joan",
+    "name": "JOAN",
+    "short_name": "JOAN",
+    "type": "alternative",
+    "description": "Nonprofit Arts District space presenting contemporary exhibitions, often with political and feminist framings.",
+    "website": "https://joanlosangeles.org",
+    "events_url": "https://joanlosangeles.org/program",
+    "address": "1206 Maple Ave, Suite 715, Los Angeles, CA 90015",
+    "lat": 34.0311,
+    "lng": -118.2564,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/joan__losangeles"
+    }
+  },
+  {
+    "id": "the_mistake_room",
+    "name": "The Mistake Room",
+    "short_name": "TMR",
+    "type": "alternative",
+    "description": "Nonprofit exhibition space in Downtown LA presenting contemporary artists from around the world.",
+    "website": "https://tmr.la",
+    "events_url": "https://tmr.la/exhibitions",
+    "address": "1811 E 20th St, Los Angeles, CA 90058",
+    "lat": 34.0193,
+    "lng": -118.2253,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/themistakeroom"
+    }
+  },
+  {
+    "id": "tin_flats",
+    "name": "Tin Flats",
+    "short_name": "Tin Flats",
+    "type": "alternative",
+    "description": "Artist-led complex of galleries, studios, and event spaces in Frogtown.",
+    "website": "https://tinflats.com",
+    "events_url": "https://tinflats.com/events",
+    "address": "1989 Blake Ave, Los Angeles, CA 90039",
+    "lat": 34.1038,
+    "lng": -118.2581,
+    "region": "eastside",
+    "neighborhood": "Frogtown",
+    "socials": {
+      "instagram": "https://instagram.com/tinflats"
+    }
+  },
+  {
+    "id": "self_help_graphics",
+    "name": "Self Help Graphics & Art",
+    "short_name": "Self Help Graphics",
+    "type": "community",
+    "description": "Historic Boyle Heights nonprofit advancing the work of Chicanx and Latinx printmakers and artists since 1973.",
+    "website": "https://www.selfhelpgraphics.com",
+    "events_url": "https://www.selfhelpgraphics.com/events",
+    "address": "1300 E 1st St, Los Angeles, CA 90033",
+    "lat": 34.0448,
+    "lng": -118.2245,
+    "region": "eastside",
+    "neighborhood": "Boyle Heights",
+    "socials": {
+      "instagram": "https://instagram.com/selfhelpgraphics",
+      "twitter": "https://twitter.com/SelfHelpGraphix",
+      "facebook": "https://facebook.com/selfhelpgraphicsandart"
+    }
+  },
+  {
+    "id": "18th_street",
+    "name": "18th Street Arts Center",
+    "short_name": "18th Street",
+    "type": "community",
+    "description": "Santa Monica nonprofit that supports artists through residencies, exhibitions, and public programs.",
+    "website": "https://18thstreet.org",
+    "events_url": "https://18thstreet.org/events/",
+    "address": "1639 18th St, Santa Monica, CA 90404",
+    "lat": 34.0311,
+    "lng": -118.4733,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/18thstreetarts",
+      "twitter": "https://twitter.com/18thStreetArts",
+      "facebook": "https://facebook.com/18thStreetArts"
+    }
+  },
+  {
+    "id": "sparc",
+    "name": "Social and Public Art Resource Center",
+    "short_name": "SPARC",
+    "type": "community",
+    "description": "Venice nonprofit founded by Judy Baca, producing public art, murals, and community engagement.",
+    "website": "https://sparcinla.org",
+    "events_url": "https://sparcinla.org/events",
+    "address": "685 Venice Blvd, Venice, CA 90291",
+    "lat": 33.9926,
+    "lng": -118.4668,
+    "region": "westside",
+    "neighborhood": "Venice",
+    "socials": {
+      "instagram": "https://instagram.com/sparcinla",
+      "facebook": "https://facebook.com/sparcinla"
+    }
+  },
+  {
+    "id": "plaza_de_la_raza",
+    "name": "Plaza de la Raza",
+    "short_name": "Plaza de la Raza",
+    "type": "community",
+    "description": "Lincoln Park cultural center offering arts education, galleries, and performances focused on Latino arts and culture.",
+    "website": "https://www.plazadelaraza.org",
+    "events_url": "https://www.plazadelaraza.org/events",
+    "address": "3540 N Mission Rd, Los Angeles, CA 90031",
+    "lat": 34.0807,
+    "lng": -118.2089,
+    "region": "eastside",
+    "neighborhood": "Lincoln Heights",
+    "socials": {
+      "instagram": "https://instagram.com/plazadelaraza",
+      "facebook": "https://facebook.com/PlazaDeLaRaza"
+    }
+  },
+  {
+    "id": "watts_towers",
+    "name": "Watts Towers Arts Center",
+    "short_name": "Watts Towers",
+    "type": "community",
+    "description": "Historic Watts cultural center adjacent to Simon Rodia's Watts Towers, with exhibitions and community programs.",
+    "website": "https://www.wattstowers.org",
+    "events_url": "https://www.wattstowers.org/events",
+    "address": "1727 E 107th St, Los Angeles, CA 90002",
+    "lat": 33.9389,
+    "lng": -118.2416,
+    "region": "south",
+    "neighborhood": "Watts",
+    "socials": {
+      "instagram": "https://instagram.com/wattstowersartscenter",
+      "facebook": "https://facebook.com/wattstowers"
+    }
+  },
+  {
+    "id": "la_artcore",
+    "name": "LA Artcore",
+    "short_name": "LA Artcore",
+    "type": "community",
+    "description": "Longstanding nonprofit in Little Tokyo presenting exhibitions of emerging and mid-career artists.",
+    "website": "https://laartcore.org",
+    "events_url": "https://laartcore.org/exhibitions",
+    "address": "120 Judge John Aiso St, Los Angeles, CA 90012",
+    "lat": 34.0505,
+    "lng": -118.2394,
+    "region": "eastside",
+    "neighborhood": "Little Tokyo",
+    "socials": {
+      "instagram": "https://instagram.com/laartcore"
+    }
+  },
+  {
+    "id": "avenue_50",
+    "name": "Avenue 50 Studio",
+    "short_name": "Avenue 50",
+    "type": "community",
+    "description": "Highland Park gallery focused on Chicanx, Latinx, and emerging artists, with a strong community programming focus.",
+    "website": "https://avenue50studio.org",
+    "events_url": "https://avenue50studio.org/events",
+    "address": "131 N Avenue 50, Los Angeles, CA 90042",
+    "lat": 34.1095,
+    "lng": -118.1926,
+    "region": "eastside",
+    "neighborhood": "Highland Park",
+    "socials": {
+      "instagram": "https://instagram.com/avenue50studio",
+      "facebook": "https://facebook.com/avenue50studio"
+    }
+  },
+  {
+    "id": "arroyo_arts",
+    "name": "Arroyo Arts Collective",
+    "short_name": "Arroyo Arts",
+    "type": "community",
+    "description": "Northeast LA artist-run collective organizing an annual tour, exhibitions, and community events.",
+    "website": "https://www.arroyoartscollective.org",
+    "events_url": "https://www.arroyoartscollective.org/events",
+    "address": "Highland Park, Los Angeles, CA 90042",
+    "lat": 34.1139,
+    "lng": -118.1926,
+    "region": "eastside",
+    "neighborhood": "Highland Park",
+    "socials": {
+      "instagram": "https://instagram.com/arroyoartscollective",
+      "facebook": "https://facebook.com/ArroyoArtsCollective"
+    }
+  },
+  {
+    "id": "tsa_la",
+    "name": "Tiger Strikes Asteroid Los Angeles",
+    "short_name": "TSA LA",
+    "type": "alternative",
+    "description": "Downtown branch of the Tiger Strikes Asteroid artist-run network, presenting rigorous contemporary exhibitions.",
+    "website": "https://tigerstrikesasteroid.com/los-angeles",
+    "events_url": "https://tigerstrikesasteroid.com/exhibitions",
+    "address": "1206 Maple Ave #523, Los Angeles, CA 90015",
+    "lat": 34.0311,
+    "lng": -118.2564,
+    "region": "eastside",
+    "neighborhood": "Downtown",
+    "socials": {
+      "instagram": "https://instagram.com/tigerstrikesasteroidla"
+    }
+  },
+  {
+    "id": "actual_size",
+    "name": "Actual Size Los Angeles",
+    "short_name": "Actual Size",
+    "type": "alternative",
+    "description": "Artist-run Chinatown project space with a long history of experimental group and solo exhibitions.",
+    "website": "https://actualsizelosangeles.com",
+    "events_url": "https://actualsizelosangeles.com",
+    "address": "741 New High St, Los Angeles, CA 90012",
+    "lat": 34.0604,
+    "lng": -118.241,
+    "region": "eastside",
+    "neighborhood": "Chinatown",
+    "socials": {
+      "instagram": "https://instagram.com/actualsizela"
+    }
+  },
+  {
+    "id": "crenshaw_dairy_mart",
+    "name": "Crenshaw Dairy Mart",
+    "short_name": "Crenshaw Dairy Mart",
+    "type": "community",
+    "description": "Inglewood artist-led space and collective focused on abolitionist practice, community, and Black-centered art.",
+    "website": "https://www.crenshawdairymart.com",
+    "events_url": "https://www.crenshawdairymart.com/events",
+    "address": "8629 Crenshaw Blvd, Inglewood, CA 90305",
+    "lat": 33.9622,
+    "lng": -118.3359,
+    "region": "south",
+    "neighborhood": "Inglewood",
+    "socials": {
+      "instagram": "https://instagram.com/crenshawdairymart"
+    }
+  },
+  {
+    "id": "residency_art",
+    "name": "Residency Art Gallery",
+    "short_name": "Residency Art",
+    "type": "gallery",
+    "description": "Inglewood gallery championing emerging artists of color and contemporary practice.",
+    "website": "https://residencyartgallery.com",
+    "events_url": "https://residencyartgallery.com/exhibitions",
+    "address": "310 E Queen St, Inglewood, CA 90301",
+    "lat": 33.9617,
+    "lng": -118.3521,
+    "region": "south",
+    "neighborhood": "Inglewood",
+    "socials": {
+      "instagram": "https://instagram.com/residency_art"
+    }
+  },
+  {
+    "id": "band_of_vices",
+    "name": "Band of Vices",
+    "short_name": "Band of Vices",
+    "type": "gallery",
+    "description": "West Adams gallery focused on emerging and mid-career contemporary artists of color.",
+    "website": "https://www.bandofvices.com",
+    "events_url": "https://www.bandofvices.com/exhibitions",
+    "address": "5376 W Adams Blvd, Los Angeles, CA 90016",
+    "lat": 34.0319,
+    "lng": -118.3501,
+    "region": "central",
+    "neighborhood": "West Adams",
+    "socials": {
+      "instagram": "https://instagram.com/bandofvices"
+    }
+  },
+  {
+    "id": "destination_crenshaw",
+    "name": "Destination Crenshaw",
+    "short_name": "Destination Crenshaw",
+    "type": "community",
+    "description": "Open-air, 1.3-mile public art and community project along Crenshaw Blvd celebrating Black Los Angeles.",
+    "website": "https://destinationcrenshaw.la",
+    "events_url": "https://destinationcrenshaw.la/news",
+    "address": "Crenshaw Blvd & Vernon Ave, Los Angeles, CA 90008",
+    "lat": 34.0011,
+    "lng": -118.3364,
+    "region": "south",
+    "neighborhood": "Crenshaw",
+    "socials": {
+      "instagram": "https://instagram.com/destinationcrenshaw",
+      "twitter": "https://twitter.com/destcrenshaw"
+    }
+  },
+  {
+    "id": "las_fotos_project",
+    "name": "Las Fotos Project",
+    "short_name": "Las Fotos",
+    "type": "community",
+    "description": "Nonprofit in Boyle Heights training and empowering teenage girls through photography.",
+    "website": "https://www.lasfotosproject.org",
+    "events_url": "https://www.lasfotosproject.org/events",
+    "address": "2210 E 1st St, Los Angeles, CA 90033",
+    "lat": 34.0441,
+    "lng": -118.2066,
+    "region": "eastside",
+    "neighborhood": "Boyle Heights",
+    "socials": {
+      "instagram": "https://instagram.com/lasfotosproject",
+      "twitter": "https://twitter.com/lasfotosproject"
+    }
+  },
+  {
+    "id": "laca",
+    "name": "Los Angeles Contemporary Archive",
+    "short_name": "LACA",
+    "type": "alternative",
+    "description": "Nonprofit library, archive, and exhibition space for contemporary art and artists' publications.",
+    "website": "https://laca.la",
+    "events_url": "https://laca.la/events",
+    "address": "709 N Hill St, Suite 104-5, Los Angeles, CA 90012",
+    "lat": 34.0636,
+    "lng": -118.2392,
+    "region": "eastside",
+    "neighborhood": "Chinatown",
+    "socials": {
+      "instagram": "https://instagram.com/laca_library"
+    }
+  },
+  {
+    "id": "craft_in_america",
+    "name": "Craft in America Center",
+    "short_name": "Craft in America",
+    "type": "community",
+    "description": "West LA center presenting exhibitions and programs exploring contemporary and historical American craft.",
+    "website": "https://www.craftinamerica.org",
+    "events_url": "https://www.craftinamerica.org/events",
+    "address": "8415 W 3rd St, Los Angeles, CA 90048",
+    "lat": 34.073,
+    "lng": -118.374,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/craftinamerica",
+      "facebook": "https://facebook.com/craftinamerica"
+    }
+  },
+  {
+    "id": "tierra_del_sol",
+    "name": "Tierra del Sol Gallery",
+    "short_name": "Tierra del Sol",
+    "type": "community",
+    "description": "Chinatown gallery representing artists with developmental disabilities, operated by Tierra del Sol Foundation.",
+    "website": "https://www.tierradelsol.org/gallery",
+    "events_url": "https://www.tierradelsol.org/gallery/events",
+    "address": "945 Chung King Rd, Los Angeles, CA 90012",
+    "lat": 34.0619,
+    "lng": -118.2383,
+    "region": "eastside",
+    "neighborhood": "Chinatown",
+    "socials": {
+      "instagram": "https://instagram.com/tierradelsolgallery"
+    }
+  },
+  {
+    "id": "fulcrum",
+    "name": "Fulcrum Arts",
+    "short_name": "Fulcrum Arts",
+    "type": "alternative",
+    "description": "Pasadena nonprofit supporting artists at the intersection of art and science through exhibitions and residencies.",
+    "website": "https://fulcrumarts.org",
+    "events_url": "https://fulcrumarts.org/events",
+    "address": "1302 N El Centro Ave, Los Angeles, CA 90028",
+    "lat": 34.0983,
+    "lng": -118.3279,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/fulcrumarts"
+    }
+  },
+  {
+    "id": "pieter",
+    "name": "Pieter Performance Space",
+    "short_name": "Pieter",
+    "type": "alternative",
+    "description": "Lincoln Heights performance space for contemporary dance, experimental performance, and movement-based art.",
+    "website": "https://pieterpasd.com",
+    "events_url": "https://pieterpasd.com/calendar",
+    "address": "420 W Avenue 33, Los Angeles, CA 90031",
+    "lat": 34.0815,
+    "lng": -118.2169,
+    "region": "eastside",
+    "neighborhood": "Lincoln Heights",
+    "socials": {
+      "instagram": "https://instagram.com/pieter.pasd"
+    }
+  },
+  {
+    "id": "honor_fraser",
+    "name": "Honor Fraser Gallery",
+    "short_name": "Honor Fraser",
+    "type": "gallery",
+    "description": "Culver City gallery with a program of contemporary artists working across media.",
+    "website": "https://honorfraser.com",
+    "events_url": "https://honorfraser.com/exhibitions",
+    "address": "2622 S La Cienega Blvd, Los Angeles, CA 90034",
+    "lat": 34.0304,
+    "lng": -118.378,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/honorfraser"
+    }
+  },
+  {
+    "id": "gavlak",
+    "name": "GAVLAK Los Angeles",
+    "short_name": "GAVLAK",
+    "type": "gallery",
+    "description": "Hollywood gallery known for championing contemporary female artists and identity-focused practices.",
+    "website": "https://www.gavlakgallery.com",
+    "events_url": "https://www.gavlakgallery.com/exhibitions",
+    "address": "1034 N Highland Ave, Los Angeles, CA 90038",
+    "lat": 34.0903,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/gavlakgallery"
+    }
+  },
+  {
+    "id": "nicodim",
+    "name": "Nicodim Gallery",
+    "short_name": "Nicodim",
+    "type": "gallery",
+    "description": "Downtown Arts District gallery representing an international roster of contemporary artists, with strong ties to Eastern Europe.",
+    "website": "https://www.nicodimgallery.com",
+    "events_url": "https://www.nicodimgallery.com/exhibitions",
+    "address": "1700 S Santa Fe Ave #160, Los Angeles, CA 90021",
+    "lat": 34.028,
+    "lng": -118.2333,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/nicodimgallery"
+    }
+  },
+  {
+    "id": "wilding_cran",
+    "name": "Wilding Cran Gallery",
+    "short_name": "Wilding Cran",
+    "type": "gallery",
+    "description": "Arts District gallery representing contemporary artists working across painting, sculpture, and photography.",
+    "website": "https://www.wildingcran.com",
+    "events_url": "https://www.wildingcran.com/exhibitions",
+    "address": "1700 S Santa Fe Ave #460, Los Angeles, CA 90021",
+    "lat": 34.028,
+    "lng": -118.2333,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/wildingcran"
+    }
+  },
+  {
+    "id": "luis_de_jesus",
+    "name": "Luis De Jesus Los Angeles",
+    "short_name": "Luis De Jesus",
+    "type": "gallery",
+    "description": "Gallery in the Arts District representing a diverse roster of contemporary artists, with a strong interest in identity and politics.",
+    "website": "https://www.luisdejesus.com",
+    "events_url": "https://www.luisdejesus.com/exhibitions",
+    "address": "1110 Mateo St, Los Angeles, CA 90021",
+    "lat": 34.0391,
+    "lng": -118.2339,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/luisdejesuslosangeles"
+    }
+  },
+  {
+    "id": "lowell_ryan",
+    "name": "Lowell Ryan Projects",
+    "short_name": "Lowell Ryan",
+    "type": "gallery",
+    "description": "Mid-City gallery with a program spanning painting, sculpture, and works on paper.",
+    "website": "https://www.lowellryanprojects.com",
+    "events_url": "https://www.lowellryanprojects.com/exhibitions",
+    "address": "4851 W Adams Blvd, Los Angeles, CA 90016",
+    "lat": 34.0329,
+    "lng": -118.3434,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/lowellryanprojects"
+    }
+  },
+  {
+    "id": "stroll_garden",
+    "name": "Stroll Garden",
+    "short_name": "Stroll Garden",
+    "type": "gallery",
+    "description": "Contemporary gallery showing emerging artists with a focus on interdisciplinary practices.",
+    "website": "https://strollgarden.com",
+    "events_url": "https://strollgarden.com/exhibitions",
+    "address": "7016 Melrose Ave, Los Angeles, CA 90038",
+    "lat": 34.0836,
+    "lng": -118.3408,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/strollgarden"
+    }
+  },
+  {
+    "id": "bridge_projects",
+    "name": "Bridge Projects",
+    "short_name": "Bridge Projects",
+    "type": "alternative",
+    "description": "Hollywood exhibition space with a focus on the intersection of contemporary art, religion, and philosophy.",
+    "website": "https://bridgeprojects.com",
+    "events_url": "https://bridgeprojects.com/exhibitions",
+    "address": "1525 N Highland Ave, Los Angeles, CA 90028",
+    "lat": 34.0982,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/bridge_projects"
+    }
+  },
+  {
+    "id": "matter_studio",
+    "name": "Matter Studio Gallery",
+    "short_name": "Matter Studio",
+    "type": "gallery",
+    "description": "West Adams gallery presenting exhibitions of emerging and mid-career contemporary artists.",
+    "website": "https://www.matterstudiogallery.com",
+    "events_url": "https://www.matterstudiogallery.com/exhibitions",
+    "address": "5080 W Pico Blvd, Los Angeles, CA 90019",
+    "lat": 34.0478,
+    "lng": -118.3494,
+    "region": "central",
+    "neighborhood": "Mid-City",
+    "socials": {
+      "instagram": "https://instagram.com/matterstudiogallery"
+    }
+  },
+  {
+    "id": "luna_anais",
+    "name": "Luna Anaís Gallery",
+    "short_name": "Luna Anaís",
+    "type": "gallery",
+    "description": "Boyle Heights gallery focused on contemporary Latinx and emerging artists.",
+    "website": "https://www.lunaanaisgallery.com",
+    "events_url": "https://www.lunaanaisgallery.com/exhibitions",
+    "address": "2510 Whittier Blvd, Los Angeles, CA 90023",
+    "lat": 34.0236,
+    "lng": -118.2024,
+    "region": "eastside",
+    "neighborhood": "Boyle Heights",
+    "socials": {
+      "instagram": "https://instagram.com/lunaanaisgallery"
+    }
+  },
+  {
+    "id": "pio_pico",
+    "name": "Pio Pico",
+    "short_name": "Pio Pico",
+    "type": "gallery",
+    "description": "Artist-run gallery with a program of experimental and interdisciplinary contemporary exhibitions.",
+    "website": "https://piopico.la",
+    "events_url": "https://piopico.la/exhibitions",
+    "address": "Los Angeles, CA",
+    "lat": 34.05,
+    "lng": -118.25,
+    "region": "eastside",
+    "neighborhood": "Koreatown",
+    "socials": {
+      "instagram": "https://instagram.com/piopico.la"
+    }
+  },
+  {
+    "id": "sebastian_gladstone",
+    "name": "Sebastian Gladstone",
+    "short_name": "Sebastian Gladstone",
+    "type": "gallery",
+    "description": "Downtown gallery with a program spanning emerging and established contemporary artists.",
+    "website": "https://sebastiangladstone.com",
+    "events_url": "https://sebastiangladstone.com/exhibitions",
+    "address": "1025 N Western Ave, Los Angeles, CA 90029",
+    "lat": 34.0923,
+    "lng": -118.3093,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/sebastiangladstone"
+    }
+  },
+  {
+    "id": "in_situ",
+    "name": "In Situ",
+    "short_name": "In Situ",
+    "type": "alternative",
+    "description": "Off-site and roving exhibition platform presenting contemporary installations in non-traditional spaces.",
+    "website": "https://insituproject.org",
+    "events_url": "https://insituproject.org/events",
+    "address": "Los Angeles, CA",
+    "lat": 34.05,
+    "lng": -118.25,
+    "region": "central",
+    "neighborhood": "Varies",
+    "socials": {
+      "instagram": "https://instagram.com/insitu_la"
+    }
+  },
+  {
+    "id": "the_landing",
+    "name": "The Landing",
+    "short_name": "The Landing",
+    "type": "gallery",
+    "description": "Culver City gallery with a program of historical and contemporary artists, with focus on underrepresented figures.",
+    "website": "https://www.thelanding.la",
+    "events_url": "https://www.thelanding.la/exhibitions",
+    "address": "5118 W Jefferson Blvd, Los Angeles, CA 90016",
+    "lat": 34.0252,
+    "lng": -118.3514,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/thelanding_la"
+    }
+  },
+  {
+    "id": "baik_art",
+    "name": "Baik Art",
+    "short_name": "Baik Art",
+    "type": "gallery",
+    "description": "Culver City gallery with a program focused on artists from Korea, Southeast Asia, and the diaspora.",
+    "website": "https://baikart.com",
+    "events_url": "https://baikart.com/exhibitions",
+    "address": "2600 S La Cienega Blvd, Los Angeles, CA 90034",
+    "lat": 34.0321,
+    "lng": -118.3778,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/baik_art"
+    }
+  },
+  {
+    "id": "cirrus_gallery",
+    "name": "Cirrus Gallery",
+    "short_name": "Cirrus",
+    "type": "gallery",
+    "description": "Founded in 1970, historic Downtown LA gallery and print studio pioneering the LA art scene.",
+    "website": "https://cirrusgallery.com",
+    "events_url": "https://cirrusgallery.com/exhibitions",
+    "address": "2011 S Santa Fe Ave, Los Angeles, CA 90021",
+    "lat": 34.0255,
+    "lng": -118.2331,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/cirrusgallery"
+    }
+  },
+  {
+    "id": "edward_cella",
+    "name": "Edward Cella Art & Architecture",
+    "short_name": "Edward Cella",
+    "type": "gallery",
+    "description": "Gallery focused on the intersection of contemporary art and architecture.",
+    "website": "https://edwardcella.com",
+    "events_url": "https://edwardcella.com/exhibitions",
+    "address": "2754 S La Cienega Blvd, Los Angeles, CA 90034",
+    "lat": 34.0302,
+    "lng": -118.3777,
+    "region": "westside",
+    "neighborhood": "Culver City",
+    "socials": {
+      "instagram": "https://instagram.com/edwardcellagallery"
+    }
+  },
+  {
+    "id": "richard_heller",
+    "name": "Richard Heller Gallery",
+    "short_name": "Richard Heller",
+    "type": "gallery",
+    "description": "Bergamot Station gallery known for emerging contemporary artists across media.",
+    "website": "https://richardhellergallery.com",
+    "events_url": "https://richardhellergallery.com/exhibitions",
+    "address": "2525 Michigan Ave, B-5A, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/richardhellergallery"
+    }
+  },
+  {
+    "id": "craig_krull",
+    "name": "Craig Krull Gallery",
+    "short_name": "Craig Krull",
+    "type": "gallery",
+    "description": "Bergamot Station gallery with a program focused on California photography and contemporary practice.",
+    "website": "https://craigkrullgallery.com",
+    "events_url": "https://craigkrullgallery.com/exhibitions",
+    "address": "2525 Michigan Ave, B-3, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/craigkrullgallery"
+    }
+  },
+  {
+    "id": "rosegallery",
+    "name": "ROSEGALLERY",
+    "short_name": "ROSEGALLERY",
+    "type": "gallery",
+    "description": "Bergamot Station gallery specializing in photography from the 20th and 21st centuries.",
+    "website": "https://www.rosegallery.net",
+    "events_url": "https://www.rosegallery.net/exhibitions",
+    "address": "2525 Michigan Ave, G-5, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/rosegallery"
+    }
+  },
+  {
+    "id": "peter_fetterman",
+    "name": "Peter Fetterman Gallery",
+    "short_name": "Peter Fetterman",
+    "type": "gallery",
+    "description": "Bergamot Station photography gallery with a program focused on 20th-century masters and humanist photography.",
+    "website": "https://www.peterfetterman.com",
+    "events_url": "https://www.peterfetterman.com/exhibitions",
+    "address": "2525 Michigan Ave, A-1, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/peterfettermangallery"
+    }
+  },
+  {
+    "id": "william_turner",
+    "name": "William Turner Gallery",
+    "short_name": "William Turner",
+    "type": "gallery",
+    "description": "Bergamot Station gallery with a program of contemporary California and international artists.",
+    "website": "https://williamturnergallery.com",
+    "events_url": "https://williamturnergallery.com/exhibitions",
+    "address": "2525 Michigan Ave, E-1, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/williamturnergallery"
+    }
+  },
+  {
+    "id": "bergamot_station",
+    "name": "Bergamot Station",
+    "short_name": "Bergamot Station",
+    "type": "community",
+    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces — a longtime anchor of the Westside scene.",
+    "website": "https://bergamotstation.com",
+    "events_url": "https://bergamotstation.com/events",
+    "address": "2525 Michigan Ave, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/bergamotstation"
+    }
+  },
+  {
+    "id": "hashimoto",
+    "name": "Hashimoto Contemporary Los Angeles",
+    "short_name": "Hashimoto",
+    "type": "gallery",
+    "description": "Contemporary gallery with a program highlighting emerging and mid-career international artists.",
+    "website": "https://hashimotocontemporary.com",
+    "events_url": "https://hashimotocontemporary.com/exhibitions",
+    "address": "2190 Bellevue Ave, Los Angeles, CA 90026",
+    "lat": 34.0708,
+    "lng": -118.2668,
+    "region": "central",
+    "neighborhood": "Echo Park",
+    "socials": {
+      "instagram": "https://instagram.com/hashimotocontemporary"
+    }
+  },
+  {
+    "id": "over_the_influence",
+    "name": "Over the Influence",
+    "short_name": "Over the Influence",
+    "type": "gallery",
+    "description": "Arts District gallery with a program spanning contemporary artists from Asia, Europe, and the Americas.",
+    "website": "https://overtheinfluence.com",
+    "events_url": "https://overtheinfluence.com/exhibitions",
+    "address": "833 E 3rd St, Los Angeles, CA 90013",
+    "lat": 34.0454,
+    "lng": -118.2342,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/overtheinfluence"
+    }
+  },
+  {
+    "id": "m_plus_b",
+    "name": "M+B Gallery",
+    "short_name": "M+B",
+    "type": "gallery",
+    "description": "West Hollywood gallery with a program spanning contemporary painting, photography, and mixed media.",
+    "website": "https://www.mbart.com",
+    "events_url": "https://www.mbart.com/exhibitions",
+    "address": "612 N Almont Dr, West Hollywood, CA 90069",
+    "lat": 34.0811,
+    "lng": -118.3859,
+    "region": "westside",
+    "neighborhood": "West Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/mbartgallery"
+    }
+  },
+  {
+    "id": "smart_objects",
+    "name": "Smart Objects",
+    "short_name": "Smart Objects",
+    "type": "gallery",
+    "description": "Highland Park gallery showing emerging contemporary artists, often working at the edge of tech and culture.",
+    "website": "https://smartobjects.biz",
+    "events_url": "https://smartobjects.biz/exhibitions",
+    "address": "5205 Monte Vista St, Los Angeles, CA 90042",
+    "lat": 34.1193,
+    "lng": -118.1977,
+    "region": "eastside",
+    "neighborhood": "Highland Park",
+    "socials": {
+      "instagram": "https://instagram.com/smartobjects_la"
+    }
+  },
+  {
+    "id": "steve_turner",
+    "name": "Steve Turner",
+    "short_name": "Steve Turner",
+    "type": "gallery",
+    "description": "Hollywood gallery representing emerging contemporary artists from around the world.",
+    "website": "https://steveturner.la",
+    "events_url": "https://steveturner.la/exhibitions",
+    "address": "6830 Santa Monica Blvd, Los Angeles, CA 90038",
+    "lat": 34.0899,
+    "lng": -118.3375,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/steveturnergallery"
+    }
+  },
+  {
+    "id": "shoshana_wayne",
+    "name": "Shoshana Wayne Gallery",
+    "short_name": "Shoshana Wayne",
+    "type": "gallery",
+    "description": "Longtime LA gallery representing contemporary artists with an emphasis on women and underrepresented voices.",
+    "website": "https://www.shoshanawayne.com",
+    "events_url": "https://www.shoshanawayne.com/exhibitions",
+    "address": "5247 W Adams Blvd, Los Angeles, CA 90016",
+    "lat": 34.0322,
+    "lng": -118.3472,
+    "region": "central",
+    "neighborhood": "West Adams",
+    "socials": {
+      "instagram": "https://instagram.com/shoshanawaynegallery"
+    }
+  },
+  {
+    "id": "luhring_augustine_la",
+    "name": "Luhring Augustine Los Angeles",
+    "short_name": "Luhring Augustine",
+    "type": "gallery",
+    "description": "LA outpost of the New York gallery known for conceptual and established contemporary artists.",
+    "website": "https://www.luhringaugustine.com",
+    "events_url": "https://www.luhringaugustine.com/exhibitions",
+    "address": "1700 S Santa Fe Ave, Los Angeles, CA 90021",
+    "lat": 34.028,
+    "lng": -118.2333,
+    "region": "eastside",
+    "neighborhood": "Arts District",
+    "socials": {
+      "instagram": "https://instagram.com/luhring_augustine"
+    }
+  },
+  {
+    "id": "lgdr",
+    "name": "Lévy Gorvy Dayan (LA)",
+    "short_name": "LGDR",
+    "type": "gallery",
+    "description": "Blue-chip gallery with a program spanning modern masters and contemporary luminaries.",
+    "website": "https://www.levygorvydayan.com",
+    "events_url": "https://www.levygorvydayan.com/exhibitions",
+    "address": "907 N Alta Dr, Beverly Hills, CA 90210",
+    "lat": 34.0906,
+    "lng": -118.4061,
+    "region": "westside",
+    "neighborhood": "Beverly Hills",
+    "socials": {
+      "instagram": "https://instagram.com/levygorvydayan"
+    }
+  },
+  {
+    "id": "kasmin_la",
+    "name": "Kasmin (LA)",
+    "short_name": "Kasmin",
+    "type": "gallery",
+    "description": "Gallery with a program spanning modern and contemporary masters, with an LA presence alongside its New York space.",
+    "website": "https://www.kasmingallery.com",
+    "events_url": "https://www.kasmingallery.com/exhibitions",
+    "address": "509 W 27th St, Los Angeles, CA 90007",
+    "lat": 34.0325,
+    "lng": -118.2824,
+    "region": "central",
+    "neighborhood": "University Park",
+    "socials": {
+      "instagram": "https://instagram.com/kasmingallery"
+    }
+  },
+  {
+    "id": "sean_kelly_la",
+    "name": "Sean Kelly Los Angeles",
+    "short_name": "Sean Kelly",
+    "type": "gallery",
+    "description": "LA branch of the New York gallery representing international contemporary artists.",
+    "website": "https://www.skny.com",
+    "events_url": "https://www.skny.com/exhibitions",
+    "address": "1357 N Highland Ave, Los Angeles, CA 90028",
+    "lat": 34.0962,
+    "lng": -118.3389,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {
+      "instagram": "https://instagram.com/seankellyny"
+    }
+  },
+  {
+    "id": "gallery_luisotti",
+    "name": "Gallery Luisotti",
+    "short_name": "Luisotti",
+    "type": "gallery",
+    "description": "Longtime LA gallery specializing in photography, artists' books, and contemporary practice.",
+    "website": "https://galleryluisotti.com",
+    "events_url": "https://galleryluisotti.com/exhibitions",
+    "address": "2525 Michigan Ave, A-2, Santa Monica, CA 90404",
+    "lat": 34.0308,
+    "lng": -118.482,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {
+      "instagram": "https://instagram.com/galleryluisotti"
+    }
+  }
+]
