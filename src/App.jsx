@@ -8,8 +8,7 @@ import { loadAll } from "./lib/data.js";
 import {
   indexVenues, filterVenues, filterEvents, sortEvents, eventfulVenueIds, isUpcoming,
 } from "./lib/filters.js";
-
-const EMPTY_SET = new Set();
+import { ARCHIVE_LAUNCH_DATE } from "./lib/constants.js";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -21,9 +20,7 @@ export default function App() {
   const [types, setTypes] = useState(new Set());
   const [eventTypes, setEventTypes] = useState(new Set());
   const [regions, setRegions] = useState(new Set());
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
-  const [eventfulOnly, setEventfulOnly] = useState(false);
+  const [datePreset, setDatePreset] = useState("all");
 
   useEffect(() => {
     loadAll()
@@ -38,32 +35,38 @@ export default function App() {
   );
   const eventfulIds = useMemo(() => eventfulVenueIds(upcomingEvents), [upcomingEvents]);
 
+  // The Map view shows only eventful venues (was a toggle, now the standard).
+  // The Venues tab shows the full curated database.
+  const eventfulFilter = tab === "map";
+
   const filteredVenues = useMemo(
-    () => filterVenues(data.venues, { types, regions, eventful: eventfulOnly, eventfulIds }),
-    [data.venues, types, regions, eventfulOnly, eventfulIds]
+    () => filterVenues(data.venues, {
+      types, regions,
+      eventful: eventfulFilter,
+      eventfulIds,
+    }),
+    [data.venues, types, regions, eventfulFilter, eventfulIds]
   );
 
   const filteredEvents = useMemo(
     () => sortEvents(filterEvents(upcomingEvents, venuesById, {
-      venueTypes: types, eventTypes, regions, startDate, endDate,
+      venueTypes: types, eventTypes, regions, datePreset,
     })),
-    [upcomingEvents, venuesById, types, eventTypes, regions, startDate, endDate]
+    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset]
   );
 
   const filteredArchive = useMemo(
     () => sortEvents(filterEvents(data.archive, venuesById, {
-      venueTypes: types, eventTypes, regions, startDate, endDate,
+      venueTypes: types, eventTypes, regions, datePreset,
     })).reverse(),
-    [data.archive, venuesById, types, eventTypes, regions, startDate, endDate]
+    [data.archive, venuesById, types, eventTypes, regions, datePreset]
   );
 
   const onReset = () => {
     setTypes(new Set());
     setEventTypes(new Set());
     setRegions(new Set());
-    setStartDate(null);
-    setEndDate(null);
-    setEventfulOnly(false);
+    setDatePreset("all");
   };
 
   const stats = { venues: data.venues.length, events: upcomingEvents.length };
@@ -84,12 +87,11 @@ export default function App() {
         {!loading && !error && (
           <>
             <FilterBar
+              tab={tab}
               types={types} setTypes={setTypes}
               eventTypes={eventTypes} setEventTypes={setEventTypes}
               regions={regions} setRegions={setRegions}
-              startDate={startDate} setStartDate={setStartDate}
-              endDate={endDate} setEndDate={setEndDate}
-              eventfulOnly={eventfulOnly} setEventfulOnly={setEventfulOnly}
+              datePreset={datePreset} setDatePreset={setDatePreset}
               onReset={onReset}
             />
 
@@ -114,8 +116,15 @@ export default function App() {
             )}
             {tab === "archive" && (
               <>
+                <div className="panel p-3 text-xs text-ink/60">
+                  Archive launched {new Date(ARCHIVE_LAUNCH_DATE).toLocaleDateString(
+                    "en-US",
+                    { year: "numeric", month: "long", day: "numeric" }
+                  )}. Past events captured by the daily scrape will appear here.
+                </div>
                 <div className="text-xs text-ink/60">
-                  {filteredArchive.length} past event{filteredArchive.length === 1 ? "" : "s"} (most recent first)
+                  {filteredArchive.length} past event{filteredArchive.length === 1 ? "" : "s"}
+                  {filteredArchive.length > 0 ? " (most recent first)" : ""}
                 </div>
                 <EventList events={filteredArchive} venuesById={venuesById} />
               </>

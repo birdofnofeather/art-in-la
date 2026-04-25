@@ -12,10 +12,10 @@ export default function Header({ tab, setTab, stats }) {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 md:px-6">
         <div className="flex-1">
           <h1 className="font-display text-2xl font-extrabold leading-none tracking-tight">
-            Art in LA
+            Art in LA <span className="text-ink/40 font-medium">| Upcoming Events</span>
           </h1>
           <p className="mt-1 text-xs text-ink/60">
-            Museums, galleries, and community art spaces across Los Angeles County
+            Upcoming events at museums, galleries, and community art spaces across Los Angeles County
             {stats && <> · {stats.venues} venues · {stats.events} upcoming events</>}
           </p>
         </div>

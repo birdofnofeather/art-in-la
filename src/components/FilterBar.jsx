@@ -1,19 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-  TYPE_LABEL, TYPE_COLOR, REGION_LABEL, EVENT_TYPE_LABEL,
+  TYPE_LABEL, TYPE_COLOR, REGION_LABEL,
+  EVENT_TYPE_FILTERS, DATE_PRESETS,
 } from "../lib/constants.js";
-
-function Toggle({ on, onChange, children }) {
-  return (
-    <button
-      type="button"
-      onClick={() => onChange(!on)}
-      className={`chip ${on ? "chip-active" : ""}`}
-    >
-      {children}
-    </button>
-  );
-}
 
 function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap }) {
   const toggle = (key) => {
@@ -55,77 +44,137 @@ function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap })
   );
 }
 
+function FilterChips({ items, selectedKey, onSelect }) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {items.map((it) => (
+        <button
+          key={it.key}
+          type="button"
+          onClick={() => onSelect(it.key)}
+          className={`chip ${selectedKey === it.key ? "chip-active" : ""}`}
+        >
+          {it.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function EventTypeChips({ selected, onChange }) {
+  const toggle = (key) => {
+    const next = new Set(selected);
+    if (next.has(key)) next.delete(key);
+    else next.add(key);
+    onChange(next);
+  };
+  return (
+    <div className="flex flex-wrap gap-2">
+      {EVENT_TYPE_FILTERS.map((f) => (
+        <button
+          key={f.key}
+          type="button"
+          onClick={() => toggle(f.key)}
+          className={`chip ${selected.has(f.key) ? "chip-active" : ""}`}
+        >
+          {f.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 export default function FilterBar({
+  tab,
   types, setTypes,
   eventTypes, setEventTypes,
   regions, setRegions,
-  startDate, setStartDate,
-  endDate, setEndDate,
-  eventfulOnly, setEventfulOnly,
+  datePreset, setDatePreset,
   onReset,
 }) {
+  const [open, setOpen] = useState(false);
+
+  // Hide event-type and date filters on the Venues tab — they're event-only
+  // concerns. Show them everywhere else.
+  const showEventFilters = tab !== "venues";
+
+  // Quick summary of active filter counts for the closed-tray button.
+  const activeCount =
+    (types?.size || 0) +
+    (regions?.size || 0) +
+    (showEventFilters ? (eventTypes?.size || 0) : 0) +
+    (showEventFilters && datePreset && datePreset !== "all" ? 1 : 0);
+
   return (
-    <div className="panel p-4 space-y-4">
-      <div className="flex flex-wrap items-center gap-3">
-        <Toggle on={eventfulOnly} onChange={setEventfulOnly}>
-          <span className="inline-block h-2 w-2 rounded-full bg-amber-500" />
-          Only venues with upcoming events
-        </Toggle>
-        <button type="button" onClick={onReset} className="chip">
-          Reset filters
-        </button>
-      </div>
-
-      <ToggleGroup
-        label="Organization type"
-        options={Object.keys(TYPE_LABEL)}
-        labelMap={TYPE_LABEL}
-        selected={types}
-        onChange={setTypes}
-        colorMap={TYPE_COLOR}
-      />
-
-      <ToggleGroup
-        label="Event type"
-        options={Object.keys(EVENT_TYPE_LABEL)}
-        labelMap={EVENT_TYPE_LABEL}
-        selected={eventTypes}
-        onChange={setEventTypes}
-      />
-
-      <ToggleGroup
-        label="Region"
-        options={Object.keys(REGION_LABEL)}
-        labelMap={REGION_LABEL}
-        selected={regions}
-        onChange={setRegions}
-      />
-
-      <div>
-        <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/50">
-          Dates
+    <div className="panel">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
+      >
+        <div className="flex items-center gap-2">
+          <span className="font-display text-sm font-semibold tracking-tight">
+            Filter results
+          </span>
+          {activeCount > 0 && (
+            <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
+              {activeCount}
+            </span>
+          )}
         </div>
-        <div className="flex flex-wrap items-center gap-3">
-          <label className="flex items-center gap-2 text-sm">
-            <span className="text-ink/60">From</span>
-            <input
-              type="date"
-              value={startDate || ""}
-              onChange={(e) => setStartDate(e.target.value || null)}
-              className="rounded-md border border-black/10 bg-white px-2 py-1 text-sm"
-            />
-          </label>
-          <label className="flex items-center gap-2 text-sm">
-            <span className="text-ink/60">To</span>
-            <input
-              type="date"
-              value={endDate || ""}
-              onChange={(e) => setEndDate(e.target.value || null)}
-              className="rounded-md border border-black/10 bg-white px-2 py-1 text-sm"
-            />
-          </label>
+        <span className="text-xs text-ink/60">
+          {open ? "Hide ▲" : "Show ▼"}
+        </span>
+      </button>
+
+      {open && (
+        <div className="space-y-4 border-t border-black/5 px-4 py-4">
+          <ToggleGroup
+            label="Organization type"
+            options={Object.keys(TYPE_LABEL)}
+            labelMap={TYPE_LABEL}
+            selected={types}
+            onChange={setTypes}
+            colorMap={TYPE_COLOR}
+          />
+
+          <ToggleGroup
+            label="Region"
+            options={Object.keys(REGION_LABEL)}
+            labelMap={REGION_LABEL}
+            selected={regions}
+            onChange={setRegions}
+          />
+
+          {showEventFilters && (
+            <>
+              <div>
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/50">
+                  Event type
+                </div>
+                <EventTypeChips selected={eventTypes} onChange={setEventTypes} />
+              </div>
+
+              <div>
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/50">
+                  Dates
+                </div>
+                <FilterChips
+                  items={DATE_PRESETS}
+                  selectedKey={datePreset || "all"}
+                  onSelect={setDatePreset}
+                />
+              </div>
+            </>
+          )}
+
+          <div className="flex items-center justify-end pt-1">
+            <button type="button" onClick={onReset} className="chip">
+              Reset filters
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

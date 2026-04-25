@@ -1,21 +1,38 @@
 """BaseScraper — provides default strategies so most venue scrapers need only URL config.
 
-Extraction strategies, in order of preference:
+Extraction strategies, tried in order until one returns events:
 
-  1. JSON-LD schema.org/Event blocks on the events page
-  2. iCal feed (if declared via `ical_url`)
-  3. RSS / Atom feed (if declared via `feed_url`)
-  4. Subclass override of `custom_parse(html) -> list[dict]`
+  1. WordPress Tribe Events REST API (auto-detected at /wp-json/tribe/events/v1/events)
+  2. iCal feed (if declared via `ical_url`, or auto-detected at /events/?ical=1)
+  3. JSON-LD schema.org/Event blocks on the events page
+  4. RSS / Atom feed (if declared via `feed_url`)
+  5. Subclass override of `custom_parse(html, base_url) -> list[Event]`
 
-Whichever strategy returns non-empty is used. Subclasses only need to set
-class attrs; they rarely need to write parsing code.
+After collection, every event passes through `_postprocess`:
+
+  - Exhibitions and other multi-day date ranges (>36h) are DROPPED, but if the
+    start has a specific time-of-day (e.g. Fri 5pm), we synthesize an "Opening:
+    <title>" event from it. This converts gallery exhibitions into one-off
+    opening receptions, which is what the site cares about.
+  - Anything explicitly typed `exhibition` is also dropped (one-offs only).
+
+Subclasses normally just set class attrs:
+
+    class Scraper(BaseScraper):
+        venue_id = "foo"
+        events_url = "https://foo.com/events"
+        # ical_url = "..."        # optional, otherwise auto-detected
+        # feed_url = "..."        # optional
+        # wp_root  = "..."        # optional, otherwise inferred from events_url
 """
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, field, asdict
+import re
+from dataclasses import dataclass, field, asdict, replace
+from datetime import datetime, timedelta, timezone
 from typing import Iterable, Optional
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 from icalendar import Calendar
@@ -25,6 +42,14 @@ from .utils.http import get
 from .utils.event_id import event_id
 from .utils.event_type import infer as infer_type
 from .utils.dateparse import to_la_iso, now_utc_iso
+
+LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine for now.
+
+# Multi-day events whose duration exceeds this are treated as exhibitions
+# (date ranges) rather than one-off events.
+EXHIBITION_THRESHOLD = timedelta(hours=36)
+# Synthesized openings get this default duration after the start time.
+OPENING_DURATION = timedelta(hours=3)
 
 
 @dataclass
@@ -55,31 +80,126 @@ class BaseScraper:
     events_url: str = ""        # Page the site links humans to
     ical_url: Optional[str] = None
     feed_url: Optional[str] = None
+    wp_root: Optional[str] = None      # Override the WP REST root (defaults to events_url's origin)
+    eventbrite_url: Optional[str] = None  # Public Eventbrite organizer page (events embedded as JSON-LD)
     source_label: str = ""       # Short label, usually the bare domain
 
+    # Subclass can opt out of post-processing if they really do want raw output.
+    drop_exhibitions: bool = True
+
     def run(self) -> list[dict]:
-        strategies: Iterable = (
-            self._strategy_jsonld,
-            self._strategy_ical,
-            self._strategy_feed,
-            self._strategy_custom,
+        strategies = (
+            ("wp_tribe",   self._strategy_wp_tribe),
+            ("ical",       self._strategy_ical),
+            ("jsonld",     self._strategy_jsonld),
+            ("eventbrite", self._strategy_eventbrite),
+            ("feed",       self._strategy_feed),
+            ("custom",     self._strategy_custom),
         )
-        for strat in strategies:
+        events: list[Event] = []
+        for name, strat in strategies:
             try:
-                events = list(strat())
+                got = list(strat())
             except Exception as e:
-                print(f"  [{self.venue_id}] strategy {strat.__name__} failed: {e}")
-                events = []
-            if events:
-                return [e.to_dict() for e in events]
-        return []
+                print(f"  [{self.venue_id}] strategy {name} failed: {e}")
+                got = []
+            if got:
+                print(f"  [{self.venue_id}] strategy {name}: {len(got)} raw events")
+                events = got
+                break
+        if not events:
+            print(f"  [{self.venue_id}] no strategy returned events")
+            return []
+
+        if self.drop_exhibitions:
+            events = self._postprocess(events)
+            print(f"  [{self.venue_id}] after exhibition filter: {len(events)} one-off events")
+        return [e.to_dict() for e in events]
 
     # ------- Strategies -------
+
+    def _strategy_wp_tribe(self) -> Iterable[Event]:
+        """WordPress with The Events Calendar plugin exposes a clean JSON REST API
+        listing only one-off events (not exhibitions). Try it first because it's
+        the cleanest source available on roughly half the venues we scrape.
+        """
+        if not self.events_url:
+            return
+        root = self.wp_root or self._origin(self.events_url)
+        url = root.rstrip("/") + "/wp-json/tribe/events/v1/events?per_page=50"
+        resp = get(url)
+        if not resp or resp.status_code != 200:
+            return
+        try:
+            data = resp.json()
+        except Exception:
+            return
+        items = data.get("events") or []
+        if not isinstance(items, list):
+            return
+        for it in items:
+            title = (it.get("title") or "").strip()
+            if not title:
+                continue
+            desc_html = it.get("description") or ""
+            desc = re.sub(r"<[^>]+>", " ", desc_html).strip()
+            start = self._tribe_to_la_iso(it.get("start_date"))
+            end = self._tribe_to_la_iso(it.get("end_date"))
+            url_e = it.get("url")
+            image = (it.get("image") or {}).get("url") if isinstance(it.get("image"), dict) else None
+            yield Event(
+                id=event_id(self.venue_id, start, title),
+                venue_id=self.venue_id,
+                title=title,
+                description=desc[:800],
+                event_type=infer_type(title, desc),
+                start=start,
+                end=end,
+                all_day=False,
+                url=url_e,
+                image=image,
+                source=self.source_label or self._domain(self.events_url),
+                scraped_at=now_utc_iso(),
+            )
+
+    def _strategy_ical(self) -> Iterable[Event]:
+        # Auto-detect Tribe Events ical: /events/?ical=1 — works on many WP venues.
+        url = self.ical_url
+        if not url and self.events_url:
+            guess = self.events_url.rstrip("/") + "/?ical=1"
+            resp = get(guess)
+            if resp and resp.status_code == 200 and "BEGIN:VCALENDAR" in resp.text[:200]:
+                url = guess
+        if not url:
+            return
+        resp = get(url)
+        if not resp or not resp.ok:
+            return
+        try:
+            cal = Calendar.from_ical(resp.text)
+        except Exception:
+            return
+        for component in cal.walk():
+            if component.name != "VEVENT":
+                continue
+            yield self._event_from_ical(component)
+
+    def _strategy_eventbrite(self) -> Iterable[Event]:
+        """Public Eventbrite organizer pages embed each event as JSON-LD; this
+        is the cleanest source for venues that publish there instead of (or in
+        addition to) their own site. Set `eventbrite_url` on the subclass.
+        """
+        if not self.eventbrite_url:
+            return
+        yield from self._jsonld_events_from_url(self.eventbrite_url)
 
     def _strategy_jsonld(self) -> Iterable[Event]:
         if not self.events_url:
             return
-        resp = get(self.events_url)
+        yield from self._jsonld_events_from_url(self.events_url)
+
+    def _jsonld_events_from_url(self, url: str) -> Iterable[Event]:
+        resp = get(url)
         if not resp or not resp.ok:
             return
         soup = BeautifulSoup(resp.text, "lxml")
@@ -94,21 +214,6 @@ class BaseScraper:
             for obj in _flatten_jsonld(data):
                 if _is_event(obj):
                     yield self._event_from_jsonld(obj)
-
-    def _strategy_ical(self) -> Iterable[Event]:
-        if not self.ical_url:
-            return
-        resp = get(self.ical_url)
-        if not resp or not resp.ok:
-            return
-        try:
-            cal = Calendar.from_ical(resp.text)
-        except Exception:
-            return
-        for component in cal.walk():
-            if component.name != "VEVENT":
-                continue
-            yield self._event_from_ical(component)
 
     def _strategy_feed(self) -> Iterable[Event]:
         if not self.feed_url:
@@ -147,6 +252,70 @@ class BaseScraper:
     # Override this in subclasses for per-site HTML parsing.
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
         return []
+
+    # ------- Post-processing -------
+
+    def _postprocess(self, events: list[Event]) -> list[Event]:
+        """Drop exhibitions; salvage opening receptions from them where possible."""
+        out: list[Event] = []
+        for ev in events:
+            kept = self._reshape(ev)
+            if kept is None:
+                continue
+            if isinstance(kept, list):
+                out.extend(kept)
+            else:
+                out.append(kept)
+        return out
+
+    def _reshape(self, ev: Event):
+        """Returns Event, list[Event], or None.
+           - None: drop entirely.
+           - Event: keep as-is (or as modified).
+           - list: replace with these synthesized events.
+        """
+        # Always drop anything explicitly typed "exhibition".
+        if ev.event_type == "exhibition":
+            return self._maybe_synthesize_opening(ev)
+        # Drop multi-day events that aren't fairs/festivals.
+        dur = self._duration(ev)
+        if dur is not None and dur > EXHIBITION_THRESHOLD:
+            if ev.event_type in {"fair"}:
+                # Fairs can legitimately span days — keep.
+                return ev
+            return self._maybe_synthesize_opening(ev)
+        return ev
+
+    def _maybe_synthesize_opening(self, ev: Event):
+        """If the start has a specific time-of-day (e.g. Fri 5pm), turn it into
+        an opening event. Otherwise drop entirely."""
+        start_dt = _parse_iso(ev.start)
+        if not start_dt:
+            return None
+        # Drop if start is at midnight (i.e. just a date, no specific time).
+        if start_dt.hour == 0 and start_dt.minute == 0:
+            return None
+        # Otherwise emit an opening reception event.
+        end_dt = start_dt + OPENING_DURATION
+        new_title = ev.title
+        if not re.search(r"\bopening\b", new_title, re.IGNORECASE):
+            new_title = f"Opening: {ev.title}"
+        new_event = replace(
+            ev,
+            id=event_id(self.venue_id, ev.start, new_title),
+            title=new_title,
+            event_type="opening",
+            start=ev.start,
+            end=_format_iso(end_dt),
+        )
+        return new_event
+
+    def _duration(self, ev: Event):
+        s = _parse_iso(ev.start)
+        e = _parse_iso(ev.end)
+        if not s or not e:
+            return None
+        return e - s
 
     # ------- Conversions -------
 
@@ -228,14 +397,55 @@ class BaseScraper:
             scraped_at=now_utc_iso(),
         )
 
+    # ------- Helpers -------
+
     @staticmethod
     def _domain(url: str) -> str:
         try:
-            from urllib.parse import urlparse
             host = urlparse(url).netloc
             return host.replace("www.", "")
         except Exception:
             return ""
+
+    @staticmethod
+    def _origin(url: str) -> str:
+        try:
+            p = urlparse(url)
+            return f"{p.scheme}://{p.netloc}"
+        except Exception:
+            return ""
+
+    @staticmethod
+    def _tribe_to_la_iso(s: Optional[str]) -> Optional[str]:
+        """Tribe REST returns 'YYYY-MM-DD HH:MM:SS' in venue-local time (no offset)."""
+        if not s:
+            return None
+        s = s.strip()
+        if "T" not in s:
+            s = s.replace(" ", "T", 1)
+        # If it doesn't carry a tz offset, attach LA time.
+        if not (s.endswith("Z") or re.search(r"[+-]\d\d:?\d\d$", s)):
+            s = s + LA_TZ_OFFSET
+        return s
+
+
+# -------- ISO datetime helpers --------
+
+def _parse_iso(s: Optional[str]):
+    if not s:
+        return None
+    try:
+        # Python 3.11+ accepts most ISO8601 forms; '+00:00' or 'Z' both fine.
+        s2 = s.replace("Z", "+00:00") if s.endswith("Z") else s
+        return datetime.fromisoformat(s2)
+    except Exception:
+        return None
+
+
+def _format_iso(dt: datetime) -> str:
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone(timedelta(hours=-7)))  # assume PDT
+    return dt.isoformat(timespec="seconds")
 
 
 # -------- JSON-LD helpers --------
@@ -282,4 +492,6 @@ def _jsonld_type_hint(obj: dict) -> str:
         return "workshop"
     if "exhibition" in tl:
         return "exhibition"
+    if "festival" in tl:
+        return "fair"
     return "other"

@@ -20,8 +20,8 @@ export const TYPE_LETTER = {
   museum: "M",
   gallery: "G",
   community: "C",
-  alternative: "A",
-  academic: "U",
+  alternative: "X",
+  academic: "A",
 };
 
 export const REGION_LABEL = {
@@ -37,23 +37,51 @@ export const REGION_LABEL = {
   antelope: "Antelope Valley",
 };
 
+// Per-event display labels (used in event cards). Underlying DB values stay
+// the same; this only controls how each raw event_type renders.
 export const EVENT_TYPE_LABEL = {
   opening: "Opening",
   closing: "Closing",
-  exhibition: "Exhibition",
   workshop: "Workshop",
   lecture: "Lecture / Talk",
   performance: "Performance",
   screening: "Screening",
   tour: "Tour",
-  fair: "Fair",
+  fair: "Other",
   other: "Other",
 };
 
-// A venue counts as "eventful" for the map toggle if it has upcoming events
-// of any of these types (exhibitions alone do not light up a venue — their
-// opening and closing receptions do).
+// Filter chip groups. Each chip can match multiple raw event_types (e.g.
+// Opening/Closing share a chip; "fair" folds into Other). Exhibition is
+// intentionally excluded — exhibitions are date ranges, not one-off events,
+// so the scraper drops them and the user shouldn't filter on them.
+export const EVENT_TYPE_FILTERS = [
+  { key: "openingclosing", label: "Opening / Closing", matches: ["opening", "closing"] },
+  { key: "workshop", label: "Workshop", matches: ["workshop"] },
+  { key: "lecture", label: "Lecture / Talk", matches: ["lecture"] },
+  { key: "performance", label: "Performance", matches: ["performance"] },
+  { key: "screening", label: "Screening", matches: ["screening"] },
+  { key: "tour", label: "Tour", matches: ["tour"] },
+  { key: "other", label: "Other", matches: ["other", "fair"] },
+];
+
+// A venue counts as "eventful" if it has upcoming events of any of these
+// types. Exhibitions alone do not light up a venue — their opening and
+// closing receptions do.
 export const EVENTFUL_TYPES = new Set([
   "opening", "closing", "workshop", "lecture",
   "performance", "screening", "tour", "fair", "other",
 ]);
+
+// Date-range presets used by the filter tray. Resolved at filter time so
+// "this weekend" tracks the actual current calendar.
+export const DATE_PRESETS = [
+  { key: "weekend", label: "This weekend" },
+  { key: "nextweek", label: "Next week" },
+  { key: "month", label: "This month" },
+  { key: "all", label: "All dates" },
+];
+
+// Day the public archive started accumulating data. Anything before this is
+// surfaced with the "Archive launched on …" notice; nothing exists before it.
+export const ARCHIVE_LAUNCH_DATE = "2026-04-25";

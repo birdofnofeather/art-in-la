@@ -42,7 +42,11 @@ The site reads three JSON files from `/data/`:
   "venue_id": "lacma",                          // FK to venue
   "title": "Opening Reception: Mary Weatherford",
   "description": "One-paragraph description.",
-  "event_type": "opening",                      // opening | closing | exhibition | workshop | lecture | performance | screening | tour | fair | other
+  "event_type": "opening",                      // opening | closing | workshop | lecture | performance | screening | tour | fair | other
+                                                //
+                                                // NOTE: `exhibition` is no longer captured. The scraper drops any event
+                                                // with a duration > 36h. If the start has a specific time-of-day, it
+                                                // synthesizes an "Opening: <title>" event from it instead.
   "start": "2026-05-01T19:00:00-07:00",         // ISO 8601 with tz
   "end": "2026-05-01T21:00:00-07:00",           // Optional; inclusive end
   "all_day": false,
@@ -55,6 +59,8 @@ The site reads three JSON files from `/data/`:
 }
 ```
 
-### Event-type conventions for the map toggle
+### Map view: which venues are shown
 
-The "venues with upcoming events" map toggle counts a venue as *eventful* if it has any event whose type is **not** `exhibition` — i.e., **opening**, **closing**, **workshop**, **lecture**, **performance**, **screening**, **tour**, **fair**, or **other**. Long-running exhibitions by themselves don't light up a venue; their opening and closing receptions do.
+The Map view always filters to venues with at least one upcoming one-off event (opening, closing, workshop, lecture, performance, screening, tour, fair, or other). Exhibitions are not captured at all (see note above), so this filter is effectively "any upcoming event."
+
+The Venues tab shows the full curated database regardless of upcoming events.
