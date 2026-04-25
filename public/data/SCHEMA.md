@@ -45,9 +45,9 @@ The site reads three JSON files from `/data/`:
   "event_type": "opening",                      // opening | closing | workshop | lecture | performance | screening | tour | fair | other | exhibition
                                                 //
                                                 // NOTE: Multi-day events (>36h duration) are RETYPED to `exhibition`
-                                                // and shown in the Exhibitions tab. If the start has a specific
-                                                // time-of-day (e.g. Fri 5pm), the scraper ALSO emits a synthesized
-                                                // "Opening: <title>" event with type `opening` for the Events tab.
+                                                // and shown in the Exhibitions tab. Openings are NEVER synthesized
+                                                // from exhibition start dates — they exist only when the source
+                                                // explicitly publishes an opening reception as its own event.
   "start": "2026-05-01T19:00:00-07:00",         // ISO 8601 with tz
   "end": "2026-05-01T21:00:00-07:00",           // Optional; inclusive end
   "all_day": false,

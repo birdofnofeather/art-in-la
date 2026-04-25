@@ -10,15 +10,13 @@ Extraction strategies, tried in order until one returns events:
 
 After collection, every event passes through `_postprocess`:
 
-  - Multi-day date ranges (>36h) are KEPT and re-typed as `exhibition`. If the
-    start has a specific time-of-day (e.g. Fri 5pm), we ALSO synthesize an
-    "Opening: <title>" event from it. So a gallery's "Karl Haendel: Glass half"
-    that runs Mar 13 – May 9 and starts at 5pm produces both:
-      * the exhibition record (event_type="exhibition", spans the full date range)
-      * an opening reception (event_type="opening", Fri 5–8pm)
-    The Events tab shows openings; the Exhibitions tab shows exhibitions.
-  - Anything explicitly typed `exhibition` follows the same path (kept + maybe
-    paired with a synthesized opening).
+  - Multi-day date ranges (>36h) are KEPT and re-typed as `exhibition`. They
+    surface in the Exhibitions tab.
+  - Anything explicitly typed `exhibition` is also kept.
+  - Openings are NEVER synthesized from exhibition start times — they are
+    captured only when the source explicitly lists an opening reception as its
+    own event (e.g. a Tribe REST entry, a JSON-LD Event titled "Opening …").
+    This avoids inventing public opening dates for shows that don't have one.
 
 Subclasses normally just set class attrs:
 
@@ -52,8 +50,6 @@ LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine f
 # Multi-day events whose duration exceeds this are treated as exhibitions
 # (date ranges) rather than one-off events.
 EXHIBITION_THRESHOLD = timedelta(hours=36)
-# Synthesized openings get this default duration after the start time.
-OPENING_DURATION = timedelta(hours=3)
 
 
 @dataclass
@@ -275,58 +271,27 @@ class BaseScraper:
         return out
 
     def _reshape(self, ev: Event):
-        """Returns Event, list[Event], or None.
+        """Returns Event or None.
+           - Event: keep as-is (or re-typed as exhibition).
            - None: drop entirely.
-           - Event: keep as-is (or as modified).
-           - list: replace with these synthesized events.
+
+        Multi-day non-fair events get re-typed to `exhibition` so the front-end
+        can route them to the Exhibitions tab. We do NOT invent opening events;
+        those only exist when the source explicitly lists them.
         """
-        # Anything explicitly typed exhibition: keep + pair with opening if possible.
         if ev.event_type == "exhibition":
-            return self._exhibition_with_optional_opening(ev)
-        # Multi-day events that aren't fairs/festivals: re-type as exhibition + maybe opening.
+            return ev
         dur = self._duration(ev)
         if dur is not None and dur > EXHIBITION_THRESHOLD:
             if ev.event_type in {"fair"}:
                 # Fairs can legitimately span days — keep as fair.
                 return ev
-            exhibition = replace(
+            return replace(
                 ev,
                 id=event_id(self.venue_id, ev.start, ev.title + "::exh"),
                 event_type="exhibition",
             )
-            return self._exhibition_with_optional_opening(exhibition)
         return ev
-
-    def _exhibition_with_optional_opening(self, ev: Event):
-        """Always keeps the exhibition record. If the start has a specific time
-        (e.g. Fri 5pm), also emits an opening-reception event at that time."""
-        opening = self._maybe_synthesize_opening(ev)
-        if opening is None:
-            return ev
-        return [ev, opening]
-
-    def _maybe_synthesize_opening(self, ev: Event):
-        """If the start has a specific time-of-day (e.g. Fri 5pm), produce an
-        opening event. Otherwise return None."""
-        start_dt = _parse_iso(ev.start)
-        if not start_dt:
-            return None
-        # Skip if start is at midnight (i.e. just a date, no specific time).
-        if start_dt.hour == 0 and start_dt.minute == 0:
-            return None
-        end_dt = start_dt + OPENING_DURATION
-        new_title = ev.title
-        if not re.search(r"\bopening\b", new_title, re.IGNORECASE):
-            new_title = f"Opening: {ev.title}"
-        new_event = replace(
-            ev,
-            id=event_id(self.venue_id, ev.start, new_title),
-            title=new_title,
-            event_type="opening",
-            start=ev.start,
-            end=_format_iso(end_dt),
-        )
-        return new_event
 
     def _duration(self, ev: Event):
         s = _parse_iso(ev.start)
@@ -458,12 +423,6 @@ def _parse_iso(s: Optional[str]):
         return datetime.fromisoformat(s2)
     except Exception:
         return None
-
-
-def _format_iso(dt: datetime) -> str:
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone(timedelta(hours=-7)))  # assume PDT
-    return dt.isoformat(timespec="seconds")
 
 
 # -------- JSON-LD helpers --------
