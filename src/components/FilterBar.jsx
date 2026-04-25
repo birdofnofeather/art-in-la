@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
   TYPE_LABEL, TYPE_COLOR, REGION_LABEL,
-  EVENT_TYPE_FILTERS, DATE_PRESETS,
+  EVENT_TYPE_FILTERS, DATE_PRESETS, EXHIBITION_STATUSES,
 } from "../lib/constants.js";
 
 function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap }) {
@@ -86,24 +86,30 @@ function EventTypeChips({ selected, onChange }) {
 
 export default function FilterBar({
   tab,
+  mode,
   types, setTypes,
   eventTypes, setEventTypes,
   regions, setRegions,
   datePreset, setDatePreset,
+  exhibitionStatus, setExhibitionStatus,
   onReset,
 }) {
   const [open, setOpen] = useState(false);
 
-  // Hide event-type and date filters on the Venues tab — they're event-only
-  // concerns. Show them everywhere else.
-  const showEventFilters = tab !== "venues";
+  const isExhibitions = mode === "exhibitions";
+
+  // The Venues tab is venue-only (no event/date filters). The Events tab in
+  // exhibitions mode swaps the event-type / date filters for a status picker.
+  const showEventFilters = tab !== "venues" && !isExhibitions;
+  const showExhibitionStatus = tab !== "venues" && isExhibitions;
 
   // Quick summary of active filter counts for the closed-tray button.
   const activeCount =
     (types?.size || 0) +
     (regions?.size || 0) +
     (showEventFilters ? (eventTypes?.size || 0) : 0) +
-    (showEventFilters && datePreset && datePreset !== "all" ? 1 : 0);
+    (showEventFilters && datePreset && datePreset !== "all" ? 1 : 0) +
+    (showExhibitionStatus && exhibitionStatus && exhibitionStatus !== "current" ? 1 : 0);
 
   return (
     <div className="panel">
@@ -166,6 +172,19 @@ export default function FilterBar({
                 />
               </div>
             </>
+          )}
+
+          {showExhibitionStatus && (
+            <div>
+              <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/50">
+                Show
+              </div>
+              <FilterChips
+                items={EXHIBITION_STATUSES}
+                selectedKey={exhibitionStatus || "current"}
+                onSelect={setExhibitionStatus}
+              />
+            </div>
           )}
 
           <div className="flex items-center justify-end pt-1">

@@ -132,6 +132,43 @@ export function filterEvents(events, venuesById, {
   });
 }
 
+/** Split a flat events array into one-off events vs. exhibitions. */
+export function partitionByMode(events) {
+  const oneoff = [];
+  const exhibitions = [];
+  for (const ev of events) {
+    if (ev.event_type === "exhibition") exhibitions.push(ev);
+    else oneoff.push(ev);
+  }
+  return { oneoff, exhibitions };
+}
+
+/**
+ * Filter exhibitions by status.
+ *   current: start <= now <= end (or no end yet)
+ *   upcoming: start > now
+ *   all: everything that hasn't ended yet
+ */
+export function filterExhibitions(exhibitions, status, now = new Date()) {
+  return exhibitions.filter((ev) => {
+    const s = parseDate(ev.start);
+    const e = parseDate(ev.end);
+    // Skip exhibitions whose end has already passed.
+    if (e && e < now) return false;
+    if (status === "current") {
+      if (!s) return false;
+      if (s > now) return false;          // hasn't opened
+      return !e || e >= now;              // still on view
+    }
+    if (status === "upcoming") {
+      if (!s) return false;
+      return s > now;                     // opens in the future
+    }
+    // "all" (or unrecognized) — return everything not-yet-closed.
+    return true;
+  });
+}
+
 export function sortEvents(events) {
   return [...events].sort((a, b) => {
     const aS = parseDate(a.start) || new Date("9999-01-01");

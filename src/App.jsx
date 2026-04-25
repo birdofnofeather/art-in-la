@@ -6,7 +6,8 @@ import EventList from "./components/EventList.jsx";
 import VenueList from "./components/VenueList.jsx";
 import { loadAll } from "./lib/data.js";
 import {
-  indexVenues, filterVenues, filterEvents, sortEvents, eventfulVenueIds, isUpcoming,
+  indexVenues, filterVenues, filterEvents, sortEvents, eventfulVenueIds,
+  isUpcoming, partitionByMode, filterExhibitions,
 } from "./lib/filters.js";
 import { ARCHIVE_LAUNCH_DATE } from "./lib/constants.js";
 
@@ -16,6 +17,8 @@ export default function App() {
   const [data, setData] = useState({ venues: [], events: [], archive: [] });
 
   const [tab, setTab] = useState("map");
+  const [mode, setMode] = useState("events"); // "events" | "exhibitions"
+  const [exhibitionStatus, setExhibitionStatus] = useState("current"); // "current" | "upcoming" | "all"
 
   const [types, setTypes] = useState(new Set());
   const [eventTypes, setEventTypes] = useState(new Set());
@@ -29,14 +32,24 @@ export default function App() {
   }, []);
 
   const venuesById = useMemo(() => indexVenues(data.venues), [data.venues]);
-  const upcomingEvents = useMemo(
-    () => data.events.filter((e) => isUpcoming(e)),
+
+  // Split the data set once so the rest of the app can pick the right slice.
+  const { oneoff: allOneoff, exhibitions: allExhibitions } = useMemo(
+    () => partitionByMode(data.events),
     [data.events]
+  );
+
+  const upcomingEvents = useMemo(
+    () => allOneoff.filter((e) => isUpcoming(e)),
+    [allOneoff]
+  );
+  const liveExhibitions = useMemo(
+    () => allExhibitions.filter((e) => isUpcoming(e)),
+    [allExhibitions]
   );
   const eventfulIds = useMemo(() => eventfulVenueIds(upcomingEvents), [upcomingEvents]);
 
-  // The Map view shows only eventful venues (was a toggle, now the standard).
-  // The Venues tab shows the full curated database.
+  // Map view shows only eventful venues; Venues tab shows the full database.
   const eventfulFilter = tab === "map";
 
   const filteredVenues = useMemo(
@@ -55,6 +68,15 @@ export default function App() {
     [upcomingEvents, venuesById, types, eventTypes, regions, datePreset]
   );
 
+  const filteredExhibitions = useMemo(() => {
+    const matching = filterExhibitions(liveExhibitions, exhibitionStatus);
+    return sortEvents(filterEvents(matching, venuesById, {
+      venueTypes: types, regions,
+      // Don't apply eventTypes here — exhibitions only have one type.
+      // Don't apply datePreset — exhibition view has its own status selector.
+    }));
+  }, [liveExhibitions, exhibitionStatus, venuesById, types, regions]);
+
   const filteredArchive = useMemo(
     () => sortEvents(filterEvents(data.archive, venuesById, {
       venueTypes: types, eventTypes, regions, datePreset,
@@ -67,13 +89,23 @@ export default function App() {
     setEventTypes(new Set());
     setRegions(new Set());
     setDatePreset("all");
+    setExhibitionStatus("current");
   };
 
-  const stats = { venues: data.venues.length, events: upcomingEvents.length };
+  const stats = {
+    venues: data.venues.length,
+    events: upcomingEvents.length,
+    exhibitions: liveExhibitions.length,
+  };
+
+  // Which list does the Events tab show?
+  const inExhibitionMode = mode === "exhibitions";
+  const eventsTabList = inExhibitionMode ? filteredExhibitions : filteredEvents;
+  const eventsTabNoun = inExhibitionMode ? "exhibition" : "event";
 
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={stats} />
+      <Header tab={tab} setTab={setTab} mode={mode} setMode={setMode} stats={stats} />
       <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
         {loading && (
           <div className="panel p-6 text-center text-sm text-ink/60">
@@ -88,10 +120,12 @@ export default function App() {
           <>
             <FilterBar
               tab={tab}
+              mode={mode}
               types={types} setTypes={setTypes}
               eventTypes={eventTypes} setEventTypes={setEventTypes}
               regions={regions} setRegions={setRegions}
               datePreset={datePreset} setDatePreset={setDatePreset}
+              exhibitionStatus={exhibitionStatus} setExhibitionStatus={setExhibitionStatus}
               onReset={onReset}
             />
 
@@ -101,9 +135,9 @@ export default function App() {
             {tab === "events" && (
               <>
                 <div className="text-xs text-ink/60">
-                  {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
+                  {eventsTabList.length} {eventsTabNoun}{eventsTabList.length === 1 ? "" : "s"}
                 </div>
-                <EventList events={filteredEvents} venuesById={venuesById} />
+                <EventList events={eventsTabList} venuesById={venuesById} />
               </>
             )}
             {tab === "venues" && (

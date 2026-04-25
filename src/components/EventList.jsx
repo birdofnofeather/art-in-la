@@ -3,25 +3,73 @@ import {
   TYPE_COLOR, TYPE_LABEL, REGION_LABEL, EVENT_TYPE_LABEL,
 } from "../lib/constants.js";
 
-function fmtDate(s, { dateOnly = false } = {}) {
-  if (!s) return null;
-  const d = new Date(s);
-  if (Number.isNaN(+d)) return s;
-  const datePart = d.toLocaleDateString("en-US", {
-    weekday: "short", month: "short", day: "numeric", year: "numeric",
-  });
-  if (dateOnly || s.length <= 10) return datePart;
-  const timePart = d.toLocaleTimeString("en-US", {
-    hour: "numeric", minute: "2-digit",
-  });
-  return `${datePart} · ${timePart}`;
+const DATE_OPTS = { weekday: "short", month: "short", day: "numeric", year: "numeric" };
+const TIME_OPTS = { hour: "numeric", minute: "2-digit" };
+const DATE_NO_YEAR = { weekday: "short", month: "short", day: "numeric" };
+
+function fmtDateOnly(d) {
+  return d.toLocaleDateString("en-US", DATE_OPTS);
+}
+function fmtTimeOnly(d) {
+  return d.toLocaleTimeString("en-US", TIME_OPTS);
+}
+function fmtDateTime(d) {
+  return `${d.toLocaleDateString("en-US", DATE_OPTS)} · ${fmtTimeOnly(d)}`;
+}
+function sameDay(a, b) {
+  return (
+    a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate()
+  );
+}
+function hasTime(s) {
+  // ISO strings with time include "T". All-day events stored as a bare date won't.
+  return typeof s === "string" && s.length > 10 && s.includes("T");
 }
 
+/**
+ * Render a date or date range cleanly:
+ *   - all-day, no end:               "Sat, May 1, 2026"
+ *   - timed, no end:                 "Sat, May 1, 2026 · 7:00 PM"
+ *   - same-day, both timed:          "Sat, May 1, 2026 · 7:00 – 9:00 PM"
+ *   - cross-day:                     "Mar 13, 2026 → May 9, 2026"
+ *     (date-only when ev.all_day or no time-of-day; with time when both timed)
+ */
 function dateRange(ev) {
   if (!ev.start) return null;
-  const first = fmtDate(ev.start, { dateOnly: ev.all_day });
-  if (!ev.end || ev.end === ev.start) return first;
-  return `${first} → ${fmtDate(ev.end, { dateOnly: ev.all_day })}`;
+  const start = new Date(ev.start);
+  if (Number.isNaN(+start)) return ev.start;
+
+  const startTimed = hasTime(ev.start) && !ev.all_day;
+  const end = ev.end ? new Date(ev.end) : null;
+  const endValid = end && !Number.isNaN(+end);
+  const endTimed = endValid && hasTime(ev.end) && !ev.all_day;
+
+  // No end (or end == start): just one date / datetime.
+  if (!endValid || +end === +start) {
+    return startTimed ? fmtDateTime(start) : fmtDateOnly(start);
+  }
+
+  // Same calendar day: show date once + time range.
+  if (sameDay(start, end)) {
+    if (startTimed && endTimed) {
+      return `${fmtDateOnly(start)} · ${fmtTimeOnly(start)} – ${fmtTimeOnly(end)}`;
+    }
+    if (startTimed) {
+      return `${fmtDateOnly(start)} · ${fmtTimeOnly(start)}`;
+    }
+    return fmtDateOnly(start);
+  }
+
+  // Multi-day range — typical exhibitions. Drop the year on the start if both
+  // endpoints share the same year, to read more naturally.
+  const sameYear = start.getFullYear() === end.getFullYear();
+  const startStr = sameYear
+    ? start.toLocaleDateString("en-US", DATE_NO_YEAR)
+    : fmtDateOnly(start);
+  const endStr = fmtDateOnly(end);
+  return `${startStr} → ${endStr}`;
 }
 
 export default function EventList({ events, venuesById }) {

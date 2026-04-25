@@ -42,11 +42,12 @@ The site reads three JSON files from `/data/`:
   "venue_id": "lacma",                          // FK to venue
   "title": "Opening Reception: Mary Weatherford",
   "description": "One-paragraph description.",
-  "event_type": "opening",                      // opening | closing | workshop | lecture | performance | screening | tour | fair | other
+  "event_type": "opening",                      // opening | closing | workshop | lecture | performance | screening | tour | fair | other | exhibition
                                                 //
-                                                // NOTE: `exhibition` is no longer captured. The scraper drops any event
-                                                // with a duration > 36h. If the start has a specific time-of-day, it
-                                                // synthesizes an "Opening: <title>" event from it instead.
+                                                // NOTE: Multi-day events (>36h duration) are RETYPED to `exhibition`
+                                                // and shown in the Exhibitions tab. If the start has a specific
+                                                // time-of-day (e.g. Fri 5pm), the scraper ALSO emits a synthesized
+                                                // "Opening: <title>" event with type `opening` for the Events tab.
   "start": "2026-05-01T19:00:00-07:00",         // ISO 8601 with tz
   "end": "2026-05-01T21:00:00-07:00",           // Optional; inclusive end
   "all_day": false,
@@ -59,8 +60,14 @@ The site reads three JSON files from `/data/`:
 }
 ```
 
+### Header: Events / Exhibitions mode
+
+The site has a top-level mode toggle in the header.
+- **Events** (default) — one-off events: openings, closings, workshops, lectures, performances, screenings, tours, fairs, and other. Anything that isn't an exhibition.
+- **Exhibitions** — only `event_type: "exhibition"` records, with a sub-selector for **On view now** (start ≤ today ≤ end), **Upcoming** (start > today), or **All**.
+
 ### Map view: which venues are shown
 
-The Map view always filters to venues with at least one upcoming one-off event (opening, closing, workshop, lecture, performance, screening, tour, fair, or other). Exhibitions are not captured at all (see note above), so this filter is effectively "any upcoming event."
+The Map view filters to venues with at least one upcoming one-off event. Exhibitions alone do not light up a venue — their opening/closing receptions do. This is what `EVENTFUL_TYPES` in `src/lib/constants.js` defines.
 
 The Venues tab shows the full curated database regardless of upcoming events.

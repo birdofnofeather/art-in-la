@@ -10,11 +10,15 @@ Extraction strategies, tried in order until one returns events:
 
 After collection, every event passes through `_postprocess`:
 
-  - Exhibitions and other multi-day date ranges (>36h) are DROPPED, but if the
-    start has a specific time-of-day (e.g. Fri 5pm), we synthesize an "Opening:
-    <title>" event from it. This converts gallery exhibitions into one-off
-    opening receptions, which is what the site cares about.
-  - Anything explicitly typed `exhibition` is also dropped (one-offs only).
+  - Multi-day date ranges (>36h) are KEPT and re-typed as `exhibition`. If the
+    start has a specific time-of-day (e.g. Fri 5pm), we ALSO synthesize an
+    "Opening: <title>" event from it. So a gallery's "Karl Haendel: Glass half"
+    that runs Mar 13 – May 9 and starts at 5pm produces both:
+      * the exhibition record (event_type="exhibition", spans the full date range)
+      * an opening reception (event_type="opening", Fri 5–8pm)
+    The Events tab shows openings; the Exhibitions tab shows exhibitions.
+  - Anything explicitly typed `exhibition` follows the same path (kept + maybe
+    paired with a synthesized opening).
 
 Subclasses normally just set class attrs:
 
@@ -113,7 +117,9 @@ class BaseScraper:
 
         if self.drop_exhibitions:
             events = self._postprocess(events)
-            print(f"  [{self.venue_id}] after exhibition filter: {len(events)} one-off events")
+            n_exh = sum(1 for e in events if e.event_type == "exhibition")
+            n_one = len(events) - n_exh
+            print(f"  [{self.venue_id}] after reshape: {n_one} one-off + {n_exh} exhibition events")
         return [e.to_dict() for e in events]
 
     # ------- Strategies -------
@@ -256,7 +262,7 @@ class BaseScraper:
     # ------- Post-processing -------
 
     def _postprocess(self, events: list[Event]) -> list[Event]:
-        """Drop exhibitions; salvage opening receptions from them where possible."""
+        """Re-type long ranges as exhibitions; pair with synthesized openings."""
         out: list[Event] = []
         for ev in events:
             kept = self._reshape(ev)
@@ -274,28 +280,40 @@ class BaseScraper:
            - Event: keep as-is (or as modified).
            - list: replace with these synthesized events.
         """
-        # Always drop anything explicitly typed "exhibition".
+        # Anything explicitly typed exhibition: keep + pair with opening if possible.
         if ev.event_type == "exhibition":
-            return self._maybe_synthesize_opening(ev)
-        # Drop multi-day events that aren't fairs/festivals.
+            return self._exhibition_with_optional_opening(ev)
+        # Multi-day events that aren't fairs/festivals: re-type as exhibition + maybe opening.
         dur = self._duration(ev)
         if dur is not None and dur > EXHIBITION_THRESHOLD:
             if ev.event_type in {"fair"}:
-                # Fairs can legitimately span days — keep.
+                # Fairs can legitimately span days — keep as fair.
                 return ev
-            return self._maybe_synthesize_opening(ev)
+            exhibition = replace(
+                ev,
+                id=event_id(self.venue_id, ev.start, ev.title + "::exh"),
+                event_type="exhibition",
+            )
+            return self._exhibition_with_optional_opening(exhibition)
         return ev
 
+    def _exhibition_with_optional_opening(self, ev: Event):
+        """Always keeps the exhibition record. If the start has a specific time
+        (e.g. Fri 5pm), also emits an opening-reception event at that time."""
+        opening = self._maybe_synthesize_opening(ev)
+        if opening is None:
+            return ev
+        return [ev, opening]
+
     def _maybe_synthesize_opening(self, ev: Event):
-        """If the start has a specific time-of-day (e.g. Fri 5pm), turn it into
-        an opening event. Otherwise drop entirely."""
+        """If the start has a specific time-of-day (e.g. Fri 5pm), produce an
+        opening event. Otherwise return None."""
         start_dt = _parse_iso(ev.start)
         if not start_dt:
             return None
-        # Drop if start is at midnight (i.e. just a date, no specific time).
+        # Skip if start is at midnight (i.e. just a date, no specific time).
         if start_dt.hour == 0 and start_dt.minute == 0:
             return None
-        # Otherwise emit an opening reception event.
         end_dt = start_dt + OPENING_DURATION
         new_title = ev.title
         if not re.search(r"\bopening\b", new_title, re.IGNORECASE):
