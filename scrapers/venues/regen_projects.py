@@ -95,4 +95,6 @@ class Scraper(BaseScraper):
                 url=url,
                 image=image,
                 artists=[artist] if artist else [],
- 
+                source=self.source_label,
+                scraped_at=now_utc_iso(),
+            )
