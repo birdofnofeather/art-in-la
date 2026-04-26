@@ -37,6 +37,28 @@ from .venues.francois_ghebaly import Scraper as FrancoisGhebaly
 from .venues.commonwealth_council import Scraper as CommonwealthCouncil
 from .venues.anat_ebgi import Scraper as AnatEbgi
 
+# --- New scrapers added by expand-scraper-coverage ---
+from .venues.wende import Scraper as Wende
+from .venues.vincent_price import Scraper as VincentPrice
+from .venues.pvac import Scraper as PVAC
+from .venues.molaa import Scraper as MOLAA
+from .venues.mak_center import Scraper as MAKCenter
+from .venues.marciano import Scraper as Marciano
+from .venues.armory_pasadena import Scraper as ArmoryPasadena
+from .venues.janm import Scraper as JANM
+from .venues.autry import Scraper as Autry
+from .venues.fowler import Scraper as Fowler
+from .venues.academy_museum import Scraper as AcademyMuseum
+from .venues.lehmann_maupin_la import Scraper as LehmannMaupinLA
+from .venues.roberts_projects import Scraper as RobertsProjects
+from .venues.zwirner_la import Scraper as ZwirnerLA
+from .venues.usc_fisher import Scraper as USCFisher
+from .venues.sprueth_magers import Scraper as SpruethMagers
+from .venues.parrasch_heijnen import Scraper as ParraschHeijnen
+from .venues.chateau_shatto import Scraper as ChateauShatto
+from .venues.moran_moran import Scraper as MoranMoran
+from .venues.nicodim import Scraper as Nicodim
+
 
 SCRAPERS = [
     LACMA,
@@ -65,4 +87,25 @@ SCRAPERS = [
     FrancoisGhebaly,
     CommonwealthCouncil,
     AnatEbgi,
+    # --- New venues ---
+    Wende,
+    VincentPrice,
+    PVAC,
+    MOLAA,
+    MAKCenter,
+    Marciano,
+    ArmoryPasadena,
+    JANM,
+    Autry,
+    Fowler,
+    AcademyMuseum,
+    LehmannMaupinLA,
+    RobertsProjects,
+    ZwirnerLA,
+    USCFisher,
+    SpruethMagers,
+    ParraschHeijnen,
+    ChateauShatto,
+    MoranMoran,
+    Nicodim,
 ]
