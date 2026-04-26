@@ -103,4 +103,8 @@ class Scraper(BaseScraper):
                 url=href or None,
                 image=image,
                 source=self.source_label,
-                scraped_at=now_utc_iso(),
+                scraped_at=now_utc_iso(),
+            )
+            if ev.id not in seen:
+                seen.add(ev.id)
+                yield ev

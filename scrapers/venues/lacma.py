@@ -128,4 +128,7 @@ class Scraper(BaseScraper):
             all_day=False,
             url=link or None,
             image=image,
-    
+            location_override=location or None,
+            source=self.source_label,
+            scraped_at=now_utc_iso(),
+        )
