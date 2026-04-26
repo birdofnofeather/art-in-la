@@ -1,0 +1,55 @@
+name: Explore venues
+
+# Manual-trigger only. Runs scrapers/explore.py against every venue with an
+# events_url and commits the resulting scrapers/_findings.md back to main.
+# Used to inspect site structure when the local sandbox can't reach the open
+# internet.
+
+on:
+  workflow_dispatch:
+    inputs:
+      venues:
+        description: "Comma-separated venue ids to probe (blank = all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: explore
+  cancel-in-progress: false
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scrapers/requirements.txt
+
+      - name: Install deps
+        run: pip install -r scrapers/requirements.txt
+
+      - name: Run explore
+        env:
+          ART_IN_LA_EXPLORE_VENUES: ${{ inputs.venues }}
+        run: python -m scrapers.explore
+
+      - name: Commit findings
+        run: |
+          git config user.name  "art-in-la-bot"
+          git config user.email "art-in-la-bot@users.noreply.github.com"
+          git add scrapers/_findings.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(explore): refresh venue site findings"
+          git push

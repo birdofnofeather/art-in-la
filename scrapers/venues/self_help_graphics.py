@@ -1,12 +1,21 @@
-"""Self Help Graphics is on WordPress with The Events Calendar plugin.
-The plugin exposes an .ics feed at /events/?ical=1 and a JSON REST API at
-/wp-json/tribe/events/v1/events. We try iCal first because it's small.
+"""
+Self Help Graphics — stub scraper.
+
+CMS: Squarespace
+
+TODO: Squarespace calendar — events are loaded client-side via JS.
+The ?format=json endpoint returns an empty items list.
+Needs Playwright or the Squarespace events API with auth.
 """
 from ..base import BaseScraper
 
 
 class Scraper(BaseScraper):
     venue_id = "self_help_graphics"
-    events_url = "https://www.selfhelpgraphics.com/events"
-    ical_url = "https://www.selfhelpgraphics.com/events/?ical=1"
+    events_url = "https://www.selfhelpgraphics.com/events-calendar"
     source_label = "selfhelpgraphics.com"
+
+    def custom_parse(self, html, base_url):
+        # JS-rendered site — no accessible server-side content.
+        # Awaiting Playwright implementation.
+        return []
