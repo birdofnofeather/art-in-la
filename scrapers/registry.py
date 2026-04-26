@@ -15,6 +15,8 @@ from .venues.hammer import Scraper as Hammer
 from .venues.moca import Scraper as MOCA
 from .venues.the_broad import Scraper as TheBroad
 from .venues.getty import Scraper as Getty
+from .venues.norton_simon import Scraper as NortonSimon
+from .venues.huntington import Scraper as Huntington
 from .venues.hauser_wirth import Scraper as HauserWirth
 from .venues.hauser_wirth_weho import Scraper as HauserWirthWeHo
 from .venues.david_kordansky import Scraper as DavidKordansky
@@ -36,6 +38,8 @@ SCRAPERS = [
     MOCA,
     TheBroad,
     Getty,
+    NortonSimon,
+    Huntington,
     HauserWirth,
     HauserWirthWeHo,
     DavidKordansky,
