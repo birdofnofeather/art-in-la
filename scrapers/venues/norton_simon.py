@@ -37,4 +37,4 @@ class Scraper(BaseScraper):
     def _strategy_ical(self): return iter([])
     def _strategy_jsonld(self): return iter([])
     def _strategy_feed(self): return iter([])
-    def _strategy_custom(self): return iter([])
+    def _

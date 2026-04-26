@@ -30,6 +30,12 @@ from .venues.vielmetter import Scraper as Vielmetter
 from .venues.night_gallery import Scraper as NightGallery
 from .venues.the_pit import Scraper as ThePit
 from .venues.blum import Scraper as BLUM
+from .venues.gagosian_bh import Scraper as GagosianBH
+from .venues.eighteenth_street import Scraper as EighteenthStreet
+from .venues.human_resources_la import Scraper as HumanResources
+from .venues.francois_ghebaly import Scraper as FrancoisGhebaly
+from .venues.commonwealth_council import Scraper as CommonwealthCouncil
+from .venues.anat_ebgi import Scraper as AnatEbgi
 
 
 SCRAPERS = [
@@ -53,4 +59,10 @@ SCRAPERS = [
     NightGallery,
     ThePit,
     BLUM,
+    GagosianBH,
+    EighteenthStreet,
+    HumanResources,
+    FrancoisGhebaly,
+    CommonwealthCouncil,
+    AnatEbgi,
 ]

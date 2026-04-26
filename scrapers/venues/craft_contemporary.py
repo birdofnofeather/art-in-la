@@ -110,7 +110,4 @@ class Scraper(BaseScraper):
                 all_day=True,
                 url=link,
                 image=image,
-                artists=[],
-                source=self.source_label,
-                scraped_at=now_utc_iso(),
-            )
+              
