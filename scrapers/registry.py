@@ -97,6 +97,14 @@ from .venues.lisson_la import Scraper as LissonLA
 from .venues.kohn_gallery import Scraper as KohnGallery
 
 
+# --- Session 4: museum coverage ---
+from .venues.moca_geffen import Scraper as MOCAGeffen
+from .venues.skirball import Scraper as Skirball
+from .venues.benton import Scraper as Benton
+from .venues.torrance_art_museum import Scraper as TorranceArtMuseum
+from .venues.forest_lawn import Scraper as ForestLawn
+
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -180,4 +188,10 @@ SCRAPERS = [
     PaceLA,
     LissonLA,
     KohnGallery,
+    # Session 4: museums
+    MOCAGeffen,
+    Skirball,
+    Benton,
+    TorranceArtMuseum,
+    ForestLawn,
 ]
