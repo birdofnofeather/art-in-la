@@ -199,11 +199,4 @@ def main() -> int:
         "right scraping strategy can be chosen.\n\n"
         + "\n".join(sections)
     )
-    out_path = repo_root / "scrapers" / "_findings.md"
-    out_path.write_text(findings, encoding="utf-8")
-    print(f"\nWrote {out_path}", file=sys.stderr)
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+    out_path = repo_root / 

@@ -105,6 +105,8 @@ from .venues.torrance_art_museum import Scraper as TorranceArtMuseum
 from .venues.forest_lawn import Scraper as ForestLawn
 
 
+from .venues.brand_library import Scraper as BrandLibrary
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -194,4 +196,5 @@ SCRAPERS = [
     Benton,
     TorranceArtMuseum,
     ForestLawn,
+    BrandLibrary,
 ]

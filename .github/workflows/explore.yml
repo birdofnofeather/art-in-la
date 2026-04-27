@@ -51,5 +51,4 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "chore(explore): refresh venue site findings"
-          git push
+          git commit -m "chore(explo
