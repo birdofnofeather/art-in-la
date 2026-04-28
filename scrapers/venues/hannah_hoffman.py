@@ -1,4 +1,4 @@
-"""Make Room – artlogic gallery, Los Angeles."""
+"""Hannah Hoffman Gallery – Los Angeles exhibitions."""
 from __future__ import annotations
 import re
 from typing import Iterable
@@ -9,20 +9,17 @@ from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
 
-BASE = "https://makeroom.la"
+BASE = "https://hannahhoffmangallery.com"
+_NY_RE = re.compile(r"new-?york", re.I)
 MON = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
-_DATE_RE = re.compile(
-    r"(\d{1,2}\s+" + MON + r"(?:\s+\d{4})?\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?"
-    r"|\d{1,2}\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?)",
-    re.I,
-)
-_EXHB_RE = re.compile(r"/exhibitions/\d+")
+_DATE_RE = re.compile(r"(" + MON + r"\s+\d{1,2}\s*[-–]\s*" + MON + r"?\s*\d{1,2}\s+\d{4})", re.I)
+_NAV = {"/exhibitions/current/", "/exhibitions/past/", "/exhibitions/upcoming/"}
 
 
 class Scraper(BaseScraper):
-    venue_id = "make_room"
+    venue_id = "hannah_hoffman"
     events_url = BASE
-    source_label = "makeroom.la"
+    source_label = "hannahhoffmangallery.com"
 
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])
@@ -39,26 +36,25 @@ class Scraper(BaseScraper):
         soup = BeautifulSoup(html, "lxml")
         now = now_utc_iso()
         seen: set[str] = set()
-        for a in soup.find_all("a", href=_EXHB_RE):
+        for a in soup.find_all("a", href=True):
             href = a["href"]
-            if href in seen:
+            if "/exhibitions/" not in href or href in _NAV:
                 continue
-            seen.add(href)
+            if _NY_RE.search(href):
+                continue
             url = href if href.startswith("http") else BASE + href
-            title = a.get_text(separator=" ", strip=True)
+            if url in seen:
+                continue
+            seen.add(url)
+
+            txt = a.get_text(separator=" | ", strip=True)
+            m = _DATE_RE.search(txt)
+            date_str = m.group(1) if m else ""
+            title = _DATE_RE.sub("", txt).strip(" |").strip()
             if not title:
                 continue
-            container = a.parent
-            dm = None
-            for _ in range(6):
-                if container is None:
-                    break
-                dm = _DATE_RE.search(container.get_text(separator=" ", strip=True))
-                if dm:
-                    break
-                container = container.parent
-            date_str = dm.group(1) if dm else ""
             start = to_la_iso(date_str) if date_str else None
+
             yield Event(
                 id=event_id(self.venue_id, start, title),
                 venue_id=self.venue_id,

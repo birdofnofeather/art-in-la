@@ -1,4 +1,4 @@
-"""Make Room – artlogic gallery, Los Angeles."""
+"""Marian Goodman Gallery – Los Angeles exhibitions (artlogic)."""
 from __future__ import annotations
 import re
 from typing import Iterable
@@ -9,7 +9,7 @@ from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
 
-BASE = "https://makeroom.la"
+BASE = "https://www.mariangoodman.com"
 MON = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
 _DATE_RE = re.compile(
     r"(\d{1,2}\s+" + MON + r"(?:\s+\d{4})?\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?"
@@ -17,12 +17,13 @@ _DATE_RE = re.compile(
     re.I,
 )
 _EXHB_RE = re.compile(r"/exhibitions/\d+")
+_LA_RE = re.compile(r"los.angeles", re.I)
 
 
 class Scraper(BaseScraper):
-    venue_id = "make_room"
-    events_url = BASE
-    source_label = "makeroom.la"
+    venue_id = "marian_goodman"
+    events_url = f"{BASE}/exhibitions"
+    source_label = "mariangoodman.com"
 
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])
@@ -43,9 +44,12 @@ class Scraper(BaseScraper):
             href = a["href"]
             if href in seen:
                 continue
+            link_text = a.get_text(separator=" ", strip=True)
+            if not _LA_RE.search(link_text):
+                continue
             seen.add(href)
             url = href if href.startswith("http") else BASE + href
-            title = a.get_text(separator=" ", strip=True)
+            title = re.sub(r"^Los\s*Angeles\s*", "", link_text, flags=re.I).strip()
             if not title:
                 continue
             container = a.parent

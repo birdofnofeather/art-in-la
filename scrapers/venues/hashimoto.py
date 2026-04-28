@@ -1,4 +1,4 @@
-"""Make Room – artlogic gallery, Los Angeles."""
+"""Hashimoto Contemporary – artlogic gallery."""
 from __future__ import annotations
 import re
 from typing import Iterable
@@ -9,7 +9,7 @@ from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
 
-BASE = "https://makeroom.la"
+BASE = "https://hashimotocontemporary.com"
 MON = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
 _DATE_RE = re.compile(
     r"(\d{1,2}\s+" + MON + r"(?:\s+\d{4})?\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?"
@@ -20,9 +20,9 @@ _EXHB_RE = re.compile(r"/exhibitions/\d+")
 
 
 class Scraper(BaseScraper):
-    venue_id = "make_room"
+    venue_id = "hashimoto"
     events_url = BASE
-    source_label = "makeroom.la"
+    source_label = "hashimotocontemporary.com"
 
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])

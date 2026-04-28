@@ -1,4 +1,4 @@
-"""Make Room – artlogic gallery, Los Angeles."""
+"""Matthew Marks Gallery – Los Angeles exhibitions."""
 from __future__ import annotations
 import re
 from typing import Iterable
@@ -9,20 +9,19 @@ from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
 
-BASE = "https://makeroom.la"
+BASE = "https://matthewmarks.com"
 MON = r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
 _DATE_RE = re.compile(
-    r"(\d{1,2}\s+" + MON + r"(?:\s+\d{4})?\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?"
-    r"|\d{1,2}\s*[-–—]\s*\d{1,2}\s+" + MON + r"(?:,?\s*\d{4})?)",
+    r"through\s+(" + MON + r"\s+\d{1,2},?\s*\d{4})"
+    r"|(" + MON + r"\s+\d{1,2}\s*[-–]\s*" + MON + r"\s+\d{1,2},?\s*\d{4})",
     re.I,
 )
-_EXHB_RE = re.compile(r"/exhibitions/\d+")
 
 
 class Scraper(BaseScraper):
-    venue_id = "make_room"
-    events_url = BASE
-    source_label = "makeroom.la"
+    venue_id = "matthew_marks"
+    events_url = f"{BASE}/exhibitions/current"
+    source_label = "matthewmarks.com"
 
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])
@@ -39,26 +38,35 @@ class Scraper(BaseScraper):
         soup = BeautifulSoup(html, "lxml")
         now = now_utc_iso()
         seen: set[str] = set()
-        for a in soup.find_all("a", href=_EXHB_RE):
-            href = a["href"]
-            if href in seen:
+        for fig in soup.find_all("figure", class_="los-angeles"):
+            a = fig.find("a", href=True)
+            if not a:
                 continue
-            seen.add(href)
+            href = a["href"]
             url = href if href.startswith("http") else BASE + href
-            title = a.get_text(separator=" ", strip=True)
+            if url in seen:
+                continue
+            seen.add(url)
+
+            # Title is in a <p> tag (h1 is present but empty)
+            title = ""
+            cap = fig.find(class_=re.compile(r"caption|title", re.I)) or fig
+            for el in cap.find_all(["h1","h2","h3","h4","p","strong"]):
+                t = el.get_text(strip=True)
+                if t and not re.search(r"through|until|address|location", t, re.I):
+                    title = t
+                    break
+            if not title:
+                title = fig.get_text(strip=True)[:80]
+            title = title.strip()
             if not title:
                 continue
-            container = a.parent
-            dm = None
-            for _ in range(6):
-                if container is None:
-                    break
-                dm = _DATE_RE.search(container.get_text(separator=" ", strip=True))
-                if dm:
-                    break
-                container = container.parent
-            date_str = dm.group(1) if dm else ""
+
+            txt = fig.get_text(separator=" ", strip=True)
+            m = _DATE_RE.search(txt)
+            date_str = (m.group(1) or m.group(2)) if m else ""
             start = to_la_iso(date_str) if date_str else None
+
             yield Event(
                 id=event_id(self.venue_id, start, title),
                 venue_id=self.venue_id,

@@ -96,16 +96,21 @@ from .venues.pace_la import Scraper as PaceLA
 from .venues.lisson_la import Scraper as LissonLA
 from .venues.kohn_gallery import Scraper as KohnGallery
 
-
 # --- Session 4: museum coverage ---
 from .venues.moca_geffen import Scraper as MOCAGeffen
 from .venues.skirball import Scraper as Skirball
 from .venues.benton import Scraper as Benton
 from .venues.torrance_art_museum import Scraper as TorranceArtMuseum
 from .venues.forest_lawn import Scraper as ForestLawn
-
-
 from .venues.brand_library import Scraper as BrandLibrary
+
+# --- Session 5: gallery expansion ---
+from .venues.matthew_marks import Scraper as MatthewMarks
+from .venues.hannah_hoffman import Scraper as HannahHoffman
+from .venues.make_room import Scraper as MakeRoom
+from .venues.hashimoto import Scraper as Hashimoto
+from .venues.marian_goodman import Scraper as MarianGoodman
+from .venues.pieter import Scraper as Pieter
 
 SCRAPERS = [
     LACMA,
@@ -197,4 +202,11 @@ SCRAPERS = [
     TorranceArtMuseum,
     ForestLawn,
     BrandLibrary,
+    # Session 5: gallery expansion
+    MatthewMarks,
+    HannahHoffman,
+    MakeRoom,
+    Hashimoto,
+    MarianGoodman,
+    Pieter,
 ]
