@@ -225,4 +225,11 @@ class Scraper(BaseScraper):
                 start=start,
                 end=None,
                 all_day=False,
-                url=u
+                url=url,
+                image=image,
+                location_override=location_label,
+                source=self.source_label,
+                scraped_at=now_utc_iso(),
+            )
+            out.append(ev)
+        return out

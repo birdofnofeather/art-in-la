@@ -16,4 +16,5 @@ class Scraper(BaseScraper):
 
     def custom_parse(self, html, base_url):
         # JS-rendered site — no accessible server-side content.
-        # Awaiting Playwright implementation.
+        # Awaiting Playwright implementation.
+        return []

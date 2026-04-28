@@ -16,4 +16,5 @@ class Scraper(BaseScraper):
     events_url = ""   # disabled — no separate WeHo feed available
     source_label = "hauserwirth.com"
 
-    def custom_parse(self, html, base_url):
+    def custom_parse(self, html, base_url):
+        return []

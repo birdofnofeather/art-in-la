@@ -142,4 +142,9 @@ class Scraper(BaseScraper):
             event_type=infer_type(f"{title} {category}", desc),
             start=start,
             end=None,
-            all_
+            all_day=False,
+            url=href,
+            image=image,
+            source=self.source_label,
+            scraped_at=now_utc_iso(),
+        )
