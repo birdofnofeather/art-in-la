@@ -4162,6 +4162,22 @@
     "scraped_at": "2026-04-29T09:06:45+00:00"
   },
   {
+    "id": "moca_grand-2025-03-30-diary-of-flowers-artists-and-their-world-b7d9b0205d",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-30T00:00:00-07:00",
+    "end": "2026-03-30T00:00:00-07:00",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-04-30T09:08:37+00:00"
+  },
+  {
     "id": "getty_center-2025-04-08-what-they-saw-historical-photobooks-by-w-2dbb23715d",
     "venue_id": "getty_center",
     "title": "What They Saw: Historical Photobooks by Women, 1843â1999",
@@ -4724,6 +4740,38 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-04-29T09:06:45+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-30-fictions-of-displayexh-30c776b2ab",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-30T00:00:00-07:00",
+    "end": "2026-01-30T00:00:00-08:00",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-04-30T09:08:37+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-30-moca-focus-takako-yamaguchiexh-29b6bc7166",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-30T00:00:00-07:00",
+    "end": "2026-01-30T00:00:00-08:00",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-04-30T09:08:37+00:00"
   },
   {
     "id": "getty_center-2025-07-01-lines-of-connection-drawing-and-printmak-fd24cfecb1",
