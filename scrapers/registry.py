@@ -121,6 +121,10 @@ from .venues.art_practice import Scraper as ArtPractice
 from .venues.calarts import Scraper as CalArts
 from .venues.lamag import Scraper as LAMAG
 
+# --- Session 8: institution expansion ---
+from .venues.sciarc import Scraper as SciArc
+from .venues.sparc import Scraper as SPARC
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -225,4 +229,7 @@ SCRAPERS = [
     ArtPractice,
     CalArts,
     LAMAG,
+    # Session 8: institution expansion
+    SciArc,
+    SPARC,
 ]

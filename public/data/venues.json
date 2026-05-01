@@ -2724,5 +2724,27 @@
     "website": "https://calarts.edu",
     "instagram": "@calarts",
     "type": "university"
+  },
+  {
+    "id": "sciarc",
+    "name": "SCI-Arc Gallery",
+    "address": "960 E 3rd St, Los Angeles, CA 90013",
+    "neighborhood": "Arts District",
+    "lat": 34.0404,
+    "lng": -118.2296,
+    "website": "https://www.sciarc.edu",
+    "instagram": "@sciarc",
+    "type": "university"
+  },
+  {
+    "id": "sparc",
+    "name": "SPARC (Social and Public Art Resource Center)",
+    "address": "685 Venice Blvd, Venice, CA 90291",
+    "neighborhood": "Venice",
+    "lat": 33.9939,
+    "lng": -118.4508,
+    "website": "https://sparcinla.org",
+    "instagram": "@sparc_la",
+    "type": "nonprofit"
   }
 ]
