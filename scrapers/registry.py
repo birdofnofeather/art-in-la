@@ -124,6 +124,9 @@ from .venues.lamag import Scraper as LAMAG
 # --- Session 8: institution expansion ---
 from .venues.sciarc import Scraper as SciArc
 from .venues.sparc import Scraper as SPARC
+from .venues.beyond_baroque import BeyondBaroqueScraper as BeyondBaroque
+from .venues.corita_art_center import CoritaArtCenterScraper as CoritaArtCenter
+from .venues.la_plaza import LaPlazaScraper as LaPlaza
 
 SCRAPERS = [
     LACMA,
@@ -232,4 +235,8 @@ SCRAPERS = [
     # Session 8: institution expansion
     SciArc,
     SPARC,
+    # Session 9: community / literary spaces
+    BeyondBaroque,
+    CoritaArtCenter,
+    LaPlaza,
 ]

@@ -2746,5 +2746,38 @@
     "website": "https://sparcinla.org",
     "instagram": "@sparc_la",
     "type": "nonprofit"
+  },
+  {
+    "id": "beyond_baroque",
+    "name": "Beyond Baroque / Mike Kelley Gallery",
+    "address": "681 Venice Blvd, Venice, CA 90291",
+    "neighborhood": "Venice",
+    "lat": 33.9937,
+    "lng": -118.4575,
+    "website": "https://beyondbaroque.org/",
+    "instagram": "@beyondbaroque",
+    "type": "literary_arts_center"
+  },
+  {
+    "id": "corita_art_center",
+    "name": "Corita Art Center",
+    "address": "2700 Waverly Dr, Los Angeles, CA 90039",
+    "neighborhood": "Los Feliz",
+    "lat": 34.1081,
+    "lng": -118.2719,
+    "website": "https://www.corita.org/",
+    "instagram": "@coritaartcenter",
+    "type": "art_center"
+  },
+  {
+    "id": "la_plaza",
+    "name": "LA Plaza de Cultura y Artes",
+    "address": "501 N Main St, Los Angeles, CA 90012",
+    "neighborhood": "Downtown",
+    "lat": 34.0598,
+    "lng": -118.2388,
+    "website": "https://lapca.org/",
+    "instagram": "@laplaza_ca",
+    "type": "cultural_center"
   }
 ]
