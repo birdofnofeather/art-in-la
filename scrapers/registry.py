@@ -112,6 +112,10 @@ from .venues.hashimoto import Scraper as Hashimoto
 from .venues.marian_goodman import Scraper as MarianGoodman
 from .venues.pieter import Scraper as Pieter
 
+# --- Session 6: museum coverage ---
+from .venues.museum_of_tolerance import Scraper as MuseumOfTolerance
+from .venues.pacific_asia_museum import Scraper as PacificAsiaMuseum
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -209,4 +213,7 @@ SCRAPERS = [
     Hashimoto,
     MarianGoodman,
     Pieter,
+    # Session 6: museum coverage
+    MuseumOfTolerance,
+    PacificAsiaMuseum,
 ]

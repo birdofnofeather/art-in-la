@@ -962,8 +962,8 @@
   },
   {
     "id": "sprueth_magers",
-    "name": "Sprüth Magers Los Angeles",
-    "short_name": "Sprüth Magers",
+    "name": "Spr\u00fcth Magers Los Angeles",
+    "short_name": "Spr\u00fcth Magers",
     "type": "gallery",
     "description": "Miracle Mile gallery representing a pioneering international program of contemporary artists.",
     "website": "https://spruethmagers.com",
@@ -1239,7 +1239,7 @@
   },
   {
     "id": "francois_ghebaly",
-    "name": "François Ghebaly",
+    "name": "Fran\u00e7ois Ghebaly",
     "short_name": "Ghebaly",
     "type": "gallery",
     "description": "Adventurous contemporary gallery representing emerging and established international artists across diverse media.",
@@ -1256,8 +1256,8 @@
   },
   {
     "id": "chateau_shatto",
-    "name": "Château Shatto",
-    "short_name": "Château Shatto",
+    "name": "Ch\u00e2teau Shatto",
+    "short_name": "Ch\u00e2teau Shatto",
     "type": "gallery",
     "description": "Downtown gallery presenting a rigorous international program with a focus on emerging contemporary practices.",
     "website": "https://chateaushatto.com",
@@ -1273,8 +1273,8 @@
   },
   {
     "id": "moran_moran",
-    "name": "Morán Morán",
-    "short_name": "Morán Morán",
+    "name": "Mor\u00e1n Mor\u00e1n",
+    "short_name": "Mor\u00e1n Mor\u00e1n",
     "type": "gallery",
     "description": "West Hollywood gallery with a program centered on emerging international and LA-based contemporary artists.",
     "website": "https://moranmorangallery.com",
@@ -1653,7 +1653,7 @@
     "name": "REDCAT",
     "short_name": "REDCAT",
     "type": "alternative",
-    "description": "Roy and Edna Disney/CalArts Theater — a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
+    "description": "Roy and Edna Disney/CalArts Theater \u2014 a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
     "website": "https://www.redcat.org",
     "events_url": "https://www.redcat.org/events",
     "address": "631 W 2nd St, Los Angeles, CA 90012",
@@ -2225,8 +2225,8 @@
   },
   {
     "id": "luna_anais",
-    "name": "Luna Anaís Gallery",
-    "short_name": "Luna Anaís",
+    "name": "Luna Ana\u00eds Gallery",
+    "short_name": "Luna Ana\u00eds",
     "type": "gallery",
     "description": "Boyle Heights gallery focused on contemporary Latinx and emerging artists.",
     "website": "https://www.lunaanaisgallery.com",
@@ -2449,7 +2449,7 @@
     "name": "Bergamot Station",
     "short_name": "Bergamot Station",
     "type": "community",
-    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces — a longtime anchor of the Westside scene.",
+    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces \u2014 a longtime anchor of the Westside scene.",
     "website": "https://bergamotstation.com",
     "events_url": "https://bergamotstation.com/events",
     "address": "2525 Michigan Ave, Santa Monica, CA 90404",
@@ -2582,7 +2582,7 @@
   },
   {
     "id": "lgdr",
-    "name": "Lévy Gorvy Dayan (LA)",
+    "name": "L\u00e9vy Gorvy Dayan (LA)",
     "short_name": "LGDR",
     "type": "gallery",
     "description": "Blue-chip gallery with a program spanning modern masters and contemporary luminaries.",
@@ -2646,6 +2646,61 @@
     "neighborhood": "Santa Monica",
     "socials": {
       "instagram": "https://instagram.com/galleryluisotti"
+    }
+  },
+  {
+    "id": "museum_of_tolerance",
+    "name": "Museum of Tolerance",
+    "short_name": "Museum of Tolerance",
+    "type": "museum",
+    "description": "Museum dedicated to the history of racism and prejudice in America, anchored by an immersive Holocaust exhibition.",
+    "website": "https://museumoftolerance.com",
+    "events_url": "https://museumoftolerance.com/events",
+    "address": "9786 W Pico Blvd, Los Angeles, CA 90035",
+    "lat": 34.0535,
+    "lng": -118.4113,
+    "region": "westside",
+    "neighborhood": "Pico-Robertson",
+    "socials": {
+      "instagram": "https://instagram.com/museumoftolerance",
+      "facebook": "https://facebook.com/museumoftolerance"
+    }
+  },
+  {
+    "id": "pacific_asia_museum",
+    "name": "Pacific Asia Museum",
+    "short_name": "Pacific Asia Museum",
+    "type": "museum",
+    "description": "USC-affiliated museum in Pasadena dedicated to art and culture of Asia and the Pacific Islands.",
+    "website": "https://pacificasiamuseum.usc.edu",
+    "events_url": "https://pacificasiamuseum.usc.edu/exhibitions/",
+    "address": "46 N Los Robles Ave, Pasadena, CA 91101",
+    "lat": 34.1461,
+    "lng": -118.1488,
+    "region": "pasadena",
+    "neighborhood": "Pasadena",
+    "socials": {
+      "instagram": "https://instagram.com/pacificasiamuseum",
+      "facebook": "https://facebook.com/PacificAsiaMuseum"
+    }
+  },
+  {
+    "id": "natural_history_museum",
+    "name": "Natural History Museum of Los Angeles County",
+    "short_name": "NHM",
+    "type": "museum",
+    "description": "One of the largest natural and historical museums in the western US, with art, culture, and science collections.",
+    "website": "https://nhmlac.org",
+    "events_url": "https://nhmlac.org/exhibitions",
+    "address": "900 Exposition Blvd, Los Angeles, CA 90007",
+    "lat": 34.0175,
+    "lng": -118.2882,
+    "region": "central",
+    "neighborhood": "Exposition Park",
+    "socials": {
+      "instagram": "https://instagram.com/nhmlac",
+      "twitter": "https://twitter.com/NHMLAC",
+      "facebook": "https://facebook.com/NHMLAorg"
     }
   }
 ]
