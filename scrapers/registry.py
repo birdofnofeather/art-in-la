@@ -116,6 +116,11 @@ from .venues.pieter import Scraper as Pieter
 from .venues.museum_of_tolerance import Scraper as MuseumOfTolerance
 from .venues.pacific_asia_museum import Scraper as PacificAsiaMuseum
 
+# --- Session 7: institution expansion ---
+from .venues.art_practice import Scraper as ArtPractice
+from .venues.calarts import Scraper as CalArts
+from .venues.lamag import Scraper as LAMAG
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -216,4 +221,8 @@ SCRAPERS = [
     # Session 6: museum coverage
     MuseumOfTolerance,
     PacificAsiaMuseum,
+    # Session 7: institution expansion
+    ArtPractice,
+    CalArts,
+    LAMAG,
 ]

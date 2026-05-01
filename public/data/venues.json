@@ -2702,5 +2702,27 @@
       "twitter": "https://twitter.com/NHMLAC",
       "facebook": "https://facebook.com/NHMLAorg"
     }
+  },
+  {
+    "id": "art_practice",
+    "name": "Art + Practice",
+    "address": "3401 W 43rd Pl, Los Angeles, CA 90008",
+    "neighborhood": "Leimert Park",
+    "lat": 34.0045,
+    "lng": -118.3389,
+    "website": "https://artandpractice.org",
+    "instagram": "@artandpractice",
+    "type": "nonprofit"
+  },
+  {
+    "id": "calarts",
+    "name": "California Institute of the Arts (CalArts)",
+    "address": "24700 McBean Pkwy, Valencia, CA 91355",
+    "neighborhood": "Valencia",
+    "lat": 34.3914,
+    "lng": -118.5626,
+    "website": "https://calarts.edu",
+    "instagram": "@calarts",
+    "type": "university"
   }
 ]
