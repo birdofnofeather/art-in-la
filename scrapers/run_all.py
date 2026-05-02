@@ -66,8 +66,8 @@ def main(argv=None) -> int:
         print(f"→ {inst.venue_id} ({cls.__module__})")
         try:
             events = inst.run()
-        except Exception as e:  # never let one bad scraper kill the run
-            print(f"  [{inst.venue_id}] unhandled exception: {e}", file=sys.stderr)
+        except BaseException as e:  # never let one bad scraper kill the run (catches SystemExit too)
+            print(f"  [{inst.venue_id}] unhandled exception: {type(e).__name__}: {e}", file=sys.stderr)
             events = []
         print(f"  {len(events)} events")
         all_new.extend(events)
@@ -99,5 +99,4 @@ def main(argv=None) -> int:
     return 0
 
 
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __na

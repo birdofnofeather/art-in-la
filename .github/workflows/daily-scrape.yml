@@ -44,10 +44,10 @@ jobs:
             exit 0
           fi
           git commit -m "chore(data): daily scrape $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
           git push
 
       - name: Trigger deploy
         if: success()
         uses: peter-evans/repository-dispatch@v3
-        with:
-          event-type: data-updated
+        w
