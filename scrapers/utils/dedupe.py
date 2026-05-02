@@ -33,5 +33,6 @@ def dedupe(events: Iterable[dict]) -> list[dict]:
         incumbent = best.get(eid)
         if incumbent is None or _score(ev) > _score(incumbent):
             best[eid] = ev
-    # stable order: by start then title
-    return sorted(best.values(), key=lambda e: (e.get("start") or "", e.get("title") or ""))
+    # stable order: by start then title; normalise datetime → str defensively
+    def _sort_key(e):
+        start = e.get("start") 

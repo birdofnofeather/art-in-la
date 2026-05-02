@@ -70,7 +70,13 @@ class Event:
     scraped_at: str = ""
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        # Scrapers may pass datetime objects instead of ISO strings — normalise here.
+        for key in ("start", "end", "scraped_at"):
+            val = d.get(key)
+            if isinstance(val, datetime):
+                d[key] = val.isoformat()
+        return d
 
 
 class BaseScraper:
@@ -461,14 +467,4 @@ def _type_matches(t) -> bool:
 def _jsonld_type_hint(obj: dict) -> str:
     t = obj.get("@type", "")
     if isinstance(t, list):
-        t = t[0] if t else ""
-    tl = str(t).lower()
-    if "screen" in tl:
-        return "screening"
-    if "educat" in tl:
-        return "workshop"
-    if "exhibition" in tl:
-        return "exhibition"
-    if "festival" in tl:
-        return "fair"
-    return "other"
+        t
