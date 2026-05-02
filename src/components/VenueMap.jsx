@@ -19,7 +19,7 @@ function makeIcon(type, eventful) {
   });
 }
 
-export default function VenueMap({ venues, eventfulIds }) {
+export default function VenueMap({ venues, eventfulIds, onlyEventful, setOnlyEventful }) {
   // Avoid recreating icons for every render
   const iconCache = useMemo(() => new Map(), []);
   const iconFor = (v) => {
@@ -82,7 +82,7 @@ export default function VenueMap({ venues, eventfulIds }) {
             </Marker>
           ))}
       </MapContainer>
-      <div className="flex flex-wrap items-center gap-3 px-4 py-3 text-xs text-ink/60">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 text-xs text-ink/60">
         <span className="font-semibold uppercase tracking-wider">Legend</span>
         {Object.entries(TYPE_LABEL).map(([k, label]) => (
           <span key={k} className="inline-flex items-center gap-1.5">
@@ -96,8 +96,4 @@ export default function VenueMap({ venues, eventfulIds }) {
         <span className="inline-flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-full bg-amber-500" />
           Has upcoming event
-        </span>
-      </div>
-    </div>
-  );
-}
+      

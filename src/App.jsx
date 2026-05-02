@@ -49,8 +49,11 @@ export default function App() {
   );
   const eventfulIds = useMemo(() => eventfulVenueIds(upcomingEvents), [upcomingEvents]);
 
-  // Map view shows only eventful venues; Venues tab shows the full database.
-  const eventfulFilter = tab === "map";
+  // Map filter toggle — default ON (show only venues with upcoming events).
+  const [mapOnlyEventful, setMapOnlyEventful] = useState(true);
+
+  // Map view respects the toggle; Venues tab always shows the full database.
+  const eventfulFilter = tab === "map" && mapOnlyEventful;
 
   const filteredVenues = useMemo(
     () => filterVenues(data.venues, {
@@ -130,7 +133,12 @@ export default function App() {
             />
 
             {tab === "map" && (
-              <VenueMap venues={filteredVenues} eventfulIds={eventfulIds} />
+              <VenueMap
+                venues={filteredVenues}
+                eventfulIds={eventfulIds}
+                onlyEventful={mapOnlyEventful}
+                setOnlyEventful={setMapOnlyEventful}
+              />
             )}
             {tab === "events" && (
               <>
@@ -167,15 +175,4 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
-        Venue and event data is community-maintained.
-        Map tiles © OpenStreetMap contributors · CARTO.
-        {" "}
-        <a href="https://github.com/birdofnofeather/art-in-la" className="underline">
-          Contribute on GitHub
-        </a>
-        .
-      </footer>
-    </div>
-  );
-}
+      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 m

@@ -1,6 +1,10 @@
 """
 LA Plaza de Cultura y Artes - lapca.org
 WordPress site with custom exhibitions and programs list widgets.
+
+Rules enforced here:
+  - Programs (one-off events): only yield if an explicit time is in the source.
+  - Exhibitions (all_day=True): date range only, no time required.
 """
 from __future__ import annotations
 
@@ -33,7 +37,8 @@ _RANGE_RE = re.compile(
 )
 
 
-def _parse_date(text, time_text=""):
+def _parse_date(text, time_text="", require_time=False):
+    """Return datetime only if a date is found; require explicit time when require_time=True."""
     m = _DATE_RE.search(text)
     if not m:
         return None
@@ -41,8 +46,14 @@ def _parse_date(text, time_text=""):
     if not month:
         return None
     day, year = int(m.group(2)), int(m.group(3))
-    hour, minute = 12, 0
-    tm = _TIME_RE.search(time_text or text)
+
+    tm = _TIME_RE.search(time_text) if time_text else None
+    if not tm:
+        tm = _TIME_RE.search(text)
+    if require_time and not tm:
+        return None  # no explicit time in source → skip this event
+
+    hour, minute = 0, 0
     if tm:
         hour, minute = int(tm.group(1)), int(tm.group(2))
         if tm.group(3).lower() == "pm" and hour != 12:
@@ -76,10 +87,9 @@ class LaPlazaScraper(BaseScraper):
     drop_exhibitions = False
 
     def _strategy_custom(self):
-        # Scrape exhibitions
         from scrapers.utils.http import get
-        
-        # Exhibitions page
+
+        # --- Exhibitions ---
         resp = get("https://lapca.org/exhibitions/")
         if resp and resp.ok:
             soup = BeautifulSoup(resp.text, "html.parser")
@@ -95,7 +105,6 @@ class LaPlazaScraper(BaseScraper):
                 title = title_el.get_text(strip=True)
                 if not title or title in seen:
                     continue
-                # Check for permanent exhibitions
                 text = card.get_text(" ", strip=True)
                 if "Permanent" in text:
                     continue
@@ -120,7 +129,7 @@ class LaPlazaScraper(BaseScraper):
                     scraped_at=now_utc_iso(),
                 )
 
-        # Upcoming programs page
+        # --- Upcoming programs ---
         resp = get("https://lapca.org/upcoming-programs/")
         if resp and resp.ok:
             soup = BeautifulSoup(resp.text, "html.parser")
@@ -146,14 +155,15 @@ class LaPlazaScraper(BaseScraper):
                 if meta:
                     divs = meta.find_all("div", recursive=False)
                     # divs[0] = venue, divs[1] = date, divs[2] = time
-                    if len(divs) >= 2:
-                        date_text = divs[1].get_text(strip=True) if len(divs) > 1 else ""
-                        time_text = divs[2].get_text(strip=True) if len(divs) > 2 else ""
+                    if len(divs) > 1:
+                        date_text = divs[1].get_text(strip=True)
+                    if len(divs) > 2:
+                        time_text = divs[2].get_text(strip=True)
                 if not date_text:
-                    full = item.get_text(" ", strip=True)
-                    date_text = full
+                    date_text = item.get_text(" ", strip=True)
 
-                start = _parse_date(date_text, time_text)
+                # Require an explicit time — skip programs listed date-only.
+                start = _parse_date(date_text, time_text, require_time=True)
                 if not start or start < _TODAY:
                     continue
 

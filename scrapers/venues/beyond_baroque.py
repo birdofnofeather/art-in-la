@@ -40,6 +40,7 @@ _TODAY = datetime.today()
 
 
 def _parse_event_date(text):
+    """Return datetime only if BOTH a date AND explicit time are found in the source."""
     m = _EVENT_DATE_RE.search(text)
     if not m:
         return None
@@ -47,14 +48,17 @@ def _parse_event_date(text):
     if not month:
         return None
     day, year = int(m.group(2)), int(m.group(3))
-    hour, minute = 19, 0
+
+    # Require an explicit time — do not assume or default.
     tm = _TIME_RE.search(text)
-    if tm:
-        hour, minute = int(tm.group(1)), int(tm.group(2))
-        if tm.group(3).upper() == "PM" and hour != 12:
-            hour += 12
-        elif tm.group(3).upper() == "AM" and hour == 12:
-            hour = 0
+    if not tm:
+        return None  # no explicit time → skip this event
+
+    hour, minute = int(tm.group(1)), int(tm.group(2))
+    if tm.group(3).upper() == "PM" and hour != 12:
+        hour += 12
+    elif tm.group(3).upper() == "AM" and hour == 12:
+        hour = 0
     try:
         return datetime(year, month, day, hour, minute)
     except ValueError:
