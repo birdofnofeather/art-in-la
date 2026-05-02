@@ -10,10 +10,8 @@ async function loadJSON(name) {
 }
 
 export async function loadAll() {
-  const [venues, events, archive] = await Promise.all([
+  const [venues, events, archive, scrapedVenues] = await Promise.all([
     loadJSON("venues"),
     loadJSON("events"),
     loadJSON("archive"),
-  ]);
-  return { venues, events, archive };
-}
+    loadJSON("scraped_venues").

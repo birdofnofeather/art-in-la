@@ -1,74 +1,33 @@
 import React from "react";
-import { MODES } from "../lib/constants.js";
 
-export default function Header({ tab, setTab, mode, setMode, stats }) {
-  const tabs = [
-    { key: "map", label: "Map" },
-    { key: "events", label: "Events" },
-    { key: "venues", label: "Venues" },
-    { key: "archive", label: "Archive" },
-  ];
+const TABS = [
+  { key: "map",     label: "Map" },
+  { key: "events",  label: "Events" },
+  { key: "venues",  label: "Venues" },
+  { key: "archive", label: "Archive" },
+];
 
-  // Helpful copy that swaps with mode.
-  const subtitleEvents =
-    "Upcoming events at museums, galleries, and community art spaces across Los Angeles County";
-  const subtitleExhibitions =
-    "Current and upcoming exhibitions at museums, galleries, and community art spaces across Los Angeles County";
-
+export default function Header({ tab, setTab, stats }) {
   return (
-    <header className="border-b border-black/10 bg-white">
+    <header className="border-b border-black/10 bg-white sticky top-0 z-50">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 md:px-6">
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           <h1 className="font-display text-2xl font-extrabold leading-none tracking-tight">
-            <span>Art in LA</span>
-            <span className="mx-3 text-ink/30">|</span>
-            <span className="inline-flex items-center gap-1 align-middle">
-              {MODES.map((m, i) => {
-                const active = (mode || "events") === m.key;
-                return (
-                  <React.Fragment key={m.key}>
-                    {i > 0 && (
-                      <span aria-hidden className="px-1 text-ink/30 font-medium">/</span>
-                    )}
-                    <button
-                      type="button"
-                      onClick={() => setMode && setMode(m.key)}
-                      aria-pressed={active}
-                      className={
-                        active
-                          ? "rounded-md bg-ink px-2 py-1 text-white shadow-sm"
-                          : "rounded-md px-2 py-1 text-ink/50 hover:text-ink hover:bg-black/5"
-                      }
-                    >
-                      {m.label}
-                    </button>
-                  </React.Fragment>
-                );
-              })}
-            </span>
+            Art in LA
           </h1>
-          <p className="mt-1 text-xs text-ink/60">
-            {(mode || "events") === "exhibitions" ? subtitleExhibitions : subtitleEvents}
+          <p className="mt-1 text-xs text-ink/60 truncate">
+            Art events and exhibitions across Los Angeles County
             {stats && (
-              <>
-                {" "}· {stats.venues} venues ·{" "}
-                {(mode || "events") === "exhibitions"
-                  ? `${stats.exhibitions} exhibitions`
-                  : `${stats.events} upcoming events`}
-              </>
+              <> · {stats.venues} venues · {stats.events} upcoming events · {stats.exhibitions} exhibitions</>
             )}
           </p>
         </div>
         <nav className="flex gap-1">
-          {tabs.map((t) => (
+          {TABS.map((t) => (
             <button
-              key={t.key}
-              type="button"
-              onClick={() => setTab(t.key)}
-              className={`rounded-md px-3 py-1.5 text-sm font-medium ${
-                tab === t.key
-                  ? "bg-ink text-white"
-                  : "text-ink/70 hover:bg-black/5"
+              key={t.key} type="button" onClick={() => setTab(t.key)}
+              className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+                tab === t.key ? "bg-ink text-white" : "text-ink/70 hover:bg-black/5"
               }`}
             >
               {t.label}

@@ -95,8 +95,9 @@ export const DATE_PRESETS = [
   { key: "nextweek", label: "Next week" },
   { key: "month", label: "This month" },
   { key: "all", label: "All dates" },
+  { key: "custom", label: "Custom range…" },
 ];
 
 // Day the public archive started accumulating data. Anything before this is
 // surfaced with the "Archive launched on …" notice; nothing exists before it.
-export const ARCHIVE_LAUNCH_DATE = "2026-04-25";
+ex
