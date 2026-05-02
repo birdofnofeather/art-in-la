@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 
 from scrapers.base import BaseScraper, Event, event_id
 from scrapers.utils.dateparse import now_utc_iso
+from scrapers.utils.warn import skip_warn
 
 _TODAY = datetime.today()
 
@@ -101,12 +102,15 @@ class CoritaArtCenterScraper(BaseScraper):
             if not start_el:
                 continue
 
-            start = _parse_datetime(
-                start_el.get_text(strip=True),
-                time_el.get_text(strip=True) if time_el else ""
-            )
-            # Skip if no date, no explicit time, or already past.
-            if not start or start < _TODAY:
+            date_text = start_el.get_text(strip=True)
+            time_text = time_el.get_text(strip=True) if time_el else ""
+            start = _parse_datetime(date_text, time_text)
+            if start is None:
+                # Has a date element but no parseable time — site format may have changed.
+                if _DATE_RE.search(date_text):
+                    skip_warn(self.venue_id, title, "has date but no explicit time in source")
+                continue
+            if start < _TODAY:
                 continue
 
             if "tour" in title.lower():
@@ -123,12 +127,3 @@ class CoritaArtCenterScraper(BaseScraper):
                 description=None,
                 event_type=etype,
                 start=start,
-                end=None,
-                all_day=False,
-                url=url,
-                image=None,
-                artists=[],
-                location_override=None,
-                source=self.events_url,
-                scraped_at=now_utc_iso(),
-            )

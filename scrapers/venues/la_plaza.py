@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 
 from scrapers.base import BaseScraper, Event, event_id
 from scrapers.utils.dateparse import now_utc_iso
+from scrapers.utils.warn import skip_warn
 
 _TODAY = datetime.today()
 
@@ -164,7 +165,11 @@ class LaPlazaScraper(BaseScraper):
 
                 # Require an explicit time — skip programs listed date-only.
                 start = _parse_date(date_text, time_text, require_time=True)
-                if not start or start < _TODAY:
+                if start is None:
+                    if _DATE_RE.search(date_text):
+                        skip_warn(self.venue_id, title, "has date but no explicit time in source")
+                    continue
+                if start < _TODAY:
                     continue
 
                 yield Event(
@@ -176,10 +181,4 @@ class LaPlazaScraper(BaseScraper):
                     start=start,
                     end=None,
                     all_day=False,
-                    url=url,
-                    image=None,
-                    artists=[],
-                    location_override=None,
-                    source="https://lapca.org/upcoming-programs/",
-                    scraped_at=now_utc_iso(),
-                )
+                    url=ur

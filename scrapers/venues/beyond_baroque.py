@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
 
 from scrapers.base import BaseScraper, Event, event_id
 from scrapers.utils.dateparse import now_utc_iso
+from scrapers.utils.warn import skip_warn
 
 _MONTH_ABBR = {
     "january": 1, "february": 2, "march": 3, "april": 4,
@@ -141,7 +142,12 @@ class BeyondBaroqueScraper(BaseScraper):
                     continue
                 date_str = strongs[1].get_text("\n", strip=True)
                 start = _parse_event_date(date_str)
-                if not start or start < _TODAY:
+                if start is None:
+                    # Has a date block but no parseable time — site format may have changed.
+                    if _EVENT_DATE_RE.search(date_str):
+                        skip_warn(self.venue_id, title, "has date but no explicit time in source")
+                    continue
+                if start < _TODAY:
                     continue
                 a_tag = tag.find("a", href=re.compile(r"eventbrite\.com", re.I))
                 url = a_tag["href"] if a_tag else self.events_url
@@ -189,13 +195,4 @@ class BeyondBaroqueScraper(BaseScraper):
                     title=title,
                     description=None,
                     event_type="exhibition",
-                    start=start or _TODAY,
-                    end=end,
-                    all_day=True,
-                    url=url,
-                    image=None,
-                    artists=[],
-                    location_override=None,
-                    source=self.events_url,
-                    scraped_at=now_utc_iso(),
-                )
+         

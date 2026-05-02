@@ -17,6 +17,7 @@ from pathlib import Path
 from .registry import SCRAPERS
 from .utils.dedupe import dedupe
 from .utils.archive import split
+from .utils.warn import get_warnings, clear as clear_warnings
 
 
 HERE = Path(__file__).resolve().parent
@@ -25,6 +26,7 @@ DATA_DIR = ROOT / "public" / "data"
 EVENTS_FILE = DATA_DIR / "events.json"
 ARCHIVE_FILE = DATA_DIR / "archive.json"
 VENUES_FILE = DATA_DIR / "venues.json"
+WARNINGS_FILE = DATA_DIR / "warnings.json"
 
 
 def load_json(path: Path, default):
@@ -89,15 +91,9 @@ def main(argv=None) -> int:
     print(f"Archived now:   {len(past)} new past events")
     print(f"Archive total:  {len(archive_combined)}")
 
-    if args.dry_run:
-        print("(dry run — no files written)")
-        return 0
-
-    write_json(EVENTS_FILE, upcoming)
-    write_json(ARCHIVE_FILE, archive_combined)
-    print(f"Wrote {EVENTS_FILE.relative_to(ROOT)} and {ARCHIVE_FILE.relative_to(ROOT)}")
-    return 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+    warnings = get_warnings()
+    print()
+    if warnings:
+        print(f"Scraper warnings ({len(warnings)} events skipped due to missing date/time):")
+        for w in warnings:
+            print(f"  [{w['venue_id']}] {w['rea
