@@ -467,4 +467,14 @@ def _type_matches(t) -> bool:
 def _jsonld_type_hint(obj: dict) -> str:
     t = obj.get("@type", "")
     if isinstance(t, list):
-        t
+        t = t[0] if t else ""
+    tl = str(t).lower()
+    if "screen" in tl:
+        return "screening"
+    if "educat" in tl:
+        return "workshop"
+    if "exhibition" in tl:
+        return "exhibition"
+    if "festival" in tl:
+        return "fair"
+    return "other"
