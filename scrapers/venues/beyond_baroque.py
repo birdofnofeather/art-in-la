@@ -195,4 +195,13 @@ class BeyondBaroqueScraper(BaseScraper):
                     title=title,
                     description=None,
                     event_type="exhibition",
-         
+                    start=start or _TODAY,
+                    end=end,
+                    all_day=True,
+                    url=url,
+                    image=None,
+                    artists=[],
+                    location_override=None,
+                    source=self.events_url,
+                    scraped_at=now_utc_iso(),
+                )

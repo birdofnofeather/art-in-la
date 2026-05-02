@@ -175,4 +175,15 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 m
+      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
+        Venue and event data is community-maintained.
+        Map tiles © OpenStreetMap contributors · CARTO.
+        {" "}
+        <a href="https://github.com/birdofnofeather/art-in-la" className="underline">
+          Contribute on GitHub
+        </a>
+        .
+      </footer>
+    </div>
+  );
+}

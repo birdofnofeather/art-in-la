@@ -127,3 +127,12 @@ class CoritaArtCenterScraper(BaseScraper):
                 description=None,
                 event_type=etype,
                 start=start,
+                end=None,
+                all_day=False,
+                url=url,
+                image=None,
+                artists=[],
+                location_override=None,
+                source=self.events_url,
+                scraped_at=now_utc_iso(),
+            )

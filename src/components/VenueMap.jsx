@@ -96,4 +96,27 @@ export default function VenueMap({ venues, eventfulIds, onlyEventful, setOnlyEve
         <span className="inline-flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-full bg-amber-500" />
           Has upcoming event
-      
+        </span>
+        {/* Filter toggle */}
+        <label className="ml-auto inline-flex cursor-pointer items-center gap-2 select-none">
+          <span>{onlyEventful ? "Showing venues with events" : "Showing all venues"}</span>
+          <button
+            type="button"
+            onClick={() => setOnlyEventful(!onlyEventful)}
+            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${
+              onlyEventful ? "bg-amber-500" : "bg-ink/20"
+            }`}
+            aria-pressed={onlyEventful}
+            aria-label="Show only venues with upcoming events"
+          >
+            <span
+              className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white shadow transition-transform ${
+                onlyEventful ? "translate-x-4.5" : "translate-x-0.5"
+              }`}
+            />
+          </button>
+        </label>
+      </div>
+    </div>
+  );
+}

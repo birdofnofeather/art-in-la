@@ -96,4 +96,24 @@ def main(argv=None) -> int:
     if warnings:
         print(f"Scraper warnings ({len(warnings)} events skipped due to missing date/time):")
         for w in warnings:
-            print(f"  [{w['venue_id']}] {w['rea
+            print(f"  [{w['venue_id']}] {w['reason']}: {w['title']!r}")
+    else:
+        print("No scraper warnings.")
+
+    if args.dry_run:
+        print("(dry run — no files written)")
+        return 0
+
+    write_json(EVENTS_FILE, upcoming)
+    write_json(ARCHIVE_FILE, archive_combined)
+    write_json(WARNINGS_FILE, {
+        "generated_at": __import__("datetime").datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "count": len(warnings),
+        "warnings": warnings,
+    })
+    print(f"Wrote {EVENTS_FILE.relative_to(ROOT)}, {ARCHIVE_FILE.relative_to(ROOT)}, and {WARNINGS_FILE.relative_to(ROOT)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -181,4 +181,10 @@ class LaPlazaScraper(BaseScraper):
                     start=start,
                     end=None,
                     all_day=False,
-                    url=ur
+                    url=url,
+                    image=None,
+                    artists=[],
+                    location_override=None,
+                    source="https://lapca.org/upcoming-programs/",
+                    scraped_at=now_utc_iso(),
+                )
