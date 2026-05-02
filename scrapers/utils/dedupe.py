@@ -24,6 +24,14 @@ def _score(ev: dict) -> int:
     return score
 
 
+def _start_str(e):
+    """Return start as a sortable string, handling datetime objects defensively."""
+    start = e.get("start") or ""
+    if hasattr(start, "isoformat"):
+        return start.isoformat()
+    return str(start)
+
+
 def dedupe(events: Iterable[dict]) -> list[dict]:
     best: dict[str, dict] = {}
     for ev in events:
@@ -33,6 +41,5 @@ def dedupe(events: Iterable[dict]) -> list[dict]:
         incumbent = best.get(eid)
         if incumbent is None or _score(ev) > _score(incumbent):
             best[eid] = ev
-    # stable order: by start then title; normalise datetime → str defensively
-    def _sort_key(e):
-        start = e.get("start") 
+    # stable order: by start then title
+    return sorted(best.values(), key=lambda e: (_start_str(e), e.get("title") or ""))
