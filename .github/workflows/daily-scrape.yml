@@ -50,4 +50,5 @@ jobs:
       - name: Trigger deploy
         if: success()
         uses: peter-evans/repository-dispatch@v3
-        w
+        with:
+          event-type: data-updated
