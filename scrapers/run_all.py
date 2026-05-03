@@ -10,7 +10,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -18,15 +17,17 @@ from .registry import SCRAPERS
 from .utils.dedupe import dedupe
 from .utils.archive import split
 from .utils.warn import get_warnings, clear as clear_warnings
+from .utils.recurring import filter_recurring
 
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 DATA_DIR = ROOT / "public" / "data"
-EVENTS_FILE = DATA_DIR / "events.json"
-ARCHIVE_FILE = DATA_DIR / "archive.json"
-VENUES_FILE = DATA_DIR / "venues.json"
-WARNINGS_FILE = DATA_DIR / "warnings.json"
+EVENTS_FILE        = DATA_DIR / "events.json"
+ARCHIVE_FILE       = DATA_DIR / "archive.json"
+VENUES_FILE        = DATA_DIR / "venues.json"
+WARNINGS_FILE      = DATA_DIR / "warnings.json"
+SCRAPED_FILE       = DATA_DIR / "scraped_venues.json"
 
 
 def load_json(path: Path, default):
@@ -49,8 +50,8 @@ def main(argv=None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="Don't write files, just print a summary.")
     args = parser.parse_args(argv)
 
-    existing = load_json(EVENTS_FILE, [])
-    archive = load_json(ARCHIVE_FILE, [])
+    existing     = load_json(EVENTS_FILE,  [])
+    archive      = load_json(ARCHIVE_FILE, [])
     known_venues = {v["id"] for v in load_json(VENUES_FILE, [])}
 
     only: set[str] | None = None
@@ -58,32 +59,47 @@ def main(argv=None) -> int:
         only = {s.strip() for s in args.only.split(",") if s.strip()}
 
     all_new: list[dict] = []
+    scraped_venue_ids: list[str] = []
+
     for cls in SCRAPERS:
         inst = cls()
         if only and inst.venue_id not in only:
             continue
         if inst.venue_id not in known_venues:
-            print(f"  [warn] scraper venue_id={inst.venue_id} not in venues.json — skipping", file=sys.stderr)
+            print(f"  [warn] scraper venue_id={inst.venue_id} not in venues.json — skipping",
+                  file=sys.stderr)
             continue
         print(f"→ {inst.venue_id} ({cls.__module__})")
+        scraped_venue_ids.append(inst.venue_id)
         try:
             events = inst.run()
-        except BaseException as e:  # never let one bad scraper kill the run (catches SystemExit too)
-            print(f"  [{inst.venue_id}] unhandled exception: {type(e).__name__}: {e}", file=sys.stderr)
+        except BaseException as e:
+            print(f"  [{inst.venue_id}] unhandled exception: {type(e).__name__}: {e}",
+                  file=sys.stderr)
             events = []
         print(f"  {len(events)} events")
         all_new.extend(events)
 
-    # Merge with existing so records persist when a scraper momentarily fails.
-    # Existing records survive UNLESS the scraper for their venue returned data
-    # in this run (in which case the scraper's view is authoritative for that venue).
+    # Merge: existing records survive unless the scraper for their venue ran this time.
     producing_venues = {e["venue_id"] for e in all_new}
     carryover = [e for e in existing if e.get("venue_id") not in producing_venues]
-    combined = dedupe(carryover + all_new)
+    combined  = dedupe(carryover + all_new)
 
-    # Move past to archive.
+    # ── Filter recurring standing programmes ───────────────────────────────────
+    combined, recurring_dropped = filter_recurring(combined)
+    if recurring_dropped:
+        print(f"\nRecurring filter: dropped {len(recurring_dropped)} standing-programme events")
+        from collections import Counter
+        counts = Counter(
+            f"[{e['venue_id']}] {e['title']}" for e in recurring_dropped
+        )
+        for label, n in counts.most_common(10):
+            print(f"  {n:3d}x  {label}")
+        if len(counts) > 10:
+            print(f"  … and {len(counts) - 10} more unique titles")
+
+    # Move past events to archive.
     upcoming, past = split(combined)
-    # Merge past with existing archive, dedupe.
     archive_combined = dedupe(archive + past)
 
     print()
@@ -91,31 +107,30 @@ def main(argv=None) -> int:
     print(f"Archived now:   {len(past)} new past events")
     print(f"Archive total:  {len(archive_combined)}")
 
+    # ── Warnings (missing date/time) ───────────────────────────────────────────
     warnings = get_warnings()
     print()
     if warnings:
         print(f"Scraper warnings ({len(warnings)} events skipped due to missing date/time):")
         for w in warnings:
-            print(f"  [{w['venue_id']}] {w['reason']}: {w['title']!r}")
+            print(f"  [{w['venue_id']}] {w['reason']}: {w['title']}")
     else:
         print("No scraper warnings.")
 
     if args.dry_run:
-        print("(dry run — no files written)")
+        print("\n[dry-run] No files written.")
+        clear_warnings()
         return 0
 
-    write_json(EVENTS_FILE, upcoming)
-    write_json(ARCHIVE_FILE, archive_combined)
-    write_json(WARNINGS_FILE, {
-        "generated_at": __import__("datetime").datetime.utcnow().isoformat(timespec="seconds") + "Z",
-        "count": len(warnings),
-        "warnings": warnings,
-    })
-    # Keep scraped_venues.json in sync so the frontend coverage indicator is accurate.
-    write_json(DATA_DIR / "scraped_venues.json", [cls().venue_id for cls in SCRAPERS])
-    print(f"Wrote {EVENTS_FILE.relative_to(ROOT)}, {ARCHIVE_FILE.relative_to(ROOT)}, and {WARNINGS_FILE.relative_to(ROOT)}")
+    write_json(EVENTS_FILE,   upcoming)
+    write_json(ARCHIVE_FILE,  archive_combined)
+    write_json(WARNINGS_FILE, warnings)
+    write_json(SCRAPED_FILE,  sorted(scraped_venue_ids))
+    clear_warnings()
+
+    print(f"\nWrote {EVENTS_FILE.name} ({len(upcoming)} events)")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

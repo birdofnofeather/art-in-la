@@ -68,7 +68,7 @@ class Scraper(BaseScraper):
                 venue_id=self.venue_id,
                 title=title,
                 description="",
-                event_type=infer_type(title),
+                event_type="exhibition",
                 start=start,
                 end=start,
                 all_day=True,
