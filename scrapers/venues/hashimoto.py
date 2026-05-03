@@ -64,7 +64,7 @@ class Scraper(BaseScraper):
                 venue_id=self.venue_id,
                 title=title,
                 description="",
-                event_type="exhibition",
+                event_type=("opening" if re.search(r"\b(opening|reception|vernissage|preview)\b", title, re.I) else "exhibition"),
                 start=start,
                 end=start,
                 all_day=True,

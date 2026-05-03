@@ -56,6 +56,6 @@ class Scraper(BaseScraper):
             url=href if href.startswith("http") else (f"{BASE}{href}" if href else self.events_url)
             img=c.find("img"); image=img.get("src") if img else None
             yield Event(id=event_id(self.venue_id,start,title),venue_id=self.venue_id,
-                title=title,description="",event_type=infer_type(title,text[:200]),
+                title=title,description="",event_type=("opening" if re.search(r"(opening|reception|vernissage|preview)", title, re.I) else "exhibition"),
                 start=start,end=end,all_day=True,url=url,image=image,
                 source=self.source_label,scraped_at=now_utc_iso())
