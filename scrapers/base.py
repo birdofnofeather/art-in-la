@@ -467,4 +467,47 @@ def _parse_iso(s: Optional[str]):
 # -------- JSON-LD helpers --------
 
 def _flatten_jsonld(data) -> Iterable[dict]:
-    """Yield every dict node; JSON-LD can be a list, a @graph
+    """Yield every dict node; JSON-LD can be a list, a @graph, or nested."""
+    if isinstance(data, list):
+        for item in data:
+            yield from _flatten_jsonld(item)
+    elif isinstance(data, dict):
+        yield data
+        if "@graph" in data:
+            yield from _flatten_jsonld(data["@graph"])
+
+
+def _is_event(obj: dict) -> bool:
+    t = obj.get("@type")
+    if isinstance(t, list):
+        return any(_type_matches(x) for x in t)
+    return _type_matches(t)
+
+
+EVENT_TYPES = {
+    "event", "exhibitionevent", "exhibition", "visualartsevent",
+    "theaterevent", "screeningevent", "educationevent", "socialevent",
+    "festival", "businessevent",
+}
+
+
+def _type_matches(t) -> bool:
+    if not t:
+        return False
+    return str(t).lower().lstrip("schema:") in EVENT_TYPES
+
+
+def _jsonld_type_hint(obj: dict) -> str:
+    t = obj.get("@type", "")
+    if isinstance(t, list):
+        t = t[0] if t else ""
+    tl = str(t).lower()
+    if "screen" in tl:
+        return "screening"
+    if "educat" in tl:
+        return "workshop"
+    if "exhibition" in tl:
+        return "exhibition"
+    if "festival" in tl:
+        return "fair"
+    return "other"

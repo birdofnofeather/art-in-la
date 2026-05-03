@@ -195,4 +195,10 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           )}
 
           {vEvents.length === 0 && vExhibitions.length === 0 && (
-            <p className="text-sm text-in
+            <p className="text-sm text-ink/40 italic">No upcoming events or exhibitions tracked for this venue.</p>
+          )}
+        </div>
+      </aside>
+    </>
+  );
+}
