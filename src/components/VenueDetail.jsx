@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import { TYPE_COLOR, TYPE_LABEL, REGION_LABEL, EVENT_TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
 
+function stripHtml(text) {
+  if (!text) return "";
+  return text.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+}
+
 const SOCIAL_ORDER = ["instagram", "twitter", "bluesky", "threads", "facebook", "tiktok", "youtube"];
 const SOCIAL_LABEL = {
   instagram: "Instagram", twitter: "X / Twitter", bluesky: "Bluesky",
@@ -94,7 +99,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           {(v.description || v.address) && (
             <section>
               <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/40 mb-2">About</h3>
-              {v.description && <p className="text-sm text-ink/70 leading-relaxed">{v.description}</p>}
+              {v.description && <p className="text-sm text-ink/70 leading-relaxed">{stripHtml(v.description)}</p>}
               {v.address && <p className="text-sm text-ink/50 mt-1">{v.address}</p>}
             </section>
           )}
@@ -190,10 +195,4 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           )}
 
           {vEvents.length === 0 && vExhibitions.length === 0 && (
-            <p className="text-sm text-ink/40 italic">No upcoming events or exhibitions tracked for this venue.</p>
-          )}
-        </div>
-      </aside>
-    </>
-  );
-}
+            <p className="text-sm text-in

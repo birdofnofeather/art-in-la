@@ -51,6 +51,39 @@ LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine f
 # (date ranges) rather than one-off events.
 EXHIBITION_THRESHOLD = timedelta(hours=36)
 
+_HTML_ENTITY = {
+    "&amp;": "&", "&lt;": "<", "&gt;": ">", "&nbsp;": " ",
+    "&quot;": '"', "&#39;": "'", "&apos;": "'", "&mdash;": "—",
+    "&ndash;": "–", "&lsquo;": "'", "&rsquo;": "'",
+    "&ldquo;": "“", "&rdquo;": "”",
+}
+_ENTITY_RE = re.compile(r"&#?[a-zA-Z0-9]+;")
+
+
+def _strip_html(text: str) -> str:
+    """Remove HTML tags, decode entities, collapse whitespace."""
+    if not text:
+        return ""
+    # Remove tags (including self-closing and multi-line)
+    text = re.sub(r"<[^>]+>", " ", text, flags=re.DOTALL)
+    # Decode named + numeric entities
+    def replace_entity(m):
+        s = m.group(0)
+        if s in _HTML_ENTITY:
+            return _HTML_ENTITY[s]
+        # Numeric: &#NNN; or &#xHH;
+        try:
+            if s.startswith("&#x") or s.startswith("&#X"):
+                return chr(int(s[3:-1], 16))
+            if s.startswith("&#"):
+                return chr(int(s[2:-1]))
+        except (ValueError, OverflowError):
+            pass
+        return s
+    text = _ENTITY_RE.sub(replace_entity, text)
+    # Collapse whitespace
+    return re.sub(r"\s+", " ", text).strip()
+
 
 @dataclass
 class Event:
@@ -150,7 +183,7 @@ class BaseScraper:
             if not title:
                 continue
             desc_html = it.get("description") or ""
-            desc = re.sub(r"<[^>]+>", " ", desc_html).strip()
+            desc = _strip_html(desc_html)
             start = self._tribe_to_la_iso(it.get("start_date"))
             end = self._tribe_to_la_iso(it.get("end_date"))
             url_e = it.get("url")
@@ -231,7 +264,7 @@ class BaseScraper:
             title = entry.get("title", "").strip()
             if not title:
                 continue
-            desc = (entry.get("summary", "") or entry.get("description", "") or "").strip()
+            desc = _strip_html(entry.get("summary", "") or entry.get("description", "") or "")
             start = to_la_iso(entry.get("published") or entry.get("updated"))
             link = entry.get("link")
             yield Event(
@@ -310,7 +343,7 @@ class BaseScraper:
 
     def _event_from_jsonld(self, obj: dict) -> Event:
         title = (obj.get("name") or "").strip()
-        desc = (obj.get("description") or "").strip()
+        desc = _strip_html(obj.get("description") or "")
         start = to_la_iso(obj.get("startDate"))
         end = to_la_iso(obj.get("endDate"))
         url = obj.get("url")
@@ -360,7 +393,7 @@ class BaseScraper:
 
     def _event_from_ical(self, component) -> Event:
         title = str(component.get("summary", "")).strip()
-        desc = str(component.get("description", "")).strip()
+        desc = _strip_html(str(component.get("description", "")))
         dtstart = component.get("dtstart")
         dtend = component.get("dtend")
         start_raw = dtstart.dt if dtstart else None
@@ -434,47 +467,4 @@ def _parse_iso(s: Optional[str]):
 # -------- JSON-LD helpers --------
 
 def _flatten_jsonld(data) -> Iterable[dict]:
-    """Yield every dict node; JSON-LD can be a list, a @graph, or nested."""
-    if isinstance(data, list):
-        for item in data:
-            yield from _flatten_jsonld(item)
-    elif isinstance(data, dict):
-        yield data
-        if "@graph" in data:
-            yield from _flatten_jsonld(data["@graph"])
-
-
-def _is_event(obj: dict) -> bool:
-    t = obj.get("@type")
-    if isinstance(t, list):
-        return any(_type_matches(x) for x in t)
-    return _type_matches(t)
-
-
-EVENT_TYPES = {
-    "event", "exhibitionevent", "exhibition", "visualartsevent",
-    "theaterevent", "screeningevent", "educationevent", "socialevent",
-    "festival", "businessevent",
-}
-
-
-def _type_matches(t) -> bool:
-    if not t:
-        return False
-    return str(t).lower().lstrip("schema:") in EVENT_TYPES
-
-
-def _jsonld_type_hint(obj: dict) -> str:
-    t = obj.get("@type", "")
-    if isinstance(t, list):
-        t = t[0] if t else ""
-    tl = str(t).lower()
-    if "screen" in tl:
-        return "screening"
-    if "educat" in tl:
-        return "workshop"
-    if "exhibition" in tl:
-        return "exhibition"
-    if "festival" in tl:
-        return "fair"
-    return "other"
+    """Yield every dict node; JSON-LD can be a list, a @graph
