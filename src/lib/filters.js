@@ -176,3 +176,35 @@ export function sortEvents(events) {
     return aS - bS;
   });
 }
+
+/**
+ * Returns a proximity label for an event card:
+ *   "Now"          — event is currently in progress
+ *   "Today"        — starts today
+ *   "Tomorrow"     — starts tomorrow
+ *   "This weekend" — starts Fri/Sat/Sun within 7 days
+ *   "This week"    — starts within 7 days
+ *   null           — further away, no label needed
+ */
+export function getRelativeLabel(ev, now = new Date()) {
+  const start = parseDate(ev.start);
+  if (!start) return null;
+  const end = eventEnd(ev);
+
+  // Currently in progress (but not a long-running exhibition)
+  if (ev.event_type !== "exhibition" && end && start <= now && end >= now) {
+    return "Now";
+  }
+
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const eventDay = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+  const diffDays = Math.round((eventDay - today) / 864e5);
+
+  if (diffDays < 0) return null;
+  if (diffDays === 0) return "Today";
+  if (diffDays === 1) return "Tomorrow";
+  const dow = start.getDay(); // 0=Sun, 5=Fri, 6=Sat
+  if (diffDays <= 7 && (dow === 5 || dow === 6 || dow === 0)) return "This weekend";
+  if (diffDays <= 7) return "This week";
+  return null;
+}

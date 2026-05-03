@@ -100,4 +100,4 @@ export const DATE_PRESETS = [
 
 // Day the public archive started accumulating data. Anything before this is
 // surfaced with the "Archive launched on …" notice; nothing exists before it.
-ex
+export const ARCHIVE_LAUNCH_DATE = "2026-04-25";

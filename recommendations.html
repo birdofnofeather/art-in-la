@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ART in LA — Functionality Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --ink60: #1a181499;
+      --ink30: #1a18144d;
+      --paper: #f7f5f0;
+      --paper2: #edeae3;
+      --white: #fdfcfa;
+      --accent: oklch(55% 0.18 28);      /* terracotta */
+      --accent2: oklch(42% 0.14 260);    /* deep indigo */
+      --accent3: oklch(50% 0.14 155);    /* sage */
+      --radius: 10px;
+    }
+
+    html { font-size: 16px; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--white);
+      border-bottom: 1px solid var(--ink30);
+      padding: 28px 40px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .site-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .site-header .sub {
+      font-size: 0.8rem;
+      color: var(--ink60);
+      font-weight: 400;
+    }
+    .header-nav {
+      margin-left: auto;
+      display: flex;
+      gap: 4px;
+    }
+    .header-nav button {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      background: none;
+      color: var(--ink60);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .header-nav button:hover { background: var(--paper2); color: var(--ink); }
+    .header-nav button.active { background: var(--ink); color: var(--white); }
+
+    /* ── LAYOUT ── */
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 40px 80px;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .intro-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      border: 1px solid var(--ink30);
+    }
+    .intro-card .num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .intro-card .num.hi { color: var(--accent); }
+    .intro-card .num.med { color: var(--accent2); }
+    .intro-card .num.lo { color: var(--accent3); }
+    .intro-card p { font-size: 0.8rem; color: var(--ink60); line-height: 1.4; }
+
+    /* ── SECTION HEADER ── */
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-top: 8px;
+    }
+    .section-header h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .section-header .count {
+      font-size: 0.75rem;
+      color: var(--ink60);
+      font-weight: 500;
+    }
+
+    /* ── CATEGORY TABS ── */
+    .cat-tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .cat-tab {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--ink30);
+      background: var(--white);
+      color: var(--ink60);
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cat-tab:hover { border-color: var(--ink); color: var(--ink); }
+    .cat-tab.active { background: var(--ink); color: var(--white); border-color: var(--ink); }
+    .cat-tab .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.5;
+    }
+    .cat-tab.active .dot { opacity: 1; }
+
+    /* ── REC CARDS ── */
+    .recs-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .rec {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--ink30);
+      overflow: hidden;
+      transition: box-shadow 0.15s;
+    }
+    .rec:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+
+    .rec-header {
+      padding: 20px 24px 16px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 14px;
+      align-items: start;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .priority-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .priority-badge.high { background: oklch(94% 0.06 28); color: var(--accent); }
+    .priority-badge.med  { background: oklch(93% 0.06 260); color: var(--accent2); }
+    .priority-badge.low  { background: oklch(94% 0.06 155); color: var(--accent3); }
+
+    .rec-title-group h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .rec-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+    .tag {
+      font-size: 0.7rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 20px;
+      border: 1px solid var(--ink30);
+      color: var(--ink60);
+      background: var(--paper);
+    }
+    .tag.cat-map      { border-color: oklch(70% 0.1 200 / 60%); color: oklch(38% 0.12 200); background: oklch(96% 0.03 200); }
+    .tag.cat-filter   { border-color: oklch(70% 0.1 28 / 60%);  color: oklch(38% 0.12 28);  background: oklch(96% 0.03 28); }
+    .tag.cat-nav      { border-color: oklch(70% 0.1 260 / 60%); color: oklch(38% 0.12 260); background: oklch(96% 0.03 260); }
+    .tag.cat-events   { border-color: oklch(70% 0.1 155 / 60%); color: oklch(38% 0.12 155); background: oklch(96% 0.03 155); }
+    .tag.cat-ux       { border-color: oklch(70% 0.1 310 / 60%); color: oklch(38% 0.12 310); background: oklch(96% 0.03 310); }
+    .tag.cat-perf     { border-color: oklch(70% 0.1 80 / 60%);  color: oklch(38% 0.12 80);  background: oklch(96% 0.03 80); }
+    .tag.cat-data     { border-color: oklch(70% 0.1 340 / 60%); color: oklch(38% 0.12 340); background: oklch(96% 0.03 340); }
+
+    .rec-chevron {
+      color: var(--ink30);
+      font-size: 0.75rem;
+      margin-top: 4px;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+    }
+    .rec.open .rec-chevron { transform: rotate(180deg); }
+
+    .rec-body {
+      display: none;
+      border-top: 1px solid var(--paper2);
+      padding: 20px 24px 20px;
+      padding-left: calc(24px + 28px + 14px); /* align with title */
+    }
+    .rec.open .rec-body { display: block; }
+
+    .rec-body p {
+      font-size: 0.88rem;
+      color: var(--ink60);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .rec-body p:last-child { margin-bottom: 0; }
+
+    .rec-body strong { color: var(--ink); font-weight: 600; }
+
+    .rec-body .detail-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink30);
+      margin-bottom: 6px;
+      margin-top: 16px;
+    }
+    .rec-body .detail-label:first-child { margin-top: 0; }
+
+    .code-block {
+      background: var(--paper2);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: 'Menlo', 'Consolas', monospace;
+      font-size: 0.75rem;
+      color: var(--ink);
+      line-height: 1.6;
+      margin: 10px 0;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .impact-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .impact-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .impact-item .impact-label {
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink30);
+    }
+    .impact-item .impact-val {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .impact-item .impact-val.hi { color: var(--accent); }
+    .impact-item .impact-val.med { color: var(--accent2); }
+    .impact-item .impact-val.lo { color: var(--accent3); }
+
+    /* ── HIDDEN items ── */
+    .rec[data-hidden="true"] { display: none; }
+
+    /* ── ROADMAP ── */
+    .roadmap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .roadmap-col h4 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink30);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--paper2);
+    }
+    .roadmap-col h4.phase1 { border-color: var(--accent); }
+    .roadmap-col h4.phase2 { border-color: var(--accent2); }
+    .roadmap-col h4.phase3 { border-color: var(--accent3); }
+    .roadmap-item {
+      font-size: 0.8rem;
+      color: var(--ink60);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--paper2);
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      line-height: 1.4;
+    }
+    .roadmap-item::before {
+      content: '—';
+      color: var(--ink30);
+      flex-shrink: 0;
+      font-size: 0.7rem;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .page { padding: 24px 20px 60px; }
+      .site-header { padding: 20px; }
+      .intro { grid-template-columns: 1fr 1fr; }
+      .roadmap { grid-template-columns: 1fr; }
+      .rec-body { padding-left: 24px; }
+    }
+    @media (max-width: 480px) {
+      .intro { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>ART in LA — Functionality Review</h1>
+  <span class="sub">14 recommendations · May 2026</span>
+  <nav class="header-nav">
+    <button class="active" data-filter="all" onclick="filterCat('all', this)">All</button>
+    <button data-filter="map" onclick="filterCat('map', this)">Map</button>
+    <button data-filter="filter" onclick="filterCat('filter', this)">Filters</button>
+    <button data-filter="events" onclick="filterCat('events', this)">Events</button>
+    <button data-filter="nav" onclick="filterCat('nav', this)">Navigation</button>
+    <button data-filter="ux" onclick="filterCat('ux', this)">UX</button>
+    <button data-filter="perf" onclick="filterCat('perf', this)">Performance</button>
+    <button data-filter="data" onclick="filterCat('data', this)">Data</button>
+  </nav>
+</header>
+
+<div class="page">
+
+  <!-- Summary cards -->
+  <div class="intro">
+    <div class="intro-card">
+      <div class="num hi">5</div>
+      <p>High-priority improvements with large user-facing impact</p>
+    </div>
+    <div class="intro-card">
+      <div class="num med">6</div>
+      <p>Medium-priority quality-of-life and discoverability fixes</p>
+    </div>
+    <div class="intro-card">
+      <div class="num lo">3</div>
+      <p>Lower-priority enhancements for power users &amp; contributors</p>
+    </div>
+  </div>
+
+  <!-- Recs -->
+  <div class="section-header">
+    <h2>Recommendations</h2>
+    <span class="count" id="rec-count">14 items</span>
+  </div>
+
+  <div class="recs-grid" id="recs">
+
+    <!-- 1 -->
+    <div class="rec" data-cats="map,nav" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge high">H</span>
+        <div class="rec-title-group">
+          <h3>Map ↔ List cross-linking</h3>
+          <div class="rec-tags">
+            <span class="tag cat-map">Map</span>
+            <span class="tag cat-nav">Navigation</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The Map and Events/Venues tabs are completely siloed. A user who spots a marker on the map has no way to jump to that venue's card in the Venues tab, and a user browsing the Events list has no way to locate the venue on the map. They're forced to manually re-navigate and re-filter.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a <strong>"Show on map"</strong> button to every event and venue card. Clicking it switches to the Map tab and flies the view to that marker, then opens its popup. Conversely, add a <strong>"See events"</strong> link in each map popup that switches to the Events tab pre-filtered to that venue.</p>
+        <div class="detail-label">Implementation sketch</div>
+        <p>Lift a <code>selectedVenueId</code> state into <code>App.jsx</code>. Pass a <code>setTab</code>/<code>flyTo</code> callback down to the card components. In <code>VenueMap</code>, watch <code>selectedVenueId</code> and call <code>map.flyTo()</code> + open the marker popup via a ref map.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val hi">High</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx, VenueMap.jsx, EventList.jsx, VenueList.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="rec" data-cats="filter" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge high">H</span>
+        <div class="rec-title-group">
+          <h3>Filter state persists across tab switches</h3>
+          <div class="rec-tags">
+            <span class="tag cat-filter">Filters</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Filter state (types, regions, datePreset) is held in <code>App.jsx</code> and shared across tabs — which means selecting "Westside" on the Events tab silently restricts the Map and Venues tab too. Worse, some filters (event type, date preset) visually disappear when switching to the Venues tab, leaving users confused about why fewer results appear.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Split filter state into <strong>per-tab buckets</strong>: venue-level filters (type, region) remain shared (they're genuinely cross-tab), but event-level filters (event type, date preset, exhibition status) should be scoped to the Events tab only. This also prevents the FilterBar from showing irrelevant controls based on the active tab.</p>
+        <div class="detail-label">Bonus</div>
+        <p>Persist filter state to <code>sessionStorage</code> so that refreshing the page (e.g. after following an event link) restores where the user was.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val hi">High</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx, FilterBar.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="rec" data-cats="nav,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge high">H</span>
+        <div class="rec-title-group">
+          <h3>Shareable / deep-link URLs</h3>
+          <div class="rec-tags">
+            <span class="tag cat-nav">Navigation</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>All UI state — active tab, mode, filters, selected venue — lives entirely in React state. There is no URL to copy and share. A user who finds a great filter combination (e.g. "Eastside workshops this weekend") can't send it to a friend, and the back button doesn't navigate between views.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Encode tab, mode, and active filters into the URL hash (e.g. <code>#tab=events&mode=events&region=eastside&type=workshop&date=weekend</code>). Use a <code>useEffect</code> that writes to <code>window.location.hash</code> on state change, and a one-time initialization effect that reads from it on load. No router library needed for a single-page app of this size.</p>
+        <div class="detail-label">Implementation sketch</div>
+        <div class="code-block">// On mount: read hash → set state
+// On state change: write hash
+useEffect(() => {
+  const params = new URLSearchParams(location.hash.slice(1));
+  if (params.get('tab')) setTab(params.get('tab'));
+  if (params.get('mode')) setMode(params.get('mode'));
+  // …etc
+}, []);
+
+useEffect(() => {
+  const p = new URLSearchParams();
+  p.set('tab', tab); p.set('mode', mode);
+  if (regions.size) p.set('regions', [...regions].join(','));
+  // …etc
+  history.replaceState(null, '', '#' + p.toString());
+}, [tab, mode, regions, types, …]);</div>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val hi">High</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="rec" data-cats="map" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge high">H</span>
+        <div class="rec-title-group">
+          <h3>Map shows all venues, not just "eventful" ones</h3>
+          <div class="rec-tags">
+            <span class="tag cat-map">Map</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The Map tab currently shows only venues with upcoming one-off events (openings, workshops, etc.), silently hiding the majority of the ~150-venue database. If a user is trying to plan a neighborhood gallery walk, they'll miss venues whose exhibitions don't have a scraper-captured opening reception.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a prominent <strong>toggle on the map</strong> — "Events only / All venues" — defaulting to "Events only" (current behavior). When switched to "All venues," show the full database with muted markers for venues with no upcoming events. This is consistent with how the Venues tab works, and leverages the existing <code>eventfulFilter</code> boolean already in <code>App.jsx</code>.</p>
+        <p>This toggle could also sync with the Exhibitions mode: switching to Exhibitions mode could auto-toggle the map to show all venues that have live exhibitions (a different <code>eventfulIds</code> set computed from <code>liveExhibitions</code>).</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val hi">High</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx, VenueMap.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="rec" data-cats="events,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge high">H</span>
+        <div class="rec-title-group">
+          <h3>Event cards: add "today" / "tomorrow" / "this weekend" callouts</h3>
+          <div class="rec-tags">
+            <span class="tag cat-events">Events</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Event cards display dates as formatted strings like "Thu, May 1, 2026 · 7:00 PM" with no sense of urgency or proximity to now. Users must mentally calculate whether something is happening tonight or in three weeks.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a relative callout label alongside the date: <strong>"Today"</strong>, <strong>"Tomorrow"</strong>, <strong>"This weekend"</strong>, or <strong>"Next week"</strong> when applicable. These already have logic defined in <code>filters.js</code> (<code>resolveDatePreset</code>), so you can reuse that. Show it as a small highlighted chip next to the date, distinct from the existing type chips.</p>
+        <div class="detail-label">Also consider</div>
+        <p>A <strong>"Happening now"</strong> badge for events where <code>start &lt;= now &lt;= end</code> — especially useful for openings and performances.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val hi">High</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">EventList.jsx, filters.js</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="rec" data-cats="filter,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Filter tray is hidden by default — active filters invisible</h3>
+          <div class="rec-tags">
+            <span class="tag cat-filter">Filters</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The FilterBar collapses by default. When filters are active, the badge count (<code>activeCount > 0</code>) is shown, but users can't see <em>which</em> filters are active without opening the tray. This creates a silent filtering problem: a user who filtered to "Eastside" and then reloads or switches tabs may not realize their results are still restricted.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>When filters are active and the tray is closed, show a <strong>summary of active filter chips</strong> below the toggle button — small, read-only, dismissible pills showing what's active (e.g. "Eastside · Workshop · This weekend"). Each pill could have an × to remove that single filter without opening the tray. This is a common pattern in marketplace and event apps.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">FilterBar.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="rec" data-cats="map,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Map popups: surface upcoming events inline</h3>
+          <div class="rec-tags">
+            <span class="tag cat-map">Map</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Map popups show venue metadata (name, type, neighborhood, description, links) but no event information. A venue marker lit up as "eventful" gives no hint of what's happening or when — the user must switch tabs to find out.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Pass a filtered view of <code>upcomingEvents</code> to <code>VenueMap</code> and look up events by <code>venue_id</code> inside each popup. Show the next 1–3 events as compact rows (title + date). This requires passing event data into <code>VenueMap</code>, which currently only receives venues.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low–Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx, VenueMap.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="rec" data-cats="nav,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Events/Exhibitions mode toggle buried in header</h3>
+          <div class="rec-tags">
+            <span class="tag cat-nav">Navigation</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The Events / Exhibitions mode toggle lives inside the <code>&lt;h1&gt;</code> of the header, making it visually small, hard to discover, and semantically odd (buttons inside a heading). New users are unlikely to find it — especially on mobile where the header wraps tightly.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Move the mode toggle to be a <strong>sub-tab row</strong> visible only when the Events tab is active, rendered below or alongside the main tab nav. Alternatively, treat it as a prominent segmented control in the FilterBar area. Either way, it should look like a toggle, not inline text.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">Header.jsx, FilterBar.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="rec" data-cats="events,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Event cards: grouped by date</h3>
+          <div class="rec-tags">
+            <span class="tag cat-events">Events</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The Events list sorts by date but presents a flat grid of cards. When viewing "All dates," it's hard to tell at a glance what's happening on a specific day vs. next month — users must read every card's date individually.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Group events by day with a <strong>date section header</strong> (e.g. "Thursday, May 1 · 3 events") before each group. This is a natural pattern for event calendars and maps directly onto the existing sorted order. The grouping logic can live in <code>EventList.jsx</code> as a simple reduce over the sorted array.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">EventList.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="rec" data-cats="filter" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Custom date range picker</h3>
+          <div class="rec-tags">
+            <span class="tag cat-filter">Filters</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Date filtering offers only four fixed presets: This weekend, Next week, This month, All dates. There's no way to filter to a specific date range — e.g. "I'm visiting LA May 10–14." The <code>filterEvents</code> function in <code>filters.js</code> already accepts <code>startDate</code> and <code>endDate</code> params, but there's no UI for them.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a <strong>"Custom range"</strong> option to the date presets. When selected, reveal two native <code>&lt;input type="date"&gt;</code> fields for start and end. Wire them to the existing <code>startDate</code>/<code>endDate</code> params already supported by <code>filterEvents</code> — this is almost entirely a UI addition with minimal logic work.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">FilterBar.jsx, App.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="rec" data-cats="ux,perf" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge med">M</span>
+        <div class="rec-title-group">
+          <h3>Loading state is minimal; no skeleton UI</h3>
+          <div class="rec-tags">
+            <span class="tag cat-ux">UX</span>
+            <span class="tag cat-perf">Performance</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>While data loads, the app shows only a centered text string: "Loading data…" in a small panel. The entire UI — header, tabs, filter bar — is absent. This looks broken and creates a jarring layout shift when the data arrives.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Render the <strong>Header and FilterBar immediately</strong> (even before data loads), and show <strong>skeleton cards</strong> in place of the event/venue grid. The Leaflet map already has its own loading behavior. Skeletons are pure CSS (grey animated shimmer on placeholder divs) and dramatically improve perceived performance.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx, EventList.jsx, VenueList.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="rec" data-cats="perf" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge low">L</span>
+        <div class="rec-title-group">
+          <h3>Lazy-load the Leaflet map bundle</h3>
+          <div class="rec-tags">
+            <span class="tag cat-perf">Performance</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Leaflet (react-leaflet + leaflet) is a sizeable dependency (~150kb gzipped) that's loaded eagerly on every page visit, even when users land on the Events or Venues tab where the map is never rendered.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Use React's <code>lazy()</code> + <code>Suspense</code> to dynamically import <code>VenueMap</code> only when the map tab is first activated. In Vite, this is a code-split point: <code>const VenueMap = lazy(() =&gt; import('./components/VenueMap.jsx'))</code>. This removes Leaflet from the initial bundle entirely.</p>
+        <div class="detail-label">Expected gain</div>
+        <p>~150kb off the initial parse cost; faster first paint on mobile networks for non-map users.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val lo">Low–Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val lo">Very Low</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">App.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="rec" data-cats="data,ux" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge low">L</span>
+        <div class="rec-title-group">
+          <h3>Venue detail view / side panel</h3>
+          <div class="rec-tags">
+            <span class="tag cat-data">Data</span>
+            <span class="tag cat-ux">UX</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>Venues are surface-level cards with no expandable detail view. A user interested in a specific gallery has to click through to the venue website to learn more — there's no way to see all of a venue's upcoming events, exhibitions, and social links in one place within the app.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a <strong>venue detail panel</strong> (slide-in drawer or expanded card state) that aggregates: venue description + address, all upcoming events for that venue, currently running exhibitions, and social/website links. This brings together the data that already exists in <code>venues.json</code> and <code>events.json</code> and makes the app feel like a real directory rather than a flat list.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">New VenueDetail.jsx, App.jsx, VenueList.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="rec" data-cats="data" onclick="toggleRec(this)">
+      <div class="rec-header">
+        <span class="priority-badge low">L</span>
+        <div class="rec-title-group">
+          <h3>Scraper coverage visibility for contributors</h3>
+          <div class="rec-tags">
+            <span class="tag cat-data">Data</span>
+          </div>
+        </div>
+        <span class="rec-chevron">▼</span>
+      </div>
+      <div class="rec-body">
+        <div class="detail-label">The problem</div>
+        <p>The Venues tab shows 150 venues, but contributors have no way to tell which venues have active scrapers vs. which are manually maintained or unscraped. The <code>scrapers/registry.py</code> list doesn't surface anywhere in the UI, making it hard for community contributors to identify gaps.</p>
+        <div class="detail-label">Suggested fix</div>
+        <p>Add a <strong>"No scraper"</strong> chip or indicator to venue cards (and the map popup) for venues that lack an active scraper. The scraped-venues list could be exported as a JSON array at build time (a small Vite plugin or a step in the deploy workflow) and loaded alongside <code>venues.json</code>. This directly supports the contributing workflow described in <code>CONTRIBUTING.md</code>.</p>
+        <div class="impact-row">
+          <div class="impact-item"><span class="impact-label">User impact</span><span class="impact-val lo">Low (contributors)</span></div>
+          <div class="impact-item"><span class="impact-label">Effort</span><span class="impact-val med">Medium</span></div>
+          <div class="impact-item"><span class="impact-label">Files</span><span class="impact-val">scrapers/run_all.py, VenueList.jsx, VenueMap.jsx</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /recs-grid -->
+
+  <!-- Roadmap -->
+  <div class="section-header" style="margin-top: 56px;">
+    <h2>Suggested roadmap</h2>
+  </div>
+  <div class="roadmap">
+    <div class="roadmap-col">
+      <h4 class="phase1">Phase 1 — Quick wins</h4>
+      <div class="roadmap-item">Deep-link / shareable URLs (App.jsx only)</div>
+      <div class="roadmap-item">Today / tomorrow callouts on event cards</div>
+      <div class="roadmap-item">Active filter summary chips in closed tray</div>
+      <div class="roadmap-item">Lazy-load Leaflet map bundle</div>
+      <div class="roadmap-item">Skeleton loading state</div>
+    </div>
+    <div class="roadmap-col">
+      <h4 class="phase2">Phase 2 — Core UX</h4>
+      <div class="roadmap-item">Map toggle: all venues vs. events only</div>
+      <div class="roadmap-item">Upstream events into map popups</div>
+      <div class="roadmap-item">Group event list by date</div>
+      <div class="roadmap-item">Move Events/Exhibitions toggle to filter bar</div>
+      <div class="roadmap-item">Custom date range picker</div>
+    </div>
+    <div class="roadmap-col">
+      <h4 class="phase3">Phase 3 — Deeper features</h4>
+      <div class="roadmap-item">Map ↔ list cross-linking</div>
+      <div class="roadmap-item">Per-tab filter state + sessionStorage persistence</div>
+      <div class="roadmap-item">Venue detail panel / drawer</div>
+      <div class="roadmap-item">Scraper coverage indicator for contributors</div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+  function toggleRec(el) {
+    el.classList.toggle('open');
+  }
+
+  function filterCat(cat, btn) {
+    // Update nav button states
+    document.querySelectorAll('.header-nav button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Show/hide recs
+    const recs = document.querySelectorAll('.rec');
+    let visible = 0;
+    recs.forEach(rec => {
+      const cats = rec.getAttribute('data-cats').split(',');
+      const show = cat === 'all' || cats.includes(cat);
+      rec.setAttribute('data-hidden', show ? 'false' : 'true');
+      if (show) visible++;
+    });
+
+    document.getElementById('rec-count').textContent = visible + ' item' + (visible === 1 ? '' : 's');
+  }
+</script>
+
+</body>
+</html>

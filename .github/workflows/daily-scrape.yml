@@ -51,4 +51,34 @@ jobs:
           with open(summary, "a") as out:
               if not warnings:
                   out.write("## ✅ Scraper warnings: none\n\n")
-         
+                  out.write("All events had explicit dates and times.\n")
+              else:
+                  out.write(f"## ⚠️ Scraper warnings: {len(warnings)} event(s) skipped\n\n")
+                  out.write("These events were found on the venue site but could not be registered because the scraper didn't find an explicit time. Fix the scraper when the site format has changed.\n\n")
+                  out.write("| Venue | Title | Reason |\n")
+                  out.write("|-------|-------|--------|\n")
+                  for w in warnings:
+                      venue = w.get("venue_id","")
+                      title = w.get("title","").replace("|","\\|")
+                      reason = w.get("reason","").replace("|","\\|")
+                      out.write(f"| `{venue}` | {title} | {reason} |\n")
+          EOF
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "art-in-la-bot"
+          git config user.email "art-in-la-bot@users.noreply.github.com"
+          git add public/data/events.json public/data/archive.json public/data/warnings.json public/data/scraped_venues.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): daily scrape $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
+
+      - name: Trigger deploy
+        if: success()
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          event-type: data-updated

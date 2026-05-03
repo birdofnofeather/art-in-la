@@ -14,4 +14,7 @@ export async function loadAll() {
     loadJSON("venues"),
     loadJSON("events"),
     loadJSON("archive"),
-    loadJSON("scraped_venues").
+    loadJSON("scraped_venues").catch(() => []),
+  ]);
+  return { venues, events, archive, scrapedVenues };
+}
