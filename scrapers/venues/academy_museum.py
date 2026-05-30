@@ -82,10 +82,21 @@ class Scraper(BaseScraper):
             seen.add(title)
 
             slug = prog.get("slug", "")
-            url = f"{BASE}/en/programs/{slug}" if slug else self.events_url
+            url = f"{BASE}/en/programs/detail/{slug}" if slug else self.events_url
 
-            start = to_la_iso(prog.get("activeStartDate"))
-            end = to_la_iso(prog.get("activeEndDate"))
+            # activeStartDate/activeEndDate are date markers stored as midnight
+            # UTC (e.g. "2026-06-01T00:00:00.000Z"). The actual showtimes live in
+            # Ticketure and are not in this feed, so emit an all-day event on the
+            # correct local date. Pass only the YYYY-MM-DD part: converting the
+            # full midnight-UTC timestamp would shift it back into the prior evening.
+            start_raw = (prog.get("activeStartDate") or "")[:10] or None
+            end_raw = (prog.get("activeEndDate") or "")[:10] or None
+            start = to_la_iso(start_raw, all_day=True) if start_raw else None
+            end = (
+                to_la_iso(end_raw, all_day=True)
+                if end_raw and end_raw != start_raw
+                else None
+            )
 
             # Image
             image_data = prog.get("image")
@@ -104,7 +115,7 @@ class Scraper(BaseScraper):
                 event_type=infer_type(title, desc),
                 start=start,
                 end=end,
-                all_day=False,
+                all_day=True,
                 url=url,
                 image=image,
                 source=self.source_label,

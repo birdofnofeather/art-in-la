@@ -18,12 +18,26 @@ BASE = "https://www.janm.org"
 _DATE_RE = re.compile(r"/events/(\d{4}-\d{2}-\d{2})/")
 LA_OFFSET = "-07:00"
 
+# Listing cards expose the time as e.g. "3:00 PM - 4:30 PM".
+_TIME_RE = re.compile(
+    r"(\d{1,2}:\d{2}\s*[AP]\.?M\.?)\s*(?:[-–—]\s*(\d{1,2}:\d{2}\s*[AP]\.?M\.?))?",
+    re.IGNORECASE,
+)
 
-def _parse_date_text(text: str) -> str | None:
-    """Parse 'Friday, May 29, 2026' -> ISO string."""
+
+def _date_str_from_text(text: str) -> str | None:
+    """Parse 'Friday, May 29, 2026' -> 'YYYY-MM-DD' (date only)."""
     try:
-        dt = dparser.parse(text, fuzzy=True)
-        return dt.strftime(f"%Y-%m-%dT00:00:00{LA_OFFSET}")
+        return dparser.parse(text, fuzzy=True).strftime("%Y-%m-%d")
+    except Exception:
+        return None
+
+
+def _combine(date_str: str, time_str: str) -> str | None:
+    """Combine 'YYYY-MM-DD' + '3:00 PM' -> ISO with LA offset, no conversion."""
+    try:
+        dt = dparser.parse(f"{date_str} {time_str}")
+        return dt.strftime(f"%Y-%m-%dT%H:%M:00{LA_OFFSET}")
     except Exception:
         return None
 
@@ -70,14 +84,25 @@ class Scraper(BaseScraper):
                 continue
             seen.add(title)
 
-            # Date: extract from URL path first, then from text
+            # Date: extract from URL path first, then from text.
             date_m = _DATE_RE.search(href)
             if date_m:
-                start = f"{date_m.group(1)}T00:00:00{LA_OFFSET}"
+                date_str = date_m.group(1)
             else:
                 date_div = wrapper.select_one(".events-block__home-dates")
                 date_text = date_div.get_text(strip=True) if date_div else ""
-                start = _parse_date_text(date_text) if date_text else None
+                date_str = _date_str_from_text(date_text) if date_text else None
+
+            # Time: cards show e.g. "3:00 PM - 4:30 PM". Capture it as the real
+            # LA-local time (no conversion). If absent, leave the start date-only.
+            start = end = None
+            if date_str:
+                tm = _TIME_RE.search(wrapper.get_text(" ", strip=True))
+                if tm:
+                    start = _combine(date_str, tm.group(1)) or date_str
+                    end = _combine(date_str, tm.group(2)) if tm.group(2) else None
+                else:
+                    start = date_str
 
             desc_el = wrapper.select_one(".events-block__home-desc, p")
             desc = desc_el.get_text(strip=True) if desc_el else ""
@@ -96,7 +121,7 @@ class Scraper(BaseScraper):
                 description=desc[:800],
                 event_type=infer_type(title, desc),
                 start=start,
-                end=None,
+                end=end,
                 all_day=False,
                 url=url,
                 image=image,

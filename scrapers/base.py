@@ -104,11 +104,17 @@ class Event:
 
     def to_dict(self) -> dict:
         d = asdict(self)
-        # Scrapers may pass datetime objects instead of ISO strings — normalise here.
-        for key in ("start", "end", "scraped_at"):
-            val = d.get(key)
-            if isinstance(val, datetime):
-                d[key] = val.isoformat()
+        if isinstance(d.get("scraped_at"), datetime):
+            d["scraped_at"] = d["scraped_at"].isoformat()
+        # Universal normalisation: every event's start/end goes through to_la_iso
+        # regardless of which scraper produced it, so the stored value is always
+        # the correct LA-local clock time the venue displays — and a date-only
+        # listing becomes a bare date instead of a fabricated "12:00 AM".
+        d["start"] = to_la_iso(d.get("start"))
+        d["end"] = to_la_iso(d.get("end"))
+        start = d.get("start")
+        if isinstance(start, str) and "T" not in start:
+            d["all_day"] = True
         return d
 
 
@@ -439,19 +445,19 @@ class BaseScraper:
 
     @staticmethod
     def _tribe_to_la_iso(s: Optional[str]) -> Optional[str]:
-        """Tribe REST returns 'YYYY-MM-DD HH:MM:SS' in venue-local time (no offset)."""
+        """Tribe REST returns 'YYYY-MM-DD HH:MM:SS' in venue-local time.
+
+        Route through to_la_iso so wall-clock is preserved (no conversion) and a
+        midnight value collapses to a date-only string instead of a fake 00:00.
+        """
         if not s:
             return None
-        s = s.strip()
-        if "T" not in s:
-            s = s.replace(" ", "T", 1)
-        # If it doesn't carry a tz offset, attach LA time.
-        if not (s.endswith("Z") or re.search(r"[+-]\d\d:?\d\d$", s)):
-            s = s + LA_TZ_OFFSET
-        return s
+        return to_la_iso(s)
 
 
 # -------- ISO datetime helpers --------
+
+_MIDNIGHT_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})T00:00(?::00)?(?:\.\d+)?(?:Z|[+-]\d\d:?\d\d)?$")
 
 def _parse_iso(s: Optional[str]):
     if not s:

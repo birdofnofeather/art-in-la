@@ -25,7 +25,12 @@ _RECURRING_KW = re.compile(
         exhibition\s+highlights?\s+tour |
         guided\s+tour |
         collection\s+tour |
-        architecture\s+(?:and\s+garden\s+)?tour |
+        # Standing architecture / garden / gallery tours (e.g. Getty's
+        # "Art, Architecture, and Garden Tour", LACMA gallery tours). Commas and
+        # ampersands between the words are tolerated.
+        architecture[,\s]+(?:and\s+|&\s*)?garden\s+tour |
+        architecture\s+tour |
+        garden\s+tour |
         curator'?s\s+gallery\s+tour |
         docent          # covers "docent-led", "docent tour", etc.
     )\b
