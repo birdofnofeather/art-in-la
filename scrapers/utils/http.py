@@ -51,3 +51,13 @@ def get(url: str, *, timeout: int = DEFAULT_TIMEOUT, retries: int = 2,
     if last_err:
         print(f"  [http] giving up on {url}: {last_err}")
     return None
+
+
+def post_form(url: str, data: dict, *, timeout: int = DEFAULT_TIMEOUT) -> Optional[requests.Response]:
+    """POST form-encoded data. Returns None on failure."""
+    try:
+        resp = session().post(url, data=data, timeout=timeout)
+        return resp
+    except (requests.RequestException, OSError) as e:
+        print(f"  [http] POST failed on {url}: {e}")
+        return None

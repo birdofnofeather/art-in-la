@@ -17,6 +17,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,6 +34,7 @@ jobs:
 
       - name: Run scrapers
         run: python -m scrapers.run_all
+        timeout-minutes: 20
 
       - name: Post scraper warnings summary
         if: always()
@@ -65,6 +67,7 @@ jobs:
           EOF
 
       - name: Commit updated data
+        if: always()
         run: |
           git config user.name  "art-in-la-bot"
           git config user.email "art-in-la-bot@users.noreply.github.com"

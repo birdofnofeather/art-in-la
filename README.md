@@ -1,8 +1,10 @@
 # Art in LA
 
-A comprehensive, community-maintained map and calendar of visual art venues and events across Los Angeles County — museums, galleries, community spaces, and alternative venues.
+A comprehensive, community-maintained map and calendar of **museum and non-commercial art-institution** exhibitions and events across Los Angeles County — museums, community arts spaces, alternative venues, and academic galleries.
 
-- **~150 venues** across LA County with address, map coordinates, description, and social links
+> **Scope note (2026-05-30):** the project now focuses on museums and institutions only. Commercial gallery scrapers were retired to `scrapers/venues/_archived_galleries/` and gallery venues removed from the dataset.
+
+- **~80 venues** (museums + institutions) across LA County with address, map coordinates, description, and social links
 - **Interactive map** with color-coded markers by venue type, plus a toggle to show only venues with upcoming public events
 - **Filterable listings** of events and venues (by type, region, date)
 - **Automatic archive** of past events

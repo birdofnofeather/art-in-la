@@ -2,7 +2,7 @@
 
 The site reads three JSON files from `/data/`:
 
-- `venues.json` — all organizations (museums, galleries, community, alternative, academic)
+- `venues.json` — all organizations (museums, community, alternative, academic institutions)
 - `events.json` — upcoming and currently-on events
 - `archive.json` — past events (automatically moved here by the archiver)
 
@@ -13,7 +13,7 @@ The site reads three JSON files from `/data/`:
   "id": "lacma",                    // Stable unique slug. Used as the key for scraper dedup and event linking.
   "name": "Los Angeles County Museum of Art",
   "short_name": "LACMA",            // Optional. Shown on map marker tooltips and list cards.
-  "type": "museum",                 // museum | gallery | community | alternative | academic
+  "type": "museum",                 // museum | community | alternative | academic  (commercial galleries retired 2026-05-30)
   "description": "One line.",
   "website": "https://www.lacma.org",
   "events_url": "https://www.lacma.org/events",  // Optional, used by scrapers

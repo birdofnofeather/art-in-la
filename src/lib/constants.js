@@ -2,7 +2,6 @@
 
 export const TYPE_LABEL = {
   museum: "Museum",
-  gallery: "Gallery",
   community: "Community",
   alternative: "Alternative",
   academic: "Academic",
@@ -10,7 +9,6 @@ export const TYPE_LABEL = {
 
 export const TYPE_COLOR = {
   museum: "#0f172a",
-  gallery: "#b91c1c",
   community: "#15803d",
   alternative: "#7c3aed",
   academic: "#b45309",
@@ -18,7 +16,6 @@ export const TYPE_COLOR = {
 
 export const TYPE_LETTER = {
   museum: "M",
-  gallery: "G",
   community: "C",
   alternative: "X",
   academic: "A",
