@@ -38,6 +38,7 @@ jobs:
 
       - name: Post scraper warnings summary
         if: always()
+        continue-on-error: true
         run: |
           python - << 'EOF'
           import json, os, pathlib
@@ -46,7 +47,7 @@ jobs:
               print("No warnings file yet.")
               exit()
           data = json.loads(f.read_text())
-          warnings = data.get("warnings", [])
+          warnings = data.get("warnings", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
           summary = os.environ.get("GITHUB_STEP_SUMMARY", "")
           if not summary:
               exit()
