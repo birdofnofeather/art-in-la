@@ -7534,5 +7534,37 @@
     "location_override": "Charles White Elementary School",
     "source": "lacma.org",
     "scraped_at": "2026-05-30T19:52:15+00:00"
+  },
+  {
+    "id": "wende-2026-05-30-musicwords-la-curated-by-inna-faliks-d58e3b9271",
+    "venue_id": "wende",
+    "title": "Music/Words LA: Curated by Inna Faliks",
+    "description": "The third installment of the popular Music/Words LA at the Wende once again brings together music and poetry. Curated by pianist Inna Faliks, this performance features violinist Varty Manouelian, cellist Ben Hong, and poet Michelle Bitting in a live exchange between sound and language. This program includes the music of Saint Saens, Chopin, Bach, Kurtag, Bartok and Shostakovich. Performance of the compositions will unfold alongside readings by Bitting, creating a dialogue that shifts between voice and instrument, text and tone. Originally founded by Faliks in New York, Music/Words has evolved into a platform for artists working at the intersection of music and text. This Los Angeles residency at the Wende builds each program around close listening, live collaboration, and the changing bala",
+    "event_type": "performance",
+    "start": "2026-05-30T14:00:00-07:00",
+    "end": "2026-05-30T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/musicwordsla3/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/05/header_16x9.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-05-30T22:05:03+00:00"
+  },
+  {
+    "id": "getty_villa-2026-05-30-villa-art-architecture-garden-tour-16c582f8eb",
+    "venue_id": "getty_villa",
+    "title": "Villa Art, Architecture, & Garden Tour",
+    "description": "Explore the Getty Villa's Roman-inspired gardens and architecture, as well as a sampling of the antiquities collection",
+    "event_type": "tour",
+    "start": "2026-05-30T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/villa-art-architecture-garden-tour",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-05-30T22:04:40+00:00"
   }
 ]
