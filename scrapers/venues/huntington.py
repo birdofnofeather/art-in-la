@@ -16,6 +16,7 @@ TODO: Replace this stub with a Playwright-based scraper that:
 
 Until then, the scraper returns an empty list.
 """
+# BLOCKED-NOTE (2026-05-31): Behind Cloudflare/Vercel bot protection — returns 429 to scripted clients. Needs a real browser at runtime.
 from __future__ import annotations
 
 from ..base import BaseScraper

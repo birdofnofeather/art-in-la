@@ -123,3 +123,26 @@ JavaScript-rendered with no CI-reachable API (documented below).
 3. **Fix corita** by updating its Webflow selectors (quick).
 4. **Scraper health gate** in CI: fail/alert if a venue returns 0 for N days, so
    silent breakage surfaces immediately.
+
+---
+
+## Round 5 — JS-rendered museums revisited via live browser (2026-05-31)
+
+Used a connected browser to inspect the three zero-event museums' actual network
+traffic and rendered DOM, then implemented pure-`requests` scrapers where possible.
+
+| Venue | Verdict | Result |
+|---|---|---|
+| **ica_la** | Spree (Rails), genuinely **server-rendered** — events are in the HTML | **Fixed.** New scraper parses `.calendar__month` → `.calendar-event`. Live now. |
+| **norton_simon** | **Cloudflare-gated** (`server: cloudflare`, `cf-ray`): a real browser gets the full page, `requests` gets an event-less shell | Not fixable via requests. Needs a real browser at runtime. |
+| **huntington** | **Vercel bot protection** — returns HTTP 429 to scripted clients | Not fixable via requests. Needs a real browser at runtime. |
+
+Key correction to the earlier note: Norton Simon and Huntington aren't merely
+"JS-rendered" — they actively serve different content to non-browser clients
+(bot management). A headless Playwright step may still hit the Cloudflare/Vercel
+challenge, so these two are best treated as "listing only" links unless a
+challenge-solving render service is used.
+
+Net coverage now: **45 venues produce events** (was 43). The two bot-gated
+museums are the only remaining gap and are documented in their scraper files
+(`# BLOCKED-NOTE`).

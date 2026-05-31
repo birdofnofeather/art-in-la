@@ -22,6 +22,7 @@ TODO: Replace this stub with a Playwright-based scraper that:
 Until then, the scraper returns an empty list so the daily run still
 processes all other venues without error.
 """
+# BLOCKED-NOTE (2026-05-31): Cloudflare serves a different, event-less shell to non-browser clients (verified via live browser: the rendered page has events, the requests response does not). Needs a real browser at runtime; a headless render in CI may still hit the Cloudflare challenge.
 from __future__ import annotations
 
 from ..base import BaseScraper
