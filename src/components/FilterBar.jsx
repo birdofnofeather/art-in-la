@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
   TYPE_LABEL, TYPE_COLOR, REGION_LABEL,
-  EVENT_TYPE_FILTERS, DATE_PRESETS, EXHIBITION_STATUSES, MODES,
+  EVENT_TYPE_FILTERS, DATE_PRESETS, EXHIBITION_STATUSES,
 } from "../lib/constants.js";
 
 function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap }) {
@@ -74,7 +74,7 @@ function ActivePill({ label, onRemove }) {
 }
 
 export default function FilterBar({
-  tab, mode, setMode,
+  tab,
   types, setTypes,
   eventTypes, setEventTypes,
   regions, setRegions,
@@ -86,10 +86,8 @@ export default function FilterBar({
 }) {
   const [open, setOpen] = useState(false);
 
-  const isEventsTab   = tab === "events";
-  const isExhibitions = mode === "exhibitions";
-  const showEventFilters     = isEventsTab && !isExhibitions;
-  const showExhibitionStatus = isEventsTab && isExhibitions;
+  const showEventFilters     = tab === "events";
+  const showExhibitionStatus = tab === "exhibitions";
 
   const activeCount =
     (types?.size   || 0) +
@@ -140,22 +138,6 @@ export default function FilterBar({
 
   return (
     <div className="panel">
-      {/* Mode toggle — only visible on Events tab */}
-      {isEventsTab && (
-        <div className="flex items-center gap-2 border-b border-black/5 px-4 py-3">
-          <span className="text-xs font-semibold uppercase tracking-wider text-ink/50 mr-1">View</span>
-          {MODES.map((m) => (
-            <button
-              key={m.key} type="button"
-              onClick={() => setMode(m.key)}
-              className={`chip ${mode === m.key ? "chip-active" : ""}`}
-            >
-              {m.label}
-            </button>
-          ))}
-        </div>
-      )}
-
       {/* Filter toggle row */}
       <button
         type="button"

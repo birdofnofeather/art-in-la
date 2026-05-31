@@ -59,7 +59,6 @@ export default function App() {
 
   // Navigation
   const [tab,  setTab]  = useState("map");
-  const [mode, setMode] = useState("events");
   const [exhibitionStatus, setExhibitionStatus] = useState("current");
 
   // Venue-level filters (shared across tabs)
@@ -88,7 +87,7 @@ export default function App() {
     hashInit.current = true;
     const p = readHash();
     if (p.get("tab"))    setTab(p.get("tab"));
-    if (p.get("mode"))   setMode(p.get("mode"));
+    if (p.get("mode") === "exhibitions") setTab("exhibitions"); // legacy URL support
     if (p.get("status")) setExhibitionStatus(p.get("status"));
     if (p.get("types"))  setTypes(new Set(p.get("types").split(",")));
     if (p.get("regions")) setRegions(new Set(p.get("regions").split(",")));
@@ -104,7 +103,6 @@ export default function App() {
     if (!hashInit.current) return;
     const p = new URLSearchParams();
     p.set("tab", tab);
-    if (mode !== "events") p.set("mode", mode);
     if (exhibitionStatus !== "current") p.set("status", exhibitionStatus);
     if (types.size)   p.set("types",   [...types].join(","));
     if (regions.size) p.set("regions", [...regions].join(","));
@@ -114,7 +112,7 @@ export default function App() {
     if (customEnd)   p.set("to",   customEnd);
     if (!mapOnlyEventful) p.set("map", "all");
     writeHash(p);
-  }, [tab, mode, exhibitionStatus, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful]);
+  }, [tab, exhibitionStatus, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful]);
 
   // ── Data load ─────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -187,7 +185,6 @@ export default function App() {
 
   /** "See events →" from map popup: switch to Events tab. */
   const onGoToEvents = (venueId) => {
-    setMode("events");
     setTab("events");
   };
 
@@ -196,10 +193,6 @@ export default function App() {
     events:      upcomingEvents.length,
     exhibitions: liveExhibitions.length,
   };
-
-  const inExhibitionMode = mode === "exhibitions";
-  const eventsTabList    = inExhibitionMode ? filteredExhibitions : filteredEvents;
-  const eventsTabNoun    = inExhibitionMode ? "exhibition" : "event";
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
@@ -213,7 +206,7 @@ export default function App() {
 
         {/* FilterBar always visible (even while loading) */}
         <FilterBar
-          tab={tab} mode={mode} setMode={setMode}
+          tab={tab}
           types={types} setTypes={setTypes}
           eventTypes={eventTypes} setEventTypes={setEventTypes}
           regions={regions} setRegions={setRegions}
@@ -246,10 +239,23 @@ export default function App() {
             {tab === "events" && (
               <>
                 <div className="text-xs text-ink/60">
-                  {eventsTabList.length} {eventsTabNoun}{eventsTabList.length === 1 ? "" : "s"}
+                  {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
                 </div>
                 <EventList
-                  events={eventsTabList}
+                  events={filteredEvents}
+                  venuesById={venuesById}
+                  onShowOnMap={onShowOnMap}
+                />
+              </>
+            )}
+
+            {tab === "exhibitions" && (
+              <>
+                <div className="text-xs text-ink/60">
+                  {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"}
+                </div>
+                <EventList
+                  events={filteredExhibitions}
                   venuesById={venuesById}
                   onShowOnMap={onShowOnMap}
                 />

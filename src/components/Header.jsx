@@ -3,6 +3,7 @@ import React from "react";
 const TABS = [
   { key: "map",     label: "Map" },
   { key: "events",  label: "Events" },
+  { key: "exhibitions", label: "Exhibitions" },
   { key: "venues",  label: "Venues" },
   { key: "archive", label: "Archive" },
 ];
