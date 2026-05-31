@@ -88,6 +88,7 @@ export const EVENTFUL_TYPES = new Set([
 // Date-range presets used by the filter tray. Resolved at filter time so
 // "this weekend" tracks the actual current calendar.
 export const DATE_PRESETS = [
+  { key: "today", label: "Today" },
   { key: "weekend", label: "This weekend" },
   { key: "nextweek", label: "Next week" },
   { key: "month", label: "This month" },

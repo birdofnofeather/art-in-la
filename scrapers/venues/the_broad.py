@@ -1,22 +1,15 @@
-"""The Broad scraper.
+"""The Broad — Drupal JSON:API.
 
-The Broad runs Drupal 10 at thebroad.org/events.  The events listing
-uses Drupal Views with `.views-row` cards.  There is no WP Tribe API,
-no iCal, and no JSON-LD on the listing page.
-
-As of 2025/2026 the events page frequently shows no upcoming events
-("There are currently no upcoming events").  The scraper handles this
-gracefully and returns an empty list in that case.
+The public site (/events) is client-rendered, but Drupal exposes a clean
+JSON:API at /jsonapi. Events live in `node--nextgen_event` (with a structured
+`field_program_date`) and exhibitions in `node--nextgen_exhibition` (with
+`field_on_view_dates`). No browser required.
 """
 from __future__ import annotations
 
+import json
 import re
-from datetime import datetime
 from typing import Iterable
-
-import pytz
-from bs4 import BeautifulSoup
-from dateutil import parser as du_parser
 
 from ..base import BaseScraper, Event
 from ..utils.http import get
@@ -24,93 +17,114 @@ from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import now_utc_iso
 
-LA = pytz.timezone("America/Los_Angeles")
-BASE_URL = "https://www.thebroad.org"
+BASE = "https://www.thebroad.org"
+API = BASE + "/jsonapi/node"
+_TAG_RE = re.compile(r"<[^>]+>")
+
+# Evergreen admission products that aren't real programmed exhibitions.
+_SKIP_TITLES = {"general admission"}
 
 
-def _parse_broad_date(raw: str) -> str | None:
-    if not raw:
-        return None
-    text = re.sub(r"\s+", " ", raw).strip()
-    now_la = datetime.now(LA)
-    try:
-        dt = du_parser.parse(text, default=now_la.replace(tzinfo=None))
-        dt_la = LA.localize(dt.replace(tzinfo=None))
-        if (now_la - dt_la).days > 14:
-            dt_la = dt_la.replace(year=dt_la.year + 1)
-        return dt_la.isoformat()
-    except Exception:
-        return None
+def _txt(html_field) -> str:
+    if isinstance(html_field, dict):
+        html_field = html_field.get("value", "")
+    if not html_field:
+        return ""
+    return _TAG_RE.sub(" ", str(html_field)).replace("&nbsp;", " ").strip()
+
+
+def _url(attrs: dict) -> str:
+    path = attrs.get("path") or {}
+    alias = path.get("alias") if isinstance(path, dict) else None
+    return BASE + alias if alias else BASE + "/events"
+
+
+def _paged(url: str, max_pages: int = 6) -> Iterable[dict]:
+    """Follow JSON:API pagination, capped."""
+    seen = 0
+    while url and seen < max_pages:
+        r = get(url)
+        if not r or r.status_code != 200:
+            return
+        try:
+            data = json.loads(r.text)
+        except Exception:
+            return
+        yield from data.get("data", [])
+        url = (data.get("links", {}).get("next") or {}).get("href")
+        seen += 1
 
 
 class Scraper(BaseScraper):
     venue_id = "the_broad"
-    events_url = "https://www.thebroad.org/events"
+    events_url = f"{BASE}/events"
     source_label = "thebroad.org"
 
-    # Disable base strategies -- Drupal, not WordPress
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])
     def _strategy_jsonld(self): return iter([])
     def _strategy_feed(self): return iter([])
 
     def _strategy_custom(self) -> Iterable[Event]:
-        resp = get(self.events_url)
-        if not resp or not resp.ok:
-            return
-        yield from self.custom_parse(resp.text, resp.url)
+        yield from self._events()
+        yield from self._exhibitions()
 
-    def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
-        soup = BeautifulSoup(html, "lxml")
-
-        cards = (
-            soup.select(".views-row article")
-            or soup.select(".views-row")
-            or soup.select("article.node")
-        )
-
-        seen: set[str] = set()
-        for card in cards:
-            link_el = card.find("a", href=True)
-            href = link_el["href"] if link_el else ""
-            if href and not href.startswith("http"):
-                href = BASE_URL + href
-
-            title_el = card.find(["h1", "h2", "h3", "h4"])
-            title = title_el.get_text(strip=True) if title_el else ""
+    def _events(self) -> Iterable[Event]:
+        for node in _paged(f"{API}/nextgen_event?page[limit]=50"):
+            a = node.get("attributes", {})
+            title = (a.get("title") or "").strip()
             if not title:
                 continue
-
-            time_el = card.find("time")
-            if time_el:
-                date_raw = time_el.get("datetime") or time_el.get_text(strip=True)
-            else:
-                date_el = card.select_one("[class*='date'],[class*='when'],[class*='time']")
-                date_raw = date_el.get_text(strip=True) if date_el else ""
-            start = _parse_broad_date(date_raw) if date_raw else None
-
-            desc_el = card.select_one("[class*='body'],[class*='desc'],[class*='summary'],p")
-            desc = desc_el.get_text(strip=True) if desc_el else ""
-
-            img_el = card.find("img")
-            image = img_el.get("src") if img_el else None
-            if image and not image.startswith("http"):
-                image = BASE_URL + image
-
-            ev = Event(
+            dates = a.get("field_program_date") or []
+            if not isinstance(dates, list) or not dates:
+                continue
+            first = dates[0] or {}
+            start = first.get("value")
+            end = first.get("end_value")
+            if not start:
+                continue
+            desc = _txt(a.get("field_overview") or a.get("field_about"))
+            yield Event(
                 id=event_id(self.venue_id, start, title),
                 venue_id=self.venue_id,
                 title=title,
                 description=desc[:800],
                 event_type=infer_type(title, desc),
                 start=start,
-                end=None,
+                end=end,
                 all_day=False,
-                url=href or None,
-                image=image,
+                url=_url(a),
+                image=None,
                 source=self.source_label,
                 scraped_at=now_utc_iso(),
             )
-            if ev.id not in seen:
-                seen.add(ev.id)
-                yield ev
+
+    def _exhibitions(self) -> Iterable[Event]:
+        for node in _paged(f"{API}/nextgen_exhibition?page[limit]=50"):
+            a = node.get("attributes", {})
+            title = (a.get("title") or "").strip()
+            if not title or title.lower() in _SKIP_TITLES:
+                continue
+            dates = a.get("field_on_view_dates") or []
+            if not isinstance(dates, list) or not dates:
+                continue
+            first = dates[0] or {}
+            start = first.get("value")
+            end = first.get("end_value")
+            if not start:
+                continue
+            desc = _txt(a.get("field_overview") or a.get("field_about"))
+            yield Event(
+                id=event_id(self.venue_id, start, title + "::exh"),
+                venue_id=self.venue_id,
+                title=title,
+                description=desc[:800],
+                event_type="exhibition",
+                start=start,
+                end=end,
+                all_day=True,
+                url=_url(a),
+                image=None,
+                source=self.source_label,
+                scraped_at=now_utc_iso(),
+            )

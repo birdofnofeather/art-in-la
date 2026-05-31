@@ -66,6 +66,13 @@ export function resolveDatePreset(preset, now = new Date()) {
   const today0 = new Date(now); today0.setHours(0, 0, 0, 0);
   const day = today0.getDay(); // 0 = Sun, 6 = Sat
 
+  if (preset === "today") {
+    // Everything happening today: start of today through 23:59 tonight.
+    const end = new Date(today0);
+    end.setHours(23, 59, 59, 999);
+    return { start: today0, end };
+  }
+
   if (preset === "weekend") {
     // Window: from upcoming (or today's) Friday morning through Sunday 23:59.
     let start;
@@ -126,6 +133,9 @@ export function filterEvents(events, venuesById, {
     if (regions && regions.size > 0 && !regions.has(venue.region)) return false;
     const evStart = parseDate(ev.start);
     const evEnd = eventEnd(ev) || evStart;
+    // When a date window is active (e.g. "Today"), an event with no date can't
+    // be placed inside it — exclude it rather than letting it pass every window.
+    if ((start || end) && !evStart) return false;
     if (start && evEnd && evEnd < start) return false;
     if (end && evStart && evStart > end) return false;
     return true;

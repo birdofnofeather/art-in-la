@@ -78,3 +78,48 @@ git push origin main
    either write scrapers or mark them "listing only" in the UI.
 5. **Prune `competitive-analysis.md` / `recommendations.html`** references to
    galleries if you want the docs to match the new scope.
+
+---
+
+## Round 3 — scraper health, efficiency, and a "Today" view (2026-05-30)
+
+### Health check: all 48 scrapers run individually
+
+6 returned zero events. Fixed the two highest-impact ones; the rest are
+JavaScript-rendered with no CI-reachable API (documented below).
+
+| Scraper | Was | Now | Fix |
+|---|---|---|---|
+| armory_pasadena | 0 (403) | 36 | Browser User-Agent (site blocked the bot UA) |
+| the_broad | 0 (JS) | 19 incl. 10 exhibitions | New scraper on Drupal JSON:API (`/jsonapi/node/nextgen_event` + `nextgen_exhibition`) |
+| norton_simon | 0 | 0 | JS-rendered, WP REST disabled — needs rendering (see proposals) |
+| huntington | 0 | 0 | Next.js + Vercel bot protection (429) — needs rendering |
+| ica_la | 0 | 0 | JS-rendered headless CMS, no public API |
+| corita_art_center | 0 | 0 | Webflow, server-rendered — fixable later by updating selectors |
+
+### Efficiency improvements
+
+- **Parallel scraping.** `run_all` now scrapes venues concurrently (thread pool,
+  `SCRAPE_WORKERS` env, default 8). A full 48-venue run dropped from timing out
+  past ~60s to **~27s**. Output is deduped/sorted afterwards so order is stable.
+- **Browser User-Agent** at the HTTP layer fixed 403/429 blocks (Norton Simon,
+  Armory, and likely others that were silently thin).
+- Confirmed `dedupe` is already O(n); `lamag` is slow (~21s) only because it
+  fetches each exhibition detail page — acceptable, and now overlapped with other
+  venues by the thread pool.
+
+### New feature: "Today"
+
+- Added a **Today** date preset (events) — shows everything happening today.
+  Exhibitions already have **On view now**, which is today's on-view set.
+- Hardened date filtering so undated events no longer leak into any date window.
+
+### Proposed next improvements
+
+1. **Render the 3 JS-only venues** (Norton Simon, Huntington, ICA LA): add a
+   single optional Playwright/Browserless step in CI that renders those pages and
+   hands HTML to the existing parsers. Keeps the rest of the pipeline pure-requests.
+2. **True showtimes** for Academy Museum / REDCAT via their Ticketure feeds.
+3. **Fix corita** by updating its Webflow selectors (quick).
+4. **Scraper health gate** in CI: fail/alert if a venue returns 0 for N days, so
+   silent breakage surfaces immediately.

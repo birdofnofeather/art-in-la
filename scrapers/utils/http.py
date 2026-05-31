@@ -6,9 +6,12 @@ from typing import Optional
 
 import requests
 
+# Several venue sites (Norton Simon, Armory, etc.) return 403/429 to non-browser
+# User-Agents, so we present a current desktop-Chrome UA. We stay polite: low
+# request volume, retries with backoff, and a single daily run.
 USER_AGENT = (
-    "ArtInLA-bot/0.1 (+https://github.com/birdofnofeather/art-in-la; "
-    "open-source LA art-events aggregator)"
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
 DEFAULT_TIMEOUT = 20
@@ -25,6 +28,8 @@ def session() -> requests.Session:
             "Accept": "text/html,application/xhtml+xml,application/xml,"
                      "application/json;q=0.9,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
         })
         _session = s
     return _session

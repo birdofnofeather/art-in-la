@@ -10,7 +10,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from .registry import SCRAPERS
@@ -58,9 +60,8 @@ def main(argv=None) -> int:
     if args.only:
         only = {s.strip() for s in args.only.split(",") if s.strip()}
 
-    all_new: list[dict] = []
-    scraped_venue_ids: list[str] = []
-
+    # Build the list of scrapers to run this pass.
+    targets = []
     for cls in SCRAPERS:
         inst = cls()
         if only and inst.venue_id not in only:
@@ -69,15 +70,29 @@ def main(argv=None) -> int:
             print(f"  [warn] scraper venue_id={inst.venue_id} not in venues.json — skipping",
                   file=sys.stderr)
             continue
-        print(f"→ {inst.venue_id} ({cls.__module__})")
-        scraped_venue_ids.append(inst.venue_id)
+        targets.append(inst)
+    scraped_venue_ids: list[str] = [t.venue_id for t in targets]
+
+    def _run_one(inst):
         try:
-            events = inst.run()
-        except BaseException as e:
+            return inst.venue_id, inst.run()
+        except BaseException as e:  # one venue must never sink the whole run
             print(f"  [{inst.venue_id}] unhandled exception: {type(e).__name__}: {e}",
                   file=sys.stderr)
-            events = []
-        print(f"  {len(events)} events")
+            return inst.venue_id, []
+
+    # Scraping is network-bound, so run venues concurrently. Output is order-
+    # independent (we dedupe + sort afterwards). Override workers with the
+    # SCRAPE_WORKERS env var; set it to 1 to force sequential for debugging.
+    all_new: list[dict] = []
+    workers = max(1, int(os.environ.get("SCRAPE_WORKERS", "8")))
+    if workers == 1:
+        results = [_run_one(t) for t in targets]
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            results = list(pool.map(_run_one, targets))
+    for vid, events in results:
+        print(f"→ {vid}: {len(events)} events")
         all_new.extend(events)
 
     # Merge: existing records survive unless the scraper for their venue ran this time.
