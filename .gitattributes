@@ -1,0 +1,17 @@
+# --- Line endings -----------------------------------------------------------
+# Store text as LF in the repo and check it out as LF everywhere. This stops the
+# endless "LF will be replaced by CRLF" warnings and the phantom modified/deleted
+# files that came from CRLF round-tripping between Windows and the scrapers.
+* text=auto eol=lf
+
+# --- Generated data ---------------------------------------------------------
+# These files are rewritten in full by the daily scrape, so they should never be
+# hand-merged. `merge=ours` auto-resolves them on pull/rebase (keeping whichever
+# side we're building on); the next scrape refreshes them regardless. This is
+# what removes the recurring events.json / archive.json conflicts.
+public/data/events.json          merge=ours
+public/data/archive.json         merge=ours
+public/data/scraped_venues.json  merge=ours
+public/data/warnings.json        merge=ours
+
+# --- Keep debug artifacts out of the repo -----------------------------------

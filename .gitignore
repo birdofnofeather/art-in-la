@@ -27,3 +27,6 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Local scraper health snapshots
+public/data/.scraper_health_*.jsonl
