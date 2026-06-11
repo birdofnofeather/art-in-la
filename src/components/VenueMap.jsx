@@ -4,7 +4,9 @@ import L from "leaflet";
 import { TYPE_COLOR, TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
 
-const CENTER = [34.05, -118.35];
+// Fallback view (centroid of the current venue set); the map auto-fits to the
+// actual markers on first load via FitBoundsOnce below.
+const CENTER = [34.05, -118.28];
 const ZOOM = 10;
 
 const TIME_OPTS = { hour: "numeric", minute: "2-digit" };
@@ -31,8 +33,7 @@ function makeIcon(type, eventful) {
 }
 
 /** Inner component that reacts to focusedVenueId and flies the map there. */
-function FlyController({ venues, focusedVenueId, markerRefs }) {
-  const map = useMap();
+function FlyController({ venues, focusedVenueId, markerRefs }) {  const map = useMap();
   const prevId = useRef(null);
 
   useEffect(() => {
@@ -48,6 +49,23 @@ function FlyController({ venues, focusedVenueId, markerRefs }) {
     }, 800);
     return () => clearTimeout(t);
   }, [focusedVenueId, map, venues, markerRefs]);
+
+  return null;
+}
+
+/** Fit the map to the venue markers once, on first load — keeps the view
+    centered on whatever the current venue set actually covers. Skipped when a
+    venue is being focused (FlyController owns the camera then). */
+function FitBoundsOnce({ mappable, focusedVenueId }) {
+  const map = useMap();
+  const done = useRef(false);
+
+  useEffect(() => {
+    if (done.current || focusedVenueId || mappable.length === 0) return;
+    done.current = true;
+    const bounds = L.latLngBounds(mappable.map((v) => [v.lat, v.lng]));
+    map.fitBounds(bounds.pad(0.05), { maxZoom: 12 });
+  }, [map, mappable, focusedVenueId]);
 
   return null;
 }
@@ -98,6 +116,7 @@ export default function VenueMap({
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
         <FlyController venues={venues} focusedVenueId={focusedVenueId} markerRefs={markerRefs} />
+        <FitBoundsOnce mappable={mappable} focusedVenueId={focusedVenueId} />
         {mappable.map((v) => {
           const vEvents = eventsByVenue.get(v.id) || [];
           const nextEvents = vEvents.slice(0, 3);

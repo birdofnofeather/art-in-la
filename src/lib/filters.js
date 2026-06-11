@@ -6,8 +6,21 @@ export function indexVenues(venues) {
   return Object.fromEntries(venues.map((v) => [v.id, v]));
 }
 
+// Scraped datetimes are stored as LA wall-clock (with an LA UTC offset), and
+// the whole site speaks LA time. Parse the wall-clock fields verbatim instead
+// of letting Date apply the viewer's timezone — otherwise a 6 PM event renders
+// as "1 AM" for a UTC visitor, and a bare "2026-06-13" all-day date (UTC
+// midnight per the ISO spec) renders as June 12 even in LA.
+const ISO_WALL_RE = /^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2})(?::(\d{2}))?)?/;
+
 export function parseDate(s) {
   if (!s) return null;
+  if (typeof s === "string") {
+    const m = ISO_WALL_RE.exec(s);
+    if (m) {
+      return new Date(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0), +(m[6] || 0));
+    }
+  }
   const d = new Date(s);
   return Number.isNaN(+d) ? null : d;
 }
@@ -140,6 +153,30 @@ export function filterEvents(events, venuesById, {
     if (end && evStart && evStart > end) return false;
     return true;
   });
+}
+
+/** Case-insensitive text search across an event's own fields + its venue. */
+export function searchEvents(events, venuesById, query) {
+  const q = (query || "").trim().toLowerCase();
+  if (!q) return events;
+  return events.filter((ev) => {
+    const venue = venuesById[ev.venue_id];
+    return [
+      ev.title, ev.description, ev.location_override,
+      venue?.name, venue?.neighborhood,
+      ...(ev.artists || []),
+    ].some((s) => s && s.toLowerCase().includes(q));
+  });
+}
+
+/** Case-insensitive text search across venue fields. */
+export function searchVenues(venues, query) {
+  const q = (query || "").trim().toLowerCase();
+  if (!q) return venues;
+  return venues.filter((v) =>
+    [v.name, v.description, v.neighborhood, v.address]
+      .some((s) => s && s.toLowerCase().includes(q))
+  );
 }
 
 /** Split a flat events array into one-off events vs. exhibitions. */

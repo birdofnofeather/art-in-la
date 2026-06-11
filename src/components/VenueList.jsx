@@ -7,11 +7,14 @@ const SOCIAL_LABEL = {
   threads: "Threads", facebook: "Facebook", tiktok: "TikTok", youtube: "YouTube",
 };
 
-export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap, onShowDetail }) {
+export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap, onShowDetail, onReset }) {
   if (venues.length === 0) {
     return (
-      <div className="panel p-6 text-center text-sm text-ink/60">
-        No venues match these filters.
+      <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+        <div>No venues match these filters.</div>
+        {onReset && (
+          <button type="button" onClick={onReset} className="chip">Clear filters & search</button>
+        )}
       </div>
     );
   }

@@ -10,6 +10,7 @@ import { loadAll } from "./lib/data.js";
 import {
   indexVenues, filterVenues, filterEvents, sortEvents,
   eventfulVenueIds, isUpcoming, partitionByMode, filterExhibitions,
+  searchEvents, searchVenues,
 } from "./lib/filters.js";
 import { ARCHIVE_LAUNCH_DATE } from "./lib/constants.js";
 
@@ -71,6 +72,9 @@ export default function App() {
   const [customStart,  setCustomStart]  = useState("");
   const [customEnd,    setCustomEnd]    = useState("");
 
+  // Free-text search (applies to Events / Exhibitions / Venues / Archive)
+  const [query, setQuery] = useState("");
+
   // Map filter toggle
   const [mapOnlyEventful, setMapOnlyEventful] = useState(true);
 
@@ -96,6 +100,7 @@ export default function App() {
     if (p.get("from"))   setCustomStart(p.get("from"));
     if (p.get("to"))     setCustomEnd(p.get("to"));
     if (p.get("map"))    setMapOnlyEventful(p.get("map") !== "all");
+    if (p.get("q"))      setQuery(p.get("q"));
   }, []);
 
   // ── URL hash: write on state change ───────────────────────────────────────
@@ -111,8 +116,9 @@ export default function App() {
     if (customStart) p.set("from", customStart);
     if (customEnd)   p.set("to",   customEnd);
     if (!mapOnlyEventful) p.set("map", "all");
+    if (query.trim()) p.set("q", query.trim());
     writeHash(p);
-  }, [tab, exhibitionStatus, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful]);
+  }, [tab, exhibitionStatus, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query]);
 
   // ── Data load ─────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -128,42 +134,56 @@ export default function App() {
   const { oneoff: allOneoff, exhibitions: allExhibitions } = useMemo(
     () => partitionByMode(data.events), [data.events]
   );
-  const upcomingEvents  = useMemo(() => allOneoff.filter(isUpcoming),      [allOneoff]);
-  const liveExhibitions = useMemo(() => allExhibitions.filter(isUpcoming), [allExhibitions]);
+  // Note: isUpcoming takes (ev, now) — passing it bare to .filter would feed
+  // the array index in as `now`, which coerces every date comparison to true.
+  const upcomingEvents  = useMemo(() => allOneoff.filter((ev) => isUpcoming(ev)),      [allOneoff]);
+  const liveExhibitions = useMemo(() => allExhibitions.filter((ev) => isUpcoming(ev)), [allExhibitions]);
   const eventfulIds     = useMemo(() => eventfulVenueIds(upcomingEvents),  [upcomingEvents]);
 
   // Map shows all or eventful-only depending on toggle
   const eventfulFilter = tab === "map" && mapOnlyEventful;
 
   const filteredVenues = useMemo(
-    () => filterVenues(data.venues, { types, regions, eventful: eventfulFilter, eventfulIds }),
-    [data.venues, types, regions, eventfulFilter, eventfulIds]
+    () => searchVenues(
+      filterVenues(data.venues, { types, regions, eventful: eventfulFilter, eventfulIds }),
+      query
+    ),
+    [data.venues, types, regions, eventfulFilter, eventfulIds, query]
   );
 
   const filteredEvents = useMemo(
-    () => sortEvents(filterEvents(upcomingEvents, venuesById, {
+    () => sortEvents(searchEvents(filterEvents(upcomingEvents, venuesById, {
       venueTypes: types, eventTypes, regions,
       datePreset: datePreset !== "custom" ? datePreset : "all",
       startDate: datePreset === "custom" ? customStart : undefined,
       endDate:   datePreset === "custom" ? customEnd   : undefined,
-    })),
-    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset, customStart, customEnd]
+    }), venuesById, query)),
+    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset, customStart, customEnd, query]
   );
 
   const filteredExhibitions = useMemo(
-    () => sortEvents(filterEvents(
+    () => sortEvents(searchEvents(filterEvents(
       filterExhibitions(liveExhibitions, exhibitionStatus),
       venuesById, { venueTypes: types, regions }
-    )),
-    [liveExhibitions, exhibitionStatus, venuesById, types, regions]
+    ), venuesById, query)),
+    [liveExhibitions, exhibitionStatus, venuesById, types, regions, query]
   );
 
   const filteredArchive = useMemo(
-    () => sortEvents(filterEvents(data.archive, venuesById, {
+    () => sortEvents(searchEvents(filterEvents(data.archive, venuesById, {
       venueTypes: types, eventTypes, regions, datePreset,
-    })).reverse(),
-    [data.archive, venuesById, types, eventTypes, regions, datePreset]
+    }), venuesById, query)).reverse(),
+    [data.archive, venuesById, types, eventTypes, regions, datePreset, query]
   );
+
+  // Freshness signal: newest scraped_at across all events.
+  const lastUpdated = useMemo(() => {
+    let max = null;
+    for (const ev of data.events) {
+      if (ev.scraped_at && (!max || ev.scraped_at > max)) max = ev.scraped_at;
+    }
+    return max ? new Date(max) : null;
+  }, [data.events]);
 
   // ── Callbacks ─────────────────────────────────────────────────────────────
   const onReset = () => {
@@ -174,6 +194,7 @@ export default function App() {
     setCustomStart("");
     setCustomEnd("");
     setExhibitionStatus("current");
+    setQuery("");
   };
 
   /** "Show on map": fly to venue and switch to map tab. */
@@ -183,8 +204,11 @@ export default function App() {
     setTab("map");
   };
 
-  /** "See events →" from map popup: switch to Events tab. */
+  /** "See events →" from map popup: jump to the Events tab pre-filtered to
+      that venue (via search on the venue name). */
   const onGoToEvents = (venueId) => {
+    const venue = venuesById[venueId];
+    if (venue?.name) setQuery(venue.name);
     setTab("events");
   };
 
@@ -207,6 +231,7 @@ export default function App() {
         {/* FilterBar always visible (even while loading) */}
         <FilterBar
           tab={tab}
+          query={query} setQuery={setQuery}
           types={types} setTypes={setTypes}
           eventTypes={eventTypes} setEventTypes={setEventTypes}
           regions={regions} setRegions={setRegions}
@@ -245,6 +270,7 @@ export default function App() {
                   events={filteredEvents}
                   venuesById={venuesById}
                   onShowOnMap={onShowOnMap}
+                  onReset={onReset}
                 />
               </>
             )}
@@ -258,6 +284,7 @@ export default function App() {
                   events={filteredExhibitions}
                   venuesById={venuesById}
                   onShowOnMap={onShowOnMap}
+                  onReset={onReset}
                 />
               </>
             )}
@@ -268,6 +295,7 @@ export default function App() {
                   {filteredVenues.length} venue{filteredVenues.length === 1 ? "" : "s"}
                 </div>
                 <VenueList
+                  onReset={onReset}
                   venues={filteredVenues}
                   eventfulIds={eventfulIds}
                   scrapedIds={scrapedIds}
@@ -288,7 +316,7 @@ export default function App() {
                   {filteredArchive.length} past event{filteredArchive.length === 1 ? "" : "s"}
                   {filteredArchive.length > 0 ? " (most recent first)" : ""}
                 </div>
-                <EventList events={filteredArchive} venuesById={venuesById} />
+                <EventList events={filteredArchive} venuesById={venuesById} onReset={onReset} />
               </>
             )}
           </>
@@ -296,6 +324,9 @@ export default function App() {
       </main>
 
       <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
+        {lastUpdated && (
+          <>Event data updated {lastUpdated.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}. </>
+        )}
         Venue and event data is community-maintained.
         Map tiles © OpenStreetMap contributors · CARTO.{" "}
         <a href="https://github.com/birdofnofeather/art-in-la" className="underline">

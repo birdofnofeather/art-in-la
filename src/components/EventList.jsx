@@ -30,10 +30,10 @@ function hasTime(s) {
 
 function dateRange(ev) {
   if (!ev.start) return null;
-  const start = new Date(ev.start);
-  if (Number.isNaN(+start)) return ev.start;
+  const start = parseDate(ev.start);
+  if (!start) return ev.start;
   const startTimed = hasTime(ev.start) && !ev.all_day;
-  const end = ev.end ? new Date(ev.end) : null;
+  const end = ev.end ? parseDate(ev.end) : null;
   const endValid = end && !Number.isNaN(+end);
   const endTimed = endValid && hasTime(ev.end) && !ev.all_day;
   if (!endValid || +end === +start) {
@@ -79,11 +79,14 @@ const LABEL_STYLE = {
   "This week":    "bg-sky-50 text-sky-700",
 };
 
-export default function EventList({ events, venuesById, onShowOnMap }) {
+export default function EventList({ events, venuesById, onShowOnMap, onReset }) {
   if (events.length === 0) {
     return (
-      <div className="panel p-6 text-center text-sm text-ink/60">
-        No events match these filters.
+      <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+        <div>No events match these filters.</div>
+        {onReset && (
+          <button type="button" onClick={onReset} className="chip">Clear filters & search</button>
+        )}
       </div>
     );
   }
@@ -107,9 +110,18 @@ export default function EventList({ events, venuesById, onShowOnMap }) {
               const relLabel = getRelativeLabel(ev);
 
               return (
-                <article key={ev.id} className="panel overflow-hidden">
-                  <div className="h-1 w-full" style={{ background: venueColor }} />
-                  <div className="space-y-2 p-4">
+                <article key={ev.id} className="panel flex overflow-hidden">
+                  <div className="w-1 shrink-0" style={{ background: venueColor }} />
+                  {ev.image && (
+                    <img
+                      src={ev.image}
+                      alt=""
+                      loading="lazy"
+                      className="hidden h-auto w-28 shrink-0 object-cover sm:block"
+                      onError={(e) => { e.currentTarget.style.display = "none"; }}
+                    />
+                  )}
+                  <div className="min-w-0 flex-1 space-y-2 p-4">
                     <div className="flex flex-wrap items-center gap-2 text-xs">
                       <span className="chip" style={{ borderColor: venueColor + "55" }}>
                         <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />

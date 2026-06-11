@@ -75,6 +75,7 @@ function ActivePill({ label, onRemove }) {
 
 export default function FilterBar({
   tab,
+  query, setQuery,
   types, setTypes,
   eventTypes, setEventTypes,
   regions, setRegions,
@@ -136,24 +137,48 @@ export default function FilterBar({
     });
   }
 
+  const showSearch = tab !== "map";
+
   return (
     <div className="panel">
-      {/* Filter toggle row */}
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
-      >
-        <div className="flex items-center gap-2">
-          <span className="font-display text-sm font-semibold tracking-tight">Filter results</span>
-          {activeCount > 0 && (
-            <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
-              {activeCount}
-            </span>
-          )}
-        </div>
-        <span className="text-xs text-ink/60">{open ? "Hide ▲" : "Show ▼"}</span>
-      </button>
+      {/* Search + filter toggle row */}
+      <div className="flex w-full items-center gap-3 px-4 py-3">
+        {showSearch && (
+          <div className="relative flex-1 min-w-0">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+              className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink/40">
+              <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              type="text"
+              value={query || ""}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search events, exhibitions, venues, artists…"
+              aria-label="Search"
+              className="w-full rounded-md border border-black/15 bg-white py-1.5 pl-8 pr-8 text-sm placeholder:text-ink/40 focus:border-ink/40 focus:outline-none"
+            />
+            {query && (
+              <button type="button" onClick={() => setQuery("")} aria-label="Clear search"
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-ink/40 hover:text-ink">×</button>
+            )}
+          </div>
+        )}
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          className={`flex items-center justify-between gap-3 text-left ${showSearch ? "shrink-0" : "w-full"}`}
+        >
+          <div className="flex items-center gap-2">
+            <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
+            {activeCount > 0 && (
+              <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
+                {activeCount}
+              </span>
+            )}
+          </div>
+          <span className="text-xs text-ink/60">{open ? "▲" : "▼"}</span>
+        </button>
+      </div>
 
       {/* Active filter pills — shown when tray is closed */}
       {!open && activePills.length > 0 && (
