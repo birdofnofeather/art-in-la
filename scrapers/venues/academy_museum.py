@@ -39,20 +39,25 @@ _EVENT_SPAN_DAYS = 90
 
 # ── time-pattern helpers ──────────────────────────────────────────────────────
 
-# "12:30–2:30pm", "7:00 PM - 9:30 PM", "12:30-2:30pm"
+# Handles "12:30–2:30pm", "7 p.m.", "10 a.m.–12:30 p.m.", "7:00 PM - 9:30 PM"
+_AMPM = r'[ap]\.?m\.?'
 _TIME_RANGE_RE = re.compile(
-    r'(\d{1,2}):(\d{2})\s*[–—-]\s*(\d{1,2}):(\d{2})\s*(am|pm)',
+    r'(\d{1,2})(?::(\d{2}))?\s*(?:(' + _AMPM + r')\s*)?'
+    r'[–—-]\s*'
+    r'(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
     re.IGNORECASE,
 )
-# Single time: "7:00 PM", "12:30pm"
-_SINGLE_TIME_RE = re.compile(r'\b(\d{1,2}):(\d{2})\s*(am|pm)', re.IGNORECASE)
+_SINGLE_TIME_RE = re.compile(
+    r'\b(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
+    re.IGNORECASE,
+)
 
 
 def _to24(h: int, m: int, ap: str) -> tuple[int, int]:
-    ap = ap.lower()
-    if ap == "pm" and h != 12:
+    ap = ap.lower().replace(".", "")
+    if ap.startswith("p") and h != 12:
         h += 12
-    elif ap == "am" and h == 12:
+    elif ap.startswith("a") and h == 12:
         h = 0
     return h, m
 
@@ -61,12 +66,14 @@ def _parse_times(text: str) -> tuple[tuple[int, int] | None, tuple[int, int] | N
     """Return (start_hm, end_hm) where hm = (hour24, minute), or None."""
     m = _TIME_RANGE_RE.search(text)
     if m:
-        sh, sm = _to24(int(m.group(1)), int(m.group(2)), m.group(5))
-        eh, em = _to24(int(m.group(3)), int(m.group(4)), m.group(5))
+        end_ap = m.group(6)
+        start_ap = m.group(3) or end_ap  # inherit end am/pm when start lacks one
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), start_ap)
+        eh, em = _to24(int(m.group(4)), int(m.group(5) or 0), end_ap)
         return (sh, sm), (eh, em)
     m = _SINGLE_TIME_RE.search(text)
     if m:
-        sh, sm = _to24(int(m.group(1)), int(m.group(2)), m.group(3))
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), m.group(3))
         return (sh, sm), None
     return None, None
 

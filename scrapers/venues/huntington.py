@@ -11,17 +11,19 @@ Calendar cards look like:
     <article class="…calendar-item-card…">
       <div class="…event-type…">Event</div>
       <a class="…title…" href="/event/slug">Title</a>
-      … "June 13, 2026" or "March 17, 2026–Dec. 15, 2026" … description …
+      … "June 13, 2026, 10 a.m.–12:30 p.m." … description …
     </article>
 
-The cards carry a date (or date range) but no time — showtimes live on the
-detail pages — so events are emitted as date-only (all-day) listings.
+Cards carry both a date (or date range) and — for timed events — a time range
+in "10 a.m.–12:30 p.m." form. We parse both when present.
 """
 from __future__ import annotations
 
 import re
+from datetime import datetime
 from typing import Iterable
 
+import pytz
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 
@@ -32,6 +34,7 @@ from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
 
 BASE = "https://www.huntington.org"
+LA = pytz.timezone("America/Los_Angeles")
 
 # A single date like "June 13, 2026" or abbreviated "Dec. 15, 2026".
 _DATE = r"[A-Z][a-z]{2,8}\.?\s+\d{1,2},\s+\d{4}"
@@ -40,6 +43,28 @@ _SINGLE_RE = re.compile(rf"({_DATE})")
 # Noise that sits between the title and the date in the card text.
 _NOISE_RE = re.compile(r"\b(Sold Out|New|Members Only|Free)\b", re.IGNORECASE)
 
+# "10 a.m.–12:30 p.m.", "10am-12:30pm", "7:00 PM - 9:30 PM"
+_AMPM = r'[ap]\.?m\.?'
+_TIME_RANGE_RE = re.compile(
+    r'(\d{1,2})(?::(\d{2}))?\s*(?:(' + _AMPM + r')\s*)?'
+    r'[–—-]\s*'
+    r'(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
+    re.IGNORECASE,
+)
+_SINGLE_TIME_RE = re.compile(
+    r'\b(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
+    re.IGNORECASE,
+)
+
+
+def _to24(h: int, m: int, ap: str) -> tuple[int, int]:
+    ap = ap.lower().replace(".", "")
+    if ap.startswith("p") and h != 12:
+        h += 12
+    elif ap.startswith("a") and h == 12:
+        h = 0
+    return h, m
+
 
 def _to_iso(date_text: str) -> str | None:
     try:
@@ -47,6 +72,33 @@ def _to_iso(date_text: str) -> str | None:
     except (ValueError, OverflowError):
         return None
     return to_la_iso(dt.date().isoformat(), all_day=True) if dt else None
+
+
+def _to_iso_timed(date_text: str, hour: int, minute: int) -> str | None:
+    try:
+        dt = dateparser.parse(date_text.replace(".", ""), fuzzy=True)
+    except (ValueError, OverflowError):
+        return None
+    if not dt:
+        return None
+    naive = datetime(dt.year, dt.month, dt.day, hour, minute)
+    return LA.localize(naive).isoformat()
+
+
+def _parse_time(text: str) -> tuple[tuple[int, int] | None, tuple[int, int] | None]:
+    """Return (start_hm, end_hm) or (None, None). hm = (hour24, minute)."""
+    m = _TIME_RANGE_RE.search(text)
+    if m:
+        end_ap = m.group(6)
+        start_ap = m.group(3) or end_ap
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), start_ap)
+        eh, em = _to24(int(m.group(4)), int(m.group(5) or 0), end_ap)
+        return (sh, sm), (eh, em)
+    m = _SINGLE_TIME_RE.search(text)
+    if m:
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), m.group(3))
+        return (sh, sm), None
+    return None, None
 
 
 class Scraper(BaseScraper):
@@ -90,17 +142,31 @@ class Scraper(BaseScraper):
             text = text.replace(title, " ")
             text = _NOISE_RE.sub(" ", text)
 
+            start_hm, end_hm = _parse_time(text)
+
             start = end = None
-            m = _RANGE_RE.search(text)
-            if m:
-                start = _to_iso(m.group(1))
-                end = _to_iso(m.group(2))
+            date_m = _RANGE_RE.search(text)
+            if date_m:
+                date1, date2 = date_m.group(1), date_m.group(2)
+                if start_hm:
+                    start = _to_iso_timed(date1, *start_hm)
+                    end = _to_iso_timed(date2, *(end_hm or start_hm))
+                else:
+                    start = _to_iso(date1)
+                    end = _to_iso(date2)
             else:
-                m = _SINGLE_RE.search(text)
-                if m:
-                    start = _to_iso(m.group(1))
+                date_m = _SINGLE_RE.search(text)
+                if date_m:
+                    date1 = date_m.group(1)
+                    if start_hm:
+                        start = _to_iso_timed(date1, *start_hm)
+                        end = _to_iso_timed(date1, *(end_hm or start_hm)) if end_hm else None
+                    else:
+                        start = _to_iso(date1)
             if not start:
                 continue
+
+            all_day = start_hm is None
 
             img = card.find("img")
             image = img.get("src") if img else None
@@ -125,7 +191,7 @@ class Scraper(BaseScraper):
                 event_type=etype,
                 start=start,
                 end=end,
-                all_day=True,
+                all_day=all_day,
                 url=url,
                 image=image,
                 source=self.source_label,
