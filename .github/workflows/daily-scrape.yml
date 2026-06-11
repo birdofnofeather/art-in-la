@@ -67,13 +67,40 @@ jobs:
                       out.write(f"| `{venue}` | {title} | {reason} |\n")
           EOF
 
+      - name: Post scraper health summary
+        if: always()
+        continue-on-error: true
+        run: |
+          python - << 'EOF'
+          import json, os, pathlib
+          f = pathlib.Path("public/data/health.json")
+          summary = os.environ.get("GITHUB_STEP_SUMMARY", "")
+          if not f.exists() or not summary:
+              exit()
+          health = json.loads(f.read_text())
+          stale = {
+              vid: h for vid, h in sorted(health.items())
+              if h.get("zero_streak", 0) >= 3 and h.get("last_success")
+          }
+          with open(summary, "a") as out:
+              if not stale:
+                  out.write("## ✅ Scraper health: all venues that ever produced events still do\n\n")
+              else:
+                  out.write(f"## 🚨 Scraper health: {len(stale)} venue(s) silent for 3+ runs\n\n")
+                  out.write("These venues produced events before but have returned 0 for several consecutive runs — the site layout has probably changed.\n\n")
+                  out.write("| Venue | Zero runs | Last produced events |\n")
+                  out.write("|-------|-----------|----------------------|\n")
+                  for vid, h in stale.items():
+                      out.write(f"| `{vid}` | {h['zero_streak']} | {h['last_success']} |\n")
+          EOF
+
       - name: Commit updated data
         if: always()
         run: |
           git config user.name  "art-in-la-bot"
           git config user.email "art-in-la-bot@users.noreply.github.com"
           git config merge.ours.driver true   # honor .gitattributes merge=ours for generated data
-          git add public/data/events.json public/data/archive.json public/data/warnings.json public/data/scraped_venues.json
+          git add public/data/events.json public/data/archive.json public/data/warnings.json public/data/scraped_venues.json public/data/health.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
@@ -84,4 +111,11 @@ jobs:
 
       - name: Trigger deploy
         if: success()
-        uses:
+        # Pushes made with GITHUB_TOKEN don't fire `push` workflows, so tell
+        # deploy.yml directly via the repository_dispatch event it listens for.
+        run: |
+          curl -sS --fail -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+            -d '{"event_type":"data-updated"}'

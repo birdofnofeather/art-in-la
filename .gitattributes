@@ -13,5 +13,6 @@ public/data/events.json          merge=ours
 public/data/archive.json         merge=ours
 public/data/scraped_venues.json  merge=ours
 public/data/warnings.json        merge=ours
+public/data/health.json          merge=ours
 
 # --- Keep debug artifacts out of the repo -----------------------------------

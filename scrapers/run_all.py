@@ -13,6 +13,7 @@ import json
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .registry import SCRAPERS
@@ -30,6 +31,11 @@ ARCHIVE_FILE       = DATA_DIR / "archive.json"
 VENUES_FILE        = DATA_DIR / "venues.json"
 WARNINGS_FILE      = DATA_DIR / "warnings.json"
 SCRAPED_FILE       = DATA_DIR / "scraped_venues.json"
+HEALTH_FILE        = DATA_DIR / "health.json"
+
+# A venue that produced events before but has returned 0 for this many
+# consecutive runs gets a health alert (its site layout probably changed).
+ZERO_STREAK_ALERT = 3
 
 
 def load_json(path: Path, default):
@@ -95,6 +101,25 @@ def main(argv=None) -> int:
         print(f"→ {vid}: {len(events)} events")
         all_new.extend(events)
 
+    # ── Health-gate: flag venues that used to produce events but went silent ──
+    health = load_json(HEALTH_FILE, {})
+    today = datetime.now(timezone.utc).date().isoformat()
+    stale_venues = []
+    for vid, events in results:
+        h = health.get(vid) or {}
+        if events:
+            h = {"zero_streak": 0, "last_success": today}
+        else:
+            h["zero_streak"] = int(h.get("zero_streak", 0)) + 1
+            h.setdefault("last_success", None)
+            if h["last_success"] and h["zero_streak"] >= ZERO_STREAK_ALERT:
+                stale_venues.append((vid, h["zero_streak"], h["last_success"]))
+        health[vid] = h
+    if stale_venues:
+        print(f"\n🚨 Health alert: {len(stale_venues)} venue(s) silent for {ZERO_STREAK_ALERT}+ runs:")
+        for vid, streak, last in stale_venues:
+            print(f"  [{vid}] 0 events for {streak} runs (last produced {last})")
+
     # Merge: existing records survive unless the scraper for their venue ran this time.
     producing_venues = {e["venue_id"] for e in all_new}
     carryover = [e for e in existing if e.get("venue_id") not in producing_venues]
@@ -141,6 +166,7 @@ def main(argv=None) -> int:
     write_json(ARCHIVE_FILE,  archive_combined)
     write_json(WARNINGS_FILE, warnings)
     write_json(SCRAPED_FILE,  sorted(scraped_venue_ids))
+    write_json(HEALTH_FILE,   health)
     clear_warnings()
 
     print(f"\nWrote {EVENTS_FILE.name} ({len(upcoming)} events)")
