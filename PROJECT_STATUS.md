@@ -146,3 +146,60 @@ challenge-solving render service is used.
 Net coverage now: **45 venues produce events** (was 43). The two bot-gated
 museums are the only remaining gap and are documented in their scraper files
 (`# BLOCKED-NOTE`).
+
+---
+
+## Round 6 — pipeline resurrected, LA wall-clock display, search (2026-06-11)
+
+### Critical fix: the daily scrape had been dead since June 1
+
+`daily-scrape.yml` was committed truncated — its final "Trigger deploy" step
+ended at a bare `uses:` with no value, making the whole workflow YAML invalid.
+Every run since failed instantly and the site served data frozen at May 31.
+The step is now completed (a `repository_dispatch` of type `data-updated` via
+`GITHUB_TOKEN`, which `deploy.yml` already listened for — necessary because
+pushes made with `GITHUB_TOKEN` don't fire `push`-triggered workflows).
+
+### Frontend accuracy fixes (both real, both verified in a headless browser)
+
+1. **Past events never expired between scrapes.** `allOneoff.filter(isUpcoming)`
+   passed the array *index* into `isUpcoming`'s `now` parameter, so the
+   comparison degenerated to `end >= 0` — always true. With the scrape dead,
+   ten days of past events were showing as "upcoming". Now wrapped in a lambda.
+2. **Times shifted for any viewer not in LA, and all-day dates were off by one
+   even in LA.** Display used `new Date(...)` + locale formatting, so a
+   `18:00-07:00` event rendered as "1:00 AM" in a UTC browser, and a bare
+   `2026-06-13` (UTC midnight per ISO) rendered as June 12 in LA.
+   `parseDate` now parses the stored LA wall-clock fields verbatim, so every
+   viewer sees exactly what the venue's site shows.
+
+### Scrapers
+
+- **corita_art_center fixed** (was 0 events): the Webflow cards render bare
+  24-hour times ("14:00") which the am/pm-only regex rejected. Now accepts
+  both, captures end times ("1:00pm-2:00pm"), multi-day end dates
+  (`event-page-end-date`), and the location block. Verified live: 2 events.
+- **Scraper health-gate** (was open next-step #4): `run_all.py` now persists
+  per-venue zero-streaks to `public/data/health.json` (committed by CI,
+  `merge=ours`). A venue that previously produced events but returns 0 for 3+
+  consecutive runs is flagged in the run output and in a GitHub Actions step
+  summary table.
+- `http.py` retries 429s honoring `Retry-After` (capped at 30 s).
+- Note for anyone scraping from a datacenter IP: 18th_street / fowler /
+  usc_fisher (SiteGround captcha) and pvac / sparc (Imunify360) block cloud
+  IPs but work fine from GitHub Actions runners.
+
+### UX / efficiency
+
+- **Free-text search** across events, exhibitions, venues and archive
+  (title, description, venue name, neighborhood, artists), synced to the URL
+  hash as `q=` so filtered views are shareable.
+- Map auto-fits to the visible venue set on first load (was open next-step #5);
+  "See events →" in a map popup now lands on the Events tab pre-filtered to
+  that venue.
+- Event cards show the scraped image (lazy-loaded) when one exists; empty
+  states offer a one-click "Clear filters & search".
+- Footer shows a "Event data updated <date>" freshness signal derived from
+  `scraped_at`.
+- `package-lock.json` committed; `deploy.yml` uses `npm ci` + npm cache.
+- Open Graph / Twitter meta tags for link sharing.
