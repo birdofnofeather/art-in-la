@@ -26,21 +26,30 @@ LA = pytz.timezone("America/Los_Angeles")
 MAX_PAGES = 12
 
 
-def _parse_lacma_date(raw: str) -> str | None:
-    """Parse 'Sat Apr 25 | 10 am PT' -> ISO8601 in LA time."""
+_HAS_TIME_RE = re.compile(r'\b\d{1,2}(?::\d{2})?\s*(?:am|pm)\b', re.IGNORECASE)
+
+
+def _parse_lacma_date(raw: str) -> tuple[str | None, bool]:
+    """Parse 'Sat Apr 25 | 10 am PT' -> (ISO8601 in LA time, all_day)."""
     if not raw:
-        return None
+        return None, False
     text = re.sub(r"\bPT\b", "", raw.replace("|", " ")).strip()
     text = re.sub(r"\s+", " ", text).strip()
+    has_time = bool(_HAS_TIME_RE.search(text))
     now_la = datetime.now(LA)
+    # Use midnight as default so events without an explicit time don't inherit
+    # the current wall-clock time from the scraper run.
+    midnight = now_la.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
     try:
-        dt = du_parser.parse(text, default=now_la.replace(tzinfo=None))
+        dt = du_parser.parse(text, default=midnight)
         dt_la = LA.localize(dt.replace(tzinfo=None))
         if (now_la - dt_la).days > 14:
             dt_la = dt_la.replace(year=dt_la.year + 1)
-        return dt_la.isoformat()
+        if not has_time:
+            return dt_la.date().isoformat(), True
+        return dt_la.isoformat(), False
     except Exception:
-        return None
+        return None, False
 
 
 class Scraper(BaseScraper):
@@ -96,12 +105,14 @@ class Scraper(BaseScraper):
         title = name_el.get_text(strip=True)
         if not title:
             return None
+        if re.search(r'\bmember\s+preview\b', title, re.IGNORECASE):
+            return None
         link = name_el.get("href") or ""
         if link and not link.startswith("http"):
             link = "https://www.lacma.org" + link
 
         date_el = card.select_one(".card-event__date")
-        start = _parse_lacma_date(
+        start, all_day = _parse_lacma_date(
             date_el.get_text(separator=" ", strip=True) if date_el else ""
         )
 
@@ -125,7 +136,7 @@ class Scraper(BaseScraper):
             event_type=infer_type(f"{title} {type_hint}", desc),
             start=start,
             end=None,
-            all_day=False,
+            all_day=all_day,
             url=link or None,
             image=image,
             location_override=location or None,

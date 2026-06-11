@@ -3,6 +3,9 @@
 Events are in `a.event-card-stacked` elements. Each card has structured
 text in the format: "date | type | type | title | artist?" all separated
 by the natural text flow of the card's child elements.
+
+Multi-night performances list all dates in one card (e.g. "Jun 19, 20 & 21")
+with a shared showtime (e.g. "8 PM"). We expand these into one Event per date.
 """
 from __future__ import annotations
 
@@ -16,7 +19,7 @@ from dateutil import parser as dparser
 from ..base import BaseScraper, Event
 from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
-from ..utils.dateparse import now_utc_iso
+from ..utils.dateparse import to_la_iso, now_utc_iso
 
 BASE = "https://www.redcat.org"
 _YEAR_RE = re.compile(r"\b(20\d\d)\b")
@@ -35,6 +38,62 @@ _TYPE_MAP = {
     "workshop": "workshop",
 }
 
+# "Jun 19, 20 & 21" or "Jun 19 & 20" — month + list of days
+_MULTI_DATE_RE = re.compile(
+    r'^([A-Za-z]{3,9}\.?)\s+'    # month name
+    r'(\d{1,2})'                  # first day
+    r'((?:\s*[,&]\s*\d{1,2})+)'  # one or more additional days
+    r'(?:\s*,?\s*(20\d\d))?$',   # optional year
+    re.IGNORECASE,
+)
+
+# "8 PM", "8:00 pm", "7:30 PM"
+_TIME_RE = re.compile(r'\b(\d{1,2})(?::(\d{2}))?\s*(am|pm)\b', re.IGNORECASE)
+
+
+def _parse_time_parts(parts: list[str]) -> tuple[int, int] | None:
+    """Search all card text parts for a showtime; return (hour24, minute) or None."""
+    for p in parts:
+        m = _TIME_RE.search(p)
+        if not m:
+            continue
+        hour, minute = int(m.group(1)), int(m.group(2) or 0)
+        ap = m.group(3).lower()
+        if ap == "pm" and hour != 12:
+            hour += 12
+        elif ap == "am" and hour == 12:
+            hour = 0
+        return hour, minute
+    return None
+
+
+def _expand_multi_dates(date_str: str, hour_min: tuple[int, int] | None) -> list[tuple[str, str | None, bool]]:
+    """Return [(start_iso, end_iso, all_day), ...] for multi-date listings, or []."""
+    m = _MULTI_DATE_RE.match(date_str.strip())
+    if not m:
+        return []
+
+    month = m.group(1)
+    first_day = int(m.group(2))
+    extra_days = [int(d) for d in re.findall(r'\d+', m.group(3))]
+    year_str = m.group(4)
+    year = int(year_str) if year_str else _CUR_YEAR
+
+    days = [first_day] + extra_days
+    results = []
+    for day in days:
+        try:
+            base_dt = dparser.parse(f"{month} {day} {year}", default=datetime(year, 1, 1))
+        except Exception:
+            continue
+        if hour_min:
+            dt = base_dt.replace(hour=hour_min[0], minute=hour_min[1], second=0)
+            start = to_la_iso(dt)
+            results.append((start, None, False))
+        else:
+            results.append((to_la_iso(base_dt.date().isoformat(), all_day=True), None, True))
+    return results
+
 
 def _parse_range(s: str):
     """Parse 'Apr 4 - Jul 5' or 'Apr 25' (year inferred as current)."""
@@ -46,18 +105,19 @@ def _parse_range(s: str):
     try:
         if len(parts) == 1:
             dt = dparser.parse(parts[0], default=default)
-            return dt.strftime("%Y-%m-%dT00:00:00-07:00"), None
+            return to_la_iso(dt.date().isoformat(), all_day=True), None, True
         start_s, end_s = parts[0].strip(), parts[1].strip()
         if not _YEAR_RE.search(start_s):
             start_s = f"{start_s} {year}"
         start_dt = dparser.parse(start_s, default=default)
         end_dt = dparser.parse(end_s, default=default)
         return (
-            start_dt.strftime("%Y-%m-%dT00:00:00-07:00"),
-            end_dt.strftime("%Y-%m-%dT00:00:00-07:00"),
+            to_la_iso(start_dt.date().isoformat(), all_day=True),
+            to_la_iso(end_dt.date().isoformat(), all_day=True),
+            True,
         )
     except Exception:
-        return None, None
+        return None, None, True
 
 
 class Scraper(BaseScraper):
@@ -74,7 +134,6 @@ class Scraper(BaseScraper):
 
             # Extract structured text parts from the card
             # Typical format: "Apr 4 - Jul 5 | Exhibition | Exhibition | Title | Artist"
-            # We collect text nodes with separators
             parts = [t.strip() for t in card.get_text(separator="|").split("|") if t.strip()]
             if not parts:
                 continue
@@ -86,7 +145,6 @@ class Scraper(BaseScraper):
             event_type = _TYPE_MAP.get(raw_type, infer_type(raw_type, ""))
 
             # Title is the last substantive part (after deduplicated type labels)
-            # Skip duplicate type labels
             text_parts = []
             seen = set()
             for p in parts[1:]:
@@ -95,14 +153,11 @@ class Scraper(BaseScraper):
                     seen.add(pl)
                     text_parts.append(p)
 
-            # After dedup, remove the type label; remaining parts form artist/title
             if text_parts and text_parts[0].lower() in _TYPE_MAP:
                 text_parts = text_parts[1:]
             title = " — ".join(text_parts) if text_parts else ""
             if not title:
                 continue
-
-            start, end = _parse_range(date_str) if date_str else (None, None)
 
             # Image
             img = card.find("img")
@@ -112,6 +167,44 @@ class Scraper(BaseScraper):
                 if image and image.startswith("/"):
                     image = BASE + image
 
+            now_scraped = now_utc_iso()
+
+            # Try to expand multi-date listings (e.g. "Jun 19, 20 & 21 at 8 PM")
+            showtime = _parse_time_parts(parts)
+            expanded = _expand_multi_dates(date_str, showtime)
+            if expanded:
+                for start, end, all_day in expanded:
+                    if not start:
+                        continue
+                    yield Event(
+                        id=event_id(self.venue_id, start, title),
+                        venue_id=self.venue_id,
+                        title=title,
+                        description="",
+                        event_type=event_type,
+                        start=start,
+                        end=end,
+                        all_day=all_day,
+                        url=url,
+                        image=image,
+                        artists=[],
+                        source=self.source_label,
+                        scraped_at=now_scraped,
+                    )
+                continue
+
+            # Single date or range
+            start, end, all_day = _parse_range(date_str) if date_str else (None, None, True)
+            # For single-date performances with a known showtime, apply the time
+            if start and showtime and end is None and event_type in ("performance", "screening", "talk", "workshop"):
+                try:
+                    dt = dparser.parse(start)
+                    dt = dt.replace(hour=showtime[0], minute=showtime[1], second=0)
+                    start = to_la_iso(dt)
+                    all_day = False
+                except Exception:
+                    pass
+
             yield Event(
                 id=event_id(self.venue_id, start, title),
                 venue_id=self.venue_id,
@@ -120,10 +213,10 @@ class Scraper(BaseScraper):
                 event_type=event_type,
                 start=start,
                 end=end,
-                all_day=True,
+                all_day=all_day,
                 url=url,
                 image=image,
                 artists=[],
                 source=self.source_label,
-                scraped_at=now_utc_iso(),
+                scraped_at=now_scraped,
             )
