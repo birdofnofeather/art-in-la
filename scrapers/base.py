@@ -51,6 +51,26 @@ LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine f
 # (date ranges) rather than one-off events.
 EXHIBITION_THRESHOLD = timedelta(hours=36)
 
+# An "exhibition" running longer than this is a permanent / long-term
+# installation, not a temporary show. We drop these from the record entirely
+# so the Exhibitions tab only ever lists temporary exhibitions. (Real museum
+# temporary shows top out around a year; ~18 months is a generous ceiling.)
+PERMANENT_THRESHOLD = timedelta(days=550)
+
+# Specific event types that are themselves meaningful — a multi-day run of one
+# of these is a recurring programme (a tour series, a workshop series…), NOT an
+# exhibition, so we must never re-type it as one. Only generic ("other") events
+# get promoted to exhibitions by the duration heuristic.
+_NON_EXHIBITION_TYPES = {
+    "tour", "workshop", "lecture", "performance",
+    "screening", "opening", "closing", "fair",
+}
+
+# Titles that are page sections / standing programmes, never a temporary show.
+_NON_EXHIBITION_TITLE_RE = re.compile(
+    r"\b(permanent|semi[- ]permanent)\b", re.IGNORECASE
+)
+
 _HTML_ENTITY = {
     "&amp;": "&", "&lt;": "<", "&gt;": ">", "&nbsp;": " ",
     "&quot;": '"', "&#39;": "'", "&apos;": "'", "&mdash;": "—",
@@ -318,25 +338,36 @@ class BaseScraper:
     def _reshape(self, ev: Event):
         """Returns Event or None.
            - Event: keep as-is (or re-typed as exhibition).
-           - None: drop entirely.
+           - None: drop entirely (permanent installation).
 
-        Multi-day non-fair events get re-typed to `exhibition` so the front-end
-        can route them to the Exhibitions tab. We do NOT invent opening events;
-        those only exist when the source explicitly lists them.
+        Multi-day *generic* events get re-typed to `exhibition` so the front-end
+        can route them to the Exhibitions tab. Specific types (tours, workshops,
+        performances…) are left alone — a multi-day run of one is a recurring
+        programme, not an exhibition. Permanent / long-term installations are
+        dropped so only temporary exhibitions remain. We do NOT invent opening
+        events; those only exist when the source explicitly lists them.
         """
         if ev.event_type == "exhibition":
+            if self._is_permanent(ev) or _NON_EXHIBITION_TITLE_RE.search(ev.title or ""):
+                return None
             return ev
         dur = self._duration(ev)
         if dur is not None and dur > EXHIBITION_THRESHOLD:
-            if ev.event_type in {"fair"}:
-                # Fairs can legitimately span days — keep as fair.
+            if ev.event_type in _NON_EXHIBITION_TYPES:
+                # Recurring programme spanning days — keep its real type.
                 return ev
+            if self._is_permanent(ev):
+                return None
             return replace(
                 ev,
                 id=event_id(self.venue_id, ev.start, ev.title + "::exh"),
                 event_type="exhibition",
             )
         return ev
+
+    def _is_permanent(self, ev: Event) -> bool:
+        dur = self._duration(ev)
+        return dur is not None and dur > PERMANENT_THRESHOLD
 
     def _duration(self, ev: Event):
         s = _parse_iso(ev.start)

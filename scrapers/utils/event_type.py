@@ -11,13 +11,13 @@ ALLOWED = {
 KEYWORDS = [
     ("opening",     r"\b(opening|preview|vernissage)\b"),
     ("closing",     r"\b(closing|finissage|last day)\b"),
-    ("workshop",    r"\b(workshop|class|hands[- ]on|drop[- ]in)\b"),
-    ("lecture",     r"\b(lecture|talk|conversation|panel|symposium|reading|book launch)\b"),
-    ("performance", r"\b(performance|concert|recital|dance|music)\b"),
-    ("screening",   r"\b(screening|film|movie|cinema)\b"),
-    ("tour",        r"\b(tour|guided walk)\b"),
+    ("workshop",    r"\b(workshops?|classes?|class|hands[- ]on|drop[- ]in)\b"),
+    ("lecture",     r"\b(lectures?|talks?|conversations?|panel|symposium|reading|book launch)\b"),
+    ("performance", r"\b(performances?|concerts?|recitals?|dance|music)\b"),
+    ("screening",   r"\b(screenings?|films?|movies?|cinema)\b"),
+    ("tour",        r"\b(tours?|guided walks?)\b"),
     ("fair",        r"\b(fair|art week|biennial)\b"),
-    ("exhibition",  r"\b(exhibition|on view|show|installation)\b"),
+    ("exhibition",  r"\b(exhibitions?|on view|installations?)\b"),
 ]
 
 
