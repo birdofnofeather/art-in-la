@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
   TYPE_LABEL, TYPE_COLOR, REGION_LABEL,
-  EVENT_TYPE_FILTERS, DATE_PRESETS, EXHIBITION_STATUSES,
+  EVENT_TYPE_FILTERS, DATE_PRESETS,
 } from "../lib/constants.js";
 
 function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap }) {
@@ -82,20 +82,17 @@ export default function FilterBar({
   datePreset, setDatePreset,
   customStart, setCustomStart,
   customEnd, setCustomEnd,
-  exhibitionStatus, setExhibitionStatus,
   onReset,
 }) {
   const [open, setOpen] = useState(false);
 
-  const showEventFilters     = tab === "events";
-  const showExhibitionStatus = tab === "exhibitions";
+  const showEventFilters = tab === "events";
 
   const activeCount =
     (types?.size   || 0) +
     (regions?.size  || 0) +
     (showEventFilters ? (eventTypes?.size || 0) : 0) +
-    (showEventFilters && datePreset && datePreset !== "all" ? 1 : 0) +
-    (showExhibitionStatus && exhibitionStatus && exhibitionStatus !== "current" ? 1 : 0);
+    (showEventFilters && datePreset && datePreset !== "all" ? 1 : 0);
 
   // Build pills for closed-tray summary
   const activePills = [];
@@ -129,14 +126,6 @@ export default function FilterBar({
       remove: () => { setDatePreset("all"); setCustomStart?.(""); setCustomEnd?.(""); },
     });
   }
-  if (showExhibitionStatus && exhibitionStatus && exhibitionStatus !== "current") {
-    const s = EXHIBITION_STATUSES.find((x) => x.key === exhibitionStatus);
-    activePills.push({
-      label: s?.label || exhibitionStatus,
-      remove: () => setExhibitionStatus("current"),
-    });
-  }
-
   const showSearch = tab !== "map";
 
   return (
@@ -250,15 +239,10 @@ export default function FilterBar({
             </>
           )}
 
-          {showExhibitionStatus && (
-            <div>
-              <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/50">Show</div>
-              <FilterChips
-                items={EXHIBITION_STATUSES}
-                selectedKey={exhibitionStatus || "current"}
-                onSelect={setExhibitionStatus}
-              />
-            </div>
+          {tab === "exhibitions" && (
+            <p className="text-xs text-ink/50">
+              Showing temporary exhibitions on view now, ending soonest first.
+            </p>
           )}
 
           <div className="flex items-center justify-end pt-1">

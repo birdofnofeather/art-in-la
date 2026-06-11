@@ -79,7 +79,114 @@ const LABEL_STYLE = {
   "This week":    "bg-sky-50 text-sky-700",
 };
 
-export default function EventList({ events, venuesById, onShowOnMap, onReset }) {
+/** Days until an exhibition closes, or null if no usable end date. */
+function daysUntilClose(ev, now = new Date()) {
+  const end = parseDate(ev.end);
+  if (!end) return null;
+  const today0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.round((end - today0) / 864e5);
+}
+
+function EventCard({ ev, venuesById, onShowOnMap }) {
+  const venue = venuesById[ev.venue_id] || { name: ev.venue_id, type: "other" };
+  const venueColor = TYPE_COLOR[venue.type] || "#666";
+  const isExhibition = ev.event_type === "exhibition";
+  const relLabel = isExhibition ? null : getRelativeLabel(ev);
+  const closeIn = isExhibition ? daysUntilClose(ev) : null;
+  const closingSoon = closeIn !== null && closeIn >= 0 && closeIn <= 14;
+
+  return (
+    <article className="panel flex overflow-hidden">
+      <div className="w-1 shrink-0" style={{ background: venueColor }} />
+      {ev.image && (
+        <img
+          src={ev.image}
+          alt=""
+          loading="lazy"
+          className="hidden h-auto w-28 shrink-0 object-cover sm:block"
+          onError={(e) => { e.currentTarget.style.display = "none"; }}
+        />
+      )}
+      <div className="min-w-0 flex-1 space-y-2 p-4">
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <span className="chip" style={{ borderColor: venueColor + "55" }}>
+            <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
+            {TYPE_LABEL[venue.type]}
+          </span>
+          {ev.event_type && (
+            <span className="chip">{EVENT_TYPE_LABEL[ev.event_type] || ev.event_type}</span>
+          )}
+          {venue.region && (
+            <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
+          )}
+          {relLabel && (
+            <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${LABEL_STYLE[relLabel] || "bg-ink text-white"}`}>
+              {relLabel}
+            </span>
+          )}
+          {closingSoon && (
+            <span className="inline-flex items-center rounded-full bg-red-500 px-2 py-0.5 text-xs font-semibold text-white">
+              {closeIn === 0 ? "Closes today" : closeIn === 1 ? "Closes tomorrow" : `Closes in ${closeIn} days`}
+            </span>
+          )}
+        </div>
+
+        <h3 className="font-display text-lg leading-snug">
+          {ev.url ? (
+            <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">
+              {ev.title}
+            </a>
+          ) : ev.title}
+        </h3>
+
+        <div className="text-sm text-ink/70">
+          <a
+            href={venue.website || "#"}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium underline-offset-2 hover:underline"
+          >
+            {venue.name}
+          </a>
+          {venue.neighborhood && (
+            <span className="text-ink/50"> · {venue.neighborhood}</span>
+          )}
+        </div>
+
+        {dateRange(ev) && (
+          <div className="text-sm text-ink/70">{dateRange(ev)}</div>
+        )}
+        {ev.description && (
+          <p className="line-clamp-3 text-sm text-ink/70">{stripHtml(ev.description)}</p>
+        )}
+        {ev.artists && ev.artists.length > 0 && (
+          <div className="text-xs text-ink/60">
+            <span className="font-medium">Featuring:</span> {ev.artists.join(", ")}
+          </div>
+        )}
+
+        {onShowOnMap && venue.lat && (
+          <button
+            type="button"
+            onClick={() => onShowOnMap(ev.venue_id)}
+            className="chip mt-1 text-xs"
+          >
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Show on map
+          </button>
+        )}
+      </div>
+    </article>
+  );
+}
+
+/**
+ * `grouped` (default true): bucket events under date headers by start date —
+ * right for one-off events and the archive. Exhibitions pass grouped=false to
+ * render a single flat grid in the order given (sorted by closing date), since
+ * grouping by start date would scatter the ending-soonest ordering.
+ */
+export default function EventList({ events, venuesById, onShowOnMap, onReset, grouped = true }) {
   if (events.length === 0) {
     return (
       <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
@@ -87,6 +194,16 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset }) 
         {onReset && (
           <button type="button" onClick={onReset} className="chip">Clear filters & search</button>
         )}
+      </div>
+    );
+  }
+
+  if (!grouped) {
+    return (
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {events.map((ev) => (
+          <EventCard key={ev.id} ev={ev} venuesById={venuesById} onShowOnMap={onShowOnMap} />
+        ))}
       </div>
     );
   }
@@ -104,90 +221,9 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset }) 
           </div>
 
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-            {groupEvents.map((ev) => {
-              const venue = venuesById[ev.venue_id] || { name: ev.venue_id, type: "other" };
-              const venueColor = TYPE_COLOR[venue.type] || "#666";
-              const relLabel = getRelativeLabel(ev);
-
-              return (
-                <article key={ev.id} className="panel flex overflow-hidden">
-                  <div className="w-1 shrink-0" style={{ background: venueColor }} />
-                  {ev.image && (
-                    <img
-                      src={ev.image}
-                      alt=""
-                      loading="lazy"
-                      className="hidden h-auto w-28 shrink-0 object-cover sm:block"
-                      onError={(e) => { e.currentTarget.style.display = "none"; }}
-                    />
-                  )}
-                  <div className="min-w-0 flex-1 space-y-2 p-4">
-                    <div className="flex flex-wrap items-center gap-2 text-xs">
-                      <span className="chip" style={{ borderColor: venueColor + "55" }}>
-                        <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
-                        {TYPE_LABEL[venue.type]}
-                      </span>
-                      {ev.event_type && (
-                        <span className="chip">{EVENT_TYPE_LABEL[ev.event_type] || ev.event_type}</span>
-                      )}
-                      {venue.region && (
-                        <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
-                      )}
-                      {relLabel && (
-                        <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${LABEL_STYLE[relLabel] || "bg-ink text-white"}`}>
-                          {relLabel}
-                        </span>
-                      )}
-                    </div>
-
-                    <h3 className="font-display text-lg leading-snug">
-                      {ev.url ? (
-                        <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">
-                          {ev.title}
-                        </a>
-                      ) : ev.title}
-                    </h3>
-
-                    <div className="text-sm text-ink/70">
-                      <a
-                        href={venue.website || "#"}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium underline-offset-2 hover:underline"
-                      >
-                        {venue.name}
-                      </a>
-                      {venue.neighborhood && (
-                        <span className="text-ink/50"> · {venue.neighborhood}</span>
-                      )}
-                    </div>
-
-                    {dateRange(ev) && (
-                      <div className="text-sm text-ink/70">{dateRange(ev)}</div>
-                    )}
-                    {ev.description && (
-                      <p className="line-clamp-3 text-sm text-ink/70">{stripHtml(ev.description)}</p>
-                    )}
-                    {ev.artists && ev.artists.length > 0 && (
-                      <div className="text-xs text-ink/60">
-                        <span className="font-medium">Featuring:</span> {ev.artists.join(", ")}
-                      </div>
-                    )}
-
-                    {onShowOnMap && venue.lat && (
-                      <button
-                        type="button"
-                        onClick={() => onShowOnMap(ev.venue_id)}
-                        className="chip mt-1 text-xs"
-                      >
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                        Show on map
-                      </button>
-                    )}
-                  </div>
-                </article>
-              );
-            })}
+            {groupEvents.map((ev) => (
+              <EventCard key={ev.id} ev={ev} venuesById={venuesById} onShowOnMap={onShowOnMap} />
+            ))}
           </div>
         </div>
       ))}

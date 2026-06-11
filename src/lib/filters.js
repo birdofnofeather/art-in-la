@@ -191,28 +191,45 @@ export function partitionByMode(events) {
 }
 
 /**
- * Filter exhibitions by status.
- *   current: start <= now <= end (or no end yet)
- *   upcoming: start > now
- *   all: everything that hasn't ended yet
+ * The Exhibitions tab shows ONLY real, temporary exhibitions that are on view
+ * today. Everything else is excluded:
+ *   - not typed `exhibition` (events, tours, workshops…)
+ *   - tour / program records that slipped in as exhibitions (title heuristic)
+ *   - missing a real open AND close date (can't place or sort it)
+ *   - not currently open (opens in the future, or already closed)
+ *   - permanent / long-term installations (runs longer than ~18 months)
  */
-export function filterExhibitions(exhibitions, status, now = new Date()) {
-  return exhibitions.filter((ev) => {
-    const s = parseDate(ev.start);
-    const e = parseDate(ev.end);
-    // Skip exhibitions whose end has already passed.
-    if (e && e < now) return false;
-    if (status === "current") {
-      if (!s) return false;
-      if (s > now) return false;          // hasn't opened
-      return !e || e >= now;              // still on view
-    }
-    if (status === "upcoming") {
-      if (!s) return false;
-      return s > now;                     // opens in the future
-    }
-    // "all" (or unrecognized) — return everything not-yet-closed.
-    return true;
+const EXHIBITION_MAX_DAYS = 550; // ~18 months; longer ⇒ treat as permanent
+const NON_EXHIBITION_TITLE = new RegExp(
+  "\\b(permanent|tour|tours|supper|suppers|sips|party|happy hour|story hour|" +
+  "drop[- ]?in|skate|tasting|brunch|meet[- ]?up|class|workshop)\\b",
+  "i"
+);
+
+export function isLiveTemporaryExhibition(ev, now = new Date()) {
+  if (!ev || ev.event_type !== "exhibition") return false;
+  if (NON_EXHIBITION_TITLE.test(ev.title || "")) return false;
+  const s = parseDate(ev.start);
+  const e = parseDate(ev.end);
+  if (!s || !e) return false;                       // need both bounds
+  const today0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if (s > today0) return false;                     // not yet opened
+  if (e < today0) return false;                     // already closed
+  if ((e - s) / 864e5 > EXHIBITION_MAX_DAYS) return false; // permanent
+  return true;
+}
+
+export function liveExhibitionsOnView(exhibitions, now = new Date()) {
+  return exhibitions.filter((ev) => isLiveTemporaryExhibition(ev, now));
+}
+
+/** Sort by closing date ascending — exhibitions ending soonest come first. */
+export function sortByEndingSoonest(events) {
+  const far = new Date("9999-01-01");
+  return [...events].sort((a, b) => {
+    const ae = parseDate(a.end) || parseDate(a.start) || far;
+    const be = parseDate(b.end) || parseDate(b.start) || far;
+    return ae - be;
   });
 }
 

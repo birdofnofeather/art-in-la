@@ -9,8 +9,8 @@ import VenueDetail from "./components/VenueDetail.jsx";
 import { loadAll } from "./lib/data.js";
 import {
   indexVenues, filterVenues, filterEvents, sortEvents,
-  eventfulVenueIds, isUpcoming, partitionByMode, filterExhibitions,
-  searchEvents, searchVenues,
+  eventfulVenueIds, isUpcoming, partitionByMode, liveExhibitionsOnView,
+  sortByEndingSoonest, searchEvents, searchVenues,
 } from "./lib/filters.js";
 import { ARCHIVE_LAUNCH_DATE } from "./lib/constants.js";
 
@@ -60,7 +60,6 @@ export default function App() {
 
   // Navigation
   const [tab,  setTab]  = useState("map");
-  const [exhibitionStatus, setExhibitionStatus] = useState("current");
 
   // Venue-level filters (shared across tabs)
   const [types,   setTypes]   = useState(new Set());
@@ -92,7 +91,6 @@ export default function App() {
     const p = readHash();
     if (p.get("tab"))    setTab(p.get("tab"));
     if (p.get("mode") === "exhibitions") setTab("exhibitions"); // legacy URL support
-    if (p.get("status")) setExhibitionStatus(p.get("status"));
     if (p.get("types"))  setTypes(new Set(p.get("types").split(",")));
     if (p.get("regions")) setRegions(new Set(p.get("regions").split(",")));
     if (p.get("etypes")) setEventTypes(new Set(p.get("etypes").split(",")));
@@ -108,7 +106,6 @@ export default function App() {
     if (!hashInit.current) return;
     const p = new URLSearchParams();
     p.set("tab", tab);
-    if (exhibitionStatus !== "current") p.set("status", exhibitionStatus);
     if (types.size)   p.set("types",   [...types].join(","));
     if (regions.size) p.set("regions", [...regions].join(","));
     if (eventTypes.size) p.set("etypes", [...eventTypes].join(","));
@@ -118,7 +115,7 @@ export default function App() {
     if (!mapOnlyEventful) p.set("map", "all");
     if (query.trim()) p.set("q", query.trim());
     writeHash(p);
-  }, [tab, exhibitionStatus, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query]);
+  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query]);
 
   // ── Data load ─────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -162,18 +159,21 @@ export default function App() {
   );
 
   const filteredExhibitions = useMemo(
-    () => sortEvents(searchEvents(filterEvents(
-      filterExhibitions(liveExhibitions, exhibitionStatus),
+    () => sortByEndingSoonest(searchEvents(filterEvents(
+      liveExhibitionsOnView(liveExhibitions),
       venuesById, { venueTypes: types, regions }
     ), venuesById, query)),
-    [liveExhibitions, exhibitionStatus, venuesById, types, regions, query]
+    [liveExhibitions, venuesById, types, regions, query]
   );
 
+  // Archive is inherently past, so the forward-looking date presets ("Today",
+  // "This weekend"…) must NOT apply here — carrying one over from the Events
+  // tab would filter every past event out and leave the Archive blank.
   const filteredArchive = useMemo(
     () => sortEvents(searchEvents(filterEvents(data.archive, venuesById, {
-      venueTypes: types, eventTypes, regions, datePreset,
+      venueTypes: types, eventTypes, regions,
     }), venuesById, query)).reverse(),
-    [data.archive, venuesById, types, eventTypes, regions, datePreset, query]
+    [data.archive, venuesById, types, eventTypes, regions, query]
   );
 
   // Freshness signal: newest scraped_at across all events.
@@ -193,7 +193,6 @@ export default function App() {
     setDatePreset("all");
     setCustomStart("");
     setCustomEnd("");
-    setExhibitionStatus("current");
     setQuery("");
   };
 
@@ -238,7 +237,6 @@ export default function App() {
           datePreset={datePreset} setDatePreset={setDatePreset}
           customStart={customStart} setCustomStart={setCustomStart}
           customEnd={customEnd}     setCustomEnd={setCustomEnd}
-          exhibitionStatus={exhibitionStatus} setExhibitionStatus={setExhibitionStatus}
           onReset={onReset}
         />
 
@@ -278,13 +276,15 @@ export default function App() {
             {tab === "exhibitions" && (
               <>
                 <div className="text-xs text-ink/60">
-                  {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"}
+                  {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"} on view now
+                  {filteredExhibitions.length > 0 ? " · ending soonest first" : ""}
                 </div>
                 <EventList
                   events={filteredExhibitions}
                   venuesById={venuesById}
                   onShowOnMap={onShowOnMap}
                   onReset={onReset}
+                  grouped={false}
                 />
               </>
             )}

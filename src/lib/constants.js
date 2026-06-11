@@ -49,20 +49,6 @@ export const EVENT_TYPE_LABEL = {
   exhibition: "Exhibition",
 };
 
-// Top-level mode toggle in the header. "events" = one-off events (openings,
-// workshops, lectures, etc.); "exhibitions" = current/upcoming exhibitions.
-export const MODES = [
-  { key: "events", label: "Events" },
-  { key: "exhibitions", label: "Exhibitions" },
-];
-
-// Sub-selector shown only in Exhibitions mode.
-export const EXHIBITION_STATUSES = [
-  { key: "current", label: "On view now" },
-  { key: "upcoming", label: "Upcoming" },
-  { key: "all", label: "All" },
-];
-
 // Filter chip groups. Each chip can match multiple raw event_types (e.g.
 // Opening/Closing share a chip; "fair" folds into Other). Exhibition is
 // intentionally excluded — exhibitions are date ranges, not one-off events,
