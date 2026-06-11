@@ -26,30 +26,72 @@ LA = pytz.timezone("America/Los_Angeles")
 MAX_PAGES = 12
 
 
-_HAS_TIME_RE = re.compile(r'\b\d{1,2}(?::\d{2})?\s*(?:am|pm)\b', re.IGNORECASE)
+# "6 pm - 8 pm", "6:00 pm - 8:00 pm", "6pm–8pm"
+_TIME_RANGE_RE = re.compile(
+    r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*[-–—]\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)',
+    re.IGNORECASE,
+)
+# Single time with no range: "6 pm", "10:30 am"
+_SINGLE_TIME_RE = re.compile(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)', re.IGNORECASE)
 
 
-def _parse_lacma_date(raw: str) -> tuple[str | None, bool]:
-    """Parse 'Sat Apr 25 | 10 am PT' -> (ISO8601 in LA time, all_day)."""
+def _to24(h: int, m: int, ap: str) -> tuple[int, int]:
+    ap = ap.lower()
+    if ap == "pm" and h != 12:
+        h += 12
+    elif ap == "am" and h == 12:
+        h = 0
+    return h, m
+
+
+def _parse_lacma_date(raw: str) -> tuple[str | None, str | None, bool]:
+    """Parse LACMA date field -> (start_iso, end_iso, all_day).
+
+    Handles 'Sat Apr 25 | 10 am PT' and 'Fri Jun 12 | 6 pm - 8 pm PT'.
+    Times are extracted by regex so dateutil never sees them and can't bleed
+    the current wall-clock minutes into the result.
+    """
     if not raw:
-        return None, False
-    text = re.sub(r"\bPT\b", "", raw.replace("|", " ")).strip()
+        return None, None, False
+    text = re.sub(r"\bPT\b", "", raw.replace("|", " "))
+    text = re.sub(r"[–—]", "-", text)
     text = re.sub(r"\s+", " ", text).strip()
-    has_time = bool(_HAS_TIME_RE.search(text))
+
+    range_m = _TIME_RANGE_RE.search(text)
+    single_m = None if range_m else _SINGLE_TIME_RE.search(text)
+    has_time = bool(range_m or single_m)
+
+    # Strip times before handing text to dateutil so "6 pm - 8 pm" can't
+    # be misread as a negative-day offset or similar.
+    date_only = _TIME_RANGE_RE.sub("", text) if range_m else (
+        _SINGLE_TIME_RE.sub("", text) if single_m else text
+    )
+    date_only = re.sub(r"\s*-\s*$", "", date_only)
+    date_only = re.sub(r"\s+", " ", date_only).strip()
+
     now_la = datetime.now(LA)
-    # Use midnight as default so events without an explicit time don't inherit
-    # the current wall-clock time from the scraper run.
     midnight = now_la.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=None)
     try:
-        dt = du_parser.parse(text, default=midnight)
-        dt_la = LA.localize(dt.replace(tzinfo=None))
-        if (now_la - dt_la).days > 14:
-            dt_la = dt_la.replace(year=dt_la.year + 1)
-        if not has_time:
-            return dt_la.date().isoformat(), True
-        return dt_la.isoformat(), False
+        base = du_parser.parse(date_only, default=midnight)
+        base_la = LA.localize(base.replace(tzinfo=None))
+        if (now_la - base_la).days > 14:
+            base_la = base_la.replace(year=base_la.year + 1)
     except Exception:
-        return None, False
+        return None, None, False
+
+    if not has_time:
+        return base_la.date().isoformat(), None, True
+
+    if range_m:
+        sh, sm = _to24(int(range_m.group(1)), int(range_m.group(2) or 0), range_m.group(3))
+        eh, em = _to24(int(range_m.group(4)), int(range_m.group(5) or 0), range_m.group(6))
+        start_la = base_la.replace(hour=sh, minute=sm, second=0, microsecond=0)
+        end_la = base_la.replace(hour=eh, minute=em, second=0, microsecond=0)
+        return start_la.isoformat(), end_la.isoformat(), False
+
+    sh, sm = _to24(int(single_m.group(1)), int(single_m.group(2) or 0), single_m.group(3))
+    start_la = base_la.replace(hour=sh, minute=sm, second=0, microsecond=0)
+    return start_la.isoformat(), None, False
 
 
 class Scraper(BaseScraper):
@@ -112,7 +154,7 @@ class Scraper(BaseScraper):
             link = "https://www.lacma.org" + link
 
         date_el = card.select_one(".card-event__date")
-        start, all_day = _parse_lacma_date(
+        start, end, all_day = _parse_lacma_date(
             date_el.get_text(separator=" ", strip=True) if date_el else ""
         )
 
@@ -135,7 +177,7 @@ class Scraper(BaseScraper):
             description=desc[:800],
             event_type=infer_type(f"{title} {type_hint}", desc),
             start=start,
-            end=None,
+            end=end,
             all_day=all_day,
             url=link or None,
             image=image,

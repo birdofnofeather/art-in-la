@@ -28,8 +28,13 @@ _EVENT_DATE_RE = re.compile(
     r"(\w+)\s+(\d{1,2}),\s+(\d{4})",
     re.IGNORECASE,
 )
-# "H:MM PM PT"
+# "7:30 PM PT"  (start time with explicit timezone marker)
 _TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*(AM|PM)\s*PT", re.IGNORECASE)
+# "7:30 PM - 9:30 PM"  (range, PT optional on end)
+_TIME_RANGE_RE = re.compile(
+    r"(\d{1,2}):(\d{2})\s*(AM|PM)\s*[-–—]\s*(\d{1,2}):(\d{2})\s*(AM|PM)",
+    re.IGNORECASE,
+)
 
 # "April 11 - May 9, 2026"  or  "March 28 to May 9, 2026, 2026"
 _RANGE_RE = re.compile(
@@ -40,20 +45,40 @@ _RANGE_RE = re.compile(
 _TODAY = datetime.today()
 
 
-def _parse_event_date(text):
-    """Return datetime only if BOTH a date AND explicit time are found in the source."""
+def _parse_event_date(text: str, full_text: str = "") -> tuple[datetime | None, datetime | None]:
+    """Return (start, end) datetimes; end is None when no range is found.
+
+    Requires an explicit time in the source — never defaults or fabricates one.
+    Checks both the date-block text and the full paragraph text for a time range.
+    """
     m = _EVENT_DATE_RE.search(text)
     if not m:
-        return None
+        return None, None
     month = _MONTH_ABBR.get(m.group(1).lower())
     if not month:
-        return None
+        return None, None
     day, year = int(m.group(2)), int(m.group(3))
 
-    # Require an explicit time — do not assume or default.
-    tm = _TIME_RE.search(text)
+    # Look for a time range in either the date block or the full paragraph text.
+    search_text = text + "\n" + full_text
+    range_m = _TIME_RANGE_RE.search(search_text)
+    if range_m:
+        sh, sm = int(range_m.group(1)), int(range_m.group(2))
+        eh, em = int(range_m.group(4)), int(range_m.group(5))
+        sap, eap = range_m.group(3).upper(), range_m.group(6).upper()
+        if sap == "PM" and sh != 12: sh += 12
+        elif sap == "AM" and sh == 12: sh = 0
+        if eap == "PM" and eh != 12: eh += 12
+        elif eap == "AM" and eh == 12: eh = 0
+        try:
+            return datetime(year, month, day, sh, sm), datetime(year, month, day, eh, em)
+        except ValueError:
+            return None, None
+
+    # Fall back to single time (requires "PT" marker to confirm it's a real showtime).
+    tm = _TIME_RE.search(search_text)
     if not tm:
-        return None  # no explicit time → skip this event
+        return None, None
 
     hour, minute = int(tm.group(1)), int(tm.group(2))
     if tm.group(3).upper() == "PM" and hour != 12:
@@ -61,9 +86,9 @@ def _parse_event_date(text):
     elif tm.group(3).upper() == "AM" and hour == 12:
         hour = 0
     try:
-        return datetime(year, month, day, hour, minute)
+        return datetime(year, month, day, hour, minute), None
     except ValueError:
-        return None
+        return None, None
 
 
 def _parse_range(text):
@@ -141,7 +166,7 @@ class BeyondBaroqueScraper(BaseScraper):
                 if not title or len(title) < 3:
                     continue
                 date_str = strongs[1].get_text("\n", strip=True)
-                start = _parse_event_date(date_str)
+                start, end_dt = _parse_event_date(date_str, raw)
                 if start is None:
                     # Has a date block but no parseable time — site format may have changed.
                     if _EVENT_DATE_RE.search(date_str):
@@ -158,7 +183,7 @@ class BeyondBaroqueScraper(BaseScraper):
                     description=None,
                     event_type="performance",
                     start=start,
-                    end=None,
+                    end=end_dt,
                     all_day=False,
                     url=url,
                     image=None,
