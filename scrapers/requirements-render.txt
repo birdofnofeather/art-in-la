@@ -1,0 +1,8 @@
+# Optional headless-browser dependency, used only by the bot-gated venue
+# scrapers (Norton Simon behind Cloudflare, Huntington behind Vercel's Security
+# Checkpoint). Installed in CI; not required for a plain local `run_all`, where
+# those two scrapers simply produce no events if Playwright is absent.
+#
+# After installing, fetch the browser binary:
+#     python -m playwright install --with-deps chromium
+playwright==1.60.0

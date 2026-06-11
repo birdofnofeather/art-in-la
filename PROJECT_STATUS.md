@@ -203,3 +203,52 @@ pushes made with `GITHUB_TOKEN` don't fire `push`-triggered workflows).
   `scraped_at`.
 - `package-lock.json` committed; `deploy.yml` uses `npm ci` + npm cache.
 - Open Graph / Twitter meta tags for link sharing.
+
+---
+
+## Round 7 — Exhibitions tab, Archive bug, and the two bot-gated museums (2026-06-11)
+
+### Exhibitions tab now means "temporary, on view now"
+Previously the tab showed permanent installations (e.g. Getty "J. Paul Getty
+Life and Legacy", dated 2016→2034 in Getty's own feed), multi-day tours and
+programmes mis-typed as exhibitions (Academy Museum "Jaws: The Tour",
+"Close-Up Tours"), and page-section labels literally titled "Permanent
+Installation" (Torrance). Fixes:
+- Pipeline (`base.py`): only *generic* multi-day events are promoted to
+  exhibitions — specific types (tour/workshop/performance/…) keep their type.
+  Permanent/long-term runs (>~18 months) and "permanent"-titled rows are
+  dropped from the record. `event_type` inference now matches plural forms
+  ("Tours", "Workshops") so they classify correctly instead of as "other".
+- Frontend: the tab shows only exhibitions open *today*, with a real start AND
+  end date, under ~18 months, excluding tour/programme titles — sorted by
+  **closing date (ending soonest)**, with a "Closes in N days" badge inside two
+  weeks. The On view now / Upcoming / All selector was removed (the tab is
+  strictly current now). `EventList` gained a flat (ungrouped) mode so the
+  ending-soonest order isn't re-bucketed by start date.
+
+### Archive "shows nothing" — fixed
+The forward-looking date presets (Today / This weekend / …) are shared across
+tabs. Carrying one over from Events into the Archive filtered out every past
+event (they all end before the window) and left the Archive blank. The Archive
+no longer applies those presets.
+
+### Norton Simon + Huntington: scraped via headless browser (no manual entry)
+Both are now real scrapers running in GitHub Actions:
+- New `scrapers/utils/render.py` + `render_cli.py`: a Playwright/headless-
+  Chromium renderer run in a **subprocess** (thread-pool-safe, like the Getty
+  Node trick). It waits out anti-bot interstitials *in-page* — the crucial
+  detail for Huntington, whose Vercel "Security Checkpoint" returns 429 then
+  self-clears after a few seconds of its own JS; re-navigating restarts it.
+  Stealth is intentionally minimal (`navigator.webdriver` + `window.chrome`
+  only) — adding more navigator overrides made the checkpoint stick.
+- `norton_simon.py`: renders the 6 category pages, parses `.event-item` cards
+  (real dates + times). ~28 events.
+- `huntington.py`: renders `/calendar`, parses `CalendarItemCard` articles
+  (date-only; showtimes live on detail pages). ~23 events.
+- CI installs the browser via `requirements-render.txt` +
+  `playwright install --with-deps chromium` (a `continue-on-error` step, so a
+  browser-install hiccup never fails the whole run). Locally, absent Playwright,
+  both scrapers no-op and carry over.
+
+Coverage: **47 venues now produce events** (was 45); the two long-standing
+bot-gated gaps are closed.

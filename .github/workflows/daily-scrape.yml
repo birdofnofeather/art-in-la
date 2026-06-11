@@ -32,6 +32,15 @@ jobs:
       - name: Install deps
         run: pip install -r scrapers/requirements.txt
 
+      - name: Install headless browser (for bot-gated venues)
+        # Norton Simon (Cloudflare) and Huntington (Vercel checkpoint) only
+        # yield events to a real browser. If this step ever fails, the run still
+        # proceeds — those two scrapers degrade to zero events, not an error.
+        continue-on-error: true
+        run: |
+          pip install -r scrapers/requirements-render.txt
+          python -m playwright install --with-deps chromium
+
       - name: Run scrapers
         run: python -m scrapers.run_all
         timeout-minutes: 20

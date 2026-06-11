@@ -76,13 +76,23 @@ the id-keyed detail lookup — this actually happened with SPARC).
 marks them `merge=ours` so pull/rebase auto-resolves them; line endings are LF.
 `venues.json` is the only hand-curated data file.
 
-## Known limitations (verified)
+## Bot-gated venues: headless-browser render path
 
-Two venues are **bot-gated** and return nothing to scripted requests — see the
-`# BLOCKED-NOTE` comment in each scraper:
-- `norton_simon` — Cloudflare serves an event-less shell to non-browsers.
-- `huntington` — Vercel bot protection (HTTP 429).
-They need a real browser/render service; currently effectively listing-only.
+Two venues serve an event-less shell (or a hard 429) to plain HTTP clients but
+hand a real browser the full calendar once their anti-bot JS runs:
+- `norton_simon` — Cloudflare; the SPA renders events client-side.
+- `huntington` — Vercel "Security Checkpoint" (429) that **self-clears after a
+  few seconds if you wait in-page** instead of re-navigating.
+
+Both are now scraped via `scrapers/utils/render.py`, which runs
+`render_cli.py` (headless Chromium / Playwright) in a **subprocess** — keeping
+the thread-unfriendly browser work out of the scrape thread pool, the same way
+the Getty scraper shells out to Node. The renderer is deliberately minimal:
+spoof only `navigator.webdriver` + `window.chrome` (piling on more navigator
+overrides made Vercel's checkpoint stick), wait the interstitial out in-page,
+then return the populated HTML. CI installs it via `requirements-render.txt`
++ `playwright install --with-deps chromium`. If Playwright is absent (a plain
+local run), these two scrapers no-op and the rest of the pipeline is unaffected.
 
 ## Running it
 
@@ -95,6 +105,10 @@ npm run build
 pip install -r scrapers/requirements.txt
 python -m scrapers.run_all            # all venues, writes public/data/*.json
 python -m scrapers.run_all --only ica_la --dry-run   # one venue, no write
+
+# Bot-gated venues (Norton Simon, Huntington) — needs the headless browser:
+pip install -r scrapers/requirements-render.txt && python -m playwright install chromium
+python -m scrapers.run_all --only norton_simon,huntington --dry-run
 ```
 
 Commit + push (Windows): `.\commit.ps1 "message"` (validates JSON, stages,
@@ -102,10 +116,12 @@ commits, rebases, pushes).
 
 ## Open next steps (from PROJECT_STATUS.md)
 
-1. Render the 2 bot-gated museums (Norton Simon, Huntington) via a headless/render service.
-2. True showtimes for Academy Museum / REDCAT via their Ticketure feeds (they currently show date-only).
+1. True showtimes for Academy Museum / Huntington / REDCAT via their ticketing
+   feeds (they currently show date-only).
 
 Done in Round 6 (2026-06-11): corita_art_center fixed; CI scraper health-gate
 (`public/data/health.json`, 3-run zero-streak alerts); map auto-fits to the
 venue set; free-text search; daily-scrape workflow repaired (it had been
-failing since June 1 due to a truncated final step).
+failing since June 1 due to a truncated final step). Exhibitions tab restricted
+to temporary on-view shows (ending-soonest); empty-Archive bug fixed. Norton
+Simon + Huntington now scraped via a headless-browser render path in CI.
