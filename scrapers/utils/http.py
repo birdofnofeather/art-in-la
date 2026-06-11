@@ -47,6 +47,16 @@ def get(url: str, *, timeout: int = DEFAULT_TIMEOUT, retries: int = 2,
             if 500 <= resp.status_code < 600 and attempt < retries:
                 time.sleep(backoff ** attempt)
                 continue
+            if resp.status_code == 429 and attempt < retries:
+                # Rate-limited: honor Retry-After when it's a sane number of
+                # seconds, otherwise fall back to exponential backoff.
+                wait = backoff ** attempt
+                try:
+                    wait = min(float(resp.headers.get("Retry-After", wait)), 30.0)
+                except (TypeError, ValueError):
+                    pass
+                time.sleep(wait)
+                continue
             return resp  # non-200 but not retryable; caller can inspect
         except (requests.RequestException, OSError) as e:
             last_err = e

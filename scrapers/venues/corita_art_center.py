@@ -18,12 +18,11 @@ from scrapers.base import BaseScraper, Event, event_id
 from scrapers.utils.dateparse import now_utc_iso
 from scrapers.utils.warn import skip_warn
 
-_TODAY = datetime.today()
-
 # "May 2, 2026"
 _DATE_RE = re.compile(r"(\w+)\s+(\d{1,2}),\s+(\d{4})")
-# "1:00pm-2:00pm" or "1:00 pm"
-_TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*(am|pm)", re.IGNORECASE)
+# "1:00pm-2:00pm" or "1:00 pm" — and Webflow sometimes renders bare 24-hour
+# clock values like "14:00", so am/pm is optional and handled below.
+_TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*(am|pm)?", re.IGNORECASE)
 
 _MONTHS = {
     "january": 1, "february": 2, "march": 3, "april": 4,
@@ -40,33 +39,65 @@ _RECURRING_PATTERN = re.compile(
 )
 
 
-def _parse_datetime(date_text: str, time_text: str):
-    """Return datetime only if BOTH a date AND an explicit time are found."""
-    m = _DATE_RE.search(date_text)
+def _parse_date(date_text: str):
+    """Return (year, month, day) or None."""
+    m = _DATE_RE.search(date_text or "")
     if not m:
         return None
     month = _MONTHS.get(m.group(1).lower())
     if not month:
         return None
-    day, year = int(m.group(2)), int(m.group(3))
+    return int(m.group(3)), month, int(m.group(2))
 
-    # Require an explicit time — do not assume or default.
-    tm = _TIME_RE.search(time_text)
-    if not tm:
-        # Also try the date text itself (some cards combine date+time).
-        tm = _TIME_RE.search(date_text)
-    if not tm:
-        return None  # no explicit time → skip this event
 
-    hour, minute = int(tm.group(1)), int(tm.group(2))
-    if tm.group(3).lower() == "pm" and hour != 12:
-        hour += 12
-    elif tm.group(3).lower() == "am" and hour == 12:
-        hour = 0
+def _to_24h(hour: int, ampm: str | None) -> int:
+    """12h→24h when am/pm is present; bare values are already 24-hour clock."""
+    if ampm:
+        if ampm.lower() == "pm" and hour != 12:
+            hour += 12
+        elif ampm.lower() == "am" and hour == 12:
+            hour = 0
+    return hour
+
+
+def _parse_times(time_text: str):
+    """Return (start_time, end_time) as (hour, minute) tuples; either may be None.
+
+    Handles "1:00pm-2:00pm", "6:00pm – 7:00pm", "1:00 pm", and bare 24-hour
+    values like "14:00".
+    """
+    matches = _TIME_RE.findall(time_text or "")
+    times = []
+    for h, mnt, ampm in matches[:2]:
+        hour = _to_24h(int(h), ampm or None)
+        minute = int(mnt)
+        if 0 <= hour <= 23 and 0 <= minute <= 59:
+            times.append((hour, minute))
+    start = times[0] if times else None
+    end = times[1] if len(times) > 1 else None
+    return start, end
+
+
+def _parse_datetime(date_text: str, time_text: str):
+    """Return (start_dt, end_dt) — start only if BOTH a date AND an explicit
+    time are found in the source; end_dt may be None."""
+    ymd = _parse_date(date_text)
+    if not ymd:
+        return None, None
+    # Require an explicit time — do not assume or default. Some cards combine
+    # date+time in one block, so fall back to the date text.
+    start_t, end_t = _parse_times(time_text)
+    if not start_t:
+        start_t, end_t = _parse_times(date_text)
+    if not start_t:
+        return None, None
+    year, month, day = ymd
     try:
-        return datetime(year, month, day, hour, minute)
+        start = datetime(year, month, day, *start_t)
+        end = datetime(year, month, day, *end_t) if end_t else None
+        return start, end
     except ValueError:
-        return None
+        return None, None
 
 
 class CoritaArtCenterScraper(BaseScraper):
@@ -77,6 +108,7 @@ class CoritaArtCenterScraper(BaseScraper):
     def custom_parse(self, html, base_url):
         soup = BeautifulSoup(html, "html.parser")
 
+        now = datetime.now()
         seen_urls = set()
         for card in soup.find_all("a", class_="event-box"):
             href = card.get("href", "")
@@ -99,19 +131,32 @@ class CoritaArtCenterScraper(BaseScraper):
 
             start_el = card.find(class_="event-page-start-date")
             time_el = card.find(class_="text-block-11")
+            loc_el = card.find(class_="text-block-12")
             if not start_el:
                 continue
 
             date_text = start_el.get_text(strip=True)
             time_text = time_el.get_text(strip=True) if time_el else ""
-            start = _parse_datetime(date_text, time_text)
+            start, end = _parse_datetime(date_text, time_text)
             if start is None:
                 # Has a date element but no parseable time — site format may have changed.
                 if _DATE_RE.search(date_text):
                     skip_warn(self.venue_id, title, "has date but no explicit time in source")
                 continue
-            if start < _TODAY:
+            if start < now:
                 continue
+
+            # Multi-day listings render an end date in their own element
+            # (hidden via w-condition-invisible when same-day).
+            end_el = card.find(class_="event-page-end-date")
+            if end_el and "w-condition-invisible" not in (end_el.get("class") or []):
+                end_ymd = _parse_date(end_el.get_text(strip=True))
+                if end_ymd and end_ymd != (start.year, start.month, start.day):
+                    et = (end.hour, end.minute) if end else (start.hour, start.minute)
+                    try:
+                        end = datetime(*end_ymd, *et)
+                    except ValueError:
+                        pass
 
             if "tour" in title.lower():
                 etype = "tour"
@@ -127,12 +172,12 @@ class CoritaArtCenterScraper(BaseScraper):
                 description=None,
                 event_type=etype,
                 start=start,
-                end=None,
+                end=end,
                 all_day=False,
                 url=url,
                 image=None,
                 artists=[],
-                location_override=None,
+                location_override=loc_el.get_text(strip=True) if loc_el else None,
                 source=self.events_url,
                 scraped_at=now_utc_iso(),
             )
