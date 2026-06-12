@@ -283,6 +283,11 @@ class Scraper(BaseScraper):
             span = _span_days(start_raw, end_raw or start_raw)
             etype = infer_type(title, "")
 
+            # All Academy Museum "tours" are standing recurring programmes
+            # (Jaws: The Tour, ASL Interpreted Tours, etc.) — skip them all.
+            if etype == "tour":
+                continue
+
             # Long-running exhibitions: all-day date range, no detail fetch.
             if span > _EVENT_SPAN_DAYS:
                 start = to_la_iso(start_raw, all_day=True)
