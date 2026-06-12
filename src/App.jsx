@@ -217,6 +217,14 @@ export default function App() {
     setQuery("");
   };
 
+  const onHome = () => {
+    onReset();
+    setMapOnlyEventful(true);
+    setFocusedVenueId(null);
+    setDetailVenueId(null);
+    setTab("map");
+  };
+
   const onShowOnMap = (venueId) => {
     setFocusedVenueId(null);
     setTimeout(() => setFocusedVenueId(venueId), 0);
@@ -238,7 +246,7 @@ export default function App() {
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} />
+      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} />
 
       <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
         {/* Error panel with retry */}

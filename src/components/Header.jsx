@@ -9,13 +9,21 @@ const TABS = [
   { key: "saved",        label: "Saved" },
 ];
 
-export default function Header({ tab, setTab, stats, savedCount }) {
+export default function Header({ tab, setTab, stats, savedCount, onHome }) {
   return (
     <header className="border-b border-black/10 bg-white sticky top-0 z-50">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 md:px-6">
         <div className="flex-1 min-w-0">
           <h1 className="font-display text-2xl font-extrabold leading-none tracking-tight">
-            Art in LA
+            {onHome ? (
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); onHome(); }}
+                className="hover:opacity-70 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 rounded"
+              >
+                Art in LA
+              </a>
+            ) : "Art in LA"}
           </h1>
           <p className="mt-1 text-xs text-ink/60 truncate">
             Art events and exhibitions across Los Angeles County
