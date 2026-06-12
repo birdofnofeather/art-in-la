@@ -33,7 +33,8 @@ function makeIcon(type, eventful) {
 }
 
 /** Inner component that reacts to focusedVenueId and flies the map there. */
-function FlyController({ venues, focusedVenueId, markerRefs }) {  const map = useMap();
+function FlyController({ venues, focusedVenueId, markerRefs }) {
+  const map = useMap();
   const prevId = useRef(null);
 
   useEffect(() => {
@@ -41,7 +42,11 @@ function FlyController({ venues, focusedVenueId, markerRefs }) {  const map = us
     prevId.current = focusedVenueId;
     const v = venues.find((x) => x.id === focusedVenueId);
     if (!v || typeof v.lat !== "number") return;
-    map.flyTo([v.lat, v.lng], Math.max(map.getZoom(), 15), { duration: 0.7 });
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    map.flyTo([v.lat, v.lng], Math.max(map.getZoom(), 15), {
+      duration: reduce ? 0 : 0.7,
+      animate: !reduce,
+    });
     // Open popup after animation
     const t = setTimeout(() => {
       const marker = markerRefs.current[focusedVenueId];
@@ -109,7 +114,7 @@ export default function VenueMap({
         center={CENTER}
         zoom={ZOOM}
         scrollWheelZoom
-        style={{ height: "560px", width: "100%" }}
+        style={{ height: "min(70vh, 560px)", width: "100%" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &middot; <a href="https://carto.com/attributions">CARTO</a>'
@@ -201,8 +206,9 @@ export default function VenueMap({
           <button
             type="button"
             onClick={() => setOnlyEventful(!onlyEventful)}
-            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${onlyEventful ? "bg-amber-500" : "bg-ink/20"}`}
+            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${onlyEventful ? "bg-amber-500" : "bg-ink/20"}`}
             aria-pressed={onlyEventful}
+            aria-label={onlyEventful ? "Showing venues with events only" : "Showing all venues"}
           >
             <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white shadow transition-transform ${onlyEventful ? "translate-x-[18px]" : "translate-x-0.5"}`} />
           </button>

@@ -1,5 +1,5 @@
 import React, {
-  lazy, Suspense, useEffect, useMemo, useRef, useState,
+  lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState,
 } from "react";
 import Header from "./components/Header.jsx";
 import FilterBar from "./components/FilterBar.jsx";
@@ -7,6 +7,7 @@ import EventList from "./components/EventList.jsx";
 import VenueList from "./components/VenueList.jsx";
 import VenueDetail from "./components/VenueDetail.jsx";
 import { loadAll } from "./lib/data.js";
+import { useFavorites } from "./lib/useFavorites.js";
 import {
   indexVenues, filterVenues, filterEvents, sortEvents,
   eventfulVenueIds, isUpcoming, partitionByMode, liveExhibitionsOnView,
@@ -58,6 +59,9 @@ export default function App() {
   const [error, setError]       = useState(null);
   const [data, setData]         = useState({ venues: [], events: [], archive: [], scrapedVenues: [] });
 
+  // Favorites (persisted to localStorage)
+  const { favs, toggle: toggleFav } = useFavorites();
+
   // Navigation
   const [tab,  setTab]  = useState("map");
 
@@ -99,6 +103,7 @@ export default function App() {
     if (p.get("to"))     setCustomEnd(p.get("to"));
     if (p.get("map"))    setMapOnlyEventful(p.get("map") !== "all");
     if (p.get("q"))      setQuery(p.get("q"));
+    if (p.get("venue"))  setDetailVenueId(p.get("venue"));
   }, []);
 
   // ── URL hash: write on state change ───────────────────────────────────────
@@ -114,15 +119,19 @@ export default function App() {
     if (customEnd)   p.set("to",   customEnd);
     if (!mapOnlyEventful) p.set("map", "all");
     if (query.trim()) p.set("q", query.trim());
+    if (detailVenueId) p.set("venue", detailVenueId);
     writeHash(p);
-  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query]);
+  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query, detailVenueId]);
 
-  // ── Data load ─────────────────────────────────────────────────────────────
-  useEffect(() => {
+  // ── Data load (extracted for retry) ───────────────────────────────────────
+  const load = useCallback(() => {
+    setLoading(true);
+    setError(null);
     loadAll()
       .then((d) => { setData(d); setLoading(false); })
       .catch((e) => { setError(String(e)); setLoading(false); });
   }, []);
+  useEffect(() => { load(); }, [load]);
 
   // ── Derived data ──────────────────────────────────────────────────────────
   const venuesById  = useMemo(() => indexVenues(data.venues),   [data.venues]);
@@ -131,8 +140,6 @@ export default function App() {
   const { oneoff: allOneoff, exhibitions: allExhibitions } = useMemo(
     () => partitionByMode(data.events), [data.events]
   );
-  // Note: isUpcoming takes (ev, now) — passing it bare to .filter would feed
-  // the array index in as `now`, which coerces every date comparison to true.
   const upcomingEvents  = useMemo(() => allOneoff.filter((ev) => isUpcoming(ev)),      [allOneoff]);
   const liveExhibitions = useMemo(() => allExhibitions.filter((ev) => isUpcoming(ev)), [allExhibitions]);
   const eventfulIds     = useMemo(() => eventfulVenueIds(upcomingEvents),  [upcomingEvents]);
@@ -166,14 +173,21 @@ export default function App() {
     [liveExhibitions, venuesById, types, regions, query]
   );
 
-  // Archive is inherently past, so the forward-looking date presets ("Today",
-  // "This weekend"…) must NOT apply here — carrying one over from the Events
-  // tab would filter every past event out and leave the Archive blank.
   const filteredArchive = useMemo(
     () => sortEvents(searchEvents(filterEvents(data.archive, venuesById, {
       venueTypes: types, eventTypes, regions,
     }), venuesById, query)).reverse(),
     [data.archive, venuesById, types, eventTypes, regions, query]
+  );
+
+  // Saved items
+  const savedEvents = useMemo(
+    () => [...upcomingEvents, ...liveExhibitions].filter((ev) => favs.has(ev.id)),
+    [upcomingEvents, liveExhibitions, favs]
+  );
+  const savedVenues = useMemo(
+    () => data.venues.filter((v) => favs.has(v.id)),
+    [data.venues, favs]
   );
 
   // Freshness signal: newest scraped_at across all events.
@@ -184,6 +198,13 @@ export default function App() {
     }
     return max ? new Date(max) : null;
   }, [data.events]);
+
+  // Clear detailVenueId if the venue isn't in the loaded data (defensive).
+  useEffect(() => {
+    if (detailVenueId && Object.keys(venuesById).length > 0 && !venuesById[detailVenueId]) {
+      setDetailVenueId(null);
+    }
+  }, [detailVenueId, venuesById]);
 
   // ── Callbacks ─────────────────────────────────────────────────────────────
   const onReset = () => {
@@ -196,15 +217,12 @@ export default function App() {
     setQuery("");
   };
 
-  /** "Show on map": fly to venue and switch to map tab. */
   const onShowOnMap = (venueId) => {
-    setFocusedVenueId(null);               // reset first so effect re-fires
+    setFocusedVenueId(null);
     setTimeout(() => setFocusedVenueId(venueId), 0);
     setTab("map");
   };
 
-  /** "See events →" from map popup: jump to the Events tab pre-filtered to
-      that venue (via search on the venue name). */
   const onGoToEvents = (venueId) => {
     const venue = venuesById[venueId];
     if (venue?.name) setQuery(venue.name);
@@ -220,11 +238,18 @@ export default function App() {
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} />
+      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} />
 
       <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
+        {/* Error panel with retry */}
         {error && (
-          <div className="panel p-6 text-center text-sm text-red-700">{error}</div>
+          <div className="panel p-6 text-center space-y-3">
+            <p className="text-sm font-medium">We couldn't load the latest event data.</p>
+            <p className="text-xs text-ink/50">{error}</p>
+            <button type="button" onClick={load} className="chip">
+              Try again
+            </button>
+          </div>
         )}
 
         {/* FilterBar always visible (even while loading) */}
@@ -261,7 +286,7 @@ export default function App() {
 
             {tab === "events" && (
               <>
-                <div className="text-xs text-ink/60">
+                <div role="status" aria-live="polite" className="text-xs text-ink/60">
                   {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
                 </div>
                 <EventList
@@ -269,13 +294,15 @@ export default function App() {
                   venuesById={venuesById}
                   onShowOnMap={onShowOnMap}
                   onReset={onReset}
+                  favs={favs}
+                  onToggleFav={toggleFav}
                 />
               </>
             )}
 
             {tab === "exhibitions" && (
               <>
-                <div className="text-xs text-ink/60">
+                <div role="status" aria-live="polite" className="text-xs text-ink/60">
                   {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"} on view now
                   {filteredExhibitions.length > 0 ? " · ending soonest first" : ""}
                 </div>
@@ -285,13 +312,15 @@ export default function App() {
                   onShowOnMap={onShowOnMap}
                   onReset={onReset}
                   grouped={false}
+                  favs={favs}
+                  onToggleFav={toggleFav}
                 />
               </>
             )}
 
             {tab === "venues" && (
               <>
-                <div className="text-xs text-ink/60">
+                <div role="status" aria-live="polite" className="text-xs text-ink/60">
                   {filteredVenues.length} venue{filteredVenues.length === 1 ? "" : "s"}
                 </div>
                 <VenueList
@@ -301,6 +330,8 @@ export default function App() {
                   scrapedIds={scrapedIds}
                   onShowOnMap={onShowOnMap}
                   onShowDetail={setDetailVenueId}
+                  favs={favs}
+                  onToggleFav={toggleFav}
                 />
               </>
             )}
@@ -312,11 +343,62 @@ export default function App() {
                     "en-US", { year: "numeric", month: "long", day: "numeric" }
                   )}. Past events captured by the daily scrape will appear here.
                 </div>
-                <div className="text-xs text-ink/60">
+                <div role="status" aria-live="polite" className="text-xs text-ink/60">
                   {filteredArchive.length} past event{filteredArchive.length === 1 ? "" : "s"}
                   {filteredArchive.length > 0 ? " (most recent first)" : ""}
                 </div>
-                <EventList events={filteredArchive} venuesById={venuesById} onReset={onReset} />
+                <EventList
+                  events={filteredArchive}
+                  venuesById={venuesById}
+                  onReset={onReset}
+                  favs={favs}
+                  onToggleFav={toggleFav}
+                />
+              </>
+            )}
+
+            {tab === "saved" && (
+              <>
+                {favs.size === 0 ? (
+                  <div className="panel p-10 text-center space-y-3 text-sm text-ink/50">
+                    <div className="text-3xl">☆</div>
+                    <div>Tap the star on any event or venue to save it here.</div>
+                  </div>
+                ) : (
+                  <div className="space-y-8">
+                    {savedEvents.length > 0 && (
+                      <div>
+                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/60">
+                          {savedEvents.length} saved event{savedEvents.length !== 1 ? "s" : ""}
+                        </div>
+                        <EventList
+                          events={savedEvents}
+                          venuesById={venuesById}
+                          onShowOnMap={onShowOnMap}
+                          grouped={false}
+                          favs={favs}
+                          onToggleFav={toggleFav}
+                        />
+                      </div>
+                    )}
+                    {savedVenues.length > 0 && (
+                      <div>
+                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/60">
+                          {savedVenues.length} saved venue{savedVenues.length !== 1 ? "s" : ""}
+                        </div>
+                        <VenueList
+                          venues={savedVenues}
+                          eventfulIds={eventfulIds}
+                          scrapedIds={scrapedIds}
+                          onShowOnMap={onShowOnMap}
+                          onShowDetail={setDetailVenueId}
+                          favs={favs}
+                          onToggleFav={toggleFav}
+                        />
+                      </div>
+                    )}
+                  </div>
+                )}
               </>
             )}
           </>

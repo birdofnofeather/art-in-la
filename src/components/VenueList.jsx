@@ -7,7 +7,30 @@ const SOCIAL_LABEL = {
   threads: "Threads", facebook: "Facebook", tiktok: "TikTok", youtube: "YouTube",
 };
 
-export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap, onShowDetail, onReset }) {
+function StarButton({ isFav, onToggle }) {
+  return (
+    <button
+      type="button"
+      onClick={(e) => { e.stopPropagation(); onToggle(); }}
+      className={`absolute right-2 top-2 p-1 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${
+        isFav ? "text-amber-500" : "text-ink/25 hover:text-amber-400"
+      }`}
+      aria-label={isFav ? "Remove from saved" : "Save venue"}
+    >
+      {isFav ? (
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      ) : (
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      )}
+    </button>
+  );
+}
+
+export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap, onShowDetail, onReset, favs, onToggleFav }) {
   if (venues.length === 0) {
     return (
       <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
@@ -24,10 +47,14 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
         const color = TYPE_COLOR[v.type] || "#666";
         const socials = v.socials || {};
         const hasScraped = !scrapedIds || scrapedIds.has(v.id);
+        const isFav = favs?.has(v.id) ?? false;
 
         return (
-          <article key={v.id} className="panel overflow-hidden">
+          <article key={v.id} className="panel relative overflow-hidden">
             <div className="h-1 w-full" style={{ background: color }} />
+            {onToggleFav && (
+              <StarButton isFav={isFav} onToggle={() => onToggleFav(v.id)} />
+            )}
             <div className="space-y-2 p-4">
               <div className="flex flex-wrap items-center gap-2 text-xs">
                 <span className="chip" style={{ borderColor: color + "55" }}>
@@ -48,7 +75,7 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
                 )}
               </div>
 
-              <h3 className="font-display text-lg leading-snug">
+              <h3 className="font-display text-lg leading-snug pr-6">
                 {onShowDetail ? (
                   <button
                     type="button"

@@ -1,14 +1,15 @@
 import React from "react";
 
 const TABS = [
-  { key: "map",     label: "Map" },
-  { key: "events",  label: "Events" },
-  { key: "exhibitions", label: "Exhibitions" },
-  { key: "venues",  label: "Venues" },
-  { key: "archive", label: "Archive" },
+  { key: "map",          label: "Map" },
+  { key: "events",       label: "Events" },
+  { key: "exhibitions",  label: "Exhibitions" },
+  { key: "venues",       label: "Venues" },
+  { key: "archive",      label: "Archive" },
+  { key: "saved",        label: "Saved" },
 ];
 
-export default function Header({ tab, setTab, stats }) {
+export default function Header({ tab, setTab, stats, savedCount }) {
   return (
     <header className="border-b border-black/10 bg-white sticky top-0 z-50">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 md:px-6">
@@ -23,15 +24,22 @@ export default function Header({ tab, setTab, stats }) {
             )}
           </p>
         </div>
-        <nav className="flex gap-1">
+        <nav className="flex flex-wrap gap-1">
           {TABS.map((t) => (
             <button
               key={t.key} type="button" onClick={() => setTab(t.key)}
-              className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+              className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${
                 tab === t.key ? "bg-ink text-white" : "text-ink/70 hover:bg-black/5"
               }`}
             >
               {t.label}
+              {t.key === "saved" && savedCount > 0 && (
+                <span className={`inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full px-1 text-xs tabular-nums ${
+                  tab === t.key ? "bg-white/25 text-white" : "bg-amber-500 text-white"
+                }`}>
+                  {savedCount}
+                </span>
+              )}
             </button>
           ))}
         </nav>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { TYPE_COLOR, TYPE_LABEL, REGION_LABEL, EVENT_TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
 
@@ -35,11 +35,44 @@ function fmtRange(start, end) {
 
 export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveExhibitions, onClose, onShowOnMap }) {
   const v = venuesById?.[venueId];
+  const panelRef = useRef(null);
+  const openerRef = useRef(null);
 
-  // Close on Escape
+  // Focus management: capture opener on open, restore on close, move focus in.
   useEffect(() => {
     if (!venueId) return;
-    const handler = (e) => { if (e.key === "Escape") onClose(); };
+    openerRef.current = document.activeElement;
+    const t = setTimeout(() => {
+      if (!panelRef.current) return;
+      const el = panelRef.current.querySelector(
+        'button, [href], input, [tabindex]:not([tabindex="-1"])'
+      );
+      el?.focus();
+    }, 0);
+    return () => {
+      clearTimeout(t);
+      openerRef.current?.focus();
+    };
+  }, [venueId]);
+
+  // Keyboard: Escape to close + Tab focus trap within the drawer.
+  useEffect(() => {
+    if (!venueId) return;
+    const handler = (e) => {
+      if (e.key === "Escape") { onClose(); return; }
+      if (e.key !== "Tab" || !panelRef.current) return;
+      const focusable = Array.from(panelRef.current.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      ));
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [venueId, onClose]);
@@ -61,7 +94,13 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
       />
 
       {/* Drawer */}
-      <aside className="fixed right-0 top-0 bottom-0 z-50 flex w-full max-w-md flex-col bg-white shadow-2xl overflow-hidden">
+      <aside
+        ref={panelRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="venue-detail-heading"
+        className="fixed right-0 top-0 bottom-0 z-50 flex w-full max-w-md flex-col bg-white shadow-2xl overflow-hidden"
+      >
         {/* Color bar */}
         <div className="h-1.5 w-full shrink-0" style={{ background: color }} />
 
@@ -78,12 +117,12 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
                 <span className="text-xs text-ink/50">{REGION_LABEL[v.region] || v.region}</span>
               )}
             </div>
-            <h2 className="font-display text-xl font-bold leading-tight">{v.name}</h2>
+            <h2 id="venue-detail-heading" className="font-display text-xl font-bold leading-tight">{v.name}</h2>
             {v.neighborhood && <div className="text-sm text-ink/60 mt-0.5">{v.neighborhood}</div>}
           </div>
           <button
             type="button" onClick={onClose}
-            className="shrink-0 rounded-full p-1.5 hover:bg-black/5 text-ink/50 hover:text-ink transition-colors"
+            className="shrink-0 rounded-full p-1.5 hover:bg-black/5 text-ink/50 hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
             aria-label="Close"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
