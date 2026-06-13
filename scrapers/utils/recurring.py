@@ -32,7 +32,11 @@ _RECURRING_KW = re.compile(
         architecture\s+tour |
         garden\s+tour |
         curator'?s\s+gallery\s+tour |
-        docent          # covers "docent-led", "docent tour", etc.
+        docent |        # covers "docent-led", "docent tour", etc.
+
+        # Norton Simon standing programmes — not one-off events
+        introductory\s+film |
+        afternoon\s+salon
     )\b
     """,
     re.IGNORECASE | re.VERBOSE,
