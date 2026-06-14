@@ -2,8 +2,10 @@
 from __future__ import annotations
 
 import re
+from datetime import datetime
 from typing import Iterable
 
+import pytz
 from bs4 import BeautifulSoup
 from dateutil import parser as dparser
 
@@ -14,25 +16,87 @@ from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import now_utc_iso
 
 BASE = "https://theautry.org"
-LA_OFFSET = "-07:00"
+LA = pytz.timezone("America/Los_Angeles")
 
-# Autry shows recurring/text dates like "Saturdays and Sundays…" which are
-# not machine-parseable — we skip those and only emit events with a real date
-# embedded in the URL path (/events/category/slug) or a parseable text date.
-_DATE_IN_URL = re.compile(r"/events/\w+-activities/|/events/[a-z]")
+# Handles "10–11 a.m.", "10 a.m.–12:30 p.m.", "7:00 PM - 9:30 PM"
+_AMPM = r'[ap]\.?m\.?'
+_TIME_RANGE_RE = re.compile(
+    r'(\d{1,2})(?::(\d{2}))?\s*(?:(' + _AMPM + r')\s*)?'
+    r'[–—-]\s*'
+    r'(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
+    re.IGNORECASE,
+)
+_SINGLE_TIME_RE = re.compile(
+    r'\b(\d{1,2})(?::(\d{2}))?\s*(' + _AMPM + r')',
+    re.IGNORECASE,
+)
+_MONTH_RE = re.compile(
+    r'(January|February|March|April|May|June|July|August|September|October|November|December)'
+    r'\s+\d{1,2}(?:,\s*\d{4})?',
+    re.IGNORECASE,
+)
 
 
-def _parse_autry_date(text: str) -> str | None:
-    """Try to parse a date string like 'June 6, 2026' from Autry event text."""
-    # Find something that looks like "Month D, YYYY" or "Month YYYY"
-    m = re.search(r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:,\s*\d{4})?", text)
-    if not m:
-        return None
+def _to24(h: int, m: int, ap: str) -> tuple[int, int]:
+    ap = ap.lower().replace(".", "")
+    if ap.startswith("p") and h != 12:
+        h += 12
+    elif ap.startswith("a") and h == 12:
+        h = 0
+    return h, m
+
+
+def _parse_times(text: str) -> tuple[tuple[int, int] | None, tuple[int, int] | None]:
+    """Return (start_hm, end_hm) where hm=(hour24, minute), or None."""
+    m = _TIME_RANGE_RE.search(text)
+    if m:
+        end_ap = m.group(6)
+        start_ap = m.group(3) or end_ap
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), start_ap)
+        eh, em = _to24(int(m.group(4)), int(m.group(5) or 0), end_ap)
+        return (sh, sm), (eh, em)
+    m = _SINGLE_TIME_RE.search(text)
+    if m:
+        sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), m.group(3))
+        return (sh, sm), None
+    return None, None
+
+
+def _parse_autry_date(text: str) -> tuple[str | None, str | None, bool]:
+    """Parse date + optional time from Autry date text.
+
+    Returns (start_iso, end_iso, all_day).
+    """
+    # Strip times before passing to dateutil to avoid bleeding
+    stripped = _TIME_RANGE_RE.sub("", _SINGLE_TIME_RE.sub("", text))
+    dm = _MONTH_RE.search(stripped)
+    if not dm:
+        return None, None, True
     try:
-        dt = dparser.parse(m.group(0), fuzzy=True)
-        return dt.strftime(f"%Y-%m-%dT00:00:00{LA_OFFSET}")
+        midnight = datetime(2026, 1, 1, 0, 0, 0)
+        dt = dparser.parse(dm.group(0), fuzzy=True, default=midnight)
+        date_str = dt.strftime("%Y-%m-%d")
     except Exception:
-        return None
+        return None, None, True
+
+    start_hm, end_hm = _parse_times(text)
+    if start_hm:
+        try:
+            naive = datetime(dt.year, dt.month, dt.day, start_hm[0], start_hm[1])
+            start_iso = LA.localize(naive).isoformat()
+        except Exception:
+            return None, None, True
+        end_iso = None
+        if end_hm:
+            try:
+                naive_e = datetime(dt.year, dt.month, dt.day, end_hm[0], end_hm[1])
+                end_iso = LA.localize(naive_e).isoformat()
+            except Exception:
+                pass
+        return start_iso, end_iso, False
+
+    # No time found — emit as all-day
+    return f"{date_str}T00:00:00-07:00", None, True
 
 
 class Scraper(BaseScraper):
@@ -69,13 +133,11 @@ class Scraper(BaseScraper):
                 continue
             seen.add(title)
 
-            # Try to extract a parseable date from the title text
-            # (Autry embeds the month/date directly in some event titles)
             date_div = art.select_one(".autry-field-date")
             date_text = date_div.get_text(strip=True) if date_div else ""
-            start = _parse_autry_date(date_text) or _parse_autry_date(title)
-
-            # If no parseable date, skip — better to have fewer clean events
+            start, end, all_day = _parse_autry_date(date_text)
+            if not start:
+                start, end, all_day = _parse_autry_date(title)
             if not start:
                 continue
 
@@ -94,8 +156,8 @@ class Scraper(BaseScraper):
                 description=desc[:800],
                 event_type=infer_type(title, desc),
                 start=start,
-                end=None,
-                all_day=False,
+                end=end,
+                all_day=all_day,
                 url=url,
                 image=image,
                 source=self.source_label,
