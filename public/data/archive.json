@@ -2352,6 +2352,22 @@
     "scraped_at": "2026-06-15T13:19:46+00:00"
   },
   {
+    "id": "moca_grand-2025-03-16-diary-of-flowers-artists-and-their-world-f73dc27100",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-16",
+    "end": "2026-03-16",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-16T12:14:09+00:00"
+  },
+  {
     "id": "moca_grand-2025-03-31-diary-of-flowers-artists-and-their-world-9855b33226",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2750,6 +2766,38 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-15T13:19:46+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-16-fictions-of-displayexh-41c988eb92",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-16",
+    "end": "2026-01-16",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-16T12:14:09+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-16-moca-focus-takako-yamaguchiexh-f9812abfb5",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-16",
+    "end": "2026-01-16",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-16T12:14:09+00:00"
   },
   {
     "id": "getty_center-2025-06-17-queer-lens-a-history-of-photographyexh-61909567c0",
@@ -3296,6 +3344,22 @@
     "scraped_at": "2026-06-15T13:19:46+00:00"
   },
   {
+    "id": "moca_grand-2025-10-16-monumentsexh-4e99366a21",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-16",
+    "end": "2026-05-16",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-16T12:14:09+00:00"
+  },
+  {
     "id": "getty_center-2025-10-21-learning-to-drawexh-6c18cbe660",
     "venue_id": "getty_center",
     "title": "Learning to Draw",
@@ -3726,6 +3790,22 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-15T13:19:46+00:00"
+  },
+  {
+    "id": "moca_grand-2026-02-16-moca-focus-diane-severin-nguyenwar-songs-057bd9df92",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-16",
+    "end": "2026-03-16",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-16T12:14:09+00:00"
   },
   {
     "id": "marciano-2026-02-21-pretenzione-intenzione-objects-of-beauty-8910adc02a",
@@ -5550,5 +5630,37 @@
     "location_override": null,
     "source": "wendemuseum.org",
     "scraped_at": "2026-06-15T13:19:52+00:00"
+  },
+  {
+    "id": "academy_museum-2026-06-15-the-french-connection-in-35mm-9f2553ba17",
+    "venue_id": "academy_museum",
+    "title": "The French Connection in 35mm",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-french-connection-019dd56e-ab06-c1c3-3efe-ab5004739894",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5dvccndTsMayRDkzwdZa9f/f456fcd4832f0dc1fb06611ad153ab1f/1_Jun15_FRENCH_CONNECTION_Thrills2MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-16T12:14:14+00:00"
+  },
+  {
+    "id": "wende-2026-06-15-the-battle-of-algiers-cinema-under-press-44d9451363",
+    "venue_id": "wende",
+    "title": "The Battle of Algiers | Cinema Under Pressure",
+    "description": "Across continents and decades, filmmakers have faced censorship, intimidation, and exile for telling uncomfortable truths. Some films were banned outright. Others were attacked, suppressed, or quietly buried. The Battle of Algiers is a perfect example of the tension between creative expression and state control. Set during the Algerian War of Independence, the film reconstructs the urban guerrilla campaign waged against French colonial forces in the Casbah of Algiers. What unfolds is an unflinching portrait of resistance, repression, and the cycles of violence that define both. Neither side is spared. Banned in France for five years after its release and screened by revolutionary movements and military strategists alike, the film occupies a rare position in cinema history: it has been clai",
+    "event_type": "lecture",
+    "start": "2026-06-15T18:00:00-07:00",
+    "end": "2026-06-15T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-battle-of-algiers-cinema-under-pressure/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/05/battle-of-algiers-16x9-1-scaled.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-06-16T12:14:14+00:00"
   }
 ]
