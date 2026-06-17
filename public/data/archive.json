@@ -2368,6 +2368,22 @@
     "scraped_at": "2026-06-16T12:14:09+00:00"
   },
   {
+    "id": "moca_grand-2025-03-17-diary-of-flowers-artists-and-their-world-24a866548a",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-17",
+    "end": "2026-03-17",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-17T11:52:40+00:00"
+  },
+  {
     "id": "moca_grand-2025-03-31-diary-of-flowers-artists-and-their-world-9855b33226",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2798,6 +2814,38 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-16T12:14:09+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-17-fictions-of-displayexh-9b36e24f72",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-17",
+    "end": "2026-01-17",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-17T11:52:40+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-17-moca-focus-takako-yamaguchiexh-ac3f4990d6",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-17",
+    "end": "2026-01-17",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-17T11:52:40+00:00"
   },
   {
     "id": "getty_center-2025-06-17-queer-lens-a-history-of-photographyexh-61909567c0",
@@ -3360,6 +3408,22 @@
     "scraped_at": "2026-06-16T12:14:09+00:00"
   },
   {
+    "id": "moca_grand-2025-10-17-monumentsexh-4331edb0ce",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-17",
+    "end": "2026-05-17",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-17T11:52:40+00:00"
+  },
+  {
     "id": "getty_center-2025-10-21-learning-to-drawexh-6c18cbe660",
     "venue_id": "getty_center",
     "title": "Learning to Draw",
@@ -3806,6 +3870,22 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-16T12:14:09+00:00"
+  },
+  {
+    "id": "moca_grand-2026-02-17-moca-focus-diane-severin-nguyenwar-songs-f7b95c77e0",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-17",
+    "end": "2026-03-17",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-17T11:52:40+00:00"
   },
   {
     "id": "marciano-2026-02-21-pretenzione-intenzione-objects-of-beauty-8910adc02a",
@@ -5662,5 +5742,53 @@
     "location_override": null,
     "source": "wendemuseum.org",
     "scraped_at": "2026-06-16T12:14:14+00:00"
+  },
+  {
+    "id": "autry-2026-06-16-summer-camp-visits-af51c2aa59",
+    "venue_id": "autry",
+    "title": "Summer Camp Visits",
+    "description": "Educational Activities",
+    "event_type": "other",
+    "start": "2026-06-16T10:00:00-07:00",
+    "end": "2026-06-16T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/educational-activities/summer-camp-visits",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2025-04/ed_fieldtrip-danielle_klebanow_photography_los_angeles0051.jpg?h=c345b59c&itok=DReUHP81",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-06-17T11:52:46+00:00"
+  },
+  {
+    "id": "18th_street-2026-06-16-intersection-with-2026-summer-interns-28f4891d34",
+    "venue_id": "18th_street",
+    "title": "Intersection with 2026 Summer Interns",
+    "description": "Intersection with the 2026 Summer Interns Tuesday, June 16th | 5PM – 7PM 18th Street Arts Center 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public These gatherings are dedicated to gathering our community around good food, conversation, and art. Please stop by for a bite and chat with our community and 2026 summer interns. This summer, we are hosting three interns, who will be joining our long-term intern, Imogen. Zoe Lam & Kessey Chan will be joining us from the Chinese University of Hong Kong. While Zaraya Jordan, has joined our team as part of the Getty Marrow Intern program. Imogen Smith has joined us as a local intern from Crossroads School for Arts and Sciences. Stop by and learn more about our interns. You can also read their bios here .",
+    "event_type": "lecture",
+    "start": "2026-06-16T17:00:00-07:00",
+    "end": "2026-06-16T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://18thstreet.org/event/intersection-with-2026-summer-interns/",
+    "image": "https://18thstreet.org/wp-content/uploads/2024/12/Intersection-Image.png",
+    "artists": [],
+    "location_override": null,
+    "source": "18thstreet.org",
+    "scraped_at": "2026-06-17T11:52:42+00:00"
+  },
+  {
+    "id": "wende-2026-06-16-living-with-loss-a-grief-support-circle-f04ac64cce",
+    "venue_id": "wende",
+    "title": "Living with Loss: A Grief Support Circle",
+    "description": "Join a warm and understanding space where you can share, listen, and heal. Led by Dr. Barry Goldstein, this grief support circle is all about connecting with others who get what you’re going through. Come as you are, no judgments—just open hearts and support to navigate the ups and downs of loss side by side. Everyone is welcome!",
+    "event_type": "other",
+    "start": "2026-06-16T18:30:00-07:00",
+    "end": "2026-06-16T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/living-with-loss-a-grief-support-circle/2026-06-16/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/grief-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-06-17T11:52:46+00:00"
   }
 ]
