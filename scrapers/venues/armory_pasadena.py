@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 
 from ..base import BaseScraper, Event
 from ..utils.http import get
+from ..utils.render import render_pages
 from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import now_utc_iso
@@ -27,10 +28,18 @@ class Scraper(BaseScraper):
     def _strategy_feed(self): return iter([])
 
     def _strategy_custom(self) -> Iterable[Event]:
+        # Plain fetch works from most IPs and is fast. Armory anti-bot challenges
+        # datacenter IPs (e.g. CI runners) though, so when the plain fetch comes
+        # back blocked or empty, retry through the headless browser, which clears
+        # the challenge the same way Norton Simon does.
         resp = get(self.events_url)
-        if not resp or not resp.ok:
+        events = list(self.custom_parse(resp.text, resp.url)) if (resp and resp.ok) else []
+        if events:
+            yield from events
             return
-        yield from self.custom_parse(resp.text, resp.url)
+        html = render_pages([self.events_url]).get(self.events_url)
+        if html:
+            yield from self.custom_parse(html, self.events_url)
 
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
         soup = BeautifulSoup(html, "lxml")
