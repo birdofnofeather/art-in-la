@@ -4,8 +4,10 @@ import React, {
 import Header from "./components/Header.jsx";
 import FilterBar from "./components/FilterBar.jsx";
 import EventList from "./components/EventList.jsx";
+import ExhibitionsByVenue from "./components/ExhibitionsByVenue.jsx";
 import VenueList from "./components/VenueList.jsx";
 import VenueDetail from "./components/VenueDetail.jsx";
+import AboutDialog from "./components/AboutDialog.jsx";
 import { loadAll } from "./lib/data.js";
 import { useFavorites } from "./lib/useFavorites.js";
 import {
@@ -86,6 +88,12 @@ export default function App() {
 
   // Venue detail panel
   const [detailVenueId, setDetailVenueId] = useState(null);
+
+  // Archive sub-view: past events vs past exhibitions
+  const [archiveMode, setArchiveMode] = useState("events");
+
+  // About / feedback dialog
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   // ── URL hash: read on mount ────────────────────────────────────────────────
   const hashInit = useRef(false);
@@ -173,12 +181,17 @@ export default function App() {
     [liveExhibitions, venuesById, types, regions, query]
   );
 
-  const filteredArchive = useMemo(
-    () => sortEvents(searchEvents(filterEvents(data.archive, venuesById, {
-      venueTypes: types, eventTypes, regions,
-    }), venuesById, query)).reverse(),
-    [data.archive, venuesById, types, eventTypes, regions, query]
+  // Archive holds both past events and past exhibitions. It is deliberately
+  // ISOLATED from the org/region/event-type filters used on other tabs (those
+  // shouldn't carry over here) — only the Events/Exhibitions toggle and the
+  // free-text search apply.
+  const { oneoff: archiveOneoff, exhibitions: archiveExhibitions } = useMemo(
+    () => partitionByMode(data.archive), [data.archive]
   );
+  const filteredArchive = useMemo(() => {
+    const base = archiveMode === "exhibitions" ? archiveExhibitions : archiveOneoff;
+    return sortEvents(searchEvents(base, venuesById, query)).reverse();
+  }, [archiveMode, archiveOneoff, archiveExhibitions, venuesById, query]);
 
   // Saved items
   const savedEvents = useMemo(
@@ -314,12 +327,11 @@ export default function App() {
                   {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"} on view now
                   {filteredExhibitions.length > 0 ? " · ending soonest first" : ""}
                 </div>
-                <EventList
-                  events={filteredExhibitions}
+                <ExhibitionsByVenue
+                  exhibitions={filteredExhibitions}
                   venuesById={venuesById}
-                  onShowOnMap={onShowOnMap}
+                  onShowDetail={setDetailVenueId}
                   onReset={onReset}
-                  grouped={false}
                   favs={favs}
                   onToggleFav={toggleFav}
                 />
@@ -349,19 +361,46 @@ export default function App() {
                 <div className="panel p-3 text-xs text-ink/60">
                   Archive launched {new Date(ARCHIVE_LAUNCH_DATE).toLocaleDateString(
                     "en-US", { year: "numeric", month: "long", day: "numeric" }
-                  )}. Past events captured by the daily scrape will appear here.
+                  )}. Past listings captured by the daily scrape appear here.
                 </div>
+
+                {/* Events / Exhibitions toggle (archive holds both) */}
+                <div className="flex gap-2">
+                  {[["events", "Events"], ["exhibitions", "Exhibitions"]].map(([key, label]) => (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => setArchiveMode(key)}
+                      className={`chip ${archiveMode === key ? "chip-active" : ""}`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+
                 <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                  {filteredArchive.length} past event{filteredArchive.length === 1 ? "" : "s"}
+                  {filteredArchive.length} past {archiveMode === "exhibitions" ? "exhibition" : "event"}{filteredArchive.length === 1 ? "" : "s"}
                   {filteredArchive.length > 0 ? " (most recent first)" : ""}
                 </div>
-                <EventList
-                  events={filteredArchive}
-                  venuesById={venuesById}
-                  onReset={onReset}
-                  favs={favs}
-                  onToggleFav={toggleFav}
-                />
+
+                {archiveMode === "exhibitions" ? (
+                  <ExhibitionsByVenue
+                    exhibitions={filteredArchive}
+                    venuesById={venuesById}
+                    onShowDetail={setDetailVenueId}
+                    onReset={onReset}
+                    favs={favs}
+                    onToggleFav={toggleFav}
+                  />
+                ) : (
+                  <EventList
+                    events={filteredArchive}
+                    venuesById={venuesById}
+                    onReset={onReset}
+                    favs={favs}
+                    onToggleFav={toggleFav}
+                  />
+                )}
               </>
             )}
 
@@ -413,15 +452,24 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
-        {lastUpdated && (
-          <>Event data updated {lastUpdated.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}. </>
-        )}
-        Venue and event data is community-maintained.
-        Map tiles © OpenStreetMap contributors · CARTO.{" "}
-        <a href="https://github.com/birdofnofeather/art-in-la" className="underline">
-          Contribute on GitHub
-        </a>.
+      <footer className="mx-auto max-w-7xl space-y-2 px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
+        <p>
+          <button
+            type="button"
+            onClick={() => setAboutOpen(true)}
+            className="font-medium text-ink underline-offset-2 hover:underline"
+          >
+            Something broken, missing, wrong? Let us know!
+          </button>
+        </p>
+        <p>
+          {lastUpdated && (
+            <>Event data updated {lastUpdated.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}. </>
+          )}
+          Venue and event data is bot-maintained. Confirm times before heading out!{" "}
+          <button type="button" onClick={() => setAboutOpen(true)} className="underline underline-offset-2">About</button>.
+          Map tiles © OpenStreetMap contributors · CARTO.
+        </p>
       </footer>
 
       {/* Venue detail panel */}
@@ -433,6 +481,13 @@ export default function App() {
         onClose={() => setDetailVenueId(null)}
         onShowOnMap={onShowOnMap}
       />
+
+      {aboutOpen && (
+        <AboutDialog
+          onClose={() => setAboutOpen(false)}
+          onShowArchive={() => setTab("archive")}
+        />
+      )}
     </div>
   );
 }

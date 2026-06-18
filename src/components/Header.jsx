@@ -1,11 +1,12 @@
 import React from "react";
 
+// Archive is intentionally NOT here — it's reachable from the About dialog and
+// via #tab=archive, just not surfaced as a primary nav item.
 const TABS = [
   { key: "map",          label: "Map" },
   { key: "events",       label: "Events" },
   { key: "exhibitions",  label: "Exhibitions" },
   { key: "venues",       label: "Venues" },
-  { key: "archive",      label: "Archive" },
   { key: "saved",        label: "Saved" },
 ];
 

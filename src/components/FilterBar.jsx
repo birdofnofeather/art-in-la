@@ -86,6 +86,9 @@ export default function FilterBar({
 }) {
   const [open, setOpen] = useState(false);
 
+  // Archive is filter-isolated: only free-text search applies there, so we hide
+  // the org/region/event-type controls entirely (they must not cross over).
+  const isArchive = tab === "archive";
   const showEventFilters = tab === "events";
 
   const activeCount =
@@ -152,25 +155,27 @@ export default function FilterBar({
             )}
           </div>
         )}
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          className={`flex items-center justify-between gap-3 text-left ${showSearch ? "shrink-0" : "w-full"}`}
-        >
-          <div className="flex items-center gap-2">
-            <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
-            {activeCount > 0 && (
-              <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
-                {activeCount}
-              </span>
-            )}
-          </div>
-          <span className="text-xs text-ink/60">{open ? "▲" : "▼"}</span>
-        </button>
+        {!isArchive && (
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            className={`flex items-center justify-between gap-3 text-left ${showSearch ? "shrink-0" : "w-full"}`}
+          >
+            <div className="flex items-center gap-2">
+              <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
+              {activeCount > 0 && (
+                <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
+                  {activeCount}
+                </span>
+              )}
+            </div>
+            <span className="text-xs text-ink/60">{open ? "▲" : "▼"}</span>
+          </button>
+        )}
       </div>
 
       {/* Active filter pills — shown when tray is closed */}
-      {!open && activePills.length > 0 && (
+      {!isArchive && !open && activePills.length > 0 && (
         <div className="flex flex-wrap gap-2 border-t border-black/5 px-4 py-2">
           {activePills.map((p, i) => (
             <ActivePill key={i} label={p.label} onRemove={p.remove} />
@@ -181,7 +186,7 @@ export default function FilterBar({
         </div>
       )}
 
-      {open && (
+      {!isArchive && open && (
         <div className="space-y-4 border-t border-black/5 px-4 py-4">
           <ToggleGroup
             label="Organization type"

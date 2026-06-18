@@ -6,6 +6,17 @@ export function indexVenues(venues) {
   return Object.fromEntries(venues.map((v) => [v.id, v]));
 }
 
+// An event may carry several types (e.g. a performance that is also a
+// screening). New records store them in `event_types`; older/archive records
+// only have the single `event_type`. Always read through this helper.
+export function eventTypesOf(ev) {
+  if (ev.event_types && ev.event_types.length) return ev.event_types;
+  return ev.event_type ? [ev.event_type] : [];
+}
+export function isExhibition(ev) {
+  return eventTypesOf(ev).includes("exhibition");
+}
+
 // Scraped datetimes are stored as LA wall-clock (with an LA UTC offset), and
 // the whole site speaks LA time. Parse the wall-clock fields verbatim instead
 // of letting Date apply the viewer's timezone — otherwise a 6 PM event renders
@@ -41,7 +52,7 @@ export function eventfulVenueIds(events) {
   const ids = new Set();
   for (const ev of events) {
     if (!isUpcoming(ev, now)) continue;
-    if (!EVENTFUL_TYPES.has(ev.event_type)) continue;
+    if (!eventTypesOf(ev).some((t) => EVENTFUL_TYPES.has(t))) continue;
     ids.add(ev.venue_id);
   }
   return ids;
@@ -142,7 +153,7 @@ export function filterEvents(events, venuesById, {
     const venue = venuesById[ev.venue_id];
     if (!venue) return false;
     if (venueTypes && venueTypes.size > 0 && !venueTypes.has(venue.type)) return false;
-    if (rawEventTypes && !rawEventTypes.has(ev.event_type)) return false;
+    if (rawEventTypes && !eventTypesOf(ev).some((t) => rawEventTypes.has(t))) return false;
     if (regions && regions.size > 0 && !regions.has(venue.region)) return false;
     const evStart = parseDate(ev.start);
     const evEnd = eventEnd(ev) || evStart;
@@ -184,7 +195,7 @@ export function partitionByMode(events) {
   const oneoff = [];
   const exhibitions = [];
   for (const ev of events) {
-    if (ev.event_type === "exhibition") exhibitions.push(ev);
+    if (isExhibition(ev)) exhibitions.push(ev);
     else oneoff.push(ev);
   }
   return { oneoff, exhibitions };
@@ -207,7 +218,7 @@ const NON_EXHIBITION_TITLE = new RegExp(
 );
 
 export function isLiveTemporaryExhibition(ev, now = new Date()) {
-  if (!ev || ev.event_type !== "exhibition") return false;
+  if (!ev || !isExhibition(ev)) return false;
   if (NON_EXHIBITION_TITLE.test(ev.title || "")) return false;
   const s = parseDate(ev.start);
   const e = parseDate(ev.end);
@@ -256,7 +267,7 @@ export function getRelativeLabel(ev, now = new Date()) {
   const end = eventEnd(ev);
 
   // Currently in progress (but not a long-running exhibition)
-  if (ev.event_type !== "exhibition" && end && start <= now && end >= now) {
+  if (!isExhibition(ev) && end && start <= now && end >= now) {
     return "Now";
   }
 

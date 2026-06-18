@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   TYPE_COLOR, TYPE_LABEL, REGION_LABEL, EVENT_TYPE_LABEL,
 } from "../lib/constants.js";
-import { getRelativeLabel, parseDate } from "../lib/filters.js";
+import { getRelativeLabel, parseDate, eventTypesOf, isExhibition } from "../lib/filters.js";
 import { downloadICS, googleCalUrl } from "../lib/calendar.js";
 
 const DATE_OPTS  = { weekday: "short", month: "short", day: "numeric", year: "numeric" };
@@ -194,10 +194,14 @@ function CalendarMenu({ ev, venue }) {
 function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   const venue = venuesById[ev.venue_id] || { name: ev.venue_id, type: "other" };
   const venueColor = TYPE_COLOR[venue.type] || "#666";
-  const isExhibition = ev.event_type === "exhibition";
-  const relLabel = isExhibition ? null : getRelativeLabel(ev);
-  const closeIn = isExhibition ? daysUntilClose(ev) : null;
+  const exhibition = isExhibition(ev);
+  const relLabel = exhibition ? null : getRelativeLabel(ev);
+  const closeIn = exhibition ? daysUntilClose(ev) : null;
   const closingSoon = closeIn !== null && closeIn >= 0 && closeIn <= 14;
+  // De-duplicate type chips by their display label (e.g. fair + other → one "Other").
+  const typeLabels = [...new Set(
+    eventTypesOf(ev).map((t) => EVENT_TYPE_LABEL[t] || t)
+  )];
 
   return (
     <article className="panel flex overflow-hidden">
@@ -239,9 +243,9 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
             <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
             {TYPE_LABEL[venue.type]}
           </span>
-          {ev.event_type && (
-            <span className="chip">{EVENT_TYPE_LABEL[ev.event_type] || ev.event_type}</span>
-          )}
+          {typeLabels.map((label) => (
+            <span key={label} className="chip">{label}</span>
+          ))}
           {venue.region && (
             <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
@@ -303,7 +307,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
               Show on map
             </button>
           )}
-          {ev.start && <CalendarMenu ev={ev} venue={venue} />}
+          {ev.start && !exhibition && <CalendarMenu ev={ev} venue={venue} />}
         </div>
       </div>
     </article>
