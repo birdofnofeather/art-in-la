@@ -42,7 +42,7 @@ import feedparser
 
 from .utils.http import get
 from .utils.event_id import event_id
-from .utils.event_type import infer as infer_type
+from .utils.event_type import infer as infer_type, infer_all as infer_types
 from .utils.dateparse import to_la_iso, now_utc_iso
 
 LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine for now.
@@ -121,11 +121,27 @@ class Event:
     location_override: Optional[str] = None
     source: str = ""
     scraped_at: str = ""
+    # Filled in by to_dict() from event_type + any extra types read from the
+    # title/description, so an event can be filtered under several types.
+    event_types: list = field(default_factory=list)
 
     def to_dict(self) -> dict:
         d = asdict(self)
         if isinstance(d.get("scraped_at"), datetime):
             d["scraped_at"] = d["scraped_at"].isoformat()
+        # Multi-type tags: the scraper's primary type first, then any other
+        # types whose keywords appear in the text. Exhibitions stay single.
+        primary = d.get("event_type") or "other"
+        if primary == "exhibition":
+            d["event_types"] = ["exhibition"]
+        else:
+            types = list(self.event_types) or [primary]
+            for t in infer_types(self.title, self.description):
+                if t != "exhibition" and t not in types:
+                    types.append(t)
+            if primary not in types:
+                types.insert(0, primary)
+            d["event_types"] = types
         # Universal normalisation: every event's start/end goes through to_la_iso
         # regardless of which scraper produced it, so the stored value is always
         # the correct LA-local clock time the venue displays — and a date-only

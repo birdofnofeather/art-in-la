@@ -152,6 +152,10 @@ class Scraper(BaseScraper):
         events = list(self._parse(html))
         yield from self._recover_times(events)
 
+    # Hard cap on detail-page renders per run so the scrape can never blow past
+    # its CI time budget, no matter how many timeless events a day holds.
+    _MAX_DETAIL_RENDERS = 40
+
     def _recover_times(self, events: list[Event]) -> Iterable[Event]:
         """Second pass: render detail pages to recover showtimes for single-date
         timeless events. Falls back to the all-day event on any failure."""
@@ -160,10 +164,12 @@ class Scraper(BaseScraper):
             if e.all_day and e.event_type != "exhibition" and e.url
             and (not e.end or e.end[:10] == e.start[:10])
         ]
+        # Render the soonest events first, capped, so a huge calendar can't stall CI.
+        need.sort(key=lambda e: e.start or "9999")
+        urls = list(dict.fromkeys(e.url for e in need))[:self._MAX_DETAIL_RENDERS]
         rendered: dict[str, str] = {}
-        if need:
-            urls = sorted({e.url for e in need})
-            pages = render_pages(urls, timeout=min(600, 90 + 18 * len(urls)))
+        if urls:
+            pages = render_pages(urls, timeout=min(600, 90 + 12 * len(urls)))
             for u, h in pages.items():
                 if h:
                     rendered[u] = BeautifulSoup(h, "lxml").get_text(" ", strip=True)

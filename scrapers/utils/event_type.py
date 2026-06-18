@@ -28,3 +28,13 @@ def infer(title: str, description: str = "", default: str = "other") -> str:
         if re.search(pattern, text):
             return kind
     return default if default in ALLOWED else "other"
+
+
+def infer_all(title: str, description: str = "") -> list[str]:
+    """Return every event type whose keywords appear in the text, in priority
+    order. An event that reads as both a performance and a screening comes back
+    as ["performance", "screening"] so it can be filtered under either.
+    """
+    text = f"{title or ''} \n {description or ''}".lower()
+    return [kind for kind, pattern in KEYWORDS if re.search(pattern, text)]
+
