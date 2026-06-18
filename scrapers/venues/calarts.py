@@ -80,11 +80,13 @@ class Scraper(BaseScraper):
         # Each card has an <a> link; we dedup by URL
         for a in soup.find_all("a", href=True):
             href = a["href"]
-            # Skip external/REDCAT
+            # Skip REDCAT (scraped separately) and symplicity job links.
             if any(d in href for d in _SKIP_DOMAINS):
                 continue
-            # Only calarts.edu event links
-            if not href.startswith(("https://calarts.edu/", "/")):
+            # Accept CalArts-hosted links plus the external sites CalArts promotes
+            # its own events on (e.g. splashthat); reject mailto/anchor junk.
+            if not href.startswith(("https://calarts.edu/", "http://calarts.edu/",
+                                    "https://", "http://", "/")):
                 continue
             url = href if href.startswith("http") else BASE + href
             if url in seen:

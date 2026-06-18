@@ -11,9 +11,10 @@ from typing import Iterable
 from bs4 import BeautifulSoup
 
 from scrapers.base import BaseScraper, Event, event_id
+from scrapers.utils.event_type import infer as infer_type
 from scrapers.utils.dateparse import now_utc_iso
 
-_TODAY = datetime.today()
+_TODAY = datetime.today().date()
 _MONTHS = {
     "january":1,"february":2,"march":3,"april":4,"may":5,"june":6,
     "july":7,"august":8,"september":9,"october":10,"november":11,"december":12,
@@ -47,7 +48,7 @@ class Scraper(BaseScraper):
         for time_el in soup.select("time.summary-metadata-item--date"):
             date_text = time_el.get_text(strip=True)
             start = _parse_date(date_text)
-            if not start or start < _TODAY:
+            if not start or start.date() < _TODAY:
                 continue
 
             # Walk up to find the summary-item container
@@ -75,7 +76,7 @@ class Scraper(BaseScraper):
                 venue_id=self.venue_id,
                 title=title,
                 description=None,
-                event_type="performance",
+                event_type=infer_type(title),
                 start=start,
                 end=None,
                 all_day=True,
