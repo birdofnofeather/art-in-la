@@ -4912,6 +4912,25 @@
     "scraped_at": "2026-05-31T19:34:11+00:00"
   },
   {
+    "id": "avenue_50-2026-06-06-closing-reception-the-sierras-of-califor-c0c7de213f",
+    "venue_id": "avenue_50",
+    "title": "Closing Reception: The Sierras of California 1962 – 2025",
+    "description": "<p>Raoul De La Sota and Katsu Yokoyama have spent years painting visual memories from their treks across the Sierras from 1962 - 2025. Please attend the closing reception for The […]</p>\\n",
+    "event_type": "closing",
+    "start": "2026-06-06T14:00:00-07:00",
+    "end": "2026-06-06T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://avenue50studio.org/event/closing-reception-the-sierras-of-california-1962-2025/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "avenue50studio.org",
+    "scraped_at": "2026-06-18T07:09:07+00:00",
+    "event_types": [
+      "closing"
+    ]
+  },
+  {
     "id": "pvac-2026-06-06-karena-massengill-reverberations-opening-1f933d4d76",
     "venue_id": "pvac",
     "title": "Karena Massengill: REVERBERATIONS Opening Reception",
@@ -4974,6 +4993,25 @@
     "location_override": null,
     "source": "fowler.ucla.edu",
     "scraped_at": "2026-05-31T19:34:15+00:00"
+  },
+  {
+    "id": "avenue_50-2026-06-07-yndio-arxipelago-book-release-reading-an-5ec59cc7f5",
+    "venue_id": "avenue_50",
+    "title": "yndio arxipelago – Book Release Reading and Pop-Up Exhibit",
+    "description": "<p>For the culture. For the community. For everyone who has ever crossed water to get here.   Sunday, June 7  2:00 – 4:00 PM  Avenue 50 Studio, Highland Park, CA  Free, […]</p>\\n",
+    "event_type": "lecture",
+    "start": "2026-06-07T14:00:00-07:00",
+    "end": "2026-06-07T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://avenue50studio.org/event/yndio-arxipelago-book-release-reading-and-pop-up-exhibit/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "avenue50studio.org",
+    "scraped_at": "2026-06-18T07:09:07+00:00",
+    "event_types": [
+      "lecture"
+    ]
   },
   {
     "id": "18th_street-2026-06-09-dzogchenla-meditation-c776a085a0",
@@ -5872,6 +5910,44 @@
     "scraped_at": "2026-06-17T11:52:46+00:00"
   },
   {
+    "id": "academy_museum-2026-06-17-aardman-animations-celebration-607919c7ed",
+    "venue_id": "academy_museum",
+    "title": "Aardman Animations Celebration",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-17",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/aardman-animations-50th-anniversary-019dd528-36b1-73cb-59ef-39c58d050ebc",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/DQDYtY12jyXFBmd6g0thO/4f081d3ead78ed4de8da5c25b44379cf/Jun17_WRONG_TROUSERS_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-18T07:09:02+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-17-only-yesterday-0fe828850f",
+    "venue_id": "academy_museum",
+    "title": "Only Yesterday",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-17",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/only-yesterday-019dd4e5-ab29-acfb-eb7a-f52362fe8692",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/60pHzxbiWGAl41UddEN9RN/22a228912f29b61d80d82340392ecea0/Jun15_ONLY_YESTERDAY_GhibliMHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-18T07:09:02+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
     "id": "wende-2026-06-17-wellness-wednesday-sound-bath-0eb0d2f2d7",
     "venue_id": "wende",
     "title": "Wellness Wednesday: Sound Bath",
@@ -5918,5 +5994,24 @@
     "location_override": "Getty Villa",
     "source": "getty.edu",
     "scraped_at": "2026-06-18T00:35:40+00:00"
+  },
+  {
+    "id": "huntington-2026-06-17-drawing-from-the-gallery-97e41086a7",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-17T17:30:00-07:00",
+    "end": "2026-06-17T20:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DKG0rvTpI&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-06-18T07:09:04+00:00",
+    "event_types": [
+      "other"
+    ]
   }
 ]
