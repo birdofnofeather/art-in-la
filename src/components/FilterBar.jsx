@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {
-  TYPE_LABEL, TYPE_COLOR, REGION_LABEL,
+  TYPE_LABEL, TYPE_COLOR, TYPE_DEF, REGION_LABEL,
   EVENT_TYPE_FILTERS, DATE_PRESETS,
 } from "../lib/constants.js";
 
-function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap }) {
+function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap, tipMap }) {
   const toggle = (key) => {
     const next = new Set(selected);
     next.has(key) ? next.delete(key) : next.add(key);
@@ -17,6 +17,8 @@ function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap })
         {options.map((opt) => (
           <button
             key={opt} type="button" onClick={() => toggle(opt)}
+            title={tipMap?.[opt]}
+            aria-label={tipMap?.[opt] ? `${(labelMap && labelMap[opt]) || opt} — ${tipMap[opt]}` : undefined}
             className={`chip ${selected.has(opt) ? "chip-active" : ""}`}
             style={colorMap && !selected.has(opt) ? { borderColor: colorMap[opt] + "55" } : undefined}
           >
@@ -159,17 +161,15 @@ export default function FilterBar({
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
-            className={`flex items-center justify-between gap-3 text-left ${showSearch ? "shrink-0" : "w-full"}`}
+            className={`flex items-center gap-2 text-left ${showSearch ? "shrink-0" : "w-full"}`}
           >
-            <div className="flex items-center gap-2">
-              <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
-              {activeCount > 0 && (
-                <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
-                  {activeCount}
-                </span>
-              )}
-            </div>
             <span className="text-xs text-ink/60">{open ? "▲" : "▼"}</span>
+            <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
+            {activeCount > 0 && (
+              <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
+                {activeCount}
+              </span>
+            )}
           </button>
         )}
       </div>
@@ -195,6 +195,7 @@ export default function FilterBar({
             selected={types}
             onChange={setTypes}
             colorMap={TYPE_COLOR}
+            tipMap={TYPE_DEF}
           />
           <ToggleGroup
             label="Region"

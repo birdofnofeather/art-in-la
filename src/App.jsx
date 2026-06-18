@@ -55,6 +55,14 @@ function SkeletonGrid({ count = 6 }) {
   );
 }
 
+// Each tab keeps its own filters so a filter set on one page never affects
+// another. A stable shared "empty" keeps identities steady for untouched tabs
+// (its Sets are never mutated — toggles always create a fresh Set).
+const EMPTY_FILTERS = Object.freeze({
+  types: new Set(), regions: new Set(), eventTypes: new Set(),
+  datePreset: "all", customStart: "", customEnd: "", query: "",
+});
+
 // ─────────────────────────────────────────────────────────────────────────────
 export default function App() {
   const [loading, setLoading]   = useState(true);
@@ -67,18 +75,20 @@ export default function App() {
   // Navigation
   const [tab,  setTab]  = useState("map");
 
-  // Venue-level filters (shared across tabs)
-  const [types,   setTypes]   = useState(new Set());
-  const [regions, setRegions] = useState(new Set());
-
-  // Event-level filters (Events tab only)
-  const [eventTypes,   setEventTypes]   = useState(new Set());
-  const [datePreset,   setDatePreset]   = useState("all");
-  const [customStart,  setCustomStart]  = useState("");
-  const [customEnd,    setCustomEnd]    = useState("");
-
-  // Free-text search (applies to Events / Exhibitions / Venues / Archive)
-  const [query, setQuery] = useState("");
+  // Per-tab filters (isolated — filtering one page never affects another).
+  const [filtersByTab, setFiltersByTab] = useState({});
+  const f = filtersByTab[tab] ?? EMPTY_FILTERS;
+  const { types, regions, eventTypes, datePreset, customStart, customEnd, query } = f;
+  const patchFilters = useCallback((p) => {
+    setFiltersByTab((prev) => ({ ...prev, [tab]: { ...(prev[tab] ?? EMPTY_FILTERS), ...p } }));
+  }, [tab]);
+  const setTypes       = (v) => patchFilters({ types: v });
+  const setRegions     = (v) => patchFilters({ regions: v });
+  const setEventTypes  = (v) => patchFilters({ eventTypes: v });
+  const setDatePreset  = (v) => patchFilters({ datePreset: v });
+  const setCustomStart = (v) => patchFilters({ customStart: v });
+  const setCustomEnd   = (v) => patchFilters({ customEnd: v });
+  const setQuery       = (v) => patchFilters({ query: v });
 
   // Map filter toggle
   const [mapOnlyEventful, setMapOnlyEventful] = useState(true);
@@ -101,20 +111,23 @@ export default function App() {
     if (hashInit.current) return;
     hashInit.current = true;
     const p = readHash();
-    if (p.get("tab"))    setTab(p.get("tab"));
-    if (p.get("mode") === "exhibitions") setTab("exhibitions"); // legacy URL support
-    if (p.get("types"))  setTypes(new Set(p.get("types").split(",")));
-    if (p.get("regions")) setRegions(new Set(p.get("regions").split(",")));
-    if (p.get("etypes")) setEventTypes(new Set(p.get("etypes").split(",")));
-    if (p.get("date"))   setDatePreset(p.get("date"));
-    if (p.get("from"))   setCustomStart(p.get("from"));
-    if (p.get("to"))     setCustomEnd(p.get("to"));
-    if (p.get("map"))    setMapOnlyEventful(p.get("map") !== "all");
-    if (p.get("q"))      setQuery(p.get("q"));
-    if (p.get("venue"))  setDetailVenueId(p.get("venue"));
+    const initTab = p.get("mode") === "exhibitions" ? "exhibitions" : (p.get("tab") || "map");
+    // Hydrate only the initial tab's filter slice from the URL.
+    const slice = { ...EMPTY_FILTERS };
+    if (p.get("types"))   slice.types = new Set(p.get("types").split(","));
+    if (p.get("regions")) slice.regions = new Set(p.get("regions").split(","));
+    if (p.get("etypes"))  slice.eventTypes = new Set(p.get("etypes").split(","));
+    if (p.get("date"))    slice.datePreset = p.get("date");
+    if (p.get("from"))    slice.customStart = p.get("from");
+    if (p.get("to"))      slice.customEnd = p.get("to");
+    if (p.get("q"))       slice.query = p.get("q");
+    setFiltersByTab({ [initTab]: slice });
+    setTab(initTab);
+    if (p.get("map"))   setMapOnlyEventful(p.get("map") !== "all");
+    if (p.get("venue")) setDetailVenueId(p.get("venue"));
   }, []);
 
-  // ── URL hash: write on state change ───────────────────────────────────────
+  // ── URL hash: write the ACTIVE tab's filters ──────────────────────────────
   useEffect(() => {
     if (!hashInit.current) return;
     const p = new URLSearchParams();
@@ -220,18 +233,11 @@ export default function App() {
   }, [detailVenueId, venuesById]);
 
   // ── Callbacks ─────────────────────────────────────────────────────────────
-  const onReset = () => {
-    setTypes(new Set());
-    setEventTypes(new Set());
-    setRegions(new Set());
-    setDatePreset("all");
-    setCustomStart("");
-    setCustomEnd("");
-    setQuery("");
-  };
+  // Reset clears only the current tab's filters.
+  const onReset = () => setFiltersByTab((prev) => ({ ...prev, [tab]: { ...EMPTY_FILTERS } }));
 
   const onHome = () => {
-    onReset();
+    setFiltersByTab({});            // clear every tab's filters
     setMapOnlyEventful(true);
     setFocusedVenueId(null);
     setDetailVenueId(null);
@@ -246,7 +252,11 @@ export default function App() {
 
   const onGoToEvents = (venueId) => {
     const venue = venuesById[venueId];
-    if (venue?.name) setQuery(venue.name);
+    // Target the Events tab's own slice (not the current tab's).
+    setFiltersByTab((prev) => ({
+      ...prev,
+      events: { ...(prev.events ?? EMPTY_FILTERS), query: venue?.name || "" },
+    }));
     setTab("events");
   };
 

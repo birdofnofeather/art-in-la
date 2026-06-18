@@ -21,15 +21,26 @@ export const TYPE_LETTER = {
   academic: "A",
 };
 
+// Short, plain-language definition of each organization type — surfaced as a
+// tooltip on the filter buttons. Cross-referenced against how the museum field
+// and LA art guides describe these categories.
+export const TYPE_DEF = {
+  museum: "Established nonprofit museums — permanent collections or major exhibition programs.",
+  community: "Neighborhood cultural centers and nonprofits rooted in a specific community.",
+  alternative: "Artist-run, experimental, noncommercial project spaces.",
+  academic: "Galleries and museums based at a university, college, or art school.",
+};
+
 export const REGION_LABEL = {
   westside: "Westside",
   central: "Central",
-  eastside: "Eastside / DTLA",
+  downtown: "Downtown / DTLA",
+  eastside: "Eastside / NELA",
   northeast: "Northeast / Glendale",
+  pasadena: "Pasadena / Foothills",
   valley: "San Fernando Valley",
   south: "South LA",
   southbay: "South Bay",
-  pasadena: "Pasadena / Foothills",
   longbeach: "Long Beach / Harbor",
   antelope: "Antelope Valley",
 };

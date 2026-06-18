@@ -18,7 +18,10 @@
       "facebook": "https://facebook.com/LACMA",
       "tiktok": "https://tiktok.com/@lacma",
       "youtube": "https://youtube.com/@lacma"
-    }
+    },
+    "aliases": [
+      "LACMA"
+    ]
   },
   {
     "id": "the_broad",
@@ -31,7 +34,7 @@
     "address": "221 S Grand Ave, Los Angeles, CA 90012",
     "lat": 34.0547,
     "lng": -118.2505,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/thebroadmuseum",
@@ -39,7 +42,10 @@
       "facebook": "https://facebook.com/thebroadmuseum",
       "tiktok": "https://tiktok.com/@thebroadmuseum",
       "youtube": "https://youtube.com/@thebroadmuseum"
-    }
+    },
+    "aliases": [
+      "The Broad"
+    ]
   },
   {
     "id": "moca_grand",
@@ -52,7 +58,7 @@
     "address": "250 S Grand Ave, Los Angeles, CA 90012",
     "lat": 34.0535,
     "lng": -118.2506,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/moca",
@@ -60,7 +66,11 @@
       "facebook": "https://facebook.com/MOCAlosangeles",
       "tiktok": "https://tiktok.com/@mocalosangeles",
       "youtube": "https://youtube.com/@MOCAlosangeles"
-    }
+    },
+    "aliases": [
+      "MOCA",
+      "MoCA"
+    ]
   },
   {
     "id": "moca_geffen",
@@ -73,13 +83,18 @@
     "address": "152 N Central Ave, Los Angeles, CA 90012",
     "lat": 34.0536,
     "lng": -118.2386,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Little Tokyo",
     "socials": {
       "instagram": "https://instagram.com/moca",
       "twitter": "https://twitter.com/MOCAlosangeles",
       "facebook": "https://facebook.com/MOCAlosangeles"
-    }
+    },
+    "aliases": [
+      "MOCA",
+      "Geffen",
+      "MOCA Geffen"
+    ]
   },
   {
     "id": "hammer",
@@ -100,7 +115,11 @@
       "facebook": "https://facebook.com/hammermuseum",
       "tiktok": "https://tiktok.com/@hammer_museum",
       "youtube": "https://youtube.com/@hammermuseum"
-    }
+    },
+    "aliases": [
+      "Hammer",
+      "UCLA Hammer"
+    ]
   },
   {
     "id": "getty_center",
@@ -121,7 +140,10 @@
       "facebook": "https://facebook.com/gettymuseum",
       "tiktok": "https://tiktok.com/@gettymuseum",
       "youtube": "https://youtube.com/@gettymuseum"
-    }
+    },
+    "aliases": [
+      "Getty"
+    ]
   },
   {
     "id": "getty_villa",
@@ -140,7 +162,10 @@
       "instagram": "https://instagram.com/gettymuseum",
       "twitter": "https://twitter.com/GettyMuseum",
       "facebook": "https://facebook.com/gettymuseum"
-    }
+    },
+    "aliases": [
+      "Getty"
+    ]
   },
   {
     "id": "norton_simon",
@@ -160,7 +185,10 @@
       "twitter": "https://twitter.com/nortonsimon",
       "facebook": "https://facebook.com/nortonsimonmuseum",
       "youtube": "https://youtube.com/@nortonsimonmuseum"
-    }
+    },
+    "aliases": [
+      "Norton Simon"
+    ]
   },
   {
     "id": "huntington",
@@ -201,7 +229,11 @@
       "facebook": "https://facebook.com/AcademyMuseum",
       "tiktok": "https://tiktok.com/@academymuseum",
       "youtube": "https://youtube.com/@academymuseum"
-    }
+    },
+    "aliases": [
+      "Academy Museum",
+      "AMPAS"
+    ]
   },
   {
     "id": "caam",
@@ -221,7 +253,10 @@
       "twitter": "https://twitter.com/caamuseum",
       "facebook": "https://facebook.com/CAAMinLA",
       "youtube": "https://youtube.com/@caamuseum"
-    }
+    },
+    "aliases": [
+      "CAAM"
+    ]
   },
   {
     "id": "janm",
@@ -234,14 +269,17 @@
     "address": "100 N Central Ave, Los Angeles, CA 90012",
     "lat": 34.0499,
     "lng": -118.2386,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Little Tokyo",
     "socials": {
       "instagram": "https://instagram.com/jamuseum",
       "twitter": "https://twitter.com/jamuseum",
       "facebook": "https://facebook.com/jamuseum",
       "youtube": "https://youtube.com/@jamuseum"
-    }
+    },
+    "aliases": [
+      "JANM"
+    ]
   },
   {
     "id": "autry",
@@ -281,7 +319,10 @@
       "twitter": "https://twitter.com/fowlermuseum",
       "facebook": "https://facebook.com/fowlermuseum",
       "youtube": "https://youtube.com/@fowlermuseum"
-    }
+    },
+    "aliases": [
+      "Fowler"
+    ]
   },
   {
     "id": "ica_la",
@@ -294,13 +335,18 @@
     "address": "1717 E 7th St, Los Angeles, CA 90021",
     "lat": 34.0352,
     "lng": -118.2307,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Arts District",
     "socials": {
       "instagram": "https://instagram.com/theicala",
       "twitter": "https://twitter.com/TheICALA",
       "facebook": "https://facebook.com/theicala"
-    }
+    },
+    "aliases": [
+      "ICA LA",
+      "ICALA",
+      "ICA"
+    ]
   },
   {
     "id": "craft_contemporary",
@@ -338,7 +384,10 @@
       "instagram": "https://instagram.com/skirball_cultural_center",
       "twitter": "https://twitter.com/skirball_la",
       "facebook": "https://facebook.com/SkirballCulturalCenter"
-    }
+    },
+    "aliases": [
+      "Skirball"
+    ]
   },
   {
     "id": "wende",
@@ -376,7 +425,12 @@
       "instagram": "https://instagram.com/makcenter",
       "twitter": "https://twitter.com/MAKCenter",
       "facebook": "https://facebook.com/makcenter"
-    }
+    },
+    "aliases": [
+      "MAK",
+      "MAK Center",
+      "Schindler House"
+    ]
   },
   {
     "id": "molaa",
@@ -395,7 +449,10 @@
       "instagram": "https://instagram.com/molaa_museum",
       "twitter": "https://twitter.com/MOLAA_Museum",
       "facebook": "https://facebook.com/molaaartmuseum"
-    }
+    },
+    "aliases": [
+      "MOLAA"
+    ]
   },
   {
     "id": "lbma",
@@ -413,7 +470,10 @@
     "socials": {
       "instagram": "https://instagram.com/lbma_museum",
       "facebook": "https://facebook.com/LongBeachMuseumOfArt"
-    }
+    },
+    "aliases": [
+      "LBMA"
+    ]
   },
   {
     "id": "armory_pasadena",
@@ -450,7 +510,10 @@
     "socials": {
       "instagram": "https://instagram.com/vincentpriceartmuseum",
       "facebook": "https://facebook.com/VincentPriceArtMuseum"
-    }
+    },
+    "aliases": [
+      "VPAM"
+    ]
   },
   {
     "id": "usc_fisher",
@@ -469,7 +532,11 @@
       "instagram": "https://instagram.com/uscfishermuseum",
       "twitter": "https://twitter.com/USCFisher",
       "facebook": "https://facebook.com/USCFisherMuseum"
-    }
+    },
+    "aliases": [
+      "Fisher",
+      "USC Fisher"
+    ]
   },
   {
     "id": "ucla_broad",
@@ -487,7 +554,11 @@
     "socials": {
       "instagram": "https://instagram.com/uclaarts",
       "twitter": "https://twitter.com/uclaarts"
-    }
+    },
+    "aliases": [
+      "UCLA Broad",
+      "Broad Art Center"
+    ]
   },
   {
     "id": "benton",
@@ -556,7 +627,11 @@
     "neighborhood": "Long Beach",
     "socials": {
       "instagram": "https://instagram.com/kleefeldcam"
-    }
+    },
+    "aliases": [
+      "Kleefeld",
+      "CSULB"
+    ]
   },
   {
     "id": "moah",
@@ -574,7 +649,10 @@
     "socials": {
       "instagram": "https://instagram.com/lancastermoah",
       "facebook": "https://facebook.com/lancastermoah"
-    }
+    },
+    "aliases": [
+      "MOAH"
+    ]
   },
   {
     "id": "mona",
@@ -592,7 +670,10 @@
     "socials": {
       "instagram": "https://instagram.com/neonmona",
       "facebook": "https://facebook.com/neonmona"
-    }
+    },
+    "aliases": [
+      "MONA"
+    ]
   },
   {
     "id": "forest_lawn",
@@ -645,7 +726,11 @@
     "socials": {
       "instagram": "https://instagram.com/lamag_barnsdall",
       "facebook": "https://facebook.com/LAMAG.Barnsdall"
-    }
+    },
+    "aliases": [
+      "LAMAG",
+      "Barnsdall"
+    ]
   },
   {
     "id": "lucas_museum",
@@ -682,7 +767,10 @@
     "socials": {
       "instagram": "https://instagram.com/marcianoartfoundation",
       "facebook": "https://facebook.com/marcianoartfoundation"
-    }
+    },
+    "aliases": [
+      "Marciano"
+    ]
   },
   {
     "id": "torrance_art_museum",
@@ -718,7 +806,10 @@
     "socials": {
       "instagram": "https://instagram.com/pvartcenter",
       "facebook": "https://facebook.com/pvartcenter"
-    }
+    },
+    "aliases": [
+      "PVAC"
+    ]
   },
   {
     "id": "angels_gate",
@@ -749,7 +840,7 @@
     "address": "1411 Newton St, Los Angeles, CA 90021",
     "lat": 34.0322,
     "lng": -118.2411,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Arts District",
     "socials": {
       "instagram": "https://instagram.com/murmursla"
@@ -783,7 +874,7 @@
     "address": "1815 S Main St, Los Angeles, CA 90015",
     "lat": 34.0296,
     "lng": -118.2589,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/coaxialarts"
@@ -800,7 +891,7 @@
     "address": "1611 S Hope St, Los Angeles, CA 90015",
     "lat": 34.0354,
     "lng": -118.2683,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/navel_la"
@@ -817,11 +908,14 @@
     "address": "410 Cottage Home St, Los Angeles, CA 90012",
     "lat": 34.068,
     "lng": -118.2389,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/humanresourcesla"
-    }
+    },
+    "aliases": [
+      "HRLA"
+    ]
   },
   {
     "id": "lace",
@@ -840,7 +934,10 @@
       "instagram": "https://instagram.com/welcometolace",
       "twitter": "https://twitter.com/welcometolace",
       "facebook": "https://facebook.com/welcometolace"
-    }
+    },
+    "aliases": [
+      "LACE"
+    ]
   },
   {
     "id": "redcat",
@@ -853,13 +950,16 @@
     "address": "631 W 2nd St, Los Angeles, CA 90012",
     "lat": 34.0552,
     "lng": -118.2508,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/redcatla",
       "twitter": "https://twitter.com/REDCAT",
       "facebook": "https://facebook.com/REDCAT"
-    }
+    },
+    "aliases": [
+      "REDCAT"
+    ]
   },
   {
     "id": "joan",
@@ -872,7 +972,7 @@
     "address": "1206 Maple Ave, Suite 715, Los Angeles, CA 90015",
     "lat": 34.0311,
     "lng": -118.2564,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/joan__losangeles"
@@ -889,7 +989,7 @@
     "address": "1811 E 20th St, Los Angeles, CA 90058",
     "lat": 34.0193,
     "lng": -118.2253,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/themistakeroom"
@@ -966,7 +1066,10 @@
     "socials": {
       "instagram": "https://instagram.com/sparcinla",
       "facebook": "https://facebook.com/sparcinla"
-    }
+    },
+    "aliases": [
+      "SPARC"
+    ]
   },
   {
     "id": "plaza_de_la_raza",
@@ -1015,7 +1118,7 @@
     "address": "120 Judge John Aiso St, Los Angeles, CA 90012",
     "lat": 34.0505,
     "lng": -118.2394,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Little Tokyo",
     "socials": {
       "instagram": "https://instagram.com/laartcore"
@@ -1068,11 +1171,15 @@
     "address": "1206 Maple Ave #523, Los Angeles, CA 90015",
     "lat": 34.0311,
     "lng": -118.2564,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/tigerstrikesasteroidla"
-    }
+    },
+    "aliases": [
+      "TSA LA",
+      "Tiger Strikes Asteroid"
+    ]
   },
   {
     "id": "actual_size",
@@ -1085,7 +1192,7 @@
     "address": "741 New High St, Los Angeles, CA 90012",
     "lat": 34.0604,
     "lng": -118.241,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/actualsizela"
@@ -1155,11 +1262,14 @@
     "address": "709 N Hill St, Suite 104-5, Los Angeles, CA 90012",
     "lat": 34.0636,
     "lng": -118.2392,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/laca_library"
-    }
+    },
+    "aliases": [
+      "LACA"
+    ]
   },
   {
     "id": "craft_in_america",
@@ -1190,7 +1300,7 @@
     "address": "945 Chung King Rd, Los Angeles, CA 90012",
     "lat": 34.0619,
     "lng": -118.2383,
-    "region": "eastside",
+    "region": "downtown",
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/tierradelsolgallery"
@@ -1315,7 +1425,11 @@
     "socials": {
       "instagram": "https://instagram.com/pacificasiamuseum",
       "facebook": "https://facebook.com/PacificAsiaMuseum"
-    }
+    },
+    "aliases": [
+      "PAM",
+      "USC PAM"
+    ]
   },
   {
     "id": "natural_history_museum",
@@ -1334,7 +1448,11 @@
       "instagram": "https://instagram.com/nhmlac",
       "twitter": "https://twitter.com/NHMLAC",
       "facebook": "https://facebook.com/NHMLAorg"
-    }
+    },
+    "aliases": [
+      "NHM",
+      "NHMLA"
+    ]
   },
   {
     "id": "art_practice",
@@ -1358,7 +1476,10 @@
     "website": "https://calarts.edu",
     "instagram": "@calarts",
     "type": "academic",
-    "region": "valley"
+    "region": "valley",
+    "aliases": [
+      "CalArts"
+    ]
   },
   {
     "id": "sciarc",
@@ -1370,7 +1491,11 @@
     "website": "https://www.sciarc.edu",
     "instagram": "@sciarc",
     "type": "academic",
-    "region": "eastside"
+    "region": "downtown",
+    "aliases": [
+      "SCI-Arc",
+      "SCIArc"
+    ]
   },
   {
     "id": "beyond_baroque",
@@ -1406,6 +1531,6 @@
     "website": "https://lapca.org/",
     "instagram": "@laplaza_ca",
     "type": "museum",
-    "region": "eastside"
+    "region": "downtown"
   }
 ]

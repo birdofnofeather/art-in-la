@@ -174,7 +174,8 @@ export function searchEvents(events, venuesById, query) {
     const venue = venuesById[ev.venue_id];
     return [
       ev.title, ev.description, ev.location_override,
-      venue?.name, venue?.neighborhood,
+      venue?.name, venue?.neighborhood, venue?.id,
+      ...(venue?.aliases || []),
       ...(ev.artists || []),
     ].some((s) => s && s.toLowerCase().includes(q));
   });
@@ -185,7 +186,7 @@ export function searchVenues(venues, query) {
   const q = (query || "").trim().toLowerCase();
   if (!q) return venues;
   return venues.filter((v) =>
-    [v.name, v.description, v.neighborhood, v.address]
+    [v.name, v.description, v.neighborhood, v.address, v.id, ...(v.aliases || [])]
       .some((s) => s && s.toLowerCase().includes(q))
   );
 }
