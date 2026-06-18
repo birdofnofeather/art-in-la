@@ -1328,7 +1328,7 @@
     "address": "900 Exposition Blvd, Los Angeles, CA 90007",
     "lat": 34.0175,
     "lng": -118.2882,
-    "region": "central",
+    "region": "south",
     "neighborhood": "Exposition Park",
     "socials": {
       "instagram": "https://instagram.com/nhmlac",
@@ -1345,7 +1345,8 @@
     "lng": -118.3389,
     "website": "https://artandpractice.org",
     "instagram": "@artandpractice",
-    "type": "community"
+    "type": "community",
+    "region": "south"
   },
   {
     "id": "calarts",
@@ -1356,7 +1357,8 @@
     "lng": -118.5626,
     "website": "https://calarts.edu",
     "instagram": "@calarts",
-    "type": "academic"
+    "type": "academic",
+    "region": "valley"
   },
   {
     "id": "sciarc",
@@ -1367,7 +1369,8 @@
     "lng": -118.2296,
     "website": "https://www.sciarc.edu",
     "instagram": "@sciarc",
-    "type": "academic"
+    "type": "academic",
+    "region": "eastside"
   },
   {
     "id": "beyond_baroque",
@@ -1378,7 +1381,8 @@
     "lng": -118.4575,
     "website": "https://beyondbaroque.org/",
     "instagram": "@beyondbaroque",
-    "type": "community"
+    "type": "community",
+    "region": "westside"
   },
   {
     "id": "corita_art_center",
@@ -1389,7 +1393,8 @@
     "lng": -118.2719,
     "website": "https://www.corita.org/",
     "instagram": "@coritaartcenter",
-    "type": "community"
+    "type": "community",
+    "region": "central"
   },
   {
     "id": "la_plaza",
@@ -1400,6 +1405,7 @@
     "lng": -118.2388,
     "website": "https://lapca.org/",
     "instagram": "@laplaza_ca",
-    "type": "museum"
+    "type": "museum",
+    "region": "eastside"
   }
 ]
