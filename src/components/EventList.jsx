@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   TYPE_COLOR, TYPE_LABEL, REGION_LABEL, EVENT_TYPE_LABEL,
 } from "../lib/constants.js";
@@ -52,6 +52,30 @@ function dateRange(ev) {
   return `${startStr} → ${fmtDateOnly(end)}`;
 }
 
+const startMs = (ev) => parseDate(ev.start)?.getTime() ?? Infinity;
+
+/**
+ * Order a single day's events so each organization's cards sit together
+ * (invisible grouping — no venue header) while the day still reads
+ * chronologically: venue blocks are ordered by their earliest start, and
+ * within a block events are sorted by start time.
+ */
+function orderWithinDay(events) {
+  const earliest = new Map();
+  for (const ev of events) {
+    const t = startMs(ev);
+    if (t < (earliest.get(ev.venue_id) ?? Infinity)) earliest.set(ev.venue_id, t);
+  }
+  return [...events].sort((a, b) => {
+    const ea = earliest.get(a.venue_id) ?? Infinity;
+    const eb = earliest.get(b.venue_id) ?? Infinity;
+    if (ea !== eb) return ea - eb;                       // venue blocks, chronological
+    if (a.venue_id !== b.venue_id)                        // stable tiebreak for same earliest
+      return a.venue_id < b.venue_id ? -1 : 1;
+    return startMs(a) - startMs(b);                       // within a venue, by start time
+  });
+}
+
 /** Group a sorted array of events into [{dateKey, label, events}] buckets. */
 function groupByDate(events) {
   const groups = [];
@@ -69,6 +93,7 @@ function groupByDate(events) {
     }
     seen.get(key).events.push(ev);
   }
+  for (const g of groups) g.events = orderWithinDay(g.events);
   return groups;
 }
 
@@ -98,6 +123,74 @@ const CalIcon = () => (
   </svg>
 );
 
+/**
+ * Single "Add to calendar" chip that opens a small popover offering the two
+ * destinations: an .ics download (Apple Calendar / Outlook) and a Google
+ * Calendar link. Closes on selection, outside click, or Escape.
+ */
+function CalendarMenu({ ev, venue }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  const gCalUrl = ev.start ? googleCalUrl(ev, venue) : null;
+
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
+    const onKey = (e) => { if (e.key === "Escape") setOpen(false); };
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const itemClass =
+    "block w-full rounded px-3 py-1.5 text-left text-xs hover:bg-black/5 " +
+    "focus-visible:outline-none focus-visible:bg-black/5";
+
+  return (
+    <div className="relative" ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="chip text-xs"
+        aria-haspopup="menu"
+        aria-expanded={open}
+      >
+        <CalIcon /> Add to calendar
+      </button>
+      {open && (
+        <div
+          role="menu"
+          className="absolute left-0 bottom-full z-20 mb-1 w-44 rounded-lg border border-black/10 bg-white p-1 shadow-lg"
+        >
+          <button
+            type="button"
+            role="menuitem"
+            onClick={() => { downloadICS(ev, venue); setOpen(false); }}
+            className={itemClass}
+          >
+            iCalendar / Outlook
+          </button>
+          {gCalUrl && (
+            <a
+              role="menuitem"
+              href={gCalUrl}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setOpen(false)}
+              className={itemClass}
+            >
+              Google Calendar
+            </a>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   const venue = venuesById[ev.venue_id] || { name: ev.venue_id, type: "other" };
   const venueColor = TYPE_COLOR[venue.type] || "#666";
@@ -105,7 +198,6 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   const relLabel = isExhibition ? null : getRelativeLabel(ev);
   const closeIn = isExhibition ? daysUntilClose(ev) : null;
   const closingSoon = closeIn !== null && closeIn >= 0 && closeIn <= 14;
-  const gCalUrl = ev.start ? googleCalUrl(ev, venue) : null;
 
   return (
     <article className="panel flex overflow-hidden">
@@ -211,29 +303,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
               Show on map
             </button>
           )}
-          {ev.start && (
-            <>
-              <button
-                type="button"
-                onClick={() => downloadICS(ev, venue)}
-                className="chip text-xs"
-                title="Download for Apple Calendar or Outlook"
-              >
-                <CalIcon /> Add to calendar
-              </button>
-              {gCalUrl && (
-                <a
-                  href={gCalUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="chip text-xs"
-                  title="Add to Google Calendar"
-                >
-                  Google
-                </a>
-              )}
-            </>
-          )}
+          {ev.start && <CalendarMenu ev={ev} venue={venue} />}
         </div>
       </div>
     </article>
