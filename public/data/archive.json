@@ -4149,15 +4149,15 @@
     "title": "Vientos familiares - Opening Reception",
     "description": "",
     "event_type": "opening",
-    "start": "2026-04-04",
-    "end": null,
-    "all_day": true,
+    "start": "2026-04-04T17:00:00-07:00",
+    "end": "2026-04-04T19:00:00-07:00",
+    "all_day": false,
     "url": "https://www.lasfotosproject.org/events/vientosfamiliares",
     "image": "https://images.squarespace-cdn.com/content/v1/68194120b9fd46197daadae6/1771972223794-I9LN4LCDZPMHNWX87BX6/1000x750.png",
     "artists": [],
     "location_override": null,
     "source": "lasfotosproject.org",
-    "scraped_at": "2026-05-31T00:05:02+00:00"
+    "scraped_at": "2026-06-18T00:39:01+00:00"
   },
   {
     "id": "the_broad-2026-04-05-family-weekend-workshops-this-is-awith-b-64fa86b34c",
