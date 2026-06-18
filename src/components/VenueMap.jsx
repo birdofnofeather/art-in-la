@@ -1,8 +1,9 @@
 import React, { useMemo, useRef, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, GeoJSON, useMap } from "react-leaflet";
 import L from "leaflet";
 import { TYPE_COLOR, TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
+import { LA_COUNTY_GEOJSON, REGIONS_GEOJSON, REGION_LABELS } from "../data/laRegions.js";
 
 // Fallback view (centroid of the current venue set); the map auto-fits to the
 // actual markers on first load via FitBoundsOnce below.
@@ -18,6 +19,30 @@ function fmtEventDate(s) {
   const datePart = d.toLocaleDateString("en-US", DATE_SHORT);
   const hasT = typeof s === "string" && s.includes("T");
   return hasT ? `${datePart} · ${d.toLocaleTimeString("en-US", TIME_OPTS)}` : datePart;
+}
+
+const COUNTY_STYLE = {
+  color: "#64748b",
+  weight: 1.5,
+  opacity: 0.45,
+  fill: false,
+};
+
+const REGION_STYLE = {
+  color: "#94a3b8",
+  weight: 0.8,
+  opacity: 0.5,
+  fillColor: "#94a3b8",
+  fillOpacity: 0.05,
+};
+
+function makeLabelIcon(text) {
+  return L.divIcon({
+    className: "region-label",
+    html: `<span>${text}</span>`,
+    iconSize: [130, 18],
+    iconAnchor: [65, 9],
+  });
 }
 
 function makeIcon(type, eventful) {
@@ -120,6 +145,22 @@ export default function VenueMap({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &middot; <a href="https://carto.com/attributions">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
+        {/* Region fills + county outline */}
+        <GeoJSON key="regions" data={REGIONS_GEOJSON} style={REGION_STYLE} interactive={false} />
+        <GeoJSON key="county" data={LA_COUNTY_GEOJSON} style={COUNTY_STYLE} interactive={false} />
+
+        {/* Region text labels at centroid */}
+        {REGION_LABELS.map(({ id, label, lat, lng }) => (
+          <Marker
+            key={`rl-${id}`}
+            position={[lat, lng]}
+            icon={makeLabelIcon(label)}
+            interactive={false}
+            keyboard={false}
+            zIndexOffset={-1000}
+          />
+        ))}
+
         <FlyController venues={venues} focusedVenueId={focusedVenueId} markerRefs={markerRefs} />
         <FitBoundsOnce mappable={mappable} focusedVenueId={focusedVenueId} />
         {mappable.map((v) => {

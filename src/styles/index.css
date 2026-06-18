@@ -68,3 +68,24 @@
   border-radius: 999px;
   box-shadow: 0 0 0 2px #fff;
 }
+/* Region map labels */
+.region-label {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.region-label span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 2px #fff;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
