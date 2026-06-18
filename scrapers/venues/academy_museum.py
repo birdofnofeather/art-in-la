@@ -10,9 +10,10 @@ For exhibitions (span > 90 days) we keep the all-day date-range approach.
 """
 from __future__ import annotations
 
+import dataclasses
 import json
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from typing import Iterable
 
 from bs4 import BeautifulSoup
@@ -20,6 +21,7 @@ from dateutil import parser as dparser
 
 from ..base import BaseScraper, Event
 from ..utils.http import get
+from ..utils.render import render_pages
 from ..utils.event_id import event_id
 from ..utils.event_type import infer as infer_type
 from ..utils.dateparse import to_la_iso, now_utc_iso
@@ -76,6 +78,51 @@ def _parse_times(text: str) -> tuple[tuple[int, int] | None, tuple[int, int] | N
         sh, sm = _to24(int(m.group(1)), int(m.group(2) or 0), m.group(3))
         return (sh, sm), None
     return None, None
+
+
+# ── showtime recovery via headless render ─────────────────────────────────────
+# Showtimes live only in the (bot-gated) Ticketure ticketing system, rendered
+# client-side on each detail page. We render a bounded set of near-term events
+# and read the showtime next to the event's own date — never a bare time grab,
+# so museum hours ("10 a.m.–6 p.m.") can't be mistaken for a showtime.
+_RECOVER_WITHIN_DAYS = 10   # only bother for events this soon
+_RECOVER_MAX_PAGES = 12     # cap renders per run to keep CI time bounded
+
+
+def _date_anchors(date_iso: str) -> list[str]:
+    d = date.fromisoformat(date_iso[:10])
+    return [f"{d.strftime('%B')} {d.day}", f"{d.strftime('%b')} {d.day}"]
+
+
+def _anchored_single_time(text: str, date_iso: str) -> tuple[int, int] | None:
+    """A single showtime that sits next to the event's own date.
+
+    A time *range* in the window is treated as hours (not a showtime) and
+    skipped — Academy event showtimes are single times like "7:30 PM".
+    """
+    try:
+        anchors = _date_anchors(date_iso)
+    except Exception:
+        return None
+    for a in anchors:
+        idx = text.find(a)
+        while idx != -1:
+            window = text[idx:idx + 56]
+            # Spans covered by a time *range* are hours, not a showtime — a
+            # single time falling inside one of them is skipped.
+            range_spans = [m.span() for m in _TIME_RANGE_RE.finditer(window)]
+            for sm in _SINGLE_TIME_RE.finditer(window):
+                s = sm.start()
+                if any(rs <= s < re_ for rs, re_ in range_spans):
+                    continue
+                return _to24(int(sm.group(1)), int(sm.group(2) or 0), sm.group(3))
+            idx = text.find(a, idx + 1)
+    return None
+
+
+def _timed_from_iso(date_iso: str, hm: tuple[int, int]) -> str:
+    d = date.fromisoformat(date_iso[:10])
+    return LA.localize(datetime(d.year, d.month, d.day, hm[0], hm[1])).isoformat()
 
 
 # ── multi-date helpers ────────────────────────────────────────────────────────
@@ -239,7 +286,48 @@ class Scraper(BaseScraper):
         resp = get(self.events_url)
         if not resp or not resp.ok:
             return
-        yield from self.custom_parse(resp.text, resp.url)
+        events = list(self.custom_parse(resp.text, resp.url))
+        yield from self._recover_times(events)
+
+    def _recover_times(self, events: list[Event]) -> Iterable[Event]:
+        """Render a bounded set of near-term timeless events to recover their
+        Ticketure showtimes. Any failure leaves the event date-only."""
+        today = date.today()
+        horizon = today + timedelta(days=_RECOVER_WITHIN_DAYS)
+
+        def eligible(e: Event) -> bool:
+            if not (e.all_day and e.event_type != "exhibition" and e.url):
+                return False
+            if e.url == self.events_url or (e.end and e.end[:10] != e.start[:10]):
+                return False
+            try:
+                return today <= date.fromisoformat(e.start[:10]) <= horizon
+            except Exception:
+                return False
+
+        cands = sorted((e for e in events if eligible(e)), key=lambda e: e.start)
+        cands = cands[:_RECOVER_MAX_PAGES]
+        cand_urls = {e.url for e in cands}
+
+        rendered: dict[str, str] = {}
+        if cand_urls:
+            urls = sorted(cand_urls)
+            pages = render_pages(urls, timeout=min(600, 90 + 20 * len(urls)))
+            for u, h in pages.items():
+                if h:
+                    rendered[u] = BeautifulSoup(h, "lxml").get_text(" ", strip=True)
+            print(f"  [{self.venue_id}] detail render: {len(rendered)}/{len(urls)} pages for showtimes")
+
+        for e in events:
+            if e.url in cand_urls and e.url in rendered and e.all_day:
+                hm = _anchored_single_time(rendered[e.url], e.start)
+                if hm:
+                    start = _timed_from_iso(e.start, hm)
+                    e = dataclasses.replace(
+                        e, start=start, end=None, all_day=False,
+                        id=event_id(self.venue_id, start, e.title),
+                    )
+            yield e
 
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
         m = _NEXT_DATA_RE.search(html)

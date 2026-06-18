@@ -19,6 +19,7 @@ in "10 a.m.–12:30 p.m." form. We parse both when present.
 """
 from __future__ import annotations
 
+import dataclasses
 import re
 from datetime import datetime
 from typing import Iterable
@@ -101,6 +102,38 @@ def _parse_time(text: str) -> tuple[tuple[int, int] | None, tuple[int, int] | No
     return None, None
 
 
+def _date_anchors(date_iso: str) -> list[str]:
+    """Spelled-out forms of a YYYY-MM-DD date to locate it in page text."""
+    try:
+        d = datetime.strptime(date_iso[:10], "%Y-%m-%d")
+    except ValueError:
+        return []
+    return [f"{d.strftime('%B')} {d.day}", f"{d.strftime('%b')} {d.day}"]
+
+
+def _anchored_time(text: str, date_iso: str):
+    """Find a showtime that sits right after the event's own date in `text`.
+
+    Anchoring on the event date keeps us from grabbing unrelated times on the
+    page (museum/café hours), which never appear next to the event date.
+    """
+    if not text:
+        return None, None
+    for anchor in _date_anchors(date_iso):
+        idx = text.find(anchor)
+        while idx != -1:
+            start_hm, end_hm = _parse_time(text[idx:idx + 64])
+            if start_hm:
+                return start_hm, end_hm
+            idx = text.find(anchor, idx + 1)
+    return None, None
+
+
+def _timed_from_iso(date_iso: str, hm: tuple[int, int]) -> str:
+    d = datetime.strptime(date_iso[:10], "%Y-%m-%d")
+    return LA.localize(datetime(d.year, d.month, d.day, hm[0], hm[1])).isoformat()
+
+
 class Scraper(BaseScraper):
     venue_id = "huntington"
     events_url = f"{BASE}/calendar"
@@ -116,7 +149,38 @@ class Scraper(BaseScraper):
         if not html:
             print(f"  [{self.venue_id}] render returned no HTML (checkpoint not cleared)")
             return
-        yield from self._parse(html)
+        events = list(self._parse(html))
+        yield from self._recover_times(events)
+
+    def _recover_times(self, events: list[Event]) -> Iterable[Event]:
+        """Second pass: render detail pages to recover showtimes for single-date
+        timeless events. Falls back to the all-day event on any failure."""
+        need = [
+            e for e in events
+            if e.all_day and e.event_type != "exhibition" and e.url
+            and (not e.end or e.end[:10] == e.start[:10])
+        ]
+        rendered: dict[str, str] = {}
+        if need:
+            urls = sorted({e.url for e in need})
+            pages = render_pages(urls, timeout=min(600, 90 + 18 * len(urls)))
+            for u, h in pages.items():
+                if h:
+                    rendered[u] = BeautifulSoup(h, "lxml").get_text(" ", strip=True)
+            print(f"  [{self.venue_id}] detail render: {len(rendered)}/{len(urls)} pages for showtimes")
+
+        for e in events:
+            txt = rendered.get(e.url) if (e.all_day and e.event_type != "exhibition") else None
+            if txt:
+                start_hm, end_hm = _anchored_time(txt, e.start)
+                if start_hm:
+                    start = _timed_from_iso(e.start, start_hm)
+                    end = _timed_from_iso(e.start, end_hm) if end_hm else None
+                    e = dataclasses.replace(
+                        e, start=start, end=end, all_day=False,
+                        id=event_id(self.venue_id, start, e.title),
+                    )
+            yield e
 
     def _parse(self, html: str) -> Iterable[Event]:
         soup = BeautifulSoup(html, "lxml")
