@@ -74,6 +74,7 @@ from .venues.sparc import Scraper as SPARC
 from .venues.beyond_baroque import BeyondBaroqueScraper as BeyondBaroque
 from .venues.corita_art_center import CoritaArtCenterScraper as CoritaArtCenter
 from .venues.la_plaza import LaPlazaScraper as LaPlaza
+from .venues.clockshop import Scraper as Clockshop
 
 SCRAPERS = [
     LACMA,
@@ -133,4 +134,5 @@ SCRAPERS = [
     BeyondBaroque,
     CoritaArtCenter,
     LaPlaza,
+    Clockshop,
 ]

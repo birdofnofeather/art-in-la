@@ -944,7 +944,7 @@
     "name": "REDCAT",
     "short_name": "REDCAT",
     "type": "alternative",
-    "description": "Roy and Edna Disney/CalArts Theater — a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
+    "description": "Roy and Edna Disney/CalArts Theater \u2014 a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
     "website": "https://www.redcat.org",
     "events_url": "https://www.redcat.org/events",
     "address": "631 W 2nd St, Los Angeles, CA 90012",
@@ -1379,7 +1379,7 @@
     "name": "Bergamot Station",
     "short_name": "Bergamot Station",
     "type": "community",
-    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces — a longtime anchor of the Westside scene.",
+    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces \u2014 a longtime anchor of the Westside scene.",
     "website": "https://bergamotstation.com",
     "events_url": "https://bergamotstation.com/events",
     "address": "2525 Michigan Ave, Santa Monica, CA 90404",
@@ -1532,5 +1532,23 @@
     "instagram": "@laplaza_ca",
     "type": "museum",
     "region": "downtown"
+  },
+  {
+    "id": "clockshop",
+    "name": "Clockshop",
+    "short_name": "Clockshop",
+    "type": "alternative",
+    "description": "Artist-driven nonprofit producing site-specific art, performance, and public programs along the LA River and surrounding communities.",
+    "website": "https://clockshop.org",
+    "events_url": "https://clockshop.org/events/",
+    "address": "2781 Casitas Ave, Los Angeles, CA 90039",
+    "lat": 34.0878,
+    "lng": -118.2323,
+    "region": "eastside",
+    "neighborhood": "Frogtown / Elysian Valley",
+    "socials": {
+      "instagram": "https://instagram.com/clockshopla"
+    },
+    "aliases": []
   }
 ]
