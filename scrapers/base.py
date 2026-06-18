@@ -395,7 +395,7 @@ class BaseScraper:
     # ------- Conversions -------
 
     def _event_from_jsonld(self, obj: dict) -> Event:
-        title = (obj.get("name") or "").strip()
+        title = _strip_html(obj.get("name") or "")   # decode entities in the title too
         desc = _strip_html(obj.get("description") or "")
         start = to_la_iso(obj.get("startDate"))
         end = to_la_iso(obj.get("endDate"))
@@ -547,7 +547,11 @@ EVENT_TYPES = {
 def _type_matches(t) -> bool:
     if not t:
         return False
-    return str(t).lower().lstrip("schema:") in EVENT_TYPES
+    s = str(t).lower()
+    s = s.rsplit("/", 1)[-1]          # strip a schema.org URL prefix
+    if s.startswith("schema:"):       # strip a "schema:" prefix (not char-by-char)
+        s = s[len("schema:"):]
+    return s in EVENT_TYPES
 
 
 def _jsonld_type_hint(obj: dict) -> str:
