@@ -2419,6 +2419,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-03-20-diary-of-flowers-artists-and-their-world-9953d1da49",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-20",
+    "end": "2026-03-20",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-20T10:10:44+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "moca_grand-2025-03-31-diary-of-flowers-artists-and-their-world-9855b33226",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2964,6 +2983,44 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-19T11:26:34+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-20-fictions-of-displayexh-9ed4b7c18e",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-20",
+    "end": "2026-01-20",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-20T10:10:44+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-20-moca-focus-takako-yamaguchiexh-e0e33b3b2d",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-20",
+    "end": "2026-01-20",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-20T10:10:44+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -3583,6 +3640,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-10-20-monumentsexh-08a076e27f",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-20",
+    "end": "2026-05-20",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-20T10:10:44+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "getty_center-2025-10-21-learning-to-drawexh-6c18cbe660",
     "venue_id": "getty_center",
     "title": "Learning to Draw",
@@ -4077,6 +4153,25 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-19T11:26:34+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2026-02-20-moca-focus-diane-severin-nguyenwar-songs-b5ef86aabc",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-20",
+    "end": "2026-03-20",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-20T10:10:44+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -6261,6 +6356,102 @@
     "event_types": [
       "workshop",
       "tour"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-19-only-yesterday-8520a0b575",
+    "venue_id": "academy_museum",
+    "title": "Only Yesterday",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-19",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/only-yesterday-019dd4e5-e477-ad4a-420b-800337a5ef96",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3HGmPA69k0BuH7BjmXFYAr/0db536be6701e06ee065f9abbff4803d/Jun15_ONLY_YESTERDAY_Ghibli5MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-20T10:10:50+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-19-the-parallax-view-c93ce3ef97",
+    "venue_id": "academy_museum",
+    "title": "The Parallax View",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-19",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-parallax-view-019dd571-1467-4501-b84c-022e55e2b969",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/Bqo1B0orlbrkC26bfGb2A/2b40d99fe1efb93b3cf6338802786a27/1_Jun19_PARLLAX_VIEW_Thrills3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-20T10:10:50+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-19-the-seven-year-itch-with-kim-morgan-3dd654d5d6",
+    "venue_id": "academy_museum",
+    "title": "The Seven Year Itch with Kim Morgan",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-19",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-seven-year-itch-019dda68-95b6-c5ab-574b-a0563b47ceff",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3f2Vd3bYykKYmOTnVtuQiD/09c155c4d25dc6451bf13fcc725098be/1_Jun19_SEVEN_YEAR_ITCH_Marilyn1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-20T10:10:50+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "the_broad-2026-06-19-juneteenth-2026-supervsn-x-the-broad-6395f2ffca",
+    "venue_id": "the_broad",
+    "title": "Juneteenth 2026: Supervsn X The Broad",
+    "description": "Supervsn  and  The Broad  come together this  Juneteenth  for a full day of music, art, and new merch. Join us on June 19 for:   →  DJ sets by  House of 73 ,  FRIDAY , and  Kailyn Hype    →   In-person debut of a special-edition Broad x Supervsn capsule collection    →  Free all-day access to    Yoko Ono: Music of the Mind      →  Free public tours of the Yoko Ono exhibition and third-floor collection galleries   →   Photobooth in the lobby",
+    "event_type": "performance",
+    "start": "2026-06-19T12:00:00-07:00",
+    "end": "2026-06-19T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.thebroad.org/juneteenth-2026-supervsn-x-broad",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-06-20T10:10:46+00:00",
+    "event_types": [
+      "performance",
+      "tour"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-19-dropin-workshop-for-teens-drag-101-89a56be536",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Teens: Drag 101",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-06-19T16:30:00-07:00",
+    "end": "2026-06-19T18:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-teens-drag-101-019dc062-50e7-b40a-944c-c0f1b6f6bfc6",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/37QP1P1CN1AxF2qAJ6F1yQ/3958385c66693599796e1b3b6d48a778/Pickle_Drag_101.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-20T10:10:50+00:00",
+    "event_types": [
+      "workshop"
     ]
   }
 ]
