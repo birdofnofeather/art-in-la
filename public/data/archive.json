@@ -2609,6 +2609,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-03-30-diary-of-flowers-artists-and-their-world-b7d9b0205d",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-30",
+    "end": "2026-03-30",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-30T10:33:26+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "moca_grand-2025-03-31-diary-of-flowers-artists-and-their-world-9855b33226",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -4389,6 +4408,25 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-06-29T12:02:09+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-10-30-monumentsexh-bdcad97fce",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-30",
+    "end": "2026-05-30",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-06-30T10:33:26+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -6970,6 +7008,25 @@
     "scraped_at": "2026-06-15T13:19:52+00:00"
   },
   {
+    "id": "huntington-2026-06-15-now-blooming-water-lilies-and-lotusexh-452fa20142",
+    "venue_id": "huntington",
+    "title": "Now Blooming: Water Lilies and Lotus",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-06-15",
+    "end": "2026-06-29",
+    "all_day": true,
+    "url": "https://www.huntington.org/event/now-blooming-water-lilies-and-lotus",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2F2022-08%2Fbloom-lotus-500w.jpg%3Fh%3D2a479378%26itok%3DfPj0QJVW&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-06-30T10:33:33+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "academy_museum-2026-06-15-the-french-connection-in-35mm-9f2553ba17",
     "venue_id": "academy_museum",
     "title": "The French Connection in 35mm",
@@ -8548,6 +8605,44 @@
     "scraped_at": "2026-06-29T12:02:16+00:00",
     "event_types": [
       "lecture"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-29-the-hitchhiker-55435c27ea",
+    "venue_id": "academy_museum",
+    "title": "The Hitch-Hiker",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-29",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-hitch-hiker-019dd575-e18f-fbe3-842e-c38d02a9579a",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5Q4wiIwE4B0hmBybGRXzDZ/b366e7060680a0c52e144df913229842/1_Jun29_HITCH_HIKER_Thrills9.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-30T10:33:32+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-06-29-whisper-of-the-heart-in-4k-30a01435f1",
+    "venue_id": "academy_museum",
+    "title": "Whisper of the Heart in 4K",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-29",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/whisper-of-the-heart-019dd4f7-e228-20c6-bae7-3b5767b0f59e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1kV0qTp4GtDi0UuogMYooV/4e4e5f9608dae17d8cf0a57344495d84/Jun29_WHISPER_OF_THE_HEART_Ghibli1GKIDS.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-06-30T10:33:32+00:00",
+    "event_types": [
+      "other"
     ]
   }
 ]
