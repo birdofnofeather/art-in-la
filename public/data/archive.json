@@ -2272,6 +2272,25 @@
     "scraped_at": "2026-05-31T00:04:59+00:00"
   },
   {
+    "id": "moca_grand-2025-03-01-diary-of-flowers-artists-and-their-world-42d96f1ad3",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-01",
+    "end": "2026-03-01",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "moca_grand-2025-03-11-diary-of-flowers-artists-and-their-world-5bd6ea8c94",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2770,6 +2789,44 @@
     "location_override": null,
     "source": "armoryarts.org",
     "scraped_at": "2026-05-31T00:05:02+00:00"
+  },
+  {
+    "id": "moca_grand-2025-06-01-fictions-of-displayexh-d2d073e3f9",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-01",
+    "end": "2026-01-01",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-01-moca-focus-takako-yamaguchiexh-5eaf692270",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-01",
+    "end": "2026-01-01",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
   },
   {
     "id": "lace-2025-06-07-this-home-forever-e0b0e23046",
@@ -3977,6 +4034,25 @@
     "scraped_at": "2026-05-31T00:05:02+00:00"
   },
   {
+    "id": "moca_grand-2025-10-01-monumentsexh-e2885f2a59",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-01",
+    "end": "2026-05-01",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "lace-2025-10-02-revcon-2026-d7a8a6e49e",
     "venue_id": "lace",
     "title": "RevCon 2026",
@@ -4670,6 +4746,25 @@
     "location_override": null,
     "source": "welcometolace.org",
     "scraped_at": "2026-05-31T00:04:59+00:00"
+  },
+  {
+    "id": "moca_grand-2026-02-01-moca-focus-diane-severin-nguyenwar-songs-da98a6eecc",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-01",
+    "end": "2026-03-01",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
   },
   {
     "id": "the_broad-2026-02-07-wild-up-the-great-learning-2a34125bfd",
@@ -8399,6 +8494,25 @@
     ]
   },
   {
+    "id": "lace-2026-06-27-lace-presents-artists-film-international-b2241ffca3",
+    "venue_id": "lace",
+    "title": "LACE Presents: Artists Film International 2026",
+    "description": "LACE Presents: Artists Film International Saturday, June 27, 2026, 2–7 PM Heavy Manners Library 1200 N Alvarado St, Los Angeles, CA 90026 Free admission Read about all the artists and films in Artists Film International here. LACE is proud to present the 2026 edition of Artists Film International (AFI’26), a touring film program which is [&hellip;]",
+    "event_type": "screening",
+    "start": "2026-06-27T23:11:50-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://welcometolace.org/lace/lace-presents-artists-film-international-2026/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "welcometolace.org",
+    "scraped_at": "2026-07-01T10:44:29+00:00",
+    "event_types": [
+      "screening"
+    ]
+  },
+  {
     "id": "academy_museum-2026-06-28-all-that-money-can-buy-the-devil-and-dan-832d78dffd",
     "venue_id": "academy_museum",
     "title": "All That Money Can Buy (The Devil and Daniel Webster)",
@@ -8641,6 +8755,44 @@
     "location_override": null,
     "source": "academymuseum.org",
     "scraped_at": "2026-06-30T10:33:32+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "wende-2026-06-30-black-music-month-a-celebration-with-cli-b86d830a7c",
+    "venue_id": "wende",
+    "title": "Black Music Month: A Celebration with Cliff Beach (R&#038;B)",
+    "description": "Black Music Month: A Live Celebration with Cliff Beach is a free community concert honoring the legacy, innovation, and enduring influence of Black music through an evening of soul, funk, jazz, and R&B. Award-winning musician, radio host, and author Cliff Beach, joined by a four-piece band, will take audiences on a musical journey that celebrates the artists and traditions that have shaped American culture while highlighting the continued impact of Black creativity today. Through live performance and storytelling, the program is designed to educate, inspire, and bring people together across generations in a welcoming and accessible setting. Open to audiences of all ages, this special Black Music Month event reflects the Wende Museum’s commitment to fostering community, creativity, and cult",
+    "event_type": "performance",
+    "start": "2026-06-30T18:30:00-07:00",
+    "end": "2026-06-30T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/black-music-month-a-celebration-with-cliff-beach-rb/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/06/Cliff_Beach_16x9.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-01T10:44:34+00:00",
+    "event_types": [
+      "performance"
+    ]
+  },
+  {
+    "id": "wende-2026-06-30-living-with-loss-a-grief-support-circle-757c79514c",
+    "venue_id": "wende",
+    "title": "Living with Loss: A Grief Support Circle",
+    "description": "Join a warm and understanding space where you can share, listen, and heal. Led by Dr. Barry Goldstein, this grief support circle is all about connecting with others who get what you’re going through. Come as you are, no judgments—just open hearts and support to navigate the ups and downs of loss side by side. Everyone is welcome!",
+    "event_type": "other",
+    "start": "2026-06-30T18:30:00-07:00",
+    "end": "2026-06-30T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/living-with-loss-a-grief-support-circle/2026-06-30/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/grief-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-01T10:44:34+00:00",
     "event_types": [
       "other"
     ]
