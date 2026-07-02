@@ -2291,6 +2291,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-03-02-diary-of-flowers-artists-and-their-world-ce8b4f4932",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-02",
+    "end": "2026-03-02",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-02T10:12:06+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "moca_grand-2025-03-11-diary-of-flowers-artists-and-their-world-5bd6ea8c94",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2824,6 +2843,44 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-02-fictions-of-displayexh-7bcac6f54f",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-02",
+    "end": "2026-01-02",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-02T10:12:06+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-02-moca-focus-takako-yamaguchiexh-eb6efc3246",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-02",
+    "end": "2026-01-02",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-02T10:12:06+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -4053,6 +4110,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-10-02-monumentsexh-c89198426b",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-02",
+    "end": "2026-05-02",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-02T10:12:06+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "lace-2025-10-02-revcon-2026-d7a8a6e49e",
     "venue_id": "lace",
     "title": "RevCon 2026",
@@ -4588,6 +4664,25 @@
     "scraped_at": "2026-05-31T00:04:58+00:00"
   },
   {
+    "id": "getty_center-2025-12-02-baroque-paintings-and-sculpturesexh-e1fe1034e1",
+    "venue_id": "getty_center",
+    "title": "Baroque Paintings and Sculptures",
+    "description": "Exhibitions",
+    "event_type": "exhibition",
+    "start": "2025-12-02",
+    "end": "2026-07-01",
+    "all_day": true,
+    "url": "https://www.getty.edu/exhibitions/collection-highlights-baroque",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-06-24T10:24:58+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "getty_center-2025-12-02-recent-acquisitions-photographyexh-60a94a9597",
     "venue_id": "getty_center",
     "title": "Recent Acquisitions: Photography",
@@ -4762,6 +4857,25 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-07-01T10:44:27+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2026-02-02-moca-focus-diane-severin-nguyenwar-songs-d63a07ba75",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-02",
+    "end": "2026-03-02",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-02T10:12:06+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -8795,6 +8909,83 @@
     "scraped_at": "2026-07-01T10:44:34+00:00",
     "event_types": [
       "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-01-galaxy-quest-in-35mm-cd56e2c7c6",
+    "venue_id": "academy_museum",
+    "title": "Galaxy Quest in 35mm",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-01",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/galaxy-quest-019dd529-253c-f148-74e3-19386a610226",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3wtUz0K5lX8Ij5us1WiXyt/8c3110a714bd1ce492e0ad519ed36e3f/Jul1_GALAXY_QUEST_BranchSelects6.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-02T10:12:13+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-01-whisper-of-the-heart-in-4k-0c4c09a7f5",
+    "venue_id": "academy_museum",
+    "title": "Whisper of the Heart in 4K",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-01",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/whisper-of-the-heart-019dd4f8-287d-30e8-3767-77ffb9700f42",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/342bztTgcIJADGxmNFCCgV/69b9985184296e32d76111052eac6daa/Jun29_WHISPER_OF_THE_HEART_Ghibli4GKIDS.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-02T10:12:13+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "pvac-2026-07-01-collected-treasures-donation-day-657df58c70",
+    "venue_id": "pvac",
+    "title": "Collected Treasures Donation Day",
+    "description": "Make a difference with your donation to Collected Treasures! Organized by The Circle of Palos Verdes Art Center, Collected Treasures presents an annual fundraiser to support PVAC. Want to help? We would be grateful to receive your good quality items, such as art, china, ceramics, silver, fine & costume jewelry, linens, unique clothing, holiday decorations, antiques, home decor, glassware, small furniture, clocks, objets d’ art. Our first take-in day for donations is Wednesday, July 1, from 11am – 2pm. Volunteers will be on hand to assist with unloading your donation. More information about The Circle and their fundraising projects is at thecirclepvac.org .",
+    "event_type": "other",
+    "start": "2026-07-01T11:00:00-07:00",
+    "end": "2026-07-01T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/collected-treasures-donation-day/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2024/06/Collected-drop-off-1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-07-02T10:12:11+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "wende-2026-07-01-stitched-038-sewn-a-survivor8217s-journe-9aa6bad3a9",
+    "venue_id": "wende",
+    "title": "Stitched &#038; Sewn: A Survivor&#8217;s Journey | Special Preview Screening",
+    "description": "Join an exclusive preview screening of a documentary-in-progress chronicling the extraordinary life of Holocaust survivor and artist Trudie Strobel.",
+    "event_type": "opening",
+    "start": "2026-07-01T19:00:00-07:00",
+    "end": "2026-07-01T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/stitched-sewn/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/06/Stitched-16-9-V2-Small-1-scaled.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-02T10:12:12+00:00",
+    "event_types": [
+      "opening",
+      "screening"
     ]
   }
 ]
