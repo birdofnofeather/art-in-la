@@ -2310,6 +2310,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-03-03-diary-of-flowers-artists-and-their-world-e252381664",
+    "venue_id": "moca_grand",
+    "title": "Diary of Flowers: Artists and their Worlds",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-03-03",
+    "end": "2026-03-03",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/diary",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/e89/thumb_14497_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-03T10:07:17+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "moca_grand-2025-03-11-diary-of-flowers-artists-and-their-world-5bd6ea8c94",
     "venue_id": "moca_grand",
     "title": "Diary of Flowers: Artists and their Worlds",
@@ -2881,6 +2900,44 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-07-02T10:12:06+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-03-fictions-of-displayexh-77312821f7",
+    "venue_id": "moca_grand",
+    "title": "Fictions of Display",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-03",
+    "end": "2026-01-03",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/fictions-of-display",
+    "image": "https://www.moca.org/storage/app/uploads/public/68f/028/f26/thumb_14153_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-03T10:07:17+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2025-06-03-moca-focus-takako-yamaguchiexh-42d6e32a9f",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Takako Yamaguchi",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-06-03",
+    "end": "2026-01-03",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/takako-yamaguchi",
+    "image": "https://www.moca.org/storage/app/uploads/public/676/099/b8b/thumb_13204_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-03T10:07:17+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -4148,6 +4205,25 @@
     ]
   },
   {
+    "id": "moca_grand-2025-10-03-monumentsexh-ae6dc76a47",
+    "venue_id": "moca_grand",
+    "title": "MONUMENTS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-10-03",
+    "end": "2026-05-03",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/monuments",
+    "image": "https://www.moca.org/storage/app/uploads/public/697/102/88b/thumb_14495_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-03T10:07:17+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "lace-2025-10-04-lace-presents-artists-film-international-44eb82335d",
     "venue_id": "lace",
     "title": "LACE Presents: Artists Film International 2026",
@@ -4876,6 +4952,25 @@
     "location_override": null,
     "source": "moca.org",
     "scraped_at": "2026-07-02T10:12:06+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
+    "id": "moca_grand-2026-02-03-moca-focus-diane-severin-nguyenwar-songs-b8042ca592",
+    "venue_id": "moca_grand",
+    "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-03",
+    "end": "2026-03-03",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/moca-focus-diane-severin-nguyen",
+    "image": "https://www.moca.org/storage/app/uploads/public/695/9b1/1eb/thumb_14404_710_0_0_0_auto.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-07-03T10:07:17+00:00",
     "event_types": [
       "exhibition"
     ]
@@ -8986,6 +9081,83 @@
     "event_types": [
       "opening",
       "screening"
+    ]
+  },
+  {
+    "id": "janm-2026-07-02-asian-america-the-beautiful-606974eaa5",
+    "venue_id": "janm",
+    "title": "Asian America the Beautiful",
+    "description": "Special Events",
+    "event_type": "other",
+    "start": "2026-07-02",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.janm.org/events/2026-07-02/asian-america-beautiful",
+    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2026-06/asian-america-projection-janm-3_0.png?h=4b051a06&itok=XfDaGeJJ",
+    "artists": [],
+    "location_override": null,
+    "source": "janm.org",
+    "scraped_at": "2026-07-03T10:07:22+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-02-some-like-it-hot-in-4k-90637d47cf",
+    "venue_id": "academy_museum",
+    "title": "Some Like It Hot in 4K",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-02",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/some-like-it-hot-019dda6b-59cc-be2f-090e-f2f741d4e082",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/qMu0G10z3ei6zt4V7Iela/5610a0bb9f1f473ed552402905fe5432/Alt_Jul2_SOME_LIKE_IT_HOT_Marilyn2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-03T10:07:23+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-02-tokyo-drifter-35cc6a43a8",
+    "venue_id": "academy_museum",
+    "title": "Tokyo Drifter",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-02",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/tokyo-drifter-019dd578-9525-65a2-2a4f-39807145503e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/vLxXHiRyAFH1Qz8mHdgvy/30b0853c57c2473594acfd0c8367be37/Jul2_TOKYO_DRIFTER_Thrills13_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-03T10:07:23+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "wende-2026-07-02-the-movement-playground-with-cantilever-2d919e15ac",
+    "venue_id": "wende",
+    "title": "The Movement Playground with Cantilever Collective",
+    "description": "Step into the spontaneous spirit of The Movement Playground, a dance workshop series from Cantilever Collective. Each session is improvised, ephemeral, and open to all—no dance experience required. With live-mixed soundscapes, playful prompts, and space to move freely, these workshops invite you to explore connection, curiosity, and joy through your own body’s language. One day’s “play” will never be the same as the next. Come as you are. Move how you feel. An ADA-accessible entrance to the Wende Museum Community Center is available through the garden gate from the parking lot. It will open approximately 30 minutes before the program begins. RSVPs for this free program do not guarantee admission to the A-Frame Theater. Doors will open and seating will begin 15 minutes prior to the start of",
+    "event_type": "workshop",
+    "start": "2026-07-02T17:30:00-07:00",
+    "end": "2026-07-02T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-movement-playground-with-cantilever-collective-2/2026-07-02/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/09/a0235bd53afbd3dd499f0ff85a44e585-8eFkwX.tmp_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-03T10:07:22+00:00",
+    "event_types": [
+      "workshop",
+      "performance"
     ]
   }
 ]
