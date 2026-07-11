@@ -10301,5 +10301,43 @@
       "workshop",
       "performance"
     ]
+  },
+  {
+    "id": "academy_museum-2026-07-10-blow-out-in-35mm-46bc620283",
+    "venue_id": "academy_museum",
+    "title": "Blow Out in 35mm",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/blow-out-019dd57d-7000-1a17-a7ea-f705d9ff2f9c",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5Z9rEy4aGQrgqccQnT1xZn/b2eb06f76f89a4dd691a3c7425714c6f/Jul10_BLOW_OUT_Thrills16_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-11T08:50:17+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-10-how-does-the-silver-screen-shape-the-gol-b750947d74",
+    "venue_id": "academy_museum",
+    "title": "How Does the Silver Screen Shape the Golden State? Featuring Friday",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-10T19:00:00-07:00",
+    "end": "2026-07-10T19:40:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/how-does-the-silver-screen-shape-the-golden-state-featuring-friday-1995-019e8942-5046-8528-2ad4-4cdd6167d315",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/33H47YDaw8kZTf039JptQa/9a3eba0160e622b99ce5edc0ff280917/Jul10_FRIDAY_Spotlight6.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-11T08:50:17+00:00",
+    "event_types": [
+      "other"
+    ]
   }
 ]
