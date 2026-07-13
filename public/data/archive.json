@@ -6237,6 +6237,25 @@
     "scraped_at": "2026-05-31T00:04:58+00:00"
   },
   {
+    "id": "sciarc-2026-03-20-iwan-baan-rome-las-vegas-bread-and-circu-1416ccda56",
+    "venue_id": "sciarc",
+    "title": "Iwan Baan: Rome – Las Vegas: Bread and Circuses",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-03-20",
+    "end": "2026-07-12",
+    "all_day": true,
+    "url": "https://www.sciarc.edu/events/exhibitions/iwan-baan",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "sciarc.edu",
+    "scraped_at": "2026-07-11T08:50:30+00:00",
+    "event_types": [
+      "exhibition"
+    ]
+  },
+  {
     "id": "armory_pasadena-2026-03-28-2026-spring-benefit-c9bd404880",
     "venue_id": "armory_pasadena",
     "title": "2026 Spring Benefit",
@@ -10568,6 +10587,178 @@
     "scraped_at": "2026-07-12T09:05:23+00:00",
     "event_types": [
       "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-12-my-winnipeg-in-35mm-with-guy-maddin-564cd6b198",
+    "venue_id": "academy_museum",
+    "title": "My Winnipeg in 35mm with Guy Maddin",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/my-winnipeg-with-guy-maddin-019dd539-00fa-31a2-67b6-c57af87fcdb1",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/50bZyx7m3bNAM5xafQcoLm/7f99005c3367ab9f3a39cc0087952a6e/Jul12_MY_WINNIPEG_WeekendWith1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-13T10:30:26+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-12-the-green-fog-with-guy-maddin-7146f921a2",
+    "venue_id": "academy_museum",
+    "title": "The Green Fog with Guy Maddin",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-green-fog-with-guy-maddin-019dd538-3ef3-53b8-2fc6-aaf84e3fc5dd",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/34dcnaVJYASYKlGZIft3Zb/89bd618f88e72e418fb3865cee44143d/Jul12_GREEN_FOG_WeekendWith5_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-13T10:30:26+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-12-the-magnificent-seven-in-4k-7677f4a68c",
+    "venue_id": "academy_museum",
+    "title": "The Magnificent Seven in 4K",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-magnificent-seven-019d8807-479d-3bdf-e11e-5f3a97e1777d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/PGwAbeJBT58BTB6z4YuwM/d98cd34d4a2588b4e260fd55898b440c/Jul5_MAGNIFICENT_SEVEN_OscarSundays1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-13T10:30:26+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "huntington-2026-07-12-twilight-garden-estate-tours-e783a1efce",
+    "venue_id": "huntington",
+    "title": "Twilight Garden Estate Tours",
+    "description": "",
+    "event_type": "tour",
+    "start": "2026-07-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/twilight-garden-estate-tours",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2Frail%2FHU13YJUX.jpg%3Fh%3D09d9d39b%26itok%3DJRH-ZTSo&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-07-13T10:30:29+00:00",
+    "event_types": [
+      "tour"
+    ]
+  },
+  {
+    "id": "huntington-2026-07-12-twilight-garden-strolls-cf4e671d48",
+    "venue_id": "huntington",
+    "title": "Twilight Garden Strolls",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/twilight-garden-strolls",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2Frail%2FHU13XB7L.jpg%3Fh%3Db044a8f9%26itok%3DqUPZ5dNs&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-07-13T10:30:29+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "wende-2026-07-12-summer-camp-at-the-stevie-watercolor-038-be9d8f23d7",
+    "venue_id": "wende",
+    "title": "Summer Camp at the Stevie | Watercolor &#038; Nature Observation",
+    "description": "Reconnect with your creativity through Summer Camp at the Stevie, a five-part workshop series that invites adults (age 16+) to experience art making through the senses. Set in the Wende Museum’s Stevie Artist Residence garden oasis, each Sunday workshop explores one of the five senses through a different creative practice, from watercolor painting and basket weaving to ceramics, botanical incense making, and traditional food preservation. Inspired by the spirit of summer camp, the series encourages participants to slow down, notice the world around them, and engage with natural materials in meaningful ways. Together, we’ll observe the colors of the landscape, listen through handmade instruments, weave with plant fibers, create fragrances from botanicals, and preserve seasonal ingredients, ",
+    "event_type": "workshop",
+    "start": "2026-07-12T10:30:00-07:00",
+    "end": "2026-07-12T13:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/summer-camp-at-the-stevie-watercolor-nature-observation/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/summer-camp-at-the-stevie.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-13T10:30:25+00:00",
+    "event_types": [
+      "workshop"
+    ]
+  },
+  {
+    "id": "getty_villa-2026-07-12-bacchus-uncorked-a-roman-dinner-party-lo-4c1d894e03",
+    "venue_id": "getty_villa",
+    "title": "Bacchus Uncorked: A Roman Dinner Party Lost at Sea",
+    "description": "Food & Drink",
+    "event_type": "other",
+    "start": "2026-07-12T17:15:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/bacchus-lost-at-sea",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-06-24T10:24:58+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-12-academy-museum-x-cinephile-movie-trivia-04565d6f70",
+    "venue_id": "academy_museum",
+    "title": "Academy Museum x Cinephile: Movie Trivia Night",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-12T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/academy-museum-x-cinephile-movie-trivia-night-2201b9c2-3150-ca21-b79e-aee93dca837b",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/20r4DAMhYSac0NMz3mOCDl/399aecdb94efde1a958ee5c32350c8d9/July_Movie_Trivia_Web_Banner__1_.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-13T10:30:26+00:00",
+    "event_types": [
+      "screening"
+    ]
+  },
+  {
+    "id": "human_resources-2026-07-12-cassia-streb-tim-feeney-melissa-achten-e-9c55cb019e",
+    "venue_id": "human_resources",
+    "title": "Cassia Streb, Tim Feeney, Melissa Achten, Eli Klausner",
+    "description": "Performance by Cassia Streb, Tim Feeney, Eli Klausner, and Melissa Achten These two established sound-making duos join together for the first time to present an evening of 2 brand new experiments. Taking inspiration from wind power they’ll be moving sound through the vast space that is HRLA over the course of both pieces. Cassia Streb and Tim Feeney are both LA-based sound artists who have been performing, recording, and creating sound installations together since 2019. Their sound pieces explore instrumental and found sound, movement, tape recorders, door frames, window panes, rainstorms, pine cones, concrete floors, and children’s cartoons. They have collaborated to create sound projects for High Desert Soundings in Wonder Valley, Sound Symposium in St. John’s Newfoundland, the Evergreen",
+    "event_type": "lecture",
+    "start": "2026-07-12T19:30:00-07:00",
+    "end": "2026-07-12T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/cassia-streb-tim-feeney-melissa-achten-eli-klausner/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/712.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-07-13T10:30:22+00:00",
+    "event_types": [
+      "lecture",
+      "performance"
     ]
   }
 ]
