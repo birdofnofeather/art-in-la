@@ -10760,5 +10760,44 @@
       "lecture",
       "performance"
     ]
+  },
+  {
+    "id": "academy_museum-2026-07-13-the-saddest-music-in-the-world-with-guy-c6026a5ffb",
+    "venue_id": "academy_museum",
+    "title": "The Saddest Music in the World with Guy Maddin",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-07-13",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-saddest-music-in-the-world-with-guy-maddin-019dd53b-afab-95c2-4ae6-6e0f0c70c508",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/z8ucw2FayKtPbo8uIRKrP/dd7142b9dc07b356ac055b46896bfb2b/Jul13_SADDEST_MUSIC_IN_THE_WORLD_WeekendWith2_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-14T09:06:41+00:00",
+    "event_types": [
+      "performance"
+    ]
+  },
+  {
+    "id": "wende-2026-07-13-cradle-will-rock-cinema-under-pressure-fa46700270",
+    "venue_id": "wende",
+    "title": "Cradle Will Rock | Cinema Under Pressure",
+    "description": "Our Monday night film series, Cinema Under Pressure, explores the struggle over what audiences are permitted to see, pairing each screening with a discussion featuring guest experts. Tim Robbins’ 1999 film Cradle Will Rock tells the true story of one of the most infamous acts of cultural censorship in American history: the final days of the Federal Theatre Project, when Orson Welles and John Houseman staged a controversial production of Marc Blitzstein’s proletarian musical The Cradle Will Rock , leading to a landmark moment in the history of American theater. Robbins frames this story within a sweeping panorama of art, money, and power in Depression-era America, where politicians, patrons, and propagandists all fought to direct artistic creativity toward their own ends. Following the scre",
+    "event_type": "lecture",
+    "start": "2026-07-13T18:00:00-07:00",
+    "end": "2026-07-13T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/cradle-will-rock-cinema-under-pressure/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/cradle-will-rock-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-14T09:06:40+00:00",
+    "event_types": [
+      "lecture",
+      "screening"
+    ]
   }
 ]
