@@ -10799,5 +10799,24 @@
       "lecture",
       "screening"
     ]
+  },
+  {
+    "id": "academy_museum-2026-07-15-bugsy-in-35mm-5b2de51315",
+    "venue_id": "academy_museum",
+    "title": "Bugsy in 35mm",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/bugsy-019dd52f-a256-6605-687a-101422312e89",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1SmmvBN4j1F3L7oLBrMJmI/bce41cecd5079d4425b7bea2c19e37c5/Jul15_BUGSY_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-16T09:17:51+00:00",
+    "event_types": [
+      "other"
+    ]
   }
 ]
