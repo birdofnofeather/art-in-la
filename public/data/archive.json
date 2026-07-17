@@ -4483,6 +4483,25 @@
     "scraped_at": "2026-05-31T00:04:59+00:00"
   },
   {
+    "id": "autry-2025-09-15-museum-teacher-programs-for-schools-1d63a838a3",
+    "venue_id": "autry",
+    "title": "Museum Teacher Programs for Schools",
+    "description": "Educational Activities",
+    "event_type": "other",
+    "start": "2025-09-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://theautry.org/events/educational-activities/museum-teacher-programs-schools",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2023-01/ed-fieldtrips-museumteacher.jpg?h=2418df9f&itok=rDv8QBDr",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-07-17T09:12:04+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
     "id": "autry-2025-09-16-museum-teacher-programs-for-schools-95c5abbced",
     "venue_id": "autry",
     "title": "Museum Teacher Programs for Schools",
@@ -10817,6 +10836,84 @@
     "scraped_at": "2026-07-16T09:17:51+00:00",
     "event_types": [
       "other"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-16-juice-with-ernest-dickerson-db5bf32ad2",
+    "venue_id": "academy_museum",
+    "title": "Juice with Ernest Dickerson",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-16",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/juice-with-ernest-dickerson-019dd57f-69a3-8bdd-8d5a-ac677c12b91a",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4ZNDQvwUemQgIvQoIviPQQ/8438c30b9646f1747069cc2ea4cc312a/Jul16_JUICE_Thrills5_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-17T09:12:03+00:00",
+    "event_types": [
+      "other"
+    ]
+  },
+  {
+    "id": "wende-2026-07-16-the-movement-playground-with-cantilever-73ea906184",
+    "venue_id": "wende",
+    "title": "The Movement Playground with Cantilever Collective",
+    "description": "Step into the spontaneous spirit of The Movement Playground, a dance workshop series from Cantilever Collective. Each session is improvised, ephemeral, and open to all—no dance experience required. With live-mixed soundscapes, playful prompts, and space to move freely, these workshops invite you to explore connection, curiosity, and joy through your own body’s language. One day’s “play” will never be the same as the next. Come as you are. Move how you feel. An ADA-accessible entrance to the Wende Museum Community Center is available through the garden gate from the parking lot. It will open approximately 30 minutes before the program begins. RSVPs for this free program do not guarantee admission to the A-Frame Theater. Doors will open and seating will begin 15 minutes prior to the start of",
+    "event_type": "workshop",
+    "start": "2026-07-16T17:30:00-07:00",
+    "end": "2026-07-16T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-movement-playground-with-cantilever-collective-2/2026-07-16/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/09/a0235bd53afbd3dd499f0ff85a44e585-8eFkwX.tmp_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-17T09:12:03+00:00",
+    "event_types": [
+      "workshop",
+      "performance"
+    ]
+  },
+  {
+    "id": "redcat-2026-07-16-michael-asher-2cad6df352",
+    "venue_id": "redcat",
+    "title": "Michael Asher",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-16T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.redcat.org/events/michael-asher",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-06/MA%20Film%2053-Enhanced-NR%20%281%29.jpg?h=6eb229a4&itok=9EjT5vYK",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-07-17T09:11:58+00:00",
+    "event_types": [
+      "screening"
+    ]
+  },
+  {
+    "id": "human_resources-2026-07-16-sex-test-erikaa-der-mann-der-weltmeister-82db1199ca",
+    "venue_id": "human_resources",
+    "title": "Sex Test + Erika/A Der Mann, der Weltmeisterin wurde (The Man Who Was the Women&#8217;s World Champion)",
+    "description": "Tickets Reading at 7:00pm Screening at 8:00pm Jennifer Doyle reads from her forthcoming book Sex Test. Sex Test makes a counter-intuitive argument for the power of women’s sports. Where many working in the queerer spaces of sports studies argue for the elimination of sex segregation, Doyle argues for not just the value of women’s sports, but the supremacy of women’s sports as the category through which we experience what it means to unravel and destroy our ideas about women’s capacities, escape regimes of sex policing. This reading will be followed by a 8PM screening of Kurt Mayer’s Erik(A), a 2006 documentary film about Alpine athlete Erik Schinnegger. Erika Schinneger was identified as female at birth, and raised as a girl and a woman. A gifted athlete, Erik(A) was the 1966 world champio",
+    "event_type": "lecture",
+    "start": "2026-07-16T19:00:00-07:00",
+    "end": "2026-07-16T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/sex-test-erika-a-der-mann-der-weltmeisterin-wurde-the-man-who-was-the-womens-world-champion/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/ERIKAA.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-07-17T09:12:01+00:00",
+    "event_types": [
+      "lecture",
+      "screening"
     ]
   }
 ]
