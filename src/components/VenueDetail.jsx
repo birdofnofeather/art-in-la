@@ -88,7 +88,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm"
+        className="fixed inset-0 z-[1100] bg-black/30 backdrop-blur-sm"
         onClick={onClose}
         aria-hidden
       />
@@ -99,7 +99,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
         role="dialog"
         aria-modal="true"
         aria-labelledby="venue-detail-heading"
-        className="fixed right-0 top-0 bottom-0 z-50 flex w-full max-w-md flex-col bg-white shadow-2xl overflow-hidden"
+        className="fixed right-0 top-0 bottom-0 z-[1200] flex w-full max-w-md flex-col bg-white shadow-2xl overflow-hidden"
       >
         {/* Color bar */}
         <div className="h-1.5 w-full shrink-0" style={{ background: color }} />

@@ -21,25 +21,29 @@ const W=-118.95, L1=-118.37, L2=-118.27, L3=-118.13, E=-117.65;
 const T=34.83, N1=34.52, N2=34.20, N3=34.09, N4=34.02, N5=33.90, S=33.68;
 
 const REGIONS_RAW = [
-  { id:"antelope",  label:"Antelope Valley", centroid:[34.67,-118.30], ring:box(W, N1,E, T ) },
-  { id:"valley",   label:"Valley",           centroid:[34.34,-118.55], ring:box(W, N2,E, N1) },
-  { id:"westside", label:"Westside",         centroid:[34.05,-118.55], ring:box(W, N5,L1,N2) },
-  { id:"northeast",label:"Northeast",        centroid:[34.15,-118.25], ring:box(L1,N3,L3,N2) },
-  { id:"pasadena", label:"Pasadena",         centroid:[34.15,-117.92], ring:box(L3,N3,E, N2) },
-  { id:"central",  label:"Central",          centroid:[34.06,-118.32], ring:box(L1,N4,L2,N3) },
-  { id:"downtown", label:"Downtown",         centroid:[34.05,-118.20], ring:box(L2,N4,L3,N3) },
-  { id:"eastside", label:"Eastside",         centroid:[34.06,-118.07], ring:box(L3,N4,E, N3) },
-  { id:"south",    label:"South LA",         centroid:[33.96,-118.25], ring:box(L1,N5,L3,N4) },
-  { id:"southbay", label:"South Bay",        centroid:[33.79,-118.55], ring:box(W, S, L2,N5) },
-  { id:"longbeach",label:"Long Beach",       centroid:[33.79,-117.96], ring:box(L2,S, E, N5) },
+  { id:"antelope", label:"Antelope Valley",       centroid:[34.67,-118.30], rings:[box(W, N1,E, T )] },
+  { id:"valley",   label:"San Fernando Valley",   centroid:[34.34,-118.55], rings:[box(W, N2,E, N1)] },
+  { id:"westside", label:"Westside",              centroid:[34.05,-118.55], rings:[box(W, N5,L1,N2)] },
+  { id:"central",  label:"Central / Mid-City",    centroid:[34.06,-118.32], rings:[box(L1,N4,L2,N3)] },
+  { id:"downtown", label:"Downtown",              centroid:[34.05,-118.20], rings:[box(L2,N4,L3,N3)] },
+  // Eastside / NELA absorbs the former "northeast" (Glendale/Eagle Rock) band —
+  // an L-shaped MultiPolygon: the strip north of Central+Downtown plus the strip
+  // east of Downtown. Resolves the old NELA-vs-Glendale overlap.
+  { id:"eastside", label:"Eastside / NELA",       centroid:[34.14,-118.20], rings:[box(L1,N3,L3,N2), box(L3,N4,E, N3)] },
+  { id:"pasadena", label:"Pasadena / Foothills",  centroid:[34.15,-117.92], rings:[box(L3,N3,E, N2)] },
+  { id:"south",    label:"South LA",              centroid:[33.96,-118.25], rings:[box(L1,N5,L3,N4)] },
+  // South Bay / Long Beach merges the two southern coastal bands into one.
+  { id:"southbay", label:"South Bay / Long Beach",centroid:[33.79,-118.18], rings:[box(W, S, L2,N5), box(L2,S, E, N5)] },
 ];
 
 export const REGIONS_GEOJSON = {
   type: "FeatureCollection",
-  features: REGIONS_RAW.map(({ id, label, ring }) => ({
+  features: REGIONS_RAW.map(({ id, label, rings }) => ({
     type: "Feature",
     properties: { id, label },
-    geometry: { type: "Polygon", coordinates: [ring] },
+    geometry: rings.length === 1
+      ? { type: "Polygon", coordinates: [rings[0]] }
+      : { type: "MultiPolygon", coordinates: rings.map((r) => [r]) },
   })),
 };
 

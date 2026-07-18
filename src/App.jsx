@@ -102,6 +102,10 @@ export default function App() {
   // Archive sub-view: past events vs past exhibitions
   const [archiveMode, setArchiveMode] = useState("events");
 
+  // Events tab: collapse each venue's events into one stacked card (e.g. Academy
+  // Museum's near-daily screenings).
+  const [stackByVenue, setStackByVenue] = useState(false);
+
   // About / feedback dialog
   const [aboutOpen, setAboutOpen] = useState(false);
 
@@ -317,9 +321,31 @@ export default function App() {
 
             {tab === "events" && (
               <>
-                <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                  {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div role="status" aria-live="polite" className="text-xs text-ink/60">
+                    {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setStackByVenue((s) => !s)}
+                    className={`chip text-xs ${stackByVenue ? "chip-active" : ""}`}
+                    aria-pressed={stackByVenue}
+                    title="Group each venue's events into a single card"
+                  >
+                    Stack by venue
+                  </button>
                 </div>
+                <p className="text-xs text-ink/60">
+                  Looking for galleries? Check{" "}
+                  <a
+                    href="https://artguide.artforum.com/artguide/place/los-angeles"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium underline underline-offset-2 hover:text-ink"
+                  >
+                    ARTFORUM artguide
+                  </a>.
+                </p>
                 <EventList
                   events={filteredEvents}
                   venuesById={venuesById}
@@ -327,6 +353,7 @@ export default function App() {
                   onReset={onReset}
                   favs={favs}
                   onToggleFav={toggleFav}
+                  stackByVenue={stackByVenue}
                 />
               </>
             )}

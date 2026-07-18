@@ -33,15 +33,13 @@ export const TYPE_DEF = {
 
 export const REGION_LABEL = {
   westside: "Westside",
-  central: "Central",
+  central: "Central / Mid-City",
   downtown: "Downtown / DTLA",
   eastside: "Eastside / NELA",
-  northeast: "Northeast / Glendale",
   pasadena: "Pasadena / Foothills",
   valley: "San Fernando Valley",
   south: "South LA",
-  southbay: "South Bay",
-  longbeach: "Long Beach / Harbor",
+  southbay: "South Bay / Long Beach",
   antelope: "Antelope Valley",
 };
 

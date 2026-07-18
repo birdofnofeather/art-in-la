@@ -314,13 +314,112 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   );
 }
 
+/** Compact "when" for a stacked row: "Jul 20 · 7:00 PM" or "Jul 20". */
+function shortWhen(ev) {
+  const d = parseDate(ev.start);
+  if (!d) return "Date TBD";
+  const datePart = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return hasTime(ev.start) && !ev.all_day ? `${datePart} · ${fmtTimeOnly(d)}` : datePart;
+}
+
+/**
+ * One card per venue, listing all that venue's upcoming events as compact rows.
+ * Useful for venues with near-daily programming (e.g. Academy Museum screenings),
+ * where a card-per-event view would otherwise bury everything else. Long lists
+ * collapse to the first 6 with a "Show all" expander.
+ */
+function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onToggleFav }) {
+  const [expanded, setExpanded] = useState(false);
+  const venue = venuesById[venueId] || { name: venueId, type: "other" };
+  const venueColor = TYPE_COLOR[venue.type] || "#666";
+  const sorted = [...events].sort((a, b) => startMs(a) - startMs(b));
+  const LIMIT = 6;
+  const shown = expanded ? sorted : sorted.slice(0, LIMIT);
+
+  return (
+    <article className="panel flex overflow-hidden">
+      <div className="w-1 shrink-0" style={{ background: venueColor }} />
+      <div className="min-w-0 flex-1 space-y-3 p-4">
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <span className="chip" style={{ borderColor: venueColor + "55" }}>
+            <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
+            {TYPE_LABEL[venue.type]}
+          </span>
+          {venue.region && (
+            <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
+          )}
+          <span className="text-ink/60">{sorted.length} event{sorted.length !== 1 ? "s" : ""}</span>
+        </div>
+
+        <h3 className="font-display text-lg leading-snug">
+          <a href={venue.website || "#"} target="_blank" rel="noreferrer" className="hover:underline">
+            {venue.name}
+          </a>
+          {venue.neighborhood && (
+            <span className="text-sm font-normal text-ink/60"> · {venue.neighborhood}</span>
+          )}
+        </h3>
+
+        <ul className="divide-y divide-black/5">
+          {shown.map((ev) => {
+            const isFav = favs?.has(ev.id) ?? false;
+            return (
+              <li key={ev.id} className="flex items-start gap-3 py-2">
+                <div className="w-24 shrink-0 pt-0.5 text-xs text-ink/60">{shortWhen(ev)}</div>
+                <div className="min-w-0 flex-1 text-sm">
+                  {ev.url ? (
+                    <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a>
+                  ) : ev.title}
+                </div>
+                {onToggleFav && (
+                  <button
+                    type="button"
+                    onClick={() => onToggleFav(ev.id)}
+                    className={`shrink-0 rounded p-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                      isFav ? "text-amber-500" : "text-ink/25 hover:text-amber-400"
+                    }`}
+                    aria-label={isFav ? "Remove from saved" : "Save event"}
+                    aria-pressed={isFav}
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill={isFav ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+
+        <div className="flex flex-wrap items-center gap-3">
+          {sorted.length > LIMIT && (
+            <button
+              type="button"
+              onClick={() => setExpanded((e) => !e)}
+              className="text-xs font-medium text-ink/60 underline-offset-2 hover:text-ink hover:underline"
+            >
+              {expanded ? "Show fewer" : `Show all ${sorted.length}`}
+            </button>
+          )}
+          {onShowOnMap && venue.lat && (
+            <button type="button" onClick={() => onShowOnMap(venueId)} className="chip text-xs">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Show on map
+            </button>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
+
 /**
  * `grouped` (default true): bucket events under date headers by start date —
  * right for one-off events and the archive. Exhibitions pass grouped=false to
  * render a single flat grid in the order given (sorted by closing date), since
  * grouping by start date would scatter the ending-soonest ordering.
  */
-export default function EventList({ events, venuesById, onShowOnMap, onReset, grouped = true, favs, onToggleFav }) {
+export default function EventList({ events, venuesById, onShowOnMap, onReset, grouped = true, favs, onToggleFav, stackByVenue = false }) {
   if (events.length === 0) {
     return (
       <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
@@ -342,6 +441,35 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset, gr
       onToggleFav={onToggleFav ? () => onToggleFav(ev.id) : null}
     />
   );
+
+  if (stackByVenue) {
+    const byVenue = new Map();
+    for (const ev of events) {
+      if (!byVenue.has(ev.venue_id)) byVenue.set(ev.venue_id, []);
+      byVenue.get(ev.venue_id).push(ev);
+    }
+    const order = [...byVenue.entries()].sort((a, b) => {
+      const ea = Math.min(...a[1].map(startMs));
+      const eb = Math.min(...b[1].map(startMs));
+      if (ea !== eb) return ea - eb;
+      return a[0] < b[0] ? -1 : 1;
+    });
+    return (
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+        {order.map(([vid, evs]) => (
+          <VenueStackCard
+            key={vid}
+            venueId={vid}
+            events={evs}
+            venuesById={venuesById}
+            onShowOnMap={onShowOnMap}
+            favs={favs}
+            onToggleFav={onToggleFav}
+          />
+        ))}
+      </div>
+    );
+  }
 
   if (!grouped) {
     return (

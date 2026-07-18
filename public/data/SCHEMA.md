@@ -20,7 +20,7 @@ The site reads three JSON files from `/data/`:
   "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
   "lat": 34.0638,                   // Required for map
   "lng": -118.3594,                 // Required for map
-  "region": "central",              // westside | central | eastside | northeast | valley | south | southbay | pasadena | longbeach | antelope
+  "region": "central",              // westside | central | downtown | eastside | pasadena | valley | south | southbay | antelope
   "neighborhood": "Miracle Mile",
   "socials": {
     "instagram": "https://...",     // All fields optional; include full URL, not handle
