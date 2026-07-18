@@ -67,6 +67,45 @@ function FeedbackForm() {
   );
 }
 
+function SubscribeSection() {
+  const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const feeds = [
+    { key: "all", label: "All events" },
+    { key: "free", label: "Free events" },
+    { key: "family", label: "Family-friendly" },
+  ];
+  const [copied, setCopied] = useState("");
+  const copy = async (url, key) => {
+    try { await navigator.clipboard.writeText(url); setCopied(key); setTimeout(() => setCopied(""), 1500); }
+    catch { /* clipboard blocked — the link is still selectable */ }
+  };
+  return (
+    <div className="space-y-2 border-t border-black/10 pt-4">
+      <h3 className="text-sm font-semibold">Subscribe in your calendar</h3>
+      <p className="text-xs text-ink/60">
+        Add a live feed once and new listings appear automatically. In Google
+        Calendar: <em>Other calendars → From URL</em>. In Apple Calendar:{" "}
+        <em>File → New Calendar Subscription</em>.
+      </p>
+      <div className="space-y-1.5">
+        {feeds.map((f) => {
+          const url = `${origin}${base}/data/feeds/${f.key}.ics`;
+          return (
+            <div key={f.key} className="flex items-center gap-2">
+              <span className="w-28 shrink-0 text-xs font-medium">{f.label}</span>
+              <code className="min-w-0 flex-1 truncate rounded bg-black/5 px-2 py-1 text-xs text-ink/70">{url}</code>
+              <button type="button" onClick={() => copy(url, f.key)} className="chip text-xs">
+                {copied === f.key ? "Copied" : "Copy"}
+              </button>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 export default function AboutDialog({ onClose, onShowArchive }) {
   const panelRef = useRef(null);
   const openerRef = useRef(null);
@@ -122,7 +161,7 @@ export default function AboutDialog({ onClose, onShowArchive }) {
               on view under <strong>Exhibitions</strong>, or star things to keep them
               under <strong>Saved</strong>. All times are Los Angeles local.
             </p>
-            <p className="text-ink/50">
+            <p className="text-ink/60">
               Because it’s bot-maintained, details can lag or be wrong —
               confirm with the venue before heading out.
             </p>
@@ -136,6 +175,8 @@ export default function AboutDialog({ onClose, onShowArchive }) {
               </button>
             )}
           </div>
+
+          <SubscribeSection />
 
           {/* Feedback */}
           <div className="space-y-2 border-t border-black/10 pt-4">

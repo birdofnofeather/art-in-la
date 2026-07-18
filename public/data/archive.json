@@ -10915,5 +10915,70 @@
       "lecture",
       "screening"
     ]
+  },
+  {
+    "id": "norton_simon-2026-07-17-dear-little-friend-impressions-of-galka-6ce467fbb6",
+    "venue_id": "norton_simon",
+    "title": "Dear Little Friend: Impressions of Galka Scheyer",
+    "description": "",
+    "event_type": "tour",
+    "start": "2026-07-17T13:00:00-07:00",
+    "end": "2026-07-17T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.nortonsimon.org/calendar/2026/summer-2026/Dear-Little-Friend-Impressions-of-Galka-Scheyer-7-17-2026-100PM#2026-07-17",
+    "image": "https://www.nortonsimon.org/assets/events-images/P196801_jawlensky_mysticalhead_600x600-v2__ScaleWidthWzMwMF0.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "nortonsimon.org",
+    "scraped_at": "2026-07-17T09:12:30+00:00",
+    "event_types": [
+      "tour"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-17-poison-ivy-in-35mm-bbd57453f3",
+    "venue_id": "academy_museum",
+    "title": "Poison Ivy in 35mm",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-17T13:03:00-07:00",
+    "end": "2026-07-17T13:13:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/poison-ivy-019dd57f-e1cb-bdce-e97c-4a394e83a8eb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3lrmJ8W0unh52JO2SXODNx/bd01781638fc18ea84bf1ee88b47908f/Jul17_POISON_IVY_Thrills1_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-18T06:18:20+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-17-dropin-workshop-for-teens-puppetry-for-s-672ce043f0",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Teens: Puppetry for Stop-Motion Animation",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-07-17T16:30:00-07:00",
+    "end": "2026-07-17T18:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-teens-puppetry-for-stop-motion-019e893f-eb9c-c251-3864-7b9bf9b320ee",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/ivrgpEfAawIVPdtXzx0qG/882b83d590f2150011cd0067540b6bf9/Teen_workshop_July_2026.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-18T06:18:20+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ]
   }
 ]

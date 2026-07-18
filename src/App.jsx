@@ -55,13 +55,23 @@ function SkeletonGrid({ count = 6 }) {
   );
 }
 
-// Each tab keeps its own filters so a filter set on one page never affects
-// another. A stable shared "empty" keeps identities steady for untouched tabs
-// (its Sets are never mutated — toggles always create a fresh Set).
+// A single shared filter set applies across What's On / Events / Exhibitions /
+// Map / Venues — a filter set on one tab follows you to the next (tabs simply
+// ignore the parts that don't apply). Archive is the one exception: it reads
+// only the free-text query. Sets are never mutated in place — toggles always
+// create a fresh Set — so this frozen empty stays a safe shared identity.
 const EMPTY_FILTERS = Object.freeze({
   types: new Set(), regions: new Set(), eventTypes: new Set(),
   datePreset: "all", customStart: "", customEnd: "", query: "",
+  free: false, family: false,
 });
+
+// Landing default for the "When" filter: this weekend if it's Fri–Sun, else the
+// next 7 days — so What's On opens on something actionable, not everything.
+function defaultDatePreset(now = new Date()) {
+  const day = now.getDay(); // 0 Sun … 6 Sat
+  return (day === 5 || day === 6 || day === 0) ? "weekend" : "next7";
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function App() {
@@ -72,16 +82,17 @@ export default function App() {
   // Favorites (persisted to localStorage)
   const { favs, toggle: toggleFav } = useFavorites();
 
-  // Navigation
-  const [tab,  setTab]  = useState("map");
+  // Navigation — What's On is the landing tab.
+  const [tab,  setTab]  = useState("whatson");
 
-  // Per-tab filters (isolated — filtering one page never affects another).
-  const [filtersByTab, setFiltersByTab] = useState({});
-  const f = filtersByTab[tab] ?? EMPTY_FILTERS;
-  const { types, regions, eventTypes, datePreset, customStart, customEnd, query } = f;
+  // Shared filter state (single set across all tabs; Archive uses only `query`).
+  const [filters, setFilters] = useState(() => ({
+    ...EMPTY_FILTERS, datePreset: defaultDatePreset(),
+  }));
+  const { types, regions, eventTypes, datePreset, customStart, customEnd, query, free, family } = filters;
   const patchFilters = useCallback((p) => {
-    setFiltersByTab((prev) => ({ ...prev, [tab]: { ...(prev[tab] ?? EMPTY_FILTERS), ...p } }));
-  }, [tab]);
+    setFilters((prev) => ({ ...prev, ...p }));
+  }, []);
   const setTypes       = (v) => patchFilters({ types: v });
   const setRegions     = (v) => patchFilters({ regions: v });
   const setEventTypes  = (v) => patchFilters({ eventTypes: v });
@@ -89,6 +100,8 @@ export default function App() {
   const setCustomStart = (v) => patchFilters({ customStart: v });
   const setCustomEnd   = (v) => patchFilters({ customEnd: v });
   const setQuery       = (v) => patchFilters({ query: v });
+  const setFree        = (v) => patchFilters({ free: v });
+  const setFamily      = (v) => patchFilters({ family: v });
 
   // Map filter toggle
   const [mapOnlyEventful, setMapOnlyEventful] = useState(true);
@@ -115,9 +128,10 @@ export default function App() {
     if (hashInit.current) return;
     hashInit.current = true;
     const p = readHash();
-    const initTab = p.get("mode") === "exhibitions" ? "exhibitions" : (p.get("tab") || "map");
-    // Hydrate only the initial tab's filter slice from the URL.
-    const slice = { ...EMPTY_FILTERS };
+    const initTab = p.get("mode") === "exhibitions" ? "exhibitions" : (p.get("tab") || "whatson");
+    // Hydrate the shared filter set from the URL (falling back to the landing
+    // default for the date preset when the URL doesn't pin one).
+    const slice = { ...EMPTY_FILTERS, datePreset: defaultDatePreset() };
     if (p.get("types"))   slice.types = new Set(p.get("types").split(","));
     if (p.get("regions")) slice.regions = new Set(p.get("regions").split(","));
     if (p.get("etypes"))  slice.eventTypes = new Set(p.get("etypes").split(","));
@@ -125,7 +139,9 @@ export default function App() {
     if (p.get("from"))    slice.customStart = p.get("from");
     if (p.get("to"))      slice.customEnd = p.get("to");
     if (p.get("q"))       slice.query = p.get("q");
-    setFiltersByTab({ [initTab]: slice });
+    if (p.get("free"))    slice.free = p.get("free") === "1";
+    if (p.get("family"))  slice.family = p.get("family") === "1";
+    setFilters(slice);
     setTab(initTab);
     if (p.get("map"))   setMapOnlyEventful(p.get("map") !== "all");
     if (p.get("venue")) setDetailVenueId(p.get("venue"));
@@ -142,11 +158,13 @@ export default function App() {
     if (datePreset && datePreset !== "all") p.set("date", datePreset);
     if (customStart) p.set("from", customStart);
     if (customEnd)   p.set("to",   customEnd);
+    if (free)   p.set("free", "1");
+    if (family) p.set("family", "1");
     if (!mapOnlyEventful) p.set("map", "all");
     if (query.trim()) p.set("q", query.trim());
     if (detailVenueId) p.set("venue", detailVenueId);
     writeHash(p);
-  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, mapOnlyEventful, query, detailVenueId]);
+  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, free, family, mapOnlyEventful, query, detailVenueId]);
 
   // ── Data load (extracted for retry) ───────────────────────────────────────
   const load = useCallback(() => {
@@ -186,16 +204,17 @@ export default function App() {
       datePreset: datePreset !== "custom" ? datePreset : "all",
       startDate: datePreset === "custom" ? customStart : undefined,
       endDate:   datePreset === "custom" ? customEnd   : undefined,
+      free, family,
     }), venuesById, query)),
-    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset, customStart, customEnd, query]
+    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset, customStart, customEnd, free, family, query]
   );
 
   const filteredExhibitions = useMemo(
     () => sortByEndingSoonest(searchEvents(filterEvents(
       liveExhibitionsOnView(liveExhibitions),
-      venuesById, { venueTypes: types, regions }
+      venuesById, { venueTypes: types, regions, free, family }
     ), venuesById, query)),
-    [liveExhibitions, venuesById, types, regions, query]
+    [liveExhibitions, venuesById, types, regions, free, family, query]
   );
 
   // Archive holds both past events and past exhibitions. It is deliberately
@@ -238,14 +257,14 @@ export default function App() {
 
   // ── Callbacks ─────────────────────────────────────────────────────────────
   // Reset clears only the current tab's filters.
-  const onReset = () => setFiltersByTab((prev) => ({ ...prev, [tab]: { ...EMPTY_FILTERS } }));
+  const onReset = () => setFilters({ ...EMPTY_FILTERS, datePreset: defaultDatePreset() });
 
   const onHome = () => {
-    setFiltersByTab({});            // clear every tab's filters
+    setFilters({ ...EMPTY_FILTERS, datePreset: defaultDatePreset() });
     setMapOnlyEventful(true);
     setFocusedVenueId(null);
     setDetailVenueId(null);
-    setTab("map");
+    setTab("whatson");
   };
 
   const onShowOnMap = (venueId) => {
@@ -256,11 +275,7 @@ export default function App() {
 
   const onGoToEvents = (venueId) => {
     const venue = venuesById[venueId];
-    // Target the Events tab's own slice (not the current tab's).
-    setFiltersByTab((prev) => ({
-      ...prev,
-      events: { ...(prev.events ?? EMPTY_FILTERS), query: venue?.name || "" },
-    }));
+    patchFilters({ query: venue?.name || "" });
     setTab("events");
   };
 
@@ -297,6 +312,8 @@ export default function App() {
           datePreset={datePreset} setDatePreset={setDatePreset}
           customStart={customStart} setCustomStart={setCustomStart}
           customEnd={customEnd}     setCustomEnd={setCustomEnd}
+          free={free} setFree={setFree}
+          family={family} setFamily={setFamily}
           onReset={onReset}
         />
 
@@ -304,6 +321,49 @@ export default function App() {
           <SkeletonGrid count={tab === "map" ? 0 : 6} />
         ) : (
           <>
+            {tab === "whatson" && (
+              <>
+                <div role="status" aria-live="polite" className="text-xs text-ink/60">
+                  {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
+                  {filteredExhibitions.length > 0 && <> · {filteredExhibitions.length} on view</>}
+                </div>
+                {filteredEvents.length === 0 && filteredExhibitions.length === 0 ? (
+                  <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+                    <div>Nothing matches these filters in this window.</div>
+                    <button type="button" onClick={onReset} className="chip">Clear filters &amp; search</button>
+                  </div>
+                ) : (
+                  <>
+                    <EventList
+                      events={filteredEvents}
+                      venuesById={venuesById}
+                      onShowOnMap={onShowOnMap}
+                      onReset={onReset}
+                      favs={favs}
+                      onToggleFav={toggleFav}
+                    />
+                    {filteredExhibitions.length > 0 && (
+                      <details className="panel mt-6 p-4" open>
+                        <summary className="cursor-pointer font-display text-base font-semibold tracking-tight">
+                          Also on view · {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"}
+                        </summary>
+                        <div className="mt-4">
+                          <ExhibitionsByVenue
+                            exhibitions={filteredExhibitions}
+                            venuesById={venuesById}
+                            onShowDetail={setDetailVenueId}
+                            onReset={onReset}
+                            favs={favs}
+                            onToggleFav={toggleFav}
+                          />
+                        </div>
+                      </details>
+                    )}
+                  </>
+                )}
+              </>
+            )}
+
             {tab === "map" && (
               <Suspense fallback={<div className="panel p-6 text-center text-sm text-ink/60">Loading map…</div>}>
                 <VenueMap

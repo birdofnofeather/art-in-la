@@ -69,7 +69,7 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
                   </span>
                 )}
                 {!hasScraped && (
-                  <span className="chip text-ink/40" title="No automated scraper — events added manually or not yet tracked">
+                  <span className="chip text-ink/60" title="No automated scraper — events added manually or not yet tracked">
                     No scraper
                   </span>
                 )}

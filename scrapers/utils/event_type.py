@@ -9,15 +9,16 @@ ALLOWED = {
 }
 
 KEYWORDS = [
-    ("opening",     r"\b(opening|preview|vernissage)\b"),
-    ("closing",     r"\b(closing|finissage|last day)\b"),
-    ("workshop",    r"\b(workshops?|classes?|class|hands[- ]on|drop[- ]in)\b"),
-    ("lecture",     r"\b(lectures?|talks?|conversations?|panel|symposium|reading|book launch)\b"),
-    ("performance", r"\b(performances?|concerts?|recitals?|dance|music)\b"),
-    ("screening",   r"\b(screenings?|films?|movies?|cinema)\b"),
-    ("tour",        r"\b(tours?|guided walks?)\b"),
-    ("fair",        r"\b(fair|art week|biennial)\b"),
-    ("exhibition",  r"\b(exhibitions?|on view|installations?)\b"),
+    # Opening/closing first: an "opening reception" is an opening, not a party.
+    ("opening",     r"\b(opening|preview|vernissage|reception)\b"),
+    ("closing",     r"\b(closing|finissage|last\s+day|final\s+day)\b"),
+    ("screening",   r"\b(screenings?|films?|movies?|cinema|documentary|shorts?\s+program)\b"),
+    ("performance", r"\b(performances?|concerts?|recitals?|dance|dj|live\s+music|music|theater|theatre|cabaret)\b"),
+    ("workshop",    r"\b(workshops?|classes?|class|hands[- ]on|drop[- ]in|art[- ]?making|makers?|camps?|craft|printmaking|studio\s+session)\b"),
+    ("lecture",     r"\b(lectures?|talks?|conversations?|in\s+conversation|panel|symposium|seminar|reading|poetry|book\s+(?:talk|launch|signing|club)|artist\s+talk|q\s?&\s?a)\b"),
+    ("tour",        r"\b(tours?|guided\s+walks?|walk[- ]?through|docent)\b"),
+    ("fair",        r"\b(fair|art\s?week|biennial|festival|celebration|block\s+party|family\s+day|open\s+house|open\s+studios?|gala|market|fest)\b"),
+    ("exhibition",  r"\b(exhibitions?|on\s+view|installations?)\b"),
 ]
 
 

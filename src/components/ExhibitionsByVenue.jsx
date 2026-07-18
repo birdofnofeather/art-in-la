@@ -100,7 +100,7 @@ export default function ExhibitionsByVenue({
                     <a href={venue.website} target="_blank" rel="noreferrer" className="hover:underline">{venue.name}</a>
                   ) : venue.name}
                   {venue.neighborhood && (
-                    <span className="ml-1 text-sm font-normal text-ink/50">· {venue.neighborhood}</span>
+                    <span className="ml-1 text-sm font-normal text-ink/60">· {venue.neighborhood}</span>
                   )}
                 </h3>
               </div>

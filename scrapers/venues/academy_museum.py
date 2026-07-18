@@ -229,6 +229,8 @@ class Scraper(BaseScraper):
     venue_id = "academy_museum"
     events_url = f"{BASE}/en/programs"
     source_label = "academymuseum.org"
+    # A film museum: bare programme titles (movie names) are screenings.
+    default_event_type = "screening"
 
     def _strategy_wp_tribe(self): return iter([])
     def _strategy_ical(self): return iter([])
@@ -282,6 +284,8 @@ class Scraper(BaseScraper):
 
             span = _span_days(start_raw, end_raw or start_raw)
             etype = infer_type(title, "")
+            # For actual events (not long-run exhibitions) fall back to screening.
+            etype_event = etype if etype != "other" else self.default_event_type
 
             # All Academy Museum "tours" are standing recurring programmes
             # (Jaws: The Tour, ASL Interpreted Tours, etc.) — skip them all.
@@ -353,7 +357,7 @@ class Scraper(BaseScraper):
                     ev = _make_event(
                         self.venue_id, title, url, image,
                         sd, start_hm, end_hm,
-                        self.source_label, now_iso, etype,
+                        self.source_label, now_iso, etype_event,
                     )
                     yield ev
             else:
@@ -361,5 +365,5 @@ class Scraper(BaseScraper):
                 yield _make_event(
                     self.venue_id, title, url, image,
                     start_raw, start_hm, end_hm,
-                    self.source_label, now_iso, etype,
+                    self.source_label, now_iso, etype_event,
                 )

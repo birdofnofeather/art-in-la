@@ -249,6 +249,14 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           {venue.region && (
             <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
+          {ev.is_free === true ? (
+            <span className="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800">Free</span>
+          ) : ev.price_text ? (
+            <span className="chip">{ev.price_text}</span>
+          ) : null}
+          {(ev.audience || []).includes("family") && (
+            <span className="inline-flex items-center rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800">Family</span>
+          )}
           {relLabel && (
             <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${LABEL_STYLE[relLabel] || "bg-ink text-white"}`}>
               {relLabel}
@@ -279,7 +287,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
             {venue.name}
           </a>
           {venue.neighborhood && (
-            <span className="text-ink/50"> · {venue.neighborhood}</span>
+            <span className="text-ink/60"> · {venue.neighborhood}</span>
           )}
         </div>
 
@@ -488,7 +496,7 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset, gr
           {/* Date group header */}
           <div className="mb-3 flex items-baseline gap-3">
             <h4 className="font-display text-base font-semibold tracking-tight">{label}</h4>
-            <span className="text-xs text-ink/40">{groupEvents.length} event{groupEvents.length !== 1 ? "s" : ""}</span>
+            <span className="text-xs text-ink/60">{groupEvents.length} event{groupEvents.length !== 1 ? "s" : ""}</span>
           </div>
 
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">

@@ -1,5 +1,34 @@
 # Art in LA — Status & Next Steps (2026-05-30)
 
+## Round 7 (2026-07-17): audience-first UX + data enrichment
+
+Executed the quick-wins plan end to end:
+
+- **Data pipeline.** New hygiene gate (`utils/validate.py`) drops undated ghosts
+  (e.g. the Fall-2021 USC Fisher exhibition), null-start events, and already-ended
+  records before publish. Free/price extraction (`utils/pricing.py`) reads JSON-LD
+  `offers`/`isAccessibleForFree` + Tribe `cost` + keyword fallback → `is_free` /
+  `price_text`. Audience tagging (`utils/audience.py`) → `audience: [family|teen]`.
+  Classifier expanded and a per-venue `default_event_type` added (Academy Museum →
+  screening): the "other" bucket fell from ~37% to ~14% of one-off events.
+- **Frontend.** New **What's On** default landing tab (merged events + on-view
+  exhibitions, defaults to this-weekend / next-7-days). Filter state is now shared
+  across tabs (Archive still isolated). Date preset + **Free** + **Family-friendly**
+  chips are always visible; "Organization type" → "Venue type"; search on all tabs.
+  Event cards show Free/price and Family chips. A11y: `aria-pressed` on toggles,
+  `aria-current` on nav, contrast bumped to ink/60, focus rings.
+- **Calendar feeds.** CI now writes subscribable `public/data/feeds/{all,free,
+  family}.ics`; a Subscribe section in the About dialog exposes the URLs.
+- Also this round: ARTFORUM artguide link on Events (galleries are out of scope),
+  region taxonomy consolidated 11→9 for drivability, map detail-drawer z-index
+  fixed above Leaflet, and an optional "Stack by venue" toggle on Events.
+
+Verified: full scrape runs clean (387 events; other 13.8%; is_free 37; family 17;
+0 null-start one-offs), `npm run build` passes, all three .ics parse, and the app
+renders without runtime errors (SSR smoke test).
+
+
+
 ## Where the project is
 
 A static site (React + Vite on GitHub Pages) backed by Python scrapers that run

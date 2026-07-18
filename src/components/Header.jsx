@@ -3,6 +3,7 @@ import React from "react";
 // Archive is intentionally NOT here — it's reachable from the About dialog and
 // via #tab=archive, just not surfaced as a primary nav item.
 const TABS = [
+  { key: "whatson",      label: "What's On" },
   { key: "map",          label: "Map" },
   { key: "events",       label: "Events" },
   { key: "exhibitions",  label: "Exhibitions" },
@@ -26,31 +27,35 @@ export default function Header({ tab, setTab, stats, savedCount, onHome }) {
               </a>
             ) : "Art in LA"}
           </h1>
-          <p className="mt-1 text-xs text-ink/60 truncate">
+          <p className="mt-1 text-xs text-ink/70 truncate">
             Art events and exhibitions across Los Angeles County
             {stats && (
               <> · {stats.venues} venues · {stats.events} upcoming events · {stats.exhibitions} exhibitions</>
             )}
           </p>
         </div>
-        <nav className="flex flex-wrap gap-1">
-          {TABS.map((t) => (
-            <button
-              key={t.key} type="button" onClick={() => setTab(t.key)}
-              className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                tab === t.key ? "bg-ink text-white" : "text-ink/70 hover:bg-black/5"
-              }`}
-            >
-              {t.label}
-              {t.key === "saved" && savedCount > 0 && (
-                <span className={`inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full px-1 text-xs tabular-nums ${
-                  tab === t.key ? "bg-white/25 text-white" : "bg-amber-500 text-white"
-                }`}>
-                  {savedCount}
-                </span>
-              )}
-            </button>
-          ))}
+        <nav className="flex flex-wrap gap-1" aria-label="Primary">
+          {TABS.map((t) => {
+            const active = tab === t.key;
+            return (
+              <button
+                key={t.key} type="button" onClick={() => setTab(t.key)}
+                aria-current={active ? "page" : undefined}
+                className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                  active ? "bg-ink text-white" : "text-ink/70 hover:bg-black/5"
+                }`}
+              >
+                {t.label}
+                {t.key === "saved" && savedCount > 0 && (
+                  <span className={`inline-flex h-4 min-w-[1rem] items-center justify-center rounded-full px-1 text-xs tabular-nums ${
+                    active ? "bg-white/25 text-white" : "bg-amber-500 text-white"
+                  }`}>
+                    {savedCount}
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </nav>
       </div>
     </header>

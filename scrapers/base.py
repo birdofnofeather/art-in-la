@@ -44,6 +44,8 @@ from .utils.http import get
 from .utils.event_id import event_id
 from .utils.event_type import infer as infer_type, infer_all as infer_types
 from .utils.dateparse import to_la_iso, now_utc_iso
+from .utils import pricing
+from .utils.audience import infer as infer_audience
 
 LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine for now.
 
@@ -124,6 +126,12 @@ class Event:
     # Filled in by to_dict() from event_type + any extra types read from the
     # title/description, so an event can be filtered under several types.
     event_types: list = field(default_factory=list)
+    # Cost signal. is_free is True/False/None (never guessed False from absence);
+    # price_text is a short display string ("Free", "$10", "$10–$25") or None.
+    is_free: Optional[bool] = None
+    price_text: Optional[str] = None
+    # Audience tags (e.g. ["family"], ["teen"]).
+    audience: list = field(default_factory=list)
 
     def to_dict(self) -> dict:
         d = asdict(self)
@@ -142,6 +150,15 @@ class Event:
             if primary not in types:
                 types.insert(0, primary)
             d["event_types"] = types
+        # Cost + audience: keep any explicit value the scraper set, otherwise
+        # fall back to keyword heuristics on the title/description.
+        d["is_free"], d["price_text"] = pricing.resolve(
+            self.title, self.description,
+            is_free=self.is_free, price_text=self.price_text,
+        )
+        if not d.get("audience"):
+            d["audience"] = infer_audience(self.title, self.description)
+
         # Universal normalisation: every event's start/end goes through to_la_iso
         # regardless of which scraper produced it, so the stored value is always
         # the correct LA-local clock time the venue displays — and a date-only
@@ -164,6 +181,10 @@ class BaseScraper:
     wp_root: Optional[str] = None      # Override the WP REST root (defaults to events_url's origin)
     eventbrite_url: Optional[str] = None  # Public Eventbrite organizer page (events embedded as JSON-LD)
     source_label: str = ""       # Short label, usually the bare domain
+    # Type assigned when the text classifier finds no keyword. Venues whose
+    # programming is overwhelmingly one format (e.g. Academy Museum = screenings)
+    # override this so bare titles like a film name still classify correctly.
+    default_event_type: str = "other"
 
     # Subclass can opt out of post-processing if they really do want raw output.
     drop_exhibitions: bool = True
@@ -230,17 +251,20 @@ class BaseScraper:
             end = self._tribe_to_la_iso(it.get("end_date"))
             url_e = it.get("url")
             image = (it.get("image") or {}).get("url") if isinstance(it.get("image"), dict) else None
+            tribe_free, tribe_price = pricing.parse_cost(it.get("cost"))
             yield Event(
                 id=event_id(self.venue_id, start, title),
                 venue_id=self.venue_id,
                 title=title,
                 description=desc[:800],
-                event_type=infer_type(title, desc),
+                event_type=infer_type(title, desc, default=self.default_event_type),
                 start=start,
                 end=end,
                 all_day=False,
                 url=url_e,
                 image=image,
+                is_free=tribe_free,
+                price_text=tribe_price,
                 source=self.source_label or self._domain(self.events_url),
                 scraped_at=now_utc_iso(),
             )
@@ -314,7 +338,7 @@ class BaseScraper:
                 venue_id=self.venue_id,
                 title=title,
                 description=desc[:800],
-                event_type=infer_type(title, desc),
+                event_type=infer_type(title, desc, default=self.default_event_type),
                 start=start,
                 end=None,
                 all_day=False,
@@ -417,6 +441,8 @@ class BaseScraper:
         elif isinstance(location, str):
             loc_override = location
 
+        is_free, price_text = pricing.parse_offers(obj.get("offers"))
+
         performers = obj.get("performer") or obj.get("performers") or []
         if isinstance(performers, dict):
             performers = [performers]
@@ -432,7 +458,10 @@ class BaseScraper:
             venue_id=self.venue_id,
             title=title,
             description=desc[:800],
-            event_type=infer_type(title, desc, default=_jsonld_type_hint(obj)),
+            event_type=infer_type(
+                title, desc,
+                default=(lambda h: h if h != "other" else self.default_event_type)(_jsonld_type_hint(obj)),
+            ),
             start=start,
             end=end,
             all_day=False,
@@ -440,6 +469,8 @@ class BaseScraper:
             image=image,
             artists=artists,
             location_override=loc_override,
+            is_free=is_free,
+            price_text=price_text,
             source=self.source_label or self._domain(self.events_url),
             scraped_at=now_utc_iso(),
         )
@@ -461,7 +492,7 @@ class BaseScraper:
             venue_id=self.venue_id,
             title=title,
             description=desc[:800],
-            event_type=infer_type(title, desc),
+            event_type=infer_type(title, desc, default=self.default_event_type),
             start=start,
             end=end,
             all_day=all_day,

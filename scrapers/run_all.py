@@ -21,6 +21,8 @@ from .utils.dedupe import dedupe
 from .utils.archive import split
 from .utils.warn import get_warnings, clear as clear_warnings
 from .utils.recurring import filter_recurring
+from .utils.validate import validate
+from .utils.feeds import build_ics
 
 
 HERE = Path(__file__).resolve().parent
@@ -142,6 +144,14 @@ def main(argv=None) -> int:
     upcoming, past = split(combined)
     archive_combined = dedupe(archive + past)
 
+    # ── Hygiene gate: drop undated ghosts / stale records before publishing ────
+    upcoming, hygiene_dropped = validate(upcoming)
+    if hygiene_dropped:
+        from collections import Counter as _C
+        print(f"\nHygiene gate: dropped {len(hygiene_dropped)} record(s) from events.json")
+        for label, n in _C(f"[{e.get('venue_id')}] {e.get('title')}" for e in hygiene_dropped).most_common(10):
+            print(f"  {n:3d}x  {label}")
+
     print()
     print(f"Total upcoming: {len(upcoming)}  (was {len(existing)})")
     print(f"Archived now:   {len(past)} new past events")
@@ -168,6 +178,21 @@ def main(argv=None) -> int:
     write_json(SCRAPED_FILE,  sorted(scraped_venue_ids))
     write_json(HEALTH_FILE,   health)
     clear_warnings()
+
+    # ── Subscribable calendar feeds ────────────────────────────────────────────
+    venues_by_id = {v["id"]: v for v in load_json(VENUES_FILE, [])}
+    oneoff = [e for e in upcoming if e.get("event_type") != "exhibition"]
+    feeds = {
+        "all":    (oneoff, "Art in LA — All events"),
+        "free":   ([e for e in oneoff if e.get("is_free")], "Art in LA — Free events"),
+        "family": ([e for e in oneoff if "family" in (e.get("audience") or [])],
+                   "Art in LA — Family-friendly"),
+    }
+    feeds_dir = DATA_DIR / "feeds"
+    feeds_dir.mkdir(parents=True, exist_ok=True)
+    for key, (evs, name) in feeds.items():
+        (feeds_dir / f"{key}.ics").write_text(build_ics(evs, venues_by_id, name), encoding="utf-8")
+        print(f"Wrote feeds/{key}.ics ({len(evs)} events)")
 
     print(f"\nWrote {EVENTS_FILE.name} ({len(upcoming)} events)")
     return 0

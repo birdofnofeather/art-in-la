@@ -114,7 +114,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
                 {TYPE_LABEL[v.type]}
               </span>
               {v.region && (
-                <span className="text-xs text-ink/50">{REGION_LABEL[v.region] || v.region}</span>
+                <span className="text-xs text-ink/60">{REGION_LABEL[v.region] || v.region}</span>
               )}
             </div>
             <h2 id="venue-detail-heading" className="font-display text-xl font-bold leading-tight">{v.name}</h2>
@@ -122,7 +122,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           </div>
           <button
             type="button" onClick={onClose}
-            className="shrink-0 rounded-full p-1.5 hover:bg-black/5 text-ink/50 hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
+            className="shrink-0 rounded-full p-1.5 hover:bg-black/5 text-ink/60 hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
             aria-label="Close"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -137,15 +137,15 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           {/* About */}
           {(v.description || v.address) && (
             <section>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/40 mb-2">About</h3>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/60 mb-2">About</h3>
               {v.description && <p className="text-sm text-ink/70 leading-relaxed">{stripHtml(v.description)}</p>}
-              {v.address && <p className="text-sm text-ink/50 mt-1">{v.address}</p>}
+              {v.address && <p className="text-sm text-ink/60 mt-1">{v.address}</p>}
             </section>
           )}
 
           {/* Links */}
           <section>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/40 mb-2">Links</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/60 mb-2">Links</h3>
             <div className="flex flex-wrap gap-2">
               {v.website && (
                 <a href={v.website} target="_blank" rel="noreferrer"
@@ -180,7 +180,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           {/* Upcoming events */}
           {vEvents.length > 0 && (
             <section>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/40 mb-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/60 mb-2">
                 Upcoming events ({vEvents.length})
               </h3>
               <div className="space-y-2">
@@ -193,7 +193,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
                         </a>
                       ) : ev.title}
                     </div>
-                    <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-ink/50">
+                    <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-ink/60">
                       {ev.event_type && <span>{EVENT_TYPE_LABEL[ev.event_type] || ev.event_type}</span>}
                       {ev.start && <span>{fmtDate(ev.start)}</span>}
                     </div>
@@ -206,7 +206,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           {/* Exhibitions */}
           {vExhibitions.length > 0 && (
             <section>
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/40 mb-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-ink/60 mb-2">
                 Exhibitions ({vExhibitions.length})
               </h3>
               <div className="space-y-2">
@@ -220,12 +220,12 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
                       ) : ex.title}
                     </div>
                     {(ex.start || ex.end) && (
-                      <div className="text-xs text-ink/50 mt-0.5">
+                      <div className="text-xs text-ink/60 mt-0.5">
                         {fmtRange(ex.start, ex.end)}
                       </div>
                     )}
                     {ex.artists?.length > 0 && (
-                      <div className="text-xs text-ink/50 mt-0.5">{ex.artists.join(", ")}</div>
+                      <div className="text-xs text-ink/60 mt-0.5">{ex.artists.join(", ")}</div>
                     )}
                   </div>
                 ))}
@@ -234,7 +234,7 @@ export default function VenueDetail({ venueId, venuesById, upcomingEvents, liveE
           )}
 
           {vEvents.length === 0 && vExhibitions.length === 0 && (
-            <p className="text-sm text-ink/40 italic">No upcoming events or exhibitions tracked for this venue.</p>
+            <p className="text-sm text-ink/60 italic">No upcoming events or exhibitions tracked for this venue.</p>
           )}
         </div>
       </aside>

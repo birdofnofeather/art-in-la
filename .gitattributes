@@ -14,5 +14,8 @@ public/data/archive.json         merge=ours
 public/data/scraped_venues.json  merge=ours
 public/data/warnings.json        merge=ours
 public/data/health.json          merge=ours
+# ICS calendar feeds are regenerated each scrape. Keep their CRLF line endings
+# (RFC 5545) intact — do not normalise to LF — and auto-resolve on rebase.
+public/data/feeds/*.ics          -text merge=ours
 
 # --- Keep debug artifacts out of the repo -----------------------------------

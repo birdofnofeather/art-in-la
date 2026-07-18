@@ -53,6 +53,9 @@ The site reads three JSON files from `/data/`:
   "all_day": false,
   "url": "https://www.lacma.org/events/...",    // Detail page for this event
   "image": "https://...",                       // Optional hero image
+  "is_free": true,                              // Optional. true | false | null. Never guessed false from absence.
+  "price_text": "Free",                         // Optional short display string: "Free", "$10", "$10–$25".
+  "audience": ["family"],                       // Optional. Subset of: family | teen.
   "artists": ["Mary Weatherford"],              // Optional list of featured artists/presenters
   "location_override": null,                    // If not at the venue's main address, free text
   "source": "lacma.org",                        // Which source produced the record; used for dedup

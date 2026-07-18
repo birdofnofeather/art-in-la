@@ -190,11 +190,11 @@ export default function VenueMap({
                           <div className="font-medium leading-snug line-clamp-1">
                             {ev.url ? <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a> : ev.title}
                           </div>
-                          {ev.start && <div className="text-ink/50">{fmtEventDate(ev.start)}</div>}
+                          {ev.start && <div className="text-ink/60">{fmtEventDate(ev.start)}</div>}
                         </div>
                       ))}
                       {vEvents.length > 3 && (
-                        <div className="text-xs text-ink/40">+{vEvents.length - 3} more</div>
+                        <div className="text-xs text-ink/60">+{vEvents.length - 3} more</div>
                       )}
                     </div>
                   )}

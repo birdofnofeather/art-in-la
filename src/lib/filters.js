@@ -126,6 +126,15 @@ export function resolveDatePreset(preset, now = new Date()) {
     return { start, end };
   }
 
+  if (preset === "next7") {
+    // Rolling window: now through the end of the 7th day from today.
+    const start = new Date(now);
+    const end = new Date(today0);
+    end.setDate(today0.getDate() + 7);
+    end.setHours(23, 59, 59, 999);
+    return { start, end };
+  }
+
   if (preset === "month") {
     // From now through the last day of the current calendar month.
     const start = new Date(now);
@@ -139,7 +148,7 @@ export function resolveDatePreset(preset, now = new Date()) {
 
 /** Apply event-level filters (venue type, event type, date range / preset). */
 export function filterEvents(events, venuesById, {
-  venueTypes, eventTypes, regions, datePreset, startDate, endDate,
+  venueTypes, eventTypes, regions, datePreset, startDate, endDate, free, family,
 }) {
   const rawEventTypes = expandEventTypes(eventTypes);
   let start = null, end = null;
@@ -155,6 +164,8 @@ export function filterEvents(events, venuesById, {
     if (venueTypes && venueTypes.size > 0 && !venueTypes.has(venue.type)) return false;
     if (rawEventTypes && !eventTypesOf(ev).some((t) => rawEventTypes.has(t))) return false;
     if (regions && regions.size > 0 && !regions.has(venue.region)) return false;
+    if (free && ev.is_free !== true) return false;
+    if (family && !(ev.audience || []).includes("family")) return false;
     const evStart = parseDate(ev.start);
     const evEnd = eventEnd(ev) || evStart;
     // When a date window is active (e.g. "Today"), an event with no date can't
