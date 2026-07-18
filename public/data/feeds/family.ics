@@ -6,18 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:lacma-2026-07-18-boone-childrens-gallery-39f276ebf5@art-in-la
-DTSTAMP:20260718T062116Z
-DTSTART:20260718T180000Z
-SUMMARY:Boone Children's Gallery
-LOCATION:LACMA
-URL:https://www.lacma.org/event/boone-childrens-gallery-july-18
-DESCRIPTION:The whole family is invited to explore the joy of art-making a
- t theBoone Children's Gallery\, located inside the W.M...
-END:VEVENT
-BEGIN:VEVENT
 UID:lacma-2026-07-18-dropin-workshop-block-printing-with-self-642294a061@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260718T180000Z
 SUMMARY:Drop-In Workshop: Block Printing with Self Help Graphics & A...
 LOCATION:Smidt Welcome Plaza | LACMA
@@ -28,7 +18,7 @@ DESCRIPTION:In conjunction withDeep Cuts: Block Printing Across Cultures\,
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-07-18-molaa-international-soccer-series-intern-eac321853d@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260718T200000Z
 DTEND:20260719T010000Z
 SUMMARY:MOLAA International Soccer Series: International Soccer Family Day
@@ -45,7 +35,7 @@ DESCRIPTION:<p style="white-space:pre-wrap\;" data-rte-preserve-empty="tru
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-07-19-25th-anniversary-of-spy-kids-with-robert-c7760b21c6@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART;VALUE=DATE:20260719
 SUMMARY:25th Anniversary of Spy Kids with Robert Rodriguez\, plus a perfor
  mance by The Rodriguez Family SPY BAND
@@ -55,7 +45,7 @@ URL:https://www.academymuseum.org/en/programs/detail/25th-anniversary-of-s
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-07-19-family-workshop-spy-kids-8d2a417330@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260720T063000Z
 DTEND:20260719T203000Z
 SUMMARY:Family Workshop: Spy Kids
@@ -64,38 +54,8 @@ URL:https://www.academymuseum.org/en/programs/detail/family-workshop-spy-k
  ids-019ef03d-5fb8-f0cf-57df-0c25fd673ca2
 END:VEVENT
 BEGIN:VEVENT
-UID:lacma-2026-07-20-boone-childrens-gallery-2a23a33198@art-in-la
-DTSTAMP:20260718T062116Z
-DTSTART:20260720T180000Z
-SUMMARY:Boone Children's Gallery
-LOCATION:LACMA
-URL:https://www.lacma.org/event/boone-childrens-gallery-july-20
-DESCRIPTION:The whole family is invited to explore the joy of art-making a
- t theBoone Children's Gallery\, located inside the W.M...
-END:VEVENT
-BEGIN:VEVENT
-UID:lacma-2026-07-21-boone-childrens-gallery-d676fca238@art-in-la
-DTSTAMP:20260718T062116Z
-DTSTART:20260721T180000Z
-SUMMARY:Boone Children's Gallery
-LOCATION:LACMA
-URL:https://www.lacma.org/event/boone-childrens-gallery-july-21
-DESCRIPTION:The whole family is invited to explore the joy of art-making a
- t theBoone Children's Gallery\, located inside the W.M...
-END:VEVENT
-BEGIN:VEVENT
-UID:lacma-2026-07-23-boone-childrens-gallery-eb3dd2cf11@art-in-la
-DTSTAMP:20260718T062116Z
-DTSTART:20260723T180000Z
-SUMMARY:Boone Children's Gallery
-LOCATION:LACMA
-URL:https://www.lacma.org/event/boone-childrens-gallery-july-23
-DESCRIPTION:The whole family is invited to explore the joy of art-making a
- t theBoone Children's Gallery\, located inside the W.M...
-END:VEVENT
-BEGIN:VEVENT
 UID:molaa-2026-07-25-kcrw-summer-nights-at-molaa-87c95fc7ec@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260725T010000Z
 DTEND:20260725T050000Z
 SUMMARY:KCRW Summer Nights at MOLAA!
@@ -112,7 +72,7 @@ DESCRIPTION:<p style="white-space:pre-wrap\;" data-rte-preserve-empty="tru
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-07-25-bilingual-russianenglish-storytime-51e692dddf@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260725T173000Z
 DTEND:20260725T180000Z
 SUMMARY:Bilingual Russian-English Storytime
@@ -128,7 +88,7 @@ DESCRIPTION:Join us at the Wende Museum for a special bilingual children
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-07-25-family-day-at-the-wende-bob-baker-marion-d092371e40@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260725T210000Z
 DTEND:20260725T220000Z
 SUMMARY:Family Day at the Wende: Bob Baker Marionette Theater
@@ -146,7 +106,7 @@ DESCRIPTION:Join us for Family Day at the Wende Museum for a special prese
 END:VEVENT
 BEGIN:VEVENT
 UID:sparc-2026-07-26-workshop-8220summer-cyanotype-printmakin-2d288d7bc8@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260726T180000Z
 DTEND:20260726T230000Z
 SUMMARY:[Workshop] &#8220\;Summer Cyanotype Printmaking Workshop&#8221\; w
@@ -165,7 +125,7 @@ DESCRIPTION:Join Us for a Free Printmaking Workshop with Elsie Sims\, arti
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-14-kcrw-summer-nights-good-food-night-marke-0944e1d75e@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260815T010000Z
 DTEND:20260815T050000Z
 SUMMARY:KCRW Summer Nights: Good Food Night Market Edition
@@ -183,7 +143,7 @@ DESCRIPTION:Eat\, explore\, and dance at a free\, all-ages KCRW Summer Nig
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-29-bilingual-russianenglish-storytime-2bb1067165@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260829T173000Z
 DTEND:20260829T180000Z
 SUMMARY:Bilingual Russian-English Storytime
@@ -199,7 +159,7 @@ DESCRIPTION:Join us at the Wende Museum for a special bilingual children
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-09-13-fiestas-patrias-family-day-free-with-rsv-e7e80505f6@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20260913T190000Z
 SUMMARY:Fiestas Patrias Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -207,7 +167,7 @@ URL:https://lapca.org/event/fiestas-patrias/?event_date=2026-09-13
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260718T062116Z
+DTSTAMP:20260718T085133Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
