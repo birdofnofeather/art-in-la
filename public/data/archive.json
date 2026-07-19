@@ -6881,6 +6881,28 @@
     "scraped_at": "2026-05-31T00:05:04+00:00"
   },
   {
+    "id": "marciano-2026-05-06-magdalena-suarez-frimkess-ninetysix-and-95d938a00e",
+    "venue_id": "marciano",
+    "title": "Magdalena Suarez Frimkess: Ninety-six and Pissed",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-05-06",
+    "end": "2026-07-18",
+    "all_day": true,
+    "url": "https://marcianoartfoundation.org/exhibition/magdalena-suarez-frimkess-ninety-six-and-pissed/",
+    "image": "https://marcianoartfoundation.org/wp-content/uploads/2026/04/HERO_MagdalenaSuarezFrimkess-scaled-358x239.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "marcianoartfoundation.org",
+    "scraped_at": "2026-07-19T09:06:46+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "redcat-2026-05-09-redskyfalls-rplica-61st-la-biennale-alex-6cae961847",
     "venue_id": "redcat",
     "title": "RedSkyFalls (Réplica): 61st La Biennale… — Alexandre Estrela",
@@ -7624,6 +7646,50 @@
     "location_override": null,
     "source": "fowler.ucla.edu",
     "scraped_at": "2026-05-31T19:34:15+00:00"
+  },
+  {
+    "id": "torrance_art_museum-2026-06-06-champions-sports-in-contemporary-art-9f10d5025c",
+    "venue_id": "torrance_art_museum",
+    "title": "CHAMPIONS! - Sports in Contemporary Art",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-06-06",
+    "end": "2026-07-18",
+    "all_day": true,
+    "url": "https://www.torranceartmuseum.com/champions",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "torranceartmuseum.com",
+    "scraped_at": "2026-07-19T09:06:50+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "torrance_art_museum-2026-06-06-we-are-minnesota-art-as-resistance-4b94e66071",
+    "venue_id": "torrance_art_museum",
+    "title": "We Are Minnesota: Art as Resistance",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-06-06",
+    "end": "2026-07-18",
+    "all_day": true,
+    "url": "https://www.torranceartmuseum.com/we-are-minnesota",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "torranceartmuseum.com",
+    "scraped_at": "2026-07-19T09:06:50+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   },
   {
     "id": "18th_street-2026-06-06-blind-date-1f0e5d8e9e",
@@ -11755,6 +11821,74 @@
     "price_text": null,
     "audience": [
       "teen"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-18-30th-anniversary-of-from-dusk-till-dawn-3b191522f7",
+    "venue_id": "academy_museum",
+    "title": "30th Anniversary of From Dusk Till Dawn with Robert Rodriguez, plus a performance by Robert Rodriguez's CHINGON BAND",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-07-18",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/30th-anniversary-of-from-dusk-till-dawn-with-robert-rodriguez-019db1fc-f863-def8-3638-c35bc75970cc",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/j4ccSvlHtUGnVxiGNbaFX/ef76143d27c921d8d73f0256dc5e7b83/DUSK_ACADEMY_HORIZONTAL_v001.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-19T09:06:47+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "armory_pasadena-2026-07-18-field-of-listening-activation-with-lani-4f18527c6f",
+    "venue_id": "armory_pasadena",
+    "title": "Field of Listening: Activation with Lani Trock",
+    "description": "Join us at Arlington Gardens for a guided immersive listening experience.",
+    "event_type": "other",
+    "start": "2026-07-18",
+    "end": null,
+    "all_day": true,
+    "url": "https://armoryarts.org/calendar/events/field-of-listening-activation-with-lani-trock",
+    "image": "https://armoryarts.org/assets/Event/Images/field-listening-web-thumb-2__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
+    "artists": [],
+    "location_override": null,
+    "source": "armoryarts.org",
+    "scraped_at": "2026-07-19T09:06:53+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-18-the-great-mouse-detective-2918ee1ff6",
+    "venue_id": "academy_museum",
+    "title": "The Great Mouse Detective",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-18",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-great-mouse-detective-019db101-4c28-f4d0-d99e-71207761efa6",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/72NxHFSbbLCY6fjVbLQhV2/8a1cbaa59a9229ff3e8e67db7be813c7/1_Jul18_GREAT_MOUSE_DETECTIVE_Matinee1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-19T09:06:47+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
     ]
   },
   {
