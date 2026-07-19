@@ -200,13 +200,13 @@ export default function FilterBar({
             <div className="flex flex-wrap items-center gap-2">
               <button type="button" onClick={() => setFree(!free)}
                 aria-pressed={!!free}
-                className={`chip ${free ? "chip-active" : ""}`}>
+                className={`chip chip-free ${free ? "chip-active" : ""}`}>
                 Free
               </button>
               <button type="button" onClick={() => setFamily(!family)}
                 aria-pressed={!!family}
                 title="Events tagged for families / kids"
-                className={`chip ${family ? "chip-active" : ""}`}>
+                className={`chip chip-family ${family ? "chip-active" : ""}`}>
                 Family-friendly
               </button>
             </div>

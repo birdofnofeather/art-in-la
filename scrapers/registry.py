@@ -76,6 +76,11 @@ from .venues.corita_art_center import CoritaArtCenterScraper as CoritaArtCenter
 from .venues.la_plaza import LaPlazaScraper as LaPlaza
 from .venues.clockshop import Scraper as Clockshop
 
+# --- Round 8: CAAM (Eventbrite), MOAH (Eventbrite collection), Laband (LMU) ---
+from .venues.caam import Scraper as CAAM
+from .venues.moah import Scraper as MOAH
+from .venues.laband import Scraper as Laband
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -135,4 +140,7 @@ SCRAPERS = [
     CoritaArtCenter,
     LaPlaza,
     Clockshop,
+    CAAM,
+    MOAH,
+    Laband,
 ]

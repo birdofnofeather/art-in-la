@@ -11,7 +11,7 @@ const TABS = [
   { key: "saved",        label: "Saved" },
 ];
 
-export default function Header({ tab, setTab, stats, savedCount, onHome }) {
+export default function Header({ tab, setTab, stats, savedCount, onHome, onAbout }) {
   return (
     <header className="border-b border-black/10 bg-white sticky top-0 z-50">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 md:px-6">
@@ -56,6 +56,15 @@ export default function Header({ tab, setTab, stats, savedCount, onHome }) {
               </button>
             );
           })}
+          {onAbout && (
+            <button
+              type="button"
+              onClick={onAbout}
+              className="inline-flex items-center rounded-md px-3 py-1.5 text-sm font-medium text-ink/70 transition-colors hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
+            >
+              About
+            </button>
+          )}
         </nav>
       </div>
     </header>

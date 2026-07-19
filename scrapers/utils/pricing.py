@@ -110,4 +110,6 @@ def resolve(title, description, is_free=None, price_text=None, offers=None, cost
         is_free, price_text = parse_cost(cost)
     if is_free is None and price_text is None:
         is_free, price_text = infer_from_text(title, description)
+    if is_free is None and price_text == "Free":
+        is_free = True
     return is_free, price_text

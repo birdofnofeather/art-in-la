@@ -101,9 +101,23 @@ def build_ics(events, venues_by_id, calname: str) -> str:
             lines.append(_fold(f"LOCATION:{_esc(location)}"))
         if ev.get("url"):
             lines.append(_fold(f"URL:{ev.get('url')}"))
-        desc = ev.get("description")
-        if desc:
-            lines.append(_fold(f"DESCRIPTION:{_esc(desc[:500])}"))
+        # Calendar apps rarely surface the URL property, so the description
+        # leads with the essentials: venue, price, link — then the blurb.
+        head = []
+        if venue.get("name"):
+            head.append(venue["name"])
+        if ev.get("price_text"):
+            head.append(ev["price_text"])
+        elif ev.get("is_free"):
+            head.append("Free")
+        if ev.get("url"):
+            head.append(ev["url"])
+        body = " · ".join(head)
+        blurb = (ev.get("description") or "").strip()
+        if blurb:
+            body = f"{body}\n\n{blurb[:400]}" if body else blurb[:400]
+        if body:
+            lines.append(_fold(f"DESCRIPTION:{_esc(body)}"))
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"

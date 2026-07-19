@@ -1,5 +1,32 @@
 # Art in LA — Status & Next Steps (2026-05-30)
 
+## Round 8 (2026-07-17): design system, map simplification, scraper expansion
+
+- **Visual design.** Warm gallery palette (paper #f6f4ef, ink #1c1917, terracotta
+  accent #b5442c), compact cards (p-3, base-size titles, 2-line clamps), smaller
+  chips, `tag` pills for Free/price/Family, tinted `chip-free`/`chip-family`
+  styles so they read apart from the neutral date chips.
+- **Map.** Replaced 4 type-colors + letters + amber status dot with ONE marker
+  language: filled terracotta dot = has upcoming events, small hollow gray dot =
+  venue only. Popups lead with next events + Free/Family. Org-type colors remain
+  on venue cards/filter tray only (kept as a filter, dropped as map encoding).
+- **Scrapers.** New: `caam` (Eventbrite organizer → per-event JSON-LD), `moah`
+  (Eventbrite collection ItemList extraction), `laband` (LMU feature-card parse;
+  cal.lmu.edu Localist API is bot-gated 403). Academy Museum now reads exact
+  showtimes from the Ticketure sessions API (tickets.academymuseum.org/api/
+  events/{tkid}/sessions — 82/84 events have real times now), plus Contentful
+  `audienceType` → family/teen tags and `nonTicketedProgram` → Free.
+- **Link audit.** All 80 venues probed; ~79 website/events_url fixes applied
+  (dead domains: murmurs.la, lacarchive.com, actualsizela.com, vpam.org,
+  h-r.la, museum.forestlawn.com; dozens of moved events pages).
+- **About.** Moved to top nav (removed from footer), archive link removed,
+  positioning copy sharpened (visual art, no commercial galleries, no
+  performing-arts venues), Resources section added (artguide, Curate LA,
+  Mommy Poppins, LAist; Stage Raw, BroadwayWorld LA, Theater.Guide).
+- **ICS feeds** now lead the DESCRIPTION with venue · price · link.
+
+
+
 ## Round 7 (2026-07-17): audience-first UX + data enrichment
 
 Executed the quick-wins plan end to end:

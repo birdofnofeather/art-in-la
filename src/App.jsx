@@ -288,7 +288,7 @@ export default function App() {
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} />
+      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} onAbout={() => setAboutOpen(true)} />
 
       <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
         {/* Error panel with retry */}
@@ -549,22 +549,12 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl space-y-2 px-4 pb-10 pt-4 text-xs text-ink/50 md:px-6">
-        <p>
-          <button
-            type="button"
-            onClick={() => setAboutOpen(true)}
-            className="font-medium text-ink underline-offset-2 hover:underline"
-          >
-            Something broken, missing, wrong? Let us know!
-          </button>
-        </p>
+      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/60 md:px-6">
         <p>
           {lastUpdated && (
             <>Event data updated {lastUpdated.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}. </>
           )}
-          Venue and event data is bot-maintained. Confirm times before heading out!{" "}
-          <button type="button" onClick={() => setAboutOpen(true)} className="underline underline-offset-2">About</button>.
+          Listings are bot-maintained — confirm times with the venue before heading out.
           Map tiles © OpenStreetMap contributors · CARTO.
         </p>
       </footer>
@@ -580,10 +570,7 @@ export default function App() {
       />
 
       {aboutOpen && (
-        <AboutDialog
-          onClose={() => setAboutOpen(false)}
-          onShowArchive={() => setTab("archive")}
-        />
+        <AboutDialog onClose={() => setAboutOpen(false)} />
       )}
     </div>
   );

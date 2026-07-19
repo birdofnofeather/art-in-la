@@ -13,7 +13,7 @@ Actions cron and commit fresh JSON data.
 - Repo: `github.com/birdofnofeather/art-in-la`, default branch `main`.
 - Live site: `https://birdofnofeather.github.io/art-in-la/`
 - Scope: **museums + institutions only.** Commercial galleries were intentionally
-  removed (see below). Currently **48 scrapers**, **79 venues**
+  removed (see below). Currently **52 scrapers**, **79 venues**
   (31 museum / 22 community / 17 alternative / 9 academic), ~45 venues produce events.
 
 ## Layout
@@ -123,6 +123,19 @@ overrides made Vercel's checkpoint stick), wait the interstitial out in-page,
 then return the populated HTML. CI installs it via `requirements-render.txt`
 + `playwright install --with-deps chromium`. If Playwright is absent (a plain
 local run), these two scrapers no-op and the rest of the pipeline is unaffected.
+
+
+### Map marker language (do not regress)
+Map markers do NOT encode org type. Filled terracotta dot = venue with upcoming
+events (16px), hollow gray dot = venue only (11px); focus ring on the focused
+venue. Org-type colors live only on venue cards and the filter tray.
+
+### Academy Museum showtimes
+`scrapers/venues/academy_museum.py` reads exact session times from the Ticketure
+API (`tickets.academymuseum.org/api/events/{ticketureIdProduction}/sessions`,
+UTC) — the listing-page dict is keyed by that same id. Contentful `audienceType`
+maps to audience tags; `nonTicketedProgram` → price_text "Free". The old
+detail-page HTML time-parse remains as fallback only.
 
 ## Running it
 

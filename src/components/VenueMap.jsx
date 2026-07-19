@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup, GeoJSON, useMap } from "react-leaflet";
 import L from "leaflet";
-import { TYPE_COLOR, TYPE_LABEL } from "../lib/constants.js";
+import { TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
 import { LA_COUNTY_GEOJSON, REGIONS_GEOJSON, REGION_LABELS } from "../data/laRegions.js";
 
@@ -45,15 +45,17 @@ function makeLabelIcon(text) {
   });
 }
 
-function makeIcon(type, eventful) {
-  const color = TYPE_COLOR[type] || "#333";
-  const letter = (type || "").charAt(0).toUpperCase() || "?";
+// One marker language instead of five colors + letters + a status dot:
+// filled terracotta = has upcoming events, hollow gray = venue only.
+function makeIcon(eventful, focused = false) {
+  const size = eventful ? 16 : 11;
+  const cls = `dot-marker ${eventful ? "eventful" : "quiet"}${focused ? " focused" : ""}`;
   return L.divIcon({
     className: "",
-    html: `<div class="custom-marker ${eventful ? "event" : ""}" style="background:${color}">${letter}</div>`,
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
-    popupAnchor: [0, -14],
+    html: `<div class="${cls}" style="width:${size}px;height:${size}px"></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -(size / 2 + 4)],
   });
 }
 
@@ -113,8 +115,9 @@ export default function VenueMap({
 
   const iconFor = (v) => {
     const eventful = eventfulIds.has(v.id);
-    const key = `${v.type}|${eventful ? 1 : 0}`;
-    if (!iconCache.has(key)) iconCache.set(key, makeIcon(v.type, eventful));
+    const focused = v.id === focusedVenueId;
+    const key = `${eventful ? 1 : 0}|${focused ? 1 : 0}`;
+    if (!iconCache.has(key)) iconCache.set(key, makeIcon(eventful, focused));
     return iconCache.get(key);
   };
 
@@ -177,7 +180,7 @@ export default function VenueMap({
                 <div className="space-y-1.5" style={{ minWidth: 180 }}>
                   <div className="font-semibold text-sm">{v.name}</div>
                   <div className="text-xs text-ink/60">
-                    {TYPE_LABEL[v.type]} · {v.neighborhood}
+                    {v.neighborhood || TYPE_LABEL[v.type]}
                   </div>
                   {v.description && (
                     <div className="text-xs text-ink/70 line-clamp-2">{v.description}</div>
@@ -190,7 +193,11 @@ export default function VenueMap({
                           <div className="font-medium leading-snug line-clamp-1">
                             {ev.url ? <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a> : ev.title}
                           </div>
-                          {ev.start && <div className="text-ink/60">{fmtEventDate(ev.start)}</div>}
+                          <div className="text-ink/60">
+                            {ev.start ? fmtEventDate(ev.start) : ""}
+                            {ev.is_free === true && <span className="ml-1 font-semibold text-emerald-700">Free</span>}
+                            {(ev.audience || []).includes("family") && <span className="ml-1 font-semibold text-sky-700">Family</span>}
+                          </div>
                         </div>
                       ))}
                       {vEvents.length > 3 && (
@@ -229,17 +236,14 @@ export default function VenueMap({
       </MapContainer>
 
       {/* Legend + toggle */}
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 text-xs text-ink/60">
-        <span className="font-semibold uppercase tracking-wider">Legend</span>
-        {Object.entries(TYPE_LABEL).map(([k, label]) => (
-          <span key={k} className="inline-flex items-center gap-1.5">
-            <span className="inline-block h-3 w-3 rounded-full" style={{ background: TYPE_COLOR[k] }} />
-            {label}
-          </span>
-        ))}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2.5 text-xs text-ink/60">
         <span className="inline-flex items-center gap-1.5">
-          <span className="inline-block h-3 w-3 rounded-full bg-amber-500" />
-          Has upcoming event
+          <span className="inline-block h-3 w-3 rounded-full bg-accent" />
+          Upcoming events
+        </span>
+        <span className="inline-flex items-center gap-1.5">
+          <span className="inline-block h-2.5 w-2.5 rounded-full border-2 border-stone-400 bg-card" />
+          Venue (nothing scheduled)
         </span>
 
         <label className="ml-auto inline-flex cursor-pointer items-center gap-2 select-none">
@@ -247,7 +251,7 @@ export default function VenueMap({
           <button
             type="button"
             onClick={() => setOnlyEventful(!onlyEventful)}
-            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${onlyEventful ? "bg-amber-500" : "bg-ink/20"}`}
+            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${onlyEventful ? "bg-accent" : "bg-ink/20"}`}
             aria-pressed={onlyEventful}
             aria-label={onlyEventful ? "Showing venues with events only" : "Showing all venues"}
           >

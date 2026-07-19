@@ -170,6 +170,37 @@ def _fetch_detail(slug: str) -> tuple[dict, str]:
     return prog, visible
 
 
+# ── Ticketure sessions API ────────────────────────────────────────────────────
+
+def _fetch_sessions(tkid: str) -> list[dict]:
+    """Exact showtimes from the museum's Ticketure ticketing API.
+
+    tickets.academymuseum.org/api/events/{id}/sessions returns UTC
+    start/end for every session — the authoritative source the site itself
+    renders ("Sun, Jul 19, 2026 | 2pm PT"). Empty list on any failure.
+    """
+    url = f"https://tickets.academymuseum.org/api/events/{tkid}/sessions"
+    resp = get(url)
+    if resp is None or not resp.ok:
+        return []
+    try:
+        data = resp.json()
+    except Exception:
+        return []
+    rows = (data.get("event_session") or {}).get("_data") or []
+    return [r for r in rows if r.get("start_datetime")]
+
+
+def _audience_tags(prog: dict) -> list[str]:
+    at = prog.get("audienceType")
+    name = (at or {}).get("name", "") if isinstance(at, dict) else ""
+    if "Kids and Families" in name:
+        return ["family"]
+    if "Teens" in name:
+        return ["teen"]
+    return []
+
+
 # ── date arithmetic ───────────────────────────────────────────────────────────
 
 def _span_days(start_raw: str, end_raw: str) -> int:
@@ -182,7 +213,8 @@ def _span_days(start_raw: str, end_raw: str) -> int:
 
 
 def _make_event(venue_id, title, url, image, start_date: str,
-                start_hm, end_hm, source_label, now_iso, event_type) -> Event:
+                start_hm, end_hm, source_label, now_iso, event_type,
+                audience=None, price_text=None) -> Event:
     """Build an Event for a specific date + optional start/end time."""
     if start_hm:
         try:
@@ -220,6 +252,8 @@ def _make_event(venue_id, title, url, image, start_date: str,
         all_day=all_day,
         url=url,
         image=image,
+        audience=list(audience or []),
+        price_text=price_text,
         source=source_label,
         scraped_at=now_iso,
     )
@@ -258,7 +292,7 @@ class Scraper(BaseScraper):
         seen: set[str] = set()
         now_iso = now_utc_iso()
 
-        for prog in programs.values():
+        for tkid, prog in programs.items():
             if prog.get("hideFromCalendar"):
                 continue
 
@@ -316,8 +350,35 @@ class Scraper(BaseScraper):
                 )
                 continue
 
-            # Short-span events: fetch detail page to get showtime and
-            # any multi-date session breakdown.
+            audience = _audience_tags(prog)
+            price_text = "Free" if prog.get("nonTicketedProgram") else None
+
+            # Short-span events: the Ticketure sessions API has the exact
+            # showtimes the site renders — one event per session.
+            sessions = _fetch_sessions(tkid)
+            if sessions:
+                for sess in sessions:
+                    start_iso = sess["start_datetime"]      # UTC; to_la_iso converts
+                    end_iso = sess.get("end_datetime")
+                    yield Event(
+                        id=event_id(self.venue_id, start_iso, title),
+                        venue_id=self.venue_id,
+                        title=title,
+                        description="",
+                        event_type=etype_event,
+                        start=start_iso,
+                        end=end_iso,
+                        all_day=False,
+                        url=url,
+                        image=image,
+                        audience=audience,
+                        price_text=price_text,
+                        source=self.source_label,
+                        scraped_at=now_iso,
+                    )
+                continue
+
+            # Fallback: fetch the detail page for a showtime / session list.
             listing_text = _extract_all_text(prog)
             start_hm, end_hm = _parse_times(listing_text)
             session_dates: list[str] = []
@@ -358,6 +419,7 @@ class Scraper(BaseScraper):
                         self.venue_id, title, url, image,
                         sd, start_hm, end_hm,
                         self.source_label, now_iso, etype_event,
+                        audience=audience, price_text=price_text,
                     )
                     yield ev
             else:
@@ -366,4 +428,5 @@ class Scraper(BaseScraper):
                     self.venue_id, title, url, image,
                     start_raw, start_hm, end_hm,
                     self.source_label, now_iso, etype_event,
+                    audience=audience, price_text=price_text,
                 )

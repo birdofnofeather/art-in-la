@@ -67,6 +67,56 @@ function FeedbackForm() {
   );
 }
 
+const RESOURCES = [
+  {
+    group: "Also covering visual art",
+    items: [
+      { name: "ARTFORUM artguide", url: "https://artguide.artforum.com/artguide/place/los-angeles",
+        blurb: "Commercial gallery and museum exhibition listings — the standard guide to the gallery world." },
+      { name: "Curate LA", url: "https://curate.la/",
+        blurb: "Gallery openings and the week's art-scene calendar, Instagram-native." },
+      { name: "Mommy Poppins LA", url: "https://mommypoppins.com/los-angeles-kids",
+        blurb: "Kids and family activities across LA, including museum family days." },
+      { name: "LAist: Things to Do", url: "https://laist.com/best-things-to-do",
+        blurb: "Editorial picks of the week across all of LA culture." },
+    ],
+  },
+  {
+    group: "Performing arts",
+    items: [
+      { name: "Stage Raw", url: "https://stageraw.com/stage-listings/",
+        blurb: "Independent LA theater listings and reviews." },
+      { name: "BroadwayWorld LA", url: "https://www.broadwayworld.com/los-angeles/regionalshows/",
+        blurb: "Touring and regional theater across greater LA." },
+      { name: "Theater.Guide LA", url: "https://theater.guide/city/los-angeles/",
+        blurb: "Searchable calendar of LA stages and performing-arts centers." },
+    ],
+  },
+];
+
+function ResourcesSection() {
+  return (
+    <div className="space-y-3 border-t border-black/10 pt-4">
+      <h3 className="text-sm font-semibold">Looking for something else?</h3>
+      {RESOURCES.map((g) => (
+        <div key={g.group} className="space-y-1.5">
+          <div className="text-xs font-semibold uppercase tracking-wider text-ink/60">{g.group}</div>
+          <ul className="space-y-1 text-sm text-ink/70">
+            {g.items.map((r) => (
+              <li key={r.name}>
+                <a href={r.url} target="_blank" rel="noreferrer" className="font-medium text-ink underline underline-offset-2 hover:text-accent">
+                  {r.name}
+                </a>{" "}
+                — {r.blurb}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function SubscribeSection() {
   const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
   const origin = typeof window !== "undefined" ? window.location.origin : "";
@@ -106,7 +156,7 @@ function SubscribeSection() {
   );
 }
 
-export default function AboutDialog({ onClose, onShowArchive }) {
+export default function AboutDialog({ onClose }) {
   const panelRef = useRef(null);
   const openerRef = useRef(null);
 
@@ -147,34 +197,30 @@ export default function AboutDialog({ onClose, onShowArchive }) {
             </button>
           </div>
 
-          {/* How it works */}
+          {/* What this is */}
           <div className="space-y-2 text-sm text-ink/70">
             <p>
-              A free map and calendar of exhibitions and events at Los Angeles’s
-              museums and non-commercial art spaces — no galleries, no ticket
-              sellers.
+              <strong>The visual-art calendar for LA County.</strong> Every museum,
+              community art center, university gallery, and artist-run space —
+              their exhibitions, openings, screenings, talks, and workshops, in
+              one free place. No accounts, no ads, no ticket-seller noise.
             </p>
             <p>
-              Listings are gathered automatically: a bot visits each venue’s
-              website once a day and copies what it finds. Browse the{" "}
-              <strong>Map</strong>, scan one-off <strong>Events</strong>, see what’s
-              on view under <strong>Exhibitions</strong>, or star things to keep them
-              under <strong>Saved</strong>. All times are Los Angeles local.
+              What we deliberately leave out: <em>commercial galleries</em> (see
+              the guides below — they cover that world well) and{" "}
+              <em>performing-arts venues</em> — theater, opera, and dance have
+              their own calendars, also linked below. Museum film screenings and
+              performances <em>inside</em> art venues are included.
             </p>
-            <p className="text-ink/60">
-              Because it’s bot-maintained, details can lag or be wrong —
-              confirm with the venue before heading out.
+            <p>
+              Listings are gathered automatically: a bot reads each venue's own
+              website daily, so coverage doesn't depend on anyone remembering to
+              submit an event. All times are LA-local. Details can occasionally
+              lag or misread — confirm with the venue before heading out.
             </p>
-            {onShowArchive && (
-              <button
-                type="button"
-                onClick={() => { onShowArchive(); onClose(); }}
-                className="text-ink underline-offset-2 hover:underline"
-              >
-                Browse the archive of past listings →
-              </button>
-            )}
           </div>
+
+          <ResourcesSection />
 
           <SubscribeSection />
 

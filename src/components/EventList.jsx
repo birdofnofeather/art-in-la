@@ -211,11 +211,11 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           src={ev.image}
           alt=""
           loading="lazy"
-          className="hidden h-auto w-28 shrink-0 object-cover sm:block"
+          className="hidden h-auto w-24 shrink-0 object-cover sm:block"
           onError={(e) => { e.currentTarget.style.display = "none"; }}
         />
       )}
-      <div className="relative min-w-0 flex-1 space-y-2 p-4">
+      <div className="relative min-w-0 flex-1 space-y-1.5 p-3">
         {/* Star / save button */}
         {onToggleFav && (
           <button
@@ -239,23 +239,19 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
         )}
 
         <div className="flex flex-wrap items-center gap-2 text-xs pr-6">
-          <span className="chip" style={{ borderColor: venueColor + "55" }}>
-            <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
-            {TYPE_LABEL[venue.type]}
-          </span>
           {typeLabels.map((label) => (
-            <span key={label} className="chip">{label}</span>
+            <span key={label} className="tag bg-ink/5 text-ink/70">{label}</span>
           ))}
           {venue.region && (
-            <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
+            <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
           {ev.is_free === true ? (
-            <span className="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800">Free</span>
+            <span className="tag bg-emerald-100 text-emerald-900">Free</span>
           ) : ev.price_text ? (
-            <span className="chip">{ev.price_text}</span>
+            <span className="tag bg-ink/5 text-ink/70">{ev.price_text}</span>
           ) : null}
           {(ev.audience || []).includes("family") && (
-            <span className="inline-flex items-center rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-800">Family</span>
+            <span className="tag bg-sky-100 text-sky-900">Family</span>
           )}
           {relLabel && (
             <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${LABEL_STYLE[relLabel] || "bg-ink text-white"}`}>
@@ -269,7 +265,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           )}
         </div>
 
-        <h3 className="font-display text-lg leading-snug">
+        <h3 className="font-display text-base font-semibold leading-snug">
           {ev.url ? (
             <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">
               {ev.title}
@@ -277,7 +273,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           ) : ev.title}
         </h3>
 
-        <div className="text-sm text-ink/70">
+        <div className="text-[13px] text-ink/70">
           <a
             href={venue.website || "#"}
             target="_blank"
@@ -295,7 +291,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           <div className="text-sm text-ink/70">{dateRange(ev)}</div>
         )}
         {ev.description && (
-          <p className="line-clamp-3 text-sm text-ink/70">{stripHtml(ev.description)}</p>
+          <p className="line-clamp-2 text-[13px] leading-snug text-ink/70">{stripHtml(ev.description)}</p>
         )}
         {ev.artists && ev.artists.length > 0 && (
           <div className="text-xs text-ink/60">
@@ -347,19 +343,16 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
   return (
     <article className="panel flex overflow-hidden">
       <div className="w-1 shrink-0" style={{ background: venueColor }} />
-      <div className="min-w-0 flex-1 space-y-3 p-4">
-        <div className="flex flex-wrap items-center gap-2 text-xs">
-          <span className="chip" style={{ borderColor: venueColor + "55" }}>
-            <span className="inline-block h-2 w-2 rounded-full" style={{ background: venueColor }} />
-            {TYPE_LABEL[venue.type]}
-          </span>
+      <div className="min-w-0 flex-1 space-y-2 p-3">
+        <div className="flex flex-wrap items-center gap-1.5 text-xs">
+          <span className="tag bg-ink/5 text-ink/70">{TYPE_LABEL[venue.type]}</span>
           {venue.region && (
-            <span className="chip">{REGION_LABEL[venue.region] || venue.region}</span>
+            <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
           <span className="text-ink/60">{sorted.length} event{sorted.length !== 1 ? "s" : ""}</span>
         </div>
 
-        <h3 className="font-display text-lg leading-snug">
+        <h3 className="font-display text-base font-semibold leading-snug">
           <a href={venue.website || "#"} target="_blank" rel="noreferrer" className="hover:underline">
             {venue.name}
           </a>
