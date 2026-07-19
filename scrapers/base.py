@@ -150,6 +150,12 @@ class Event:
             if primary not in types:
                 types.insert(0, primary)
             d["event_types"] = types
+        # Normalise text: strip stray tags/entities from title + description no
+        # matter which scraper produced them (some custom scrapers bypass the
+        # built-in strategies — "&#038;" was reaching the UI).
+        d["title"] = _strip_html(d.get("title") or "")
+        d["description"] = _strip_html(d.get("description") or "")
+
         # Cost + audience: keep any explicit value the scraper set, otherwise
         # fall back to keyword heuristics on the title/description.
         d["is_free"], d["price_text"] = pricing.resolve(
@@ -414,6 +420,10 @@ class BaseScraper:
         e = _parse_iso(ev.end)
         if not s or not e:
             return None
+        # Tolerate mixed naive/aware (e.g. a timed start with a date-only end).
+        if (s.tzinfo is None) != (e.tzinfo is None):
+            s = s.replace(tzinfo=None)
+            e = e.replace(tzinfo=None)
         return e - s
 
     # ------- Conversions -------

@@ -23,6 +23,7 @@ from .utils.warn import get_warnings, clear as clear_warnings
 from .utils.recurring import filter_recurring
 from .utils.validate import validate
 from .utils.feeds import build_ics
+from .utils import llm_extract
 
 
 HERE = Path(__file__).resolve().parent
@@ -146,6 +147,14 @@ def main(argv=None) -> int:
 
     # ── Hygiene gate: drop undated ghosts / stale records before publishing ────
     upcoming, hygiene_dropped = validate(upcoming)
+
+    # ── LLM fallback (optional): recover no-date drops via Claude Haiku ────────
+    # No-op unless ANTHROPIC_API_KEY is set (repo secret in CI).
+    if hygiene_dropped and llm_extract.enabled():
+        recovered = llm_extract.recover(hygiene_dropped)
+        if recovered:
+            upcoming = dedupe(upcoming + recovered)
+            print(f"LLM fallback: recovered {len(recovered)} event(s)")
     if hygiene_dropped:
         from collections import Counter as _C
         print(f"\nHygiene gate: dropped {len(hygiene_dropped)} record(s) from events.json")

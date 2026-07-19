@@ -9,6 +9,7 @@ item through the standard JSON-LD event builder (offers → free/paid included).
 from __future__ import annotations
 
 import json
+from datetime import date, datetime, timedelta
 from typing import Iterable
 
 from ..base import BaseScraper, Event
@@ -71,4 +72,18 @@ class Scraper(BaseScraper):
             if key in seen:
                 continue
             seen.add(key)
+            # The collection page also lists past events and giant recurring
+            # date ranges ("Apr 2025 – Jan 2027") — keep only real upcoming
+            # listings so raw counts match what a visitor sees on Eventbrite.
+            def _d(v):
+                try:
+                    return datetime.fromisoformat(str(v)[:10]).date()
+                except (ValueError, TypeError):
+                    return None
+            sd, ed = _d(obj.get("startDate")), _d(obj.get("endDate"))
+            today = date.today()
+            if sd and (ed or sd) < today:
+                continue
+            if sd and ed and (ed - sd) > timedelta(days=4):
+                continue
             yield self._event_from_jsonld(obj)

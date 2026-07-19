@@ -44,6 +44,10 @@ jobs:
       - name: Run scrapers
         run: python -m scrapers.run_all
         timeout-minutes: 20
+        env:
+          # Optional: enables the LLM fallback for events whose dates the
+          # scrapers can't parse. Set in Settings → Secrets → Actions.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Post scraper warnings summary
         if: always()
@@ -117,6 +121,48 @@ jobs:
           git commit -m "chore(data): daily scrape $(date -u +'%Y-%m-%d')"
           git pull --rebase origin main
           git push
+
+      - name: Alert on scraper health problems (creates/updates an issue → emails you)
+        if: always()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - << 'EOF' > /tmp/alert_body.md
+          import json, pathlib
+          health = {}
+          f = pathlib.Path("public/data/health.json")
+          if f.exists():
+              health = json.loads(f.read_text())
+          stale = {v: h for v, h in sorted(health.items())
+                   if h.get("zero_streak", 0) >= 3 and h.get("last_success")}
+          if stale:
+              print("@birdofnofeather — the daily scrape found problems.\n")
+              print("| Venue | Zero-event runs | Last produced events |")
+              print("|---|---|---|")
+              for v, h in stale.items():
+                  print(f"| `{v}` | {h['zero_streak']} | {h['last_success']} |")
+              print("\nA venue silent for 3+ runs usually means its site changed. "
+                    "Open a session and ask Claude to fix that venue's scraper.")
+          EOF
+          if [ -s /tmp/alert_body.md ]; then
+            existing=$(gh issue list --state open --search "Scraper health alert in:title" --json number --jq '.[0].number' 2>/dev/null || echo "")
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file /tmp/alert_body.md
+            else
+              gh issue create --title "Scraper health alert" --body-file /tmp/alert_body.md
+            fi
+          else
+            echo "No health problems to report."
+          fi
+
+      - name: Alert on job failure (creates an issue → emails you)
+        if: failure()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create --title "Daily scrape FAILED $(date -u +'%Y-%m-%d')"             --body "@birdofnofeather — the daily scrape workflow failed. Check the run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
       - name: Trigger deploy
         if: success()

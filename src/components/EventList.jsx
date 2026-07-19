@@ -9,10 +9,19 @@ const DATE_OPTS  = { weekday: "short", month: "short", day: "numeric", year: "nu
 const TIME_OPTS  = { hour: "numeric", minute: "2-digit" };
 const DATE_LONG  = { weekday: "long", month: "long", day: "numeric" };
 
-/** Strip any HTML tags that slipped through the scraper pipeline. */
+/** Strip tags + decode entities that slipped through the scraper pipeline. */
+const NAMED_ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
+  ndash: "\u2013", mdash: "\u2014", hellip: "\u2026", rsquo: "\u2019", lsquo: "\u2018",
+  rdquo: "\u201d", ldquo: "\u201c" };
+function decodeEntities(text) {
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(+d))
+    .replace(/&([a-z]+);/gi, (m, name) => NAMED_ENTITIES[name.toLowerCase()] ?? m);
+}
 function stripHtml(text) {
   if (!text) return "";
-  return text.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return decodeEntities(text.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 }
 
 function fmtDateOnly(d) { return d.toLocaleDateString("en-US", DATE_OPTS); }
@@ -80,8 +89,15 @@ function orderWithinDay(events) {
 function groupByDate(events) {
   const groups = [];
   const seen = new Map();
+  const today0 = new Date(); today0.setHours(0, 0, 0, 0);
   for (const ev of events) {
-    const d = parseDate(ev.start);
+    let d = parseDate(ev.start);
+    // An event already underway (started earlier, ends later) belongs under
+    // today — a past date header on top of the list reads as a bug.
+    if (d && d < today0) {
+      const end = parseDate(ev.end);
+      if (end && end >= today0) d = today0;
+    }
     const key = d
       ? `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`
       : "unknown";
@@ -198,9 +214,11 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   const relLabel = exhibition ? null : getRelativeLabel(ev);
   const closeIn = exhibition ? daysUntilClose(ev) : null;
   const closingSoon = closeIn !== null && closeIn >= 0 && closeIn <= 14;
-  // De-duplicate type chips by their display label (e.g. fair + other → one "Other").
+  // De-duplicate type chips by display label, and only show types from our own
+  // taxonomy — raw source labels ("Art Making", "Family") rendered inconsistently
+  // next to the real Free/Family pills.
   const typeLabels = [...new Set(
-    eventTypesOf(ev).map((t) => EVENT_TYPE_LABEL[t] || t)
+    eventTypesOf(ev).filter((t) => EVENT_TYPE_LABEL[t]).map((t) => EVENT_TYPE_LABEL[t])
   )];
 
   return (
@@ -268,9 +286,9 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
         <h3 className="font-display text-base font-semibold leading-snug">
           {ev.url ? (
             <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">
-              {ev.title}
+              {stripHtml(ev.title)}
             </a>
-          ) : ev.title}
+          ) : stripHtml(ev.title)}
         </h3>
 
         <div className="text-[13px] text-ink/70">

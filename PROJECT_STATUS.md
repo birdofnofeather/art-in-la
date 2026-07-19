@@ -1,5 +1,33 @@
 # Art in LA — Status & Next Steps (2026-05-30)
 
+## Round 9 (2026-07-18): bug fixes, mobile pass, calm palette, 5 venues, alerts + LLM fallback
+
+Bugs: standing multi-week programmes no longer top What's On (validate drops
+one-off spans >4 days; in-progress events group under today); audience regex
+now matches bare "family" (Getty "Family Workshop" tagged — 57 family events,
+was 24); HTML entities decoded pipeline-wide in Event.to_dict + frontend
+decode for legacy data; event-type pills show only our own taxonomy labels.
+
+Mobile: horizontally scrollable nav (no wrapping), Map hidden on small screens,
+bigger chip tap targets, auto stack-by-venue on mobile+Today, per-event images
+already excluded on mobile. Dates simplified everywhere to exactly four chips:
+Today / This weekend / Next week (rolling 7) / All days — no More-dates row.
+
+Design: accent shifted terracotta → calm lake blue (#527a9e); map dots soft
+blue (#6f9cbf), same size, quiet venues translucent; default map view fits
+Burbank→Long Beach core; What's On visually primary in nav; venue-card social
+links demoted to a quiet separate line; About modal scrolls internally (never
+cut off), closes on navigation, resources compressed, Subscribe removed.
+
+Data: +5 venues (MJT — no scrapable events page, venue only; JACCC custom
+detail-page scraper; ESMoA via Tribe REST; Luckman via RSS; ArtCenter custom
+exhibitions scraper). MOAH now emits only real upcoming one-offs. 57 scrapers.
+
+Ops: daily-scrape opens/updates a GitHub issue (→ email) when venues go silent
+3+ runs or the job fails. Optional LLM fallback (scrapers/utils/llm_extract.py,
+claude-haiku, gated on ANTHROPIC_API_KEY secret) recovers no-date drops.
+
+
 ## Round 8 (2026-07-17): design system, map simplification, scraper expansion
 
 - **Visual design.** Warm gallery palette (paper #f6f4ef, ink #1c1917, terracotta

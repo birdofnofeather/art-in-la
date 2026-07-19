@@ -54,6 +54,15 @@ def validate(events, now=None):
             _drop(ev, "no start date")
             continue
 
+        # A "one-off" event spanning more than a few days is a standing
+        # programme (e.g. "Guided Tours  May 28 – Jul 23"), not a listing a
+        # person can put on a calendar. The reshape step keeps its real type;
+        # we drop it here so it never tops the What's On list.
+        if not is_exh and start is not None and end is not None:
+            if (end - start) > timedelta(days=4):
+                _drop(ev, "multi-week range, not a one-off event")
+                continue
+
         if is_exh and start is None and end is None:
             scraped = _parse(ev.get("scraped_at"))
             if scraped is None or scraped < grace:

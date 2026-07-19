@@ -55,27 +55,21 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
             {onToggleFav && (
               <StarButton isFav={isFav} onToggle={() => onToggleFav(v.id)} />
             )}
-            <div className="space-y-2 p-4">
-              <div className="flex flex-wrap items-center gap-2 text-xs">
-                <span className="chip" style={{ borderColor: color + "55" }}>
-                  <span className="inline-block h-2 w-2 rounded-full" style={{ background: color }} />
-                  {TYPE_LABEL[v.type]}
-                </span>
-                <span className="chip">{REGION_LABEL[v.region] || v.region}</span>
+            <div className="space-y-2 p-3">
+              <div className="flex flex-wrap items-center gap-1.5 text-xs">
+                <span className="tag bg-ink/5 text-ink/70">{TYPE_LABEL[v.type]}</span>
+                <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[v.region] || v.region}</span>
                 {eventfulIds.has(v.id) && (
-                  <span className="chip" style={{ borderColor: "#f59e0b55" }}>
-                    <span className="inline-block h-2 w-2 rounded-full bg-amber-500" />
-                    Upcoming event
-                  </span>
+                  <span className="tag text-white" style={{ background: "#6f9cbf" }}>Upcoming events</span>
                 )}
                 {!hasScraped && (
-                  <span className="chip text-ink/60" title="No automated scraper — events added manually or not yet tracked">
-                    No scraper
+                  <span className="tag bg-ink/5 text-ink/50" title="No automated scraper — events added manually or not yet tracked">
+                    Not tracked
                   </span>
                 )}
               </div>
 
-              <h3 className="font-display text-lg leading-snug pr-6">
+              <h3 className="font-display text-base font-semibold leading-snug pr-6">
                 {onShowDetail ? (
                   <button
                     type="button"
@@ -110,11 +104,6 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
                     Directions
                   </a>
                 )}
-                {SOCIAL_ORDER.filter((k) => socials[k]).map((k) => (
-                  <a key={k} href={socials[k]} target="_blank" rel="noreferrer" className="chip">
-                    {SOCIAL_LABEL[k]}
-                  </a>
-                ))}
                 {onShowOnMap && typeof v.lat === "number" && (
                   <button
                     type="button"
@@ -131,6 +120,19 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
                   </button>
                 )}
               </div>
+
+              {SOCIAL_ORDER.some((k) => socials[k]) && (
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-ink/50">
+                  {SOCIAL_ORDER.filter((k) => socials[k]).map((k, i, arr) => (
+                    <React.Fragment key={k}>
+                      <a href={socials[k]} target="_blank" rel="noreferrer" className="hover:text-ink hover:underline">
+                        {SOCIAL_LABEL[k]}
+                      </a>
+                      {i < arr.length - 1 && <span aria-hidden>·</span>}
+                    </React.Fragment>
+                  ))}
+                </div>
+              )}
             </div>
           </article>
         );

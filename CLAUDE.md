@@ -13,7 +13,7 @@ Actions cron and commit fresh JSON data.
 - Repo: `github.com/birdofnofeather/art-in-la`, default branch `main`.
 - Live site: `https://birdofnofeather.github.io/art-in-la/`
 - Scope: **museums + institutions only.** Commercial galleries were intentionally
-  removed (see below). Currently **52 scrapers**, **79 venues**
+  removed (see below). Currently **57 scrapers**, **79 venues**
   (31 museum / 22 community / 17 alternative / 9 academic), ~45 venues produce events.
 
 ## Layout
@@ -126,9 +126,20 @@ local run), these two scrapers no-op and the rest of the pipeline is unaffected.
 
 
 ### Map marker language (do not regress)
-Map markers do NOT encode org type. Filled terracotta dot = venue with upcoming
-events (16px), hollow gray dot = venue only (11px); focus ring on the focused
-venue. Org-type colors live only on venue cards and the filter tray.
+Map markers do NOT encode org type. Soft-blue dot (#6f9cbf, 14px) = venue with
+upcoming events; same-size translucent dot = venue only. Default view fits the
+Burbank→Long Beach core (not Lancaster). Map tab hidden on small screens.
+
+### Date presets (do not regress)
+Exactly four, always visible, one row: Today / This weekend / Next week
+(rolling 7 days, key `next7`) / All days. No custom-range UI.
+
+### Alerts + optional LLM fallback
+daily-scrape.yml opens/updates a "Scraper health alert" issue (emails the
+owner) when health.json shows 3+ silent runs, and a failure issue if the job
+fails. `scrapers/utils/llm_extract.py` (Claude Haiku) recovers events dropped
+for missing dates — active only when the ANTHROPIC_API_KEY repo secret is set;
+without it the pipeline is a no-op on that path.
 
 ### Academy Museum showtimes
 `scrapers/venues/academy_museum.py` reads exact session times from the Ticketure

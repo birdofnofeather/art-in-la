@@ -85,15 +85,11 @@ export const EVENTFUL_TYPES = new Set([
 export const DATE_PRESETS = [
   { key: "today", label: "Today" },
   { key: "weekend", label: "This weekend" },
-  { key: "next7", label: "Next 7 days" },
-  { key: "nextweek", label: "Next week" },
-  { key: "month", label: "This month" },
-  { key: "all", label: "All dates" },
-  { key: "custom", label: "Custom range…" },
+  { key: "next7", label: "Next week" },     // rolling 7 days
+  { key: "all", label: "All days" },
 ];
 
-// The date presets surfaced as always-visible chips (outside the filter tray).
-// The rest (Next week, This month, Custom) stay in the tray for power users.
+// All presets render as one always-visible chip row (no secondary tray row).
 export const PRIMARY_DATE_PRESETS = ["today", "weekend", "next7", "all"];
 
 // Day the public archive started accumulating data. Anything before this is

@@ -11,7 +11,7 @@ import re
 # ("the artist's family", "his family") by disallowing a preceding possessive.
 _FAMILY = re.compile(
     r"(?<!'s )(?<!s' )\b("
-    r"family[- ]friendly|families|family\s+day|kids?|children|childrens|"
+    r"family|families|kids?|children|childrens|"
     r"all[- ]ages|toddlers?|preschool|little\s+ones|story\s?time|story\s+hour|"
     r"sensory[- ]friendly"
     r")\b",

@@ -14,7 +14,7 @@ export default {
         ink: "#1c1917",             // warm near-black (stone-900)
         paper: "#f6f4ef",           // warm gallery off-white
         card: "#fffdf8",            // panel surface, slightly warm
-        accent: "#b5442c",          // terracotta — links, markers, highlights
+        accent: "#527a9e",          // calm lake blue — links, markers, highlights
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "sans-serif"],

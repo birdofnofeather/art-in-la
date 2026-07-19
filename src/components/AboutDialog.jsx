@@ -71,25 +71,18 @@ const RESOURCES = [
   {
     group: "Also covering visual art",
     items: [
-      { name: "ARTFORUM artguide", url: "https://artguide.artforum.com/artguide/place/los-angeles",
-        blurb: "Commercial gallery and museum exhibition listings — the standard guide to the gallery world." },
-      { name: "Curate LA", url: "https://curate.la/",
-        blurb: "Gallery openings and the week's art-scene calendar, Instagram-native." },
-      { name: "Mommy Poppins LA", url: "https://mommypoppins.com/los-angeles-kids",
-        blurb: "Kids and family activities across LA, including museum family days." },
-      { name: "LAist: Things to Do", url: "https://laist.com/best-things-to-do",
-        blurb: "Editorial picks of the week across all of LA culture." },
+      { name: "ARTFORUM artguide", url: "https://artguide.artforum.com/artguide/place/los-angeles", blurb: "commercial galleries + museums" },
+      { name: "Curate LA", url: "https://curate.la/", blurb: "gallery openings, the scene" },
+      { name: "Mommy Poppins LA", url: "https://mommypoppins.com/los-angeles-kids", blurb: "kids & family activities" },
+      { name: "LAist: Things to Do", url: "https://laist.com/best-things-to-do", blurb: "editorial picks of the week" },
     ],
   },
   {
     group: "Performing arts",
     items: [
-      { name: "Stage Raw", url: "https://stageraw.com/stage-listings/",
-        blurb: "Independent LA theater listings and reviews." },
-      { name: "BroadwayWorld LA", url: "https://www.broadwayworld.com/los-angeles/regionalshows/",
-        blurb: "Touring and regional theater across greater LA." },
-      { name: "Theater.Guide LA", url: "https://theater.guide/city/los-angeles/",
-        blurb: "Searchable calendar of LA stages and performing-arts centers." },
+      { name: "Stage Raw", url: "https://stageraw.com/stage-listings/", blurb: "independent LA theater" },
+      { name: "BroadwayWorld LA", url: "https://www.broadwayworld.com/los-angeles/regionalshows/", blurb: "touring & regional shows" },
+      { name: "Theater.Guide LA", url: "https://theater.guide/city/los-angeles/", blurb: "searchable stage calendar" },
     ],
   },
 ];
@@ -101,7 +94,7 @@ function ResourcesSection() {
       {RESOURCES.map((g) => (
         <div key={g.group} className="space-y-1.5">
           <div className="text-xs font-semibold uppercase tracking-wider text-ink/60">{g.group}</div>
-          <ul className="space-y-1 text-sm text-ink/70">
+          <ul className="space-y-0.5 text-xs text-ink/70">
             {g.items.map((r) => (
               <li key={r.name}>
                 <a href={r.url} target="_blank" rel="noreferrer" className="font-medium text-ink underline underline-offset-2 hover:text-accent">
@@ -117,44 +110,6 @@ function ResourcesSection() {
   );
 }
 
-function SubscribeSection() {
-  const base = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  const feeds = [
-    { key: "all", label: "All events" },
-    { key: "free", label: "Free events" },
-    { key: "family", label: "Family-friendly" },
-  ];
-  const [copied, setCopied] = useState("");
-  const copy = async (url, key) => {
-    try { await navigator.clipboard.writeText(url); setCopied(key); setTimeout(() => setCopied(""), 1500); }
-    catch { /* clipboard blocked — the link is still selectable */ }
-  };
-  return (
-    <div className="space-y-2 border-t border-black/10 pt-4">
-      <h3 className="text-sm font-semibold">Subscribe in your calendar</h3>
-      <p className="text-xs text-ink/60">
-        Add a live feed once and new listings appear automatically. In Google
-        Calendar: <em>Other calendars → From URL</em>. In Apple Calendar:{" "}
-        <em>File → New Calendar Subscription</em>.
-      </p>
-      <div className="space-y-1.5">
-        {feeds.map((f) => {
-          const url = `${origin}${base}/data/feeds/${f.key}.ics`;
-          return (
-            <div key={f.key} className="flex items-center gap-2">
-              <span className="w-28 shrink-0 text-xs font-medium">{f.label}</span>
-              <code className="min-w-0 flex-1 truncate rounded bg-black/5 px-2 py-1 text-xs text-ink/70">{url}</code>
-              <button type="button" onClick={() => copy(url, f.key)} className="chip text-xs">
-                {copied === f.key ? "Copied" : "Copy"}
-              </button>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
 
 export default function AboutDialog({ onClose }) {
   const panelRef = useRef(null);
@@ -177,13 +132,13 @@ export default function AboutDialog({ onClose }) {
   return (
     <>
       <div className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm" onClick={onClose} aria-hidden />
-      <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto p-4 sm:items-center">
+      <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto p-4 py-8">
         <div
           ref={panelRef}
           role="dialog"
           aria-modal="true"
           aria-labelledby="about-heading"
-          className="panel w-full max-w-lg space-y-5 p-6"
+          className="panel my-auto max-h-[calc(100vh-4rem)] w-full max-w-lg space-y-5 overflow-y-auto p-6"
         >
           <div className="flex items-start justify-between gap-3">
             <h2 id="about-heading" className="font-display text-xl font-bold">About Art in LA</h2>
@@ -221,8 +176,6 @@ export default function AboutDialog({ onClose }) {
           </div>
 
           <ResourcesSection />
-
-          <SubscribeSection />
 
           {/* Feedback */}
           <div className="space-y-2 border-t border-black/10 pt-4">

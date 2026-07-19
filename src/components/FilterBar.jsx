@@ -85,7 +85,6 @@ function ActivePill({ label, onRemove }) {
 }
 
 const PRIMARY_PRESET_ITEMS = DATE_PRESETS.filter((p) => PRIMARY_DATE_PRESETS.includes(p.key));
-const SECONDARY_PRESET_ITEMS = DATE_PRESETS.filter((p) => !PRIMARY_DATE_PRESETS.includes(p.key));
 
 export default function FilterBar({
   tab,
@@ -250,37 +249,6 @@ export default function FilterBar({
               <div>
                 <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">Event type</div>
                 <EventTypeChips selected={eventTypes} onChange={setEventTypes} />
-              </div>
-              <div>
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">More dates</div>
-                <FilterChips
-                  items={SECONDARY_PRESET_ITEMS}
-                  selectedKey={datePreset || "all"}
-                  onSelect={setDatePreset}
-                />
-                {datePreset === "custom" && (
-                  <div className="mt-3 flex flex-wrap items-center gap-3">
-                    <div className="flex flex-col gap-1">
-                      <label className="text-xs text-ink/60">From</label>
-                      <input
-                        type="date"
-                        value={customStart || ""}
-                        onChange={(e) => setCustomStart(e.target.value)}
-                        className="rounded border border-black/20 px-2 py-1 text-sm"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <label className="text-xs text-ink/60">To</label>
-                      <input
-                        type="date"
-                        value={customEnd || ""}
-                        onChange={(e) => setCustomEnd(e.target.value)}
-                        className="rounded border border-black/20 px-2 py-1 text-sm"
-                        min={customStart || undefined}
-                      />
-                    </div>
-                  </div>
-                )}
               </div>
             </>
           )}

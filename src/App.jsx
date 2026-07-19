@@ -116,8 +116,17 @@ export default function App() {
   const [archiveMode, setArchiveMode] = useState("events");
 
   // Events tab: collapse each venue's events into one stacked card (e.g. Academy
-  // Museum's near-daily screenings).
-  const [stackByVenue, setStackByVenue] = useState(false);
+  // Museum's near-daily screenings). null = auto: on small screens with the
+  // "Today" preset, stacking is the default.
+  const [stackByVenue, setStackByVenue] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 640px)");
+    const apply = () => setIsMobile(mq.matches);
+    apply();
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
+  }, []);
 
   // About / feedback dialog
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -248,6 +257,10 @@ export default function App() {
     return max ? new Date(max) : null;
   }, [data.events]);
 
+  // The About dialog is a modal — navigating underneath it should close it
+  // (on mobile it otherwise appears to "stick" across pages).
+  useEffect(() => { setAboutOpen(false); }, [tab]);
+
   // Clear detailVenueId if the venue isn't in the loaded data (defensive).
   useEffect(() => {
     if (detailVenueId && Object.keys(venuesById).length > 0 && !venuesById[detailVenueId]) {
@@ -278,6 +291,10 @@ export default function App() {
     patchFilters({ query: venue?.name || "" });
     setTab("events");
   };
+
+  // Stack-by-venue: explicit user choice wins; otherwise auto-on for
+  // mobile + Today (dense same-day listings read better stacked).
+  const effectiveStack = stackByVenue ?? (isMobile && datePreset === "today");
 
   const stats = {
     venues:      data.venues.length,
@@ -387,9 +404,9 @@ export default function App() {
                   </div>
                   <button
                     type="button"
-                    onClick={() => setStackByVenue((s) => !s)}
-                    className={`chip text-xs ${stackByVenue ? "chip-active" : ""}`}
-                    aria-pressed={stackByVenue}
+                    onClick={() => setStackByVenue(!effectiveStack)}
+                    className={`chip text-xs ${effectiveStack ? "chip-active" : ""}`}
+                    aria-pressed={effectiveStack}
                     title="Group each venue's events into a single card"
                   >
                     Stack by venue
@@ -413,7 +430,7 @@ export default function App() {
                   onReset={onReset}
                   favs={favs}
                   onToggleFav={toggleFav}
-                  stackByVenue={stackByVenue}
+                  stackByVenue={effectiveStack}
                 />
               </>
             )}

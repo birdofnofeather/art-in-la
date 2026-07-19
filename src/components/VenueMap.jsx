@@ -48,7 +48,7 @@ function makeLabelIcon(text) {
 // One marker language instead of five colors + letters + a status dot:
 // filled terracotta = has upcoming events, hollow gray = venue only.
 function makeIcon(eventful, focused = false) {
-  const size = eventful ? 16 : 11;
+  const size = 14;
   const cls = `dot-marker ${eventful ? "eventful" : "quiet"}${focused ? " focused" : ""}`;
   return L.divIcon({
     className: "",
@@ -95,8 +95,10 @@ function FitBoundsOnce({ mappable, focusedVenueId }) {
   useEffect(() => {
     if (done.current || focusedVenueId || mappable.length === 0) return;
     done.current = true;
-    const bounds = L.latLngBounds(mappable.map((v) => [v.lat, v.lng]));
-    map.fitBounds(bounds.pad(0.05), { maxZoom: 12 });
+    // Default view: the core of LA where most venues sit — roughly Burbank
+    // down to Long Beach — instead of zooming out to fit Lancaster.
+    const CORE = L.latLngBounds([33.73, -118.56], [34.20, -118.10]);
+    map.fitBounds(CORE, { maxZoom: 12 });
   }, [map, mappable, focusedVenueId]);
 
   return null;
@@ -238,11 +240,11 @@ export default function VenueMap({
       {/* Legend + toggle */}
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2.5 text-xs text-ink/60">
         <span className="inline-flex items-center gap-1.5">
-          <span className="inline-block h-3 w-3 rounded-full bg-accent" />
+          <span className="inline-block h-3 w-3 rounded-full" style={{ background: "#6f9cbf" }} />
           Upcoming events
         </span>
         <span className="inline-flex items-center gap-1.5">
-          <span className="inline-block h-2.5 w-2.5 rounded-full border-2 border-stone-400 bg-card" />
+          <span className="inline-block h-3 w-3 rounded-full" style={{ background: "rgba(111,156,191,.22)", border: "1px solid rgba(111,156,191,.45)" }} />
           Venue (nothing scheduled)
         </span>
 

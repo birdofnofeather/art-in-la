@@ -6,8 +6,31 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
+UID:autry-2026-07-19-ftbol-for-the-people-live-world-cup-fina-69b74efbf5@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260719T173000Z
+DTEND:20260719T223000Z
+SUMMARY:Fútbol For The People: Live World Cup Final Game Screening
+LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
+URL:https://theautry.org/events/autry-outdoors/futbol-people-live-world-cu
+ p-final-game-screening
+DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
+ ts/autry-outdoors/futbol-people-live-world-cup-final-game-screening\n\nAu
+ try Outdoors\, Family Activities\, Community Partner Events
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-07-19-fantastic-creatures-family-workshop-98454db7f4@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260719T180000Z
+SUMMARY:Fantastic Creatures: Family Workshop
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/fantastic-creatures
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/fantastic-c
+ reatures\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-07-19-family-workshop-spy-kids-8d2a417330@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260719T183000Z
 DTEND:20260719T203000Z
 SUMMARY:Family Workshop: Spy Kids
@@ -20,7 +43,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-07-19-25th-anniversary-of-spy-kids-with-robert-c7760b21c6@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260719T210000Z
 DTEND:20260719T233000Z
 SUMMARY:25th Anniversary of Spy Kids with Robert Rodriguez\, plus a perfor
@@ -34,7 +57,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-07-20-boone-childrens-gallery-2a23a33198@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260720T180000Z
 SUMMARY:Boone Children's Gallery
 LOCATION:LACMA
@@ -46,7 +69,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-07-21-boone-childrens-gallery-d676fca238@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260721T180000Z
 SUMMARY:Boone Children's Gallery
 LOCATION:LACMA
@@ -58,7 +81,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-07-23-boone-childrens-gallery-eb3dd2cf11@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260723T180000Z
 SUMMARY:Boone Children's Gallery
 LOCATION:LACMA
@@ -70,7 +93,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-07-24-boone-childrens-gallery-e1d7ec4bd6@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260724T180000Z
 SUMMARY:Boone Children's Gallery
 LOCATION:LACMA
@@ -82,24 +105,24 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-07-25-kcrw-summer-nights-at-molaa-87c95fc7ec@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260725T010000Z
 DTEND:20260725T050000Z
 SUMMARY:KCRW Summer Nights at MOLAA!
 LOCATION:628 Alamitos Ave\, Long Beach\, CA 90802
 URL:https://molaa.org/events/2026/7/25/kcrw-summer-nights-at-molaa
 DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
- ts/2026/7/25/kcrw-summer-nights-at-molaa\n\n<p style="white-space:pre-wra
- p\;" data-rte-preserve-empty="true"><strong>Head to Long Beach for a free
+ ts/2026/7/25/kcrw-summer-nights-at-molaa\n\nHead to Long Beach for a free
  \, all-ages KCRW Summer Nights party with the Museum of Latin American Ar
- t (MOLAA). Dance under the stars to sets from KCRW DJs Tyler Boudreaux &a
- mp\; Wyldeflower\, then explore the museum’s vibrant exhibitions featur
- ing Latin American artists like Mercedes Gertz\, Guillermo Bert\, and Ant
- onio Romero. E
+ t (MOLAA). Dance under the stars to sets from KCRW DJs Tyler Boudreaux & 
+ Wyldeflower\, then explore the museum’s vibrant exhibitions featuring L
+ atin American artists like Mercedes Gertz\, Guillermo Bert\, and Antonio 
+ Romero. Enjoy food trucks\, a full bar\, and an open-air courtyard as mus
+ ic\, art\, and c
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-07-25-calm-morning-costume-designs-inspired-by-7be97973d8@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260725T160000Z
 DTEND:20260725T200000Z
 SUMMARY:Calm Morning: Costume Designs Inspired by Disability Pride Month
@@ -111,8 +134,20 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  -019ebcd0-42e4-47d7-fc00-6bed95eb0b51
 END:VEVENT
 BEGIN:VEVENT
+UID:autry-2026-07-25-national-day-of-the-cowboy-and-cowgirl-57595df29c@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260725T170000Z
+DTEND:20260726T000000Z
+SUMMARY:National Day of the Cowboy and Cowgirl
+LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
+URL:https://theautry.org/cowboy
+DESCRIPTION:Autry Museum of the American West · https://theautry.org/cowb
+ oy\n\nAutry Outdoors\, Family Activities\, Live Performances\, Member Eve
+ nts
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2026-07-25-bilingual-russianenglish-storytime-51e692dddf@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260725T173000Z
 DTEND:20260725T180000Z
 SUMMARY:Bilingual Russian-English Storytime
@@ -127,8 +162,28 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/storytime/2026-0
  ildren aged 4-8 and their families\, this event cele
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_villa-2026-07-25-artistatwork-papyrus-making-5064c481d1@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260725T180000Z
+SUMMARY:Artist-at-Work: Papyrus Making
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/artist-at-work-papyrus-making
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
+ rk-papyrus-making\n\nDemonstrations\, Family
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-07-25-papyrus-scroll-making-family-workshop-2b3163598d@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260725T180000Z
+SUMMARY:Papyrus Scroll Making: Family Workshop
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/papyrus-scroll-workshop
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
+ ll-workshop\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-07-25-wallace-gromit-the-curse-of-the-wererabb-a9101113d4@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260725T180000Z
 DTEND:20260725T191500Z
 SUMMARY:Wallace & Gromit: The Curse of the Were-Rabbit
@@ -141,7 +196,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-07-25-family-day-at-the-wende-bob-baker-marion-d092371e40@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260725T210000Z
 DTEND:20260725T220000Z
 SUMMARY:Family Day at the Wende: Bob Baker Marionette Theater
@@ -158,12 +213,36 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/family-day-at-th
  About: 
 END:VEVENT
 BEGIN:VEVENT
+UID:autry-2026-07-25-street-food-cinema-back-to-the-future-ii-09947d8dac@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260726T010000Z
+DTEND:20260726T060000Z
+SUMMARY:Street Food Cinema |Back to the Future III(1990)
+LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
+URL:https://theautry.org/events/family-activities/street-food-cinema-back-
+ future-iii-1990
+DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
+ ts/family-activities/street-food-cinema-back-future-iii-1990\n\nFamily Ac
+ tivities\, Community Partner Events\, Autry Outdoors\, Member Events\, Li
+ ve Performances
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-07-26-fantastic-creatures-family-workshop-406ccc7bdc@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260726T180000Z
+SUMMARY:Fantastic Creatures: Family Workshop
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/fantastic-creatures
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/fantastic-c
+ reatures\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:sparc-2026-07-26-workshop-8220summer-cyanotype-printmakin-2d288d7bc8@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260726T180000Z
 DTEND:20260726T230000Z
-SUMMARY:[Workshop] &#8220\;Summer Cyanotype Printmaking Workshop&#8221\; w
- ith Elsie Sims
+SUMMARY:[Workshop] “Summer Cyanotype Printmaking Workshop” with Elsie 
+ Sims
 LOCATION:685 Venice Blvd\, Venice\, CA 90291
 URL:https://sparcinla.org/event/workshop-summer-cyanotype-printmaking-work
  shop-with-elsie-sims/
@@ -177,8 +256,61 @@ DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
  notype Free Community Printmaking Workshops\, Su
 END:VEVENT
 BEGIN:VEVENT
+UID:wende-2026-07-29-in-the-shadow-of-a-world-cup-legend-a-bo-a01989ed0f@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260729T170000Z
+DTEND:20260729T180000Z
+SUMMARY:In the Shadow of a World Cup Legend: A Book Launch with Dagmar Eck
+ el
+LOCATION:10808 Culver Blvd\, Culver City\, CA 90230
+URL:https://wendemuseum.org/event/dagmar-eckel/
+DESCRIPTION:Wende Museum · https://wendemuseum.org/event/dagmar-eckel/\n\
+ nDagmar Eckel grew up as the daughter of Horst Eckel\, a member of the We
+ st German team that won the 1954 World Cup\, the underdog victory remembe
+ red as the Miracle of Bern and credited with helping a divided and wounde
+ d country heal after the Second World War. That is the public story. Her 
+ memoir tells the private one. The World Champion’s Princess: Unbound & 
+ Unbroken asks what it does to a child to
+END:VEVENT
+BEGIN:VEVENT
+UID:esmoa-2026-07-31-la-arts-activation-panel-22d559d0a0@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260801T003000Z
+DTEND:20260801T020000Z
+SUMMARY:L.A. Arts Activation Panel
+LOCATION:208 Main St\, El Segundo\, CA 90245
+URL:https://esmoa.org/event/l-a-arts-activation-panel/
+DESCRIPTION:El Segundo Museum of Art (ESMoA) · Free · https://esmoa.org/
+ event/l-a-arts-activation-panel/\n\nFriday July 31\, 2026 5:30 pm to 7:00
+  pm Join us on July 31st for a powerful panel discussion with Los Angeles
+ -based artists and arts workers on the impact and continual importance of
+  the arts\, moderated by our Getty Marrow Intern Eva Asiddao. This event 
+ is free and open to the public. All ages are welcome. RSVP by clicking th
+ e button below! (Panelists will be announced soon) RSVP
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-08-01-artistatwork-papyrus-making-a84b8d3a93@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260801T180000Z
+SUMMARY:Artist-at-Work: Papyrus Making
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/artist-at-work-papyrus-making
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
+ rk-papyrus-making\n\nDemonstrations\, Family
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-08-01-papyrus-scroll-making-family-workshop-ad163fce6d@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260801T180000Z
+SUMMARY:Papyrus Scroll Making: Family Workshop
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/papyrus-scroll-workshop
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
+ ll-workshop\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-08-01-who-framed-roger-rabbit-8140f2a650@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260801T180000Z
 DTEND:20260801T191500Z
 SUMMARY:Who Framed Roger Rabbit
@@ -190,8 +322,28 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  39caa28feba
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_center-2026-08-01-garden-concerts-for-kids-dan-claudia-zan-56de514140@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260801T230000Z
+SUMMARY:Garden Concerts for Kids: Dan + Claudia Zanes with Tyree Austin
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-zanes-austin
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-zanes-austin\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-08-02-garden-concerts-for-kids-dan-claudia-zan-e9defcc312@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260802T230000Z
+SUMMARY:Garden Concerts for Kids: Dan + Claudia Zanes with Tyree Austin
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-zanes-austin
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-zanes-austin\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-08-08-harriet-the-spy-in-4k-add0324b50@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260808T180000Z
 DTEND:20260808T191500Z
 SUMMARY:Harriet the Spy in 4K
@@ -203,8 +355,50 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  e21
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_center-2026-08-08-garden-concerts-for-kids-flor-bromley-e4ffb70adf@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260808T230000Z
+SUMMARY:Garden Concerts for Kids: Flor Bromley
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-flor-bromley
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-flor-bromley\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-08-09-fantastic-creatures-family-workshop-fbc09168ff@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260809T180000Z
+SUMMARY:Fantastic Creatures: Family Workshop
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/fantastic-creatures
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/fantastic-c
+ reatures\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
+UID:hammer-2026-08-09-family-flicks-turning-red-8765b78c96@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260809T180020Z
+SUMMARY:Family Flicks: Turning Red
+LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
+URL:https://hammer.ucla.edu/programs-events/2026/family-flicks-turning-red
+DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
+ family-flicks-turning-red\n\nWith vibrant animation and playful nods to t
+ he stylings of anime and manga\, Turning Red captures the energy\, uncert
+ ainty\, and excitement of growing up.
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-08-09-garden-concerts-for-kids-flor-bromley-d97c130dc7@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260809T230000Z
+SUMMARY:Garden Concerts for Kids: Flor Bromley
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-flor-bromley
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-flor-bromley\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2026-08-14-kcrw-summer-nights-good-food-night-marke-0944e1d75e@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260815T010000Z
 DTEND:20260815T050000Z
 SUMMARY:KCRW Summer Nights: Good Food Night Market Edition
@@ -221,8 +415,28 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/kcrw-sum
  ya and Mobile Church
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_villa-2026-08-15-artistatwork-papyrus-making-3c8b4ab866@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260815T180000Z
+SUMMARY:Artist-at-Work: Papyrus Making
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/artist-at-work-papyrus-making
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
+ rk-papyrus-making\n\nDemonstrations\, Family
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-08-15-papyrus-scroll-making-family-workshop-375b226739@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260815T180000Z
+SUMMARY:Papyrus Scroll Making: Family Workshop
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/papyrus-scroll-workshop
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
+ ll-workshop\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-08-15-scoobydoo-in-35mm-1e98a3e34a@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260815T180000Z
 DTEND:20260815T191500Z
 SUMMARY:Scooby-Doo in 35mm
@@ -233,8 +447,28 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  .org/en/programs/detail/scooby-doo-019db103-7ebb-e23a-c52a-b153e188f713
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_center-2026-08-15-garden-concerts-for-kids-elizabeth-mitch-7e12f45d9f@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260815T230000Z
+SUMMARY:Garden Concerts for Kids: Elizabeth Mitchell
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-elizabeth-mitchell
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-elizabeth-mitchell\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-08-16-garden-concerts-for-kids-elizabeth-mitch-a1373d797a@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260816T230000Z
+SUMMARY:Garden Concerts for Kids: Elizabeth Mitchell
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/garden-concert-elizabeth-mitchell
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/garden-conc
+ ert-elizabeth-mitchell\n\nFamily\, Performance
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-08-21-ponyo-in-35mm-a9a7063211@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260821T213000Z
 DTEND:20260821T220000Z
 SUMMARY:Ponyo in 35mm
@@ -246,7 +480,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-08-22-nancy-drew-c2b2e581ee@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260822T180000Z
 DTEND:20260822T191500Z
 SUMMARY:Nancy Drew
@@ -257,8 +491,18 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  .org/en/programs/detail/nancy-drew-019db103-fddd-6a12-cf78-c41fe1e4486c
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_center-2026-08-23-fantastic-creatures-family-workshop-8d7249ea98@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260823T180000Z
+SUMMARY:Fantastic Creatures: Family Workshop
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/fantastic-creatures
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/fantastic-c
+ reatures\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2026-08-29-bilingual-russianenglish-storytime-2bb1067165@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260829T173000Z
 DTEND:20260829T180000Z
 SUMMARY:Bilingual Russian-English Storytime
@@ -274,7 +518,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/storytime/2026-0
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-08-29-zootopia-357fbfff45@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260829T180000Z
 DTEND:20260829T191500Z
 SUMMARY:Zootopia
@@ -285,8 +529,46 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  .org/en/programs/detail/zootopia-019dda3b-5b6c-ff0e-36d9-e452ba39a26f
 END:VEVENT
 BEGIN:VEVENT
+UID:wende-2026-09-02-digitization-day-free-archival-digitizat-afffcb048c@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260902T193000Z
+DTEND:20260902T233000Z
+SUMMARY:Digitization Day: Free Archival Digitization
+LOCATION:10808 Culver Blvd\, Culver City\, CA 90230
+URL:https://wendemuseum.org/event/digitization-day-free-archival-digitizat
+ ion-3/2026-09-02/
+DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/digitiza
+ tion-day-free-archival-digitization-3/2026-09-02/\n\nLooking to digitize 
+ personal or family archival materials? Sign up for the Wende Museum’s D
+ igitization Day on Friday\, May 29th! Reserve a free 50-minute time slot 
+ at one of the Wende Museum’s scanners. In addition to making scanning s
+ essions available through advanced registration\, the Wende is also accep
+ ting walk-in appointments. Wende staff will be on hand to help you as nee
+ ded. Please bring you
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-09-13-artistatwork-papyrus-making-cfd4342585@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260913T180000Z
+SUMMARY:Artist-at-Work: Papyrus Making
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/artist-at-work-papyrus-making
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
+ rk-papyrus-making\n\nDemonstrations\, Family
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_villa-2026-09-13-papyrus-scroll-making-family-workshop-8df70f9539@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260913T180000Z
+SUMMARY:Papyrus Scroll Making: Family Workshop
+LOCATION:Getty Villa
+URL:https://www.getty.edu/calendar/papyrus-scroll-workshop
+DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
+ ll-workshop\n\nArt Making\, Family
+END:VEVENT
+BEGIN:VEVENT
 UID:la_plaza-2026-09-13-fiestas-patrias-family-day-free-with-rsv-e7e80505f6@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20260913T190000Z
 SUMMARY:Fiestas Patrias Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -295,8 +577,51 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
  /fiestas-patrias/?event_date=2026-09-13
 END:VEVENT
 BEGIN:VEVENT
+UID:the_broad-2026-09-19-i-am-yoko-3576a93131@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260920T023000Z
+DTEND:20260920T040000Z
+SUMMARY:I Am Yoko
+LOCATION:221 S Grand Ave\, Los Angeles\, CA 90012
+URL:https://www.thebroad.org/i-am-yoko
+DESCRIPTION:The Broad · https://www.thebroad.org/i-am-yoko\n\nWhat if you
+  could become Yoko Ono for one night? Join us for a first-look workshop o
+ f I Am Yoko \, a multimedia musical currently in development\, written\, 
+ designed\, and directed by musician Yuka Honda and LA artist Glenn Kaino 
+ \, and performed by Honda and Kaino with vocalists Theo Bleckmann \, and 
+ Yoko Ono’s granddaughter Emi Helfrich \, and cellist Maggie Parkins . I
+ ntent on humanizing Yoko Ono \, an
+END:VEVENT
+BEGIN:VEVENT
+UID:molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20260927T180000Z
+SUMMARY:Lucha Libre Film Screening and Family Expo!
+LOCATION:628 Alamitos Ave\, Long Beach\, CA 90802
+URL:https://molaa.org/events/2026/09/27/lucha-libre-screening-expo
+DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
+ ts/2026/09/27/lucha-libre-screening-expo\n\nJoin us for an afternoon of f
+ ood trucks\, art workshops\, panels\, meet & greet with Lucha Libre wrest
+ lers\, and a rare film screening of La Mujer Murciélago (The Batwoman) h
+ osted by art historian and film preservationist Viviana Garcia Besne\, an
+ d more! Free admission with the Month of Lucha Libre All Access Badge Pas
+ s. Badges go on sale July 6th. If spaces are still available\, individual
+  tickets to t
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20261001T220000Z
+SUMMARY:Curator's Tour: *The Holy Family at Home*
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/curators-tour-holy-family
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
+ ur-holy-family\n\nDiscover how the Holy Family was represented in Norther
+ n European art around 1500 with our exhibition curators
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-10-24-monster-mash-6a9f290510@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20261024T173000Z
 DTEND:20261024T230000Z
 SUMMARY:Monster Mash
@@ -309,12 +634,45 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260719T020240Z
+DTSTAMP:20260719T061442Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
 URL:https://lapca.org/event/ddlm/?event_date=2026-10-25
 DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
  /ddlm/?event_date=2026-10-25
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20261105T230000Z
+SUMMARY:Curator's Tour: *The Holy Family at Home*
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/curators-tour-holy-family
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
+ ur-holy-family\n\nDiscover how the Holy Family was represented in Norther
+ n European art around 1500 with our exhibition curators
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20261203T230000Z
+SUMMARY:Curator's Tour: *The Holy Family at Home*
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/curators-tour-holy-family
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
+ ur-holy-family\n\nDiscover how the Holy Family was represented in Norther
+ n European art around 1500 with our exhibition curators
+END:VEVENT
+BEGIN:VEVENT
+UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
+DTSTAMP:20260719T061442Z
+DTSTART:20270107T230000Z
+SUMMARY:Curator's Tour: *The Holy Family at Home*
+LOCATION:Getty Center
+URL:https://www.getty.edu/calendar/curators-tour-holy-family
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
+ ur-holy-family\n\nDiscover how the Holy Family was represented in Norther
+ n European art around 1500 with our exhibition curators
 END:VEVENT
 END:VCALENDAR

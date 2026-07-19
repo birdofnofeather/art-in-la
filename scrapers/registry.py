@@ -81,6 +81,12 @@ from .venues.caam import Scraper as CAAM
 from .venues.moah import Scraper as MOAH
 from .venues.laband import Scraper as Laband
 
+# --- Round 9: ESMoA, Luckman, JACCC, ArtCenter ---
+from .venues.esmoa import Scraper as ESMoA
+from .venues.luckman import Scraper as Luckman
+from .venues.jaccc import Scraper as JACCC
+from .venues.artcenter import Scraper as ArtCenter
+
 SCRAPERS = [
     LACMA,
     Hammer,
@@ -143,4 +149,8 @@ SCRAPERS = [
     CAAM,
     MOAH,
     Laband,
+    ESMoA,
+    Luckman,
+    JACCC,
+    ArtCenter,
 ]
