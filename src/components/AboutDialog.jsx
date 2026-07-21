@@ -131,8 +131,8 @@ export default function AboutDialog({ onClose }) {
 
   return (
     <>
-      <div className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm" onClick={onClose} aria-hidden />
-      <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto p-4 py-8">
+      <div className="fixed inset-0 z-[1100] bg-black/30 backdrop-blur-sm" onClick={onClose} aria-hidden />
+      <div className="fixed inset-0 z-[1200] flex items-start justify-center overflow-y-auto p-4 py-8">
         <div
           ref={panelRef}
           role="dialog"
@@ -155,10 +155,10 @@ export default function AboutDialog({ onClose }) {
           {/* What this is */}
           <div className="space-y-2 text-sm text-ink/70">
             <p>
-              <strong>The visual-art calendar for LA County.</strong> Every museum,
-              community art center, university gallery, and artist-run space —
-              their exhibitions, openings, screenings, talks, and workshops, in
-              one free place. No accounts, no ads, no ticket-seller noise.
+              <em className="not-italic font-semibold text-ink">Events and Exhibitions at non-profit art venues across LA County.</em>{" "}
+              Museums, community art centers, university galleries, and artist-run
+              spaces — their exhibitions, openings, screenings, talks, and
+              workshops, in one free place. No accounts, no ads, no ticket-seller noise.
             </p>
             <p>
               What we deliberately leave out: <em>commercial galleries</em> (see

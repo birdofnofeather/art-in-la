@@ -45,14 +45,26 @@ function makeLabelIcon(text) {
   });
 }
 
-// One marker language instead of five colors + letters + a status dot:
-// filled terracotta = has upcoming events, hollow gray = venue only.
-function makeIcon(eventful, focused = false) {
+// Marker colour encodes what a venue offers, matching the filter pills:
+//   free  → green (a free upcoming event)     family → blue (a family event)
+//   events→ medium grey (other upcoming event) none  → outline only
+// Priority when a venue has several: free, then family, then events.
+const MARKER = {
+  free:   { bg: "#0f7d55", border: "none" },
+  family: { bg: "#2f6f9f", border: "none" },
+  events: { bg: "#9c9690", border: "none" },
+  none:   { bg: "transparent", border: "1.5px solid #1c1917" },
+};
+function makeIcon(kind, focused = false) {
   const size = 14;
-  const cls = `dot-marker ${eventful ? "eventful" : "quiet"}${focused ? " focused" : ""}`;
+  const m = MARKER[kind] || MARKER.none;
+  const ring = focused ? "box-shadow:0 0 0 3px #fff,0 0 0 6px rgba(47,111,159,.4);" : "";
+  const html = `<div style="width:${size}px;height:${size}px;border-radius:999px;`
+    + `background:${m.bg};border:${m.border};box-sizing:border-box;`
+    + `box-shadow:0 0 0 2px #fff,0 1px 3px rgba(28,25,23,.3);${ring}"></div>`;
   return L.divIcon({
     className: "",
-    html: `<div class="${cls}" style="width:${size}px;height:${size}px"></div>`,
+    html,
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
     popupAnchor: [0, -(size / 2 + 4)],
@@ -115,11 +127,18 @@ export default function VenueMap({
   const iconCache = useMemo(() => new Map(), []);
   const markerRefs = useRef({});
 
+  const kindFor = (v) => {
+    const evs = eventsByVenue.get(v.id) || [];
+    if (evs.some((e) => e.is_free === true)) return "free";
+    if (evs.some((e) => (e.audience || []).includes("family"))) return "family";
+    if (evs.length > 0 || eventfulIds.has(v.id)) return "events";
+    return "none";
+  };
   const iconFor = (v) => {
-    const eventful = eventfulIds.has(v.id);
+    const kind = kindFor(v);
     const focused = v.id === focusedVenueId;
-    const key = `${eventful ? 1 : 0}|${focused ? 1 : 0}`;
-    if (!iconCache.has(key)) iconCache.set(key, makeIcon(eventful, focused));
+    const key = `${kind}|${focused ? 1 : 0}`;
+    if (!iconCache.has(key)) iconCache.set(key, makeIcon(kind, focused));
     return iconCache.get(key);
   };
 
@@ -138,8 +157,35 @@ export default function VenueMap({
     [venues]
   );
 
+  const dot = (bg, border) => (
+    <span className="inline-block h-3 w-3 rounded-full" style={{ background: bg, border, boxSizing: "border-box" }} />
+  );
+
   return (
     <div className="panel overflow-hidden">
+      {/* Controls above the map: toggle (left) · key (right) */}
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-ink/10 px-4 py-2.5 text-xs text-ink/70">
+        <label className="inline-flex cursor-pointer items-center gap-2 select-none">
+          <button
+            type="button"
+            onClick={() => setOnlyEventful(!onlyEventful)}
+            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${onlyEventful ? "bg-accent" : "bg-ink/20"}`}
+            aria-pressed={onlyEventful}
+            aria-label={onlyEventful ? "Showing venues with events only" : "Showing all venues"}
+          >
+            <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white shadow transition-transform ${onlyEventful ? "translate-x-[18px]" : "translate-x-0.5"}`} />
+          </button>
+          <span>{onlyEventful ? "Venues with events" : "All venues"}</span>
+        </label>
+
+        <div className="ml-auto flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span className="inline-flex items-center gap-1.5">{dot("#0f7d55")} Free</span>
+          <span className="inline-flex items-center gap-1.5">{dot("#2f6f9f")} Family</span>
+          <span className="inline-flex items-center gap-1.5">{dot("#9c9690")} Events</span>
+          <span className="inline-flex items-center gap-1.5">{dot("transparent", "1.5px solid #1c1917")} No events</span>
+        </div>
+      </div>
+
       <MapContainer
         center={CENTER}
         zoom={ZOOM}
@@ -236,31 +282,6 @@ export default function VenueMap({
           );
         })}
       </MapContainer>
-
-      {/* Legend + toggle */}
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-2.5 text-xs text-ink/60">
-        <span className="inline-flex items-center gap-1.5">
-          <span className="inline-block h-3 w-3 rounded-full" style={{ background: "#6f9cbf" }} />
-          Upcoming events
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          <span className="inline-block h-3 w-3 rounded-full" style={{ background: "rgba(111,156,191,.22)", border: "1px solid rgba(111,156,191,.45)" }} />
-          Venue (nothing scheduled)
-        </span>
-
-        <label className="ml-auto inline-flex cursor-pointer items-center gap-2 select-none">
-          <span>{onlyEventful ? "Events only" : "All venues"}</span>
-          <button
-            type="button"
-            onClick={() => setOnlyEventful(!onlyEventful)}
-            className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 ${onlyEventful ? "bg-accent" : "bg-ink/20"}`}
-            aria-pressed={onlyEventful}
-            aria-label={onlyEventful ? "Showing venues with events only" : "Showing all venues"}
-          >
-            <span className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white shadow transition-transform ${onlyEventful ? "translate-x-[18px]" : "translate-x-0.5"}`} />
-          </button>
-        </label>
-      </div>
     </div>
   );
 }

@@ -119,3 +119,22 @@
   pointer-events: none;
   user-select: none;
 }
+
+@layer components {
+  .site-title {
+    font-family: "Copperplate", "Copperplate Gothic Bold", "Papyrus", fantasy;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.02em;
+    color: #1c1917;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  }
+  @media (min-width: 768px) {
+    .site-title { font-size: 2.1rem; }
+  }
+  .site-title-la {
+    color: #f2b705;
+    -webkit-text-stroke: 0.6px #7a5c00;
+    text-stroke: 0.6px #7a5c00;
+  }
+}

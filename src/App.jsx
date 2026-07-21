@@ -66,11 +66,9 @@ const EMPTY_FILTERS = Object.freeze({
   free: false, family: false,
 });
 
-// Landing default for the "When" filter: this weekend if it's Fri–Sun, else the
-// next 7 days — so What's On opens on something actionable, not everything.
-function defaultDatePreset(now = new Date()) {
-  const day = now.getDay(); // 0 Sun … 6 Sat
-  return (day === 5 || day === 6 || day === 0) ? "weekend" : "next7";
+// Landing default for the "When" filter: the next seven days.
+function defaultDatePreset() {
+  return "next7";
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -83,7 +81,7 @@ export default function App() {
   const { favs, toggle: toggleFav } = useFavorites();
 
   // Navigation — What's On is the landing tab.
-  const [tab,  setTab]  = useState("whatson");
+  const [tab,  setTab]  = useState("events");
 
   // Shared filter state (single set across all tabs; Archive uses only `query`).
   const [filters, setFilters] = useState(() => ({
@@ -137,7 +135,7 @@ export default function App() {
     if (hashInit.current) return;
     hashInit.current = true;
     const p = readHash();
-    const initTab = p.get("mode") === "exhibitions" ? "exhibitions" : (p.get("tab") || "whatson");
+    const initTab = p.get("mode") === "exhibitions" ? "exhibitions" : (p.get("tab") || "events");
     // Hydrate the shared filter set from the URL (falling back to the landing
     // default for the date preset when the URL doesn't pin one).
     const slice = { ...EMPTY_FILTERS, datePreset: defaultDatePreset() };
@@ -277,7 +275,7 @@ export default function App() {
     setMapOnlyEventful(true);
     setFocusedVenueId(null);
     setDetailVenueId(null);
-    setTab("whatson");
+    setTab("events");
   };
 
   const onShowOnMap = (venueId) => {
@@ -296,16 +294,19 @@ export default function App() {
   // mobile + Today (dense same-day listings read better stacked).
   const effectiveStack = stackByVenue ?? (isMobile && datePreset === "today");
 
+  const onViewExhibitions = useMemo(
+    () => liveExhibitionsOnView(liveExhibitions), [liveExhibitions]
+  );
   const stats = {
     venues:      data.venues.length,
     events:      upcomingEvents.length,
-    exhibitions: liveExhibitions.length,
+    exhibitions: onViewExhibitions.length,
   };
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} onAbout={() => setAboutOpen(true)} />
+      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} onAbout={() => setAboutOpen(true)} lastUpdated={lastUpdated} />
 
       <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
         {/* Error panel with retry */}
@@ -338,49 +339,6 @@ export default function App() {
           <SkeletonGrid count={tab === "map" ? 0 : 6} />
         ) : (
           <>
-            {tab === "whatson" && (
-              <>
-                <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                  {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
-                  {filteredExhibitions.length > 0 && <> · {filteredExhibitions.length} on view</>}
-                </div>
-                {filteredEvents.length === 0 && filteredExhibitions.length === 0 ? (
-                  <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
-                    <div>Nothing matches these filters in this window.</div>
-                    <button type="button" onClick={onReset} className="chip">Clear filters &amp; search</button>
-                  </div>
-                ) : (
-                  <>
-                    <EventList
-                      events={filteredEvents}
-                      venuesById={venuesById}
-                      onShowOnMap={onShowOnMap}
-                      onReset={onReset}
-                      favs={favs}
-                      onToggleFav={toggleFav}
-                    />
-                    {filteredExhibitions.length > 0 && (
-                      <details className="panel mt-6 p-4" open>
-                        <summary className="cursor-pointer font-display text-base font-semibold tracking-tight">
-                          Also on view · {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"}
-                        </summary>
-                        <div className="mt-4">
-                          <ExhibitionsByVenue
-                            exhibitions={filteredExhibitions}
-                            venuesById={venuesById}
-                            onShowDetail={setDetailVenueId}
-                            onReset={onReset}
-                            favs={favs}
-                            onToggleFav={toggleFav}
-                          />
-                        </div>
-                      </details>
-                    )}
-                  </>
-                )}
-              </>
-            )}
-
             {tab === "map" && (
               <Suspense fallback={<div className="panel p-6 text-center text-sm text-ink/60">Loading map…</div>}>
                 <VenueMap
@@ -432,6 +390,17 @@ export default function App() {
                   onToggleFav={toggleFav}
                   stackByVenue={effectiveStack}
                 />
+                {onViewExhibitions.length > 0 && (
+                  <div className="pt-2 text-center">
+                    <button
+                      type="button"
+                      onClick={() => setTab("exhibitions")}
+                      className="font-medium text-accent underline underline-offset-2 hover:text-ink"
+                    >
+                      Also on view: {onViewExhibitions.length} exhibition{onViewExhibitions.length === 1 ? "" : "s"} →
+                    </button>
+                  </div>
+                )}
               </>
             )}
 
@@ -566,11 +535,8 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/60 md:px-6">
+      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/55 md:px-6">
         <p>
-          {lastUpdated && (
-            <>Event data updated {lastUpdated.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}. </>
-          )}
           Listings are bot-maintained — confirm times with the venue before heading out.
           Map tiles © OpenStreetMap contributors · CARTO.
         </p>

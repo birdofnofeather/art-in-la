@@ -1,5 +1,23 @@
 # Art in LA — Status & Next Steps (2026-05-30)
 
+## Round 10 (2026-07-21): tab revert, headline identity, 5 presets, map recolor
+
+- Reverted to **Events / Exhibitions** tabs (removed "What's On"); Events list
+  ends with an "Also on view: N exhibitions →" link to the Exhibitions tab.
+- Headline restyled (Copperplate/Papyrus/fantasy, bold, "LA" in yellow);
+  subtitle now "Events and Exhibitions at non-profit art venues across LA
+  County." + venues·exhibitions·events counts + last-updated date/time (moved
+  from footer). Exhibition count now equals the on-view-now count displayed
+  (was counting undated/stale records — those are now dropped in validate.py).
+- Date presets: Today / This weekend / Next weekend / Next seven days / All
+  days; landing default = Next seven days. Hardened: filterEvents drops any
+  already-ended event everywhere (date-only ends treated as end-of-day).
+- Map: toggle moved above the map (top-left), key top-right; markers recolour
+  by offering — green = free, blue = family, grey = other events, black outline
+  = no events (priority free>family>events). About modal z-index raised above
+  Leaflet so it is readable over the map.
+
+
 ## Round 9 (2026-07-18): bug fixes, mobile pass, calm palette, 5 venues, alerts + LLM fallback
 
 Bugs: standing multi-week programmes no longer top What's On (validate drops

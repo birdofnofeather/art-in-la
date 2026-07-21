@@ -85,12 +85,13 @@ export const EVENTFUL_TYPES = new Set([
 export const DATE_PRESETS = [
   { key: "today", label: "Today" },
   { key: "weekend", label: "This weekend" },
-  { key: "next7", label: "Next week" },     // rolling 7 days
+  { key: "nextweekend", label: "Next weekend" },
+  { key: "next7", label: "Next seven days" },
   { key: "all", label: "All days" },
 ];
 
-// All presets render as one always-visible chip row (no secondary tray row).
-export const PRIMARY_DATE_PRESETS = ["today", "weekend", "next7", "all"];
+// All presets render as one always-visible chip row.
+export const PRIMARY_DATE_PRESETS = ["today", "weekend", "nextweekend", "next7", "all"];
 
 // Day the public archive started accumulating data. Anything before this is
 // surfaced with the "Archive launched on …" notice; nothing exists before it.

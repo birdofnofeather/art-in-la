@@ -36,6 +36,17 @@ export function parseDate(s) {
   return Number.isNaN(+d) ? null : d;
 }
 
+// A bare YYYY-MM-DD end means "all that day" — compare at 23:59 local so a
+// same-day listing isn't treated as already over at midnight.
+function endOfDayIfDateOnly(raw, parsed) {
+  if (typeof raw === "string" && raw.length === 10) {
+    const d = new Date(parsed);
+    d.setHours(23, 59, 59, 999);
+    return d.getTime();
+  }
+  return parsed.getTime();
+}
+
 export function eventEnd(ev) {
   return parseDate(ev.end) || parseDate(ev.start);
 }
@@ -97,31 +108,32 @@ export function resolveDatePreset(preset, now = new Date()) {
     return { start: today0, end };
   }
 
+  // Friday of THIS week (the upcoming/current Fri–Sun window).
+  const thisFriday = () => {
+    // Sun(0) counts as part of the just-passed weekend → its Friday was 2 days ago.
+    const daysToFri = day === 0 ? -2 : 5 - day;
+    const f = new Date(today0);
+    f.setDate(today0.getDate() + daysToFri);
+    return f;
+  };
+
   if (preset === "weekend") {
-    // Window: from upcoming (or today's) Friday morning through Sunday 23:59.
-    let start;
-    if (day === 5 || day === 6 || day === 0) {
-      // Already in the weekend window — use now so we don't include past hours.
-      start = new Date(now);
-    } else {
-      const daysToFri = 5 - day;
-      start = new Date(today0);
-      start.setDate(today0.getDate() + daysToFri);
-    }
-    const daysToSun = day === 0 ? 0 : 7 - day;
-    const end = new Date(today0);
-    end.setDate(today0.getDate() + daysToSun);
+    // This weekend: Fri 00:00 (or now, if already the weekend) → Sun 23:59.
+    const fri = thisFriday();
+    const start = fri < today0 ? new Date(now) : fri;
+    const end = new Date(fri);
+    end.setDate(fri.getDate() + 2);
     end.setHours(23, 59, 59, 999);
     return { start, end };
   }
 
-  if (preset === "nextweek") {
-    // Mon of next week through Sun of next week (i.e. includes the upcoming weekend).
-    const offset = day === 0 ? 1 : 8 - day; // Sun→+1, Mon→+7, … Sat→+2
-    const start = new Date(today0);
-    start.setDate(today0.getDate() + offset);
+  if (preset === "nextweekend") {
+    // The Fri–Sun that follows this weekend.
+    const fri = thisFriday();
+    const start = new Date(fri);
+    start.setDate(fri.getDate() + 7);
     const end = new Date(start);
-    end.setDate(start.getDate() + 6);
+    end.setDate(start.getDate() + 2);
     end.setHours(23, 59, 59, 999);
     return { start, end };
   }
@@ -131,14 +143,6 @@ export function resolveDatePreset(preset, now = new Date()) {
     const start = new Date(now);
     const end = new Date(today0);
     end.setDate(today0.getDate() + 7);
-    end.setHours(23, 59, 59, 999);
-    return { start, end };
-  }
-
-  if (preset === "month") {
-    // From now through the last day of the current calendar month.
-    const start = new Date(now);
-    const end = new Date(today0.getFullYear(), today0.getMonth() + 1, 0);
     end.setHours(23, 59, 59, 999);
     return { start, end };
   }
@@ -168,6 +172,15 @@ export function filterEvents(events, venuesById, {
     if (family && !(ev.audience || []).includes("family")) return false;
     const evStart = parseDate(ev.start);
     const evEnd = eventEnd(ev) || evStart;
+    // Hard rule: nothing already finished shows anywhere. A date-only value is
+    // treated as end-of-day so a same-day listing isn't dropped at 00:00.
+    const nowMs = Date.now();
+    if (evEnd) {
+      const endMs = (typeof ev.end === "string" || typeof ev.start === "string")
+        ? endOfDayIfDateOnly(ev.end || ev.start, evEnd)
+        : evEnd.getTime();
+      if (endMs < nowMs) return false;
+    }
     // When a date window is active (e.g. "Today"), an event with no date can't
     // be placed inside it — exclude it rather than letting it pass every window.
     if ((start || end) && !evStart) return false;

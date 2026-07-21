@@ -63,12 +63,12 @@ def validate(events, now=None):
                 _drop(ev, "multi-week range, not a one-off event")
                 continue
 
+        # An exhibition with no start AND no end can't be placed on a timeline
+        # and never appears on the (dates-required) Exhibitions tab, so it is
+        # pure clutter — drop it. (USC Fisher's REST feed lists old shows this
+        # way.) It re-enters automatically if the scraper later finds dates.
         if is_exh and start is None and end is None:
-            scraped = _parse(ev.get("scraped_at"))
-            if scraped is None or scraped < grace:
-                _drop(ev, "undated exhibition past grace window")
-                continue
-            kept.append(ev)
+            _drop(ev, "undated exhibition")
             continue
 
         finish = end or start

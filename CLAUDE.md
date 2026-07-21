@@ -130,9 +130,15 @@ Map markers do NOT encode org type. Soft-blue dot (#6f9cbf, 14px) = venue with
 upcoming events; same-size translucent dot = venue only. Default view fits the
 Burbank→Long Beach core (not Lancaster). Map tab hidden on small screens.
 
-### Date presets (do not regress)
-Exactly four, always visible, one row: Today / This weekend / Next week
-(rolling 7 days, key `next7`) / All days. No custom-range UI.
+### Tabs + date presets (do not regress)
+Top-level tabs are **Events** and **Exhibitions** (separate, not merged; there
+is no "What's On"). Default tab is Events. The Events list ends with an "Also on
+view: N exhibitions →" link that switches to the Exhibitions tab. Header shows
+`venues · exhibitions · events` where the exhibition count is the on-view-now
+count actually displayed on the Exhibitions tab. Date presets: exactly five,
+always visible, one row — Today / This weekend (Fri–Sun) / Next weekend (next
+Fri–Sun) / Next seven days (`next7`, the landing default) / All days.
+`filterEvents` also hard-excludes anything already ended, everywhere.
 
 ### Alerts + optional LLM fallback
 daily-scrape.yml opens/updates a "Scraper health alert" issue (emails the
