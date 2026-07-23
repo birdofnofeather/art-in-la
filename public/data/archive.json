@@ -12654,5 +12654,27 @@
     "is_free": null,
     "price_text": "$13",
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-22-downhill-racer-in-35mm-dd7b3d951b",
+    "venue_id": "academy_museum",
+    "title": "Downhill Racer in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-22",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/downhill-racer-019dd530-50e1-a2f7-0398-9b2968ece910",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/20wddfckaLsjS10gQwmRgf/b29de7caff94525ba7a2f7476b5ff74f/Jul22_DOWNHILL_RACER_BranchSelects3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-23T09:27:24+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
