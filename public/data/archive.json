@@ -12855,5 +12855,117 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-24-cape-fear-1991-in-35mm-89834f3080",
+    "venue_id": "academy_museum",
+    "title": "Cape Fear (1991) in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-24",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/cape-fear-1991-019dd582-397a-b205-fdc8-809ad66fe3c5",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2yL3V6IS8hG1LWXN9FupIV/0bdd055deeb3ae8f8b24c0abd4b4a182/Jul24_CAPE_FEAR_91_Thrills6_S.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-25T09:02:42+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-24-spirited-away-in-35mm-dd0ef8b59e",
+    "venue_id": "academy_museum",
+    "title": "Spirited Away in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-24",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/spirited-away-019dd516-1779-bf84-d571-8c3cb163bf39",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/295KJGAZV87HPXAQoZfFTc/e985289946a5c83f873c2d19a45fde7b/Apr11_SPIRITED_AWAY_FamilyMatinees1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-25T09:02:42+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "getty_villa-2026-07-24-nature-in-art-67a9d6be01",
+    "venue_id": "getty_villa",
+    "title": "Nature in Art",
+    "description": "Discover plants and animals found in ancient Greek and Roman art in this 45-minute tour",
+    "event_type": "tour",
+    "start": "2026-07-24T14:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/nature-in-art",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-07-25T09:02:37+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-07-24-p-staff-presents-kate-bush-rarities-the-9ada555326",
+    "venue_id": "human_resources",
+    "title": "P. Staff presents Kate Bush Rarities / The Line, The Cross, The Curve (1993)",
+    "description": "Donations accepted at the door. An evening of Kate Bush rarities — rare TV appearances, interviews, and archival curiosities — followed by a screening of her only film as director, The Line, the Cross & the Curve (1993), a fever-dream reworking of The Red Shoes. Built around songs from her 1993 album of the same name, the film loosely follows a dancer cursed to move beautifully, but endlessly. Equal parts music video, dance film, and hallucinatory folk tale, it remains one of the strangest and most rarely screened artefacts of British cinema. Starring Kate Bush, Miranda Richardson, and Lindsay Kemp. The rarities run 60 minutes, followed by a short break, then the 45-minute film. Total run time: 1 hour 45 minutes. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-07-24T19:00:00-07:00",
+    "end": "2026-07-24T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/p-staff-presents-kate-bush-rarities-the-line-the-cross-the-curve-1993/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/image.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-07-25T09:02:39+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "beyond_baroque-2026-07-24-flash-photography-by-genesis-perez-5th-a-58e8fa836e",
+    "venue_id": "beyond_baroque",
+    "title": "Flash Photography by Genesis Perez: 5th Anniversary Celebration",
+    "description": null,
+    "event_type": "performance",
+    "start": "2026-07-24T19:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/1991742870542",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://beyondbaroque.org/",
+    "scraped_at": "2026-07-18T08:50:33+00:00",
+    "event_types": [
+      "performance",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
