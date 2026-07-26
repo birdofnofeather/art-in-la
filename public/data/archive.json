@@ -6976,6 +6976,28 @@
     "audience": []
   },
   {
+    "id": "beyond_baroque-2026-05-16-beyond-baroque-spring-silent-auction-ben-454dd551e4",
+    "venue_id": "beyond_baroque",
+    "title": "Beyond Baroque Spring Silent Auction Benefit",
+    "description": null,
+    "event_type": "exhibition",
+    "start": "2026-05-16",
+    "end": "2026-07-25",
+    "all_day": true,
+    "url": "https://givebutter.com/c/beyond-baroque-silent-auction-2026-9dkaxl",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://beyondbaroque.org/",
+    "scraped_at": "2026-07-18T08:50:33+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "pieter-2026-05-16-pieter-danceclassathon-1392c34e3c",
     "venue_id": "pieter",
     "title": "Pieter Dance-Class-A-Thon!",
@@ -12963,6 +12985,283 @@
     "event_types": [
       "performance",
       "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-25-calm-morning-costume-designs-inspired-by-7be97973d8",
+    "venue_id": "academy_museum",
+    "title": "Calm Morning: Costume Designs Inspired by Disability Pride Month",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-25T09:00:00-07:00",
+    "end": "2026-07-25T10:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/calm-morning-the-costume-design-and-accessibility-019ebcd0-42e4-47d7-fc00-6bed95eb0b51",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1oNjnGcdQbaiF9Vaf2oXGg/58b14cac09aa6cacb5467baab4282ab5/Calm_Morning_July.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-26T09:16:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-07-25-disabilities-representation-and-film-202-4566f95917",
+    "venue_id": "academy_museum",
+    "title": "Disabilities, Representation, and Film 2026",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-25T09:00:00-07:00",
+    "end": "2026-07-25T10:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/disabilities-representation-and-film-2026-019dd596-9bc6-895d-eff2-7d041e547ec9",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/7uK9dpkyV6J0sOhnuQnVMr/f8f3db9804d31459a17ecf537b0bd5c8/DRA2026.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-26T09:16:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-25-wallace-gromit-the-curse-of-the-wererabb-a9101113d4",
+    "venue_id": "academy_museum",
+    "title": "Wallace & Gromit: The Curse of the Were-Rabbit",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-25T09:00:00-07:00",
+    "end": "2026-07-25T10:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/wallace-gromit-the-curse-of-the-were-rabbit-019dda3a-cfae-2718-68de-f7bf62b2c9bf",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6r96JZLG1QE35aQffbhBrg/9a5bb7f59ddd2182536eec779847c821/Wallace-Gromit.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-07-26T09:16:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "wende-2026-07-25-bilingual-russianenglish-storytime-51e692dddf",
+    "venue_id": "wende",
+    "title": "Bilingual Russian-English Storytime",
+    "description": "Join us at the Wende Museum for a special bilingual children’s storytime, featuring captivating Russian tales from the Wende’s collection of Soviet Books. Hosted by our Archives Assistant, stories will be presented in both English and Russian, offering a fun and engaging experience for young listeners of all backgrounds. Perfect for children aged 4-8 and their families, this event celebrates culture and language through the joy of storytelling! The July 25 story time will include a special marionette performance, courtesy of our friends at the Bob Baker Marionette Theater!",
+    "event_type": "performance",
+    "start": "2026-07-25T10:30:00-07:00",
+    "end": "2026-07-25T11:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/storytime-2/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/12/russian-fairytales-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-26T09:16:22+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "getty_villa-2026-07-25-artistatwork-papyrus-making-5064c481d1",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Papyrus Making",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-07-25T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/artist-at-work-papyrus-making",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-07-26T09:16:16+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "getty_villa-2026-07-25-papyrus-scroll-making-family-workshop-2b3163598d",
+    "venue_id": "getty_villa",
+    "title": "Papyrus Scroll Making: Family Workshop",
+    "description": "Art Making, Family",
+    "event_type": "workshop",
+    "start": "2026-07-25T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/papyrus-scroll-workshop",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-07-26T09:16:16+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "esmoa-2026-07-25-esmoa-soundwalk-with-artist-brittney-fra-dd377df167",
+    "venue_id": "esmoa",
+    "title": "ESMoA Soundwalk with artist Brittney Franco",
+    "description": "Saturday July 25, 2026, 1:00 PM – 3:00 PM This workshop resists cultural and historical erasure by recording personal and community stories through sound, memory, and place. After a brief intro on archives and documentation, participants take a listening-based soundwalk, drawing prompts from a jar to reflect on memory, absence, and belonging. Using recorders, phones, and Polaroid cameras, participants document sounds and reflections tied to their own experiences, building a living archive of personal memory. The workshop ends with a collaborative sound piece, and participants keep their Polaroids as personal mementos. RSVP by clicking the button below! RSVP",
+    "event_type": "workshop",
+    "start": "2026-07-25T13:00:00-07:00",
+    "end": "2026-07-25T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://esmoa.org/event/esmoa-soundwalk-with-artist-brittney-franco/",
+    "image": "https://esmoa.org/wp-content/uploads/2026/07/ESMoA-Soundwalk-with-artist-Brittney-Franco.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "esmoa.org",
+    "scraped_at": "2026-07-21T18:18:38+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "wende-2026-07-25-family-day-at-the-wende-bob-baker-marion-d092371e40",
+    "venue_id": "wende",
+    "title": "Family Day at the Wende: Bob Baker Marionette Theater",
+    "description": "Join us for Family Day at the Wende Museum for a special presentation of The Bob Baker Marionette Theater’s Traveling Jamboree roadshow with a colorful and whimsical cast of characters! Pre-registration is strongly encouraged. Doors open at 1:45pm and the performance will begin in the A-Frame Theater at 2pm. Light refreshments will be served in the Wende’s Garden following the performance. About: Bob Baker Marionette Theater is the country’s most iconic nonprofit puppet theater and a Los Angeles Cultural-Historical Monument that has served its community with creativity, joy, and imagination since 1963. The nonprofit Theater serves an intergenerational audience of over 145,000 people each year through its cultural and educational programs and impactful, immersive performances at the interse",
+    "event_type": "performance",
+    "start": "2026-07-25T14:00:00-07:00",
+    "end": "2026-07-25T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/family-day-at-the-wende-bob-baker-marionette-theater/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/071322_0008-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-07-26T09:16:22+00:00",
+    "event_types": [
+      "performance",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "getty_center-2026-07-25-off-the-405-horse-lords-3f24fd41a1",
+    "venue_id": "getty_center",
+    "title": "Off the 405: Horse Lords",
+    "description": "Performance",
+    "event_type": "performance",
+    "start": "2026-07-25T16:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/off-the-405-horse-lords",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-07-26T09:16:16+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "huntington-2026-07-25-members-summer-evenings-7d7688f41f",
+    "venue_id": "huntington",
+    "title": "Members Summer Evenings",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-07-25T17:30:00-07:00",
+    "end": "2026-07-25T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.huntington.org/event/members-summer-evenings",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2Frail%2FHU13XATZ.jpg%3Fh%3Db044a8f9%26itok%3DduXLRaea&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-07-26T09:16:21+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "beyond_baroque-2026-07-25-salsa-sabor-sonnets-fundraiser-for-beyon-cc9adaf9ba",
+    "venue_id": "beyond_baroque",
+    "title": "Salsa, Sabor, & Sonnets: Fundraiser for Beyond Baroque",
+    "description": null,
+    "event_type": "performance",
+    "start": "2026-07-25T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/salsa-sabor-sonnets-tickets-1992670081856",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://beyondbaroque.org/",
+    "scraped_at": "2026-07-18T08:50:33+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-07-25-tampopo-c771bef62e",
+    "venue_id": "human_resources",
+    "title": "Tampopo",
+    "description": "Tickets Tampopo (タンポポ, Tanpopo ; literally “dandelion”) is a 1985 Japanese film written and directed by Juzo Itami, and starring Tsutomu Yamazaki, Nobuko Miyamoto, Kōji Yakusho, and Ken Watanabe. The tale of an eccentric band of culinary ronin who guide the widow of a noodle-shop owner on her quest for the perfect recipe, this rapturous “ramen western” by Juzo Itami is an entertaining, genre-bending adventure underpinned by a deft satire of the way social conventions distort the most natural of human urges—our appetites. Interspersing the efforts of Tampopo (Nobuko Miyamoto) and friends to make her café a success with the erotic exploits of a gastronome gangster and glimpses of food culture both high and low, the sweet, sexy, and surreal Tampopo is a lavishly inclusive paean to the sensual",
+    "event_type": "screening",
+    "start": "2026-07-25T21:00:00-07:00",
+    "end": "2026-07-25T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/tampopo/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/TAMPOPO.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-07-26T09:16:18+00:00",
+    "event_types": [
+      "screening"
     ],
     "is_free": null,
     "price_text": null,
