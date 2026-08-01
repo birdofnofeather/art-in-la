@@ -4344,6 +4344,28 @@
     "scraped_at": "2026-05-31T00:05:02+00:00"
   },
   {
+    "id": "academy_museum-2025-07-14-last-looks-at-the-academy-museumexh-1c3e587add",
+    "venue_id": "academy_museum",
+    "title": "Last Looks at the Academy Museum",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-07-14",
+    "end": "2026-07-31",
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/summer-hours-at-the-academy-museum-cc7d81fb-6a76-c947-e204-d76ba1cacde9",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/35eRXGJh5IklQWaMmuvv7f/f1329261e3e340250998e1c37ea21f9b/AMMP_LastLooks_HomepageBanner_090425_JBM_R1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-01T09:08:22+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "armory_pasadena-2025-08-02-identity-remix-ba435d936b",
     "venue_id": "armory_pasadena",
     "title": "Identity Remix",
@@ -13955,6 +13977,75 @@
     "scraped_at": "2026-07-18T08:50:33+00:00",
     "event_types": [
       "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "esmoa-2026-07-31-la-arts-activation-panel-22d559d0a0",
+    "venue_id": "esmoa",
+    "title": "L.A. Arts Activation Panel",
+    "description": "Friday July 31, 2026 5:30 pm to 7:00 pm Join us on July 31st for a powerful panel discussion with Los Angeles-based artists and arts workers on the impact and continual importance of the arts, moderated by our Getty Marrow Intern Eva Asiddao. This event is free and open to the public. All ages are welcome. RSVP by clicking the button below! (Panelists will be announced soon) RSVP",
+    "event_type": "lecture",
+    "start": "2026-07-31T17:30:00-07:00",
+    "end": "2026-07-31T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://esmoa.org/event/l-a-arts-activation-panel/",
+    "image": "https://esmoa.org/wp-content/uploads/2026/07/L.A.-Arts-Activation-Panel.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "esmoa.org",
+    "scraped_at": "2026-07-21T18:18:38+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "beyond_baroque-2026-07-31-double-book-launch-michelle-bitting-lynn-5f2c03687b",
+    "venue_id": "beyond_baroque",
+    "title": "Double Book Launch: Michelle Bitting, Lynne Thompson, & James Meetze",
+    "description": null,
+    "event_type": "performance",
+    "start": "2026-07-31T19:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/double-book-launch-michelle-bitting-lynne-thompson-james-meetze-tickets-1991743024001",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://beyondbaroque.org/",
+    "scraped_at": "2026-07-18T08:50:33+00:00",
+    "event_types": [
+      "performance",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-07-31-green-border-zielona-granica-with-agnies-65689845c1",
+    "venue_id": "academy_museum",
+    "title": "Green Border (Zielona granica) with Agnieszka Holland",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-07-31T19:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/green-border-with-agnieszka-holland-019de500-6ff0-16b7-9b06-34d2c9405882",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4ZqcDCQAKXr4h7kKsTczwZ/29973b2ad6465cafd58cfd201087a87e/Jul31_GREEN_BORDER_WeekendWith1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-01T09:08:22+00:00",
+    "event_types": [
+      "screening"
     ],
     "is_free": null,
     "price_text": null,
