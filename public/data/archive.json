@@ -2627,7 +2627,7 @@
     "id": "luckman-2025-03-16-ballet-folklrico-de-mxico-16e66417ff",
     "venue_id": "luckman",
     "title": "Ballet Folklórico de México",
-    "description": "Photos: Ballet Folkórico de México de Amalia Hernández | Mar 16, 2025​ BOTH PERFORMANCES ARE SOLD OUT* Founded in 1952 by dancer and choreographer […]",
+    "description": "Photos: Ballet Folkórico de México de Amalia Hernández | Mar 16, 2025​ BOTH PERFORMANCES ARE SOLD OUT* Founded in 1952 by dancer and choreographer Amalia Hernández, Ballet Folklórico de México de Amalia Hernández brings together the music, dance, and costume of Mexican folklore from pre-Colombian civilizations to the modern era. The Ballet has a permanent residence at […]",
     "event_type": "performance",
     "start": "2025-03-16T15:00:43-07:00",
     "end": null,
@@ -2637,7 +2637,7 @@
     "artists": [],
     "location_override": null,
     "source": "theluckman.org",
-    "scraped_at": "2026-07-19T06:14:40+00:00",
+    "scraped_at": "2026-08-04T09:40:44+00:00",
     "event_types": [
       "performance"
     ],
@@ -14497,6 +14497,28 @@
     "location_override": null,
     "source": "academymuseum.org",
     "scraped_at": "2026-08-03T10:45:25+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-03-a-man-escaped-in-35mm-16f671cc6b",
+    "venue_id": "academy_museum",
+    "title": "A Man Escaped in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-03",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/a-man-escaped-019dd584-92b4-fd24-11c8-7d0ce23af494",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5CTSho7jcDabNkx7qNMwY1/7cc22da27ee72a26eaa675f70eaddefa/Aug3_MAN_ESCAPED_Thrills3Janus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-04T09:40:13+00:00",
     "event_types": [
       "screening"
     ],
