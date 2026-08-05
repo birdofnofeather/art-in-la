@@ -14525,5 +14525,71 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "18th_street-2026-08-04-intersection-with-jorge-santiago-ab5e32d58f",
+    "venue_id": "18th_street",
+    "title": "Intersection with Jorge Santiago",
+    "description": "Intersection with Jorge Santiago Tuesday, August 4th | 5PM – 7PM 18th Street Arts Center 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public These gatherings are dedicated to gathering our community around good food, conversation, and art. Please stop by for a bite and chat with our community and spotlight artist: Jorge Santiago",
+    "event_type": "lecture",
+    "start": "2026-08-04T17:00:00-07:00",
+    "end": "2026-08-04T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://18thstreet.org/event/intersection-with-jorge-santiago/",
+    "image": "https://18thstreet.org/wp-content/uploads/2026/06/Jorge-Santiago.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "18thstreet.org",
+    "scraped_at": "2026-08-04T09:40:07+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
+    "id": "wende-2026-08-04-living-with-loss-a-grief-support-circle-b4277b5db4",
+    "venue_id": "wende",
+    "title": "Living with Loss: A Grief Support Circle",
+    "description": "Join a warm and understanding space where you can share, listen, and heal. Led by Dr. Barry Goldstein, this grief support circle is all about connecting with others who get what you’re going through. Come as you are, no judgments—just open hearts and support to navigate the ups and downs of loss side by side. Everyone is welcome!",
+    "event_type": "other",
+    "start": "2026-08-04T18:30:00-07:00",
+    "end": "2026-08-04T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/living-with-loss-a-grief-support-circle/2026-08-04/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/grief-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-04-fresh-kill-b983530b4c",
+    "venue_id": "human_resources",
+    "title": "Fresh Kill",
+    "description": "Tickets Fresh Kill is a 1994 experimental film directed by Shu Lea Cheang and written by Jessica Hagedorn. A disturbingly prescient ecofeminist parable and a brain-wave-scrambling cyberpunk fantasia, the debut feature from new-media pioneer Shu Lea Cheang merges a bold vision of resistance with an exuberant early-internet aesthetic. In a dystopian-chic New York where sushi joints and toxic-waste sites exist side by side, a lesbian couple (Sarita Choudhury and Erin McMurtry) turn to the hacker underground to solve their daughter’s disappearance, in the process exposing a conspiracy involving corporate greenwashing and tainted fish. Swinging between outré satire and agitprop, Fresh Kill sounds the alarm about a capitalist system that pollutes everything from our waterways to our bodies to ou",
+    "event_type": "screening",
+    "start": "2026-08-04T20:00:00-07:00",
+    "end": "2026-08-04T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/fresh-kill/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/JzXBvz1kVa03aqBEwmkad3kLvRh3XCrZNDcfiBoT.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
