@@ -14591,5 +14591,49 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-05-the-cat-returns-45e022b5d8",
+    "venue_id": "academy_museum",
+    "title": "The Cat Returns",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-05",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-cat-returns-019dd517-e48c-ba35-4370-f1b96ed34a7a",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/50MkAtsWuTPbkypESBC3ES/6cd402a65a72b328fe61f4f356bdaeba/Aug3_CAT_RETURNS_Ghibli3GKIDS.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-05-titicut-follies-in-4k-bf1c352808",
+    "venue_id": "academy_museum",
+    "title": "Titicut Follies in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-05",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/titicut-follies-019dd531-3419-7f41-baa2-1ec05eb4f02f",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5BKk5nSjEv5CUHqMvBJjNP/1be73794ba23613a16307ef0710a05fc/Aug5_TITICUT_FOLLIES_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]

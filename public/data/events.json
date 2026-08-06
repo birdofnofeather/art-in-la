@@ -6,14 +6,14 @@
     "description": "",
     "event_type": "exhibition",
     "start": "2018-10-20",
-    "end": "2020-11-05",
+    "end": "2020-11-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/barbara-kruger-untitled-questions-2",
     "image": null,
     "artists": [],
     "location_override": null,
     "source": "moca.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:17+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -35,7 +35,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/exhibitions/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -50,14 +50,14 @@
     "description": "",
     "event_type": "exhibition",
     "start": "2024-01-01",
-    "end": "2024-08-05",
+    "end": "2024-08-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/nancy-rubins-chas-stainless-steel-mark-thompsons-airplane-parts-about-1000-pounds-of-stainless-steel-wire-and-gagosians-beverly-hills-space-at-moca-2002",
     "image": null,
     "artists": [],
     "location_override": null,
     "source": "moca.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:17+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -79,7 +79,7 @@
     "artists": [],
     "location_override": null,
     "source": "marcianoartfoundation.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -101,7 +101,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/exhibitions/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -123,7 +123,29 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/exhibitions/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "la_plaza-2025-11-06-patrick-martinez-neon-mural-059c7c3e1a",
+    "venue_id": "la_plaza",
+    "title": "Patrick Martinez Neon Mural",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-11-06",
+    "end": "2026-10-04",
+    "all_day": true,
+    "url": "https://lapca.org/exhibition/neon-mural/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/exhibitions/",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -145,7 +167,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/exhibitions/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -154,20 +176,20 @@
     "audience": []
   },
   {
-    "id": "moca_grand-2026-02-05-gifts-of-michael-asherexh-2dfb640bf9",
+    "id": "moca_grand-2026-02-06-gifts-of-michael-asherexh-73e06064ed",
     "venue_id": "moca_grand",
     "title": "Gifts of Michael Asher",
     "description": "",
     "event_type": "exhibition",
-    "start": "2026-02-05",
-    "end": "2026-08-05",
+    "start": "2026-02-06",
+    "end": "2026-08-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/gifts-of-michael-asher",
     "image": "https://www.moca.org/storage/app/uploads/public/698/e6b/bd0/thumb_14592_710_0_0_0_auto.jpg",
     "artists": [],
     "location_override": null,
     "source": "moca.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -176,20 +198,20 @@
     "audience": []
   },
   {
-    "id": "moca_grand-2026-02-05-good-on-paper-works-from-the-gene-j-and-d2e3e22c6d",
+    "id": "moca_grand-2026-02-06-good-on-paper-works-from-the-gene-j-and-27e10b39cb",
     "venue_id": "moca_grand",
     "title": "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment",
     "description": "",
     "event_type": "exhibition",
-    "start": "2026-02-05",
-    "end": "2026-08-05",
+    "start": "2026-02-06",
+    "end": "2026-08-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/good-on-paper",
     "image": "https://www.moca.org/storage/app/uploads/public/693/76d/ede/thumb_14320_710_0_0_0_auto.jpg",
     "artists": [],
     "location_override": null,
     "source": "moca.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -198,20 +220,20 @@
     "audience": []
   },
   {
-    "id": "moca_grand-2026-02-05-haegue-yang-starcrossed-rendezvousexh-af60196ff4",
+    "id": "moca_grand-2026-02-06-haegue-yang-starcrossed-rendezvousexh-ba063474ad",
     "venue_id": "moca_grand",
     "title": "Haegue Yang: Star-Crossed Rendezvous",
     "description": "",
     "event_type": "exhibition",
-    "start": "2026-02-05",
-    "end": "2026-08-05",
+    "start": "2026-02-06",
+    "end": "2026-08-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/haegue-yang",
     "image": "https://www.moca.org/storage/app/uploads/public/69a/b33/448/thumb_14703_710_0_0_0_auto.jpg",
     "artists": [],
     "location_override": null,
     "source": "moca.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -220,20 +242,20 @@
     "audience": []
   },
   {
-    "id": "moca_grand-2026-02-05-michael-asherexh-135f859464",
+    "id": "moca_grand-2026-02-06-michael-asherexh-43c638cc23",
     "venue_id": "moca_grand",
     "title": "Michael Asher",
     "description": "",
     "event_type": "exhibition",
-    "start": "2026-02-05",
-    "end": "2026-08-05",
+    "start": "2026-02-06",
+    "end": "2026-08-06",
     "all_day": true,
     "url": "https://www.moca.org/exhibition/michael-asher",
     "image": "https://www.moca.org/storage/app/uploads/public/69e/803/608/thumb_14807_710_0_0_0_auto.jpg",
     "artists": [],
     "location_override": null,
     "source": "moca.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -277,7 +299,7 @@
     "artists": [],
     "location_override": null,
     "source": "pomona.edu/museum",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -299,7 +321,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -321,7 +343,7 @@
     "artists": [],
     "location_override": null,
     "source": "artcenter.edu",
-    "scraped_at": "2026-08-05T09:38:58+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -343,7 +365,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -365,7 +387,7 @@
     "artists": [],
     "location_override": "Durón Gallery at SPARC, 685 N. Venice Blvd., Venice, CA, 90291, United States",
     "source": "sparcinla.org",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -389,7 +411,7 @@
     "artists": [],
     "location_override": null,
     "source": "lbma.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -411,7 +433,7 @@
     "artists": [],
     "location_override": null,
     "source": "museum.forestlawn.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -433,7 +455,7 @@
     "artists": [],
     "location_override": null,
     "source": "artandpractice.org",
-    "scraped_at": "2026-08-05T09:38:51+00:00",
+    "scraped_at": "2026-08-06T09:42:21+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -455,7 +477,7 @@
     "artists": [],
     "location_override": null,
     "source": "artandpractice.org",
-    "scraped_at": "2026-08-05T09:38:51+00:00",
+    "scraped_at": "2026-08-06T09:42:21+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -477,7 +499,7 @@
     "artists": [],
     "location_override": null,
     "source": "lbma.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -499,7 +521,7 @@
     "artists": [],
     "location_override": null,
     "source": "thebroad.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -521,7 +543,7 @@
     "artists": [],
     "location_override": null,
     "source": "thebroad.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -543,7 +565,7 @@
     "artists": [],
     "location_override": null,
     "source": "joanlosangeles.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:17+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -565,7 +587,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -587,7 +609,7 @@
     "artists": [],
     "location_override": null,
     "source": "craftcontemporary.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -609,7 +631,7 @@
     "artists": [],
     "location_override": null,
     "source": "lbma.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -631,7 +653,7 @@
     "artists": [],
     "location_override": null,
     "source": "craftcontemporary.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -653,7 +675,7 @@
     "artists": [],
     "location_override": null,
     "source": "brandlibrary.org+llm",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -675,7 +697,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/exhibitions/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -699,7 +721,7 @@
     "artists": [],
     "location_override": null,
     "source": "makcenter.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -721,7 +743,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -743,7 +765,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com+llm",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -765,7 +787,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -787,7 +809,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -809,7 +831,7 @@
     "artists": [],
     "location_override": null,
     "source": "lbma.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -833,7 +855,7 @@
     "artists": [],
     "location_override": null,
     "source": "craftcontemporary.org+llm",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:11+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -855,7 +877,7 @@
     "artists": [],
     "location_override": null,
     "source": "lamag.org",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -877,7 +899,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -921,144 +943,9 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "hammer-2026-08-05-lunchtime-art-talk-on-sheroanawe-hakiihi-2ccdbb54f3",
-    "venue_id": "hammer",
-    "title": "Lunchtime Art Talk on Sheroanawe Hakiihiwe",
-    "description": "Curatorial assistant Jessi DiTillio leads an in-person discussion of Sheroanawe Hakiihiwe's work.",
-    "event_type": "lecture",
-    "start": "2026-08-05T12:30:36-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-sheroanawe-hakiihiwe",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-04/Hammer-2026-04-06_066-04.jpg?h=173ee000&itok=bdDvJZBp",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
-    "event_types": [
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "avenue_50-2026-08-05-manos-magicas-weaving-workshop-a3d8862094",
-    "venue_id": "avenue_50",
-    "title": "Manos Magicas – Weaving Workshop",
-    "description": "Hands-on weaving workshop at Ave 50 Studio. Drop in, make something, connect with community. Aug 5 | 1–5PM | $75 Come make something with your hands. Manos Magicas is a hands-on […] \\n",
-    "event_type": "workshop",
-    "start": "2026-08-05T13:00:00-07:00",
-    "end": "2026-08-05T17:00:00-07:00",
-    "all_day": false,
-    "url": "https://avenue50studio.org/event/manos-magicas-weaving-workshop/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "avenue50studio.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": "$75",
-    "audience": []
-  },
-  {
-    "id": "academy_museum-2026-08-05-the-cat-returns-45e022b5d8",
-    "venue_id": "academy_museum",
-    "title": "The Cat Returns",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-05T14:30:00-07:00",
-    "end": "2026-08-05T15:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/the-cat-returns-019dd517-e48c-ba35-4370-f1b96ed34a7a",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/50MkAtsWuTPbkypESBC3ES/6cd402a65a72b328fe61f4f356bdaeba/Aug3_CAT_RETURNS_Ghibli3GKIDS.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "molaa-2026-08-05-molaa-food-pantry-c67b5da77e",
-    "venue_id": "molaa",
-    "title": "MOLAA Food Pantry",
-    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
-    "event_type": "workshop",
-    "start": "2026-08-05T16:00:00-07:00",
-    "end": "2026-08-06",
-    "all_day": false,
-    "url": "https://molaa.org/events/2026/08/05/foodpantry",
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
-    "artists": [],
-    "location_override": null,
-    "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "hammer-2026-08-05-afterhours-tour-danielle-dean-on-space-i-df76ab1674",
-    "venue_id": "hammer",
-    "title": "After-Hours Tour: Danielle Dean on SPACE IS THE PLACE: Selections from the Hammer Contemporary Collection",
-    "description": "Join artist Danielle Dean for an after-hours tour of the exhibition.",
-    "event_type": "lecture",
-    "start": "2026-08-05T18:00:36-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/after-hours-tour-danielle-dean-space-place-selections-hammer-contemporary",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2023-03/Danielle-Dean_Headshot_Summer-2023.jpg?h=6fba022e&itok=Yso2hnCc",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
-    "event_types": [
-      "lecture",
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "academy_museum-2026-08-06-titicut-follies-in-4k-3c10d2f44a",
-    "venue_id": "academy_museum",
-    "title": "Titicut Follies in 4K",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-05T19:30:00-07:00",
-    "end": "2026-08-05T22:30:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/titicut-follies-019dd531-3419-7f41-baa2-1ec05eb4f02f",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/5BKk5nSjEv5CUHqMvBJjNP/1be73794ba23613a16307ef0710a05fc/Aug5_TITICUT_FOLLIES_BranchSelects1MHL.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
-    "event_types": [
-      "screening"
     ],
     "is_free": null,
     "price_text": null,
@@ -1078,7 +965,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance",
       "workshop"
@@ -1101,7 +988,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "lecture"
     ],
@@ -1123,7 +1010,7 @@
     "artists": [],
     "location_override": null,
     "source": "theautry.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance"
     ],
@@ -1147,7 +1034,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture"
     ],
@@ -1169,7 +1056,7 @@
     "artists": [],
     "location_override": "Online",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "screening",
       "lecture"
@@ -1192,7 +1079,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -1214,7 +1101,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1236,7 +1123,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1250,7 +1137,7 @@
     "title": "Kasey Knudsen Sextet",
     "description": "San Francisco-based saxophonist Kasey Knudsen leads her sextet in creating spacious and evocative compositions that weave improvisation into melodic and rhythmic themes which develop into imaginative new directions.",
     "event_type": "performance",
-    "start": "2026-08-06T20:00:36-07:00",
+    "start": "2026-08-06T20:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/kasey-knudsen-sextet",
@@ -1258,7 +1145,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "performance"
     ],
@@ -1280,7 +1167,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -1302,7 +1189,7 @@
     "artists": [],
     "location_override": null,
     "source": "jaccc.org",
-    "scraped_at": "2026-08-05T09:39:00+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "performance"
     ],
@@ -1324,7 +1211,7 @@
     "artists": [],
     "location_override": "Lancaster Museum of Art and History",
     "source": "eventbrite.com/cc/moah",
-    "scraped_at": "2026-08-05T09:38:57+00:00",
+    "scraped_at": "2026-08-06T09:42:25+00:00",
     "event_types": [
       "other"
     ],
@@ -1346,7 +1233,7 @@
     "artists": [],
     "location_override": "Smidt Welcome Plaza",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "performance"
     ],
@@ -1368,7 +1255,7 @@
     "artists": [],
     "location_override": "Online",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "screening",
       "performance",
@@ -1392,7 +1279,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1406,7 +1293,7 @@
     "title": "Superfish: Salmon",
     "description": "This visually stunning documentary by pioneering marine biologist and Emmy Award-winning filmmaker Rick Rosenthal takes audiences on a journey into the life of wild salmon. Followed by a panel discussion on the ecological necessity and existential threats facing wild salmon populations.",
     "event_type": "screening",
-    "start": "2026-08-07T19:30:36-07:00",
+    "start": "2026-08-07T19:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/superfish-salmon",
@@ -1414,7 +1301,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "screening",
       "lecture"
@@ -1427,7 +1314,7 @@
     "id": "human_resources-2026-08-07-the-videos-of-olivia-mole-dbe4aecea0",
     "venue_id": "human_resources",
     "title": "The Videos of Olivia Mole",
-    "description": "Sliding scale tickets An assortment of video and animation works by Olivia Mole followed by a Q&A discussion with Vardui Sharapkhanyan. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "description": "tickets An assortment of video and animation works by Olivia Mole followed by a Q&A discussion with Vishal Jugdeo Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
     "event_type": "lecture",
     "start": "2026-08-07T20:00:00-07:00",
     "end": "2026-08-07T22:00:00-07:00",
@@ -1437,7 +1324,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "lecture"
     ],
@@ -1459,7 +1346,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://www.selfhelpgraphics.com/events-calendar",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -1481,7 +1368,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -1503,7 +1390,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "workshop",
       "lecture"
@@ -1526,7 +1413,7 @@
     "artists": [],
     "location_override": null,
     "source": "pvartcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "other"
     ],
@@ -1548,7 +1435,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1572,7 +1459,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening",
       "performance",
@@ -1596,7 +1483,7 @@
     "artists": [],
     "location_override": "Lancaster Museum of Art and History",
     "source": "eventbrite.com/cc/moah",
-    "scraped_at": "2026-08-05T09:38:57+00:00",
+    "scraped_at": "2026-08-06T09:42:25+00:00",
     "event_types": [
       "lecture"
     ],
@@ -1618,7 +1505,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -1642,7 +1529,7 @@
     "artists": [],
     "location_override": null,
     "source": "pvartcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -1664,7 +1551,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop",
       "lecture"
@@ -1681,7 +1568,7 @@
     "title": "Art Lab",
     "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
     "event_type": "workshop",
-    "start": "2026-08-08T13:00:36-07:00",
+    "start": "2026-08-08T13:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
@@ -1689,7 +1576,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -1711,7 +1598,7 @@
     "artists": [],
     "location_override": null,
     "source": "theautry.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1733,7 +1620,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -1755,7 +1642,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "opening",
       "lecture"
@@ -1780,7 +1667,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1793,7 +1680,7 @@
     "venue_id": "getty_center",
     "title": "Garden Concerts for Kids: Flor Bromley",
     "description": "Family, Performance",
-    "event_type": "workshop",
+    "event_type": "performance",
     "start": "2026-08-08T16:00:00-07:00",
     "end": null,
     "all_day": false,
@@ -1802,9 +1689,8 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
-      "workshop",
       "performance"
     ],
     "is_free": null,
@@ -1827,7 +1713,7 @@
     "artists": [],
     "location_override": "Hancock Park",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "performance"
     ],
@@ -1872,7 +1758,7 @@
     "artists": [],
     "location_override": null,
     "source": "theautry.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1896,7 +1782,7 @@
     "artists": [],
     "location_override": "Smidt Welcome Plaza, David Geffen Galleries, Plaza Level | LACMA",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "other"
     ],
@@ -1918,7 +1804,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -1940,7 +1826,7 @@
     "artists": [],
     "location_override": null,
     "source": "thebroad.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -1962,7 +1848,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening",
       "lecture"
@@ -1972,20 +1858,20 @@
     "audience": []
   },
   {
-    "id": "human_resources-2026-08-08-female-trouble-fcbce28700",
+    "id": "human_resources-2026-08-08-female-trouble-midnight-screening-67e0503cad",
     "venue_id": "human_resources",
-    "title": "Female Trouble",
+    "title": "Female Trouble Midnight Screening",
     "description": "Tickets A midnight screening of Female Trouble is a 1974 American dark comedy film written, produced, and directed by John Waters. Glamour has never been more grotesque than in Female Trouble, which injects the Hollywood melodrama with anarchic decadence. Divine, director John Waters’ larger-than-life muse, engulfs the screen with charisma as Dawn Davenport, the living embodiment of the film’s lurid mantra, “Crime is beauty,” who progresses from a teenage nightmare hell-bent on getting cha-cha heels for Christmas to a fame monster whose egomaniacal impulses land her in the electric chair. Shot in Waters’ native Baltimore on 16 mm, with a cast drawn from his beloved troupe of regulars, the Dreamlanders (including Mink Stole, David Lochary, Mary Vivian Pearce, Edith Massey, and Cookie Muelle",
     "event_type": "screening",
     "start": "2026-08-08T23:45:00-07:00",
-    "end": "2026-08-08T23:59:59-07:00",
+    "end": "2026-08-09T01:30:00-07:00",
     "all_day": false,
     "url": "https://www.h-r.la/event/female-trouble/",
     "image": "https://www.h-r.la/wp-content/uploads/2026/07/0z2WJvxbQOqg0FldMkCWgBjv617wjl.png",
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -2007,7 +1893,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -2029,7 +1915,7 @@
     "artists": [],
     "location_override": null,
     "source": "museumoftolerance.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -2051,7 +1937,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "tour"
     ],
@@ -2073,7 +1959,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -2095,7 +1981,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -2117,7 +2003,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2139,7 +2025,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2163,7 +2049,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "lecture"
     ],
@@ -2179,7 +2065,7 @@
     "title": "Family Flicks: Turning Red",
     "description": "With vibrant animation and playful nods to the stylings of anime and manga, Turning Red captures the energy, uncertainty, and excitement of growing up.",
     "event_type": "screening",
-    "start": "2026-08-09T11:00:36-07:00",
+    "start": "2026-08-09T11:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/family-flicks-turning-red",
@@ -2187,7 +2073,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "screening"
     ],
@@ -2211,7 +2097,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:58+00:00",
+    "scraped_at": "2026-08-06T09:42:27+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2233,7 +2119,7 @@
     "artists": [],
     "location_override": "W.M. Keck Education Center | LACMA",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2277,7 +2163,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -2299,7 +2185,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2321,7 +2207,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2343,7 +2229,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2358,7 +2244,7 @@
     "venue_id": "getty_center",
     "title": "Garden Concerts for Kids: Flor Bromley",
     "description": "Family, Performance",
-    "event_type": "workshop",
+    "event_type": "performance",
     "start": "2026-08-09T16:00:00-07:00",
     "end": null,
     "all_day": false,
@@ -2367,9 +2253,8 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
-      "workshop",
       "performance"
     ],
     "is_free": null,
@@ -2392,7 +2277,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -2414,7 +2299,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2436,7 +2321,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "closing",
       "screening"
@@ -2459,7 +2344,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -2481,7 +2366,7 @@
     "artists": [],
     "location_override": "LACMA",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2503,7 +2388,7 @@
     "artists": [],
     "location_override": "LACMA",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2515,7 +2400,7 @@
     "id": "lacma-2026-08-10-emmy-awardnominated-screening-seriesspid-da77e90aa8",
     "venue_id": "lacma",
     "title": "Emmy Award®-Nominated Screening Series—Spider-Noir and Post-...",
-    "description": "LACMA members are invited to join FILM at LACMA for a special screening ofSpider-Noir, followed by a conversation with cinematographer Darran Tiernan; Production Designer Warren Alan Young; and co-showrunner, executive producer, writer Oren Uziel; moderated by Jim He...",
+    "description": "LACMA members are invited to join FILM at LACMA for a special screening ofSpider-Noir, followed by a conversation with cinematographer Darran Tiernan; production designer Warren Alan Young; and co-showrunner, executive producer, and writer Oren Uziel; moderated by Ji...",
     "event_type": "screening",
     "start": "2026-08-10T19:00:00-07:00",
     "end": null,
@@ -2525,7 +2410,7 @@
     "artists": [],
     "location_override": "Online",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "screening",
       "lecture"
@@ -2548,7 +2433,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2557,20 +2442,20 @@
     "audience": []
   },
   {
-    "id": "human_resources-2026-08-10-the-lure-091e843264",
+    "id": "human_resources-2026-08-10-flaming-ears-06cdbd2dc8",
     "venue_id": "human_resources",
-    "title": "The Lure",
-    "description": "Tickets The Lure is a 2015 Polish musical horror film directed by Agnieszka Smoczyńska and written by Robert Bolesto. This genre-defying horror-musical mash-up—the bold debut of Polish director Agnieszka Smoczyńska—follows a pair of carnivorous mermaid sisters drawn ashore to explore life on land in an alternate 1980s Poland. Their tantalizing siren songs and otherworldly auras make them overnight sensations as nightclub singers in the half-glam, half-decrepit world of Smoczyńska’s imagining. The director gives fierce teeth to her viscerally sensual, darkly feminist twist on Hans Christian Andersen’s “The Little Mermaid,” in which the girls’ bond is tested and their survival threatened after one sister falls for a human. A coming-of-age fairy tale with a catchy synth-fueled soundtrack, out",
+    "title": "Flaming Ears",
+    "description": "Tickets Flaming Ears is a 1992 Austrian science fiction queer film directed by and starring A. Hans Scheirl, Ursula Pürrer, and Dietmar Schipek. A pop sci-fi lesbian extravaganza set in the year 2700 in the fictional burned-out city of Asche that follows the tangled lives of three women. This story of obsession and revenge is also an anti-romantic plea for love in all its many forms. A truly underground film shot on Super 8 and newly restored, FLAMING EARS is original for its playful disruption of narrative conventions, its witty approach to film genre, and its punk visual splendor. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
     "event_type": "screening",
     "start": "2026-08-10T22:00:00-07:00",
     "end": "2026-08-10T23:30:00-07:00",
     "all_day": false,
-    "url": "https://www.h-r.la/event/the-lure/",
-    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Lure_Still05.jpg",
+    "url": "https://www.h-r.la/event/flaming-ears/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/17flaming-ears-art-videoSixteenByNineJumbo1600.jpg",
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -2592,7 +2477,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -2636,7 +2521,7 @@
     "artists": [],
     "location_override": "Online",
     "source": "lacma.org",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:07+00:00",
     "event_types": [
       "screening",
       "lecture"
@@ -2659,7 +2544,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening",
       "performance"
@@ -2682,7 +2567,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "fair"
     ],
@@ -2704,7 +2589,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -2726,7 +2611,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -2748,7 +2633,7 @@
     "artists": [],
     "location_override": null,
     "source": "theautry.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "tour"
     ],
@@ -2762,7 +2647,7 @@
     "title": "Lunchtime Art Talk on Nayland Blake",
     "description": "Curatorial assistant Azul Silverio leads an in-person discussion of Nayland Blake's work.",
     "event_type": "lecture",
-    "start": "2026-08-12T12:30:36-07:00",
+    "start": "2026-08-12T12:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-nayland-blake",
@@ -2770,7 +2655,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -2792,7 +2677,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -2816,7 +2701,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture"
     ],
@@ -2838,7 +2723,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -2852,7 +2737,7 @@
     "title": "Mike Cloud & Charles Gaines in Conversation",
     "description": "On the occasion of Cloud's Hammer Project, he will sit in conversation with artist Charles Gaines to discuss his installation in the museum lobby and the connections between their shared artistic practices.",
     "event_type": "lecture",
-    "start": "2026-08-12T19:30:36-07:00",
+    "start": "2026-08-12T19:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/mike-cloud-charles-gaines-conversation",
@@ -2860,7 +2745,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -2874,7 +2759,7 @@
     "title": "Coffee with a Curator: Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
     "description": "Members at the Immerse level and above are invited to join our curators for an exclusive walk-through of Five Centuries of Works on Paper: The Grunwald Center at 70, Part II.",
     "event_type": "tour",
-    "start": "2026-08-13T10:00:36-07:00",
+    "start": "2026-08-13T10:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/coffee-curator-five-centuries-works-paper-grunwald-center-70-part-ii",
@@ -2882,7 +2767,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -2926,7 +2811,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "lecture"
     ],
@@ -2948,13 +2833,37 @@
     "artists": [],
     "location_override": null,
     "source": "makcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "other"
     ],
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "autry-2026-08-13-sizzling-summer-nights-ricardo-lemvo-mak-97fe1ad46d",
+    "venue_id": "autry",
+    "title": "Sizzling Summer Nights | Ricardo Lemvo & Makina Loca",
+    "description": "Family Activities, Live Performances, Member Events, Autry Outdoors",
+    "event_type": "performance",
+    "start": "2026-08-13T18:00:00-07:00",
+    "end": "2026-08-13T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/family-activities/sizzling-summer-nights-ricardo-lemvo-makina-loca",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2025-06/MTK02908.JPG?h=2f8412c0&itok=dMEUs9Gr",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
   },
   {
     "id": "wende-2026-08-13-afrocontemporary-workshop-with-bernard-b-cab42232c0",
@@ -2970,7 +2879,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening",
       "performance",
@@ -2994,7 +2903,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3006,17 +2915,17 @@
     "id": "human_resources-2026-08-13-eve-fowler8217s-filles-manques-f584d11558",
     "venue_id": "human_resources",
     "title": "Eve Fowler’s Filles Manquées",
-    "description": "$15 sliding scale tickets This project’s first phase is Eve Fowler’s 16mm short film, Florence Derive (pictured here at Gordon Robichaux exhibition, 2023) in which the artist recounts being a gender expansive ten-year-old who becomes the object of a school teacher’s “boundless hate.” Sustained abuse causes a profound character shift that triggers illness, and she is eventually expelled from school. From this root wound, she finds solace, community, and herself in the arts to become the powerful femme with an easy smile and a critical eye that sits gazing directly into Fowler’s camera. Filles Manquées is a subsequent film that employs empathic witnessing to tell the many stories of eighty year old French trans artist Florence Derive. She sits before Fowler on the metro, in her home or moves",
+    "description": "Tickets This project’s first phase is Eve Fowler’s 16mm short film, Florence Derive (pictured here at Gordon Robichaux exhibition, 2023) in which the artist recounts being a gender expansive ten-year-old who becomes the object of a school teacher’s “boundless hate.” Sustained abuse causes a profound character shift that triggers illness, and she is eventually expelled from school. From this root wound, she finds solace, community, and herself in the arts to become the powerful femme with an easy smile and a critical eye that sits gazing directly into Fowler’s camera. Filles Manquées is a subsequent film that employs empathic witnessing to tell the many stories of eighty year old French trans artist Florence Derive. She sits before Fowler on the metro, in her home or moves through the city",
     "event_type": "screening",
     "start": "2026-08-13T20:00:00-07:00",
     "end": "2026-08-13T22:00:00-07:00",
     "all_day": false,
     "url": "https://www.h-r.la/event/filles-manquees/",
-    "image": "https://www.h-r.la/wp-content/uploads/2026/07/soboleva-fowler-1.jpg",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Screenshot-2026-08-05-at-12.26.44-PM-scaled.png",
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -3030,7 +2939,7 @@
     "title": "Malachi Whitson Quartet",
     "description": "Drummer, composer, educator, and community builder Malachi Whitson creates boundary-defying jazz rooted in the deep traditions of the Black Music canon while simultaneously incorporating West African polyrhythms and Afro-Caribbean grooves.",
     "event_type": "performance",
-    "start": "2026-08-13T20:00:36-07:00",
+    "start": "2026-08-13T20:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/malachi-whitson-quartet",
@@ -3038,7 +2947,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "performance"
     ],
@@ -3060,7 +2969,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -3082,7 +2991,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3104,7 +3013,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "other"
     ],
@@ -3126,7 +3035,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance",
       "fair"
@@ -3151,7 +3060,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -3173,7 +3082,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -3195,7 +3104,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3217,7 +3126,7 @@
     "artists": [],
     "location_override": null,
     "source": "angelsgateart.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "performance"
     ],
@@ -3239,7 +3148,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "opening",
       "screening",
@@ -3263,7 +3172,7 @@
     "artists": [],
     "location_override": null,
     "source": "jaccc.org",
-    "scraped_at": "2026-08-05T09:39:00+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -3285,7 +3194,7 @@
     "artists": [],
     "location_override": null,
     "source": "pvartcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "other"
     ],
@@ -3307,7 +3216,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3331,7 +3240,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3355,7 +3264,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3379,7 +3288,7 @@
     "artists": [],
     "location_override": "Lancaster Museum of Art and History",
     "source": "eventbrite.com/cc/moah",
-    "scraped_at": "2026-08-05T09:38:57+00:00",
+    "scraped_at": "2026-08-06T09:42:25+00:00",
     "event_types": [
       "lecture"
     ],
@@ -3401,7 +3310,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3425,7 +3334,7 @@
     "artists": [],
     "location_override": null,
     "source": "avenue50studio.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "fair"
     ],
@@ -3439,7 +3348,7 @@
     "title": "Art Lab",
     "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
     "event_type": "workshop",
-    "start": "2026-08-15T13:00:36-07:00",
+    "start": "2026-08-15T13:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
@@ -3447,7 +3356,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3491,7 +3400,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:58+00:00",
+    "scraped_at": "2026-08-06T09:42:28+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3513,7 +3422,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3526,7 +3435,7 @@
     "venue_id": "getty_center",
     "title": "Garden Concerts for Kids: Elizabeth Mitchell",
     "description": "Family, Performance",
-    "event_type": "performance",
+    "event_type": "workshop",
     "start": "2026-08-15T16:00:00-07:00",
     "end": null,
     "all_day": false,
@@ -3535,8 +3444,9 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
+      "workshop",
       "performance"
     ],
     "is_free": null,
@@ -3559,7 +3469,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -3581,7 +3491,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening",
       "performance"
@@ -3604,7 +3514,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3618,7 +3528,7 @@
     "title": "Nocturne",
     "description": "Three artists – Joy Guidry, Speaker Music, and Alima Lee – take up the questions and critiques Arthur Jafa raises in his experimental film The White Album, with performances featuring a mix of live instrumentation, electronics, and spoken word.",
     "event_type": "screening",
-    "start": "2026-08-15T19:30:36-07:00",
+    "start": "2026-08-15T19:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/nocturne",
@@ -3626,7 +3536,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "screening",
       "performance"
@@ -3649,7 +3559,7 @@
     "artists": [],
     "location_override": null,
     "source": "angelsgateart.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "performance"
     ],
@@ -3671,7 +3581,7 @@
     "artists": [],
     "location_override": null,
     "source": "museumoftolerance.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -3693,7 +3603,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "tour"
     ],
@@ -3715,7 +3625,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -3737,7 +3647,7 @@
     "artists": [],
     "location_override": null,
     "source": "thebroad.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -3761,7 +3671,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3775,7 +3685,7 @@
     "title": "826LA@Hammer: Stories in Our Hands: Object-Based Memoir",
     "description": "In this memoir essay workshop, participants will bring a meaningful object from home—a photograph, keepsake, book, or everyday item—and use it as a doorway into their personal story. Led by author Margaret Chandra Kerrison.",
     "event_type": "workshop",
-    "start": "2026-08-16T11:00:36-07:00",
+    "start": "2026-08-16T11:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/826lahammer-stories-our-hands-object-based-memoir",
@@ -3783,7 +3693,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3805,7 +3715,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "performance",
       "workshop"
@@ -3828,7 +3738,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -3842,7 +3752,7 @@
     "title": "Curator Walk-through: SPACE IS THE PLACE: Selections from the Hammer Contemporary Collection",
     "description": "Exhibition curator Erin Christovale leads a walk-through of the exhibition.",
     "event_type": "lecture",
-    "start": "2026-08-16T13:00:36-07:00",
+    "start": "2026-08-16T13:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/curator-walk-through-space-place-selections-hammer-contemporary-collection",
@@ -3850,7 +3760,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture",
       "tour"
@@ -3873,7 +3783,7 @@
     "artists": [],
     "location_override": null,
     "source": "angelsgateart.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "performance"
     ],
@@ -3895,7 +3805,7 @@
     "artists": [],
     "location_override": null,
     "source": "avenue50studio.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -3917,7 +3827,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -3939,7 +3849,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:58+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "workshop"
     ],
@@ -3952,7 +3862,7 @@
     "venue_id": "getty_center",
     "title": "Garden Concerts for Kids: Elizabeth Mitchell",
     "description": "Family, Performance",
-    "event_type": "performance",
+    "event_type": "workshop",
     "start": "2026-08-16T16:00:00-07:00",
     "end": null,
     "all_day": false,
@@ -3961,8 +3871,9 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
+      "workshop",
       "performance"
     ],
     "is_free": null,
@@ -3985,13 +3896,61 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-16-suddenly-last-summer-f2b5559492",
+    "venue_id": "human_resources",
+    "title": "Suddenly, Last Summer",
+    "description": "Tickets Suddenly, Last Summer is a 1959 Southern Gothic psychological drama mystery film based on the 1958 play by Tennessee Williams. The film stars Elizabeth Taylor, Katharine Hepburn, and Montgomery Clift, with Albert Dekker, Mercedes McCambridge, and Gary Raymond. It was directed by Joseph L. Mankiewicz and produced by Sam Spiegel from a screenplay by Gore Vidal and Williams, with cinematography by Jack Hildyard and production design by Oliver Messel. The musical score was composed by Buxton Orr, using themes by Malcolm Arnold. Once the only constant companion of her son Sebastian, Mrs. Violet Venable is distraught by his mysterious death abroad. Sebastian had spurned his mother’s companionship on his last trip, choosing instead to travel with his beautiful cousin Catharine. Since retu",
+    "event_type": "screening",
+    "start": "2026-08-16T18:00:00-07:00",
+    "end": "2026-08-16T20:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/suddenly-last-summer/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/par31907-1280x846-1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-16-the-legend-of-leigh-bowery-15baee65eb",
+    "venue_id": "human_resources",
+    "title": "The Legend of Leigh Bowery",
+    "description": "Tickets In this documentary feature, Charles Atlas examines the legend and the life of his friend and collaborator – artist, performer, fashion designer, model, and club promoter and icon Leigh Bowery. In a remarkable and brief period before his early death from AIDS-related illness in 1994, Bowery made an indelible mark on nightlife, fashion, and artmaking in London, New York, and beyond. Through a wealth of archival footage and frank and uncensored interviews with friends, family, and fellow artists, Atlas traces the extraordinary impact Bowery had on culture, recalling his infamous nightclub Taboo, his collaborations with dancer and choreographer Michael Clark, his time as a muse to Lucien Freud, and his notorious, innovative, and influential fashions and performances. The result is a c",
+    "event_type": "screening",
+    "start": "2026-08-16T22:00:00-07:00",
+    "end": "2026-08-16T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/the-legend-of-leigh-bowery/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/EPUB000661.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
+    "event_types": [
+      "screening",
+      "performance",
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
   },
   {
     "id": "academy_museum-2026-08-18-a-snake-of-june-639b85c5aa",
@@ -4007,7 +3966,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4016,20 +3975,20 @@
     "audience": []
   },
   {
-    "id": "human_resources-2026-08-17-flaming-ears-2946ff382c",
+    "id": "human_resources-2026-08-17-the-lure-700438de7f",
     "venue_id": "human_resources",
-    "title": "Flaming Ears",
-    "description": "Tickets Flaming Ears is a 1992 Austrian science fiction queer film directed by and starring A. Hans Scheirl, Ursula Pürrer, and Dietmar Schipek. A pop sci-fi lesbian extravaganza set in the year 2700 in the fictional burned-out city of Asche that follows the tangled lives of three women. This story of obsession and revenge is also an anti-romantic plea for love in all its many forms. A truly underground film shot on Super 8 and newly restored, FLAMING EARS is original for its playful disruption of narrative conventions, its witty approach to film genre, and its punk visual splendor. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "title": "The Lure",
+    "description": "Tickets The Lure is a 2015 Polish musical horror film directed by Agnieszka Smoczyńska and written by Robert Bolesto. This genre-defying horror-musical mash-up—the bold debut of Polish director Agnieszka Smoczyńska—follows a pair of carnivorous mermaid sisters drawn ashore to explore life on land in an alternate 1980s Poland. Their tantalizing siren songs and otherworldly auras make them overnight sensations as nightclub singers in the half-glam, half-decrepit world of Smoczyńska’s imagining. The director gives fierce teeth to her viscerally sensual, darkly feminist twist on Hans Christian Andersen’s “The Little Mermaid,” in which the girls’ bond is tested and their survival threatened after one sister falls for a human. A coming-of-age fairy tale with a catchy synth-fueled soundtrack, out",
     "event_type": "screening",
     "start": "2026-08-17T22:00:00-07:00",
     "end": "2026-08-17T23:30:00-07:00",
     "all_day": false,
-    "url": "https://www.h-r.la/event/flaming-ears/",
-    "image": "https://www.h-r.la/wp-content/uploads/2026/08/17flaming-ears-art-videoSixteenByNineJumbo1600.jpg",
+    "url": "https://www.h-r.la/event/the-lure/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Lure_Still05.jpg",
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -4073,7 +4032,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -4117,7 +4076,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -4131,7 +4090,7 @@
     "title": "Flux, Summer 2026",
     "description": "The Flux screening series brings the creative community together to celebrate outstanding short films and music videos from around the globe, with wildly inventive filmmaker presentations and performances, followed by a courtyard party with DJ and cash bar.",
     "event_type": "screening",
-    "start": "2026-08-18T19:30:36-07:00",
+    "start": "2026-08-18T19:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/flux-summer-2026",
@@ -4139,7 +4098,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "screening",
       "performance"
@@ -4162,7 +4121,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening",
       "fair"
@@ -4177,7 +4136,7 @@
     "title": "Lunchtime Art Talk on Carlos Almaraz",
     "description": "Associate director of academic programs Hallie Scott leads an in-person discussion of Carlos Almaraz's work.",
     "event_type": "lecture",
-    "start": "2026-08-19T12:30:36-07:00",
+    "start": "2026-08-19T12:30:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-carlos-almaraz",
@@ -4185,7 +4144,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:36+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -4207,7 +4166,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4231,7 +4190,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture"
     ],
@@ -4253,7 +4212,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4275,7 +4234,7 @@
     "artists": [],
     "location_override": null,
     "source": "jaccc.org",
-    "scraped_at": "2026-08-05T09:39:00+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "other"
     ],
@@ -4297,7 +4256,7 @@
     "artists": [],
     "location_override": null,
     "source": "pvartcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "other"
     ],
@@ -4341,7 +4300,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance",
       "workshop"
@@ -4364,7 +4323,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -4386,7 +4345,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4400,7 +4359,7 @@
     "title": "Machado Mijiga Trio",
     "description": "For his concert at the Hammer, Portland multi-instrumentalist Mijiga and his trio will embrace the eclecticism, pulling from all corners of his vast body of work to synthesize its unique quirks into a tight and lively performance.",
     "event_type": "performance",
-    "start": "2026-08-20T20:00:37-07:00",
+    "start": "2026-08-20T20:00:08-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/machado-mijiga-trio",
@@ -4408,7 +4367,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "performance"
     ],
@@ -4430,7 +4389,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "other"
     ],
@@ -4452,7 +4411,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4474,7 +4433,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4498,7 +4457,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4522,7 +4481,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "fair"
     ],
@@ -4544,7 +4503,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4566,7 +4525,7 @@
     "artists": [],
     "location_override": null,
     "source": "pomona.edu/museum",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -4588,7 +4547,7 @@
     "artists": [],
     "location_override": null,
     "source": "pomona.edu/museum",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -4610,7 +4569,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "tour"
     ],
@@ -4632,7 +4591,7 @@
     "artists": [],
     "location_override": null,
     "source": "pomona.edu/museum",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -4654,7 +4613,7 @@
     "artists": [],
     "location_override": null,
     "source": "pvartcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "workshop",
       "fair"
@@ -4677,7 +4636,7 @@
     "artists": [],
     "location_override": null,
     "source": "janm.org",
-    "scraped_at": "2026-08-05T09:38:46+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "lecture"
     ],
@@ -4699,7 +4658,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4723,7 +4682,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4737,7 +4696,7 @@
     "title": "Art Lab x Markings",
     "description": "This all-ages bilingual community workshop led by artist Jackie Amézquita invites you to participate in a hands-on weaving activity rooted in techniques passed down through generations of Indigenous communities originating from across Mexico and Central America.",
     "event_type": "workshop",
-    "start": "2026-08-22T13:00:37-07:00",
+    "start": "2026-08-22T13:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/art-lab-x-markings",
@@ -4745,7 +4704,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4769,7 +4728,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:59+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4791,7 +4750,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4805,7 +4764,7 @@
     "title": "The Manifestation of Form: Living Materials in Contemporary Art",
     "description": "Join artists, scholars, curators, and cultural practitioners for a day of thought-provoking conversations inspired by Several Eternities in a Day: Form in the Age of Living Materials.",
     "event_type": "lecture",
-    "start": "2026-08-22T14:00:37-07:00",
+    "start": "2026-08-22T14:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/manifestation-form-living-materials-contemporary-art",
@@ -4813,7 +4772,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture"
     ],
@@ -4835,7 +4794,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "performance"
     ],
@@ -4857,7 +4816,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -4879,7 +4838,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4903,7 +4862,7 @@
     "artists": [],
     "location_override": null,
     "source": "museumoftolerance.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -4925,7 +4884,7 @@
     "artists": [],
     "location_override": null,
     "source": "museumoftolerance.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -4947,7 +4906,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -4969,7 +4928,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "opening",
       "lecture"
@@ -4992,7 +4951,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -5016,7 +4975,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5038,7 +4997,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5060,7 +5019,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5082,7 +5041,7 @@
     "artists": [],
     "location_override": null,
     "source": "theicala.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "performance"
     ],
@@ -5104,7 +5063,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5126,7 +5085,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5148,7 +5107,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:59+00:00",
+    "scraped_at": "2026-08-06T09:42:30+00:00",
     "event_types": [
       "tour"
     ],
@@ -5170,7 +5129,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -5206,7 +5165,7 @@
     "title": "Lunchtime Art Talk on Fred Wilson",
     "description": "Curator Erin Christovale leads an in-person discussion of Fred Wilson's work.",
     "event_type": "lecture",
-    "start": "2026-08-26T12:30:37-07:00",
+    "start": "2026-08-26T12:30:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-fred-wilson",
@@ -5214,7 +5173,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture"
     ],
@@ -5236,7 +5195,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:38:59+00:00",
+    "scraped_at": "2026-08-06T09:42:30+00:00",
     "event_types": [
       "tour"
     ],
@@ -5258,7 +5217,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -5282,7 +5241,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5304,7 +5263,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -5326,7 +5285,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance"
     ],
@@ -5348,7 +5307,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "lecture"
     ],
@@ -5370,7 +5329,7 @@
     "artists": [],
     "location_override": "California African American Museum",
     "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-05T09:39:00+00:00",
+    "scraped_at": "2026-08-06T09:42:30+00:00",
     "event_types": [
       "other"
     ],
@@ -5392,7 +5351,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -5414,7 +5373,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5436,7 +5395,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -5458,7 +5417,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -5480,7 +5439,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5502,7 +5461,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -5524,7 +5483,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5546,7 +5505,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -5568,7 +5527,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -5590,7 +5549,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5614,7 +5573,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -5638,7 +5597,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5654,7 +5613,7 @@
     "title": "Art Lab",
     "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
     "event_type": "workshop",
-    "start": "2026-08-29T13:00:37-07:00",
+    "start": "2026-08-29T13:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
@@ -5662,7 +5621,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "workshop"
     ],
@@ -5676,7 +5635,7 @@
     "title": "Off-site program: Edgar Arceneaux & Frank Lawson: Place Is the Space",
     "description": "Presented at the UCLA Nimoy Theater, this four-hour immersive performance experience combines live jazz improvisation, theatrical storytelling and multimedia design inspired by Sun Ra’s philosophy and his film Space Is the Place.",
     "event_type": "screening",
-    "start": "2026-08-29T13:00:37-07:00",
+    "start": "2026-08-29T13:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/site-program-edgar-arceneaux-frank-lawson-place-space",
@@ -5684,7 +5643,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "screening",
       "performance"
@@ -5707,7 +5666,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5729,7 +5688,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "screening"
     ],
@@ -5751,7 +5710,7 @@
     "artists": [],
     "location_override": null,
     "source": "nortonsimon.org",
-    "scraped_at": "2026-08-05T09:41:15+00:00",
+    "scraped_at": "2026-08-06T09:44:45+00:00",
     "event_types": [
       "lecture"
     ],
@@ -5760,25 +5719,25 @@
     "audience": []
   },
   {
-    "id": "la_plaza-2026-08-29-inolvidable-event-page-test-ee85b7d125",
+    "id": "la_plaza-2026-08-29-celebrating-the-legacy-of-juan-gabriel-f-f26028e2f8",
     "venue_id": "la_plaza",
-    "title": "Inolvidable event page test",
+    "title": "Celebrating the Legacy of Juan Gabriel | Free with RSVP – Test",
     "description": "",
     "event_type": "performance",
     "start": "2026-08-29T18:30:00-07:00",
     "end": null,
     "all_day": false,
-    "url": "https://lapca.org/event/inolvidable-celebrating-the-legacy-of-juan-gabriel1/?event_date=2026-08-29",
+    "url": "https://lapca.org/event/inolvidable-celebrating-the-legacy-of-juan-gabriel/?event_date=2026-08-29",
     "image": null,
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
-    "is_free": null,
-    "price_text": null,
+    "is_free": true,
+    "price_text": "Free",
     "audience": []
   },
   {
@@ -5790,12 +5749,12 @@
     "start": "2026-08-29T18:30:00-07:00",
     "end": null,
     "all_day": false,
-    "url": "https://lapca.org/event/inolvidable-celebrating-the-legacy-of-juan-gabriel/?event_date=2026-08-29",
+    "url": "https://lapca.org/event/inolvidable-celebrating-the-legacy-of-juan-gabriel1-2/?event_date=2026-08-29",
     "image": null,
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -5817,7 +5776,7 @@
     "artists": [],
     "location_override": null,
     "source": "calarts.edu",
-    "scraped_at": "2026-08-05T09:38:50+00:00",
+    "scraped_at": "2026-08-06T09:42:24+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -5839,7 +5798,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5861,7 +5820,7 @@
     "artists": [],
     "location_override": null,
     "source": "museumoftolerance.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -5883,7 +5842,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "tour"
     ],
@@ -5905,7 +5864,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -5927,7 +5886,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5949,7 +5908,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5971,7 +5930,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -5993,7 +5952,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -6015,7 +5974,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -6037,7 +5996,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -6059,7 +6018,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -6081,7 +6040,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -6103,7 +6062,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -6125,7 +6084,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -6169,7 +6128,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -6191,7 +6150,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "performance"
     ],
@@ -6215,7 +6174,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -6239,7 +6198,7 @@
     "artists": [],
     "location_override": null,
     "source": "calarts.edu",
-    "scraped_at": "2026-08-05T09:38:50+00:00",
+    "scraped_at": "2026-08-06T09:42:24+00:00",
     "event_types": [
       "performance"
     ],
@@ -6261,7 +6220,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -6283,7 +6242,7 @@
     "artists": [],
     "location_override": null,
     "source": "calarts.edu",
-    "scraped_at": "2026-08-05T09:38:50+00:00",
+    "scraped_at": "2026-08-06T09:42:24+00:00",
     "event_types": [
       "other"
     ],
@@ -6305,7 +6264,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -6327,8 +6286,32 @@
     "artists": [],
     "location_override": null,
     "source": "janm.org",
-    "scraped_at": "2026-08-05T09:38:46+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-09-05-guadalupe-arellanes-dream-series-87bf893a7b",
+    "venue_id": "human_resources",
+    "title": "Guadalupe Arellanes’ Dream Series",
+    "description": "Tickets A selection of works from Guadalupe Arellanes’ dream series , exploring the subconscious through cinema, gathering films that translate sleep, memory, existential dread, and altered states into visual poetry, performance, and ritual. Featuring Repertoire of Death , Tides of Time , I dream of snakes (WIP) and other works by Guadalupe Arellanes. The presentation will culminate with a live filming session where audience members will be invited to participate in a scene towards the completion of I dream of snakes . Guadalupe Arellanes is a visual artist, performer, filmmaker, and scholar based in Los Angeles, California. Her work investigates the poetics of place and the lingering textures of hauntings using surrealist techniques, nonlinear temporalities, repetitive motifs, and dream l",
+    "event_type": "screening",
+    "start": "2026-09-05T21:00:00-07:00",
+    "end": "2026-09-05T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/guadalupe-arellanes-dream-series/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/unnamed-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
+    "event_types": [
+      "screening",
+      "performance",
       "lecture"
     ],
     "is_free": null,
@@ -6349,7 +6332,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "other"
     ],
@@ -6371,7 +6354,7 @@
     "artists": [],
     "location_override": null,
     "source": "skirball.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "other"
     ],
@@ -6393,7 +6376,7 @@
     "artists": [],
     "location_override": null,
     "source": "skirball.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "other"
     ],
@@ -6415,7 +6398,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6437,7 +6420,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6459,7 +6442,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6481,7 +6464,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6503,7 +6486,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6547,7 +6530,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -6571,7 +6554,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -6593,7 +6576,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -6615,7 +6598,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance",
       "screening"
@@ -6638,7 +6621,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -6660,7 +6643,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "opening"
     ],
@@ -6682,7 +6665,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6704,7 +6687,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -6726,7 +6709,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -6748,7 +6731,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "opening"
     ],
@@ -6770,7 +6753,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance",
       "screening",
@@ -6794,7 +6777,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -6816,7 +6799,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -6840,7 +6823,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -6864,7 +6847,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance",
       "fair"
@@ -6889,7 +6872,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6911,7 +6894,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6933,7 +6916,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -6955,7 +6938,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6977,7 +6960,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -6999,7 +6982,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -7043,7 +7026,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -7065,7 +7048,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7081,7 +7064,7 @@
     "title": "After-Hours Tour: Stephanie Schrader on Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
     "description": "Join Curator of Drawings, J. Paul Getty Museum, Stephanie Schrader for an after-hours tour of the exhibition.",
     "event_type": "lecture",
-    "start": "2026-09-16T18:00:37-07:00",
+    "start": "2026-09-16T18:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/after-hours-tour-stephanie-schrader-five-centuries-works-paper-grunwald-center",
@@ -7089,7 +7072,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture",
       "tour"
@@ -7112,7 +7095,7 @@
     "artists": [],
     "location_override": null,
     "source": "huntington.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "lecture"
     ],
@@ -7134,7 +7117,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -7156,7 +7139,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -7178,7 +7161,7 @@
     "artists": [],
     "location_override": null,
     "source": "marcianoartfoundation.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -7200,7 +7183,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7224,7 +7207,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7248,7 +7231,7 @@
     "artists": [],
     "location_override": null,
     "source": "janm.org",
-    "scraped_at": "2026-08-05T09:38:46+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "other"
     ],
@@ -7270,7 +7253,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -7292,7 +7275,7 @@
     "artists": [],
     "location_override": null,
     "source": "museum.forestlawn.com",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -7314,7 +7297,7 @@
     "artists": [],
     "location_override": null,
     "source": "armoryarts.org",
-    "scraped_at": "2026-08-05T09:38:49+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "tour"
     ],
@@ -7336,7 +7319,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop",
       "lecture"
@@ -7361,7 +7344,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -7383,7 +7366,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7407,7 +7390,7 @@
     "artists": [],
     "location_override": null,
     "source": "angelsgateart.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "fair"
     ],
@@ -7429,7 +7412,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7453,7 +7436,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "other"
     ],
@@ -7475,7 +7458,7 @@
     "artists": [],
     "location_override": null,
     "source": "thebroad.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance",
       "workshop"
@@ -7500,7 +7483,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -7522,7 +7505,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7546,7 +7529,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7570,7 +7553,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "performance",
       "workshop"
@@ -7593,7 +7576,7 @@
     "artists": [],
     "location_override": null,
     "source": "janm.org",
-    "scraped_at": "2026-08-05T09:38:46+00:00",
+    "scraped_at": "2026-08-06T09:42:14+00:00",
     "event_types": [
       "other"
     ],
@@ -7615,7 +7598,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -7637,7 +7620,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -7659,7 +7642,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -7681,7 +7664,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -7703,7 +7686,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -7749,7 +7732,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -7771,7 +7754,7 @@
     "artists": [],
     "location_override": null,
     "source": "wendemuseum.org",
-    "scraped_at": "2026-08-05T09:38:44+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "workshop"
     ],
@@ -7817,7 +7800,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "fair"
     ],
@@ -7839,7 +7822,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -7861,7 +7844,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "opening",
       "lecture"
@@ -7884,7 +7867,7 @@
     "artists": [],
     "location_override": null,
     "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-05T09:38:41+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "screening"
     ],
@@ -7906,7 +7889,7 @@
     "artists": [],
     "location_override": null,
     "source": "makcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "other"
     ],
@@ -7928,7 +7911,7 @@
     "artists": [],
     "location_override": null,
     "source": "vincentpriceartmuseum.org",
-    "scraped_at": "2026-08-05T09:38:40+00:00",
+    "scraped_at": "2026-08-06T09:42:12+00:00",
     "event_types": [
       "opening",
       "performance"
@@ -7951,7 +7934,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "performance"
     ],
@@ -7973,7 +7956,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "lecture"
     ],
@@ -7995,7 +7978,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "screening"
     ],
@@ -8017,7 +8000,7 @@
     "artists": [],
     "location_override": null,
     "source": "makcenter.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "other"
     ],
@@ -8039,7 +8022,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "screening",
       "workshop"
@@ -8064,7 +8047,7 @@
     "artists": [],
     "location_override": "ucla-luskin-conference-center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -8086,7 +8069,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -8108,7 +8091,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -8130,7 +8113,7 @@
     "artists": [],
     "location_override": "ucla-luskin-conference-center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -8152,7 +8135,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -8174,7 +8157,7 @@
     "artists": [],
     "location_override": null,
     "source": "pieterpasd.com",
-    "scraped_at": "2026-08-05T09:38:53+00:00",
+    "scraped_at": "2026-08-06T09:42:19+00:00",
     "event_types": [
       "other"
     ],
@@ -8196,7 +8179,7 @@
     "artists": [],
     "location_override": "ucla-luskin-conference-center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -8218,7 +8201,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "other"
     ],
@@ -8240,7 +8223,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8256,7 +8239,7 @@
     "title": "After-Hours Tour: Phil Chang on Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
     "description": "Join artist Phil Chang for an after-hours tour of the exhibition.",
     "event_type": "lecture",
-    "start": "2026-10-01T18:00:37-07:00",
+    "start": "2026-10-01T18:00:09-07:00",
     "end": null,
     "all_day": false,
     "url": "https://hammer.ucla.edu/programs-events/2026/after-hours-tour-phil-chang-five-centuries-works-paper-grunwald-center-70-part",
@@ -8264,7 +8247,7 @@
     "artists": [],
     "location_override": null,
     "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-05T09:38:37+00:00",
+    "scraped_at": "2026-08-06T09:42:09+00:00",
     "event_types": [
       "lecture",
       "tour"
@@ -8287,7 +8270,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -8309,7 +8292,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "lecture"
     ],
@@ -8333,7 +8316,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -8355,7 +8338,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop",
       "fair"
@@ -8378,7 +8361,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -8400,7 +8383,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8422,7 +8405,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8444,7 +8427,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "other"
     ],
@@ -8466,7 +8449,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -8488,7 +8471,7 @@
     "artists": [],
     "location_override": null,
     "source": "lasfotosproject.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "opening"
     ],
@@ -8510,7 +8493,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:38+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -8532,7 +8515,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "performance"
     ],
@@ -8554,7 +8537,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8576,7 +8559,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:10+00:00",
     "event_types": [
       "screening"
     ],
@@ -8598,7 +8581,7 @@
     "artists": [],
     "location_override": null,
     "source": "redcat.org",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:11+00:00",
     "event_types": [
       "performance"
     ],
@@ -8620,7 +8603,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "screening"
     ],
@@ -8642,7 +8625,7 @@
     "artists": [],
     "location_override": null,
     "source": "lasfotosproject.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "other"
     ],
@@ -8664,7 +8647,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -8686,7 +8669,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -8700,7 +8683,7 @@
     "id": "clockshop-2026-10-24-subterranean-convergence-opening-recepti-ca4a87a115",
     "venue_id": "clockshop",
     "title": "subterranean convergence: Opening Reception and Performance",
-    "description": "Join us to celebrate the opening of subterranean convergence, a sculptural installation and score…",
+    "description": "subterranean convergence Join us to celebrate the opening of subterranean convergence, a sculptural installation and score…",
     "event_type": "opening",
     "start": "2026-10-24T14:00:00-07:00",
     "end": "2026-10-24T16:00:00-07:00",
@@ -8710,7 +8693,7 @@
     "artists": [],
     "location_override": null,
     "source": "clockshop.org",
-    "scraped_at": "2026-08-05T09:39:06+00:00",
+    "scraped_at": "2026-08-06T09:42:29+00:00",
     "event_types": [
       "opening",
       "performance"
@@ -8733,7 +8716,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance",
       "fair"
@@ -8758,7 +8741,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -8780,7 +8763,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -8802,7 +8785,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8826,7 +8809,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -8848,7 +8831,7 @@
     "artists": [],
     "location_override": "SCI-Arc",
     "source": "https://www.corita.org/events",
-    "scraped_at": "2026-08-05T09:38:56+00:00",
+    "scraped_at": "2026-08-06T09:42:23+00:00",
     "event_types": [
       "performance"
     ],
@@ -8892,7 +8875,7 @@
     "artists": [],
     "location_override": null,
     "source": "lasfotosproject.org",
-    "scraped_at": "2026-08-05T09:38:47+00:00",
+    "scraped_at": "2026-08-06T09:42:16+00:00",
     "event_types": [
       "other"
     ],
@@ -8914,7 +8897,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8936,7 +8919,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -8958,7 +8941,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -8980,7 +8963,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -9002,7 +8985,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9024,7 +9007,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9048,7 +9031,7 @@
     "artists": [],
     "location_override": null,
     "source": "academymuseum.org",
-    "scraped_at": "2026-08-05T09:38:45+00:00",
+    "scraped_at": "2026-08-06T09:42:15+00:00",
     "event_types": [
       "screening"
     ],
@@ -9070,7 +9053,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -9092,7 +9075,7 @@
     "artists": [],
     "location_override": null,
     "source": "molaa.org",
-    "scraped_at": "2026-08-05T09:38:42+00:00",
+    "scraped_at": "2026-08-06T09:42:13+00:00",
     "event_types": [
       "workshop"
     ],
@@ -9114,7 +9097,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9136,7 +9119,7 @@
     "artists": [],
     "location_override": null,
     "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-05T09:38:55+00:00",
+    "scraped_at": "2026-08-06T09:42:22+00:00",
     "event_types": [
       "performance"
     ],
@@ -9158,7 +9141,7 @@
     "artists": [],
     "location_override": null,
     "source": "angelsgateart.org+llm",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "other"
     ],
@@ -9180,7 +9163,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -9202,7 +9185,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9224,7 +9207,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9246,7 +9229,7 @@
     "artists": [],
     "location_override": null,
     "source": "skirball.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "other"
     ],
@@ -9268,7 +9251,7 @@
     "artists": [],
     "location_override": "Getty Center",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "tour"
     ],
@@ -9292,7 +9275,7 @@
     "artists": [],
     "location_override": "Getty Villa",
     "source": "getty.edu",
-    "scraped_at": "2026-08-05T09:38:39+00:00",
+    "scraped_at": "2026-08-06T09:42:08+00:00",
     "event_types": [
       "exhibition"
     ],
@@ -9314,7 +9297,7 @@
     "artists": [],
     "location_override": null,
     "source": "skirball.org",
-    "scraped_at": "2026-08-05T09:38:48+00:00",
+    "scraped_at": "2026-08-06T09:42:18+00:00",
     "event_types": [
       "other"
     ],
