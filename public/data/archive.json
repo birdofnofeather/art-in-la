@@ -14635,5 +14635,72 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-06-in-the-cut-in-35mm-c0ef7f2c7a",
+    "venue_id": "academy_museum",
+    "title": "In the Cut in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-06",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/in-the-cut-019dd585-40b8-73e6-0781-56750aa09dd3",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5RtkuDMvAWSe6J1NxXImDK/50cde3ab6801f54afdc818487cbef194/Aug6_IN_THE_CUT_Thrills3MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-07T08:16:34+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "wende-2026-08-06-the-movement-playground-with-cantilever-03159027ca",
+    "venue_id": "wende",
+    "title": "The Movement Playground with Cantilever Collective",
+    "description": "Step into the spontaneous spirit of The Movement Playground, a dance workshop series from Cantilever Collective. Each session is improvised, ephemeral, and open to all—no dance experience required. With live-mixed soundscapes, playful prompts, and space to move freely, these workshops invite you to explore connection, curiosity, and joy through your own body’s language. One day’s “play” will never be the same as the next. Come as you are. Move how you feel. An ADA-accessible entrance to the Wende Museum Community Center is available through the garden gate from the parking lot. It will open approximately 30 minutes before the program begins. RSVPs for this free program do not guarantee admission to the A-Frame Theater. Doors will open and seating will begin 15 minutes prior to the start of",
+    "event_type": "performance",
+    "start": "2026-08-06T17:30:00-07:00",
+    "end": "2026-08-06T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-movement-playground-with-cantilever-collective-2/2026-08-06/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/09/a0235bd53afbd3dd499f0ff85a44e585-8eFkwX.tmp_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-07T08:16:34+00:00",
+    "event_types": [
+      "performance",
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-06-arrebato-920ca7c176",
+    "venue_id": "human_resources",
+    "title": "Arrebato",
+    "description": "Tickets Arrebato ([areˈβato], “Rapture”) is a 1979 Spanish horror film written and directed by Ivan Zulueta. Horror movie director José is adrift in a sea of doubt and drugs. As his belated second feature nears completion, his reclusive bubble is popped by two events: a sudden reappearance from an ex-girlfriend and a package from past acquaintance Pedro: a reel of Super-8 film, an audiotape, and a door key. From there, the boundaries of time, space, and sexuality are erased as José is once more sucked into Pedro’s vampiric orbit. Together, they attempt the ultimate hallucinogenic catharsis through a moebius strip of filming and being filmed. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-08-06T22:00:00-07:00",
+    "end": "2026-08-06T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/arrebato/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Arrebato-web.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-07T08:16:31+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
