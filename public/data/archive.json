@@ -14702,5 +14702,116 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-07-basic-instinct-in-4k-1dff74907e",
+    "venue_id": "academy_museum",
+    "title": "Basic Instinct in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/basic-instinct-019dd587-0e22-9625-5806-8b921623f8a2",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4RRhmVbt3HoWGN52d7aaYy/0de4d0f033e86ba3c8d64bea2a457fe9/Aug7_BASIC_INSTINCT_Thrills2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-08T07:51:57+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "jaccc-2026-08-07-beauty-ryuichi-sakamotos-outernational-m-bb291004f0",
+    "venue_id": "jaccc",
+    "title": "Beauty: Ryuichi Sakamoto's Outernational Music A Listening Party",
+    "description": "• 7:00 pm - 10:00 pm Where TWCCC & James Irvine Japanese Garden 244 S. San Pedro Street, Los Angeles, CA 90012 Price $15.00 (+$1.50 fee) This event is 21+. Buy Tickets Share About Listen to Ryuichi Sakamoto's \"outernational\" 1989 masterpiece Beauty, which features Okinawan singers Nēnēs along with Senegalese singer Youssou N’Dour, The Beach Boys'",
+    "event_type": "performance",
+    "start": "2026-08-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://jaccc.org/events/beauty-ryuichi-sakamotos-outernational-music-a-listening-party/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "jaccc.org",
+    "scraped_at": "2026-08-08T07:52:10+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": "$1.50–$15",
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-07-the-cat-returns-624ad384ce",
+    "venue_id": "academy_museum",
+    "title": "The Cat Returns",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-cat-returns-019dd519-9fe3-64e5-f810-1c587e19cb45",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/uVAwwv93ICkxoKwaxW353/97fdea579d983955d6435a0472c6713c/Aug3_CAT_RETURNS_Ghibli1GKIDS.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-08T07:51:57+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "hammer-2026-08-07-superfish-salmon-d3ecf9a29b",
+    "venue_id": "hammer",
+    "title": "Superfish: Salmon",
+    "description": "This visually stunning documentary by pioneering marine biologist and Emmy Award-winning filmmaker Rick Rosenthal takes audiences on a journey into the life of wild salmon. Followed by a panel discussion on the ecological necessity and existential threats facing wild salmon populations.",
+    "event_type": "screening",
+    "start": "2026-08-07T19:30:50-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/superfish-salmon",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-07/superfish-salmon.jpg?h=4a602bf9&itok=K09sqLFB",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-08-08T07:51:50+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-07-the-videos-of-olivia-mole-dbe4aecea0",
+    "venue_id": "human_resources",
+    "title": "The Videos of Olivia Mole",
+    "description": "tickets An assortment of video and animation works by Olivia Mole followed by a Q&A discussion with Vishal Jugdeo Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "lecture",
+    "start": "2026-08-07T20:00:00-07:00",
+    "end": "2026-08-07T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/olivia-mole/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/Screenshot-2026-07-31-at-5.48.43-PM-scaled.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-08T07:51:54+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
