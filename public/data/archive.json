@@ -6571,6 +6571,28 @@
     "scraped_at": "2026-05-31T00:05:02+00:00"
   },
   {
+    "id": "artcenter-2026-03-14-dave-muller-proto-typical-exhibition-fc5a7ce0e1",
+    "venue_id": "artcenter",
+    "title": "Dave Muller: Proto Typical Exhibition",
+    "description": "Opening Reception: Saturday, March 14, 2026, 5 to 7 p.m. Presenting more than two decades of work by the Los Angeles-based artist, Proto Typical features a range of multimedia works, including Muller’s watercolors, drawings, temporary murals and installations that illuminate his lifelong fascination with music and its power to shape identity and c",
+    "event_type": "exhibition",
+    "start": "2026-03-14",
+    "end": "2026-08-08",
+    "all_day": true,
+    "url": "https://www.artcenter.edu/about/exhibitions/dave-muller-proto-typical.html",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "artcenter.edu",
+    "scraped_at": "2026-08-08T07:52:09+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "moah-2026-03-14-fireside-chat-with-artist-bachrun-lomele-6533263b52",
     "venue_id": "moah",
     "title": "Fireside Chat with Artist Bachrun LoMele and Critic Shana Nys Dambrot",
@@ -14808,6 +14830,373 @@
     "source": "humanresourcesla.com",
     "scraped_at": "2026-08-08T07:51:54+00:00",
     "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "self_help_graphics-2026-08-08-animating-your-community-a-flipbook-anim-e8acdd021f",
+    "venue_id": "self_help_graphics",
+    "title": "Animating Your Community: A Flipbook Animation Workshop",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.selfhelpgraphics.com/upcoming-events/080826-flipbookanimation-workshop",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://www.selfhelpgraphics.com/events-calendar",
+    "scraped_at": "2026-08-08T07:51:51+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-08-fritz-langs-m-5c28982d90",
+    "venue_id": "academy_museum",
+    "title": "Fritz Lang’s M",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/fritz-langs-m-019dd589-21a2-cf22-47aa-909c46d0348a",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/74zvxJwsejxoRZLhp3XV0l/51c47b305d86ad4caa4e148e9d3ce575/Aug8_M_Thrills1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-09T07:55:24+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-08-harriet-the-spy-in-35mm-fb1db95d0d",
+    "venue_id": "academy_museum",
+    "title": "Harriet the Spy in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/harriet-the-spy-019db102-fe01-43a3-84a5-eeeb5fb60e21",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1RPrVaC6dmIWonjnbSeouz/04ee1966a9bd64911a1f84ff083c0a3f/1_Aug8_HARRIET_THE_SPY_Matinees1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-09T07:55:24+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "huntington-2026-08-08-members-summer-evenings-afd5e3c2f7",
+    "venue_id": "huntington",
+    "title": "Members Summer Evenings",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-08-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/members-summer-evenings",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2Frail%2FHU13XATZ.jpg%3Fh%3Db044a8f9%26itok%3DduXLRaea&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-08-09T07:55:26+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-08-the-4th-man-in-35mm-f262c71b7a",
+    "venue_id": "academy_museum",
+    "title": "The 4th Man in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-4th-man-019dd589-d8d0-bf49-4cbf-adea87d13136",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1QWZnYnQ4Cg9kyzMSWfU4O/f4bc36ca39eeaa8421290c5c51d08e46/Aug8_FOURTH_MAN_Thrills1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-09T07:55:24+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "pvac-2026-08-08-south-bay-bromeliad-associates-annual-sh-15c267b3db",
+    "venue_id": "pvac",
+    "title": "South Bay Bromeliad Associates Annual Show and Sale",
+    "description": "South Bay Bromeliad Associates Annual Show and Sale SATURDAY, AUGUST 8, 2026 10AM – 4PM South Bay Bromeliad Associates Annual Show and Sale will be held Saturday, August 8th, 2026 from 10am to 4pm in the Atrium of Palos Verdes Art Center. Admission and parking are free. On display will be a wide variety of members’ specimen bromeliads including Tillandsia, Neoregelia, Dyckia, Vriesea, Aechmea, Billbergia and Guzmanias, and an artistic arrangement section. Chances are excellent that you will see bromeliads you have not seen before. Bromeliads are easy to grow and offer a wide variety of colors and interesting forms. Club members will be available to answer questions. Plants for sale are from local Southern California commercial vendors and from members’ own collections. www.facebook.com/Sou",
+    "event_type": "other",
+    "start": "2026-08-08T10:00:00-07:00",
+    "end": "2026-08-08T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/south-bay-bromeliad-associates-annual-show-and-sale/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2022/06/BROMELIAD-SQ.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-08-09T07:55:22+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-08-a-scream-workshop-by-jasmine-nyende-b14b6f0bc6",
+    "venue_id": "human_resources",
+    "title": "A Scream Workshop by Jasmine Nyende",
+    "description": "Tickets What sound defines your survival? Learn the art of the perfect cinematic scream and how to locate the rage that leads to liberation. We will outline and define our voices to craft our own iconic horror movie scream scene with breath work exercises, somatic release prompts and co-witnessing each other in the raw chaotic catharsis of horror fiction. Jasmine Nyende is a punk vocalist, educator and visual artist from Los Angeles, California. She was lead vocalist for the punk band FUCK U PAY US! and has taught vocal workshops for the past 10 years at spaces including Girls Rock Camp, CalArts and San Francisco Arts Commission Gallery. She frames each exercise around the legacy of Black women in punk music, punk music as a musical artform that unites people in struggle, and the ways in w",
+    "event_type": "screening",
+    "start": "2026-08-08T12:00:00-07:00",
+    "end": "2026-08-08T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/a-scream-workshop-by-jasmine-nyende/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/screamworkshop2.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-09T07:55:20+00:00",
+    "event_types": [
+      "screening",
+      "performance",
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "pvac-2026-08-08-evelyn-schmitt-meet-038-greet-the-artist-2659d5da88",
+    "venue_id": "pvac",
+    "title": "Evelyn Schmitt: Meet & Greet the Artist",
+    "description": "Evelyn Schmitt: Meet & Greet the Artist Saturday, August 8, 1 – 3pm Norris Gallery Palos Verdes Art Center / Beverly G. Alpay Center for Arts Education is pleased to present Evelyn Schmitt: Tides & Traditions , a solo photography exhibition celebrating the artist’s distinctive vision of coastal life and global cultures. Working in the tradition of street photography, Schmitt is known for her instinctive timing and dynamic images of surfers, skateboarders, and beach volleyball players in motion. She also explores the quieter rhythms of the California coast, capturing the shifting tides, luminous sunsets, and the iconic Manhattan Beach Pier in contemplative landscapes that reflect the beauty of everyday moments. While deeply rooted in Southern California, Schmitt’s photographic practice exte",
+    "event_type": "exhibition",
+    "start": "2026-08-08T13:00:00-07:00",
+    "end": "2026-08-08T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/evelyn-schmitt-meet-greet-the-artist/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2026/07/SQ-webEthiopiaOmoSuri-10-27-24-168.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-08-09T07:55:22+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "wende-2026-08-08-writegirl-neighborhood-workshop-8937bd3b69",
+    "venue_id": "wende",
+    "title": "WriteGirl Neighborhood Workshop",
+    "description": "Uncover the power of poetry as we explore different styles of poetry and ways that poems can express your unique voice! PLUS, you’ll experiment with new techniques which will help you make your poetry expressive and impactful! Whether you’re someone who’s already passionate about poetry or just starting to explore it, you will benefit from this poetic workshop! WriteGirl is a Los Angeles-based creative writing and mentoring organization for teen girls and gender-expansive teens ages 13-18. WriteGirl offers workshops, mentoring and college guidance at no cost to participants. Learn more at www.writegirl.org or email membership@writegirl.org.",
+    "event_type": "workshop",
+    "start": "2026-08-08T13:00:00-07:00",
+    "end": "2026-08-08T14:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/writegirl-neighborhood-workshop/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/WriteGirl-Wende-Workshop.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-09T07:55:23+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ]
+  },
+  {
+    "id": "hammer-2026-08-08-art-lab-a9c60694c3",
+    "venue_id": "hammer",
+    "title": "Art Lab",
+    "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
+    "event_type": "workshop",
+    "start": "2026-08-08T13:00:16-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2025-05/art-lab.jpg?h=8a98ae83&itok=u-3cxmdn",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-08-09T07:55:16+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-08-popcorn-disabilities-conversation-and-bo-fce00805e7",
+    "venue_id": "academy_museum",
+    "title": "Popcorn Disabilities Conversation and Book Signing with Kristen Lopez",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-08-08T14:00:00-07:00",
+    "end": "2026-08-08T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/popcorn-disabilities-book-signing-with-kristen-lopez-019ddf76-e982-c361-1f01-60e1b84b6d8b",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6jM0crDfxKPC6cd7dZxSGg/2aadafae46d7a2fd3639e2831b8d9b2d/Disabilities_Popcorn_book_cover.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-09T07:55:24+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "wende-2026-08-08-revolution-prison-exile-teofilo-ruiz-on-31649a91e5",
+    "venue_id": "wende",
+    "title": "Revolution, Prison, Exile: Teofilo Ruiz on Leaving Cuba",
+    "description": "Historian Teofilo Ruiz joins us to talk about his political engagement in Cuba. As a teenager in San Francisco de Paula, a town outside Havana, Ruiz joined the uprising against Fulgencio Batista. He then broke with the Castro government that replaced him, and in the run-up to the Bay of Pigs he found himself in jail. He left for Miami in 1961 with three changes of clothing, forty-five dollars, a box of Cuban cigars to sell, and a Spanish translation of Jacob Burckhardt’s A History of Greek Civilization , and went on to become one of the most celebrated historians and teachers in the country. Ruiz joins us to look back on the risks and disillusionments of his political life, and on the roots of the continuing tension between the U.S. and Cuba. A complimentary reception follows the program.",
+    "event_type": "opening",
+    "start": "2026-08-08T14:00:00-07:00",
+    "end": "2026-08-08T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/revolution-prison-exile-teofilo-ruiz-on-leaving-cuba/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/castro-16x9-1-scaled.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-09T07:55:23+00:00",
+    "event_types": [
+      "opening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ]
+  },
+  {
+    "id": "getty_center-2026-08-08-garden-concerts-for-kids-flor-bromley-e4ffb70adf",
+    "venue_id": "getty_center",
+    "title": "Garden Concerts for Kids: Flor Bromley",
+    "description": "Family, Performance",
+    "event_type": "workshop",
+    "start": "2026-08-08T16:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/garden-concert-flor-bromley",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-08-08T07:51:51+00:00",
+    "event_types": [
+      "workshop",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "fowler-2026-08-08-opening-celebrationtextiles-as-monument-ec727ef3c4",
+    "venue_id": "fowler",
+    "title": "Opening Celebration:Textiles As Monument",
+    "description": "IN PERSON RSVP Come celebrate the opening of Textiles as Monument, an exhibition...",
+    "event_type": "opening",
+    "start": "2026-08-08T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://fowler.ucla.edu/events/opening-celebration-textiles-as-monuments/?occurrence=2026-08-08",
+    "image": "https://fowler.ucla.edu/wp-content/uploads/2026/06/textiles-monument-opening.png",
+    "artists": [],
+    "location_override": null,
+    "source": "fowler.ucla.edu",
+    "scraped_at": "2026-08-09T07:55:23+00:00",
+    "event_types": [
+      "opening",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "the_broad-2026-08-08-yoko-only-sold-out-5d19ae117f",
+    "venue_id": "the_broad",
+    "title": "Yoko Only (Sold Out)",
+    "description": "This event is sold out. Some tickets may be available at the door, pending capacity. The music of Yoko Ono and Plastic Ono Band performed by indie rock icons Yo La Tengo with Nels Cline and Yuka Honda and featured artists Theo Bleckmann, Finom, Dave Harrington, Kathleen Hanna (Bikini Kill/Le Tigre), Emi Helfrich, Satomi Matsuzaki (Deerhoof), Maggie Parkins, Patrick Shiroishi, Corin Tucker (Sleater-Kinney), Sylvan Esso, Tune-Yards, and Rufus Wainwright. The Broad’s summer concert series returns for one spectacular night with Yoko Only , an evening dedicated to the musical creativity of Yoko Ono and Plastic Ono Band . Guest curator Yuka Honda (eucademix, Cibo Matto) has assembled and joined a supergroup with Yo La Tengo and Nels Cline (Wilco, Nels Cline Singers), thoughtfull",
+    "event_type": "performance",
+    "start": "2026-08-08T19:30:00-07:00",
+    "end": "2026-08-08T23:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.thebroad.org/yoko-only-sold-out",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-08-09T07:55:18+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-08-william-e-jones-and-margie-schnibbe-281849ab1b",
+    "venue_id": "human_resources",
+    "title": "William E. Jones and Margie Schnibbe",
+    "description": "Tickets William E. Jones and Margie Schnibbe in conversation and screening videos including “The Fall of Communism as Seen in Gay Pornography” and “Mistress Samantha Diet Doctor” Vena Virago’s Friday Night (2026) 3 min. Margie Schnibbe A visual artist with a corporate day job and a secret history as adult film director Vena Virago, Margie celebrates the end of a mundane nine-to-five work week. Vena Virago’s Friday Night is a kinetic techno collage comprised of found footage, online gay porn, AI animation, and vintage archival fragments. Mistress Samantha Diet Doctor (1994) 14 min. Margie Schnibbe A West Village dominatrix puts her 400 lb. love slave on an S&M diet. Filmed in NYC when Margie was a sex worker and invited to assist Mistress Samantha in a private session with one of her regula",
+    "event_type": "screening",
+    "start": "2026-08-08T21:00:00-07:00",
+    "end": "2026-08-08T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/william-e-jones-and-margie-schnibbe/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Jones-Fall-of-Communism-B.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-09T07:55:20+00:00",
+    "event_types": [
+      "screening",
       "lecture"
     ],
     "is_free": null,
