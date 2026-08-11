@@ -288,6 +288,28 @@
     "scraped_at": "2026-05-31T00:04:59+00:00"
   },
   {
+    "id": "moca_geffen--barbara-kruger-untitled-questions-199020-955f1bb5e3",
+    "venue_id": "moca_geffen",
+    "title": "Barbara Kruger, Untitled (Questions) (1990/2018)",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2018-10-20",
+    "end": "2020-11-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/barbara-kruger-untitled-questions-2",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org+llm",
+    "scraped_at": "2026-08-10T08:41:03+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "getty_center-2019-06-11-bauhaus-beginningsexh-b22ebd6b23",
     "venue_id": "getty_center",
     "title": "Bauhaus Beginnings",
@@ -1776,6 +1798,28 @@
     "location_override": null,
     "source": "thebroad.org",
     "scraped_at": "2026-05-31T00:04:58+00:00"
+  },
+  {
+    "id": "moca_geffen--nancy-rubins-chas-stainless-steel-mark-t-68df44d909",
+    "venue_id": "moca_geffen",
+    "title": "Nancy Rubins, Chas' Stainless Steel, Mark Thompson's Airplane Parts, About 1,000 Pounds of Stainless Steel Wire, and Gagosian's Beverly Hills Space at MOCA (2002)",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2024-01-01",
+    "end": "2024-08-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/nancy-rubins-chas-stainless-steel-mark-thompsons-airplane-parts-about-1000-pounds-of-stainless-steel-wire-and-gagosians-beverly-hills-space-at-moca-2002",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org+llm",
+    "scraped_at": "2026-08-10T08:41:03+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   },
   {
     "id": "getty_center-2024-01-23-conserving-eden-cranachs-adam-and-eve-fr-445f0cb4da",
@@ -5941,6 +5985,72 @@
     ]
   },
   {
+    "id": "moca_grand-2026-02-10-gifts-of-michael-asherexh-4dc098903c",
+    "venue_id": "moca_grand",
+    "title": "Gifts of Michael Asher",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-10",
+    "end": "2026-08-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/gifts-of-michael-asher",
+    "image": "https://www.moca.org/storage/app/uploads/public/698/e6b/bd0/thumb_14592_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-08-10T08:40:52+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "moca_grand-2026-02-10-good-on-paper-works-from-the-gene-j-and-0516dcbe23",
+    "venue_id": "moca_grand",
+    "title": "Good on Paper: Works from the Gene J. and Betye M. Burton Acquisitions Endowment",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-10",
+    "end": "2026-08-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/good-on-paper",
+    "image": "https://www.moca.org/storage/app/uploads/public/693/76d/ede/thumb_14320_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-08-10T08:40:52+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "moca_grand-2026-02-10-haegue-yang-starcrossed-rendezvousexh-af3796bab5",
+    "venue_id": "moca_grand",
+    "title": "Haegue Yang: Star-Crossed Rendezvous",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-10",
+    "end": "2026-08-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/haegue-yang",
+    "image": "https://www.moca.org/storage/app/uploads/public/69a/b33/448/thumb_14703_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-08-10T08:40:52+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "moca_grand-2026-02-10-moca-focus-diane-severin-nguyenwar-songs-6f7ab0fa59",
     "venue_id": "moca_grand",
     "title": "MOCA Focus: Diane Severin NguyenWAR SONGS",
@@ -5958,6 +6068,28 @@
     "event_types": [
       "exhibition"
     ]
+  },
+  {
+    "id": "moca_grand-2026-02-10-michael-asherexh-3e3538b055",
+    "venue_id": "moca_grand",
+    "title": "Michael Asher",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-02-10",
+    "end": "2026-08-10",
+    "all_day": true,
+    "url": "https://www.moca.org/exhibition/michael-asher",
+    "image": "https://www.moca.org/storage/app/uploads/public/69e/803/608/thumb_14807_710_0_0_0_auto.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "moca.org",
+    "scraped_at": "2026-08-10T08:40:52+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   },
   {
     "id": "moca_grand-2026-02-11-moca-focus-diane-severin-nguyenwar-songs-a82c27cc6e",
@@ -15579,6 +15711,72 @@
     "scraped_at": "2026-08-10T08:40:55+00:00",
     "event_types": [
       "closing",
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "pieter-2026-08-10-restore-with-mason-gray-f16d06f65d",
+    "venue_id": "pieter",
+    "title": "Restore with Mason Gray",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-08-10",
+    "end": "2026-08-10",
+    "all_day": true,
+    "url": "https://pieterpasd.com/programs/restore",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-08-11T08:11:26+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-10-the-prestige-in-35mm-6ec40c7de2",
+    "venue_id": "academy_museum",
+    "title": "The Prestige in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-prestige-019dd58c-400e-aae7-d42b-8937636a5c73",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4qFiWm5yrmTWkE7Zh20GB4/d90c24cae7616a4695e060ce7ae72d6b/Aug10_PRESTIGE_Thrills1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-11T08:11:19+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-10-flaming-ears-06cdbd2dc8",
+    "venue_id": "human_resources",
+    "title": "Flaming Ears",
+    "description": "Tickets Flaming Ears is a 1992 Austrian science fiction queer film directed by and starring A. Hans Scheirl, Ursula Pürrer, and Dietmar Schipek. A pop sci-fi lesbian extravaganza set in the year 2700 in the fictional burned-out city of Asche that follows the tangled lives of three women. This story of obsession and revenge is also an anti-romantic plea for love in all its many forms. A truly underground film shot on Super 8 and newly restored, FLAMING EARS is original for its playful disruption of narrative conventions, its witty approach to film genre, and its punk visual splendor. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-08-10T22:00:00-07:00",
+    "end": "2026-08-10T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/flaming-ears/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/17flaming-ears-art-videoSixteenByNineJumbo1600.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-10T08:40:55+00:00",
+    "event_types": [
       "screening"
     ],
     "is_free": null,
