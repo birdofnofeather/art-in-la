@@ -1640,6 +1640,28 @@
     "scraped_at": "2026-05-31T00:05:01+00:00"
   },
   {
+    "id": "joan-2023-09-09-yalda-afsah-eye-to-eye-8970c6cf5d",
+    "venue_id": "joan",
+    "title": "Yalda Afsah, Eye to Eye",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2023-09-09",
+    "end": "2023-10-21",
+    "all_day": true,
+    "url": "https://joanlosangeles.org/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "joanlosangeles.org",
+    "scraped_at": "2026-08-13T08:23:36+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "getty_center-2023-09-12-reckoning-with-millets-man-with-a-hoeexh-c4dc75ed6a",
     "venue_id": "getty_center",
     "title": "Reckoning with Milletâs *Man with a Hoe*",
@@ -13957,6 +13979,28 @@
     "audience": []
   },
   {
+    "id": "jaccc-2026-07-27-nisei-week-parade-street-dance-practice-d7e47fd860",
+    "venue_id": "jaccc",
+    "title": "Nisei Week Parade & Street Dance Practice",
+    "description": "- 9:00 pm Practice: 6:30 pm - 7:50 pm Break: 7:50 pm - 8:00 pm Practice: 8:00 pm - 9:00 pm Where Isamu Noguchi Plaza 244 S. San Pedro Street, Los Angeles, CA 90012 Price Free. No RSVP required. Learn More Share Schedule Date Practice Monday, July 27, 2026 Parade Dance Wednesday, July 29 2026 Parade Dance Monday, August 3, 2026 Parade Dance & Stree",
+    "event_type": "performance",
+    "start": "2026-07-27T18:30:00-07:00",
+    "end": "2026-08-12",
+    "all_day": false,
+    "url": "https://jaccc.org/events/nisei-week-parade-street-dance-practice-2026/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "jaccc.org",
+    "scraped_at": "2026-08-13T08:23:46+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
     "id": "getty_center-2026-07-28-curators-tour-odilon-redon-otherworldly-45cb00317d",
     "venue_id": "getty_center",
     "title": "Curator's Tour: *Odilon Redon: Otherworldly Visions*",
@@ -15845,6 +15889,28 @@
     "event_types": [
       "screening",
       "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-12-to-be-or-not-to-be-3b1f76e316",
+    "venue_id": "academy_museum",
+    "title": "To Be or Not to Be",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-12",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/to-be-or-not-to-be-019dd531-8cec-e732-df70-044dfc38219b",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5cn2adIRA8Q4ThLADUykjG/49af59f776dd19b8718036147604321d/Aug12_TO_BE_OR_NOT_TO_BE_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-13T08:23:33+00:00",
+    "event_types": [
+      "screening"
     ],
     "is_free": null,
     "price_text": null,
