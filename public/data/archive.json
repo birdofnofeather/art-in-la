@@ -14411,6 +14411,30 @@
     ]
   },
   {
+    "id": "academy_museum-2026-08-01-dropin-workshop-for-families-character-d-6f36dbfe6b",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Families: Character Design",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-01T12:30:00-07:00",
+    "end": "2026-08-01T14:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-character-design-019f3e1b-732f-d553-1f49-9f3eeb869abb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1FLaZBKNbJ2L4jEQOPhkxk/128bdd06dbbe333799d3faf84bb4b2cb/Drop_in_Workshop_August_26.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-16T07:33:47+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ]
+  },
+  {
     "id": "janm-2026-08-01-finding-okinawan-roots-with-okinawa-pref-38ae56bb83",
     "venue_id": "janm",
     "title": "Finding Okinawan Roots with Okinawa Prefectural Library",
@@ -15213,6 +15237,30 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-08-dropin-workshop-for-families-character-d-714ab944d1",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Families: Character Design",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-08T12:30:00-07:00",
+    "end": "2026-08-08T14:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-character-design-019f3e1b-732f-d553-1f49-9f3eeb869abb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1FLaZBKNbJ2L4jEQOPhkxk/128bdd06dbbe333799d3faf84bb4b2cb/Drop_in_Workshop_August_26.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-16T07:33:47+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ]
   },
   {
     "id": "pvac-2026-08-08-evelyn-schmitt-meet-038-greet-the-artist-2659d5da88",
@@ -16158,6 +16206,192 @@
     "scraped_at": "2026-08-15T07:33:15+00:00",
     "event_types": [
       "opening",
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-15-scoobydoo-in-35mm-1e98a3e34a",
+    "venue_id": "academy_museum",
+    "title": "Scooby-Doo in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/scooby-doo-019db103-7ebb-e23a-c52a-b153e188f713",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3ci1STiSVig1V6vDjTNiW/04bb1e197a5d42b24f4e480427aa675d/1_Aug15_SCOOBY_DOO_Matinees1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-16T07:33:47+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "academy_museum-2026-08-15-the-ugly-with-yeon-sangho-and-park-jeong-5fa1ac1b29",
+    "venue_id": "academy_museum",
+    "title": "The Ugly with Yeon Sang-ho and Park Jeong-min",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-ugly-019e0a0a-e285-aa70-93a8-d960d2b0c160",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6HZPznCLDus65uyPcNb1hJ/7c950f3e70c09e21436e36824ceaf659/Aug15_UGLY_Thrills2MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-16T07:33:47+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-15-train-to-busan-in-4k-with-yeon-sangho-45600328b4",
+    "venue_id": "academy_museum",
+    "title": "Train to Busan in 4K with Yeon Sang-ho",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/train-to-busan-019e0a0b-adbd-3b4f-a93e-c94024d83aed",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5mMh6CI8W0aJJYKotvopiF/24d9044e40a5c75193e294e49c40d6c1/Aug15_TRAIN_TO_BUSAN_Thrills1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-16T07:33:47+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "getty_villa-2026-08-15-artistatwork-papyrus-making-3c8b4ab866",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Papyrus Making",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-08-15T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/artist-at-work-papyrus-making",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-08-16T07:33:43+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "getty_villa-2026-08-15-papyrus-scroll-making-family-workshop-375b226739",
+    "venue_id": "getty_villa",
+    "title": "Papyrus Scroll Making: Family Workshop",
+    "description": "Art Making, Family",
+    "event_type": "workshop",
+    "start": "2026-08-15T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/papyrus-scroll-workshop",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-08-16T07:33:43+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "getty_center-2026-08-15-garden-concerts-for-kids-elizabeth-mitch-7e12f45d9f",
+    "venue_id": "getty_center",
+    "title": "Garden Concerts for Kids: Elizabeth Mitchell",
+    "description": "Family, Performance",
+    "event_type": "workshop",
+    "start": "2026-08-15T16:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/garden-concert-elizabeth-mitchell",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-08-16T07:33:43+00:00",
+    "event_types": [
+      "workshop",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "human_resources-2026-08-15-play-it-as-it-lays-cd86165bf2",
+    "venue_id": "human_resources",
+    "title": "Play It As It Lays",
+    "description": "Tickets East Of Borneo presents Play It As It Lays Burned-out B-movie actress Maria, depressed and frustrated with her loveless marriage to an ambitious film director, Carter Lang, who would rather work on his career than on his relationship with her, numbs herself with drugs and sex with strangers. Only her friendship with a sensitive gay movie producer, B.Z., offers a semblance of solace. But even that relationship proves to be fleeting amidst the empty decadence of Hollywood. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-08-15T19:00:00-07:00",
+    "end": "2026-08-15T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/play-it-as-it-lays/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/EOB-Playitasitlays-flyer.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-16T07:33:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-15-portrait-of-jason-023b9309d3",
+    "venue_id": "human_resources",
+    "title": "Portrait of Jason",
+    "description": "Tickets On the night of December 2, 1966, Shirley Clarke and a tiny crew convened in her apartment at the Hotel Chelsea to make a film. For twelve straight hours, they filmed the one-and-only Jason Holliday as he spun tales, sang, donned costumes, and reminisced about good times and bad behavior as a gay hustler and aspiring cabaret performer. The result is a mesmerizing portrait of a remarkable, charming, and tortured man who is by turns hilarious and heartbreaking. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-08-15T22:00:00-07:00",
+    "end": "2026-08-15T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/portrait-of-jason/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/portrait-of-jason-2000x1415-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-16T07:33:44+00:00",
+    "event_types": [
       "screening",
       "performance"
     ],
