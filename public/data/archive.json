@@ -16761,5 +16761,49 @@
     "audience": [
       "family"
     ]
+  },
+  {
+    "id": "academy_museum-2026-08-17-a-snake-of-june-ec9e4711ab",
+    "venue_id": "academy_museum",
+    "title": "A Snake of June",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-17",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/a-snake-of-june-019dd58f-be6b-74f3-d4b0-11084892d642",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/46yZ8po6damV5EDDQwPHzf/0a52ac8fad3b876f0c13b275d289b8cc/Aug_17_SNAKE_OF_JUNE_Thrills3AGFA.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-18T07:40:20+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-17-the-lure-700438de7f",
+    "venue_id": "human_resources",
+    "title": "The Lure",
+    "description": "Tickets The Lure is a 2015 Polish musical horror film directed by Agnieszka Smoczyńska and written by Robert Bolesto. This genre-defying horror-musical mash-up—the bold debut of Polish director Agnieszka Smoczyńska—follows a pair of carnivorous mermaid sisters drawn ashore to explore life on land in an alternate 1980s Poland. Their tantalizing siren songs and otherworldly auras make them overnight sensations as nightclub singers in the half-glam, half-decrepit world of Smoczyńska’s imagining. The director gives fierce teeth to her viscerally sensual, darkly feminist twist on Hans Christian Andersen’s “The Little Mermaid,” in which the girls’ bond is tested and their survival threatened after one sister falls for a human. A coming-of-age fairy tale with a catchy synth-fueled soundtrack, out",
+    "event_type": "screening",
+    "start": "2026-08-17T22:00:00-07:00",
+    "end": "2026-08-17T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/the-lure/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/07/Lure_Still05.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-18T07:40:16+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
