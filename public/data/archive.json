@@ -16785,6 +16785,28 @@
     "audience": []
   },
   {
+    "id": "the_broad-2026-08-17-fresh-collection-galleriesexh-c37ad373ae",
+    "venue_id": "the_broad",
+    "title": "Fresh Collection Galleries",
+    "description": "More from the Vault. New Art on View. Unfolding now through October, The Broad is reinstalling nearly two-thirds of its collection galleries, bringing more than 30 works out of the vault. Highlights include pairings of works by Cindy Sherman and John Baldessari , Urs Fischer and Jonas Wood , and Anselm Kiefer and Kara Walker , along with changes in the Takashi Murakami gallery and much more throughout the third floor. These changes mean new artworks to see each month, offering a chance to see more of The Broad's over 2,000-works collection and a preview of what's to come. When the expanded museum opens in 2028, gallery space will grow by 70%.",
+    "event_type": "exhibition",
+    "start": "2026-08-17",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.thebroad.org/art/free-accesss/fresh-collection-galleries",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-08-20T07:43:29+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "human_resources-2026-08-17-the-lure-700438de7f",
     "venue_id": "human_resources",
     "title": "The Lure",
@@ -16801,6 +16823,73 @@
     "scraped_at": "2026-08-18T07:40:16+00:00",
     "event_types": [
       "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-19-out-of-sight-c281f39d76",
+    "venue_id": "academy_museum",
+    "title": "Out of Sight",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-19",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/out-of-sight-019dd532-0b98-b1eb-af29-bc9f09d740b6",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6qEAwuvWVBPmu76vAJwxLO/a7235d7286e5714795daac9e160a2660/Aug19_OUT_OF_SIGHT_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-20T07:43:32+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "hammer-2026-08-19-lunchtime-art-talk-on-carlos-almaraz-13ed75d399",
+    "venue_id": "hammer",
+    "title": "Lunchtime Art Talk on Carlos Almaraz",
+    "description": "Associate director of academic programs Hallie Scott leads an in-person discussion of Carlos Almaraz's work.",
+    "event_type": "lecture",
+    "start": "2026-08-19T12:30:25-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-carlos-almaraz",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-04/Hallie_Almaraz.png?h=9362560b&itok=XcgCBGIe",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-08-20T07:43:25+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-19-unwrinkled-ear-7e432fc0de",
+    "venue_id": "human_resources",
+    "title": "Unwrinkled Ear",
+    "description": "Tickets The Unwrinkled Ear presents three sets of improvised music on Wednesday, August 19, where improvisation is less a musical genre than a way of testing what can happen when people, instruments and bodies meet without a predetermined map. Jacob Wick (trumpet)/ Marc Riordan (keys) Aine Nakamura (movement and voice)/ Georgia E. Bell (doublebass)/ Wilson Shook (woodwinds) Clementine Wink (electronics)/ Kelby Clark (banjo)/ Adam Lion (vibraphone) Jacob Wick and Marc Riordan began collaborating in 2006, after first meeting at the Harold Arts Residency in Chesterhill, Ohio. Their twenty-year collaboration explores the recessed corners of musical possibility, often landing in some contradictory space between earnest collective insight and impish agitation. Over the years, they have come toge",
+    "event_type": "screening",
+    "start": "2026-08-19T20:00:00-07:00",
+    "end": "2026-08-19T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/unwrinkled-ear/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/UE-104-Eventbrite.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-20T07:43:29+00:00",
+    "event_types": [
+      "screening",
+      "performance"
     ],
     "is_free": null,
     "price_text": null,
