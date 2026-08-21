@@ -6,21 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:autry-2026-08-20-sizzling-summer-nights-guicho-y-la-tribu-91c51eeaf3@art-in-la
-DTSTAMP:20260820T074615Z
-DTSTART:20260821T010000Z
-DTEND:20260821T040000Z
-SUMMARY:Sizzling Summer Nights | Guicho y La Tribu
-LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
-URL:https://theautry.org/events/family-activities/sizzling-summer-nights-g
- uicho-y-la-tribu
-DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
- ts/family-activities/sizzling-summer-nights-guicho-y-la-tribu\n\nFamily A
- ctivities\, Live Performances\, Member Events\, Autry Outdoors
-END:VEVENT
-BEGIN:VEVENT
 UID:academy_museum-2026-08-21-ponyo-in-35mm-a9a7063211@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260821T213000Z
 DTEND:20260821T220000Z
 SUMMARY:Ponyo in 35mm
@@ -32,7 +19,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:jaccc-2026-08-22-sushi-pop-59f61a0170@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART;VALUE=DATE:20260822
 SUMMARY:Sushi Pop
 LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
@@ -47,7 +34,7 @@ DESCRIPTION:Japanese American Cultural & Community Center · $55–$100 ·
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-08-22-mukbang-matinee-hunger-care-and-the-asia-a39dbc107a@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260822T180000Z
 DTEND:20260822T210000Z
 SUMMARY:Mukbang Matinee: Hunger\, Care\, and the Asian Body
@@ -65,7 +52,7 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/mukban
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-08-22-nancy-drew-c2b2e581ee@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260822T180000Z
 DTEND:20260822T191500Z
 SUMMARY:Nancy Drew
@@ -77,8 +64,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-08-22-art-lab-x-markings-a3127a6093@art-in-la
-DTSTAMP:20260820T074615Z
-DTSTART:20260822T200025Z
+DTSTAMP:20260821T074839Z
+DTSTART:20260822T200033Z
 SUMMARY:Art Lab x Markings
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/art-lab-x-markings-0
@@ -90,7 +77,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-22-homecoming-a-staged-reading-34edbe5ffe@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260822T210000Z
 DTEND:20260822T230000Z
 SUMMARY:Homecoming\, a staged reading
@@ -106,7 +93,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/homecoming-a-sta
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-08-22-street-food-cinema-obsession2026-cf31fc6987@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260823T010000Z
 DTEND:20260823T060000Z
 SUMMARY:Street Food Cinema |Obsession(2026)
@@ -119,7 +106,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-08-22-priya-sen-yeh-freedom-life-2018-4b65670bcc@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260823T040000Z
 DTEND:20260823T053000Z
 SUMMARY:Priya Sen | Yeh Freedom Life | 2018
@@ -135,7 +122,7 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/priya-
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-08-23-bonsai-builders-family-workshop-b9af71bcb4@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART;VALUE=DATE:20260823
 SUMMARY:Bonsai Builders Family Workshop
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -145,7 +132,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-08-23-fantastic-creatures-family-workshop-8d7249ea98@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260823T180000Z
 SUMMARY:Fantastic Creatures: Family Workshop
 LOCATION:Getty Center
@@ -155,7 +142,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/fantastic-c
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-23-illustrating-picture-books-with-stephani-0f382aefbb@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260823T210000Z
 DTEND:20260823T220000Z
 SUMMARY:Illustrating Picture Books with Stephanie Lunkewitz
@@ -173,7 +160,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/illustrating-pic
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-08-25-evidence-by-lee-anne-schmitt-ff1a7f83a1@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260826T030000Z
 DTEND:20260826T043000Z
 SUMMARY:Evidence by Lee Anne Schmitt
@@ -189,7 +176,7 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/eviden
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-26-saved-by-a-storyintergenerational-writin-e21e057ef2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260826T230000Z
 DTEND:20260827T010000Z
 SUMMARY:Saved by a Story–Intergenerational Writing Group
@@ -207,7 +194,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/saved-by-a-story
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-08-27-sizzling-summer-nights-conjunto-oye-c0fb1a5bba@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260828T010000Z
 DTEND:20260828T040000Z
 SUMMARY:Sizzling Summer Nights | Conjunto Oye!
@@ -220,7 +207,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-08-29-calm-morning-foley-art-57ab77d703@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260829T160000Z
 DTEND:20260829T200000Z
 SUMMARY:Calm Morning: Foley Art
@@ -233,7 +220,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-08-29-tales-in-two-tongues-bilingual-russianen-758a0d1fd1@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260829T173000Z
 DTEND:20260829T180000Z
 SUMMARY:Tales in Two Tongues: Bilingual Russian-English Storytime
@@ -249,7 +236,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/storytime/2026-0
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-08-29-zootopia-357fbfff45@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260829T180000Z
 DTEND:20260829T191500Z
 SUMMARY:Zootopia
@@ -261,7 +248,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-08-31-cecilia-vicuas-what-is-poetry-to-you-580ab9413c@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260901T030000Z
 DTEND:20260901T050000Z
 SUMMARY:Cecilia Vicuña’s What Is Poetry to You?
@@ -278,7 +265,7 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/cecili
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-02-digitization-day-free-archival-digitizat-afffcb048c@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260902T193000Z
 DTEND:20260902T233000Z
 SUMMARY:Digitization Day: Free Archival Digitization
@@ -296,7 +283,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/digitiza
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-09-02-molaa-food-pantry-35ee5fdb63@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260902T230000Z
 SUMMARY:MOLAA Food Pantry
 LOCATION:628 Alamitos Ave\, Long Beach\, CA 90802
@@ -311,7 +298,7 @@ DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-05-snow-white-and-the-seven-dwarfs-1ac4ffba50@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260905T180000Z
 DTEND:20260905T191500Z
 SUMMARY:Snow White and the Seven Dwarfs
@@ -324,7 +311,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-05-dropin-workshop-for-families-production-0a5dfc1a21@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260905T193000Z
 DTEND:20260905T213000Z
 SUMMARY:Drop-in Workshop for Families: Production Design Miniature Sets
@@ -338,7 +325,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-06-illustrating-picture-books-with-stephani-170f095f37@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260906T210000Z
 DTEND:20260906T220000Z
 SUMMARY:Illustrating Picture Books with Stephanie Lunkewitz
@@ -356,7 +343,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/illustrating-pic
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-09-saved-by-a-storyintergenerational-writin-251f2b82a0@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260909T230000Z
 DTEND:20260910T010000Z
 SUMMARY:Saved by a Story–Intergenerational Writing Group
@@ -374,7 +361,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/saved-by-a-story
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-12-the-monster-squad-in-35mm-eb4bb8f88a@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260912T180000Z
 DTEND:20260912T191500Z
 SUMMARY:The Monster Squad in 35mm
@@ -387,7 +374,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-12-dropin-workshop-for-families-production-2567a24ca8@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260912T193000Z
 DTEND:20260912T213000Z
 SUMMARY:Drop-in Workshop for Families: Production Design Miniature Sets
@@ -401,7 +388,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_villa-2026-09-13-artistatwork-papyrus-making-cfd4342585@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260913T180000Z
 SUMMARY:Artist-at-Work: Papyrus Making
 LOCATION:Getty Villa
@@ -411,7 +398,7 @@ DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_villa-2026-09-13-papyrus-scroll-making-family-workshop-8df70f9539@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260913T180000Z
 SUMMARY:Papyrus Scroll Making: Family Workshop
 LOCATION:Getty Villa
@@ -421,7 +408,7 @@ DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-09-13-fiestas-patrias-family-day-free-with-rsv-e7e80505f6@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260913T190000Z
 SUMMARY:Fiestas Patrias Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -431,7 +418,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-13-illustrating-picture-books-with-stephani-132a5fe85e@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260913T210000Z
 DTEND:20260913T220000Z
 SUMMARY:Illustrating Picture Books with Stephanie Lunkewitz
@@ -449,7 +436,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/illustrating-pic
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-09-16-molaa-food-pantry-e5bfaf1bb3@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260916T230000Z
 SUMMARY:MOLAA Food Pantry
 LOCATION:628 Alamitos Ave\, Long Beach\, CA 90802
@@ -464,7 +451,7 @@ DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-18-artistatwork-tapa-making-79cb551fbb@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260918T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -474,7 +461,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-18-stories-in-ink-ttau-bookmark-workshop-8c8e40b9cb@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260918T180000Z
 SUMMARY:Stories in Ink: TÄtau Bookmark Workshop
 LOCATION:Getty Center
@@ -484,7 +471,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:jaccc-2026-09-19-moveable-feast-edmund-de-waal-paul-holde-6d4ed57f6b@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART;VALUE=DATE:20260919
 SUMMARY:Moveable Feast Edmund de Waal & Paul Holdengräber in Conversation
   A Map of Remembering: Place\, Family\, Story
@@ -502,7 +489,7 @@ DESCRIPTION:Japanese American Cultural & Community Center · $10 · https:
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-09-19-south-bay-orchid-society-fall-show-038-s-6f7b5b8e54@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T170000Z
 DTEND:20260920T230000Z
 SUMMARY:South Bay Orchid Society Fall Show & Sale
@@ -520,7 +507,7 @@ DESCRIPTION:Palos Verdes Art Center · $5 · https://pvartcenter.org/upcom
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-19-artistatwork-tapa-making-368569406a@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -530,7 +517,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-19-something-wicked-this-way-comes-in-35mm-d5a60db31f@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T180000Z
 DTEND:20260919T191500Z
 SUMMARY:Something Wicked This Way Comes in 35mm
@@ -543,7 +530,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-19-stories-in-ink-ttau-bookmark-workshop-ec7c64f1f2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T180000Z
 SUMMARY:Stories in Ink: TÄtau Bookmark Workshop
 LOCATION:Getty Center
@@ -553,7 +540,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-19-dropin-workshop-for-families-production-a359f3c7c9@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T193000Z
 DTEND:20260919T213000Z
 SUMMARY:Drop-in Workshop for Families: Production Design Miniature Sets
@@ -567,7 +554,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-19-inside-screenwriting-la-plays-itself-wit-13d427782e@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T210000Z
 DTEND:20260919T220000Z
 SUMMARY:Inside Screenwriting: LA Plays Itself with Larry Karaszewski
@@ -581,7 +568,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-19-navigating-our-media-ecosystem-reclaimin-99064be851@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260919T210000Z
 DTEND:20260919T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -599,7 +586,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-20-artistatwork-tapa-making-2bfac077b0@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260920T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -609,7 +596,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-20-stories-in-ink-ttau-bookmark-workshop-5f2af17f2e@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260920T180000Z
 SUMMARY:Stories in Ink: TÄtau Bookmark Workshop
 LOCATION:Getty Center
@@ -619,7 +606,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-20-illustrating-picture-books-with-stephani-a1cd82aec2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260920T210000Z
 DTEND:20260920T220000Z
 SUMMARY:Illustrating Picture Books with Stephanie Lunkewitz
@@ -637,7 +624,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/illustrating-pic
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-23-saved-by-a-storyintergenerational-writin-2c0c53c3af@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260923T230000Z
 DTEND:20260924T010000Z
 SUMMARY:Saved by a Story–Intergenerational Writing Group
@@ -655,7 +642,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/saved-by-a-story
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-09-26-abbott-and-costello-meet-frankenstein-285b684273@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260926T180000Z
 DTEND:20260926T191500Z
 SUMMARY:Abbott and Costello Meet Frankenstein
@@ -668,7 +655,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-27-2026-fall-icea-free-chess-the-wende-0d35999853@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260927T160000Z
 DTEND:20260928T010000Z
 SUMMARY:2026 Fall ICEA Free Chess @ The Wende
@@ -685,7 +672,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/2026-fal
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20260927T180000Z
 SUMMARY:Lucha Libre Film Screening and Family Expo!
 LOCATION:628 Alamitos Ave\, Long Beach\, CA 90802
@@ -701,7 +688,7 @@ DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261001T220000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -712,7 +699,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-03-hocus-pocus-d4239d2817@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261003T180000Z
 DTEND:20261003T191500Z
 SUMMARY:Hocus Pocus
@@ -724,7 +711,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-03-inside-barbie-to-anna-karenina-productio-1f0a8d631c@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261003T210000Z
 DTEND:20261003T220000Z
 SUMMARY:Inside Barbie to Anna Karenina: Production Design with Jan Pascale
@@ -737,7 +724,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-03-navigating-our-media-ecosystem-reclaimin-9b0f7690bd@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261003T210000Z
 DTEND:20261003T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -755,7 +742,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-10-the-little-vampire-in-35mm-3e2787beb3@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261010T180000Z
 DTEND:20261010T191500Z
 SUMMARY:The Little Vampire in 35mm
@@ -768,7 +755,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-14-saved-by-a-storyintergenerational-writin-a912672955@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261014T230000Z
 DTEND:20261015T010000Z
 SUMMARY:Saved by a Story–Intergenerational Writing Group
@@ -786,7 +773,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/saved-by-a-story
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-24-hotel-transylvania-f879d5e72c@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261024T180000Z
 DTEND:20261024T193000Z
 SUMMARY:Hotel Transylvania
@@ -799,7 +786,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-24-monster-mash-6a9f290510@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261024T180000Z
 DTEND:20261024T230000Z
 SUMMARY:Monster Mash
@@ -811,7 +798,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -821,7 +808,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-31-the-witches-7a6c98bf41@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261031T180000Z
 DTEND:20261031T191500Z
 SUMMARY:The Witches
@@ -833,7 +820,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261105T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -844,7 +831,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-the-haunted-mansion-05d0a5d5e2@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261107T190000Z
 DTEND:20261107T201500Z
 SUMMARY:The Haunted Mansion
@@ -857,7 +844,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261107T203000Z
 DTEND:20261107T223000Z
 SUMMARY:Drop-in Workshop for Families: Día de Muertos with Lil’ Libros
@@ -871,7 +858,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-14-frankenweenie-in-35mm-871e30fbbd@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261114T190000Z
 DTEND:20261114T203000Z
 SUMMARY:Frankenweenie in 35mm
@@ -884,7 +871,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-wendell-wild-2ddc497836@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261121T190000Z
 DTEND:20261121T203000Z
 SUMMARY:Wendell & Wild
@@ -896,7 +883,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-28-gremlins-2f6bd218ae@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261128T190000Z
 DTEND:20261128T203000Z
 SUMMARY:Gremlins
@@ -908,7 +895,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20261203T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -919,7 +906,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
-DTSTAMP:20260820T074615Z
+DTSTAMP:20260821T074839Z
 DTSTART:20270107T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
