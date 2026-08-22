@@ -17071,5 +17071,141 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-21-gunfight-at-the-ok-corral-in-vistavision-08dbe494f2",
+    "venue_id": "academy_museum",
+    "title": "Gunfight at the O.K. Corral in VistaVision",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-21",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/gunfight-at-the-o-k-corral-in-vista-vision-019de50d-75de-011b-6835-d2abcb4adec8",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2AFE2OsOWssK2CzaW58GbJ/30e15c7b6f3eb25796b50fc998136ecd/Aug21_GUNFIGHT_AT_THE_OK_CORRAL_Vista1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-22T07:34:27+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-21-ponyo-in-35mm-a9a7063211",
+    "venue_id": "academy_museum",
+    "title": "Ponyo in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-21",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/ponyo-019dd520-9708-d19c-3849-8e284a442b56",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3FvREXBTvZ46moKmKQjyWA/d8008401a2d022d35bc857d1ac45e8df/Aug17_PONYO_Ghibli1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-22T07:34:27+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "fowler-2026-08-21-mindbody-contemplative-art-viewing-b8120e2a96",
+    "venue_id": "fowler",
+    "title": "Mind/Body: Contemplative Art Viewing",
+    "description": "IN PERSON RSVP Mindfulness educator Mitra Manesh will lead a contemplative art...",
+    "event_type": "other",
+    "start": "2026-08-21T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://fowler.ucla.edu/events/mind-body-contemplative-art-viewing-4/?occurrence=2026-08-21",
+    "image": "https://fowler.ucla.edu/wp-content/uploads/2026/06/8-21-contemplative-art.png",
+    "artists": [],
+    "location_override": null,
+    "source": "fowler.ucla.edu",
+    "scraped_at": "2026-08-21T07:45:41+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-21-gallery-spotlight-cinematic-makeup-and-h-4370a869c9",
+    "venue_id": "academy_museum",
+    "title": "Gallery Spotlight: Cinematic Makeup and Hairstyling with Ve Neill",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-21T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/gallery-spotlight-cinematic-makeup-and-hairstyling-with-ve-neill-019dc075-f108-7589-f25f-e0d3f3711c8f",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6bIKYHv8bV7Dcz02Uiv25h/9a6ac1e3b1c54a01a773868971fd72bc/Identity_makeup.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-22T07:34:27+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-21-dropin-workshop-for-teens-stopmotion-ani-a2ebd0dd80",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Teens: Stop-Motion Animation",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-21T16:30:00-07:00",
+    "end": "2026-08-21T18:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-teens-stop-motion-animation-019f5c5c-5bc6-e63f-f0a9-fc8f4baac4cf",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/18ffVx35fN9FViPsgVlC4x/0dc096e8155aaa31f68d1295ca24000d/Option_1_Stop-Motion.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-22T07:34:27+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "teen"
+    ]
+  },
+  {
+    "id": "human_resources-2026-08-21-does-your-house-have-lions-8211-vishal-j-b41e5551ce",
+    "venue_id": "human_resources",
+    "title": "Does Your House Have Lions – Vishal Jugdeo & vqueeram",
+    "description": "tickets Does Your House Have Lions (2021) is a 49 minute film by Delhi-based poet vqueeram and Los Angeles based artist Vishal Jugdeo. Shot like cinéma-vérité, the film is excerpted from an informal archive the collaborators have gathered over their decade-long friendship. Intimate glimpses of vqueeram’s community of artists and activists reveal, in the near distance, an intensification of the Indian ethnonationalist state which bears upon characters in uneven ways. As the camera changes hands between the film’s participants, a shifting, prismatic lens intimates varying degrees of closeness to and remove from crisis. One day in the late sixties, I was on the phone with Rahsaan and mentioned to him that just that day I had bought a house. He responded by asking, “Does your house have lions?",
+    "event_type": "screening",
+    "start": "2026-08-21T21:00:00-07:00",
+    "end": "2026-08-21T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/does-your-house-have-lions-vishal-jugdeo-vqueeram/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/lions_still_5-copy.webp",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-22T07:34:23+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
