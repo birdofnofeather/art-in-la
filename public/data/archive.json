@@ -16258,6 +16258,28 @@
     "audience": []
   },
   {
+    "id": "jaccc-2026-08-15-84th-annual-nisei-week-jacccexh-a111267ae1",
+    "venue_id": "jaccc",
+    "title": "84th Annual Nisei Week @ JACCC",
+    "description": "Weekend 1: August 15-16, 2026 Weekend 2: August 22-23, 2026 Where JACCC 244 S. San Pedro Street, Los Angeles, CA 90012 Price Free, no RSVP. Share About Join us in honoring one of Los Angeles’ longest-running cultural celebrations! The Nisei Week Foundation will host a vibrant series of events across two weekends, August 15-16 and August 22-23, as",
+    "event_type": "exhibition",
+    "start": "2026-08-15",
+    "end": "2026-08-23",
+    "all_day": true,
+    "url": "https://jaccc.org/events/84th-annual-nisei-week-jaccc/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "jaccc.org",
+    "scraped_at": "2026-08-24T08:00:00+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
     "id": "academy_museum-2026-08-15-scoobydoo-in-35mm-1e98a3e34a",
     "venue_id": "academy_museum",
     "title": "Scooby-Doo in 35mm",
@@ -17552,5 +17574,253 @@
     "audience": [
       "family"
     ]
+  },
+  {
+    "id": "academy_museum-2026-08-23-funny-face-213bb7536b",
+    "venue_id": "academy_museum",
+    "title": "Funny Face",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-23",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/funny-face-019dff3e-49fd-4d34-726a-fa34142e7d20",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/7u2oPnPBhifONXSf8irBL0/6d0acedbc0ebdfd5cc6c3dd877a4ef77/Aug23_FUNNY_FACE_Vista2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-24T07:59:48+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-23-hot-spell-ddb43fb639",
+    "venue_id": "academy_museum",
+    "title": "Hot Spell",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-23",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/hot-spell-019de511-03b4-d950-feef-fa89b7d15a45",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/ft7lzzBdyc3cTLHnqqtwE/8fa3407f72d69b1fbf942ac46cc91831/Aug23_HOT_SPELL_Vista1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-24T07:59:48+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-23-jackie-879024c2b9",
+    "venue_id": "academy_museum",
+    "title": "Jackie",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-23",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/jackie-019d8803-b2c0-a887-a0ba-9fdddd5907b3",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6tWMabF1KSINJn4KBv5TVe/60f3ebd841b0355429f011efa72e3b13/Aug16_JACKIE_OscarSundays1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-24T07:59:48+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "museum_of_tolerance-2026-08-23-reva-stark-4a12069571",
+    "venue_id": "museum_of_tolerance",
+    "title": "Reva Stark",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-08-23",
+    "end": "2026-08-23",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/wtt-speaker-reva-stark",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-08-24T07:59:52+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "museum_of_tolerance-2026-08-23-sara-goldman-en-espaol-1749deb891",
+    "venue_id": "museum_of_tolerance",
+    "title": "Sara Goldman (en español)",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-08-23",
+    "end": "2026-08-23",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/wtt-speaker-sara-goldman",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-08-24T07:59:52+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-23-white-christmas-in-vistavision-0e4219bf28",
+    "venue_id": "academy_museum",
+    "title": "White Christmas in VistaVision",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-23",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/white-christmas-in-vista-vision-019de512-76dc-82b2-35eb-c7b2f9f6791e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/76JyIKJ7sYcVkVjVllziqz/010991f6fa3954c65d80be746f4a8b07/Aug23-WHITE_CHRISTMAS_Vista1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-24T07:59:48+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "wende-2026-08-23-the-future-of-history-in-the-public-sphe-426cf84448",
+    "venue_id": "wende",
+    "title": "The Future of History in the Public Sphere",
+    "description": "Program update: Anthea Hartig is no longer able to appear. Justin Jampol, our founder and executive director, will take her place on the panel. The program is on as scheduled and is sold out. The third installment o f The Future of History series, presented through the Meyer and Renee Luskin Public History Program at the Wende in conjunction with the UCLA Luskin Center for History and Policy. History does not only live in books and classrooms. It lives in museums, libraries, and archives, where institutions work to keep the past within reach of everyone. That work now faces real threats: growing indifference and inattention, misinformation and disinformation, bold revisionism, and the rising specter of artificial intelligence as the final arbiter of historical truth. This conversation will",
+    "event_type": "opening",
+    "start": "2026-08-23T10:30:00-07:00",
+    "end": "2026-08-23T12:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-future-of-history-in-the-public-sphere/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/06/future-of-history-august-23-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-24T07:59:46+00:00",
+    "event_types": [
+      "opening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "getty_center-2026-08-23-fantastic-creatures-family-workshop-8d7249ea98",
+    "venue_id": "getty_center",
+    "title": "Fantastic Creatures: Family Workshop",
+    "description": "Art Making, Family",
+    "event_type": "workshop",
+    "start": "2026-08-23T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/fantastic-creatures",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-08-24T07:59:42+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "wende-2026-08-23-illustrating-picture-books-with-stephani-0f382aefbb",
+    "venue_id": "wende",
+    "title": "Illustrating Picture Books with Stephanie Lunkewitz",
+    "description": "Illustrating Picture Books with Stephanie Lunkewitz Join our Picture Book Illustration Workshop led by author and illustrator Stephanie Lunkewitz. In six engaging sessions, you’ll explore storytelling, drawing from nature, mixing real life with fantasy, different illustration techniques, character design, and storyboarding. You can choose to attend any or all of the sessions. Whether your goal is to write a story, create illustrations, or simply learn more about picture books, this workshop is perfect for you. It’s open to families, adults, and anyone age 15 and up. Minors must be accompanied by adults. Aug 9 — Introduction to Children’s Literature and Storytelling Aug 16 — Observational Drawing and Nature Inspiration Aug 23 — Blending Realism and Fantasy in Illustrations Sept 6 — Techniqu",
+    "event_type": "workshop",
+    "start": "2026-08-23T14:00:00-07:00",
+    "end": "2026-08-23T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/illustrating-picture-books-with-stephanie-lunkewitz/2026-08-23/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/IMG_6156.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-24T07:59:46+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
+  },
+  {
+    "id": "ica_la-2026-08-23-andrew-tholl-performs-compass-by-raven-c-345f6b3058",
+    "venue_id": "ica_la",
+    "title": "Andrew Tholl performs “Compass” by Raven Chacon",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-08-23T16:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.theicala.org/en/events/3542-andrew-tholl-performs-compass-by-raven-chacon",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "theicala.org",
+    "scraped_at": "2026-08-23T07:35:32+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-23-two-moon-july-179e8d66e6",
+    "venue_id": "human_resources",
+    "title": "Two Moon July",
+    "description": "Tickets The television production Two Moon July was a multidisciplinary event that featured experimental video, film, visual art, performance and music in a theatrical framework. More than thirty artists participated in the program, which was produced for the Kitchen by Carlota Schoolman and directed by Tom Bowes. This production reflects a moment when art centers were experimenting with new modes of presenting the arts for television. The participating artists read like a “who’s who” of 1980’s downtown art icons. Short excerpts from video and film works (by artists including Vito Acconci , Dara Birnbaum , Bruce Connor and Bill Viola ) are intercut with performances and art installations in the Kitchen’s gallery spaces. Laurie Anderson performs Difficult Listening Hour , speaking through t",
+    "event_type": "screening",
+    "start": "2026-08-23T16:00:00-07:00",
+    "end": "2026-08-23T17:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/two-moon-july/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/TwoMoonJuly_Opening.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-24T07:59:46+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
