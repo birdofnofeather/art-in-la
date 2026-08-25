@@ -8206,6 +8206,28 @@
     "audience": []
   },
   {
+    "id": "luckman-2026-06-09-latin-music-month-conference-1e85284ace",
+    "venue_id": "luckman",
+    "title": "Latin Music Month™ Conference",
+    "description": "Join us for the second annual Latin Music Month™ Conference, a cultural initiative dedicated to celebrating the richness and global influence of Latin music and culture. Building on the momentum of a successful inaugural year, this flagship event brings together leading artists, executives, creators, entrepreneurs, and industry visionaries for an unforgettable experience that educates, connects, […]",
+    "event_type": "performance",
+    "start": "2026-06-09T14:06:59-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://theluckman.org/events/latin-music-month-2026/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "theluckman.org",
+    "scraped_at": "2026-08-25T07:47:32+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "luckman-2026-06-09-futurogenerational-87571794b0",
     "venue_id": "luckman",
     "title": "FuturoGenerational",
@@ -17815,6 +17837,73 @@
     "location_override": null,
     "source": "humanresourcesla.com",
     "scraped_at": "2026-08-24T07:59:46+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-24-anything-goes-in-vistavision-f9eb8e3bbc",
+    "venue_id": "academy_museum",
+    "title": "Anything Goes in VistaVision",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-24",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/anything-goes-in-vista-vision-019de513-00e0-5754-7620-1708e4e8d8c2",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6dFwk4pl0g2AdIb5XOdcwz/0ad7c2007c3926bf01bcf475947a7b00/Aug24_ANYTHING_GOES_Vista2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-25T07:47:10+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "academy_museum-2026-08-24-the-secret-world-of-arrietty-in-4k-8fcfcd45a2",
+    "venue_id": "academy_museum",
+    "title": "The Secret World of Arrietty in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-24",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-secret-world-of-arrietty-019dd521-7b44-c524-f75d-3935ed4b9d41",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5zcgvsmskLBlcWhCOiZ3aa/1ba6e55bb022e10d1de3351e0ed6b2bd/Aug24_SECRET_WORLD_OF_ARRIETTY_Ghibli7GKIDS.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-25T07:47:10+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-24-possession-16892806f0",
+    "venue_id": "human_resources",
+    "title": "Possession",
+    "description": "Tickets Possession is a 1981 psychological horror drama film directed by Andrzej Żuławski and written by Żuławski and Frederic Tuten. Directed by Andrzej Żuławski • 1981 • France, West Germany Starring Isabelle Adjani, Sam Neill, Heinz Bennent Andrzej Żuławski’s stunningly choreographed nightmare of a marriage unraveling is an experience unlike any other. Professional spy Mark (Sam Neill) returns to his West Berlin home to find his wife Anna (Isabelle Adjani, in a role that earned her Best Actress at both Cannes and the César Awards) intent on a divorce. As Anna’s frenzied behavior becomes ever more alarming, Mark discovers a truth far more sinister than his wildest suspicions. With its pulsating score, visceral imagery, and some of the most intense performances ever captured on-screen, PO",
+    "event_type": "screening",
+    "start": "2026-08-24T22:00:00-07:00",
+    "end": "2026-08-24T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/possession/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/Possession_1981_7-copy.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-25T07:47:06+00:00",
     "event_types": [
       "screening",
       "performance"
