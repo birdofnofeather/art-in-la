@@ -17911,5 +17911,73 @@
     "is_free": null,
     "price_text": null,
     "audience": []
+  },
+  {
+    "id": "luckman-2026-08-25-gipsy-kings-featuring-nicolas-reyes-e10cf7f134",
+    "venue_id": "luckman",
+    "title": "Gipsy Kings featuring Nicolas Reyes",
+    "description": "Tickets on sale Fri, Aug 28 at 10:00 AM Tickets available from The Luckman Box Office and Ticketmaster. Experience the unmistakable sound of the world-renowned Gipsy Kings featuring Nicolas Reyes. In a rare and intimate setting, the legendary group brings its signature blend of rumba catalana, flamenco, and unforgettable energy to the stage for an […]",
+    "event_type": "other",
+    "start": "2026-08-25T11:26:38-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://theluckman.org/events/gipsy-kings-nicolas-reyes/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "theluckman.org",
+    "scraped_at": "2026-08-26T07:50:30+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "18th_street-2026-08-25-dzogchenla-meditation-7d5520f8ee",
+    "venue_id": "18th_street",
+    "title": "Dzogchen-LA meditation",
+    "description": "Dzogchen-LA meditation Tuesday, August 25th | 7 PM -8:30 PM 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public Join us for a healing series of every-other Tuesday evening guided meditations, where we will learn to open and become Aware of our own innermost Heart-Essence Awareness. Emerging from the Dzogchen lineage of Tibetan Buddhism. This is not just a Tuesday evening “mind practice,” but a doorway into living from and within freedom —freedom not only from our own psychology and historic self-narrative, but also from the habitual creative loops that keep us recycling the same expressions. Over time, we learn to flow through life with the lived experience of non-duality within duality—and duality within non-duality. From an ever-deepening familiarity with our own True Natu",
+    "event_type": "other",
+    "start": "2026-08-25T19:00:00-07:00",
+    "end": "2026-08-25T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://18thstreet.org/event/dzogchen-la-meditation-aug25/",
+    "image": "https://18thstreet.org/wp-content/uploads/2025/06/Meditation@18thStr.-Horizontal.png",
+    "artists": [],
+    "location_override": null,
+    "source": "18thstreet.org",
+    "scraped_at": "2026-08-25T07:47:04+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-25-evidence-by-lee-anne-schmitt-ff1a7f83a1",
+    "venue_id": "human_resources",
+    "title": "Evidence by Lee Anne Schmitt",
+    "description": "Tickets Evidence by Lee Anne Schmitt Following the screening, Lee Anne Schmitt will be in discussion with Madison Brookshire Evidence (2025) is both an analysis of corporate spending and the impact of dark money on US politics and ideology and a personal meditation on ideas of family and care. The film is a meditation on the intersection of American politics, ideas of family, and the right wing’s intentional assault on bodily autonomy. This is my fourth feature; each an examination of ideology and its construction in the United States. This film is by far my most personal work and attempts to understand how my own family (of birth and of choice) was sculpted within a mythology of capitalism. Using an archive of funded materials, manufacturing sites and personal, domestic imagery the film m",
+    "event_type": "screening",
+    "start": "2026-08-25T20:00:00-07:00",
+    "end": "2026-08-25T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/evidence-by-anne-schmitt/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/evidence_still_porchmask.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-26T07:49:54+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ]
   }
 ]
