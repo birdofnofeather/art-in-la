@@ -17979,5 +17979,50 @@
     "audience": [
       "family"
     ]
+  },
+  {
+    "id": "museum_of_tolerance-2026-08-26-hollywood-and-hitler-55de1a4638",
+    "venue_id": "museum_of_tolerance",
+    "title": "Hollywood and Hitler",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-08-26",
+    "end": "2026-08-26",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/screening-hollywoodandhitler",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-08-27T18:09:24+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-26-audioginary-cinema-3-132020d538",
+    "venue_id": "human_resources",
+    "title": "Audioginary Cinema 3",
+    "description": "Tickets bed crumb show* presents Audioginary Cinema 3 makes a return to Human Resources. audioginary cinema , a night where we bring musicians together to reimagine category within film though sound improvisations. Each mysterious short will be live scored by 3 different ensembles/musicians: Lion + Meanstreetz Girl Debord Two Point (Sharada Shashidhar + Caleb Buchanan) sounds by bed crumb show resident DJ, nofearinthetypingpool* Event is hosted by LA based radio station bed crumb show, a freeform radio and mixed media platform dedicated to curiosity of art, music, film and events in the world of experimental Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-08-26T19:00:00-07:00",
+    "end": "2026-08-26T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/audioginary-cinema-3/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/F6ED290C-3153-4459-85CA-3147C62FD733-scaled.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-27T18:09:15+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
   }
 ]
