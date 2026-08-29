@@ -11106,6 +11106,28 @@
     ]
   },
   {
+    "id": "lamag-2026-07-03-description-e8bf965162",
+    "venue_id": "lamag",
+    "title": "description",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-07-03",
+    "end": "2026-08-28",
+    "all_day": true,
+    "url": "https://lamag.org/friday-art-nights-26",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lamag.org",
+    "scraped_at": "2026-08-27T18:09:27+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
     "id": "academy_museum-2026-07-04-jaws-in-4k-bd3fe9f04e",
     "venue_id": "academy_museum",
     "title": "Jaws in 4K",
@@ -18153,6 +18175,28 @@
     "scraped_at": "2026-08-28T19:20:06+00:00",
     "event_types": [
       "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": []
+  },
+  {
+    "id": "human_resources-2026-08-28-anna-wittenberg-guts-machines-animals-ar-c92a61839a",
+    "venue_id": "human_resources",
+    "title": "Anna Wittenberg, GUTS MACHINES ANIMALS. Artist videos from LA & beyond",
+    "description": "Tickets Featuring: Linda Franke Nick Herman Joel Kyack William Leavitt Nathaniel Mellors Kirsten Mosher P. Staff Sarah Szczesny Anna Wittenberg L. Wrench Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "other",
+    "start": "2026-08-28T21:00:00-07:00",
+    "end": "2026-08-28T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/anna-wittenberg-guts-machines-animals-artist-videos-from-la-beyond/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/GMA.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-29T13:02:45+00:00",
+    "event_types": [
+      "other"
     ],
     "is_free": null,
     "price_text": null,
