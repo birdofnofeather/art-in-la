@@ -1,5 +1,77 @@
 [
   {
+    "id": "usc_fisher--charles-arnoldi-four-decadesexh-b9a8519ad9",
+    "venue_id": "usc_fisher",
+    "title": "Charles Arnoldi | Four Decades",
+    "description": "USC Fisher Museum of Art proudly presents Charles Arnoldi | Four Decades, a survey of the versatile and prolific Venice Beach artist, which traces the evolution of the artist’s expansive and materials-focused practice from the 1970s to the present.",
+    "event_type": "exhibition",
+    "start": "2020-01-21",
+    "end": "2020-04-04",
+    "all_day": true,
+    "url": "https://fisher.usc.edu/exhibitions/charles-arnoldi-four-decades/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "fisher.usc.edu+llm",
+    "scraped_at": "2026-08-30T12:40:38+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
+    "id": "usc_fisher--dan-mccleary-oaxaca-20-years-of-prints-f-d02c91f3a7",
+    "venue_id": "usc_fisher",
+    "title": "Dan McCleary OAXACA 20 years of prints from the Taller Sangfer",
+    "description": "Twenty-two years ago, Los Angeles artist Dan McCleary was introduced to Oaxaca by friends and fellow artists, James hd Brown and Alexandra Brown.",
+    "event_type": "exhibition",
+    "start": "2021-07-01",
+    "end": "2021-12-04",
+    "all_day": true,
+    "url": "https://fisher.usc.edu/exhibitions/dan-mccleary-oaxaca-20-years-of-prints-from-the-taller-sangfer/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "fisher.usc.edu+llm",
+    "scraped_at": "2026-08-30T12:40:38+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
+    "id": "usc_fisher--art-and-hope-at-the-end-of-the-tunnelexh-bc2d326cb9",
+    "venue_id": "usc_fisher",
+    "title": "Art and Hope at the End of the Tunnel",
+    "description": "USC Fisher Museum of Art is proud to announce the opening of our Fall 2021 exhibition, “Art and hope at the end of the Tunnel”, a group show curated by renowned art critic Edward Goldman and featuring dozens of artists who call the Los Angeles area home.",
+    "event_type": "exhibition",
+    "start": "2021-09-10",
+    "end": "2021-12-04",
+    "all_day": true,
+    "url": "https://fisher.usc.edu/exhibitions/art-and-hope-at-the-end-of-the-tunnel/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "fisher.usc.edu+llm",
+    "scraped_at": "2026-08-30T12:40:38+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "getty_center-2023-10-03-untold-stories-of-a-monumental-pastelexh-01cdb4badd",
     "venue_id": "getty_center",
     "title": "Untold Stories of a Monumental Pastel",
@@ -13938,6 +14010,52 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-08-29-educator-saturday-workshop-native-plants-40d478960a",
+    "venue_id": "huntington",
+    "title": "Educator Saturday Workshop: Native Plants",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-29",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/educator-saturday-workshop-native-plants",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU12PUPQ.jpg%3Fitok%3DhG5mYfUP&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-08-29T13:02:49+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-08-29-the-joker-is-wild-in-4k-05a360083a",
+    "venue_id": "academy_museum",
+    "title": "The Joker is Wild in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-29",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-joker-is-wild-019de521-a3d9-0807-ac46-6ad21e437134",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2SeUgwzUKpT6TtnX9fl1gx/2e998d97a8cde88b5a3e6bcb7b0dc2fc/Aug29_JOKER_IS_WILD_Vista2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-30T06:42:23+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-08-29-calm-morning-foley-art-57ab77d703",
