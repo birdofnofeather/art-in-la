@@ -42,8 +42,20 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Run scrapers
-        run: python -m scrapers.run_all
-        timeout-minutes: 20
+        id: scrape
+        # Exit code 1 means the fleet safety gate REFUSED to publish — the run
+        # worked, and it deliberately kept the previous data on the site rather
+        # than replacing it with something that looked broken. That is a
+        # success of the safety design, not a crash, so it must not be treated
+        # as a job failure (which would raise the wrong alert). Anything else
+        # non-zero is a real failure.
+        run: |
+          set +e
+          python -m scrapers.run_all
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" -gt 1 ]; then exit "$code"; fi
+        timeout-minutes: 25
         env:
           # Optional: enables the LLM fallback for events whose dates the
           # scrapers can't parse. Set in Settings → Secrets → Actions.
@@ -80,31 +92,42 @@ jobs:
                       out.write(f"| `{venue}` | {title} | {reason} |\n")
           EOF
 
-      - name: Post scraper health summary
+      - name: Post status report
         if: always()
         continue-on-error: true
         run: |
-          python - << 'EOF'
+          python - <<'EOF'
           import json, os, pathlib
-          f = pathlib.Path("public/data/health.json")
+          f = pathlib.Path("public/data/status.json")
           summary = os.environ.get("GITHUB_STEP_SUMMARY", "")
           if not f.exists() or not summary:
-              exit()
-          health = json.loads(f.read_text())
-          stale = {
-              vid: h for vid, h in sorted(health.items())
-              if h.get("zero_streak", 0) >= 3 and h.get("last_success")
-          }
+              raise SystemExit
+          s = json.loads(f.read_text())
+          icon = {"green": "\u2705", "yellow": "\u26a0\ufe0f", "red": "\U0001f6a8"}
+          t, c = s["totals"], s["counts"]
           with open(summary, "a") as out:
-              if not stale:
-                  out.write("## ✅ Scraper health: all venues that ever produced events still do\n\n")
+              out.write(f"## {icon.get(s['verdict'],'')} Status: {s['verdict'].upper()}\n\n")
+              if not s.get("published", True):
+                  out.write("### PUBLISH REFUSED — the site is serving the previous data\n\n")
+                  for r in (s.get("fleet_checks") or {}).get("blocking", []):
+                      out.write(f"- {r}\n")
+                  out.write("\n")
+              out.write(f"**{t['events']} events** and **{t['exhibitions']} exhibitions** "
+                        f"from {t['venues_producing']} of {t['venues_checked']} venues. ")
+              out.write(f"{c['red']} red, {c['yellow']} yellow, {c['green']} green.\n\n")
+              if s.get("unreachable"):
+                  out.write(f"_Could not reach {len(s['unreachable'])} venue site(s): "
+                            f"{', '.join(s['unreachable'])} — their problem, not ours._\n\n")
+              rows = [v for v in s["venues"] if v["verdict"] != "green"]
+              if not rows:
+                  out.write("Every venue checked is healthy.\n")
               else:
-                  out.write(f"## 🚨 Scraper health: {len(stale)} venue(s) silent for 3+ runs\n\n")
-                  out.write("These venues produced events before but have returned 0 for several consecutive runs — the site layout has probably changed.\n\n")
-                  out.write("| Venue | Zero runs | Last produced events |\n")
-                  out.write("|-------|-----------|----------------------|\n")
-                  for vid, h in stale.items():
-                      out.write(f"| `{vid}` | {h['zero_streak']} | {h['last_success']} |\n")
+                  out.write("| Venue | Verdict | Events | Shows | What is wrong |\n")
+                  out.write("|---|---|--:|--:|---|\n")
+                  for v in rows:
+                      why = "; ".join(v["reasons"]).replace("|", "\\|")
+                      out.write(f"| `{v['venue_id']}` | {icon.get(v['verdict'],'')} "
+                                f"{v['verdict']} | {v['events']} | {v['exhibitions']} | {why} |\n")
           EOF
 
       - name: Commit updated data
@@ -113,7 +136,9 @@ jobs:
           git config user.name  "art-in-la-bot"
           git config user.email "art-in-la-bot@users.noreply.github.com"
           git config merge.ours.driver true   # honor .gitattributes merge=ours for generated data
-          git add public/data/events.json public/data/archive.json public/data/warnings.json public/data/scraped_venues.json public/data/health.json public/data/feeds
+          git add public/data/events.json public/data/archive.json public/data/raw_events.json \
+                  public/data/warnings.json public/data/scraped_venues.json \
+                  public/data/health.json public/data/status.json public/data/feeds
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
@@ -122,28 +147,39 @@ jobs:
           git pull --rebase origin main
           git push
 
-      - name: Alert on scraper health problems (creates/updates an issue → emails you)
+      - name: Alert when venues need attention
         if: always()
         continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python - << 'EOF' > /tmp/alert_body.md
+          python - <<'EOF' > /tmp/alert_body.md
           import json, pathlib
-          health = {}
-          f = pathlib.Path("public/data/health.json")
-          if f.exists():
-              health = json.loads(f.read_text())
-          stale = {v: h for v, h in sorted(health.items())
-                   if h.get("zero_streak", 0) >= 3 and h.get("last_success")}
-          if stale:
-              print("@birdofnofeather — the daily scrape found problems.\n")
-              print("| Venue | Zero-event runs | Last produced events |")
-              print("|---|---|---|")
-              for v, h in stale.items():
-                  print(f"| `{v}` | {h['zero_streak']} | {h['last_success']} |")
-              print("\nA venue silent for 3+ runs usually means its site changed. "
-                    "Open a session and ask Claude to fix that venue's scraper.")
+          f = pathlib.Path("public/data/status.json")
+          if not f.exists():
+              raise SystemExit
+          s = json.loads(f.read_text())
+          red = [v for v in s["venues"] if v["verdict"] == "red"]
+          refused = not s.get("published", True)
+          if not red and not refused:
+              raise SystemExit
+          print("@birdofnofeather — the daily scrape needs attention.\n")
+          if refused:
+              print("**The run refused to publish**, so the site is still showing "
+                    "the previous data:\n")
+              for r in (s.get("fleet_checks") or {}).get("blocking", []):
+                  print(f"- {r}")
+              print()
+          if red:
+              print(f"**{len(red)} venue(s) are broken.** These are ours to fix — "
+                    f"venues whose own website is unreachable are listed as yellow "
+                    f"instead, because that is their problem.\n")
+              print("| Venue | Events | Shows | What is wrong |")
+              print("|---|--:|--:|---|")
+              for v in red:
+                  why = "; ".join(v["reasons"]).replace("|", "\\|")
+                  print(f"| `{v['venue_id']}` | {v['events']} | {v['exhibitions']} | {why} |")
+          print("\nFull report: `public/data/status.json`")
           EOF
           if [ -s /tmp/alert_body.md ]; then
             existing=$(gh issue list --state open --search "Scraper health alert in:title" --json number --jq '.[0].number' 2>/dev/null || echo "")
@@ -153,7 +189,11 @@ jobs:
               gh issue create --title "Scraper health alert" --body-file /tmp/alert_body.md
             fi
           else
-            echo "No health problems to report."
+            existing=$(gh issue list --state open --search "Scraper health alert in:title" --json number --jq '.[0].number' 2>/dev/null || echo "")
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body "Everything is green again — closing."
+              gh issue close "$existing"
+            fi
           fi
 
       - name: Alert on job failure (creates an issue → emails you)

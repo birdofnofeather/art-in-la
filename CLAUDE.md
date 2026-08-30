@@ -199,6 +199,54 @@ stops listing an event once it has happened, so a past record can never be
 re-harvested. Replacing everything wholesale took the archive from 757 records
 to 203 in one run.
 
+## Knowing whether it works: three witnesses (do not regress this)
+
+`scrapers/monitor.py`. You cannot detect breakage by examining your own output
+— you need something independent to compare against. Three checks per venue,
+green only when all three agree:
+
+1. **The source page.** How many UPCOMING dates does the venue's page
+   advertise? Compared against what we HARVESTED, never what we published —
+   curation deliberately removes things (Pieter publishes 4 of 47). Only future
+   dates are counted; venues list past events below upcoming ones, so a raw
+   date count marks healthy venues broken daily.
+2. **Recent history.** `health.json` keeps `recent_counts` (last 14 runs). A
+   collapse short of zero (armory 44 → 4) never trips a zero check.
+3. **A written expectation.** `scrapers/expectations.json` — regenerate with
+   `python -m scrapers.baseline`. Entries marked `"source": "human"` are never
+   overwritten. **21 museums have a hand-set `min_exhibitions`**, which is what
+   makes the exhibition gap visible: LACMA showing 0 exhibitions is now a daily
+   yellow instead of looking healthy.
+
+**Triage matters:** a venue whose site is unreachable is YELLOW ("their
+problem"), not RED. Several venues block datacenter IPs and work from GitHub
+runners; pointing an automated repair at those produces confident wrong changes
+to code that was never broken.
+
+Output: `public/data/status.json` + a GitHub Actions step summary table.
+
+## The fleet gate: a bad run never reaches the site
+
+`scrapers/utils/fleet.py` runs before publishing and compares against the last
+published state. It BLOCKS the publish (leaving yesterday's data live, exit
+code 1) on: no events at all, duplicate/missing ids, event count falling >35%,
+>6 producing venues going dark at once, the archive shrinking >10%, or any
+non-exhibition without a start date. A rise only warns.
+
+Per-venue checks catch one venue breaking; this catches the shared machinery —
+a rules.yaml edit, a date bug — damaging everything at once, which no
+per-venue check can see. Exit code 1 means "refused, deliberately" and
+daily-scrape.yml treats it as a safe outcome, not a crash.
+
+## Freshness heartbeat
+
+`.github/workflows/freshness.yml`, on a separate schedule (15:00 UTC vs 07:00)
+so one broken workflow cannot hide the other. Checks the committed data, not
+what the scrape says about itself: is `scraped_at` under 36h old, did the last
+run refuse to publish, are there at least 20 events. Opens/closes an issue.
+This exists because the daily scrape failed silently from June 1 for ten days
+and the site looked fine the whole time.
+
 ## Bot-gated venues: headless-browser render path
 
 Two venues serve an event-less shell (or a hard 429) to plain HTTP clients but
@@ -267,6 +315,11 @@ python -m scrapers.reclassify             # apply it to ALL data, incl. archive
 
 # Tests (no network, fast)
 pip install pytest && python -m pytest scrapers/tests -q
+
+# Monitoring
+python -m scrapers.baseline           # write/refresh expectations.json
+python -m scrapers.baseline --show lacma
+python -m scrapers.run_all --no-probe # skip the source-page comparison
 
 # Bot-gated venues (Norton Simon, Huntington) — needs the headless browser:
 pip install -r scrapers/requirements-render.txt && python -m playwright install chromium

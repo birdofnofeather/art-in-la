@@ -30,11 +30,12 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 
-from . import storage
+from . import monitor, storage
 from .classify import derive
 from .registry import SCRAPERS
 from .utils import llm_extract
 from .utils.dedupe import dedupe
+from .utils import fleet
 from .utils.rules import load as load_rules
 from .utils.warn import get_warnings, clear as clear_warnings
 
@@ -130,6 +131,8 @@ def main(argv=None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="Don't write files, just print a summary.")
     parser.add_argument("--skip-scrape", action="store_true",
                         help="Re-classify the stored harvest without touching the network.")
+    parser.add_argument("--no-probe", action="store_true",
+                        help="Skip re-fetching venue pages to compare against what we parsed.")
     args = parser.parse_args(argv)
 
     try:
@@ -145,6 +148,7 @@ def main(argv=None) -> int:
     existing_raw = storage.load_raw()
     health, stale_venues = storage.load_health(), []
     scraped_venue_ids: list[str] = []
+    results: list[tuple[str, list]] = []
 
     # ── Harvest ───────────────────────────────────────────────────────────
     if args.skip_scrape:
@@ -224,23 +228,62 @@ def main(argv=None) -> int:
     else:
         print("No scraper warnings.")
 
+    # ── Fleet safety gate ─────────────────────────────────────────────────
+    # Per-venue checks catch one venue breaking. This catches the shared
+    # machinery breaking everything at once, which no per-venue check can see.
+    # If it refuses, yesterday's data stays on the site: a day of staleness is
+    # a far smaller harm than replacing a working calendar with a broken one.
+    gate = fleet.check(result.upcoming, storage.load_events(),
+                       result.archive, storage.load_archive())
+    print()
+    print(gate.summary())
+
+    # ── Status report (the three witnesses) ──────────────────────────────
+    health = monitor.record_history(health, results if not args.skip_scrape else [])
+    status = monitor.assess(
+        published=result.upcoming,
+        health=health,
+        venues=storage.load_venues(),
+        expectations=storage.load_expectations(),
+        probe=not args.no_probe,
+        scraped_ids=scraped_venue_ids or None,
+        harvested={vid: evs for vid, evs in results} if results else None,
+    )
+    status["published"] = gate.ok
+    status["fleet_checks"] = {"blocking": gate.blocking, "warnings": gate.warnings}
+    print(f"\nStatus: {status['verdict'].upper()} — "
+          f"{status['counts']['red']} red, {status['counts']['yellow']} yellow, "
+          f"{status['counts']['green']} green "
+          f"(of {status['totals']['venues_checked']} venues checked)")
+    for row in status["venues"]:
+        if row["verdict"] != "green":
+            print(f"  {row['verdict'].upper():6s} {row['venue_id']}: {'; '.join(row['reasons'])}")
+
     if args.dry_run:
         print("\n[dry-run] No files written.")
         clear_warnings()
         return 0
 
+    # The harvest, health and status are always written — they are the record
+    # of what happened, including when the publish was refused.
     storage.write_raw(raw)
-    storage.write_events(result.upcoming)
-    storage.write_archive(result.archive)
+    storage.write_json(storage.HEALTH_FILE, health)
+    storage.write_json(storage.STATUS_FILE, status)
     storage.write_json(storage.WARNINGS_FILE, warnings)
     if scraped_venue_ids:
         storage.write_json(storage.SCRAPED_FILE, sorted(scraped_venue_ids))
-    storage.write_json(storage.HEALTH_FILE, health)
     clear_warnings()
 
+    if not gate.ok:
+        print("\n❌ Publish refused. events.json and archive.json are unchanged; "
+              "the site keeps serving the last good data.")
+        return 1
+
+    storage.write_events(result.upcoming)
+    storage.write_archive(result.archive)
     storage.write_feeds(result.upcoming)
     print(f"\nWrote events.json ({len(result.upcoming)} events), "
-          f"archive.json, raw_events.json and the calendar feeds.")
+          f"archive.json, raw_events.json, status.json and the calendar feeds.")
     return 0
 
 

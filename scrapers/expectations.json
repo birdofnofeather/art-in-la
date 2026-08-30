@@ -1,0 +1,370 @@
+{
+  "18th_street": {
+    "min_events": 3,
+    "max_events": 24,
+    "min_exhibitions": 1,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "18th Street — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "academy_museum": {
+    "min_events": 50,
+    "max_events": 375,
+    "min_exhibitions": 2,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Academy Museum"
+  },
+  "armory_pasadena": {
+    "min_events": 1,
+    "max_events": 12,
+    "min_exhibitions": 1,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Armory — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "art_practice": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Art + Practice"
+  },
+  "autry": {
+    "min_events": 2,
+    "max_events": 15,
+    "min_exhibitions": 3,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Autry — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "avenue_50": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Avenue 50"
+  },
+  "benton": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 4,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Benton"
+  },
+  "bergamot_station": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Bergamot Station"
+  },
+  "beyond_baroque": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Beyond Baroque / Mike Kelley Gallery"
+  },
+  "caam": {
+    "min_events": 0,
+    "max_events": 60,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "caam — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "calarts": {
+    "min_events": 0,
+    "max_events": 6,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "California Institute of the Arts (CalArts)"
+  },
+  "clockshop": {
+    "min_events": 2,
+    "max_events": 15,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Clockshop"
+  },
+  "corita_art_center": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Corita Art Center"
+  },
+  "craft_contemporary": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Craft Contemporary — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "forest_lawn": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Forest Lawn"
+  },
+  "fowler": {
+    "min_events": 2,
+    "max_events": 15,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Fowler — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "getty_center": {
+    "min_events": 16,
+    "max_events": 126,
+    "min_exhibitions": 11,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Getty Center"
+  },
+  "getty_villa": {
+    "min_events": 1,
+    "max_events": 12,
+    "min_exhibitions": 2,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Getty Villa"
+  },
+  "hammer": {
+    "min_events": 4,
+    "max_events": 30,
+    "min_exhibitions": 3,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Hammer — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "human_resources": {
+    "min_events": 5,
+    "max_events": 39,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Human Resources"
+  },
+  "huntington": {
+    "min_events": 7,
+    "max_events": 57,
+    "min_exhibitions": 3,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "The Huntington — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "jaccc": {
+    "min_events": 0,
+    "max_events": 6,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "JACCC"
+  },
+  "janm": {
+    "min_events": 1,
+    "max_events": 9,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "JANM — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "la_plaza": {
+    "min_events": 7,
+    "max_events": 54,
+    "min_exhibitions": 4,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "LA Plaza de Cultura y Artes"
+  },
+  "lacma": {
+    "min_events": 2,
+    "max_events": 21,
+    "min_exhibitions": 8,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "LACMA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "las_fotos_project": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Las Fotos"
+  },
+  "lbma": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "LBMA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "mak_center": {
+    "min_events": 1,
+    "max_events": 9,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "MAK Center"
+  },
+  "marciano": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Marciano"
+  },
+  "moah": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "MOAH — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "moca_geffen": {
+    "min_events": 0,
+    "max_events": 60,
+    "min_exhibitions": 1,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "moca_geffen — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "moca_grand": {
+    "min_events": 0,
+    "max_events": 60,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "moca_grand — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "molaa": {
+    "min_events": 3,
+    "max_events": 27,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "MOLAA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "museum_of_tolerance": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Museum of Tolerance"
+  },
+  "norton_simon": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Norton Simon — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "pacific_asia_museum": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Pacific Asia Museum — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "pieter": {
+    "min_events": 1,
+    "max_events": 12,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Pieter"
+  },
+  "pvac": {
+    "min_events": 2,
+    "max_events": 15,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "PVAC"
+  },
+  "redcat": {
+    "min_events": 3,
+    "max_events": 27,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "REDCAT"
+  },
+  "skirball": {
+    "min_events": 2,
+    "max_events": 21,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "Skirball — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "sparc": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "SPARC"
+  },
+  "the_broad": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "The Broad — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "usc_fisher": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 2,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "USC Fisher — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "vincent_price": {
+    "min_events": 0,
+    "max_events": 5,
+    "min_exhibitions": 1,
+    "source": "human",
+    "updated": "2026-08-30",
+    "note": "VPAM — has temporary shows on; a zero here means the exhibitions are not being scraped"
+  },
+  "wende": {
+    "min_events": 6,
+    "max_events": 48,
+    "min_exhibitions": 1,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Wende"
+  },
+  "williamson_scripps": {
+    "min_events": 1,
+    "max_events": 9,
+    "min_exhibitions": 0,
+    "source": "generated",
+    "updated": "2026-08-30",
+    "note": "Williamson"
+  }
+}

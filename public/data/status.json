@@ -1,0 +1,484 @@
+{
+  "generated_at": "2026-08-30T06:49:53.902357+00:00",
+  "verdict": "yellow",
+  "totals": {
+    "events": 336,
+    "exhibitions": 58,
+    "venues_producing": 43,
+    "venues_checked": 43,
+    "unpublishable_records": 0
+  },
+  "counts": {
+    "red": 1,
+    "yellow": 14,
+    "green": 28
+  },
+  "unreachable": [],
+  "venues": [
+    {
+      "venue_id": "beyond_baroque",
+      "verdict": "red",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 46,
+      "reasons": [
+        "no events for 46 consecutive runs (last produced 2026-07-18)"
+      ]
+    },
+    {
+      "venue_id": "18th_street",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 8,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 1 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "armory_pasadena",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 4,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 1 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "autry",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 5,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 3 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "fowler",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 5,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "hammer",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 10,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 3 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "huntington",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 19,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": [
+        "1 exhibitions, fewer than the expected 3 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "janm",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 3,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "lacma",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 7,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 8 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "moah",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "molaa",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 9,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "norton_simon",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "skirball",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 7,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "usc_fisher",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": [
+        "1 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "vincent_price",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [
+        "0 exhibitions, fewer than the expected 1 — a venue can look healthy on events while its exhibitions are broken"
+      ]
+    },
+    {
+      "venue_id": "academy_museum",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 125,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "art_practice",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "avenue_50",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "benton",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 4,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "bergamot_station",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "calarts",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 2,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "clockshop",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 5,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": []
+    },
+    {
+      "venue_id": "corita_art_center",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "craft_contemporary",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 7,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "forest_lawn",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "getty_center",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 42,
+      "exhibitions": 11,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "getty_villa",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 4,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "human_resources",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 13,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "jaccc",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 2,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "la_plaza",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 18,
+      "exhibitions": 4,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "las_fotos_project",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "lbma",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 4,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "mak_center",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 3,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "marciano",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "museum_of_tolerance",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "pacific_asia_museum",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 2,
+      "dates_on_page": null,
+      "zero_streak": 2,
+      "reasons": []
+    },
+    {
+      "venue_id": "pieter",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 4,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "pvac",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 5,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "redcat",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 9,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "sparc",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "the_broad",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 8,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "wende",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 16,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    },
+    {
+      "venue_id": "williamson_scripps",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 3,
+      "exhibitions": 0,
+      "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": []
+    }
+  ],
+  "published": true,
+  "fleet_checks": {
+    "blocking": [],
+    "warnings": []
+  }
+}

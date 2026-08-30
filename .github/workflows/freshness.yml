@@ -1,0 +1,132 @@
+name: Freshness heartbeat
+
+# Answers one question the daily scrape cannot answer about itself: is it still
+# running at all?
+#
+# This has happened. The daily scrape failed silently from June 1 onward and
+# nobody noticed for ten days, because the website kept serving the last good
+# data and therefore looked completely healthy. A broken pipeline is invisible
+# from the outside — the calendar just quietly stops changing.
+#
+# So this runs on a DIFFERENT schedule, as a separate workflow, and checks the
+# committed data rather than anything the scrape reports about itself. If one
+# workflow breaks, the other still speaks up.
+
+on:
+  schedule:
+    # 15:00 UTC ≈ 8am Pacific — eight hours after the scrape should have run,
+    # deliberately offset so a shared outage window can't hide both.
+    - cron: "0 15 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Is the published data still fresh?
+        id: check
+        run: |
+          python - <<'EOF' | tee /tmp/freshness.md
+          import json, pathlib
+          from datetime import datetime, timezone
+
+          MAX_AGE_HOURS = 36   # the scrape is daily; 36h means it missed one
+
+          def age_hours(iso):
+              if not iso:
+                  return None
+              try:
+                  when = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+              except ValueError:
+                  return None
+              if when.tzinfo is None:
+                  when = when.replace(tzinfo=timezone.utc)
+              return (datetime.now(timezone.utc) - when).total_seconds() / 3600
+
+          problems = []
+          data = pathlib.Path("public/data")
+
+          # 1. Did the scrape run recently? scraped_at travels with every event.
+          events = json.loads((data / "events.json").read_text() or "[]")
+          stamps = [e.get("scraped_at") for e in events if e.get("scraped_at")]
+          newest = min((a for a in (age_hours(s) for s in stamps) if a is not None),
+                       default=None)
+          if newest is None:
+              problems.append("No event carries a scrape timestamp at all.")
+          elif newest > MAX_AGE_HOURS:
+              problems.append(
+                  f"The newest event data is {newest:.0f} hours old "
+                  f"(expected under {MAX_AGE_HOURS}). The daily scrape has stopped running."
+              )
+
+          # 2. Did the last run refuse to publish?
+          status_file = data / "status.json"
+          if status_file.exists():
+              status = json.loads(status_file.read_text() or "{}")
+              if status.get("published") is False:
+                  reasons = (status.get("fleet_checks") or {}).get("blocking") or []
+                  problems.append(
+                      "The last run REFUSED to publish, so the site is serving older data:\n"
+                      + "\n".join(f"  - {r}" for r in reasons)
+                  )
+              age = age_hours(status.get("generated_at"))
+              if age is not None and age > MAX_AGE_HOURS:
+                  problems.append(f"The status report is {age:.0f} hours old.")
+          else:
+              problems.append("No status.json — the monitoring step never ran.")
+
+          # 3. Is there anything to show at all?
+          if len(events) < 20:
+              problems.append(f"Only {len(events)} events are published.")
+
+          if problems:
+              print("@birdofnofeather — the Art in LA data has gone stale.\n")
+              for p in problems:
+                  print(f"- {p}")
+              print("\nThe website is still up; it is showing old information.")
+              print(f"\nCheck the most recent runs: "
+                    f"https://github.com/${{ github.repository }}/actions")
+          EOF
+          if [ -s /tmp/freshness.md ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+            echo "Data is fresh."
+          fi
+
+      - name: Raise or update a staleness alert
+        if: steps.check.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh issue list --state open --search "Data has gone stale in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file /tmp/freshness.md
+          else
+            gh issue create --title "Data has gone stale" --body-file /tmp/freshness.md
+          fi
+
+      - name: Close the alert once data is fresh again
+        if: steps.check.outputs.stale == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+        run: |
+          existing=$(gh issue list --state open --search "Data has gone stale in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "Data is fresh again — closing."
+            gh issue close "$existing"
+          fi
