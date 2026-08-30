@@ -1,0 +1,172 @@
+name: Health checks
+
+# Runs the full check suite and commits the result to the logbook.
+#
+# WHY THIS IS HERE AND NOT ONLY IN A SCHEDULED CLAUDE SESSION
+#
+# The first test of the scheduled Claude session did 36 minutes of work and
+# pushed nothing — no commit, no branch, no record. Whatever the cause, the
+# lesson is the same: the durable record must not depend on the part of the
+# system that can fail silently and expensively.
+#
+# So the split is:
+#
+#   THIS WORKFLOW  runs every check and writes the answers down. It is free
+#                  (public repository), it provably can commit — it is the same
+#                  mechanism the nightly scrape uses — and it needs no
+#                  judgement. If nothing else in the world works, the checks
+#                  still run and the logbook still grows.
+#
+#   THE CLAUDE     reads what this already recorded and does the part that
+#   ROUTINE        needs thinking: working out WHY something failed and
+#                  repairing it. It runs less often because it costs real
+#                  money — about $11 a session.
+#
+# That way a failure of the expensive, clever half costs a delayed repair,
+# not a lost record.
+
+on:
+  schedule:
+    # Every third day at 17:00 UTC (10am Pacific), an hour after the Claude
+    # routine's slot so the routine always has fresh results to read.
+    - cron: "0 17 */3 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: evals
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scrapers/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          pip install -r scrapers/requirements.txt
+          pip install pytest
+
+      - name: Run the checks
+        id: evals
+        # Exit code 1 means a check FAILED, which is a real finding, not a
+        # broken job. Capture it so the alert step can act on it without the
+        # workflow itself going red for the wrong reason.
+        run: |
+          set +e
+          python -m scrapers.evals --seed 7 --notes "Automatic run from GitHub Actions."
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Put the report in the run summary
+        if: always()
+        continue-on-error: true
+        run: |
+          python - <<'EOF'
+          import json, os, pathlib
+          summary = os.environ.get("GITHUB_STEP_SUMMARY", "")
+          hist = pathlib.Path("evals/history.json")
+          if not summary or not hist.exists():
+              raise SystemExit
+          runs = json.loads(hist.read_text() or "[]")
+          if not runs:
+              raise SystemExit
+          latest = runs[-1]
+          icon = {"pass": "✅", "warn": "⚠️", "fail": "\U0001f6a8", "skip": "—"}
+          c = latest["counts"]
+          with open(summary, "a") as out:
+              out.write(f"## {icon.get(latest['verdict'],'')} Health checks: "
+                        f"{latest['verdict'].upper()}\n\n")
+              out.write(f"{c['pass']} passed, {c['fail']} failed, {c['warn']} need "
+                        f"watching, {c['skip']} could not run.\n\n")
+              out.write("| | Check | Result |\n|---|---|---|\n")
+              for f in latest["findings"]:
+                  mark = "\U0001f310" if f.get("independent") else ""
+                  out.write(f"| `{f['id']}` {mark} | {f['question']} | "
+                            f"**{f['verdict'].upper()}** |\n")
+              bad = [f for f in latest["findings"] if f["verdict"] in ("fail", "warn")]
+              if bad:
+                  out.write("\n### Detail\n\n")
+                  for f in bad:
+                      out.write(f"**{f['id']} — {f['question']}**\n\n{f['detail']}\n\n")
+                      for e in f.get("evidence", [])[:5]:
+                          out.write(f"- {e}\n")
+                      out.write("\n")
+          EOF
+
+      - name: Record the results
+        if: always()
+        run: |
+          git config user.name  "art-in-la-bot"
+          git config user.email "art-in-la-bot@users.noreply.github.com"
+          git config merge.ours.driver true
+          git add evals/
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "chore(evals): health check $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin main
+          git push
+
+      - name: Raise an alert if a check failed
+        if: always() && steps.evals.outputs.exit_code != '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'EOF' > /tmp/eval_alert.md
+          import json, pathlib
+          runs = json.loads(pathlib.Path("evals/history.json").read_text() or "[]")
+          if not runs:
+              raise SystemExit
+          latest = runs[-1]
+          failed = [f for f in latest["findings"] if f["verdict"] == "fail"]
+          if not failed:
+              raise SystemExit
+          print("@birdofnofeather — the health checks found a problem.\n")
+          selftest = next((f for f in latest["findings"] if f["id"] == "G1"), None)
+          if selftest and selftest["verdict"] == "fail":
+              print("**Read this first: the checks themselves are not working.** "
+                    "G1 plants deliberate faults and confirms they are caught. It "
+                    "failed, so no other result below can be trusted.\n")
+          for f in failed:
+              print(f"### {f['question']}\n")
+              print(f"{f['detail']}\n")
+              for e in f.get("evidence", [])[:6]:
+                  print(f"- {e}")
+              print()
+          print("The full report is in `evals/LOGBOOK.md`, newest entry first.")
+          EOF
+          if [ -s /tmp/eval_alert.md ]; then
+            existing=$(gh issue list --state open --search "Health check found a problem in:title" \
+              --json number --jq '.[0].number' 2>/dev/null || echo "")
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file /tmp/eval_alert.md
+            else
+              gh issue create --title "Health check found a problem" --body-file /tmp/eval_alert.md
+            fi
+          fi
+
+      - name: Close the alert when everything passes again
+        if: always() && steps.evals.outputs.exit_code == '0'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh issue list --state open --search "Health check found a problem in:title" \
+            --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "All health checks pass again — closing."
+            gh issue close "$existing"
+          fi

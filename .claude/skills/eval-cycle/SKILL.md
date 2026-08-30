@@ -5,6 +5,27 @@ description: Run the Art in LA health checks, diagnose whatever they find, fix w
 
 # The eval cycle
 
+## Who does what
+
+The checks run in TWO places, and the split matters.
+
+**GitHub Actions runs the checks every three days and commits the results.**
+That is the guaranteed floor: it is free, it provably can commit, it needs no
+judgement, and it happens whether or not anything else works. By the time you
+read this, `evals/LOGBOOK.md` already has the latest answers in it.
+
+**You do the part that needs thinking**: working out WHY something failed and
+repairing it. You cost about $11 a session, so you run weekly rather than every
+three days, and you should not waste that on re-running checks a free workflow
+has already run.
+
+So: read the logbook first. Only re-run the checks yourself if you have changed
+something and need to see the effect, or if the recorded run looks wrong.
+
+This split exists because the first test of this Routine did 36 minutes of work
+and pushed nothing — no commit, no branch, no record. If your push fails, say so
+loudly and early; do not spend an hour working and then discover it at the end.
+
 ## What this is for
 
 Art in LA scrapes about sixty museum and arts-organisation websites every night
@@ -68,20 +89,43 @@ If the newest data is more than about 36 hours old, the scrape has stopped.
 That is the first thing to fix, ahead of everything else — every other check is
 reading stale data and its answers do not mean much.
 
-### Step 2 — Run the checks
+### Step 2 — Prove you can push, BEFORE doing any work
+
+This costs ten seconds and saves an hour. The first test run of this Routine
+worked for 36 minutes and then produced nothing durable.
 
 ```bash
-python3 -m scrapers.evals --seed 7 2>&1 | tail -80
+git commit --allow-empty -m "chore(evals): connectivity check" && git push origin main
 ```
 
-Use a fixed `--seed` so the sample of events verified against venue websites is
-repeatable. Change the seed only when you deliberately want a fresh sample.
+If that fails, STOP. Do not do the cycle. Report the exact error as your entire
+answer — the owner needs to know that the automation cannot save its work, and
+that is more important than any scraper finding. If it succeeds, carry on; the
+empty commit is harmless.
+
+### Step 3 — Read what the workflow already found
+
+```bash
+head -60 evals/LOGBOOK.md
+```
+
+The GitHub Actions run has already executed every check and written the answers
+there. Start from that rather than re-running everything.
+
+Re-run the checks yourself only when you need to:
+
+```bash
+python3 -m scrapers.evals --seed 7 --no-write 2>&1 | tail -60
+```
+
+Use the fixed `--seed` so the sample of events verified against venue websites
+is repeatable.
 
 **Read `G1` first.** It plants deliberate faults and confirms the checks notice
 them. If `G1` fails, every other "pass" in the report is unreliable and fixing
 `G1` is the only work worth doing that cycle.
 
-### Step 3 — Sort what came back
+### Step 4 — Sort what came back
 
 Take each `FAIL` and `WARN` in turn and put it in one of five boxes. Guessing
 the box wrong is the main way this procedure goes wrong, so work through them
@@ -133,7 +177,7 @@ with the options and your recommendation. These are editorial choices about what
 the site is for, and quietly making them is how a tool drifts away from what its
 owner wanted.
 
-### Step 4 — Prove the fix
+### Step 5 — Prove the fix
 
 ```bash
 python3 -m pytest scrapers/tests -q
@@ -151,7 +195,7 @@ python3 -m scrapers.run_all --only <venue_id> --dry-run
 Sanity-check the count. A scraper suddenly returning 300 events is as broken as
 one returning zero — it has usually started reading the navigation menu.
 
-### Step 5 — Write it down and commit
+### Step 6 — Write it down and commit
 
 Record the run:
 
@@ -171,7 +215,7 @@ git push -u origin main
 The commit message should say what the check found, why it happened, and what
 you did — in plain language. It is the only durable record of the reasoning.
 
-### Step 6 — Update the watchlist
+### Step 7 — Update the watchlist
 
 `evals/WATCHLIST.md` holds everything not fixed this cycle:
 
