@@ -5,7 +5,8 @@
     "min_exhibitions": 1,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "18th Street — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "18th Street — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "academy_museum": {
     "min_events": 50,
@@ -21,7 +22,8 @@
     "min_exhibitions": 1,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Armory — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Armory — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "art_practice": {
     "min_events": 0,
@@ -37,7 +39,8 @@
     "min_exhibitions": 3,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Autry — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Autry — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "avenue_50": {
     "min_events": 0,
@@ -77,7 +80,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "caam — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "caam — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "calarts": {
     "min_events": 0,
@@ -109,7 +113,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Craft Contemporary — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Craft Contemporary — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "forest_lawn": {
     "min_events": 0,
@@ -125,7 +130,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Fowler — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Fowler — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "getty_center": {
     "min_events": 16,
@@ -149,7 +155,8 @@
     "min_exhibitions": 3,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Hammer — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Hammer — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "human_resources": {
     "min_events": 5,
@@ -165,7 +172,8 @@
     "min_exhibitions": 3,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "The Huntington — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "The Huntington — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "jaccc": {
     "min_events": 0,
@@ -181,7 +189,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "JANM — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "JANM — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "la_plaza": {
     "min_events": 7,
@@ -197,7 +206,8 @@
     "min_exhibitions": 8,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "LACMA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "LACMA — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "las_fotos_project": {
     "min_events": 0,
@@ -213,7 +223,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "LBMA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "LBMA — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "mak_center": {
     "min_events": 1,
@@ -237,7 +248,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "MOAH — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "MOAH — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "moca_geffen": {
     "min_events": 0,
@@ -245,7 +257,8 @@
     "min_exhibitions": 1,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "moca_geffen — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "moca_geffen — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "moca_grand": {
     "min_events": 0,
@@ -253,7 +266,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "moca_grand — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "moca_grand — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "molaa": {
     "min_events": 3,
@@ -261,7 +275,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "MOLAA — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "MOLAA — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "museum_of_tolerance": {
     "min_events": 0,
@@ -277,7 +292,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Norton Simon — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Norton Simon — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "pacific_asia_museum": {
     "min_events": 0,
@@ -285,7 +301,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Pacific Asia Museum — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Pacific Asia Museum — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "pieter": {
     "min_events": 1,
@@ -317,7 +334,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "Skirball — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "Skirball — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "sparc": {
     "min_events": 0,
@@ -333,7 +351,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "The Broad — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "The Broad — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "usc_fisher": {
     "min_events": 0,
@@ -341,7 +360,8 @@
     "min_exhibitions": 2,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "USC Fisher — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "USC Fisher — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "vincent_price": {
     "min_events": 0,
@@ -349,7 +369,8 @@
     "min_exhibitions": 1,
     "source": "human",
     "updated": "2026-08-30",
-    "note": "VPAM — has temporary shows on; a zero here means the exhibitions are not being scraped"
+    "note": "VPAM — has temporary shows on; a zero here means the exhibitions are not being scraped",
+    "known_gap": "exhibitions"
   },
   "wende": {
     "min_events": 6,

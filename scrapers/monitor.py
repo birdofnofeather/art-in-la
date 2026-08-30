@@ -67,6 +67,9 @@ NEAR_NOTHING = 2
 # A venue's count moving by more than this against its recent average -> yellow.
 DRIFT_TOLERANCE = 0.6
 
+# ...but only once there are enough past runs for "average" to mean anything.
+MIN_HISTORY_FOR_DRIFT = 4
+
 
 def _worst(*verdicts: str) -> str:
     return max(verdicts, key=lambda v: _RANK.get(v, 0))
@@ -144,6 +147,7 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
     second is ours to fix.
     """
     reasons: list[str] = []
+    known_gaps: list[str] = []
     verdict = GREEN
 
     events = [e for e in published if e.get("event_type") != "exhibition"]
@@ -173,7 +177,11 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
             )
 
     # ── Witness 2 ────────────────────────────────────────────────────────
-    average = _recent_average(health.get("recent_counts") or [])
+    # A "recent average" built from one or two runs is not an average, it is
+    # noise. Twelve venues were flagged for drifting from a history that was
+    # two days old. Wait for a real baseline before judging movement.
+    history = [v for v in (health.get("recent_counts") or []) if isinstance(v, int)]
+    average = _recent_average(history) if len(history) >= MIN_HISTORY_FOR_DRIFT else None
     if average and average >= 3:
         change = (n_total - average) / average
         if change <= -DRIFT_TOLERANCE:
@@ -219,11 +227,33 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
             reasons.append(f"{len(events)} events, more than the expected {hi}")
         min_exh = expectation.get("min_exhibitions")
         if isinstance(min_exh, int) and min_exh > 0 and len(exhibitions) < min_exh:
-            verdict = _worst(verdict, YELLOW)
-            reasons.append(
-                f"{len(exhibitions)} exhibitions, fewer than the expected {min_exh} — "
-                f"a venue can look healthy on events while its exhibitions are broken"
-            )
+            # A gap we already know about, have written down, and cannot close
+            # until the extraction tier exists is reported ONCE for the whole
+            # fleet, not as a fresh yellow against fifteen venues every single
+            # day. Repeating known news is how a status report becomes wallpaper
+            # and real problems start getting skipped over.
+            if expectation.get("known_gap") == "exhibitions":
+                known_gaps.append("exhibitions")
+            else:
+                verdict = _worst(verdict, YELLOW)
+                reasons.append(
+                    f"{len(exhibitions)} exhibitions, fewer than the expected "
+                    f"{min_exh} — a venue can look healthy on events while its "
+                    f"exhibitions are broken"
+                )
+
+    # ── Everything harvested, nothing published ──────────────────────────
+    # LMU's Laband Gallery sat green while showing visitors nothing: it
+    # harvested events fine, so witness 1 was satisfied, and its zero-streak
+    # stayed at zero for the same reason. But every single record was filtered
+    # out before publication. That is either correct (all of it was a standing
+    # programme) or a bug, and "green" is the wrong answer to both.
+    if n_harvested > 0 and n_total == 0:
+        verdict = _worst(verdict, YELLOW)
+        reasons.append(
+            f"scraped {n_harvested} record(s) but published none — everything it "
+            f"found was filtered out, so the site shows nothing for this venue"
+        )
 
     # ── Quality of what we did publish ───────────────────────────────────
     notes = []
@@ -242,6 +272,7 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
         "dates_on_page": dates_on_page,
         "zero_streak": streak,
         "reasons": reasons,
+        "known_gaps": known_gaps,
     }
 
 
@@ -293,6 +324,8 @@ def assess(published: list[dict], health: dict, venues: list[dict],
     for r in venues_report:
         counts[r["verdict"]] += 1
     unreachable = [r["venue_id"] for r in venues_report if r.get("unreachable")]
+    exhibition_gap = [r["venue_id"] for r in venues_report
+                      if "exhibitions" in (r.get("known_gaps") or [])]
 
     # The fleet verdict. One broken venue out of sixty is a yellow day, not a
     # red one; several at once means something systemic.
@@ -317,6 +350,9 @@ def assess(published: list[dict], health: dict, venues: list[dict],
         },
         "counts": counts,
         "unreachable": unreachable,
+        # Reported once, as a number, instead of as a fresh complaint against
+        # each venue every day. See evals/WATCHLIST.md for the full story.
+        "known_exhibition_gap": exhibition_gap,
         "venues": venues_report,
     }
 

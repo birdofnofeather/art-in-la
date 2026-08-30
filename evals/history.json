@@ -1,6 +1,6 @@
 [
   {
-    "when": "2026-08-30T18:00:34.367626+00:00",
+    "when": "2026-08-30T18:04:03.132396+00:00",
     "verdict": "pass",
     "counts": {
       "pass": 22,
@@ -13,30 +13,31 @@
         "id": "A1",
         "question": "Do the events we publish actually appear on the venue's own page?",
         "verdict": "pass",
-        "detail": "22 of 23 sampled events were found on the venue's own page. Nothing looks invented.",
+        "detail": "21 of 23 sampled events were found on the venue's own page. Nothing looks invented.",
         "evidence": [
-          "[clockshop] Taking Root ‘The Edge of Summer’ Gala -> https://clockshop.org/event/taking-root-the-edge-of-summer-gala/"
+          "[clockshop] Taking Root ‘The Edge of Summer’ Gala -> https://clockshop.org/event/taking-root-the-edge-of-summer-gala/",
+          "[18th_street] The Intersection with Crazy Space Returns -> https://18thstreet.org/event/the-intersection-with-crazy-space-returns/"
         ],
         "independent": true,
         "numbers": {
           "sampled": 25,
           "reachable": 23,
-          "title_found": 22,
-          "match_rate": 0.957
+          "title_found": 21,
+          "match_rate": 0.913
         }
       },
       {
         "id": "A2",
         "question": "Does each event's date actually appear on the venue's page?",
         "verdict": "pass",
-        "detail": "21 of 23 sampled events had their date visible on the page. A low score here is often innocent — many venues put the date in an image or a booking widget we cannot read — so this is tracked as a trend rather than treated as a failure.",
+        "detail": "20 of 23 sampled events had their date visible on the page. A low score here is often innocent — many venues put the date in an image or a booking widget we cannot read — so this is tracked as a trend rather than treated as a failure.",
         "evidence": [
           "[calarts] School of Music Welcome Concert"
         ],
         "independent": true,
         "numbers": {
-          "date_found": 21,
-          "date_rate": 0.913
+          "date_found": 20,
+          "date_rate": 0.87
         }
       },
       {
@@ -45,8 +46,8 @@
         "verdict": "pass",
         "detail": "2 of 25 sampled links could not be opened. Some venues block automated requests while working fine in a browser, so a handful is expected; a lot means we are sending people to pages that no longer exist.",
         "evidence": [
-          "[norton_simon] https://www.nortonsimon.org/calendar/2026/fall-2026/Manets-Execution-of-Maximilian-Exhibition-in-Context-11-14-2026-500PM#2026-11-14",
-          "[huntington] https://www.huntington.org/event/chinese-tour-this-land-is"
+          "[huntington] https://www.huntington.org/event/chinese-tour-this-land-is",
+          "[norton_simon] https://www.nortonsimon.org/calendar/2026/fall-2026/Manets-Execution-of-Maximilian-Exhibition-in-Context-11-14-2026-500PM#2026-11-14"
         ],
         "independent": true,
         "numbers": {
@@ -62,8 +63,8 @@
         "evidence": [],
         "independent": false,
         "numbers": {
-          "events": 383,
-          "archive": 615
+          "events": 390,
+          "archive": 618
         }
       },
       {
@@ -124,34 +125,25 @@
         "id": "D2",
         "question": "Is the status report quiet enough to be worth reading?",
         "verdict": "pass",
-        "detail": "1 red and 14 yellow out of 43 venues (35% flagged). If almost everything is flagged every day, the report stops being information and becomes noise you learn to skip — which is how the real failures get missed.",
+        "detail": "1 red and 0 yellow out of 44 venues (2% flagged). If almost everything is flagged every day, the report stops being information and becomes noise you learn to skip — which is how the real failures get missed.",
         "evidence": [],
         "independent": false,
         "numbers": {
-          "flagged_share": 0.349,
+          "flagged_share": 0.023,
           "red": 1,
-          "yellow": 14,
-          "green": 28
+          "yellow": 0,
+          "green": 43
         }
       },
       {
         "id": "D3",
         "question": "Are the written expectations still sensible?",
         "verdict": "pass",
-        "detail": "14 venue(s) are missing their expected numbers. Where that is the same venues run after run, either the venue really is broken or the expectation was set too high — both need a decision, and leaving it unresolved is what turns a monitor into wallpaper.",
-        "evidence": [
-          "18th_street",
-          "armory_pasadena",
-          "autry",
-          "fowler",
-          "hammer",
-          "huntington",
-          "janm",
-          "lacma"
-        ],
+        "detail": "0 venue(s) are missing their expected numbers. Where that is the same venues run after run, either the venue really is broken or the expectation was set too high — both need a decision, and leaving it unresolved is what turns a monitor into wallpaper.",
+        "evidence": [],
         "independent": false,
         "numbers": {
-          "below_expectation": 14,
+          "below_expectation": 0,
           "impossible": 0
         }
       },
@@ -214,12 +206,12 @@
         "id": "E6",
         "question": "How many events could we not put into any category?",
         "verdict": "pass",
-        "detail": "40 of 383 events (10%) are labelled 'other'. A rising share means the wording rules are drifting behind how venues actually describe things. This is a quality trend, not a breakage.",
+        "detail": "43 of 390 events (11%) are labelled 'other'. A rising share means the wording rules are drifting behind how venues actually describe things. This is a quality trend, not a breakage.",
         "evidence": [],
         "independent": false,
         "numbers": {
-          "other": 40,
-          "other_share": 0.104
+          "other": 43,
+          "other_share": 0.11
         }
       },
       {
@@ -237,11 +229,11 @@
         "id": "F1",
         "question": "Is the daily scrape still running?",
         "verdict": "pass",
-        "detail": "The freshest data is 11 hours old. The scrape is daily, so anything past 36 hours means it has stopped — and a stopped scrape is invisible from the website, which keeps serving the last good copy and looking perfectly healthy.",
+        "detail": "The freshest data is 5 hours old. The scrape is daily, so anything past 36 hours means it has stopped — and a stopped scrape is invisible from the website, which keeps serving the last good copy and looking perfectly healthy.",
         "evidence": [],
         "independent": false,
         "numbers": {
-          "hours_old": 11.3
+          "hours_old": 5.4
         }
       },
       {
@@ -264,8 +256,8 @@
         "independent": false,
         "numbers": {
           "difference": 0,
-          "published": 383,
-          "rederived": 383
+          "published": 390,
+          "rederived": 390
         }
       },
       {
@@ -274,9 +266,9 @@
         "verdict": "pass",
         "detail": "Passed.",
         "evidence": [
-          "........................................................................ [ 83%]",
-          "..............                                                           [100%]",
-          "86 passed in 0.45s"
+          "........................................................................ [ 79%]",
+          "...................                                                      [100%]",
+          "91 passed in 0.45s"
         ],
         "independent": false,
         "numbers": {}
@@ -317,8 +309,8 @@
       }
     ],
     "snapshot": {
-      "events": 383,
-      "archive": 615,
+      "events": 390,
+      "archive": 618,
       "by_venue": {
         "la_plaza": 22,
         "marciano": 2,
@@ -337,9 +329,9 @@
         "jaccc": 3,
         "calarts": 3,
         "museum_of_tolerance": 1,
-        "huntington": 20,
+        "huntington": 21,
         "human_resources": 13,
-        "lacma": 7,
+        "lacma": 10,
         "wende": 14,
         "18th_street": 8,
         "hammer": 10,
@@ -355,6 +347,7 @@
         "sparc": 1,
         "janm": 3,
         "forest_lawn": 1,
+        "angels_gate": 3,
         "clockshop": 5,
         "moah": 1,
         "vincent_price": 1,
@@ -450,9 +443,12 @@
         "human_resources-2026-09-04-kamikaze-hearts-96f558d2a7",
         "autry-2026-09-05-family-fun-day-movie-matineewho-framed-r-091eb09ce5",
         "pvac-2026-09-05-artist-demo-robin-jack-sarner-a287ee79e3",
+        "lacma-2026-09-05-communities-create-la-split-creature-scu-c482b7db2b",
+        "lacma-2026-09-05-boone-childrens-gallery-bf0132d506",
         "academy_museum-2026-09-05-snow-white-and-the-seven-dwarfs-1ac4ffba50",
         "academy_museum-2026-09-05-fanny-alexander-in-35mm-1b879ce3d3",
         "human_resources-2026-09-05-tim-feeney8217s-dowsing-b07cc41b6f",
+        "lacma-2026-09-05-latin-sounds-ricardo-lemvo-makina-loco-4a31dbdbd8",
         "autry-2026-09-05-street-food-cinema-practical-magic1998-f140f5c497",
         "human_resources-2026-09-05-guadalupe-arellanes-dream-series-87bf893a7b",
         "huntington-2026-09-06-hummingbirds-at-the-huntington-2fa66f1644",
@@ -528,6 +524,7 @@
         "pvac-2026-09-19-south-bay-orchid-society-fall-show-038-s-6f7b5b8e54",
         "la_plaza-2026-09-19-three-sisters-in-the-garden-corn-beans-a-7a097c69b0",
         "getty_center-2026-09-19-artistatwork-tapa-making-368569406a",
+        "angels_gate--opaf-other-places-art-fair-8-42560b850a",
         "getty_center-2026-09-19-rethinking-the-egyptian-book-of-the-dead-c98a957022",
         "academy_museum-2026-09-19-something-wicked-this-way-comes-in-35mm-d5a60db31f",
         "getty_center-2026-09-19-stories-in-ink-ttau-bookmark-workshop-ec7c64f1f2",
@@ -542,6 +539,7 @@
         "getty_center-2026-09-20-artistatwork-tapa-making-2bfac077b0",
         "getty_center-2026-09-20-stories-in-ink-ttau-bookmark-workshop-5f2af17f2e",
         "molaa-2026-09-20-juega-con-yoga-hatha-flow-yoga-at-molaa-df788a0e0e",
+        "angels_gate--glass-pendants-and-hearts-workshop-385ece4afa",
         "academy_museum-2026-09-20-gigi-in-35mm-8d6be4aa13",
         "wende-2026-09-20-racist-by-design-kelly-lytle-hernndez-in-a0ac1a18ea",
         "getty_center-2026-09-20-the-amazing-portrait-and-story-of-mai-72bc38e3a6",
@@ -597,6 +595,7 @@
         "getty_center-2026-09-30-show-and-tell-yoko-ono-archive-8c7bf3b25c",
         "hammer-2026-09-30-lunchtime-art-talk-on-vibeke-mascini-2d8e47bcf6",
         "academy_museum-2026-10-01-apocalypse-now-the-final-cut-0a935a6ea6",
+        "huntington-2026-10-01-summoning-worlds-collectors-gardens-in-t-c0318c0910",
         "getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2",
         "hammer-2026-10-01-afterhours-tour-phil-chang-on-five-centu-c316cbf3d6",
         "academy_museum-2026-10-02-pans-labyrinth-in-3d-with-guillermo-del-1a6dc4ca4e",
@@ -739,6 +738,7 @@
         "molaa-2026-12-05-2026-latino-comics-expo-638f2d8af8",
         "la_plaza-2026-12-10-sabor-a-mxico-e-italia-osso-bucco-and-sa-c3a0eea7b7",
         "getty_center-2026-12-12-nonconsenting-collaborators-with-gala-po-abda060c5a",
+        "angels_gate--raku-ceramics-d774cdf4c7",
         "getty_center-2026-12-15-paul-r-williams-architecture-across-the-a4eddd7dd4",
         "getty_center-2026-12-15-curators-tour-every-minute-is-history-64ac824cfe",
         "getty_center-2026-12-16-visita-guiada-con-la-curadora-instantere-57d1835c69",
@@ -761,9 +761,12 @@
         "human_resources-2026-09-04-kamikaze-hearts-96f558d2a7",
         "autry-2026-09-05-family-fun-day-movie-matineewho-framed-r-091eb09ce5",
         "pvac-2026-09-05-artist-demo-robin-jack-sarner-a287ee79e3",
+        "lacma-2026-09-05-communities-create-la-split-creature-scu-c482b7db2b",
+        "lacma-2026-09-05-boone-childrens-gallery-bf0132d506",
         "academy_museum-2026-09-05-snow-white-and-the-seven-dwarfs-1ac4ffba50",
         "academy_museum-2026-09-05-fanny-alexander-in-35mm-1b879ce3d3",
         "human_resources-2026-09-05-tim-feeney8217s-dowsing-b07cc41b6f",
+        "lacma-2026-09-05-latin-sounds-ricardo-lemvo-makina-loco-4a31dbdbd8",
         "autry-2026-09-05-street-food-cinema-practical-magic1998-f140f5c497",
         "human_resources-2026-09-05-guadalupe-arellanes-dream-series-87bf893a7b",
         "huntington-2026-09-06-hummingbirds-at-the-huntington-2fa66f1644",
@@ -839,6 +842,7 @@
         "pvac-2026-09-19-south-bay-orchid-society-fall-show-038-s-6f7b5b8e54",
         "la_plaza-2026-09-19-three-sisters-in-the-garden-corn-beans-a-7a097c69b0",
         "getty_center-2026-09-19-artistatwork-tapa-making-368569406a",
+        "angels_gate--opaf-other-places-art-fair-8-42560b850a",
         "getty_center-2026-09-19-rethinking-the-egyptian-book-of-the-dead-c98a957022",
         "academy_museum-2026-09-19-something-wicked-this-way-comes-in-35mm-d5a60db31f",
         "getty_center-2026-09-19-stories-in-ink-ttau-bookmark-workshop-ec7c64f1f2",
@@ -853,6 +857,7 @@
         "getty_center-2026-09-20-artistatwork-tapa-making-2bfac077b0",
         "getty_center-2026-09-20-stories-in-ink-ttau-bookmark-workshop-5f2af17f2e",
         "molaa-2026-09-20-juega-con-yoga-hatha-flow-yoga-at-molaa-df788a0e0e",
+        "angels_gate--glass-pendants-and-hearts-workshop-385ece4afa",
         "academy_museum-2026-09-20-gigi-in-35mm-8d6be4aa13",
         "wende-2026-09-20-racist-by-design-kelly-lytle-hernndez-in-a0ac1a18ea",
         "getty_center-2026-09-20-the-amazing-portrait-and-story-of-mai-72bc38e3a6",
@@ -908,6 +913,7 @@
         "getty_center-2026-09-30-show-and-tell-yoko-ono-archive-8c7bf3b25c",
         "hammer-2026-09-30-lunchtime-art-talk-on-vibeke-mascini-2d8e47bcf6",
         "academy_museum-2026-10-01-apocalypse-now-the-final-cut-0a935a6ea6",
+        "huntington-2026-10-01-summoning-worlds-collectors-gardens-in-t-c0318c0910",
         "getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2",
         "hammer-2026-10-01-afterhours-tour-phil-chang-on-five-centu-c316cbf3d6",
         "academy_museum-2026-10-02-pans-labyrinth-in-3d-with-guillermo-del-1a6dc4ca4e",
@@ -1050,6 +1056,7 @@
         "molaa-2026-12-05-2026-latino-comics-expo-638f2d8af8",
         "la_plaza-2026-12-10-sabor-a-mxico-e-italia-osso-bucco-and-sa-c3a0eea7b7",
         "getty_center-2026-12-12-nonconsenting-collaborators-with-gala-po-abda060c5a",
+        "angels_gate--raku-ceramics-d774cdf4c7",
         "getty_center-2026-12-15-paul-r-williams-architecture-across-the-a4eddd7dd4",
         "getty_center-2026-12-15-curators-tour-every-minute-is-history-64ac824cfe",
         "getty_center-2026-12-16-visita-guiada-con-la-curadora-instantere-57d1835c69",
@@ -1061,6 +1068,6 @@
         "craft_contemporary-2027-12-05-b8217atz8217-legacy-in-guatemalan-textil-4364ccdba8"
       ]
     },
-    "notes": "First cycle — the check suite itself was built this session, so this run is the baseline. One real bug found and fixed: Wende Museum's weekly picture-book workshop was appearing three times on the site. The filter that hides weekly programmes demanded every gap between dates be near-identical, and this workshop skipped a week (gaps of 14, 7, 7 days), so the whole series escaped. It now reads a 14-day gap as 'two weeks'. Getty's standing 'Exhibition Tour' was leaking the same way and is now hidden; Getty's curator's tour now shows as one listing with its other dates noted."
+    "notes": "BASELINE CYCLE. The check suite itself was built this session, so this is the starting point rather than a routine run. Run against the nightly scrape's own data, not a local one — many venues refuse requests from this sandbox's address while allowing GitHub's servers, so local numbers were an artefact.\n\nVerification against the venues' own websites: 22 of 23 sampled events were found on the page they link to (96%), 21 of 23 had their date visible (91%), 2 of 25 links could not be opened (8%). This is the first time anything in the project has checked that what we publish is real.\n\nFour problems found and fixed this cycle:\n1. Wende Museum's weekly picture-book workshop appeared three times on the site. The filter that hides weekly programmes required every gap between dates to be near-identical; this one skipped a week (14, 7, 7 days) so the whole series escaped. Getty's standing Exhibition Tour was leaking the same way.\n2. LMU's Laband Gallery was reported healthy while showing visitors nothing — it scraped events but published none of them.\n3. The status report was flagging 59% of venues, which is the point at which people stop reading it. Fifteen flags were the known exhibitions gap repeated daily; it is now counted once. Twelve were drift judged against a two-day-old average.\n4. A clean run where one check had no data yet was headlined SKIP, which reads like a failure.\n\nNothing parked. Nothing needing the owner urgently; two judgement calls recorded on the watchlist."
   }
 ]

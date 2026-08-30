@@ -175,3 +175,55 @@ def test_the_fleet_verdict_reflects_how_many_venues_are_broken():
                     probe=False, scraped_ids=["a", "b"])
     assert report["verdict"] == GREEN
     assert report["totals"]["events"] == 2
+
+
+# ── Found by the eval suite, 2026-08-30 ───────────────────────────────────
+
+def test_a_venue_that_publishes_nothing_is_never_green():
+    """LMU's Laband Gallery sat green while showing visitors nothing.
+
+    It harvested events fine, so the source-page check was satisfied and its
+    zero-streak stayed at zero for the same reason — but every record was
+    filtered out before publication. Whether that is correct or a bug, 'green'
+    is the wrong answer to both.
+    """
+    harvested = [_ev("laband") for _ in range(6)]
+    r = assess_venue("laband", produced=harvested, published=[], health={},
+                     expectation={}, dates_on_page=None)
+    assert r["verdict"] != GREEN
+    assert "published none" in " ".join(r["reasons"])
+
+
+def test_a_known_gap_is_counted_but_does_not_shout_every_day():
+    """Fifteen venues repeating the same known news is how a report becomes noise."""
+    published = [_ev("lacma") for _ in range(4)]
+    expectation = {"min_exhibitions": 8, "known_gap": "exhibitions"}
+    r = assess_venue("lacma", produced=published, published=published, health={},
+                     expectation=expectation, dates_on_page=None)
+    assert r["verdict"] == GREEN, "a tracked, accepted gap must not raise a daily flag"
+    assert "exhibitions" in r["known_gaps"], "...but it must still be counted"
+
+
+def test_an_untracked_exhibition_shortfall_still_raises_a_flag():
+    """Only gaps we have deliberately acknowledged go quiet."""
+    published = [_ev("somewhere") for _ in range(4)]
+    r = assess_venue("somewhere", produced=published, published=published, health={},
+                     expectation={"min_exhibitions": 5}, dates_on_page=None)
+    assert r["verdict"] == YELLOW
+
+
+def test_drift_is_not_judged_from_a_two_day_history():
+    """Twelve venues were flagged for drifting from an average two days old."""
+    published = [_ev("x") for _ in range(3)]
+    r = assess_venue("x", produced=published, published=published,
+                     health={"recent_counts": [40, 41]},
+                     expectation={}, dates_on_page=None)
+    assert r["verdict"] == GREEN, "two data points is not a trend"
+
+
+def test_drift_is_judged_once_there_is_a_real_baseline():
+    published = [_ev("x") for _ in range(3)]
+    r = assess_venue("x", produced=published, published=published,
+                     health={"recent_counts": [40, 41, 39, 42, 40]},
+                     expectation={}, dates_on_page=None)
+    assert r["verdict"] == YELLOW

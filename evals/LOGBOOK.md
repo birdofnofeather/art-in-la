@@ -57,7 +57,17 @@ Every check that can fail, passed.
 ---
 ### Notes from this run
 
-First cycle — the check suite itself was built this session, so this run is the baseline. One real bug found and fixed: Wende Museum's weekly picture-book workshop was appearing three times on the site. The filter that hides weekly programmes demanded every gap between dates be near-identical, and this workshop skipped a week (gaps of 14, 7, 7 days), so the whole series escaped. It now reads a 14-day gap as 'two weeks'. Getty's standing 'Exhibition Tour' was leaking the same way and is now hidden; Getty's curator's tour now shows as one listing with its other dates noted.
+BASELINE CYCLE. The check suite itself was built this session, so this is the starting point rather than a routine run. Run against the nightly scrape's own data, not a local one — many venues refuse requests from this sandbox's address while allowing GitHub's servers, so local numbers were an artefact.
+
+Verification against the venues' own websites: 22 of 23 sampled events were found on the page they link to (96%), 21 of 23 had their date visible (91%), 2 of 25 links could not be opened (8%). This is the first time anything in the project has checked that what we publish is real.
+
+Four problems found and fixed this cycle:
+1. Wende Museum's weekly picture-book workshop appeared three times on the site. The filter that hides weekly programmes required every gap between dates to be near-identical; this one skipped a week (14, 7, 7 days) so the whole series escaped. Getty's standing Exhibition Tour was leaking the same way.
+2. LMU's Laband Gallery was reported healthy while showing visitors nothing — it scraped events but published none of them.
+3. The status report was flagging 59% of venues, which is the point at which people stop reading it. Fifteen flags were the known exhibitions gap repeated daily; it is now counted once. Twelve were drift judged against a two-day-old average.
+4. A clean run where one check had no data yet was headlined SKIP, which reads like a failure.
+
+Nothing parked. Nothing needing the owner urgently; two judgement calls recorded on the watchlist.
 
 ---
 
