@@ -1,104 +1,157 @@
-"""Recurring-event detection and filtering.
+"""Recurring-programme detection.
 
-Two mechanisms:
-1. Keyword match – title or description signals a standing recurring program
-   (daily/weekly/every <weekday>, In Focus Tour, Gallery Tour, Docent-led, etc.)
-2. Frequency dedup – same normalised title appears REPEAT_THRESHOLD+ times
-   from the same venue → it's a standing series; drop all occurrences.
+A standing programme — a weekly dance class, a daily docent tour — is clutter
+on a calendar people use to plan a trip. This module finds them.
+
+Two mechanisms, both configured in scrapers/rules.yaml:
+
+  (a) BY NAME. The title matches one of `recurring.drop_patterns`. These are the
+      deliberate exclusions (Getty's garden tour, LACMA's gallery tours,
+      Huntington's standing programmes) and they are always dropped.
+
+  (b) BY RHYTHM. The same title appears several times at regular intervals.
+
+Why rhythm and not counting: the previous version dropped a title only when it
+appeared 5+ times. Pieter's "Queerchata: Intro to Bachata" appears exactly 4
+times — a weekly class with four dates left on the calendar — and sailed
+straight through, along with 78 other records fleet-wide. How many dates happen
+to remain in the scrape window says nothing about whether something recurs.
+Even spacing does.
+
+A series caught by rhythm is either dropped or COLLAPSED (keep the next
+occurrence, note the rest on it), depending on the rules file. Collapsing is
+right for something like a curator's tour tied to a specific exhibition: worth
+listing once, not four times.
 """
 from __future__ import annotations
 
-import re
-from collections import Counter, defaultdict
+from collections import defaultdict
+from datetime import datetime, timezone
 
-# ── Keyword pattern ────────────────────────────────────────────────────────────
-_RECURRING_KW = re.compile(
-    r"""
-    \b(
-        daily | weekly |
-        every\s+(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday|week|day) |
-        (?:mondays|tuesdays|wednesdays|thursdays|fridays|saturdays|sundays)\b |
-
-        # Common recurring tour-series patterns (museum / gallery programmes)
-        in\s+focus\s+tour |
-        gallery\s+tour |
-        exhibition\s+highlights?\s+tour |
-        guided\s+tour |
-        collection\s+tour |
-        # Standing architecture / garden / gallery tours (e.g. Getty's
-        # "Art, Architecture, and Garden Tour", LACMA gallery tours). Commas and
-        # ampersands between the words are tolerated.
-        architecture[,\s]+(?:and\s+|&\s*)?garden\s+tour |
-        architecture\s+tour |
-        garden\s+tour |
-        curator'?s\s+gallery\s+tour |
-        docent |        # covers "docent-led", "docent tour", etc.
-
-        # Norton Simon standing programmes — not one-off events
-        introductory\s+film |
-        afternoon\s+salon
-    )\b
-    """,
-    re.IGNORECASE | re.VERBOSE,
-)
-
-# ── Threshold ──────────────────────────────────────────────────────────────────
-# If the same (venue_id, normalised_title) pair appears this many times in the
-# upcoming events list, treat it as a standing series and drop all occurrences.
-REPEAT_THRESHOLD = 5
+from .rules import load
+from .text import title_key
 
 
-# ── Public helpers ─────────────────────────────────────────────────────────────
+# ── Name matching ─────────────────────────────────────────────────────────
 
 def is_recurring_by_keyword(title: str, description: str = "") -> bool:
-    """Return True if title/description matches a known recurring-programme pattern."""
-    return bool(
-        _RECURRING_KW.search(title or "")
-        or _RECURRING_KW.search(description or "")
-    )
+    """True if the title/description names a known standing programme."""
+    rules = load()
+    text = f"{title or ''} \n {description or ''}"
+    return any(p.search(text) for p in rules.recurring_drop)
 
 
-def _norm(title: str) -> str:
-    return title.strip().lower()
+def _should_collapse(title: str) -> bool:
+    rules = load()
+    return any(p.search(title or "") for p in rules.recurring_collapse)
 
+
+# ── Rhythm detection ──────────────────────────────────────────────────────
+
+def _as_date(raw):
+    """Parse a stored start value to a date, or None."""
+    if not raw:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
+    except (ValueError, TypeError):
+        return None
+    if dt.tzinfo is not None:
+        dt = dt.astimezone(timezone.utc).replace(tzinfo=None)
+    return dt.date()
+
+
+def has_regular_cadence(dates: list, tolerance_days: int, min_occurrences: int,
+                        min_gap_days: int = 3, max_gap_days: int = 45) -> bool:
+    """True if these dates are evenly spaced — the signature of a standing series.
+
+    Needs at least `min_occurrences` distinct dates, whose consecutive gaps all
+    agree to within `tolerance_days` and all fall between `min_gap_days` and
+    `max_gap_days`.
+
+    The lower bound is the important one. Three performances on three
+    consecutive nights are perfectly evenly spaced, but that is a theatre run —
+    a real event people buy tickets for — not a standing programme. Requiring a
+    gap of at least a few days keeps runs visible while still catching the
+    weekly, fortnightly and monthly programmes that are genuine clutter.
+    """
+    uniq = sorted({d for d in dates if d is not None})
+    if len(uniq) < max(2, min_occurrences):
+        return False
+    gaps = [(b - a).days for a, b in zip(uniq, uniq[1:])]
+    if not gaps or min(gaps) < min_gap_days or max(gaps) > max_gap_days:
+        return False
+    return (max(gaps) - min(gaps)) <= tolerance_days
+
+
+# ── Main entry point ──────────────────────────────────────────────────────
 
 def filter_recurring(events: list[dict]) -> tuple[list[dict], list[dict]]:
-    """Return (kept, dropped) after filtering recurring standing programmes.
+    """Return (kept, dropped).
 
-    Pass 1 – keyword filter.
-    Pass 2 – frequency dedup (same title ≥ REPEAT_THRESHOLD times per venue).
+    Pass 1 — drop anything whose name matches a standing-programme pattern.
+    Pass 2 — group what's left by (venue, title); drop or collapse any group
+             that recurs on a regular rhythm, or that simply repeats a lot.
     """
+    rules = load()
     kept: list[dict] = []
     dropped: list[dict] = []
 
-    # Pass 1: keyword
+    # ── Pass 1: by name ───────────────────────────────────────────────────
     for ev in events:
         if is_recurring_by_keyword(ev.get("title", ""), ev.get("description", "")):
             dropped.append(ev)
         else:
             kept.append(ev)
 
-    # Pass 2: frequency
-    counts: dict[str, Counter] = defaultdict(Counter)
+    # ── Pass 2: by rhythm ─────────────────────────────────────────────────
+    groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for ev in kept:
-        counts[ev.get("venue_id", "")][_norm(ev.get("title", ""))] += 1
-
-    recurring_pairs: set[tuple[str, str]] = {
-        (vid, t)
-        for vid, c in counts.items()
-        for t, n in c.items()
-        if n >= REPEAT_THRESHOLD
-    }
-
-    if not recurring_pairs:
-        return kept, dropped
+        groups[(ev.get("venue_id", ""), title_key(ev.get("title", "")))].append(ev)
 
     final: list[dict] = []
-    for ev in kept:
-        key = (ev.get("venue_id", ""), _norm(ev.get("title", "")))
-        if key in recurring_pairs:
-            dropped.append(ev)
-        else:
-            final.append(ev)
+    for (venue_id, _key), members in groups.items():
+        # An explicit per-venue setting is a deliberate decision about that
+        # venue and beats the general collapse patterns. Only when a venue has
+        # no override do we let a title's wording choose collapse over drop.
+        explicit = venue_id in rules.recurring_venue_overrides
+        action = rules.recurring_venue_overrides.get(venue_id, rules.recurring_default_action)
+        if action == "keep" or len(members) < 2:
+            final.extend(members)
+            continue
 
+        dates = [_as_date(m.get("start")) for m in members]
+        is_series = (
+            len(members) >= rules.cadence_absolute_threshold
+            or has_regular_cadence(dates, rules.cadence_tolerance_days,
+                                   rules.cadence_min_occurrences,
+                                   rules.cadence_min_gap_days,
+                                   rules.cadence_max_gap_days)
+        )
+        if not is_series:
+            final.extend(members)
+            continue
+
+        # A series the rules say to keep once, rather than hide entirely.
+        collapse = action == "collapse" or (
+            not explicit and _should_collapse(members[0].get("title", ""))
+        )
+        if collapse:
+            ordered = sorted(
+                members,
+                key=lambda m: (_as_date(m.get("start")) or datetime.max.date()),
+            )
+            survivor = dict(ordered[0])
+            others = [_as_date(m.get("start")) for m in ordered[1:]]
+            more = [d.strftime("%b %-d") for d in others if d]
+            if more:
+                survivor["recurrence_note"] = "Also on " + ", ".join(more[:6])
+            survivor["recurrence_count"] = len(ordered)
+            final.append(survivor)
+            dropped.extend(ordered[1:])
+        else:
+            dropped.extend(members)
+
+    # Stable output: the caller sorts, but keep it deterministic regardless.
+    final.sort(key=lambda e: (str(e.get("start") or ""), e.get("title") or ""))
     return final, dropped

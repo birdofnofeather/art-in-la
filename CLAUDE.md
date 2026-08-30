@@ -106,6 +106,57 @@ via `.gitattributes -text`; committed by daily-scrape.yml).
 marks them `merge=ours` so pull/rebase auto-resolves them; line endings are LF.
 `venues.json` is the only hand-curated data file.
 
+## Curation rules live in ONE file (do not regress this)
+
+`scrapers/rules.yaml` is the single source of truth for every decision about
+*what counts as what*: the event-type list and their keywords, which recurring
+programmes are hidden, what makes something an exhibition, audience tags, and
+the text-quality rules. **No keywords in Python.** `utils/{event_type,recurring,
+audience,validate}.py` and `base.py` all read from it via `utils/rules.py`.
+
+Every rule carries `examples:` — `match:` titles it should catch, `reject:`
+titles it must not. `python -m scrapers.check_rules` runs them all and CI fails
+if any disagrees. The `reject:` half is what stops a deliberate exclusion
+(Getty's garden tour, LACMA's gallery tours) being weakened to make a venue's
+count look healthier. See `.github/RULES_ARE_OFF_LIMITS.md`.
+
+## Harvest and classification are separate (do not regress this)
+
+`public/data/raw_events.json` holds the untouched harvest — everything ever
+scraped, upcoming and past, pruned at 2 years. `scrapers/classify.py` turns it
+into `events.json` + `archive.json` by applying the rules.
+
+Consequence: **a rules change is retroactive.** Edit `rules.yaml`, run
+`python -m scrapers.reclassify` (or `--dry-run` first), and every event we have
+ever stored — including the archive — is re-labelled in seconds with no
+scraping. Before this split an event's type was frozen at scrape time and a
+taxonomy change could only affect future scrapes.
+
+A type the venue itself published (Getty's category field, LA Plaza's section,
+Academy Museum's Contentful type) is recorded as `_asserted_type` and beats
+text inference — but falls back to the text if that type is later retired from
+`rules.yaml`. `base.py` detects an asserted type by checking whether the
+scraper's type differs from what reading the text would give, so none of the
+46 scrapers needed editing.
+
+## Recurring detection is by RHYTHM, not by count
+
+`utils/recurring.py` catches a standing programme two ways: by name (the
+`drop_patterns` in rules.yaml) and by rhythm — the same title at regular
+intervals. The old count-based rule (5+ occurrences) missed Pieter's weekly
+dance classes, which appear exactly 4 times, plus 78 other records fleet-wide.
+Cadence requires gaps of **at least 3 days**, so a three-night theatre run
+(REDCAT) stays visible while weekly/monthly programmes are caught.
+A series can be `drop`ped or `collapse`d (keep the next date, note the rest).
+
+## Text is repaired before publication
+
+`utils/text.py:normalise` fixes UTF-8-read-as-Latin-1 corruption ("espaÃ±ol"
+→ "español"), normalises Unicode and collapses whitespace. Six Getty events
+were live with mangled Spanish; nothing checked. Quality rules in rules.yaml
+now have a `severity`: `drop` never publishes, `warn` publishes and records the
+problem on the record as `_quality_notes` for the status page.
+
 ## Bot-gated venues: headless-browser render path
 
 Two venues serve an event-less shell (or a hard 429) to plain HTTP clients but
@@ -165,6 +216,15 @@ npm run build
 pip install -r scrapers/requirements.txt
 python -m scrapers.run_all            # all venues, writes public/data/*.json
 python -m scrapers.run_all --only ica_la --dry-run   # one venue, no write
+python -m scrapers.run_all --skip-scrape             # re-classify, no network
+
+# Curation rules
+python -m scrapers.check_rules        # do the rules match their own examples?
+python -m scrapers.reclassify --dry-run   # what would a rules edit change?
+python -m scrapers.reclassify             # apply it to ALL data, incl. archive
+
+# Tests (no network, fast)
+pip install pytest && python -m pytest scrapers/tests -q
 
 # Bot-gated venues (Norton Simon, Huntington) — needs the headless browser:
 pip install -r scrapers/requirements-render.txt && python -m playwright install chromium

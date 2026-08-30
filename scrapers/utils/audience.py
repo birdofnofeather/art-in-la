@@ -1,30 +1,30 @@
-"""Audience tagging from free text.
+"""Audience tagging, driven by scrapers/rules.yaml.
 
 Marks events aimed at families/kids or teens/youth so the front-end can offer a
-"Family-friendly" filter — the single highest-propensity museum-going segment.
+"Family-friendly" filter. The patterns live in the rules file; to add a tag,
+add a block under `audience:` there — no code change needed.
 """
 from __future__ import annotations
 
 import re
 
-# Require a family/kids signal but avoid the incidental possessive
-# ("the artist's family", "his family") by disallowing a preceding possessive.
-_FAMILY = re.compile(
-    r"(?<!'s )(?<!s' )\b("
-    r"family|families|kids?|children|childrens|"
-    r"all[- ]ages|toddlers?|preschool|little\s+ones|story\s?time|story\s+hour|"
-    r"sensory[- ]friendly"
-    r")\b",
-    re.I,
-)
-_TEEN = re.compile(r"\b(teens?|teenagers?|youth|high[- ]school|young\s+adults?)\b", re.I)
+from .rules import load
+from .text import normalise
+
+# Guard against the incidental possessive ("the artist's family", "his family"),
+# which is a property of English rather than a curation decision, so it stays in
+# code rather than cluttering the rules file.
+_POSSESSIVE_BEFORE = re.compile(r"(?:'s|s')\s+$")
 
 
 def infer(title: str, description: str = "") -> list[str]:
-    text = f"{title or ''} \n {description or ''}"
+    rules = load()
+    text = normalise(f"{title or ''} \n {description or ''}")
     out = []
-    if _FAMILY.search(text):
-        out.append("family")
-    if _TEEN.search(text):
-        out.append("teen")
+    for tag, patterns in rules.audience.items():
+        for pattern in patterns:
+            m = pattern.search(text)
+            if m and not _POSSESSIVE_BEFORE.search(text[max(0, m.start() - 4):m.start()]):
+                out.append(tag)
+                break
     return out

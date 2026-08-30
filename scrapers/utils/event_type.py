@@ -1,41 +1,45 @@
-"""Heuristics for inferring an event_type from free text."""
+"""Event-type classification, driven entirely by scrapers/rules.yaml.
+
+There are deliberately no keywords in this file. Every decision about what
+counts as a tour, a workshop or an opening lives in the rules file so it can be
+changed without touching code — and so a change is checked against the examples
+recorded alongside it.
+"""
 from __future__ import annotations
 
-import re
+from .rules import load
+from .text import normalise
 
-ALLOWED = {
-    "opening", "closing", "exhibition", "workshop", "lecture",
-    "performance", "screening", "tour", "fair", "other",
-}
 
-KEYWORDS = [
-    # Opening/closing first: an "opening reception" is an opening, not a party.
-    ("opening",     r"\b(opening|preview|vernissage|reception)\b"),
-    ("closing",     r"\b(closing|finissage|last\s+day|final\s+day)\b"),
-    ("screening",   r"\b(screenings?|films?|movies?|cinema|documentary|shorts?\s+program)\b"),
-    ("performance", r"\b(performances?|concerts?|recitals?|dance|dj|live\s+music|music|theater|theatre|cabaret)\b"),
-    ("workshop",    r"\b(workshops?|classes?|class|hands[- ]on|drop[- ]in|art[- ]?making|makers?|camps?|craft|printmaking|studio\s+session)\b"),
-    ("lecture",     r"\b(lectures?|talks?|conversations?|in\s+conversation|panel|symposium|seminar|reading|poetry|book\s+(?:talk|launch|signing|club)|artist\s+talk|q\s?&\s?a)\b"),
-    ("tour",        r"\b(tours?|guided\s+walks?|walk[- ]?through|docent)\b"),
-    ("fair",        r"\b(fair|art\s?week|biennial|festival|celebration|block\s+party|family\s+day|open\s+house|open\s+studios?|gala|market|fest)\b"),
-    ("exhibition",  r"\b(exhibitions?|on\s+view|installations?)\b"),
-]
+def allowed() -> set[str]:
+    """Every event type id the rules currently define."""
+    return set(load().type_ids)
+
+
+def _text(title: str, description: str = "") -> str:
+    return normalise(f"{title or ''} \n {description or ''}")
 
 
 def infer(title: str, description: str = "", default: str = "other") -> str:
-    """Guess an event type from text. Returns one of ALLOWED."""
-    text = f"{title or ''} \n {description or ''}".lower()
-    for kind, pattern in KEYWORDS:
-        if re.search(pattern, text):
-            return kind
-    return default if default in ALLOWED else "other"
+    """The PRIMARY type: the first rule (in file order) whose pattern matches.
+
+    Falls back to `default` (a per-venue setting, e.g. Academy Museum defaults
+    to 'screening') and then to 'other'.
+    """
+    rules = load()
+    text = _text(title, description)
+    for rule in rules.event_types:
+        if rule.patterns and rule.matches(text):
+            return rule.id
+    return default if default in allowed() else "other"
 
 
 def infer_all(title: str, description: str = "") -> list[str]:
-    """Return every event type whose keywords appear in the text, in priority
-    order. An event that reads as both a performance and a screening comes back
-    as ["performance", "screening"] so it can be filtered under either.
-    """
-    text = f"{title or ''} \n {description or ''}".lower()
-    return [kind for kind, pattern in KEYWORDS if re.search(pattern, text)]
+    """Every type whose pattern matches, in rules-file order.
 
+    An event that reads as both a performance and a screening comes back as
+    both so it can be filtered under either.
+    """
+    rules = load()
+    text = _text(title, description)
+    return [r.id for r in rules.event_types if r.patterns and r.matches(text)]

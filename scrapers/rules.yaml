@@ -1,0 +1,395 @@
+# ══════════════════════════════════════════════════════════════════════════
+#  Art in LA — CURATION RULES
+# ══════════════════════════════════════════════════════════════════════════
+#
+#  This is the ONE file that decides *what counts as what*. If you want to
+#  change how events are labelled, which recurring programmes are hidden, or
+#  what makes something an exhibition — you change it here, and nowhere else.
+#
+#  You do NOT need to touch any Python code to change any of these decisions.
+#
+#  Three things to know:
+#
+#  1. Every rule carries EXAMPLES. `match:` lists titles the rule SHOULD catch;
+#     `reject:` lists titles it must NOT catch. Run `python -m scrapers.check_rules`
+#     (or the test suite) and it will tell you immediately if a change you made
+#     broke something. This is what protects deliberate decisions from being
+#     quietly undone.
+#
+#  2. After editing this file, run `python -m scrapers.reclassify` to re-apply
+#     the new rules to ALL existing events — including the archive. You do not
+#     need to re-scrape anything. It takes a couple of seconds.
+#
+#  3. The automated repair robot is FORBIDDEN from editing this file. It is
+#     yours. See .github/RULES_ARE_OFF_LIMITS.md.
+#
+#  The "patterns" are regular expressions — a way of describing text to match.
+#  You mostly won't need to write new ones: copying an existing line and
+#  changing the words inside works fine. `\b` means "word boundary", which stops
+#  "art" from matching inside "start". `?` after a letter means "optional".
+#
+# ══════════════════════════════════════════════════════════════════════════
+
+version: 1
+
+
+# ──────────────────────────────────────────────────────────────────────────
+#  1. EVENT TYPES
+# ──────────────────────────────────────────────────────────────────────────
+#  ORDER MATTERS. The first type whose pattern matches becomes the event's
+#  PRIMARY type (the one shown on the card). Every other type that also matches
+#  is added as a secondary tag, so an event can be filtered under several.
+#
+#  To add a new type: add a block here, and add its label to
+#  src/lib/constants.js so the front-end knows how to display it.
+#  To retire a type: delete the block and run reclassify.
+# ──────────────────────────────────────────────────────────────────────────
+
+event_types:
+
+  - id: opening
+    label: "Opening"
+    # Openings/closings come first: an "opening reception" is an opening,
+    # not a party, and the first match wins.
+    patterns:
+      - '\b(opening|vernissage)\b'
+      - '\b(opening|artist|members?)\s+reception\b'
+      - '\bpreview\s+(night|party|reception)\b'
+    examples:
+      match:
+        - "Opening Reception: Jane Doe, New Work"
+        - "Vernissage"
+        - "Members Preview Party"
+      reject:
+        - "Closing Night"
+        - "Preview the collection online"
+
+  - id: closing
+    label: "Closing"
+    patterns:
+      - '\b(closing|finissage)\b'
+      - '\b(last|final)\s+day\b'
+    examples:
+      match:
+        - "Closing Reception"
+        - "Last Day to See the Show"
+      reject:
+        - "Opening Reception"
+
+  - id: screening
+    label: "Screening"
+    patterns:
+      - '\b(screenings?|films?|movies?|cinema|documentary|shorts?\s+program)\b'
+      - '\b(matinee|double\s+feature)\b'
+    examples:
+      match:
+        - "Screening: Daughters of the Dust"
+        - "Documentary Night"
+      reject:
+        - "Filmmaking Workshop for Teens"   # a workshop, caught later
+
+  - id: workshop
+    label: "Workshop"
+    patterns:
+      # (?<!master ) keeps 'Master Class Concert Series' out of the workshops.
+      - '\b(workshops?|(?<!master )classes?|(?<!master )class|hands[- ]on|drop[- ]in|art[- ]?making|camps?|printmaking|studio\s+session)\b'
+      - '\b(make|making)\s+(your\s+own|a)\b'
+    examples:
+      match:
+        - "Printmaking Workshop: Sun Prints"
+        - "Drop-in Family Art Making"
+        - "Dance Class for Beginners"
+      reject:
+        - "Master Class Concert Series"     # deliberately: this is a concert
+
+  - id: performance
+    label: "Performance"
+    patterns:
+      - '\b(performances?|concerts?|recitals?|dj|live\s+music|theater|theatre|cabaret|opera)\b'
+      # A dance CLASS is instruction, not a performance — and tagging beginner
+      # salsa lessons as performances is exactly the kind of sloppy labelling
+      # the type filters are supposed to avoid.
+      - '\bdance\b(?!\s+(class|classes|lesson|lessons|workshop|practice|party))'
+    examples:
+      match:
+        - "An Evening of Dance"
+        - "Live Music in the Courtyard"
+      reject:
+        - "Dance Class for Beginners"       # a workshop, caught later
+
+  - id: lecture
+    label: "Talk"
+    patterns:
+      - '\b(lectures?|talks?|conversations?|in\s+conversation|panel|symposium|seminar|poetry|artist\s+talk)\b'
+      - '\breadings?\b(?!\s+room)'
+      - '\bbook\s+(talk|launch|signing|club)\b'
+      - '\bq\s?&\s?a\b'
+    examples:
+      match:
+        - "Artist Talk: Sadie Barnette"
+        - "In Conversation with the Curator"
+      reject:
+        - "Reading Room open daily"
+
+  - id: tour
+    label: "Tour"
+    patterns:
+      - '\b(tours?|guided\s+walks?|walk[- ]?through)\b'
+    examples:
+      match:
+        - "Curator's Tour: Instante/revelación"
+      reject:
+        - "Detour: New Work by ..."         # 'tour' inside another word
+
+  - id: fair
+    label: "Festival"
+    patterns:
+      - '\b(fair|art\s?week|biennial|festival|celebration|block\s+party|family\s+day|open\s+house|open\s+studios?|gala|market|fest)\b'
+    examples:
+      match:
+        - "Community Family Day"
+        - "Open Studios Weekend"
+      reject:
+        - "Fairfax Avenue history walk"     # 'fair' inside 'Fairfax'
+
+  - id: exhibition
+    label: "Exhibition"
+    patterns:
+      - '\b(exhibitions?|on\s+view)\b'
+      - '\binstallations?\b(?!\s+(crew|team|volunteer))'
+    examples:
+      match:
+        - "Exhibition: Sixty Years of Prints"
+      reject:
+        - "Installation Crew Volunteer Day"
+
+  - id: other
+    label: "Other"
+    patterns: []          # the fallback — matches nothing, used when nothing else does
+    examples:
+      match: []
+      reject: []
+
+
+# ──────────────────────────────────────────────────────────────────────────
+#  2. RECURRING PROGRAMMES
+# ──────────────────────────────────────────────────────────────────────────
+#  Standing programmes clutter a calendar. A weekly dance class or a daily
+#  docent tour is not something you plan a trip around.
+#
+#  Two ways a series gets caught:
+#
+#   (a) BY NAME — the title matches something in `drop_patterns` below.
+#       These are always dropped, however many times they appear.
+#
+#   (b) BY RHYTHM — the same title appears several times at regular intervals
+#       (e.g. every 7 days). This is far more reliable than counting, because
+#       a weekly class with only 3 dates left on the calendar is still a
+#       weekly class. This is what the old count-based rule missed.
+#
+#  What happens to a series caught by rhythm is set by `default_action`:
+#    drop     — remove every occurrence (default; use for standing programmes)
+#    collapse — keep only the NEXT occurrence, and note the other dates on it
+#               (use for things genuinely worth listing once, like a curator's
+#               tour tied to a specific exhibition)
+# ──────────────────────────────────────────────────────────────────────────
+
+recurring:
+
+  # ── (a) Always dropped, by name ─────────────────────────────────────────
+  # These are the deliberate exclusions. Getty's garden tour, LACMA's gallery
+  # tours, Huntington's standing programmes. DO NOT let these be weakened to
+  # make a venue's event count look healthier — that is exactly the mistake
+  # the examples below exist to catch.
+  drop_patterns:
+    # Frequency words in the title itself
+    - '\b(daily|weekly)\b'
+    - '\bevery\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday|week|day)\b'
+    - '\b(mondays|tuesdays|wednesdays|thursdays|fridays|saturdays|sundays)\b'
+
+    # Standing tour programmes (Getty, LACMA, Huntington, Norton Simon)
+    - '\bin\s+focus\s+tour\b'
+    - '\bgallery\s+tour\b'
+    - '\bexhibition\s+highlights?\s+tour\b'
+    - '\bguided\s+tour\b'
+    - '\bcollection\s+tour\b'
+    - '\barchitecture[,\s]+(?:and\s+|&\s*)?garden\s+tour\b'
+    - '\barchitecture\s+tour\b'
+    - '\bgarden\s+tour\b'
+    - "\\bcurator'?s\\s+gallery\\s+tour\\b"
+    - '\bdocent\b'
+    - '\bhighlights?\s+of\s+the\s+collection\b'
+
+    # Norton Simon standing programmes
+    - '\bintroductory\s+film\b'
+    - '\bafternoon\s+salon\b'
+
+    # Standing drop-in / practice programmes (Pieter, 18th Street, community spaces)
+    - '\bopen\s+studio\s*&?\s*(new\s+)?renter\s+orientation\b'
+    - '\bpractice\s+space\b'
+    - '\bmeditation\b'
+    - '\boffice\s+hours\b'
+    - '\bstudio\s+closed\b'
+
+  # Examples for the drop_patterns above. `match` must be hidden; `reject` must
+  # stay visible. These are what stop a deliberate exclusion being quietly
+  # weakened to make a venue's event count look healthier.
+  examples:
+    match:
+      - "Art, Architecture, and Garden Tour"          # Getty
+      - "Gallery Tour: Modern Art"                    # LACMA
+      - "Docent-Led Highlights Tour"
+      - "Introductory Film"                           # Norton Simon
+      - "Pieter Open Studio & New Renter Orientation" # Pieter
+      - "Dzogchen-LA meditation"                      # 18th Street
+      - "K-12 Educators Virtual Office Hours"         # Huntington
+      - "STUDIO CLOSED"
+    reject:
+      # These must SURVIVE — they are real, one-off, worth listing.
+      - "Curator's Tour: Instante/revelación"
+      - "Artist Talk: Sadie Barnette"
+      - "Opening Reception: New Work"
+      - "Mid-Autumn Moon Celebration"
+
+  # ── (b) Caught by rhythm ────────────────────────────────────────────────
+  cadence:
+    # How many occurrences of the same title before we consider it a series.
+    min_occurrences: 3
+    # Gaps between dates count as "regular" if they are all within this many
+    # days of each other. 2 tolerates a class that shifts by a day.
+    tolerance_days: 2
+    # The gap between occurrences must fall in this range to count as a
+    # standing programme. The lower bound matters: three performances on three
+    # consecutive nights is a THEATRE RUN, not a weekly programme, and must
+    # stay visible. Standing programmes repeat weekly, fortnightly or monthly.
+    min_gap_days: 3
+    max_gap_days: 45
+    # Regardless of rhythm, this many repeats of one title is a series.
+    absolute_threshold: 6
+
+  # What to do with a series caught by rhythm.
+  default_action: drop
+
+  # Titles matching these are COLLAPSED instead of dropped — we keep the next
+  # occurrence and note the rest. Use for series that are genuinely worth
+  # knowing about once.
+  collapse_patterns:
+    - "\\bcurator'?s\\s+tour\\b"
+    - '\bartist\s+talk\b'
+    - '\bexhibition\s+walkthrough\b'
+
+  # Per-venue overrides. Use `action: drop` for venues whose whole programme is
+  # standing classes, `action: keep` to switch rhythm-detection off entirely.
+  venue_overrides:
+    pieter:
+      action: drop
+      note: "A dance/performance practice space — its calendar is almost entirely weekly classes."
+
+
+# ──────────────────────────────────────────────────────────────────────────
+#  3. WHAT COUNTS AS AN EXHIBITION
+# ──────────────────────────────────────────────────────────────────────────
+exhibitions:
+  # Anything running longer than this is treated as an exhibition rather than
+  # a one-off event (in hours).
+  min_duration_hours: 36
+
+  # Anything running longer than this is a permanent/long-term installation,
+  # not a temporary show — dropped so the Exhibitions tab stays useful.
+  max_duration_days: 550
+
+  # An undated exhibition is kept this long after it was first seen, in case
+  # the dates show up later. After that it is dropped as stale.
+  undated_grace_days: 45
+
+  # Titles that are page furniture or standing displays — never a show.
+  never_patterns:
+    - '\b(permanent|semi[- ]permanent)\b'
+    - '\bon\s+view\s+indefinitely\b'
+    - '\b(admission|hours|visit|directions|membership)\b'
+
+  # Event types that must NEVER be promoted to "exhibition" just because they
+  # run over several days. A three-week run of workshops is a programme.
+  never_promote_types:
+    - tour
+    - workshop
+    - lecture
+    - performance
+    - screening
+    - opening
+    - closing
+    - fair
+
+  examples:
+    match:
+      - "Sixty Years of Prints"
+      - "Instante/revelación: Moments in Mexican Photography"
+    reject:
+      - "Permanent Collection Installation"
+      - "Museum Hours and Admission"
+
+
+# ──────────────────────────────────────────────────────────────────────────
+#  4. AUDIENCE TAGS
+# ──────────────────────────────────────────────────────────────────────────
+audience:
+  family:
+    patterns:
+      # (?!\s+of\s) keeps exhibition titles like 'The Family of Man' untagged.
+      - '\b(family(?!\s+of\s)|families|kids?|children|all\s+ages|toddlers?|storytime|story\s+time)\b'
+    examples:
+      match: ["Family Day at the Museum", "Storytime for Toddlers"]
+      reject: ["The Family of Man: Photographs"]     # an exhibition title
+  teen:
+    patterns:
+      - '\b(teens?|youth|high\s+school|young\s+adults?)\b'
+    examples:
+      match: ["Teen Studio Night"]
+      reject: ["Youthful Spirit: Paintings"]
+
+
+# ──────────────────────────────────────────────────────────────────────────
+#  5. QUALITY RULES — things that must always be true
+# ──────────────────────────────────────────────────────────────────────────
+#  These are checked on every run. A violation is reported, not silently
+#  ignored. This is what would have caught the mangled "espaÃ±ol" text.
+# ──────────────────────────────────────────────────────────────────────────
+
+quality:
+  # Text that must never reach the site.
+  #
+  #   severity: drop  — the event is not published (the text is unusable)
+  #   severity: warn  — the event IS published, but the problem is reported on
+  #                     the status page. Use this where the content is real and
+  #                     losing it would be worse than showing it imperfectly.
+  forbid_in_text:
+    - id: mojibake
+      pattern: '[\xc2-\xf4][\x80-\xbf]'
+      says: "Corrupted accented characters (text was decoded with the wrong alphabet)"
+      severity: drop        # this shape is automatically repairable, so if it
+                            # survives to here something is genuinely wrong
+    - id: mojibake_partial
+      pattern: '\bÃ[a-zA-Z]'
+      says: "A corrupted accent we cannot reconstruct (e.g. 'Ãdouard' for 'Édouard')"
+      severity: warn        # real event, one bad character — report, don't lose it
+    - id: raw_html
+      pattern: '<[a-zA-Z/][^>]*>|&[a-z]+;|&#\d+;'
+      says: "Leftover HTML tags or entities in the text"
+      severity: drop
+    - id: placeholder
+      pattern: '\b(lorem ipsum|untitled event|test event|TBD title)\b'
+      says: "Placeholder text that should never be published"
+      severity: drop
+
+  # Fields every published event must have.
+  required_fields: [id, venue_id, title, event_type]
+
+  # A published event must have a start date unless it is an exhibition.
+  require_start_unless_exhibition: true
+
+  # Sanity bounds on dates.
+  max_days_in_future: 550
+  max_days_in_past: 1
+
+  # Titles shorter than this are almost always fragments of navigation.
+  min_title_length: 3

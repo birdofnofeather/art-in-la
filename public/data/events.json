@@ -1,71 +1,5 @@
 [
   {
-    "id": "usc_fisher--charles-arnoldi-four-decadesexh-b9a8519ad9",
-    "venue_id": "usc_fisher",
-    "title": "Charles Arnoldi | Four Decades",
-    "description": "USC Fisher Museum of Art proudly presents Charles Arnoldi | Four Decades, a survey of the versatile and prolific Venice Beach artist, which traces the evolution of the artist’s expansive and materials-focused practice from the 1970s to the present.",
-    "event_type": "exhibition",
-    "start": "2020-01-21",
-    "end": "2020-04-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/charles-arnoldi-four-decades/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
-  },
-  {
-    "id": "usc_fisher--dan-mccleary-oaxaca-20-years-of-prints-f-d02c91f3a7",
-    "venue_id": "usc_fisher",
-    "title": "Dan McCleary OAXACA 20 years of prints from the Taller Sangfer",
-    "description": "Twenty-two years ago, Los Angeles artist Dan McCleary was introduced to Oaxaca by friends and fellow artists, James hd Brown and Alexandra Brown.",
-    "event_type": "exhibition",
-    "start": "2021-07-01",
-    "end": "2021-12-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/dan-mccleary-oaxaca-20-years-of-prints-from-the-taller-sangfer/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "usc_fisher--art-and-hope-at-the-end-of-the-tunnelexh-bc2d326cb9",
-    "venue_id": "usc_fisher",
-    "title": "Art and Hope at the End of the Tunnel",
-    "description": "USC Fisher Museum of Art is proud to announce the opening of our Fall 2021 exhibition, “Art and hope at the end of the Tunnel”, a group show curated by renowned art critic Edward Goldman and featuring dozens of artists who call the Los Angeles area home.",
-    "event_type": "exhibition",
-    "start": "2021-09-10",
-    "end": "2021-12-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/art-and-hope-at-the-end-of-the-tunnel/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
     "id": "la_plaza-2022-03-04-los-angeles-1853-by-mario-hernndez-2021-3afc8acd08",
     "venue_id": "la_plaza",
     "title": "Los Angeles 1853 by Mario Hernández, 2021",
@@ -85,7 +19,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "marciano-2024-02-08-transmissions-selections-from-the-marcia-12b5e4950f",
@@ -107,29 +43,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "usc_fisher--scifi-magick-queer-la-sexual-science-and-ccac0b9cbd",
-    "venue_id": "usc_fisher",
-    "title": "Sci-Fi, Magick, Queer L.A.: Sexual Science and the Imagi-Nation",
-    "description": "Sci-Fi, Magick, Queer L.A.: Sexual Science and the Imagi-Nation considers the importance of science fiction fandom and occult interests to U.S. LGBTQ history. Curated by ONE Archives at the USC Libraries and presented at the USC Fisher Museum of Art. In partnership with Getty PST.",
-    "event_type": "exhibition",
-    "start": "2024-08-22",
-    "end": "2025-03-15",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/sci-fi-magick-queer-l-a-sexual-science-and-the-imagi-nation/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "la_plaza-2024-10-10-la-salsera-5bfb1050b7",
@@ -151,7 +67,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "the_broad-2025-10-25-featured-installation-of-takashi-murakam-095dc42025",
@@ -173,7 +91,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2025-11-06-we-belong-here-c620e50f04",
@@ -195,7 +114,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "pacific_asia_museum-2026-02-14-mythical-creatures-the-stories-we-carry-44bdea82e5",
@@ -217,7 +138,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "benton-2026-02-20-splitsecond-misreads-robert-cumming-and-c19a877563",
@@ -239,7 +162,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "getty_villa-2026-03-04-the-egyptian-book-of-the-deadexh-7c794cd386",
@@ -261,7 +186,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "lbma-2026-03-20-why-paint-a-landscape-c2c65ce814",
@@ -283,7 +209,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "art_practice-2026-04-18-kinship-community-5cc946b779",
@@ -305,7 +233,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "art_practice-2026-04-18-rahim-fortune-9ecfe4256c",
@@ -327,7 +257,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "the_broad-2026-05-23-yoko-ono-music-of-the-mindexh-228f2d030d",
@@ -349,7 +281,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "the_broad-2026-05-23-yoko-ono-music-of-the-mindearly-accessex-ad5e9db104",
@@ -371,7 +305,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "academy_museum-2026-05-30-sips-on-the-terraceexh-08c0b0f4c0",
@@ -393,7 +329,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "craft_contemporary-2026-05-31-earthen-comforts-airing-earth-44a3209d04",
@@ -415,7 +353,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "lbma-2026-05-31-imagine-this-lbusd-elementary-exhibition-10594112f7",
@@ -437,7 +377,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "craft_contemporary-2026-05-31-makerinresidence-featuring-jackie-amzqui-e94b622fb3",
@@ -459,7 +400,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "craft_contemporary-2026-05-31-tierra-839abc8e8d",
@@ -481,29 +424,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "brand_library--brand-54-annual-national-juried-exhibiti-ea0687015d",
-    "venue_id": "brand_library",
-    "title": "Brand 54: Annual National Juried Exhibition of Works on Paper ​",
-    "description": "",
-    "event_type": "exhibition",
-    "start": "2026-06-06",
-    "end": "2026-08-27",
-    "all_day": true,
-    "url": "https://www.brandlibrary.org/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "brandlibrary.org+llm",
-    "scraped_at": "2026-08-29T13:02:54+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "la_plaza-2026-06-13-recollection-of-communities-a-youth-pers-4b286a2ba0",
@@ -527,7 +450,9 @@
     "price_text": null,
     "audience": [
       "teen"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "mak_center-2026-06-13-superflex-rainbows-sponges-flies-and-spo-c5d3de25d9",
@@ -549,29 +474,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter--sissies-something-perfect-between-oursel-4d3bc614de",
-    "venue_id": "pieter",
-    "title": "SISSIES: SOMETHING PERFECT BETWEEN OURSELVES",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-06-19T13:00:00-07:00",
-    "end": "2026-06-21T14:00:00-07:00",
-    "all_day": false,
-    "url": "https://pieterpasd.com/programs/sissies-something-perfect-between-ourselves",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com+llm",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-06-23-lost-found-returnedexh-5b46236180",
@@ -593,12 +497,13 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-06-23-stendahls-world-marketing-ancient-mexico-2a07dcc9b6",
     "venue_id": "getty_center",
-    "title": "Stendahlâs World: Marketing Ancient Mexico and Modern Art in Los Angeles",
+    "title": "Stendahl’s World: Marketing Ancient Mexico and Modern Art in Los Angeles",
     "description": "Exhibition",
     "event_type": "exhibition",
     "start": "2026-06-23",
@@ -615,7 +520,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "lbma-2026-06-26-positive-fragmentation-from-the-collecti-02caeb9381",
@@ -639,7 +545,9 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "getty_center-2026-07-14-odilon-redon-otherworldly-visionsexh-19b3688c38",
@@ -661,13 +569,14 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "beyond_baroque-2026-07-25-proxy-gallery-presents-f5788005f2",
     "venue_id": "beyond_baroque",
     "title": "Proxy Gallery Presents",
-    "description": null,
+    "description": "",
     "event_type": "exhibition",
     "start": "2026-07-25",
     "end": "2026-10-10",
@@ -683,7 +592,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "getty_center-2026-08-04-the-making-of-a-medieval-manuscriptexh-da336d96d4",
@@ -705,7 +616,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "the_broad-2026-08-17-fresh-collection-galleriesexh-c37ad373ae",
@@ -727,7 +639,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "usc_fisher-2026-08-18-paul-r-williams-an-architect-considerede-6152dbd4c0",
@@ -749,7 +663,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "benton-2026-08-22-davina-semo-tender-shield-a201a25d4c",
@@ -771,7 +686,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "benton-2026-08-22-mavis-pusey-restless-from-the-collection-1569a631f5",
@@ -793,7 +710,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "lbma-2026-08-22-shapes-places-and-faces-new-acquisitions-51f5c69610",
@@ -815,7 +734,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "benton-2026-08-22-give-them-a-riddle-gifts-from-the-saul-s-891a7cde9a",
@@ -837,234 +758,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "huntington-2026-08-29-educator-saturday-workshop-native-plants-40d478960a",
-    "venue_id": "huntington",
-    "title": "Educator Saturday Workshop: Native Plants",
-    "description": "",
-    "event_type": "workshop",
-    "start": "2026-08-29",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/educator-saturday-workshop-native-plants",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU12PUPQ.jpg%3Fitok%3DhG5mYfUP&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-08-29T13:02:49+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-08-29-misfits-in-touch-a-relational-practice-s-001677511c",
-    "venue_id": "pieter",
-    "title": "Misfits in Touch: A Relational Practice Space with Stella Stardust",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-08-29",
-    "end": "2026-08-29",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/misfitsintouch",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "academy_museum-2026-08-29-calm-morning-foley-art-57ab77d703",
-    "venue_id": "academy_museum",
-    "title": "Calm Morning: Foley Art",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-29T09:00:00-07:00",
-    "end": "2026-08-29T13:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/calm-morning-foley-art-019f6d31-ecd0-cb2d-76f9-ff0898bbe584",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/45m90joUlXSmQwjYbAJWzw/7cfeab0451eb809ca8b5a6642df72eb4/1_Aug29_ZOOTOPIA_Matinees1MHL.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "sparc-2026-08-29-runwalk-team-sparc-la-marathon-5k-traini-67d94ff5e8",
-    "venue_id": "sparc",
-    "title": "[Run/Walk] TEAM SPARC LA Marathon 5K Training Session",
-    "description": "Lace Up for Our LA Marathon 5K Charity Partner Kick-Off! We’re celebrating our 50th birthday by getting fit! Join us as we officially launch SPARC’S LA Marathon 5K Charity Partner program. Whether you are a seasoned runner, a casual jogger, or a leisurely walker, this kickoff event is all about coming together, getting moving, and making a difference. We’ll be hitting the pavement for a casual 5K (3.1 miles) route starting right from SPARC headquarters. It’s the perfect opportunity to meet fellow supporters, get some fresh air, and learn how you can join Team SPARC for the official LA Marathon 5K on March 6, 2027. Kick-Off Event Details When: Saturday, August 29th, 2026 9:45 am: meet up/mingle 10am: Hit the road for a beautiful 5K route through the neighborhood Where: SPARC Headquarters (6",
-    "event_type": "other",
-    "start": "2026-08-29T09:45:00-07:00",
-    "end": "2026-08-29T12:00:00-07:00",
-    "all_day": false,
-    "url": "https://sparcinla.org/event/run-walk-team-sparc-la-marathon-5k-training-session/",
-    "image": "https://sparcinla.org/wp-content/uploads/2026/08/Aug-5K-Training-Session.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "sparcinla.org",
-    "scraped_at": "2026-08-29T13:02:57+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
-  },
-  {
-    "id": "wende-2026-08-29-tales-in-two-tongues-bilingual-russianen-758a0d1fd1",
-    "venue_id": "wende",
-    "title": "Tales in Two Tongues: Bilingual Russian-English Storytime",
-    "description": "Join us at the Wende Museum for a special bilingual children’s storytime, featuring captivating Russian tales from the Wende’s collection of Soviet Books. Hosted by Archives Assistant Anya Ponomareva, stories will be presented in both English and Russian, offering a fun and engaging experience for young listeners of all backgrounds. Perfect for children aged 4-8 and their families, this event celebrates culture and language through the joy of storytelling!",
-    "event_type": "other",
-    "start": "2026-08-29T10:30:00-07:00",
-    "end": "2026-08-29T11:00:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/storytime/2026-08-29/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2025/12/russian-fairytales-16x9-1.png",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "academy_museum-2026-08-29-zootopia-357fbfff45",
-    "venue_id": "academy_museum",
-    "title": "Zootopia",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-29T11:00:00-07:00",
-    "end": "2026-08-29T12:15:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/zootopia-019dda3b-5b6c-ff0e-36d9-e452ba39a26f",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/45m90joUlXSmQwjYbAJWzw/7cfeab0451eb809ca8b5a6642df72eb4/1_Aug29_ZOOTOPIA_Matinees1MHL.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "moah-2026-08-29-book-signing-with-eugene-rodriguez-conve-5f1facb3f1",
-    "venue_id": "moah",
-    "title": "Book Signing with Eugene Rodriguez - Conversando con Pedro Guzman",
-    "description": "Experience Eugene Rodriguez's exhibition, \"Conversando con Pedro Guzman,\" and meet the artist for a signing of his new art book!",
-    "event_type": "lecture",
-    "start": "2026-08-29T13:00:00-07:00",
-    "end": "2026-08-29T14:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.eventbrite.com/e/book-signing-with-eugene-rodriguez-conversando-con-pedro-guzman-tickets-1997087434276",
-    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1190502051%2F197724490280%2F1%2Foriginal.20260806-220139?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.524&fp-y=0.456&s=9582cbde1ee11a915fb46794d2a9830a",
-    "artists": [],
-    "location_override": "Lancaster Museum of Art and History",
-    "source": "eventbrite.com/cc/moah",
-    "scraped_at": "2026-08-29T13:03:01+00:00",
-    "event_types": [
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "hammer-2026-08-29-art-lab-3c29ac43e5",
-    "venue_id": "hammer",
-    "title": "Art Lab",
-    "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
-    "event_type": "workshop",
-    "start": "2026-08-29T13:00:42-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-08/art-lab_4.jpg?h=89c44b6b&itok=63PTQq5F",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "hammer-2026-08-29-offsite-program-edgar-arceneaux-frank-la-c45ce9937d",
-    "venue_id": "hammer",
-    "title": "Off-site program: Edgar Arceneaux & Frank Lawson: Place Is the Space",
-    "description": "Presented at the UCLA Nimoy Theater, this four-hour immersive performance experience combines live jazz improvisation, theatrical storytelling and multimedia design inspired by Sun Ra’s philosophy and his film Space Is the Place.",
-    "event_type": "screening",
-    "start": "2026-08-29T13:00:42-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/site-program-edgar-arceneaux-frank-lawson-place-space",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-07/Edgar-Arceneaux-2_Space-Is-the-Place_Photo-Credit_Dee-Kerrison.jpg?h=4ff866d9&itok=2A2qFcC3",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "screening",
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "autry-2026-08-29-documentary-screeningthe-roping-fools202-9ca6439fae",
-    "venue_id": "autry",
-    "title": "Documentary Screening:The Roping Fools(2025)",
-    "description": "Film, Member Events",
-    "event_type": "screening",
-    "start": "2026-08-29T13:30:00-07:00",
-    "end": "2026-08-29T15:30:00-07:00",
-    "all_day": false,
-    "url": "https://theautry.org/events/film/documentary-screening-roping-fools-2025",
-    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-05/ev_roping.jpeg?h=e5582a59&itok=Hgca39ZH",
-    "artists": [],
-    "location_override": null,
-    "source": "theautry.org",
-    "scraped_at": "2026-08-29T13:02:47+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "academy_museum-2026-08-29-the-court-jester-in-4k-2ac5f2abd9",
@@ -1086,119 +782,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "getty_center-2026-08-29-screening-museo-with-director-alonso-rui-6812f8b9b6",
-    "venue_id": "getty_center",
-    "title": "Screening: *Museo* with director Alonso Ruizpalacios",
-    "description": "Film",
-    "event_type": "screening",
-    "start": "2026-08-29T16:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/screening-museo",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "lacma-2026-08-29-latin-sounds-freddie-ravel-04130cb73f",
-    "venue_id": "lacma",
-    "title": "Latin Sounds: Freddie Ravel",
-    "description": "Spend your Saturday evenings with world-renowned artists performing everything from Indigenous music to the latest sounds from Argentina, Brazil, Cuba, Mexico, Peru, and Los Angeles!...",
-    "event_type": "performance",
-    "start": "2026-08-29T17:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.lacma.org/event/freddie-ravel-08-29",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-06/2026-08-29_Freddie%20Ravel.jpg?itok=Sxd5DaiE",
-    "artists": [],
-    "location_override": "Hancock Park",
-    "source": "lacma.org",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "norton_simon-2026-08-29-the-artist-at-play-degas-and-monotype-91454806e5",
-    "venue_id": "norton_simon",
-    "title": "The Artist at Play: Degas and Monotype",
-    "description": "",
-    "event_type": "lecture",
-    "start": "2026-08-29T17:00:00-07:00",
-    "end": "2026-08-29T18:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.nortonsimon.org/calendar/2026/summer-2026/The-Artist-at-Play-Degas-and-Monotype-8-29-2026-500PM#2026-08-29",
-    "image": "https://www.nortonsimon.org/assets/events-images/lec_dcanter_600x600__ScaleWidthWzMwMF0.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "nortonsimon.org",
-    "scraped_at": "2026-08-29T13:05:18+00:00",
-    "event_types": [
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "autry-2026-08-29-street-food-cinema-michael2026-b008a2b71e",
-    "venue_id": "autry",
-    "title": "Street Food Cinema |Michael(2026)",
-    "description": "Community Partner Events, Film, Family Activities, Autry Outdoors",
-    "event_type": "screening",
-    "start": "2026-08-29T18:00:00-07:00",
-    "end": "2026-08-29T23:00:00-07:00",
-    "all_day": false,
-    "url": "https://theautry.org/events/community-partner-events/street-food-cinema-michael-2026",
-    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_michael.png?h=afebe79b&itok=axDLcQAI",
-    "artists": [],
-    "location_override": null,
-    "source": "theautry.org",
-    "scraped_at": "2026-08-29T13:02:47+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "la_plaza-2026-08-29-inolvidable-celebrating-the-legacy-of-ju-51efa3c7f6",
-    "venue_id": "la_plaza",
-    "title": "Inolvidable: Celebrating the Legacy of Juan Gabriel | Free with RSVP | SOLD OUT",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-08-29T18:30:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://lapca.org/event/inolvidable-celebrating-the-legacy-of-juan-gabriel/?event_date=2026-08-29",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "https://lapca.org/upcoming-programs/",
-    "scraped_at": "2026-08-29T13:02:59+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "calarts-2026-08-29-shaping-inheritanceexh-76c4a5b26b",
@@ -1220,53 +805,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "academy_museum-2026-08-30-the-joker-is-wild-in-4k-0b7d424017",
-    "venue_id": "academy_museum",
-    "title": "The Joker is Wild in 4K",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-29T19:30:00-07:00",
-    "end": "2026-08-29T22:30:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/the-joker-is-wild-019de521-a3d9-0807-ac46-6ad21e437134",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/2SeUgwzUKpT6TtnX9fl1gx/2e998d97a8cde88b5a3e6bcb7b0dc2fc/Aug29_JOKER_IS_WILD_Vista2.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "human_resources-2026-08-29-dance-to-disappear-janet-jackson-live-065ac7da03",
-    "venue_id": "human_resources",
-    "title": "Dance to Disappear: Janet Jackson Live",
-    "description": "Amid a summer hallmarked by Michael Jackson’s biopic and Madonna’s triumphant return, a looming thought emerges: Where is Janet Jackson? Janet’s absence from the music industry is palpable, even as her profound influence remains omnipresent. Her precise performance style, distinctive visual language, and sonic innovation continues to reverberate across several generations of pop stars, from Britney Spears and Tinashe to K-pop groups and beyond. Dance to Disappear: Janet Jackson Live will feature a screening of selected Janet Jackson performances, including Janet Jackson Live in Hawaii , followed by a conversation with curator Hugo Cervantes and writer and poet Harmony Holiday . Together, they will consider Jackson’s enduring influence and ask what her work makes visible about performance,",
-    "event_type": "screening",
-    "start": "2026-08-29T21:00:00-07:00",
-    "end": "2026-08-29T23:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.h-r.la/event/dance-to-disappear-janet-jackson-live/",
-    "image": "https://www.h-r.la/wp-content/uploads/2026/08/Screenshot-2026-08-22-at-6.25.41-PM-scaled.png",
-    "artists": [],
-    "location_override": null,
-    "source": "humanresourcesla.com",
-    "scraped_at": "2026-08-29T13:02:45+00:00",
-    "event_types": [
-      "screening",
-      "performance",
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "museum_of_tolerance-2026-08-30-aviyah-farkas-dfe29cd40a",
@@ -1288,7 +829,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-08-30-mandarin-tour-this-land-is-241cb5d029",
@@ -1310,7 +852,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-08-30-sunday-supper-with-zcalo-public-square-a50263b677",
@@ -1332,7 +875,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-08-30-artists-and-models-in-4k-90ae0115a8",
@@ -1354,7 +898,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-08-30-rainer-werner-fassbinder8217s-eight-hour-d161f029ec",
@@ -1379,14 +924,15 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "lacma-2026-08-30-fiber-makers-circle-425faaf173",
     "venue_id": "lacma",
     "title": "Fiber Maker's Circle",
     "description": "Calling all fiber aficionados! Bring your current project or grab supplies from our stash. Led by Connie Rohman, you'll learn a new skill or help others in the circle. ...",
-    "event_type": "workshop",
+    "event_type": "other",
     "start": "2026-08-30T12:30:00-07:00",
     "end": null,
     "all_day": false,
@@ -1397,11 +943,12 @@
     "source": "lacma.org",
     "scraped_at": "2026-08-29T13:02:42+00:00",
     "event_types": [
-      "workshop"
+      "other"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-08-30-silent-book-club-los-angeles-ba3e47f77b",
@@ -1423,7 +970,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-08-30-da-5-bloods-daac546582",
@@ -1445,7 +993,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-08-30-the-girl-rush-in-4k-9f68a3062b",
@@ -1467,7 +1016,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-08-31-one-battle-after-another-in-vistavision-c9718a6156",
@@ -1489,7 +1039,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "wende-2026-08-31-the-life-and-death-of-colonel-blimp-cine-5b65df9c24",
@@ -1511,7 +1062,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-01-oneeyed-jacks-in-4k-c7b7d6b077",
@@ -1533,7 +1085,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-08-31-cecilia-vicuas-what-is-poetry-to-you-580ab9413c",
@@ -1558,7 +1111,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-01-every-minute-is-history-five-views-of-lo-6c152c8972",
@@ -1580,12 +1134,13 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-01-instanterevelacin-moments-in-mexican-pho-4806f55183",
     "venue_id": "getty_center",
-    "title": "Instante/revelaciÃ³n: Moments in Mexican Photography",
+    "title": "Instante/revelación: Moments in Mexican Photography",
     "description": "Exhibition",
     "event_type": "exhibition",
     "start": "2026-09-01",
@@ -1602,51 +1157,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "huntington-2026-09-01-k12-educators-virtual-office-hours-8521f01c94",
-    "venue_id": "huntington",
-    "title": "K-12 Educators Virtual Office Hours",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-01",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/k-12-educators-virtual-office-hours",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13XI0H.jpg%3Fitok%3DvK0_CL8L&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-08-29T13:02:49+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "getty_center-2026-09-01-curators-tour-odilon-redon-otherworldly-5b7f84d3ce",
-    "venue_id": "getty_center",
-    "title": "Curator's Tour: *Odilon Redon: Otherworldly Visions*",
-    "description": "Join curator Danielle Canter for a closer look at Odilon Redonâs distinctive and dreamlike vision",
-    "event_type": "tour",
-    "start": "2026-09-01T15:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/curators-tour-redon",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "18th_street-2026-09-01-the-intersection-with-crazy-space-return-fec4162adf",
@@ -1669,7 +1181,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-01-picturing-los-angeles-and-mexico-city-09706f2ab5",
@@ -1691,7 +1204,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-01-elana-mann-susan-mogul-are-you-a-mann-or-74193c8771",
@@ -1714,7 +1228,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "pieter-2026-09-02-misfits-in-touch-practice-with-stella-st-1947cdc7c4",
@@ -1736,7 +1251,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-02-reading-octavia-e-butlers-lost-novel-3327d293b6",
@@ -1758,7 +1274,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-02-digitization-day-free-archival-digitizat-afffcb048c",
@@ -1782,7 +1299,9 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "hammer-2026-09-02-lunchtime-art-talk-on-mike-cloud-9d80fa21eb",
@@ -1804,7 +1323,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "lacma-2026-09-02-communities-create-la-my-sign-my-life-5cddd4e54a",
@@ -1826,7 +1346,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "molaa-2026-09-02-molaa-food-pantry-35ee5fdb63",
@@ -1850,7 +1372,9 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "calarts-2026-09-02-school-of-music-welcome-concert-5eca006768",
@@ -1872,7 +1396,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-03-the-women-7cd8e2fe04",
@@ -1894,7 +1419,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-09-02-green-card-by-bruce-yonemoto-635274126f",
@@ -1912,11 +1438,13 @@
     "source": "humanresourcesla.com",
     "scraped_at": "2026-08-29T13:02:45+00:00",
     "event_types": [
-      "screening"
+      "screening",
+      "performance"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-02-songs-to-quell-the-monster-verse-three-t-7c8a0facd6",
@@ -1939,7 +1467,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "pieter-2026-09-03-ballet4lyfe-with-adie-san-diego-edd759a202",
@@ -1961,7 +1490,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-03-skate-hunnies-party-on-wheels-at-the-aca-7fc134a8f1",
@@ -1983,7 +1513,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "autry-2026-09-03-sizzling-summer-nights-rush-hour-orquest-23e0424a2e",
@@ -2007,7 +1539,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-04-barry-lyndon-in-35mm-95e2e9e282",
@@ -2029,14 +1562,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "jaccc-2026-09-04-fantasma-shibuyakei-and-japanese-indie-r-c36555b4ed",
     "venue_id": "jaccc",
     "title": "Fantasma: Shibuya-kei and Japanese Indie Rock A Listening Party",
     "description": "• 7:00 pm - 10:00 pm Where TWCCC & James Irvine Japanese Garden 244 S. San Pedro Street, Los Angeles, CA 90012 Price $15.00 (+$1.50 fee) This event is 21+. Buy Tickets Share About Listen to Japanese Shibuya-kei and indie rock music from the '90s and '00s. Drink Japanese whiskey in a private Japanese garden. Explore a world of Shibuya-kei, or “Shib",
-    "event_type": "performance",
+    "event_type": "other",
     "start": "2026-09-04",
     "end": null,
     "all_day": true,
@@ -2047,11 +1581,12 @@
     "source": "jaccc.org",
     "scraped_at": "2026-08-29T13:03:00+00:00",
     "event_types": [
-      "performance"
+      "other"
     ],
     "is_free": null,
     "price_text": "$1.50–$15",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "calarts-2026-09-04-calarts-at-the-skirball-b8cdfffbab",
@@ -2073,7 +1608,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-04-monkey-business-in-4k-90e94254dd",
@@ -2095,7 +1631,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "lacma-2026-09-04-jazz-at-lacma-clayton-cameron-collective-cb84868ee2",
@@ -2117,7 +1654,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "autry-2026-09-04-kcrw-summer-nights-with-the-autry-museum-d78213a424",
@@ -2139,7 +1677,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-04-barbara-hammer-twonight-survey19742011-f4f23ea7f3",
@@ -2161,7 +1700,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-04-mingkwai-the-chinese-typewriter-that-glo-b8cd044c6c",
@@ -2183,7 +1723,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "opening"
   },
   {
     "id": "academy_museum-2026-09-05-romeo-juliet-in-35mm-0315042281",
@@ -2205,7 +1747,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-09-04-kamikaze-hearts-96f558d2a7",
@@ -2227,7 +1770,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "autry-2026-09-05-family-fun-day-movie-matineewho-framed-r-091eb09ce5",
@@ -2251,7 +1795,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "pvac-2026-09-05-artist-demo-robin-jack-sarner-a287ee79e3",
@@ -2273,7 +1818,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-05-snow-white-and-the-seven-dwarfs-1ac4ffba50",
@@ -2295,33 +1841,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "academy_museum-2026-09-05-dropin-workshop-for-families-production-0a5dfc1a21",
-    "venue_id": "academy_museum",
-    "title": "Drop-in Workshop for Families: Production Design Miniature Sets",
-    "description": "",
-    "event_type": "workshop",
-    "start": "2026-09-05T12:30:00-07:00",
-    "end": "2026-09-05T14:30:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-production-design-miniature-sets-01a01680-5d83-6507-57ae-014564901520",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/2ZrGH3NkV03Kxk0GkiqpRq/38980dc3eb9a292aed54618bb0fa3305/250607MB_263_Mike_Baker.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-05-fanny-alexander-in-35mm-1b879ce3d3",
@@ -2343,7 +1864,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-09-05-tim-feeney8217s-dowsing-b07cc41b6f",
@@ -2365,7 +1887,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   },
   {
     "id": "autry-2026-09-05-street-food-cinema-practical-magic1998-f140f5c497",
@@ -2390,7 +1914,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-05-guadalupe-arellanes-dream-series-87bf893a7b",
@@ -2414,7 +1939,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-06-hummingbirds-at-the-huntington-2fa66f1644",
@@ -2436,7 +1962,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2026-09-06-outsiders-outcasts-rebels-weirdos-punk-c-1c3e4a8ba7",
@@ -2458,7 +1985,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2026-09-06-robert-russell-and-lisa-edelstein-a-pala-0b5a031f45",
@@ -2480,14 +2008,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-06-catalog-launch-enrique-martnez-celaya-cu-f885d26b8e",
     "venue_id": "wende",
     "title": "Catalog Launch | Enrique Martínez Celaya: Cuba",
     "description": "Join us at the Wende Museum for the presentation of the richly illustrated catalog Cuba , covering the three latest exhibitions of Enrique Martínez Celaya, including our current show Enrique Martínez Celaya: The Sextant . All three exhibitions reflect on the complex interplay of history and memory, and of displacement and belonging. The presentation will be followed by a reception in the garden.",
-    "event_type": "opening",
+    "event_type": "exhibition",
     "start": "2026-09-06T14:00:00-07:00",
     "end": "2026-09-06T16:00:00-07:00",
     "all_day": false,
@@ -2498,11 +2027,12 @@
     "source": "wendemuseum.org",
     "scraped_at": "2026-08-29T13:02:46+00:00",
     "event_types": [
-      "opening"
+      "exhibition"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-06-illustrating-picture-books-with-stephani-170f095f37",
@@ -2526,7 +2056,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-06-top-hat-in-35mm-8adfbd13d4",
@@ -2548,29 +2079,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "wende-2026-09-06-sleep-ensemble-presents-afternoon-nap-b918d8cedb",
-    "venue_id": "wende",
-    "title": "Sleep Ensemble Presents: Afternoon Nap",
-    "description": "Join the Sleep Ensemble for refreshing afternoon snooze at the Wende Community Center A-Frame Theater! Led by performer and composer Justin Scheid (Cantilever Collective), Sleep Ensemble takes audiences on a sonic journey designed around the stages of a sleep cycle: falling asleep, light sleep, deep sleep, and R.E.M dreaming. Audience members are encouraged to snore loud and proud as the ensemble accompanies a well-deserved rest with singing bowls, vocal lullabies, acoustic strumming, synthesized clouds, and natural landscapes. Sleepy performances by improv duo Other People, Davy Sumner’s Winos, and Violet Hannesena. Riser and floor seating available. Meditation pillows will be available, but participants are encouraged to bring their own pillows or floor mats.",
-    "event_type": "performance",
-    "start": "2026-09-06T15:00:00-07:00",
-    "end": "2026-09-06T16:30:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/sleep-ensemble-presents-afternoon-nap/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2026/08/Sleep-Wende-poster.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-07-member-appreciation-day-13f3002821",
@@ -2592,7 +2102,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-07-amadeus-in-4k-fa936b3093",
@@ -2614,139 +2125,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-07-queerchata-beginner-plus-bachata-4163ab8744",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-07",
-    "end": "2026-09-07",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-tnxjm",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-07-queerchata-intro-to-bachata-d74bc69bec",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-07",
-    "end": "2026-09-07",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-07-studio-closed-e8a0c46aeb",
-    "venue_id": "pieter",
-    "title": "STUDIO CLOSED",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-07",
-    "end": "2026-09-07",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/uxopes9jv6qzjh7l23zni7n0cqqbcp-7g8ys",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-08-queerchata-beginner-plus-salsa-596609fcac",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-08",
-    "end": "2026-09-08",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-hfkrh-lnshn",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-08-queerchata-intro-to-salsa-6501af2717",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-08",
-    "end": "2026-09-08",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "18th_street-2026-09-08-dzogchenla-meditation-a993569345",
-    "venue_id": "18th_street",
-    "title": "Dzogchen-LA meditation",
-    "description": "Dzogchen-LA meditation Tuesday, September 8th | 7 PM -8:30 PM 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public Join us for a healing series of every-other Tuesday evening guided meditations, where we will learn to open and become Aware of our own innermost Heart-Essence Awareness. Emerging from the Dzogchen lineage of Tibetan Buddhism. This is not just a Tuesday evening “mind practice,” but a doorway into living from and within freedom —freedom not only from our own psychology and historic self-narrative, but also from the habitual creative loops that keep us recycling the same expressions. Over time, we learn to flow through life with the lived experience of non-duality within duality—and duality within non-duality. From an ever-deepening familiarity with our own True Na",
-    "event_type": "other",
-    "start": "2026-09-08T19:00:00-07:00",
-    "end": "2026-09-08T20:30:00-07:00",
-    "all_day": false,
-    "url": "https://18thstreet.org/event/dzogchen-la-meditation-sept8/",
-    "image": "https://18thstreet.org/wp-content/uploads/2025/06/Meditation@18thStr.-Horizontal.png",
-    "artists": [],
-    "location_override": null,
-    "source": "18thstreet.org",
-    "scraped_at": "2026-08-29T13:02:44+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "huntington-2026-09-09-chinese-medicinal-garden-open-house-d2902f731c",
@@ -2768,7 +2148,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-09-drawing-from-the-gallery-0d702e4fe7",
@@ -2790,7 +2171,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-09-experience-the-art-of-q-gng-with-kathy-y-71d6e83a9f",
@@ -2812,7 +2194,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-09-curators-view-glow-a-cinematic-moodscape-c41122b481",
@@ -2834,7 +2217,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "hammer-2026-09-09-lunchtime-art-talk-on-henri-michaux-450f67544d",
@@ -2856,31 +2240,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "wende-2026-09-09-saved-by-a-storyintergenerational-writin-251f2b82a0",
-    "venue_id": "wende",
-    "title": "Saved by a Story–Intergenerational Writing Group",
-    "description": "Participants ages 14 and up welcomed. Please arrive 5 or 10 minutes early to get settled, as we start the group promptly at 4pm. We are excited to come together in community, to dive into our creativity and share our stories. What is Saved by a Story-Intergenerational Writing Workshop at the Wende Museum? Participants of all ages write to prompts to spark creativity, share stories and build community. We write to surprise ourselves and discover the bounty of stories that lie within. We come together and write, choose to share (or not, you decide), listen and write some more.We do this in the beautiful environs of the Wende Museum and its provocative and compelling collection. Some of our prompts will help us engage with the current exhibitions as well as engage with each other. In later gr",
-    "event_type": "workshop",
-    "start": "2026-09-09T16:00:00-07:00",
-    "end": "2026-09-09T18:00:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/saved-by-a-story-intergenerational-writing-group-4/2026-09-09/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/intergenerational-writing-group-cover-photo.png",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-10-the-adventures-of-priscilla-queen-of-the-84bad61fa5",
@@ -2902,7 +2263,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "huntington-2026-09-10-chinese-medicinal-garden-talk-and-walk-0442f1b090",
@@ -2924,7 +2286,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "mak_center-2026-09-10-final-projects-group-lix-spindrift-lix-f871d0998f",
@@ -2946,7 +2309,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "getty_villa-2026-09-10-curators-tour-the-egyptian-book-of-the-d-fef2220e0a",
@@ -2968,7 +2333,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "mak_center-2026-09-11-final-projects-group-lix-spindrift-lix-e605510d91",
@@ -2990,7 +2356,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-09-10-docs-la-plaza-not-our-corona-short-docum-66345ff6c4",
@@ -3013,7 +2380,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "la_plaza-2026-09-10-sabor-a-michoacn-uchepos-sweet-corn-tama-e871d3e473",
@@ -3035,14 +2404,16 @@
     ],
     "is_free": null,
     "price_text": "$65",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "huntington-2026-09-11-members-exhibition-preview-doyle-lane-ma-b1549fed3b",
     "venue_id": "huntington",
     "title": "Members Exhibition Preview — \"Doyle Lane: Master of Clay\"",
     "description": "",
-    "event_type": "opening",
+    "event_type": "exhibition",
     "start": "2026-09-11",
     "end": null,
     "all_day": true,
@@ -3053,33 +2424,12 @@
     "source": "huntington.org",
     "scraped_at": "2026-08-29T13:02:49+00:00",
     "event_types": [
-      "opening"
+      "exhibition"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-11-misfits-in-touch-a-relational-practice-s-36f441cc06",
-    "venue_id": "pieter",
-    "title": "Misfits in Touch: A Relational Practice Space with Stella Stardust",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-11",
-    "end": "2026-09-11",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/misfitsintouch-ptpp9",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-11-niagara-39c1f544b9",
@@ -3101,7 +2451,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-09-11-summer-of-salsa-conjunto-oye-ft-dj-robby-f544ddc71f",
@@ -3123,7 +2474,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-12-the-beguiled-f99391b683",
@@ -3145,7 +2497,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "redcat-2026-09-12-art-bernice-akamine-lani-asuncin-flesh-w-6db3cfebfa",
@@ -3167,14 +2520,16 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "huntington-2026-09-12-members-exhibition-preview-doyle-lane-ma-4b616d0a88",
     "venue_id": "huntington",
     "title": "Members Exhibition Preview — \"Doyle Lane: Master of Clay\"",
     "description": "",
-    "event_type": "opening",
+    "event_type": "exhibition",
     "start": "2026-09-12",
     "end": null,
     "all_day": true,
@@ -3185,11 +2540,12 @@
     "source": "huntington.org",
     "scraped_at": "2026-08-29T13:02:49+00:00",
     "event_types": [
-      "opening"
+      "exhibition"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2026-09-12-nurtured-flames-curatorial-walkthrough-w-77c49e2635",
@@ -3211,7 +2567,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-12-printmaking-workshop-sun-prints-and-cyan-315d2e0a37",
@@ -3233,7 +2590,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-12-restore-explore-forest-bathing-8e03836f22",
@@ -3255,7 +2613,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "pvac-2026-09-12-malaga-cove-art-on-the-lawn-show-debe289d7b",
@@ -3277,7 +2636,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-12-the-monster-squad-in-35mm-eb4bb8f88a",
@@ -3299,33 +2659,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
-  },
-  {
-    "id": "academy_museum-2026-09-12-dropin-workshop-for-families-production-2567a24ca8",
-    "venue_id": "academy_museum",
-    "title": "Drop-in Workshop for Families: Production Design Miniature Sets",
-    "description": "",
-    "event_type": "workshop",
-    "start": "2026-09-12T12:30:00-07:00",
-    "end": "2026-09-12T14:30:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-production-design-miniature-sets-01a01680-5d83-6507-57ae-014564901520",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/2ZrGH3NkV03Kxk0GkiqpRq/38980dc3eb9a292aed54618bb0fa3305/250607MB_263_Mike_Baker.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "sparc-2026-09-12-open-house-the-1980s-the-taste-of-bitter-9344f8b83b",
@@ -3348,7 +2683,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-09-12-filmmaking-workshop-with-elpidia-carrill-4b287dc125",
@@ -3371,7 +2707,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "la_plaza-2026-09-12-east-la-film-festival-cine-sin-cines-56674ec68d",
@@ -3395,7 +2733,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "human_resources-2026-09-12-homotopia-amp-criminal-queers-6df2a2d2e6",
@@ -3417,7 +2757,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-13-portrait-of-a-lady-on-fire-adcfbc9184",
@@ -3439,7 +2780,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "pieter-2026-09-13-atraviesa-con-mama-948e7731c3",
@@ -3461,7 +2803,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-09-13-corner-garden-plein-air-workshop-anniver-a5050a6c15",
@@ -3483,7 +2826,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_villa-2026-09-13-artistatwork-papyrus-making-cfd4342585",
@@ -3507,7 +2851,9 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "getty_villa-2026-09-13-papyrus-scroll-making-family-workshop-8df70f9539",
@@ -3531,7 +2877,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-09-13-fiestas-patrias-family-day-free-with-rsv-e7e80505f6",
@@ -3556,7 +2903,9 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-09-13-black-narcissus-f7e1ec7dda",
@@ -3578,7 +2927,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-09-13-book-talk-through-the-dark-with-yolanda-b5260c3097",
@@ -3601,7 +2951,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "wende-2026-09-13-illustrating-picture-books-with-stephani-132a5fe85e",
@@ -3625,7 +2977,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-13-tea-dance-swing-1d650ca2ff",
@@ -3648,7 +3001,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-13-making-marie-antoinette-book-signing-wit-f730cf97f3",
@@ -3670,7 +3024,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-14-20th-anniversary-of-marie-antoinette-wit-dd173f9f98",
@@ -3692,51 +3047,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-14-queerchata-beginner-plus-bachata-d3cb77a56d",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-14",
-    "end": "2026-09-14",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-tnxjm-5dw47",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-14-queerchata-intro-to-bachata-2d9f2c45a9",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-14",
-    "end": "2026-09-14",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-sknes",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-09-15-joshua-reynoldss-portrait-of-mai-and-18t-c64d77199e",
@@ -3758,7 +3070,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "autry-2026-09-15-museum-teacher-programs-for-schools-0056576728",
@@ -3780,51 +3094,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-15-queerchata-beginner-plus-salsa-7d08dd1856",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-15",
-    "end": "2026-09-15",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-hfkrh-gsn64",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-15-queerchata-intro-to-salsa-d540a815f8",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-15",
-    "end": "2026-09-15",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-hfkrh",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-15-curators-tour-every-minute-is-history-3b38008cb4",
@@ -3846,7 +3117,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "18th_street-2026-09-15-intersection-with-raida-adon-f8bbbd18e8",
@@ -3868,7 +3140,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-09-16-lunchtime-art-talk-on-dyani-white-hawk-f61e0b6293",
@@ -3890,13 +3163,14 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-16-visita-guiada-con-la-curadora-instantere-179824ca65",
     "venue_id": "getty_center",
-    "title": "Visita guiada con la curadora: *Instante/revelaciÃ³n* (espaÃ±ol)",
-    "description": "Este tour se adentrarÃ¡ en el rico entramado de diÃ¡logos culturales y artÃ­sticos que han dado forma a la historia de la fotografÃ­a mexicana",
+    "title": "Visita guiada con la curadora: *Instante/revelación* (español)",
+    "description": "Este tour se adentrará en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía mexicana",
     "event_type": "tour",
     "start": "2026-09-16T15:00:00-07:00",
     "end": null,
@@ -3912,7 +3186,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-09-16-molaa-food-pantry-e5bfaf1bb3",
@@ -3936,7 +3211,9 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "hammer-2026-09-16-afterhours-tour-stephanie-schrader-on-fi-6b53453f3c",
@@ -3959,7 +3236,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "academy_museum-2026-09-17-emma-in-35mm-7d96a6c2f2",
@@ -3981,7 +3260,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "armory_pasadena-2026-09-17-creative-wellbeing-through-visual-art-co-6a7d178541",
@@ -4003,7 +3283,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-17-race-power-in-early-los-angeles-in-conve-71b816f79b",
@@ -4025,29 +3306,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "hammer-2026-09-17-online-only-mindful-awareness-meditation-b6225b911d",
-    "venue_id": "hammer",
-    "title": "ONLINE ONLY: Mindful Awareness Meditation",
-    "description": "Free online session open to all who are interested in learning how to live more presently.",
-    "event_type": "other",
-    "start": "2026-09-17T12:30:42-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2025/online-only-mindful-awareness-meditation",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2025-02/Jacaranda-Trees---landscape---by-Ashley-Kruythoff.jpg?h=72d90b5d&itok=48-DSVQv",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-09-17-docs-la-plaza-raicilla-memoria-de-un-pai-89db8319ee",
@@ -4069,7 +3329,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "redcat-2026-09-17-the-fordhill-project-lee-sunday-evans-an-a6b4f8f111",
@@ -4091,7 +3353,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "marciano-2026-09-18-tacita-dean-filmexh-13eddb1f55",
@@ -4113,7 +3377,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "getty_center-2026-09-18-artistatwork-tapa-making-79cb551fbb",
@@ -4137,12 +3403,14 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "getty_center-2026-09-18-stories-in-ink-ttau-bookmark-workshop-8c8e40b9cb",
     "venue_id": "getty_center",
-    "title": "Stories in Ink: TÄtau Bookmark Workshop",
+    "title": "Stories in Ink: Tātau Bookmark Workshop",
     "description": "Art Making, Family",
     "event_type": "workshop",
     "start": "2026-09-18T11:00:00-07:00",
@@ -4161,7 +3429,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-18-community-conversation-marilyn-monroe-an-ae2814da1f",
@@ -4183,7 +3452,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-18-gentlemen-prefer-blondes-861a6f7ff6",
@@ -4205,7 +3475,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-18-dropin-workshop-for-teens-animation-cbbac94c56",
@@ -4229,7 +3500,8 @@
     "price_text": "Free",
     "audience": [
       "teen"
-    ]
+    ],
+    "_default_type": "screening"
   },
   {
     "id": "janm-2026-09-18-end-of-summer-at-descanso-gardens-974112b468",
@@ -4251,7 +3523,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-19-50-movie-nights-book-signing-with-dave-k-c0e81216dd",
@@ -4274,7 +3547,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-19-the-king-of-comedy-with-dave-karger-and-2ea10ce34d",
@@ -4296,7 +3570,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "redcat-2026-09-18-the-fordhill-project-lee-sunday-evans-an-05d9f29130",
@@ -4318,7 +3593,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-09-19-the-uncles-in-16mm-with-tacita-dean-and-97174b8868",
@@ -4340,7 +3617,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "forest_lawn-2026-09-19-california-visionaries-the-lives-and-leg-3ca9d9a984",
@@ -4362,7 +3640,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "armory_pasadena-2026-09-19-curator-walkthrough-all-the-ways-to-hold-337f608e6e",
@@ -4384,7 +3664,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "jaccc-2026-09-19-moveable-feast-edmund-de-waal-paul-holde-6d4ed57f6b",
@@ -4408,7 +3689,8 @@
     "price_text": "$10",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "pvac-2026-09-19-south-bay-orchid-society-fall-show-038-s-6f7b5b8e54",
@@ -4432,7 +3714,8 @@
     "price_text": "$5",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-09-19-three-sisters-in-the-garden-corn-beans-a-7a097c69b0",
@@ -4454,7 +3737,9 @@
     ],
     "is_free": null,
     "price_text": "$55",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "getty_center-2026-09-19-artistatwork-tapa-making-368569406a",
@@ -4478,7 +3763,9 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "angels_gate--opaf-other-places-art-fair-8-42560b850a",
@@ -4500,7 +3787,8 @@
     ],
     "is_free": true,
     "price_text": "Free or $5 suggested",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-19-rethinking-the-egyptian-book-of-the-dead-c98a957022",
@@ -4522,29 +3810,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "caam-2026-09-19-self-care-yoga-631827821d",
-    "venue_id": "caam",
-    "title": "Self Care: Yoga",
-    "description": "Move through a 60-minute flow with yoga and meditation teacher Constance Hartwell.",
-    "event_type": "workshop",
-    "start": "2026-09-19T11:00:00-07:00",
-    "end": "2026-09-19T12:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.eventbrite.com/e/self-care-yoga-tickets-1998823782741",
-    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1191806989%2F214015320389%2F1%2Foriginal.20260824-230125?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=64009a01cbaae2a59052930ff5bd6613",
-    "artists": [],
-    "location_override": "California African American Museum",
-    "source": "eventbrite.com (CAAM)",
-    "scraped_at": "2026-08-29T13:03:02+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-19-something-wicked-this-way-comes-in-35mm-d5a60db31f",
@@ -4566,14 +3833,13 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-09-19-stories-in-ink-ttau-bookmark-workshop-ec7c64f1f2",
     "venue_id": "getty_center",
-    "title": "Stories in Ink: TÄtau Bookmark Workshop",
+    "title": "Stories in Ink: Tātau Bookmark Workshop",
     "description": "Art Making, Family",
     "event_type": "workshop",
     "start": "2026-09-19T11:00:00-07:00",
@@ -4592,31 +3858,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
-  },
-  {
-    "id": "academy_museum-2026-09-19-dropin-workshop-for-families-production-a359f3c7c9",
-    "venue_id": "academy_museum",
-    "title": "Drop-in Workshop for Families: Production Design Miniature Sets",
-    "description": "",
-    "event_type": "workshop",
-    "start": "2026-09-19T12:30:00-07:00",
-    "end": "2026-09-19T14:30:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-production-design-miniature-sets-01a01680-5d83-6507-57ae-014564901520",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/2ZrGH3NkV03Kxk0GkiqpRq/38980dc3eb9a292aed54618bb0fa3305/250607MB_263_Mike_Baker.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-29T13:02:48+00:00",
-    "event_types": [
-      "workshop"
     ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-19-change-through-music-9de4bd7c75",
@@ -4639,7 +3882,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "opening"
   },
   {
     "id": "academy_museum-2026-09-19-inside-screenwriting-la-plays-itself-wit-13d427782e",
@@ -4661,9 +3906,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "wende-2026-09-19-navigating-our-media-ecosystem-reclaimin-99064be851",
@@ -4688,7 +3932,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-19-cocktails-with-a-curator-marketing-antiq-7f9e077eb2",
@@ -4710,14 +3955,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "the_broad-2026-09-19-ocean-child-i-am-yoko-841c46fb28",
     "venue_id": "the_broad",
     "title": "Ocean Child: I Am Yoko",
     "description": "YOU THINK YOU KNOW YOKO ONO? In this first-look musical presentation of OCEAN CHILD: I AM YOKO , the audience becomes Yoko Ono, a cultural icon who defies expectations and surface-level categorizations. Take a deep dive into Ono’s life, from her childhood and travels across continents to her relationships and artistic evolution. Written, designed, and directed by musician Yuka Honda and artist Glenn Kaino—both of whom also perform alongside an ensemble of renowned musicians and vocalists— OCEAN CHILD: I AM YOKO is a work-in-progress experiment which encourages us to embody Ono’s complexity, not just observe it. Presented in conjunction with the special exhibition, Yoko Ono: Music of the Mind . Total Running Time: Approximately 90 minutes, no intermission Written, designed,",
-    "event_type": "performance",
+    "event_type": "exhibition",
     "start": "2026-09-19T19:30:00-07:00",
     "end": "2026-09-19T21:00:00-07:00",
     "all_day": false,
@@ -4728,11 +3974,12 @@
     "source": "thebroad.org",
     "scraped_at": "2026-08-29T13:02:42+00:00",
     "event_types": [
-      "performance"
+      "exhibition"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-20-the-others-in-4k-e8e40ed040",
@@ -4754,7 +4001,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "redcat-2026-09-19-the-fordhill-project-lee-sunday-evans-an-e7d655392e",
@@ -4776,7 +4024,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "the_broad-2026-09-20-sensory-morning-at-the-broad-d1bfdaf116",
@@ -4798,9 +4048,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "18th_street-2026-09-20-citizen-artist-reading-group-with-suchi-62047bfb36",
@@ -4823,7 +4072,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-20-artistatwork-tapa-making-2bfac077b0",
@@ -4847,12 +4097,14 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "getty_center-2026-09-20-stories-in-ink-ttau-bookmark-workshop-5f2af17f2e",
     "venue_id": "getty_center",
-    "title": "Stories in Ink: TÄtau Bookmark Workshop",
+    "title": "Stories in Ink: Tātau Bookmark Workshop",
     "description": "Art Making, Family",
     "event_type": "workshop",
     "start": "2026-09-20T11:00:00-07:00",
@@ -4871,14 +4123,15 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-09-20-juega-con-yoga-hatha-flow-yoga-at-molaa-df788a0e0e",
     "venue_id": "molaa",
     "title": "Juega con Yoga — Hatha Flow: Yoga at MOLAA",
     "description": "Juega con Yoga is a Sunday morning Hatha flow designed to wake up your body, lift your spirit, and send you into the week feeling energized and grounded. No experience needed. Each class weaves together a fun, accessible flow with music that makes you want to move, breathing techniques to root and energize, and a playful intention to carry into your week. You will stretch, strengthen, and leave feeling connected with yourself, ready for whatever the week brings.",
-    "event_type": "performance",
+    "event_type": "workshop",
     "start": "2026-09-20T11:30:00-07:00",
     "end": "2026-09-20T12:30:00-07:00",
     "all_day": false,
@@ -4889,12 +4142,12 @@
     "source": "molaa.org",
     "scraped_at": "2026-08-29T13:02:46+00:00",
     "event_types": [
-      "performance",
       "workshop"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-20-gigi-in-35mm-8d6be4aa13",
@@ -4916,7 +4169,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "wende-2026-09-20-illustrating-picture-books-with-stephani-a1cd82aec2",
@@ -4940,7 +4194,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-20-racist-by-design-kelly-lytle-hernndez-in-a0ac1a18ea",
@@ -4963,7 +4218,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "opening"
   },
   {
     "id": "getty_center-2026-09-20-the-amazing-portrait-and-story-of-mai-72bc38e3a6",
@@ -4985,7 +4242,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "janm-2026-09-20-defining-courage-at-athenaeum-center-chi-ae667b8fbf",
@@ -5007,14 +4265,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-21-music-in-the-rose-garden-d76f48a1eb",
     "venue_id": "huntington",
     "title": "Music in the Rose Garden",
     "description": "",
-    "event_type": "performance",
+    "event_type": "other",
     "start": "2026-09-21",
     "end": null,
     "all_day": true,
@@ -5025,55 +4284,12 @@
     "source": "huntington.org",
     "scraped_at": "2026-08-29T13:02:49+00:00",
     "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-21-queerchata-beginner-plus-bachata-d668091b76",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-21",
-    "end": "2026-09-21",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-tnxjm-5dw47-tc3xc",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
       "other"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-21-queerchata-intro-to-bachata-0b2c9307ea",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-21",
-    "end": "2026-09-21",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-sknes-x6r3n",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-21-how-to-marry-a-millionaire-a175d22192",
@@ -5095,7 +4311,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "human_resources-2026-09-21-kout-vwa-35766b47ff",
@@ -5120,7 +4337,9 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   },
   {
     "id": "huntington-2026-09-22-edmund-de-waal-in-conversation-with-josh-b84345e613",
@@ -5142,51 +4361,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-22-queerchata-beginner-plus-salsa-8bb0ea5b66",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-22",
-    "end": "2026-09-22",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-hfkrh-gsn64-jlzgf",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-22-queerchata-intro-to-salsa-ad1c098c45",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-22",
-    "end": "2026-09-22",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-mbcex",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-22-the-holy-family-at-homeexh-9282dc1263",
@@ -5210,29 +4386,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
-  },
-  {
-    "id": "18th_street-2026-09-22-dzogchenla-meditation-56ce90bdd0",
-    "venue_id": "18th_street",
-    "title": "Dzogchen-LA meditation",
-    "description": "Dzogchen-LA meditation Tuesday, September 22nd | 7 PM -8:30 PM 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public Join us for a healing series of every-other Tuesday evening guided meditations, where we will learn to open and become Aware of our own innermost Heart-Essence Awareness. Emerging from the Dzogchen lineage of Tibetan Buddhism. This is not just a Tuesday evening “mind practice,” but a doorway into living from and within freedom —freedom not only from our own psychology and historic self-narrative, but also from the habitual creative loops that keep us recycling the same expressions. Over time, we learn to flow through life with the lived experience of non-duality within duality—and duality within non-duality. From an ever-deepening familiarity with our own True N",
-    "event_type": "other",
-    "start": "2026-09-22T19:00:00-07:00",
-    "end": "2026-09-22T20:30:00-07:00",
-    "all_day": false,
-    "url": "https://18thstreet.org/event/dzogchen-la-meditation-sept22/",
-    "image": "https://18thstreet.org/wp-content/uploads/2025/06/Meditation@18thStr.-Horizontal.png",
-    "artists": [],
-    "location_override": null,
-    "source": "18thstreet.org",
-    "scraped_at": "2026-08-29T13:02:44+00:00",
-    "event_types": [
-      "other"
     ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": []
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-22-antifascist-porn-fd53bf7336",
@@ -5255,7 +4410,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-09-23-lunchtime-art-talk-on-g-viana-73dfcbae28",
@@ -5277,7 +4433,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-23-curators-tour-instanterevelacion-english-f6107a773c",
@@ -5299,31 +4456,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "wende-2026-09-23-saved-by-a-storyintergenerational-writin-2c0c53c3af",
-    "venue_id": "wende",
-    "title": "Saved by a Story–Intergenerational Writing Group",
-    "description": "Participants ages 14 and up welcomed. Please arrive 5 or 10 minutes early to get settled, as we start the group promptly at 4pm. We are excited to come together in community, to dive into our creativity and share our stories. What is Saved by a Story-Intergenerational Writing Workshop at the Wende Museum? Participants of all ages write to prompts to spark creativity, share stories and build community. We write to surprise ourselves and discover the bounty of stories that lie within. We come together and write, choose to share (or not, you decide), listen and write some more.We do this in the beautiful environs of the Wende Museum and its provocative and compelling collection. Some of our prompts will help us engage with the current exhibitions as well as engage with each other. In later gr",
-    "event_type": "workshop",
-    "start": "2026-09-23T16:00:00-07:00",
-    "end": "2026-09-23T18:00:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/saved-by-a-story-intergenerational-writing-group-4/2026-09-23/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/intergenerational-writing-group-cover-photo.png",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "18th_street-2026-09-23-a-healing-story-circle-a-return-to-the-r-8726bc4a86",
@@ -5345,7 +4479,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "clockshop-2026-09-23-taking-root-the-edge-of-summer-gala-73db4c41e7",
@@ -5367,7 +4502,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-24-far-from-heaven-in-35mm-6144755a0e",
@@ -5389,7 +4525,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "huntington-2026-09-24-the-boundless-biddy-mason-in-conversatio-b539a6bab7",
@@ -5411,14 +4548,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "pvac-2026-09-24-collected-treasures-donation-day-375ce93c94",
     "venue_id": "pvac",
     "title": "Collected Treasures Donation Day",
     "description": "Make a difference with your donation to Collected Treasures! Organized by The Circle of Palos Verdes Art Center, Collected Treasures presents an annual fundraiser to support PVAC. Want to help? We would be grateful to receive your good quality items, such as art, china, ceramics, silver, fine & costume jewelry, linens, unique clothing, holiday decorations, antiques, home decor, glassware, small furniture, clocks, objets d’ art. Our next take-in day for donations is Thursday, September 24, from 11am – 2pm. The following take-in will be on September 24. Volunteers will be on hand to assist with unloading your donation. More information about The Circle and their fundraising projects is at thecirclepvac.org .",
-    "event_type": "other",
+    "event_type": "workshop",
     "start": "2026-09-24T11:00:00-07:00",
     "end": "2026-09-24T15:00:00-07:00",
     "all_day": false,
@@ -5429,11 +4567,12 @@
     "source": "pvartcenter.org",
     "scraped_at": "2026-08-29T13:02:47+00:00",
     "event_types": [
-      "other"
+      "workshop"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_villa-2026-09-24-curators-tour-the-egyptian-book-of-the-d-9761d8645c",
@@ -5455,7 +4594,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-25-how-history-culture-and-commerce-shaped-df8eff7b48",
@@ -5477,7 +4617,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-25-midautumn-moon-celebration-eb36aa8bbf",
@@ -5499,14 +4640,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-25-member-preview-the-horror-show-83b2a43e2c",
     "venue_id": "academy_museum",
     "title": "Member Preview | The Horror Show",
     "description": "",
-    "event_type": "opening",
+    "event_type": "screening",
     "start": "2026-09-25T10:00:00-07:00",
     "end": "2026-09-25T18:00:00-07:00",
     "all_day": false,
@@ -5517,11 +4659,12 @@
     "source": "academymuseum.org",
     "scraped_at": "2026-08-29T13:02:48+00:00",
     "event_types": [
-      "opening"
+      "screening"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-25-gallery-spotlight-dissident-cinema-and-b-7cee640606",
@@ -5543,14 +4686,15 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "molaa-2026-09-26-luchadores-versus-everything-book-launch-d0c9a9978a",
     "venue_id": "molaa",
     "title": "Luchadores Versus Everything Book Launch and Reception!",
     "description": "Join us for a fabulous evening celebrating the launch of the internationally acclaimed book, Luchadores Versus Everything by Viviana Garcia Besne, Jeffrey Everett y Amigos. Light snacks provided and cocktails for purchase. Artist panel begins at 6:30PM. Free admission with the Month of Lucha Libre All Access Badge Pass. Badges go on sale July 6th. If spaces are still available, individual tickets go on sale September 8.",
-    "event_type": "opening",
+    "event_type": "lecture",
     "start": "2026-09-25T18:00:00-07:00",
     "end": "2026-09-25T22:00:00-07:00",
     "all_day": false,
@@ -5561,12 +4705,12 @@
     "source": "molaa.org",
     "scraped_at": "2026-08-29T13:02:46+00:00",
     "event_types": [
-      "opening",
       "lecture"
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "human_resources-2026-09-25-by-hook-or-by-crook-3f34e77429",
@@ -5588,7 +4732,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "mak_center-2026-09-26-glow-up-benefit-amp-auction-381d7784b2",
@@ -5610,7 +4755,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-26-midautumn-moon-celebration-8efcc7b330",
@@ -5632,7 +4778,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2026-09-26-quilt-for-democracy-a-community-quilting-13e741d20a",
@@ -5654,7 +4801,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-26-calm-morning-frightfully-fun-movie-poste-53672dc289",
@@ -5676,7 +4824,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "janm-2026-09-26-when-youre-smiling-screenings-on-the-int-0193dd6b01",
@@ -5698,7 +4847,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-26-abbott-and-costello-meet-frankenstein-285b684273",
@@ -5720,9 +4870,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "moah-2026-09-26-opening-celebration-new-fall-exhibitions-fc55ca3979",
@@ -5745,7 +4894,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "vincent_price-2026-09-26-anida-yoeu-ali-the-buddhist-bug-33a916d8a4",
@@ -5768,12 +4918,13 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-26-douard-manet-jeanne-demarsy-and-the-art-b66df75194",
     "venue_id": "getty_center",
-    "title": "Ãdouard Manet, Jeanne Demarsy, and the Art of Parisian Chic",
+    "title": "Édouard Manet, Jeanne Demarsy, and the Art of Parisian Chic",
     "description": "Talk",
     "event_type": "lecture",
     "start": "2026-09-26T16:00:00-07:00",
@@ -5790,7 +4941,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "avenue_50-2026-09-26-espiral-collective-17th-apertura-f532836d30",
@@ -5812,14 +4964,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-09-27-lucha-libre-at-molaa-d14add79d0",
     "venue_id": "molaa",
     "title": "Lucha Libre at MOLAA!",
     "description": "LUCHA IS BACK! In honor of MOLAA’s 30th anniversary, you’re officially invited to celebrate the electrifying return of Lucha Libre to the Museum of Latin American Art! Mark your calendars for an unforgettable evening filled with high-flying action, colorful masks, and the vibrant spirit of one of Latin America’s most beloved cultural traditions. Watch legendary luchadores clash in the ring as the museum transforms into a lively arena of energy, music, and community. Free admission with the Month of Lucha Libre All Access Badge Pass. Badges go on sale July 6th. If spaces are still available, individual tickets go on sale September 8.",
-    "event_type": "performance",
+    "event_type": "other",
     "start": "2026-09-26T18:00:00-07:00",
     "end": "2026-09-26T22:00:00-07:00",
     "all_day": false,
@@ -5830,11 +4983,12 @@
     "source": "molaa.org",
     "scraped_at": "2026-08-29T13:02:46+00:00",
     "event_types": [
-      "performance"
+      "other"
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "clockshop-2026-09-26-reading-and-listening-by-moonrise-522cd7e241",
@@ -5856,7 +5010,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-27-halloween-with-john-carpenter-9cb96594c1",
@@ -5878,7 +5033,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "redcat-2026-09-26-playing-with-fire-an-ecosexual-annie-spr-513703d6e7",
@@ -5900,7 +5056,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   },
   {
     "id": "mak_center-2026-09-27-glow-up-benefit-amp-auction-b6f75b3d11",
@@ -5922,7 +5080,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-27-midautumn-moon-celebration-8046b2945c",
@@ -5944,7 +5103,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "huntington-2026-09-27-reflective-writing-and-intuitive-collage-d72610beb0",
@@ -5966,7 +5126,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-09-27-2026-fall-icea-free-chess-the-wende-0d35999853",
@@ -5990,7 +5151,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2",
@@ -6015,7 +5177,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-09-27-special-effects-in-horror-with-tom-belli-eb5642a480",
@@ -6037,7 +5200,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-27-doctor-zhivago-028292e1be",
@@ -6059,7 +5223,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-28-they-live-with-john-carpenter-8c069e8d10",
@@ -6081,7 +5246,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-09-28-black-portraitures-the-black-built-envir-56108cc134",
@@ -6103,51 +5269,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-28-queerchata-beginner-plus-bachata-5d2bdd1f3c",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-28",
-    "end": "2026-09-28",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-tnxjm-5dw47-tc3xc-ef8n3",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-28-queerchata-intro-to-bachata-c2326f624e",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Bachata",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-28",
-    "end": "2026-09-28",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-sknes-x6r3n-ggzs7",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "academy_museum-2026-09-28-river-of-no-return-7724e0566f",
@@ -6169,7 +5293,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-09-29-assault-on-precinct-13-with-john-carpent-6190109b91",
@@ -6191,7 +5316,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-09-29-black-portraitures-the-black-built-envir-9068d420ed",
@@ -6213,51 +5339,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-29-queerchata-beginner-plus-salsa-222267affc",
-    "venue_id": "pieter",
-    "title": "Queerchata: Beginner Plus Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-29",
-    "end": "2026-09-29",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-hfkrh-gsn64-jlzgf-jsj6z",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "pieter-2026-09-29-queerchata-intro-to-salsa-839e8eaa5a",
-    "venue_id": "pieter",
-    "title": "Queerchata: Intro to Salsa",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-29",
-    "end": "2026-09-29",
-    "all_day": true,
-    "url": "https://pieterpasd.com/programs/clown-cardio-w95hz-dyct4-mbcex-6peml",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pieterpasd.com",
-    "scraped_at": "2026-08-29T13:02:55+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "getty_center-2026-09-30-black-portraitures-the-black-built-envir-ce3982e1a8",
@@ -6279,7 +5363,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "redcat-2026-09-30-multiple-windward-sharon-lockhart-28a9a9ad16",
@@ -6301,7 +5387,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-09-30-show-and-tell-yoko-ono-archive-8c7bf3b25c",
@@ -6323,7 +5410,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-09-30-lunchtime-art-talk-on-vibeke-mascini-2d8e47bcf6",
@@ -6345,7 +5433,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-01-apocalypse-now-the-final-cut-0a935a6ea6",
@@ -6367,7 +5456,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2",
@@ -6391,7 +5481,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-10-01-afterhours-tour-phil-chang-on-five-centu-c316cbf3d6",
@@ -6414,7 +5505,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "academy_museum-2026-10-02-pans-labyrinth-in-3d-with-guillermo-del-1a6dc4ca4e",
@@ -6436,7 +5529,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-03-hunt-for-the-wilderpeople-with-taika-wai-2c1b30823e",
@@ -6458,7 +5552,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-03-getty-creative-engagement-forum-amplifyi-31830ee65a",
@@ -6482,7 +5577,9 @@
     "price_text": null,
     "audience": [
       "teen"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "la_plaza-2026-10-03-harvest-and-hearth-fall-foods-for-ground-fc401ca802",
@@ -6504,7 +5601,9 @@
     ],
     "is_free": null,
     "price_text": "$55",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "pvac-2026-10-03-pvac-95th-anniversary-open-house-b50f412bae",
@@ -6526,7 +5625,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-03-hocus-pocus-d4239d2817",
@@ -6548,9 +5648,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-03-dropin-workshop-for-families-alebrijes-1bdfc9f8f6",
@@ -6574,7 +5673,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-03-inside-barbie-to-anna-karenina-productio-1f0a8d631c",
@@ -6596,9 +5696,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "wende-2026-10-03-navigating-our-media-ecosystem-reclaimin-9b0f7690bd",
@@ -6623,7 +5722,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "molaa-2026-10-04-2026-molaa-gala-amp-auction-6ed469e9bc",
@@ -6646,7 +5746,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "academy_museum-2026-10-04-escape-from-new-york-in-4k-and-escape-fr-539439ecdb",
@@ -6668,7 +5770,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-10-04-urban-milpa-medicinal-teas-free-with-rsv-ae23e9263b",
@@ -6690,7 +5793,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-10-04-cabaret-29ee57b22d",
@@ -6712,7 +5817,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-04-seenunseen-a-closer-look-at-odilon-redon-37b1543179",
@@ -6734,7 +5840,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-10-04-ever-present-a-moveable-feast-of-no-no-w-6414254e87",
@@ -6756,7 +5863,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-05-the-thing-in-4k-421b3850b2",
@@ -6778,7 +5886,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-06-resurrection-in-4k-with-ellen-burstyn-186f9af685",
@@ -6800,7 +5909,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-06-curators-tour-instanterevelacion-english-49f375e168",
@@ -6822,7 +5932,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-10-07-lunchtime-art-talk-on-monica-majoli-1168f6e09d",
@@ -6844,7 +5955,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-08-stalker-e8e175132b",
@@ -6866,29 +5978,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "getty_center-2026-10-08-curators-tour-odilon-redon-otherworldly-572b179764",
-    "venue_id": "getty_center",
-    "title": "Curator's Tour: *Odilon Redon: Otherworldly Visions*",
-    "description": "Join curator Danielle Canter for a closer look at Odilon Redonâs distinctive and dreamlike vision",
-    "event_type": "tour",
-    "start": "2026-10-08T15:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/curators-tour-redon",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "clockshop-2026-10-08-take-me-to-your-river-publication-launch-948416a78d",
@@ -6910,7 +6001,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-10-08-pltica-y-prueba-savor-the-flavors-of-fal-49893a24f0",
@@ -6932,7 +6024,9 @@
     ],
     "is_free": null,
     "price_text": "$45",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-10-09-big-trouble-in-little-china-84d255a477",
@@ -6954,7 +6048,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-09-theres-no-business-like-show-business-df04203b34",
@@ -6976,7 +6071,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-10-the-fog-in-4k-0c378d2d94",
@@ -6998,7 +6094,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-10-the-little-vampire-in-35mm-3e2787beb3",
@@ -7020,9 +6117,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02",
@@ -7046,7 +6142,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "screening"
   },
   {
     "id": "fowler-2026-10-10-special-program-uhengaparaoa-taonga-tuku-7674cee292",
@@ -7068,7 +6165,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-10-get-on-the-bus-30th-anniversary-screenin-40bc82681a",
@@ -7090,7 +6188,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "las_fotos_project-2026-10-10-estoy-aqu-opening-reception-4942c3f16d",
@@ -7112,7 +6211,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "redcat-2026-10-10-democracy-sessions-order-and-its-others-e1f9aa018e",
@@ -7134,7 +6234,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "fowler-2026-10-11-exhibition-walkthrough-uhengaparaoa-taon-364c08d0e9",
@@ -7157,7 +6259,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-11-aliens-in-70mm-750c0ad841",
@@ -7179,7 +6282,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "redcat-2026-10-11-democracy-sessions-the-room-begins-to-wi-c5e0ac603b",
@@ -7201,7 +6305,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "las_fotos_project-2026-10-11-botas-de-charro-opening-reception-fad4693b9b",
@@ -7223,7 +6329,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-12-prince-of-darkness-in-35mm-0eda18de7e",
@@ -7245,12 +6352,13 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-13-lost-found-and-beyond-provenance-at-amer-218007b0b6",
     "venue_id": "getty_center",
-    "title": "Lost, Found, and Beyond: Provenance at Americaâs Museums with Victoria Reed",
+    "title": "Lost, Found, and Beyond: Provenance at America’s Museums with Victoria Reed",
     "description": "Talk",
     "event_type": "lecture",
     "start": "2026-10-13T18:00:00-07:00",
@@ -7267,7 +6375,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-10-14-lunchtime-art-talk-on-mavis-pusey-e308694a92",
@@ -7289,13 +6398,14 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-10-14-visita-guiada-con-la-curadora-instantere-49d2df786b",
     "venue_id": "getty_center",
-    "title": "Visita guiada con la curadora: *Instante/revelaciÃ³n* (espaÃ±ol)",
-    "description": "Este tour se adentrarÃ¡ en el rico entramado de diÃ¡logos culturales y artÃ­sticos que han dado forma a la historia de la fotografÃ­a mexicana",
+    "title": "Visita guiada con la curadora: *Instante/revelación* (español)",
+    "description": "Este tour se adentrará en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía mexicana",
     "event_type": "tour",
     "start": "2026-10-14T15:00:00-07:00",
     "end": null,
@@ -7311,31 +6421,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "wende-2026-10-14-saved-by-a-storyintergenerational-writin-a912672955",
-    "venue_id": "wende",
-    "title": "Saved by a Story–Intergenerational Writing Group",
-    "description": "Participants ages 14 and up welcomed. Please arrive 5 or 10 minutes early to get settled, as we start the group promptly at 4pm. We are excited to come together in community, to dive into our creativity and share our stories. What is Saved by a Story-Intergenerational Writing Workshop at the Wende Museum? Participants of all ages write to prompts to spark creativity, share stories and build community. We write to surprise ourselves and discover the bounty of stories that lie within. We come together and write, choose to share (or not, you decide), listen and write some more.We do this in the beautiful environs of the Wende Museum and its provocative and compelling collection. Some of our prompts will help us engage with the current exhibitions as well as engage with each other. In later gr",
-    "event_type": "workshop",
-    "start": "2026-10-14T16:00:00-07:00",
-    "end": "2026-10-14T18:00:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/saved-by-a-story-intergenerational-writing-group-4/2026-10-14/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/intergenerational-writing-group-cover-photo.png",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "redcat-2026-10-14-fractais-tropicais-tropical-fractals-leo-d6509f000e",
@@ -7357,7 +6444,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   },
   {
     "id": "wende-2026-10-16-8220encore8221-0b9c793109",
@@ -7379,7 +6468,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-10-16-encore-2f3df3b73a",
@@ -7402,7 +6492,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "opening"
   },
   {
     "id": "pacific_asia_museum-2026-10-17-upcoming-exhibitions-a3e81cce35",
@@ -7424,7 +6516,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "redcat-2026-10-17-angel-city-arts-jazz-refractions-fred-fr-47ad46e7df",
@@ -7446,7 +6539,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "18th_street-2026-10-18-citizen-artist-reading-group-d13572a903",
@@ -7469,7 +6564,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "clockshop-2026-10-18-la-made-x-take-me-to-your-river-4e147cf227",
@@ -7491,7 +6587,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "las_fotos_project-2026-10-19-lfp-fundraiser-breathe-and-pause-f50dcb5e9b",
@@ -7513,7 +6610,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-20-in-the-mouth-of-madness-in-4k-e2ab5e1d5b",
@@ -7535,7 +6633,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-20-reggie-burrows-hodges-a-theater-of-passi-b930b2f877",
@@ -7557,7 +6656,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "fowler-2026-10-21-fowler-open-house-4537d92ef5",
@@ -7579,7 +6680,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-10-21-the-bengali-an-evening-of-film-and-the-p-7f870e3125",
@@ -7605,7 +6707,9 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "opening"
   },
   {
     "id": "academy_museum-2026-10-22-an-evening-of-short-films-by-women-direc-66465d4646",
@@ -7627,7 +6731,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "skirball-2026-10-22-jenny-yurshansky-what-we-carry-f137cb0c44",
@@ -7649,7 +6754,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2026-10-22-patrisse-cullors-wishes-made-material-a3a89faccd",
@@ -7671,7 +6777,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2026-10-22-the-1960sa-generation-on-fire-judy-bacas-7c1910ca51",
@@ -7693,7 +6800,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-10-22-community-identity-and-resistance-in-art-d67a964d6d",
@@ -7717,7 +6825,9 @@
     "price_text": null,
     "audience": [
       "teen"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "academy_museum-2026-10-23-dark-star-with-captain-voyeur-3db3d66f45",
@@ -7739,7 +6849,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "pieter-2026-10-23-hodge-podge-a-wip-showing-24170361ee",
@@ -7761,7 +6872,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-23-the-seven-year-itch-e69821b5db",
@@ -7783,7 +6895,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-24-vampires-in-4k-with-memoirs-of-an-invisi-15b5932989",
@@ -7805,7 +6918,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-24-hotel-transylvania-f879d5e72c",
@@ -7827,9 +6941,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-24-monster-mash-6a9f290510",
@@ -7851,9 +6964,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "clockshop-2026-10-24-subterranean-convergence-opening-recepti-ca4a87a115",
@@ -7876,7 +6988,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-24-blade-in-4k-2a4e6b1510",
@@ -7898,7 +7011,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-25-horror-of-dracula-in-4k-3bf050efed",
@@ -7920,7 +7034,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3",
@@ -7945,7 +7060,9 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-10-25-men-in-black-in-35mm-edc55d8c9b",
@@ -7967,7 +7084,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-26-christine-c79ee6564d",
@@ -7989,7 +7107,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-10-26-the-hidden-influence-of-nubia-in-ancient-f011e168fa",
@@ -8011,7 +7130,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-27-they-live-by-night-in-35mm-with-nathan-g-de4353e5a4",
@@ -8033,7 +7153,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "hammer-2026-10-28-lunchtime-art-talk-on-huguette-caland-884c89e15c",
@@ -8055,31 +7176,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
-  },
-  {
-    "id": "wende-2026-10-28-saved-by-a-storyintergenerational-writin-e046785ae1",
-    "venue_id": "wende",
-    "title": "Saved by a Story–Intergenerational Writing Group",
-    "description": "Participants ages 14 and up welcomed. Please arrive 5 or 10 minutes early to get settled, as we start the group promptly at 4pm. We are excited to come together in community, to dive into our creativity and share our stories. What is Saved by a Story-Intergenerational Writing Workshop at the Wende Museum? Participants of all ages write to prompts to spark creativity, share stories and build community. We write to surprise ourselves and discover the bounty of stories that lie within. We come together and write, choose to share (or not, you decide), listen and write some more.We do this in the beautiful environs of the Wende Museum and its provocative and compelling collection. Some of our prompts will help us engage with the current exhibitions as well as engage with each other. In later gr",
-    "event_type": "workshop",
-    "start": "2026-10-28T16:00:00-07:00",
-    "end": "2026-10-28T18:00:00-07:00",
-    "all_day": false,
-    "url": "https://wendemuseum.org/event/saved-by-a-story-intergenerational-writing-group-4/2026-10-28/",
-    "image": "https://wendemuseum.org/wp-content/uploads/2026/01/intergenerational-writing-group-cover-photo.png",
-    "artists": [],
-    "location_override": null,
-    "source": "wendemuseum.org",
-    "scraped_at": "2026-08-29T13:02:46+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-10-29-road-to-perdition-in-35mm-0919551a5d",
@@ -8101,7 +7199,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-30-decision-to-leave-with-park-haeil-46ceea16eb",
@@ -8123,7 +7222,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-31-hansan-rising-dragon-with-park-haeil-25b8c824cb",
@@ -8145,7 +7245,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-10-31-the-witches-7a6c98bf41",
@@ -8167,9 +7268,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-01-museum-after-dark-01a263b534",
@@ -8191,14 +7291,15 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-01-30th-anniversary-of-the-craft-793bc4ae00",
     "venue_id": "academy_museum",
     "title": "30th Anniversary of The Craft",
     "description": "",
-    "event_type": "workshop",
+    "event_type": "screening",
     "start": "2026-10-31T22:00:00-07:00",
     "end": "2026-10-31T23:45:00-07:00",
     "all_day": false,
@@ -8209,11 +7310,12 @@
     "source": "academymuseum.org",
     "scraped_at": "2026-08-29T13:02:48+00:00",
     "event_types": [
-      "workshop"
+      "screening"
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-11-01-24th-annual-encuentro-de-jaraneros-de-ca-3080ba9eaa",
@@ -8235,7 +7337,9 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-11-01-gosford-park-in-35mm-d40bb168cf",
@@ -8257,7 +7361,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-02-eungyo-with-park-haeil-6d21291c16",
@@ -8279,7 +7384,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-02-f-w-murnaus-faust-at-100-with-a-live-sco-a5a8f306e0",
@@ -8301,7 +7407,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-03-arrival-a-conversation-with-denis-villen-df70c71bb5",
@@ -8323,7 +7430,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-03-the-last-princess-9c2cb76eb6",
@@ -8345,7 +7453,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "fowler-2026-11-04-artist-talk-olinda-silvano-erick-ronin-a-f0231fe7ca",
@@ -8367,7 +7476,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-05-my-dad-is-100-years-old-with-rome-open-c-52bdbae8a2",
@@ -8389,7 +7499,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-05-memories-of-murder-in-4k-9a8cc85816",
@@ -8411,7 +7522,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8",
@@ -8435,7 +7547,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-11-05-sabor-a-yucatn-vaporcitos-65-5e3d39519b",
@@ -8457,7 +7570,9 @@
     ],
     "is_free": null,
     "price_text": "$65",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-11-06-viva-ingrid-with-journey-to-italy-presen-c1fa341cde",
@@ -8479,7 +7594,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-06-bus-stop-c07b58f543",
@@ -8501,7 +7617,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "fowler-2026-11-06-wine-with-the-artist-olinda-silvano-3a2b928d6e",
@@ -8523,7 +7640,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-07-the-haunted-mansion-05d0a5d5e2",
@@ -8545,9 +7663,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "corita_art_center-2026-11-07-corita-day-2026-9f948a18ee",
@@ -8569,7 +7686,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b",
@@ -8593,7 +7712,8 @@
     "price_text": "Free",
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "screening"
   },
   {
     "id": "la_plaza-2026-11-07-urban-milpa-garden-series-5-preparing-fo-ec5f99566d",
@@ -8615,7 +7735,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-11-07-rossellini-through-his-own-eyes-rosselli-6ff24ca204",
@@ -8637,7 +7759,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-08-rome-open-city-roma-citt-aperta-in-35mm-d869213fcf",
@@ -8659,7 +7782,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "18th_street-2026-11-08-sage-nija-whitson-revival-revival-eeb84b1d3a",
@@ -8681,7 +7805,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-08-chicago-in-35mm-b6415bb15d",
@@ -8703,7 +7828,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "las_fotos_project-2026-11-08-night-to-network-58a9345f91",
@@ -8725,7 +7851,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-09-waikiki-brothers-89341eeddb",
@@ -8747,7 +7874,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-10-moss-a9f5f3d61f",
@@ -8769,7 +7897,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-12-war-for-the-planet-of-the-apes-3724ee98d3",
@@ -8791,7 +7920,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-13-some-like-it-hot-in-4k-6aea428050",
@@ -8813,7 +7943,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-14-black-fire-with-kevin-jerome-everson-and-2b836e7195",
@@ -8835,7 +7966,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-14-in-focus-queer-for-fear-live-e35c06961d",
@@ -8857,7 +7989,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-14-frankenweenie-in-35mm-871e30fbbd",
@@ -8879,9 +8012,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "norton_simon-2026-11-14-manets-execution-of-maximilian-exhibitio-e6ada112bf",
@@ -8903,7 +8035,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
   },
   {
     "id": "academy_museum-2026-11-15-jealousy-is-my-middle-name-in-35mm-fd60d9fa27",
@@ -8925,7 +8059,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "craft_contemporary-2026-11-15-carlos-castro-arias-vandalismo-artesanal-ae55c0cb26",
@@ -8947,7 +8082,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "craft_contemporary-2026-11-15-embers-of-generational-memory-f04f49c81d",
@@ -8969,7 +8106,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "craft_contemporary-2026-11-15-makerinresidence-meztli-projects-99ac9e2a8b",
@@ -8991,7 +8130,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "academy_museum-2026-11-15-the-grand-budapest-hotel-in-35mm-8e8f9ad947",
@@ -9013,7 +8154,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-15-paisn-in-35mm-4b9170417e",
@@ -9035,7 +8177,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-16-germany-year-zero-germania-anno-zero-in-65a58d4dc0",
@@ -9057,7 +8200,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-17-lamore-in-35mm-5ba303599c",
@@ -9079,7 +8223,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-11-17-curators-tour-instanterevelacion-english-4c29e24848",
@@ -9101,13 +8246,14 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-11-18-visita-guiada-con-la-curadora-instantere-d2ae724c20",
     "venue_id": "getty_center",
-    "title": "Visita guiada con la curadora: *Instante/revelaciÃ³n* (espaÃ±ol)",
-    "description": "Este tour se adentrarÃ¡ en el rico entramado de diÃ¡logos culturales y artÃ­sticos que han dado forma a la historia de la fotografÃ­a mexicana",
+    "title": "Visita guiada con la curadora: *Instante/revelación* (español)",
+    "description": "Este tour se adentrará en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía mexicana",
     "event_type": "tour",
     "start": "2026-11-18T15:00:00-08:00",
     "end": null,
@@ -9123,7 +8269,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-19-the-getaway-in-35mm-59985f92fc",
@@ -9145,7 +8292,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-20-50th-anniversary-of-carrie-with-sissy-sp-a0dd260d93",
@@ -9167,7 +8315,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-21-dropin-workshop-for-teens-editing-for-ho-0a3984239e",
@@ -9192,7 +8341,8 @@
     "price_text": "Free",
     "audience": [
       "teen"
-    ]
+    ],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-21-journey-to-italy-viaggio-in-italia-in-4k-7f65353b21",
@@ -9214,7 +8364,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "the_broad-2026-11-21-has-the-myth-been-shatteredexh-93fdbcf77c",
@@ -9236,7 +8387,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-21-wendell-wild-2ddc497836",
@@ -9258,9 +8410,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-21-the-misfits-in-4k-43698d7c85",
@@ -9282,7 +8433,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-22-stromboli-in-35mm-9f58cd4c8a",
@@ -9304,7 +8456,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "18th_street-2026-11-22-citizen-artist-reading-group-with-pilar-a63ea05a8e",
@@ -9327,7 +8480,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-22-the-favourite-dcc999962c",
@@ -9349,7 +8503,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-23-the-flowers-of-st-francis-francesco-giul-98ef02b5d6",
@@ -9371,7 +8526,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-24-the-machine-that-kills-bad-people-la-mac-92bc3426dc",
@@ -9393,7 +8549,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-11-24-a-light-in-the-dark-joseph-wright-of-der-16b162e574",
@@ -9415,7 +8572,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-11-24-curators-tour-every-minute-is-history-bbadcec663",
@@ -9437,7 +8595,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-11-28-gremlins-2f6bd218ae",
@@ -9459,9 +8618,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ]
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-29-europe-51-0fd1a54547",
@@ -9483,7 +8641,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-29-once-upon-a-time-in-hollywood-in-70mm-8639ce6088",
@@ -9505,7 +8664,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-11-30-fear-la-paura-in-4k-15eb693d61",
@@ -9527,7 +8687,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-12-01-joan-of-arc-at-the-stake-in-35mm-28af74a0de",
@@ -9549,7 +8710,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0",
@@ -9573,7 +8735,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-12-05-hecho-con-amor-sweet-chocolate-tamales-6-98bf1a1484",
@@ -9595,7 +8758,9 @@
     ],
     "is_free": null,
     "price_text": "$65",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "molaa-2026-12-05-2026-latino-comics-expo-638f2d8af8",
@@ -9617,7 +8782,9 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "getty_center-2026-12-09-curators-tour-instanterevelacion-english-3584c9d2cf",
@@ -9639,7 +8806,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "la_plaza-2026-12-10-sabor-a-mxico-e-italia-osso-bucco-and-sa-c3a0eea7b7",
@@ -9661,7 +8829,9 @@
     ],
     "is_free": null,
     "price_text": "$65",
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
   },
   {
     "id": "getty_center-2026-12-12-nonconsenting-collaborators-with-gala-po-abda060c5a",
@@ -9684,7 +8854,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "angels_gate--raku-ceramics-d774cdf4c7",
@@ -9706,7 +8877,8 @@
     ],
     "is_free": false,
     "price_text": "$60",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-12-15-paul-r-williams-architecture-across-the-a4eddd7dd4",
@@ -9728,7 +8900,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-12-15-curators-tour-every-minute-is-history-64ac824cfe",
@@ -9750,13 +8923,14 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-12-16-visita-guiada-con-la-curadora-instantere-57d1835c69",
     "venue_id": "getty_center",
-    "title": "Visita guiada con la curadora: *Instante/revelaciÃ³n* (espaÃ±ol)",
-    "description": "Este tour se adentrarÃ¡ en el rico entramado de diÃ¡logos culturales y artÃ­sticos que han dado forma a la historia de la fotografÃ­a mexicana",
+    "title": "Visita guiada con la curadora: *Instante/revelación* (español)",
+    "description": "Este tour se adentrará en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía mexicana",
     "event_type": "tour",
     "start": "2026-12-16T15:00:00-08:00",
     "end": null,
@@ -9772,7 +8946,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "18th_street-2026-12-20-citizen-artist-reading-group-6fde45417b",
@@ -9795,7 +8970,8 @@
     ],
     "is_free": true,
     "price_text": "Free",
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2027-01-03-common-ground-b9b186b2da",
@@ -9817,7 +8993,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca",
@@ -9841,7 +9018,8 @@
     "price_text": null,
     "audience": [
       "family"
-    ]
+    ],
+    "_default_type": "other"
   },
   {
     "id": "getty_villa-2027-02-03-ancient-queenship-art-power-and-presence-8303b83b4e",
@@ -9863,7 +9041,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "skirball-2027-02-28-inventing-america-the-comic-book-revolut-ecbb759c8a",
@@ -9885,7 +9064,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "craft_contemporary-2027-12-05-b8217atz8217-legacy-in-guatemalan-textil-4364ccdba8",
@@ -9907,6 +9087,8 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": []
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   }
 ]

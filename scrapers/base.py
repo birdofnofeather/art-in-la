@@ -46,32 +46,34 @@ from .utils.event_type import infer as infer_type, infer_all as infer_types
 from .utils.dateparse import to_la_iso, now_utc_iso
 from .utils import pricing
 from .utils.audience import infer as infer_audience
+from .utils.rules import load as load_rules
+from .utils.text import normalise
 
 LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine for now.
 
-# Multi-day events whose duration exceeds this are treated as exhibitions
-# (date ranges) rather than one-off events.
-EXHIBITION_THRESHOLD = timedelta(hours=36)
+# Every threshold below used to be a constant in this file. They now come from
+# scrapers/rules.yaml so the definition of "exhibition" can be changed without
+# editing code — see the `exhibitions:` block there.
 
-# An "exhibition" running longer than this is a permanent / long-term
-# installation, not a temporary show. We drop these from the record entirely
-# so the Exhibitions tab only ever lists temporary exhibitions. (Real museum
-# temporary shows top out around a year; ~18 months is a generous ceiling.)
-PERMANENT_THRESHOLD = timedelta(days=550)
 
-# Specific event types that are themselves meaningful — a multi-day run of one
-# of these is a recurring programme (a tour series, a workshop series…), NOT an
-# exhibition, so we must never re-type it as one. Only generic ("other") events
-# get promoted to exhibitions by the duration heuristic.
-_NON_EXHIBITION_TYPES = {
-    "tour", "workshop", "lecture", "performance",
-    "screening", "opening", "closing", "fair",
-}
+def _exhibition_threshold() -> timedelta:
+    """Longer than this and a generic event is re-typed as an exhibition."""
+    return timedelta(hours=load_rules().exh_min_duration_hours)
 
-# Titles that are page sections / standing programmes, never a temporary show.
-_NON_EXHIBITION_TITLE_RE = re.compile(
-    r"\b(permanent|semi[- ]permanent)\b", re.IGNORECASE
-)
+
+def _permanent_threshold() -> timedelta:
+    """Longer than this and it is a permanent installation, not a temporary show."""
+    return timedelta(days=load_rules().exh_max_duration_days)
+
+
+def _never_promote_types() -> set[str]:
+    """Types a multi-day run must never be re-labelled 'exhibition'."""
+    return load_rules().exh_never_promote_types
+
+
+def _is_never_exhibition_title(title: str) -> bool:
+    """Titles that are page furniture or standing displays, never a show."""
+    return any(p.search(title or "") for p in load_rules().exh_never)
 
 _HTML_ENTITY = {
     "&amp;": "&", "&lt;": "<", "&gt;": ">", "&nbsp;": " ",
@@ -103,8 +105,9 @@ def _strip_html(text: str) -> str:
             pass
         return s
     text = _ENTITY_RE.sub(replace_entity, text)
-    # Collapse whitespace
-    return re.sub(r"\s+", " ", text).strip()
+    # normalise() repairs character corruption (the "espaÃ±ol" bug), normalises
+    # Unicode, and collapses whitespace — so every scraper gets the fix for free.
+    return normalise(text)
 
 
 @dataclass
@@ -224,7 +227,29 @@ class BaseScraper:
             n_exh = sum(1 for e in events if e.event_type == "exhibition")
             n_one = len(events) - n_exh
             print(f"  [{self.venue_id}] after reshape: {n_one} one-off + {n_exh} exhibition events")
-        return [e.to_dict() for e in events]
+        out = []
+        for e in events:
+            d = e.to_dict()
+            # Recorded so the classification step can re-derive this event's
+            # type from scratch later (see scrapers/classify.py). Without it, a
+            # change to rules.yaml could only affect events scraped afterwards.
+            d["_default_type"] = self.default_event_type
+
+            # Many venues publish their own category for an event (Getty's
+            # category field, LA Plaza's section, Academy Museum's Contentful
+            # type). That is better evidence than guessing from the title, so
+            # it must survive re-classification. We can tell the two apart
+            # without touching all 46 scrapers: if the type on the record is
+            # NOT what reading the text would have produced, the scraper must
+            # have asserted it deliberately.
+            inferred = infer_type(
+                d.get("title") or "", d.get("description") or "",
+                default=self.default_event_type,
+            )
+            if d.get("event_type") and d["event_type"] != inferred:
+                d["_asserted_type"] = d["event_type"]
+            out.append(d)
+        return out
 
     # ------- Strategies -------
 
@@ -394,12 +419,12 @@ class BaseScraper:
         events; those only exist when the source explicitly lists them.
         """
         if ev.event_type == "exhibition":
-            if self._is_permanent(ev) or _NON_EXHIBITION_TITLE_RE.search(ev.title or ""):
+            if self._is_permanent(ev) or _is_never_exhibition_title(ev.title or ""):
                 return None
             return ev
         dur = self._duration(ev)
-        if dur is not None and dur > EXHIBITION_THRESHOLD:
-            if ev.event_type in _NON_EXHIBITION_TYPES:
+        if dur is not None and dur > _exhibition_threshold():
+            if ev.event_type in _never_promote_types():
                 # Recurring programme spanning days — keep its real type.
                 return ev
             if self._is_permanent(ev):
@@ -413,7 +438,7 @@ class BaseScraper:
 
     def _is_permanent(self, ev: Event) -> bool:
         dur = self._duration(ev)
-        return dur is not None and dur > PERMANENT_THRESHOLD
+        return dur is not None and dur > _permanent_threshold()
 
     def _duration(self, ev: Event):
         s = _parse_iso(ev.start)
