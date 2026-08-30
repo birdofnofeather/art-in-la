@@ -134,3 +134,37 @@ def test_recurring_filter_never_invents_events():
     assert len(kept) + len(dropped) >= len(events)
     kept_ids = {e["id"] for e in kept}
     assert kept_ids <= {e["id"] for e in events}, "output contains an event that was never input"
+
+
+# ── Skipped occurrences (found by the eval suite, 2026-08-30) ─────────────
+
+def test_a_weekly_series_that_skips_a_week_is_still_caught():
+    """Wende's 'Illustrating Picture Books' ran weekly but missed a week.
+
+    That gave gaps of 14, 7 and 7 days. The old rule demanded every gap be
+    near-identical, so the 14 disqualified the whole series and three copies of
+    a weekly workshop reached the site. Real programmes skip weeks — for
+    holidays, closures, an ill tutor — and a rhythm test that cannot tolerate
+    that is not a rhythm test.
+    """
+    first = date(2026, 9, 6)
+    dates = [first - timedelta(days=14), first,
+             first + timedelta(days=7), first + timedelta(days=14)]
+    assert has_regular_cadence(dates, 2, 3), "a skipped week must not hide a weekly series"
+
+
+def test_a_monthly_series_is_caught():
+    dates = [date(2026, 9, 1) + timedelta(days=30 * i) for i in range(3)]
+    assert has_regular_cadence(dates, 2, 3)
+
+
+def test_unrelated_events_sharing_a_title_are_not_a_series():
+    """Two things months apart are not a rhythm, however they are named."""
+    dates = [date(2026, 1, 5), date(2026, 1, 12), date(2026, 6, 20)]
+    assert not has_regular_cadence(dates, 2, 3)
+
+
+def test_a_theatre_run_survives_the_multiples_rule():
+    """Consecutive nights must still not be read as a daily programme."""
+    dates = [date(2026, 9, 1) + timedelta(days=i) for i in range(3)]
+    assert not has_regular_cadence(dates, 2, 3)

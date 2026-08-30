@@ -69,25 +69,51 @@ def _as_date(raw):
 
 def has_regular_cadence(dates: list, tolerance_days: int, min_occurrences: int,
                         min_gap_days: int = 3, max_gap_days: int = 45) -> bool:
-    """True if these dates are evenly spaced — the signature of a standing series.
+    """True if these dates follow a regular rhythm — a standing series.
 
-    Needs at least `min_occurrences` distinct dates, whose consecutive gaps all
-    agree to within `tolerance_days` and all fall between `min_gap_days` and
-    `max_gap_days`.
+    Needs at least `min_occurrences` distinct dates. The rhythm is taken from
+    the SHORTEST gap between them, and every other gap must be close to a whole
+    multiple of it.
 
-    The lower bound is the important one. Three performances on three
-    consecutive nights are perfectly evenly spaced, but that is a theatre run —
-    a real event people buy tickets for — not a standing programme. Requiring a
-    gap of at least a few days keeps runs visible while still catching the
-    weekly, fortnightly and monthly programmes that are genuine clutter.
+    Why multiples rather than equal gaps: real programmes skip. Wende's
+    "Illustrating Picture Books" runs weekly but missed a week, giving gaps of
+    14, 7 and 7 days. Demanding that every gap match exactly let it through and
+    put three copies of a weekly workshop on the site. Reading 14 as "two weeks"
+    catches it, and still refuses anything that is not on a beat.
+
+    The lower bound on the rhythm is the other thing that matters. Three
+    performances on three consecutive nights are perfectly evenly spaced, but
+    that is a theatre run — a real event people buy tickets for — not a standing
+    programme.
     """
     uniq = sorted({d for d in dates if d is not None})
     if len(uniq) < max(2, min_occurrences):
         return False
     gaps = [(b - a).days for a, b in zip(uniq, uniq[1:])]
-    if not gaps or min(gaps) < min_gap_days or max(gaps) > max_gap_days:
+    if not gaps:
         return False
-    return (max(gaps) - min(gaps)) <= tolerance_days
+
+    base = min(gaps)
+    if base < min_gap_days or base > max_gap_days:
+        return False
+
+    on_the_beat = 0
+    for gap in gaps:
+        multiple = round(gap / base)
+        # More than two skipped occurrences in a row is not a rhythm any more,
+        # it is two unrelated things that happen to share a title.
+        if multiple < 1 or multiple > 3:
+            return False
+        # Allow the drift to grow with the size of the gap: a fortnight's gap
+        # can wobble by more days than a week's and still be the same series.
+        if abs(gap - multiple * base) > tolerance_days * multiple:
+            return False
+        if multiple == 1:
+            on_the_beat += 1
+
+    # The shortest gap must actually BE the rhythm, not a one-off coincidence
+    # that happens to divide the others.
+    return on_the_beat >= max(1, len(gaps) // 2)
 
 
 # ── Main entry point ──────────────────────────────────────────────────────

@@ -271,6 +271,14 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           {(ev.audience || []).includes("family") && (
             <span className="tag bg-sky-100 text-sky-900">Family</span>
           )}
+          {/* A series that repeats a few times is shown once, with its other
+              dates noted here — otherwise the same curator's tour fills four
+              slots in the list and pushes real one-off events off the page. */}
+          {ev.recurrence_note && (
+            <span className="tag bg-amber-100 text-amber-900" title={ev.recurrence_note}>
+              {ev.recurrence_note}
+            </span>
+          )}
           {relLabel && (
             <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-semibold ${LABEL_STYLE[relLabel] || "bg-ink text-white"}`}>
               {relLabel}
