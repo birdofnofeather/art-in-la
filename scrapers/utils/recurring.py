@@ -32,6 +32,12 @@ from .rules import load
 from .text import title_key
 
 
+def _is_exhibition(ev: dict) -> bool:
+    return (ev.get("event_type") == "exhibition") or (
+        "exhibition" in (ev.get("event_types") or [])
+    )
+
+
 # ── Name matching ─────────────────────────────────────────────────────────
 
 def is_recurring_by_keyword(title: str, description: str = "") -> bool:
@@ -97,8 +103,16 @@ def filter_recurring(events: list[dict]) -> tuple[list[dict], list[dict]]:
     kept: list[dict] = []
     dropped: list[dict] = []
 
+    # Exhibitions are exempt from everything below. An exhibition is a date
+    # RANGE, not a repeated occurrence — "on view for 31 days" is not "happens
+    # every week". Without this exemption a long-running show is mistaken for a
+    # standing programme and vanishes from the site, which is how MOCA's
+    # MONUMENTS and four other shows disappeared.
+    exhibitions = [e for e in events if _is_exhibition(e)]
+    candidates = [e for e in events if not _is_exhibition(e)]
+
     # ── Pass 1: by name ───────────────────────────────────────────────────
-    for ev in events:
+    for ev in candidates:
         if is_recurring_by_keyword(ev.get("title", ""), ev.get("description", "")):
             dropped.append(ev)
         else:
@@ -151,6 +165,9 @@ def filter_recurring(events: list[dict]) -> tuple[list[dict], list[dict]]:
             dropped.extend(ordered[1:])
         else:
             dropped.extend(members)
+
+    # Exhibitions were never candidates; put them back.
+    final.extend(exhibitions)
 
     # Stable output: the caller sorts, but keep it deterministic regardless.
     final.sort(key=lambda e: (str(e.get("start") or ""), e.get("title") or ""))

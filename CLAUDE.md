@@ -157,6 +157,48 @@ were live with mangled Spanish; nothing checked. Quality rules in rules.yaml
 now have a `severity`: `drop` never publishes, `warn` publishes and records the
 problem on the record as `_quality_notes` for the status page.
 
+## Squarespace venues read their own JSON feed
+
+`utils/squarespace.py` + the `squarespace` strategy in `base.py`: any
+Squarespace page returns its data at `?format=json`, and an Events collection
+puts real events under `upcoming`/`past` with proper timestamps, links, images
+and addresses. Covers pieter (47, HTML parser found 24), molaa (15, found 9),
+bergamot_station (9, had no scraper), mak_center, las_fotos_project. The other
+11 Squarespace venues use a plain `page` collection and have no feed.
+Set `squarespace = False` on a subclass to opt out.
+
+## Exhibitions: a second harvest pass
+
+`exhibitions_url` on a scraper triggers a second pass over that page, forcing
+`event_type = "exhibition"`. **Only URL-reading strategies run in that pass** —
+wp_tribe and the iCal probe address the site ROOT and ignore the path, so
+pointed at /exhibitions they return the ordinary events feed and every event
+gets republished as a fabricated exhibition (five venues did this in testing).
+A venue needing bespoke parsing overrides `custom_parse_exhibitions`.
+
+Status: the plumbing is in and costs nothing, but a survey of all 85 venues
+found **no venue with a structured exhibitions feed**. 26 venues still publish
+events and zero exhibitions (LACMA, Hammer, Huntington, Autry, Skirball, JANM,
+Fowler, MOLAA…). Closing that gap needs the LLM extraction tier.
+
+## Exhibitions merge by (venue, title)
+
+A scraper that reads "on view now" and stamps today's date creates a fresh
+record every run — MOCA's MONUMENTS accumulated 31 copies, five MOCA shows 150
+between them. `classify.merge_exhibitions` collapses them to one record
+spanning the widest reported range. Exhibitions are also EXEMPT from the
+recurring filter: an exhibition is a date range, not a repeated occurrence, and
+without the exemption a long-running show is mistaken for a standing programme
+and vanishes.
+
+## Harvest merge rule (do not regress this)
+
+`run_all` replaces a producing venue's UPCOMING records wholesale (so a
+cancelled event disappears) but KEEPS its past records forever — a venue's site
+stops listing an event once it has happened, so a past record can never be
+re-harvested. Replacing everything wholesale took the archive from 757 records
+to 203 in one run.
+
 ## Bot-gated venues: headless-browser render path
 
 Two venues serve an event-less shell (or a hard 429) to plain HTTP clients but

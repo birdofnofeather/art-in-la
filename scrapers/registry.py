@@ -30,6 +30,9 @@ from .venues.wende import Scraper as Wende
 from .venues.vincent_price import Scraper as VincentPrice
 from .venues.pvac import Scraper as PVAC
 from .venues.molaa import Scraper as MOLAA
+from .venues.bergamot_station import Scraper as BergamotStation
+from .venues.williamson_scripps import Scraper as WilliamsonScripps
+from .venues.destination_crenshaw import Scraper as DestinationCrenshaw
 from .venues.mak_center import Scraper as MAKCenter
 from .venues.marciano import Scraper as Marciano
 from .venues.armory_pasadena import Scraper as ArmoryPasadena
@@ -107,6 +110,9 @@ SCRAPERS = [
     VincentPrice,
     PVAC,
     MOLAA,
+    BergamotStation,
+    WilliamsonScripps,
+    DestinationCrenshaw,
     MAKCenter,
     Marciano,
     ArmoryPasadena,

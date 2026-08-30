@@ -112,3 +112,54 @@ def test_a_rules_change_reaches_events_scraped_long_ago():
     assert out["event_type"] == "workshop", (
         "an event stored with a stale label must pick up the current rules"
     )
+
+
+# ── Exhibitions ───────────────────────────────────────────────────────────
+
+def test_repeated_records_of_one_show_merge_into_a_single_exhibition():
+    """MOCA's MONUMENTS accumulated 31 copies, one per day of scraping.
+
+    A scraper that reads "on view now" and stamps today's date creates a fresh
+    record every run. The published listing must show one show, spanning the
+    widest range anyone reported.
+    """
+    from scrapers.classify import merge_exhibitions
+    copies = [
+        {"id": f"m{i}", "venue_id": "moca_grand", "title": "MONUMENTS",
+         "event_type": "exhibition", "description": "",
+         "start": f"2026-10-{i+1:02d}", "end": f"2027-05-{i+1:02d}"}
+        for i in range(5)
+    ]
+    merged = merge_exhibitions(copies)
+    assert len(merged) == 1, "one show must not appear five times"
+    assert merged[0]["start"] == "2026-10-01", "keep the earliest reported start"
+    assert merged[0]["end"] == "2027-05-05", "keep the latest reported end"
+
+
+def test_two_different_shows_at_one_venue_do_not_merge():
+    from scrapers.classify import merge_exhibitions
+    shows = [
+        {"id": "a", "venue_id": "moca_grand", "title": "MONUMENTS",
+         "event_type": "exhibition", "start": "2026-10-01", "end": "2027-05-01"},
+        {"id": "b", "venue_id": "moca_grand", "title": "Fictions of Display",
+         "event_type": "exhibition", "start": "2026-10-01", "end": "2027-05-01"},
+    ]
+    assert len(merge_exhibitions(shows)) == 2
+
+
+def test_a_long_running_exhibition_is_never_hidden_as_recurring():
+    """An exhibition is a date RANGE, not a repeated occurrence.
+
+    Before this exemption, five MOCA shows were mistaken for standing
+    programmes and vanished from the site entirely.
+    """
+    from scrapers.utils.recurring import filter_recurring
+    shows = [
+        {"id": f"e{i}", "venue_id": "moca_grand", "title": f"Show {i}",
+         "event_type": "exhibition", "event_types": ["exhibition"],
+         "description": "", "start": SOON, "end": SOON}
+        for i in range(12)
+    ]
+    kept, dropped = filter_recurring(shows)
+    assert len(kept) == 12, "exhibitions must be exempt from recurring detection"
+    assert dropped == []

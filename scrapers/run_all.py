@@ -154,10 +154,27 @@ def main(argv=None) -> int:
         all_new, results, scraped_venue_ids = scrape(only)
         health, stale_venues = update_health(results)
 
-        # Records for a venue that produced this run are replaced wholesale;
-        # every other venue's records carry over untouched.
+        # Merging the fresh harvest into the stored one.
+        #
+        # A venue that produced this run has its UPCOMING records replaced
+        # wholesale — the scrape is the current truth about what is still to
+        # come, so a cancelled event should disappear.
+        #
+        # Its PAST records are kept regardless. A venue's website stops listing
+        # an event once it has happened, so a past record can never be
+        # re-harvested: dropping it deletes history. Replacing everything
+        # wholesale destroyed the archive in testing, taking it from 757 records
+        # to 203 in a single run.
         producing = {e["venue_id"] for e in all_new if e.get("venue_id")}
-        carryover = [e for e in existing_raw if e.get("venue_id") not in producing]
+        now = datetime.now(timezone.utc)
+        carryover = []
+        for ev in existing_raw:
+            if ev.get("venue_id") not in producing:
+                carryover.append(ev)
+                continue
+            end = _end_of(ev)
+            if end is not None and end < now:
+                carryover.append(ev)          # already happened: this is history
         raw = prune_raw(dedupe(carryover + all_new))
         print(f"\nRaw harvest: {len(raw)} records "
               f"({len(all_new)} fresh, {len(carryover)} carried over).")

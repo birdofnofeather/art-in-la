@@ -3,10 +3,16 @@
 Extraction strategies, tried in order until one returns events:
 
   1. WordPress Tribe Events REST API (auto-detected at /wp-json/tribe/events/v1/events)
-  2. iCal feed (if declared via `ical_url`, or auto-detected at /events/?ical=1)
-  3. JSON-LD schema.org/Event blocks on the events page
-  4. RSS / Atom feed (if declared via `feed_url`)
-  5. Subclass override of `custom_parse(html, base_url) -> list[Event]`
+  2. Squarespace Events collection (auto-detected at <events_url>?format=json)
+  3. iCal feed (if declared via `ical_url`, or auto-detected at /events/?ical=1)
+  4. JSON-LD schema.org/Event blocks on the events page
+  5. Public Eventbrite organizer page (if declared via `eventbrite_url`)
+  6. RSS / Atom feed (if declared via `feed_url`)
+  7. Subclass override of `custom_parse(html, base_url) -> list[Event]`
+
+If `exhibitions_url` is set, a SECOND pass harvests that page for exhibitions
+using strategies 1-6 only (a venue's custom_parse is written for the shape of
+its events page), falling back to `custom_parse_exhibitions` if it defines one.
 
 After collection, every event passes through `_postprocess`:
 
@@ -47,6 +53,7 @@ from .utils.dateparse import to_la_iso, now_utc_iso
 from .utils import pricing
 from .utils.audience import infer as infer_audience
 from .utils.rules import load as load_rules
+from .utils import squarespace as sqs
 from .utils.text import normalise
 
 LA_TZ_OFFSET = "-07:00"  # PDT; PST is -08:00. Daily scrape near-LA time, fine for now.
@@ -185,10 +192,16 @@ class BaseScraper:
 
     venue_id: str = ""
     events_url: str = ""        # Page the site links humans to
+    # Separate page listing the venue's exhibitions, when it has one. Harvested
+    # as a second pass with structured strategies only — see run().
+    exhibitions_url: Optional[str] = None
     ical_url: Optional[str] = None
     feed_url: Optional[str] = None
     wp_root: Optional[str] = None      # Override the WP REST root (defaults to events_url's origin)
     eventbrite_url: Optional[str] = None  # Public Eventbrite organizer page (events embedded as JSON-LD)
+    # Squarespace venues expose their Events collection at ?format=json. Set
+    # False on a subclass if a venue's feed is ever worse than its rendered HTML.
+    squarespace: bool = True
     source_label: str = ""       # Short label, usually the bare domain
     # Type assigned when the text classifier finds no keyword. Venues whose
     # programming is overwhelmingly one format (e.g. Academy Museum = screenings)
@@ -198,26 +211,82 @@ class BaseScraper:
     # Subclass can opt out of post-processing if they really do want raw output.
     drop_exhibitions: bool = True
 
+    def _harvest(self, url: str, default_type: str, allow_custom: bool,
+                 label: str = "") -> list[Event]:
+        """Run the strategy chain against one URL, first non-empty result wins.
+
+        `events_url` and `default_event_type` are swapped in for the duration so
+        the strategies need no changes. One scraper instance handles one venue
+        on one thread, so this is safe.
+        """
+        if allow_custom:
+            strategies = [
+                ("wp_tribe",    self._strategy_wp_tribe),
+                ("squarespace", self._strategy_squarespace),
+                ("ical",        self._strategy_ical),
+                ("jsonld",      self._strategy_jsonld),
+                ("eventbrite",  self._strategy_eventbrite),
+                ("feed",        self._strategy_feed),
+                ("custom",      self._strategy_custom),
+            ]
+        else:
+            # The exhibitions pass. Only strategies that actually READ THE URL
+            # they are given belong here.
+            #
+            # wp_tribe and the iCal auto-probe are excluded because they derive
+            # their address from the site root and ignore the path — pointed at
+            # /exhibitions they cheerfully return the ordinary events feed, and
+            # every event would be duplicated as a fabricated "exhibition".
+            # Five venues did exactly that in testing.
+            strategies = [
+                ("squarespace", self._strategy_squarespace),
+                ("jsonld",      self._strategy_jsonld),
+                ("feed",        self._strategy_feed),
+            ]
+
+        prev_url, prev_default = self.events_url, self.default_event_type
+        self.events_url, self.default_event_type = url, default_type
+        tag = f" ({label})" if label else ""
+        try:
+            for name, strat in strategies:
+                try:
+                    got = list(strat())
+                except Exception as e:
+                    print(f"  [{self.venue_id}] strategy {name}{tag} failed: {e}")
+                    continue
+                if got:
+                    print(f"  [{self.venue_id}] strategy {name}{tag}: {len(got)} raw events")
+                    return got
+        finally:
+            self.events_url, self.default_event_type = prev_url, prev_default
+        return []
+
     def run(self) -> list[dict]:
-        strategies = (
-            ("wp_tribe",   self._strategy_wp_tribe),
-            ("ical",       self._strategy_ical),
-            ("jsonld",     self._strategy_jsonld),
-            ("eventbrite", self._strategy_eventbrite),
-            ("feed",       self._strategy_feed),
-            ("custom",     self._strategy_custom),
-        )
-        events: list[Event] = []
-        for name, strat in strategies:
-            try:
-                got = list(strat())
-            except Exception as e:
-                print(f"  [{self.venue_id}] strategy {name} failed: {e}")
-                got = []
-            if got:
-                print(f"  [{self.venue_id}] strategy {name}: {len(got)} raw events")
-                events = got
-                break
+        events = self._harvest(self.events_url, self.default_event_type,
+                               allow_custom=True)
+
+        # Second pass: many museums list their shows on a separate exhibitions
+        # page that the events page never links to. Without this, exhibitions
+        # only ever appeared by accident — when something on the events page
+        # happened to run long enough to be re-typed — which is why LACMA,
+        # Hammer, Huntington, Autry, Skirball, JANM, Fowler and MOLAA all
+        # published zero exhibitions while looking perfectly healthy.
+        #
+        # Only the structured strategies run here. A venue's custom_parse is
+        # written for the shape of its EVENTS page and would produce nonsense
+        # against a different one; a venue that needs bespoke exhibition
+        # parsing overrides custom_parse_exhibitions instead.
+        if self.exhibitions_url:
+            shows = self._harvest(self.exhibitions_url, "exhibition",
+                                  allow_custom=False, label="exhibitions")
+            if not shows:
+                shows = list(self._strategy_custom_exhibitions())
+            for ev in shows:
+                ev.event_type = "exhibition"
+            existing = {(e.title or "").strip().lower() for e in events}
+            events += [e for e in shows
+                       if (e.title or "").strip().lower() not in existing]
+
         if not events:
             print(f"  [{self.venue_id}] no strategy returned events")
             return []
@@ -296,6 +365,44 @@ class BaseScraper:
                 image=image,
                 is_free=tribe_free,
                 price_text=tribe_price,
+                source=self.source_label or self._domain(self.events_url),
+                scraped_at=now_utc_iso(),
+            )
+
+    def _strategy_squarespace(self) -> Iterable[Event]:
+        """Squarespace Events collections publish clean JSON at ?format=json.
+
+        Tried early because it is structured data straight from the venue's own
+        CMS — strictly better than parsing the rendered page, and it cannot
+        break when they restyle the site. Set `squarespace: bool = False` on a
+        subclass to opt out if a venue's feed is ever worse than its HTML.
+        """
+        if not self.squarespace or not self.events_url:
+            return
+        data = sqs.fetch(self.events_url)
+        if not data or not sqs.is_event_collection(data):
+            return
+        for item in sqs.items(data):
+            title = _strip_html(item.get("title") or "")
+            if not title:
+                continue
+            desc = _strip_html(item.get("excerpt") or item.get("body") or "")
+            start = to_la_iso(sqs.epoch_ms_to_iso(item.get("startDate")))
+            end = to_la_iso(sqs.epoch_ms_to_iso(item.get("endDate")))
+            url = sqs.absolute_url(self.events_url, item.get("fullUrl"))
+            image = item.get("assetUrl") or None
+            yield Event(
+                id=event_id(self.venue_id, start, title),
+                venue_id=self.venue_id,
+                title=title,
+                description=desc[:800],
+                event_type=infer_type(title, desc, default=self.default_event_type),
+                start=start,
+                end=end,
+                all_day=bool(start and "T" not in str(start)),
+                url=url,
+                image=image,
+                location_override=sqs.location_name(item),
                 source=self.source_label or self._domain(self.events_url),
                 scraped_at=now_utc_iso(),
             )
@@ -389,6 +496,20 @@ class BaseScraper:
 
     # Override this in subclasses for per-site HTML parsing.
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
+        return []
+
+    def _strategy_custom_exhibitions(self) -> Iterable[Event]:
+        if not self.exhibitions_url:
+            return
+        resp = get(self.exhibitions_url)
+        if not resp or not resp.ok:
+            return
+        yield from self.custom_parse_exhibitions(resp.text, resp.url)
+
+    # Override for venues whose exhibitions page needs bespoke parsing. Kept
+    # separate from custom_parse because the two pages have different shapes
+    # and reusing one parser for both silently produces garbage.
+    def custom_parse_exhibitions(self, html: str, base_url: str) -> Iterable[Event]:
         return []
 
     # ------- Post-processing -------
