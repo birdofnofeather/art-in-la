@@ -14,6 +14,70 @@ Run it yourself with `python -m scrapers.evals`.
 
 ---
 
+## 2026-08-31 — FAIL
+
+25 passed, 1 failed, 0 need watching, 0 could not run.
+
+### What is broken
+
+**D1 — Is the status report calling anything healthy that clearly is not?**
+
+1 venue(s) are reported green while publishing nothing at all. A monitor that reports a silent venue as healthy is worse than no monitor, because it actively tells you not to look.
+
+- museum_of_tolerance
+
+### Checked against the outside world
+
+3 of these checks compared us against the venues' own websites rather than against our own code. They all passed.
+
+### Every check
+
+| | Check | Result |
+|---|---|---|
+| `A1` 🌐 | Do the events we publish actually appear on the venue's own page? | **PASS** |
+| `A2` 🌐 | Does each event's date actually appear on the venue's page? | **PASS** |
+| `A3` 🌐 | Do the links we publish still work? | **PASS** |
+| `B1`  | Has any of our record of past events been lost? | **PASS** |
+| `B2`  | Did events that had not happened yet disappear from the site? | **PASS** |
+| `B3`  | Has the overall number of events moved sharply? | **PASS** |
+| `B4`  | Has any individual venue lost most of its events? | **PASS** |
+| `C1`  | Does the safety gate still refuse to publish obviously broken data? | **PASS** |
+| `C2`  | Do the text-quality rules still catch unreadable text? | **PASS** |
+| `C3`  | Are the curation decisions you made on purpose still holding? | **PASS** |
+| `D1`  | Is the status report calling anything healthy that clearly is not? | **FAIL** |
+| `D2`  | Is the status report quiet enough to be worth reading? | **PASS** |
+| `D3`  | Are the written expectations still sensible? | **PASS** |
+| `E1`  | Is any published text still garbled? | **PASS** |
+| `E2`  | Does the same event appear more than once? | **PASS** |
+| `E3`  | Does every event belong to a venue we actually know about? | **PASS** |
+| `E4`  | Are we still advertising events that already happened? | **PASS** |
+| `E5`  | Does every event have a date? | **PASS** |
+| `E6`  | How many events could we not put into any category? | **PASS** |
+| `E7`  | Are any weekly or monthly programmes still leaking onto the site? | **PASS** |
+| `F1`  | Is the daily scrape still running? | **PASS** |
+| `F2`  | Did the last run manage to publish? | **PASS** |
+| `F3`  | Can the published list be reproduced exactly from the stored harvest? | **PASS** |
+| `F4`  | Does the test suite still pass? | **PASS** |
+| `F5`  | Do the curation rules still agree with their own examples? | **PASS** |
+| `G1`  | Can these checks still detect a problem when there is one? | **PASS** |
+
+---
+### Notes from this run
+
+Done by hand rather than by the scheduled session, which turned out to be unable to save its work at all (see the watchlist — the schedule has been deleted).
+
+Checked against the venues' own websites: 21 of 23 sampled events were found on the page they link to (91%), 20 of 23 had their date visible, 2 of 25 links could not be opened. Both dead links are the Huntington and Norton Simon, which block automated requests and are known cases.
+
+Fixed one thing: the Museum of Tolerance was being reported healthy while its page on the site was empty. It sat just under every alarm at once — two silent days where the alarm needs three, no upcoming dates on its own website so the page comparison declined to judge, and nothing scraped that day so the 'scraped something but published nothing' check did not apply. A venue showing visitors nothing is now never reported as healthy. Of the seventeen venues currently publishing nothing, sixteen were already flagged, so this adds one venue rather than a wave of noise.
+
+Note: check D1 still shows as failed in this entry. That is expected — the status report it reads was built by this morning's scrape, before the fix. It will clear when tonight's scrape rebuilds it.
+
+Also triggered the nightly scrape by hand: it had not run today and the site was showing yesterday's listings. Data is now 1.6 hours old.
+
+Left alone deliberately: the ten venues that were already silent before this work began, and the two dead links above, which are the venues' own blocking rather than our fault.
+
+---
+
 ## 2026-08-30 — WARN
 
 24 passed, 0 failed, 2 need watching, 0 could not run.

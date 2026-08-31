@@ -255,6 +255,30 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
             f"found was filtered out, so the site shows nothing for this venue"
         )
 
+    # ── Nothing on the site for this venue ───────────────────────────────
+    # A venue showing visitors nothing is never "green". Museum of Tolerance
+    # sat green while publishing nothing at all, because it landed just under
+    # every threshold at once: two silent runs (the alarm needs three), no
+    # future dates on its page (so the page comparison declined to judge), and
+    # nothing harvested this run (so the "harvested but published none" check
+    # did not apply). Every witness declined, and silence read as health.
+    #
+    # This may well be innocent — a small venue between programmes — so it is
+    # yellow rather than red, and the reason says which. But "green" has to
+    # mean "we checked and it is working", not "we found no evidence either
+    # way". That distinction is the whole point of the report.
+    if n_total == 0 and verdict == GREEN:
+        verdict = YELLOW
+        if dates_on_page == 0:
+            reasons.append(
+                "nothing on the site for this venue — though its own page shows "
+                "no upcoming dates either, so this may simply be a quiet period"
+            )
+        else:
+            reasons.append(
+                "nothing on the site for this venue, and no check could tell us why"
+            )
+
     # ── Quality of what we did publish ───────────────────────────────────
     notes = []
     for ev in published:

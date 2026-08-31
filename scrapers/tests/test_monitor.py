@@ -38,11 +38,20 @@ def test_curation_hiding_events_is_not_treated_as_breakage():
     assert r["verdict"] == GREEN, r["reasons"]
 
 
-def test_a_sparse_page_is_not_judged():
-    """A venue with genuinely little on must not be called broken."""
+def test_a_sparse_page_does_not_trigger_the_page_comparison():
+    """A venue with genuinely little on must not be accused of a broken parser.
+
+    This checks WITNESS 1 specifically. The venue is still flagged — it is
+    publishing nothing, and "green" has to mean we verified it works — but the
+    reason must not claim its parser is missing events the page is showing,
+    because the page is not showing any.
+    """
     r = assess_venue("x", produced=[], published=[], health={}, expectation={},
                      dates_on_page=2)
-    assert r["verdict"] == GREEN
+    assert not any("advertises" in reason for reason in r["reasons"]), (
+        "witness 1 must stay silent when the page has almost nothing on it"
+    )
+    assert r["verdict"] != RED
 
 
 # ── Triage: their problem vs ours ─────────────────────────────────────────
@@ -227,3 +236,36 @@ def test_drift_is_judged_once_there_is_a_real_baseline():
                      health={"recent_counts": [40, 41, 39, 42, 40]},
                      expectation={}, dates_on_page=None)
     assert r["verdict"] == YELLOW
+
+
+def test_a_venue_showing_visitors_nothing_is_never_green():
+    """Museum of Tolerance sat green while its page on the site was empty.
+
+    It landed just under every threshold at once: two silent runs where the
+    alarm needs three, no upcoming dates on its own page so the page comparison
+    declined to judge, and nothing harvested that run so the "harvested but
+    published none" check did not apply. Every witness declined, and silence
+    read as health.
+
+    "Green" must mean "we checked and it works", not "we found no evidence
+    either way".
+    """
+    r = assess_venue("museum_of_tolerance", produced=[], published=[],
+                     health={"zero_streak": 2, "last_success": "2026-08-30"},
+                     expectation={}, dates_on_page=0)
+    assert r["verdict"] == YELLOW
+    assert "nothing on the site" in " ".join(r["reasons"])
+
+
+def test_a_quiet_venue_says_so_rather_than_implying_a_fault():
+    """If the venue's own page has nothing on either, say that plainly."""
+    r = assess_venue("somewhere", produced=[], published=[], health={},
+                     expectation={}, dates_on_page=0)
+    assert "quiet period" in " ".join(r["reasons"])
+
+
+def test_a_venue_that_publishes_events_is_unaffected():
+    published = [_ev("lacma") for _ in range(4)]
+    r = assess_venue("lacma", produced=published, published=published, health={},
+                     expectation={}, dates_on_page=None)
+    assert r["verdict"] == GREEN
