@@ -16,6 +16,68 @@ Run it yourself with `python -m scrapers.evals`.
 
 ## 2026-08-31 — FAIL
 
+23 passed, 1 failed, 2 need watching, 0 could not run.
+
+### What is broken
+
+**D1 — Is the status report calling anything healthy that clearly is not?**
+
+1 venue(s) are reported green while publishing nothing at all. A monitor that reports a silent venue as healthy is worse than no monitor, because it actively tells you not to look.
+
+- museum_of_tolerance
+
+### Worth watching
+
+- **A3** Do the links we publish still work? — 3 of 25 sampled links could not be opened. Some venues block automated requests while working fine in a browser, so a handful is expected; a lot means we are sending people to pages that no longer exist.
+    - [huntington] https://www.huntington.org/event/reading-octavia-e-butlers-lost-novel
+    - [norton_simon] https://www.nortonsimon.org/calendar/2026/fall-2026/Manets-Execution-of-Maximilian-Exhibition-in-Context-11-14-2026-500PM#2026-11-14
+    - [armory_pasadena] https://armoryarts.org/calendar/events/nurtured-flames-curatorial-walkthrough-with
+- **F3** Can the published list be reproduced exactly from the stored harvest? — 1 event(s) differ between what is published and what the rules produce from the stored harvest. Small differences are normal — dates move on between the scrape and this check — but a large number means something edited the published file directly, and the next scrape would silently throw that edit away.
+
+### Checked against the outside world
+
+3 of these checks compared us against the venues' own websites rather than against our own code. 1 of them found a problem — those are listed above.
+
+### Every check
+
+| | Check | Result |
+|---|---|---|
+| `A1` 🌐 | Do the events we publish actually appear on the venue's own page? | **PASS** |
+| `A2` 🌐 | Does each event's date actually appear on the venue's page? | **PASS** |
+| `A3` 🌐 | Do the links we publish still work? | **WARN** |
+| `B1`  | Has any of our record of past events been lost? | **PASS** |
+| `B2`  | Did events that had not happened yet disappear from the site? | **PASS** |
+| `B3`  | Has the overall number of events moved sharply? | **PASS** |
+| `B4`  | Has any individual venue lost most of its events? | **PASS** |
+| `C1`  | Does the safety gate still refuse to publish obviously broken data? | **PASS** |
+| `C2`  | Do the text-quality rules still catch unreadable text? | **PASS** |
+| `C3`  | Are the curation decisions you made on purpose still holding? | **PASS** |
+| `D1`  | Is the status report calling anything healthy that clearly is not? | **FAIL** |
+| `D2`  | Is the status report quiet enough to be worth reading? | **PASS** |
+| `D3`  | Are the written expectations still sensible? | **PASS** |
+| `E1`  | Is any published text still garbled? | **PASS** |
+| `E2`  | Does the same event appear more than once? | **PASS** |
+| `E3`  | Does every event belong to a venue we actually know about? | **PASS** |
+| `E4`  | Are we still advertising events that already happened? | **PASS** |
+| `E5`  | Does every event have a date? | **PASS** |
+| `E6`  | How many events could we not put into any category? | **PASS** |
+| `E7`  | Are any weekly or monthly programmes still leaking onto the site? | **PASS** |
+| `F1`  | Is the daily scrape still running? | **PASS** |
+| `F2`  | Did the last run manage to publish? | **PASS** |
+| `F3`  | Can the published list be reproduced exactly from the stored harvest? | **WARN** |
+| `F4`  | Does the test suite still pass? | **PASS** |
+| `F5`  | Do the curation rules still agree with their own examples? | **PASS** |
+| `G1`  | Can these checks still detect a problem when there is one? | **PASS** |
+
+---
+### Notes from this run
+
+Automatic run from GitHub Actions.
+
+---
+
+## 2026-08-31 — FAIL
+
 25 passed, 1 failed, 0 need watching, 0 could not run.
 
 ### What is broken
