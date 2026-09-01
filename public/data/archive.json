@@ -1,77 +1,5 @@
 [
   {
-    "id": "usc_fisher--charles-arnoldi-four-decadesexh-b9a8519ad9",
-    "venue_id": "usc_fisher",
-    "title": "Charles Arnoldi | Four Decades",
-    "description": "USC Fisher Museum of Art proudly presents Charles Arnoldi | Four Decades, a survey of the versatile and prolific Venice Beach artist, which traces the evolution of the artist’s expansive and materials-focused practice from the 1970s to the present.",
-    "event_type": "exhibition",
-    "start": "2020-01-21",
-    "end": "2020-04-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/charles-arnoldi-four-decades/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-31T14:56:09+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "exhibition"
-  },
-  {
-    "id": "usc_fisher--dan-mccleary-oaxaca-20-years-of-prints-f-d02c91f3a7",
-    "venue_id": "usc_fisher",
-    "title": "Dan McCleary OAXACA 20 years of prints from the Taller Sangfer",
-    "description": "Twenty-two years ago, Los Angeles artist Dan McCleary was introduced to Oaxaca by friends and fellow artists, James hd Brown and Alexandra Brown.",
-    "event_type": "exhibition",
-    "start": "2021-07-01",
-    "end": "2021-12-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/dan-mccleary-oaxaca-20-years-of-prints-from-the-taller-sangfer/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-31T14:56:09+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "exhibition"
-  },
-  {
-    "id": "usc_fisher--art-and-hope-at-the-end-of-the-tunnelexh-bc2d326cb9",
-    "venue_id": "usc_fisher",
-    "title": "Art and Hope at the End of the Tunnel",
-    "description": "USC Fisher Museum of Art is proud to announce the opening of our Fall 2021 exhibition, “Art and hope at the end of the Tunnel”, a group show curated by renowned art critic Edward Goldman and featuring dozens of artists who call the Los Angeles area home.",
-    "event_type": "exhibition",
-    "start": "2021-09-10",
-    "end": "2021-12-04",
-    "all_day": true,
-    "url": "https://fisher.usc.edu/exhibitions/art-and-hope-at-the-end-of-the-tunnel/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "fisher.usc.edu+llm",
-    "scraped_at": "2026-08-31T14:56:09+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "exhibition"
-  },
-  {
     "id": "getty_center-2023-10-03-untold-stories-of-a-monumental-pastelexh-01cdb4badd",
     "venue_id": "getty_center",
     "title": "Untold Stories of a Monumental Pastel",
@@ -84,27 +12,6 @@
     "image": null,
     "artists": [],
     "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-05-31T00:04:59+00:00",
-    "_default_type": "other",
-    "event_types": [
-      "exhibition"
-    ],
-    "audience": []
-  },
-  {
-    "id": "getty_center-2024-05-28-on-thin-ice-dutch-depictions-of-extreme-7f51c34f84",
-    "venue_id": "getty_center",
-    "title": "On Thin Ice: Dutch Depictions of Extreme Weather",
-    "description": "Exhibitions",
-    "event_type": "exhibition",
-    "start": "2024-05-28",
-    "end": "2024-09-01",
-    "all_day": true,
-    "url": "https://www.getty.edu/art/exhibitions/thin_ice/index.html",
-    "image": null,
-    "artists": [],
-    "location_override": null,
     "source": "getty.edu",
     "scraped_at": "2026-05-31T00:04:59+00:00",
     "_default_type": "other",
@@ -3581,6 +3488,29 @@
       "other"
     ],
     "audience": []
+  },
+  {
+    "id": "lbma-2026-05-31-imagine-this-lbusd-elementary-exhibition-10594112f7",
+    "venue_id": "lbma",
+    "title": "Imagine This: LBUSD Elementary Exhibition",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-05-31",
+    "end": "2026-08-31",
+    "all_day": true,
+    "url": "https://www.lbma.org/exhibitions/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lbma.org",
+    "scraped_at": "2026-08-30T12:40:39+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "hammer-2026-05-31-primary-election-polling-place-7aeabe5d11",
@@ -14322,5 +14252,100 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-08-31-oneeyed-jacks-in-4k-e2278f7311",
+    "venue_id": "academy_museum",
+    "title": "One-Eyed Jacks in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-31",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/one-eyed-jacks-019de522-dc97-112e-3113-d16e7bff810d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3MieACLgwh4CEY2zorvPWX/cbcdbcb77392eb02917c9c7299686c83/Aug31_ONE_EYED_JACKS_Vista2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-01T12:26:33+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "wende-2026-08-31-the-life-and-death-of-colonel-blimp-cine-5b65df9c24",
+    "venue_id": "wende",
+    "title": "The Life and Death of Colonel Blimp | Cinema Under Pressure",
+    "description": "Cinema Under Pressure is a Monday night film series at The Wende Museum. It explores the struggles over what audiences are permitted to see. Each screening is paired with a discussion featuring a guest expert. This month’s film is The Life and Death of Colonel Blimp (1943), written, produced, and directed by Michael Powell and Emeric Pressburger. The story follows British officer Clive Candy across forty years of war, peace, and love. His closest friend is a German officer. Winston Churchill learned of the production in 1942 and asked his ministers to find a way to stop it. The War Office refused to lend the filmmakers military support. Once the film was finished, Churchill tried to block its export. Government reviewers found no reason to suppress it, and the film opened in London in June",
+    "event_type": "screening",
+    "start": "2026-08-31T18:00:00-07:00",
+    "end": "2026-08-31T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/the-life-and-death-of-colonel-blimp-cinema-under-pressure/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/07/blimp-16x9-1-scaled.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-08-31T14:56:05+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-01-oneeyed-jacks-in-4k-c7b7d6b077",
+    "venue_id": "academy_museum",
+    "title": "One-Eyed Jacks in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-08-31T19:30:00-07:00",
+    "end": "2026-08-31T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/one-eyed-jacks-019de522-dc97-112e-3113-d16e7bff810d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3MieACLgwh4CEY2zorvPWX/cbcdbcb77392eb02917c9c7299686c83/Aug31_ONE_EYED_JACKS_Vista2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-08-31T14:56:07+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "human_resources-2026-08-31-cecilia-vicuas-what-is-poetry-to-you-580ab9413c",
+    "venue_id": "human_resources",
+    "title": "Cecilia Vicuña’s What Is Poetry to You?",
+    "description": "Tickets Cecilia Vicuña’s What Is Poetry to You? with readings by Nikki Ochoa, Ivanna Baranova, and Venya Gushchin Cecilia Vicuña, What Is Poetry to You? 1980, 23 min. Vicuña asks passersby on the streets of Bogotá—including fellow artists and poets, sex workers, children, a police officer, and a scientist—the question: “What is poetry to you?” The surprising answers she elicits reveal the richness of oral culture in Colombia. ~ Nikki Ochoa is an Ancient Baby from Kudzu covered forests. She is a writer and experimental artist. She directs Punitive Worm, an ever changing performance art group interested in liberation from capitalist colonial narratives. She was educated at UCLA and CAL ARTS. She often works with Atlanta based performance art group Tooth Lifeless. From sculpture to sound, her",
+    "event_type": "performance",
+    "start": "2026-08-31T20:00:00-07:00",
+    "end": "2026-08-31T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/cecilia-vicunas-what-is-poetry-to-you/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/IMG_9220.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-08-31T14:56:04+00:00",
+    "event_types": [
+      "performance",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
   }
 ]
