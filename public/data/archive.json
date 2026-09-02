@@ -14347,5 +14347,78 @@
       "family"
     ],
     "_default_type": "other"
+  },
+  {
+    "id": "18th_street-2026-09-01-the-intersection-with-crazy-space-return-fec4162adf",
+    "venue_id": "18th_street",
+    "title": "The Intersection with Crazy Space Returns",
+    "description": "The Intersection with Crazy Space Returns Tuesday, September 1st | 5PM – 7PM 18th Street Arts Center 1639 18th Street. Santa Monica, CA 90404 Free + Open to the Public These gatherings are dedicated to gathering our community around good food, conversation, and art. Please stop by for a bite and chat with our community and learn about Crazy Space, an initiative of High Performance: Low Drama curated by Michael Ano and Marcus Kuiland-Nazario. For this Intersection, Crazy Spacers will present a panel revisiting its history, with photographs, slides and ephemera, and announce their upcoming winter/spring programs taking place January – March 2027 at the 18th Street Arts Center. Crazy Space Returns 2027 is led by a cohort of past and present Crazy Space artists. Crazy Space is an inter discipl",
+    "event_type": "workshop",
+    "start": "2026-09-01T17:00:00-07:00",
+    "end": "2026-09-01T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://18thstreet.org/event/the-intersection-with-crazy-space-returns/",
+    "image": "https://18thstreet.org/wp-content/uploads/2026/06/Crazy-Space.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "18thstreet.org",
+    "scraped_at": "2026-09-01T12:26:27+00:00",
+    "event_types": [
+      "workshop",
+      "performance",
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "getty_center-2026-09-01-picturing-los-angeles-and-mexico-city-09706f2ab5",
+    "venue_id": "getty_center",
+    "title": "Picturing Los Angeles and Mexico City",
+    "description": "Talk",
+    "event_type": "lecture",
+    "start": "2026-09-01T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/picturing-la-mexico",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-01T12:26:26+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "human_resources-2026-09-01-elana-mann-susan-mogul-are-you-a-mann-or-74193c8771",
+    "venue_id": "human_resources",
+    "title": "Elana Mann, Susan Mogul, Are you a Mann or a Mogul?",
+    "description": "Tickets Elana Mann and Susan Mogul share a screen at Human Resources Los Angeles, with short videos from the mid 1970s through 2026. Through humor, storytelling, and spectacle Mann and Mogul perform various roles, including artist as billboard worker, artist as stand-up comic, artist as satellite dish, artist as oil rig and artist as donkey. The videos poke at the boundaries of art and the job of an artist in society. The program will last approximately an hour, followed by a post-screening conversation between Mann and Mogul and a Q+A with the audience. Popsicles and refreshments by Max and Gabriella Mann-Leonard will be available for purchase. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "screening",
+    "start": "2026-09-01T20:00:00-07:00",
+    "end": "2026-09-01T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/are-you-a-mann-or-a-mogul/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/Promo-image-Mann-or-Mogul-final-scaled.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-01T12:26:29+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
