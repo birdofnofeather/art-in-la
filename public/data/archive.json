@@ -14541,6 +14541,31 @@
     "_asserted_type": "workshop"
   },
   {
+    "id": "molaa-2026-09-02-molaa-food-pantry-35ee5fdb63",
+    "venue_id": "molaa",
+    "title": "MOLAA Food Pantry",
+    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
+    "event_type": "other",
+    "start": "2026-09-02T16:00:00-07:00",
+    "end": "2026-09-03",
+    "all_day": false,
+    "url": "https://molaa.org/events/2026/09/02/foodpantry",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-09-02T12:00:36+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "calarts-2026-09-02-school-of-music-welcome-concert-5eca006768",
     "venue_id": "calarts",
     "title": "School of Music Welcome Concert",
@@ -14624,6 +14649,124 @@
     "location_override": null,
     "source": "humanresourcesla.com",
     "scraped_at": "2026-09-02T12:00:36+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-03-barry-lyndon-in-35mm-83300e7eae",
+    "venue_id": "academy_museum",
+    "title": "Barry Lyndon in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-03",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/barry-lyndon-019fc89b-1225-eeaf-4075-7229824fea60",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5kGWWFNMp2MKREZjpUpFJ9/0d7b4afb5ea60facb2ccc59479e7a98a/Sep3_BARRY_LYNDON_Glow1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-04T12:01:45+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "autry-2026-09-03-sizzling-summer-nights-rush-hour-orquest-23e0424a2e",
+    "venue_id": "autry",
+    "title": "Sizzling Summer Nights | Rush Hour Orquesta",
+    "description": "Family Activities, Live Performances, Member Events, Autry Outdoors",
+    "event_type": "performance",
+    "start": "2026-09-03T18:00:00-07:00",
+    "end": "2026-09-03T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/family-activities/sizzling-summer-nights-rush-hour-orquesta",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2025-06/MTK03022.JPG?h=caf26d13&itok=ZG0lHA6j",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-09-03T11:59:59+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "pieter-2026-09-03-ballet4lyfe-with-adie-san-diego-edd759a202",
+    "venue_id": "pieter",
+    "title": "BALLET4LYFE with Adie San Diego",
+    "description": "BALLET4LYFE with Adie San Diego!",
+    "event_type": "other",
+    "start": "2026-09-03T19:00:00-07:00",
+    "end": "2026-09-03T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://pieterpasd.com/programs/ballet4lyfe-with-adie",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d30f87ab8d965a2edb3f85/1787857631731-6CES6ZNGGP9KRZ1JNKOW/BALLET4LYFESQUARE.png",
+    "artists": [],
+    "location_override": "Pieter Performance Space, 2701 North Broadway",
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-09-03T12:00:02+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-04-barry-lyndon-in-35mm-95e2e9e282",
+    "venue_id": "academy_museum",
+    "title": "Barry Lyndon in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-03T19:00:00-07:00",
+    "end": "2026-09-03T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/barry-lyndon-019fc89b-1225-eeaf-4075-7229824fea60",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5kGWWFNMp2MKREZjpUpFJ9/0d7b4afb5ea60facb2ccc59479e7a98a/Sep3_BARRY_LYNDON_Glow1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-03T11:59:55+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "human_resources-2026-09-03-green-card-by-bruce-and-norman-yonemoto-25ec91c794",
+    "venue_id": "human_resources",
+    "title": "Green Card by Bruce and Norman Yonemoto",
+    "description": "Tickets Green Card: An American Romance , Bruce and Norman Yonemoto 1982 77 Minutes Courtesy of Electronic Arts Intermix (EAI) , New York. Green Card: An American Romanc e is the third and final installment in the Yonemotos’ Soap Opera Series, following Based on Romance (1979) and An Impotent Metaphor (1979). Satirizing 1980s Los Angeles and the city’s burgeoning art scene, Green Card betrays the Yonemotos’ fascination with the melodramatic clichés of American soap operas and the films of Douglas Sirk, drawing on the vernacular of Southern California’s entertainment industry. The video tells the story of Sumie Nobuhara, a Japanese artist studying in the US, who must pursue a green card marriage with an American surfer/filmmaker in order to secure her path to an artistic career, instead of",
+    "event_type": "screening",
+    "start": "2026-09-03T20:00:00-07:00",
+    "end": "2026-09-03T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/green-card-by-bruce-yonemoto/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/63255e2ec25348cb460a9323366d34e3071ba7fa-4617x3384-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-03T11:59:49+00:00",
     "event_types": [
       "screening",
       "performance"
