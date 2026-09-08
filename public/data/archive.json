@@ -15641,5 +15641,103 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-09-07-labor-day-museum-open-with-special-admis-83f6dcc85a",
+    "venue_id": "autry",
+    "title": "Labor Day: Museum Open with Special Admission Discount",
+    "description": "Holidays, Family Activities",
+    "event_type": "other",
+    "start": "2026-09-07T10:00:00-07:00",
+    "end": "2026-09-07T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/holidays/labor-day-museum-open-special-admission-discount",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_labor-day-2.jpg?h=0dd9533c&itok=KRbgBHsw",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-09-07T13:22:12+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-09-07-musuem-open-on-labor-day-with-discounted-cc2b2a9ab5",
+    "venue_id": "autry",
+    "title": "Musuem Open on Labor Day with Discounted Admission",
+    "description": "Family Activities, Member Events",
+    "event_type": "other",
+    "start": "2026-09-07T10:00:00-07:00",
+    "end": "2026-09-07T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/family-activities/musuem-open-labor-day-discounted-admission",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_labor-day-2.jpg?h=0dd9533c&itok=KRbgBHsw",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-09-07T13:22:12+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "human_resources-2026-09-07-maggie-lee-judy-fiskin-mommy-paired-with-b706663072",
+    "venue_id": "human_resources",
+    "title": "Maggie Lee + Judy Fiskin: Mommy paired with I’ll Remember Mama",
+    "description": "Tickets Maggie Lee’s Mommy paired with Judy Fiskin’s I’ll Remember Mama Mommy 2015, 56:22 min, color, sound, HD video Produced during Lee’s trip to her childhood home in New Jersey after the unexpected death of her mother, Mommy weaves the artist’s memories into a kaleidoscopic narrative of devotion, memory, intrafamilial desires, and the evolution of American subcultures on the Internet. Using her mother’s unfinished autobiography as a starting point, Lee infuses personal and family history, situating Mommy as a story of her mother’s life as well as her own. Lee’s inclusion of family artifacts across decades—including home movies, family pictures, menus from her parents’ restaurant, and handwritten notes from her mother—contends with the shifting fidelity of images to the people and memor",
+    "event_type": "screening",
+    "start": "2026-09-07T20:00:00-07:00",
+    "end": "2026-09-07T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/maggie-lee-judy-fiskin-mommy-paired-with-ill-remember-mama/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/MV5BYzYxMWVjYzQtNjg1OC00MjFmLTgyOGEtZTY2NTRiODA4OWY0XkEyXkFqcGc@._V1_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-07T13:22:07+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "human_resources-2026-09-07-hausu-e5c5c14c11",
+    "venue_id": "human_resources",
+    "title": "HAUSU",
+    "description": "Tickets How to describe Nobuhiko Obayashi’s indescribable 1977 movie House ( Hausu )? As a psychedelic ghost tale? A stream-of-consciousness bedtime story? An episode of Scooby-Doo as directed by Mario Bava? Any of the above will do for this hallucinatory head trip about a schoolgirl who travels with six classmates to her ailing aunt’s creaky country home and comes face-to-face with evil spirits, a demonic house cat, a bloodthirsty piano, and other ghoulish visions, all realized by Obayashi via mattes, animation, and collage effects. Equally absurd and nightmarish, House might have been beamed to Earth from some other planet. Never before available on home video in the United States, it’s one of the most exciting cult discoveries in years. Add to calendar Google Calendar iCalendar Outlook",
+    "event_type": "screening",
+    "start": "2026-09-07T22:00:00-07:00",
+    "end": "2026-09-07T23:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/hausu/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/HAUSU-web-image.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-07T13:22:07+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
