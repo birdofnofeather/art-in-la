@@ -11027,29 +11027,6 @@
     "_default_type": "other"
   },
   {
-    "id": "hammer-2026-08-08-art-lab-a9c60694c3",
-    "venue_id": "hammer",
-    "title": "Art Lab",
-    "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
-    "event_type": "workshop",
-    "start": "2026-08-08T13:00:16-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2025-05/art-lab.jpg?h=8a98ae83&itok=u-3cxmdn",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-09T07:55:16+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "academy_museum-2026-08-08-popcorn-disabilities-conversation-and-bo-fce00805e7",
     "venue_id": "academy_museum",
     "title": "Popcorn Disabilities Conversation and Book Signing with Kristen Lopez",
@@ -13832,29 +13809,6 @@
     "_default_type": "other"
   },
   {
-    "id": "hammer-2026-08-29-art-lab-3c29ac43e5",
-    "venue_id": "hammer",
-    "title": "Art Lab",
-    "description": "Drop by Art Lab for hands-on creative activities inspired by artworks on view at the museum.",
-    "event_type": "workshop",
-    "start": "2026-08-29T13:00:42-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://hammer.ucla.edu/programs-events/2026/art-lab",
-    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-08/art-lab_4.jpg?h=89c44b6b&itok=63PTQq5F",
-    "artists": [],
-    "location_override": null,
-    "source": "hammer.ucla.edu",
-    "scraped_at": "2026-08-29T13:02:42+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "hammer-2026-08-29-offsite-program-edgar-arceneaux-frank-la-c45ce9937d",
     "venue_id": "hammer",
     "title": "Off-site program: Edgar Arceneaux & Frank Lawson: Place Is the Space",
@@ -15785,5 +15739,189 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-09-chinese-medicinal-garden-open-house-d2902f731c",
+    "venue_id": "huntington",
+    "title": "Chinese Medicinal Garden Open House",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-09-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/chinese-medicinal-garden-open-house",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-10%2Ftwo-people-looking-at-a-plant-bed-in-chinese-medicinal-garden-straight-on-shot.jpg%3Fitok%3DHeOY-dsz&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-08T12:02:01+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "museum_of_tolerance-2026-09-09-commemorating-the-25th-anniversary-of-91-6350c97c75",
+    "venue_id": "museum_of_tolerance",
+    "title": "Commemorating the 25th Anniversary of 9/11",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-09",
+    "end": "2026-09-09",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/commemorating-the-25th-anniversary-of-911",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-09-08T12:02:08+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-09-drawing-from-the-gallery-0d702e4fe7",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-08T12:02:01+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-09-experience-the-art-of-q-gng-with-kathy-y-71d6e83a9f",
+    "venue_id": "huntington",
+    "title": "Experience the Art of Qì Gōng with Kathy Yep",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/experience-art-qi-gong-kathy-yep",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13XRBB.jpg%3Fitok%3DiCthZIEp&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-08T12:02:01+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-09-the-adventures-of-priscilla-queen-of-the-bec126fbb3",
+    "venue_id": "academy_museum",
+    "title": "The Adventures of Priscilla, Queen of the Desert in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-adventures-of-priscilla-queen-of-the-desert-019fc8a9-66fc-e4d3-eba1-d926c379596d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3x7dLvmqOuFUEKfAluGtgB/31a9c0d631351c6646f2ff4cad8ffb1f/Sep9_ADVENTURES_OF_PRISCILLA_BranchSelects1ParkCircus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-10T12:07:23+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-09-09-curators-view-glow-a-cinematic-moodscape-c41122b481",
+    "venue_id": "academy_museum",
+    "title": "Curator’s View: Glow: A Cinematic Moodscape",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-09T12:00:00-07:00",
+    "end": "2026-09-09T12:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/curators-view-glow-a-cinematic-moodscape-01a026b6-a561-c67b-5ad4-730488b3a706",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/idSb2o39nFtWXVmxXaXDH/8e7d231ed81ccf05f9509608f9c146e7/Glow_Marquee_Desktop_CU_2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-09T12:13:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-09-09-lunchtime-art-talk-on-henri-michaux-450f67544d",
+    "venue_id": "hammer",
+    "title": "Lunchtime Art Talk on Henri Michaux",
+    "description": "Curatorial fellow Kelin Michael leads an in-person discussion of the work of Henri Michaux.",
+    "event_type": "lecture",
+    "start": "2026-09-09T12:30:13-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-henri-michaux",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-08/Michaux-header.jpg?h=9e39a5c0&itok=Jdw00E1y",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-09-09T12:13:13+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-10-the-adventures-of-priscilla-queen-of-the-84bad61fa5",
+    "venue_id": "academy_museum",
+    "title": "The Adventures of Priscilla, Queen of the Desert in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-09T19:30:00-07:00",
+    "end": "2026-09-09T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-adventures-of-priscilla-queen-of-the-desert-019fc8a9-66fc-e4d3-eba1-d926c379596d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3x7dLvmqOuFUEKfAluGtgB/31a9c0d631351c6646f2ff4cad8ffb1f/Sep9_ADVENTURES_OF_PRISCILLA_BranchSelects1ParkCircus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-09T12:13:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]
