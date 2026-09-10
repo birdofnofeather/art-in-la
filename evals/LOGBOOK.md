@@ -14,6 +14,56 @@ Run it yourself with `python -m scrapers.evals`.
 
 ---
 
+## 2026-09-10 — PASS
+
+26 passed, 0 failed, 0 need watching, 0 could not run.
+
+### Nothing is broken
+
+Every check that can fail, passed.
+
+### Checked against the outside world
+
+3 of these checks compared us against the venues' own websites rather than against our own code. They all passed.
+
+### Every check
+
+| | Check | Result |
+|---|---|---|
+| `A1` 🌐 | Do the events we publish actually appear on the venue's own page? | **PASS** |
+| `A2` 🌐 | Does each event's date actually appear on the venue's page? | **PASS** |
+| `A3` 🌐 | Do the links we publish still work? | **PASS** |
+| `B1`  | Has any of our record of past events been lost? | **PASS** |
+| `B2`  | Did events that had not happened yet disappear from the site? | **PASS** |
+| `B3`  | Has the overall number of events moved sharply? | **PASS** |
+| `B4`  | Has any individual venue lost most of its events? | **PASS** |
+| `C1`  | Does the safety gate still refuse to publish obviously broken data? | **PASS** |
+| `C2`  | Do the text-quality rules still catch unreadable text? | **PASS** |
+| `C3`  | Are the curation decisions you made on purpose still holding? | **PASS** |
+| `D1`  | Is the status report calling anything healthy that clearly is not? | **PASS** |
+| `D2`  | Is the status report quiet enough to be worth reading? | **PASS** |
+| `D3`  | Are the written expectations still sensible? | **PASS** |
+| `E1`  | Is any published text still garbled? | **PASS** |
+| `E2`  | Does the same event appear more than once? | **PASS** |
+| `E3`  | Does every event belong to a venue we actually know about? | **PASS** |
+| `E4`  | Are we still advertising events that already happened? | **PASS** |
+| `E5`  | Does every event have a date? | **PASS** |
+| `E6`  | How many events could we not put into any category? | **PASS** |
+| `E7`  | Are any weekly or monthly programmes still leaking onto the site? | **PASS** |
+| `F1`  | Is the daily scrape still running? | **PASS** |
+| `F2`  | Did the last run manage to publish? | **PASS** |
+| `F3`  | Can the published list be reproduced exactly from the stored harvest? | **PASS** |
+| `F4`  | Does the test suite still pass? | **PASS** |
+| `F5`  | Do the curation rules still agree with their own examples? | **PASS** |
+| `G1`  | Can these checks still detect a problem when there is one? | **PASS** |
+
+---
+### Notes from this run
+
+Automatic run from GitHub Actions.
+
+---
+
 ## 2026-09-07 — WARN
 
 25 passed, 0 failed, 1 need watching, 0 could not run.
