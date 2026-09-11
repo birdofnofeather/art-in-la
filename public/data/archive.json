@@ -15923,5 +15923,171 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "huntington-2026-09-10-chinese-medicinal-garden-talk-and-walk-0442f1b090",
+    "venue_id": "huntington",
+    "title": "Chinese Medicinal Garden Talk and Walk",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-09-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/chinese-medicinal-garden-talk-and-walk",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13VCI7.jpg%3Fitok%3DZVNZ4gWY&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-09T12:13:26+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-09-10-autry-after-hours-sagaftra-radio-players-391cc3f0f6",
+    "venue_id": "autry",
+    "title": "AUTRY AFTER HOURS | SAG-AFTRA Radio Players Performance and Special Finale!",
+    "description": "Live Performances",
+    "event_type": "performance",
+    "start": "2026-09-10T15:00:00-07:00",
+    "end": "2026-09-10T16:30:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/live-performances/autry-after-hours-sag-aftra-radio-players-performance-and-special-finale",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-08/ev_after-hours.jpeg?h=1f55d6fc&itok=l-ZdEJzv",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-09-10T12:07:22+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_villa-2026-09-10-curators-tour-the-egyptian-book-of-the-d-fef2220e0a",
+    "venue_id": "getty_villa",
+    "title": "Curator's Tour: *The Egyptian Book of the Dead*",
+    "description": "Learn how ancient Egyptians planned for their souls' transition to a divine afterlife in this 45-minute tour",
+    "event_type": "tour",
+    "start": "2026-09-10T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/curators-tour-book-dead",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-10T12:07:14+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "mak_center-2026-09-10-final-projects-group-lix-spindrift-lix-f871d0998f",
+    "venue_id": "mak_center",
+    "title": "Opening Reception for Final Projects: Group LIX - spindrift LIX",
+    "description": "The MAK Center for Art and Architecture is pleased to announce Final Projects: Group LIX – spindrift LIX , featuring work produced by our Artists- and Architects-in-Residence: Alexandra Kahl, Axel Koschier, and Sarah Silbernagel.",
+    "event_type": "opening",
+    "start": "2026-09-10T18:00:00-07:00",
+    "end": "2026-09-10T20:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.makcenter.org/events/opening-final-projects-group-lix",
+    "image": "https://images.squarespace-cdn.com/content/v1/6059737e4b8d6e3976d3d5de/1787875427008-KWMPMQ3BUCYUTLA9XXJP/spindrift_LIX_original.jpeg",
+    "artists": [],
+    "location_override": "Mackey Apartments, 1137 S. Cochran Ave",
+    "source": "makcenter.org",
+    "scraped_at": "2026-09-10T12:07:20+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "la_plaza-2026-09-10-docs-la-plaza-not-our-corona-short-docum-66345ff6c4",
+    "venue_id": "la_plaza",
+    "title": "Docs @ LA Plaza: ‘Not Our Corona’ Short Documentary | Free with RSVP",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-10T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://lapca.org/event/not-our-corona/?event_date=2026-09-10",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/upcoming-programs/",
+    "scraped_at": "2026-09-10T12:07:34+00:00",
+    "event_types": [
+      "performance",
+      "screening"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
+    "id": "la_plaza-2026-09-10-sabor-a-michoacn-uchepos-sweet-corn-tama-e871d3e473",
+    "venue_id": "la_plaza",
+    "title": "Sabor a Michoacán – Uchepos: Sweet Corn Tamal | $65 | SOLD OUT",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-10T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://lapca.org/event/sabor-a-michoacan-uchepos/?event_date=2026-09-10",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/upcoming-programs/",
+    "scraped_at": "2026-09-10T12:07:34+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": "$65",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
+    "id": "wende-2026-09-10-opening-night-postcode-ukraine-diary-of-6750883091",
+    "venue_id": "wende",
+    "title": "Opening Night: Postcode Ukraine: Diary of a Volunteer",
+    "description": "Mark Neville has lived and worked in Kyiv since 2020. He photographs the volunteers, families, and communities living through Russia’s full-scale invasion, and he makes the pictures on aid trips to frontline towns. Postcode Ukraine: Diary of a Volunteer brings that work to Los Angeles for the first time. The photographs stay with the people behind the headlines. Children growing up in wartime. Volunteers supplying their neighbors. Families holding on to routine, dignity, and hope. War is measured here by what people refuse to give up: family, friendship, creativity, joy, a sense of ordinary life. Each guest curator chose a photograph and wrote about why it matters now. Gust curators include Kateryna Babkina, Sir Stephen Fry, Beth Greenacre, Justin Jampol, Max Klymenko, Andrey Kurkov, Oleks",
+    "event_type": "opening",
+    "start": "2026-09-10T19:30:00-07:00",
+    "end": "2026-09-10T22:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/opening-night-postcode-ukraine-diary-of-a-volunteer/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/09/Yalta-Kyiv-June-2023-c-Mark-Neville-courtesy-Postcode-Ukraine-16X9.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-10T12:07:19+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
   }
 ]
