@@ -2286,6 +2286,30 @@
     "_default_type": "other"
   },
   {
+    "id": "the_broad-2026-03-07-sarah-davachi-robert-takahashi-novak-new-da4619a9f9",
+    "venue_id": "the_broad",
+    "title": "Sarah Davachi + Robert Takahashi Novak: New Commissions",
+    "description": "\"The structure's 'vault and veil' architecture is a symphony of swoops and lines, and if you've ever marveled at the organic flow of the curves of the museum's spacious lobby, prepare to listen as those contours become part of an avant garde musical presentation.\" — NBC Los Angeles Join us for an evening of specially commissioned compositions by electroacoustic and minimalist organist Sarah Davachi and conceptual sound and contemporary electronic music artist Robert Takahashi Novak . Activating the unique physical characteristics of the museum’s lobby, which is at once cavernous and cathedral-like yet intimate, the two Los Angeles-based musicians will utilize a spatial sound system to realize their unique styles and methods, unlocking the potential for somatic experience of deep li",
+    "event_type": "performance",
+    "start": "2026-03-07T20:00:00-08:00",
+    "end": "2026-03-07T22:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.thebroad.org/sarah-davachi-robert-takahashi-novak-new-commissions",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-09-12T11:31:36+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
     "id": "armory_pasadena-2026-03-13-artnight-pasadena-at-the-armory-8decd762b5",
     "venue_id": "armory_pasadena",
     "title": "ArtNight Pasadena at the Armory",
@@ -14731,6 +14755,29 @@
     "_default_type": "screening"
   },
   {
+    "id": "getty_center-2026-09-03-exhibition-tour-stendahls-world-marketin-4416e90600",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour: Stendahl’s World: Marketing Ancient Mexico and Modern Art in Los Angeles",
+    "description": "Tour",
+    "event_type": "tour",
+    "start": "2026-09-03T13:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-stendahl-s-world-marketing-ancient-mexico-and-modern-art-in-los-angeles",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-03T11:59:45+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "autry-2026-09-03-sizzling-summer-nights-rush-hour-orquest-23e0424a2e",
     "venue_id": "autry",
     "title": "Sizzling Summer Nights | Rush Hour Orquesta",
@@ -15948,6 +15995,29 @@
     "_default_type": "other"
   },
   {
+    "id": "getty_center-2026-09-10-exhibition-tour-stendahls-world-marketin-c8d295d6b7",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour: Stendahl’s World: Marketing Ancient Mexico and Modern Art in Los Angeles",
+    "description": "Tour",
+    "event_type": "tour",
+    "start": "2026-09-10T13:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-stendahl-s-world-marketing-ancient-mexico-and-modern-art-in-los-angeles",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-10T12:07:14+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "autry-2026-09-10-autry-after-hours-sagaftra-radio-players-391cc3f0f6",
     "venue_id": "autry",
     "title": "AUTRY AFTER HOURS | SAG-AFTRA Radio Players Performance and Special Finale!",
@@ -16088,6 +16158,215 @@
     "audience": [
       "family"
     ],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-11-members-exhibition-preview-doyle-lane-ma-b1549fed3b",
+    "venue_id": "huntington",
+    "title": "Members Exhibition Preview — \"Doyle Lane: Master of Clay\"",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-09-11",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/exhibitions/members-exhibition-preview-doyle-lane-master-clay",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13V2OI.jpg%3Fitok%3D8C0Ef85G&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-10T12:07:28+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-11-the-beguiled-122b01ebc7",
+    "venue_id": "academy_museum",
+    "title": "The Beguiled",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-11",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-beguiled-019fc89f-31e0-c442-3bb6-f8da32fc5b15",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/bJFUIEoLn3QJMZYH3lAo4/d7d3953c63b1357a6cc2bac3f4d09c7f/Sep11_BEGUILED_Glow1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-12T11:31:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-09-11-niagara-39c1f544b9",
+    "venue_id": "academy_museum",
+    "title": "Niagara",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-11T14:30:00-07:00",
+    "end": "2026-09-11T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/niagara-019fc892-54a7-2ed5-6db4-e2725741f95c",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2dvaZaYMOKjQMxSOW4sy4L/42121f4c8e2b0553189c0ed797577b0b/Sep7_NIAGARA_Marilyn4.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-11T12:05:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "lacma-2026-09-11-jazz-at-lacma-la-jazz-treasure-award-15a5760cfe",
+    "venue_id": "lacma",
+    "title": "Jazz at LACMA: L.A. Jazz Treasure Award",
+    "description": "Celebrate L.A.'s finest jazz musicians with Jazz at LACMA, presented Friday evenings from May through October. This week, join us for a concert with Betty Bryant. ...",
+    "event_type": "performance",
+    "start": "2026-09-11T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/la-jazz-treasure-award-betty-bryant",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-06/2026-09-11_Betty%20Preferred.jpg?itok=iTAcj_ES",
+    "artists": [],
+    "location_override": "Smidt Welcome Plaza",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-11T12:05:36+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-09-11-photographing-the-war-in-ukraine-with-ma-458e085e16",
+    "venue_id": "wende",
+    "title": "Photographing the War in Ukraine with Mark Neville",
+    "description": "Photographer Mark Neville has lived in Ukraine since 2020 and stayed in Kyiv through four years of war. He co-founded Postcode Ukraine, a charity that drives humanitarian aid to frontline towns. On every trip he photographs the people he meets, and those photographs became his books. Neville has spent his career asking what a photograph is for. He works closely with the communities he shoots, and he often puts the finished work back in their hands. His books travel as tools. He mailed Stop Tanks with Books to diplomats, journalists, and politicians two weeks before the full invasion began. He sends Diary of a Volunteer out one copy at a time, asks each reader to live with it, then has it collected and passed on. Joes Segal, Chief Curator at the Wende Museum, talks with Neville about what a",
+    "event_type": "screening",
+    "start": "2026-09-11T18:00:00-07:00",
+    "end": "2026-09-11T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/photographing-the-war-in-ukraine-with-mark-neville/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/08/postcode-ukraine-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-11T12:05:41+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
+  },
+  {
+    "id": "pieter-2026-09-11-restore-with-mason-gray-4e349a4403",
+    "venue_id": "pieter",
+    "title": "Restore with Mason Gray",
+    "description": "Restore",
+    "event_type": "other",
+    "start": "2026-09-11T18:00:00-07:00",
+    "end": "2026-09-11T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://pieterpasd.com/programs/restore-hyd9j",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d30f87ab8d965a2edb3f85/1785780233020-28L8G9ZICO8EF2H10UZ6/RESTORE+1080+-+Mason+Rose.png",
+    "artists": [],
+    "location_override": "Pieter Performance Space, 2701 North Broadway",
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-09-11T12:05:50+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "la_plaza-2026-09-11-summer-of-salsa-conjunto-oye-ft-dj-robby-f544ddc71f",
+    "venue_id": "la_plaza",
+    "title": "Summer of Salsa: Conjunto Oye ft. DJ Robby | Free with RSVP",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-11T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://lapca.org/event/salsa-conjunto-oye/?event_date=2026-09-11",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/upcoming-programs/",
+    "scraped_at": "2026-09-11T12:05:54+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-12-the-beguiled-f99391b683",
+    "venue_id": "academy_museum",
+    "title": "The Beguiled",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-11T19:30:00-07:00",
+    "end": "2026-09-11T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-beguiled-019fc89f-31e0-c442-3bb6-f8da32fc5b15",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/bJFUIEoLn3QJMZYH3lAo4/d7d3953c63b1357a6cc2bac3f4d09c7f/Sep11_BEGUILED_Glow1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-11T12:05:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "human_resources-2026-09-11-gag-presents-video-4-78edef8dec",
+    "venue_id": "human_resources",
+    "title": "GAG! presents VIDEO 4",
+    "description": "Tickets GAG! is a collective of artists seeking to respond to institutionalized art spaces, create disruption as a mirror to systems of power, and encourage active participation. We gather resources, collaborate, mobilize, and find community. A place to self legitimize and self actualize, GAG! is the response to the longest inside joke. Here, we stay gagging at the results. About GAG! presents… VIDEO series: GAG! joins HUMAN RESOURCES during their summer screening series for another iteration of VIDEO. GAG! Presents… VIDEO4. As a way to highlight video artists and blur the line between video art and cinema, GAG! brings together a select group of artists and filmmakers to screen pieces that are intended for the exhibition space. Simultaneously, VIDEO4 reimagines films intended for theaters",
+    "event_type": "screening",
+    "start": "2026-09-11T21:00:00-07:00",
+    "end": "2026-09-11T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/gag-presents-video-4/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/IMG_3199.jpeg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-11T12:05:41+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
     "_default_type": "other"
   }
 ]

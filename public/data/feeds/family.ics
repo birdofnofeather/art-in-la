@@ -6,22 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:self_help_graphics-2026-09-12-family-workshops-at-the-library-stencil-5c8f811112@art-in-la
-DTSTAMP:20260911T120827Z
-DTSTART;VALUE=DATE:20260912
-SUMMARY:Family Workshops at the Library: Stencil Screen Printing with Osca
- r Rodriguez
-LOCATION:1300 E 1st St\, Los Angeles\, CA 90033
-URL:https://www.selfhelpgraphics.com/upcoming-events/0912-stencilscreenpri
- nt
-DESCRIPTION:Self Help Graphics & Art · https://www.selfhelpgraphics.com/u
- pcoming-events/0912-stencilscreenprint
-END:VEVENT
-BEGIN:VEVENT
 UID:autry-2026-09-12-canceled-morning-at-the-museum-curators-ec21102af7@art-in-la
-DTSTAMP:20260911T120827Z
-DTSTART:20260912T160000Z
-DTEND:20260912T173000Z
+DTSTAMP:20260912T113428Z
+DTSTART;VALUE=DATE:20260912
 SUMMARY:(Canceled) Morning at the Museum: Curator’s Tour ofCreative Cont
  inuities: Family\, Pride\, and Community in Native Art
 LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
@@ -32,8 +19,20 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
  ies-family-pride-and\n\nConversations\, Member Events
 END:VEVENT
 BEGIN:VEVENT
+UID:self_help_graphics-2026-09-12-family-workshops-at-the-library-stencil-5c8f811112@art-in-la
+DTSTAMP:20260912T113428Z
+DTSTART;VALUE=DATE:20260912
+SUMMARY:Family Workshops at the Library: Stencil Screen Printing with Osca
+ r Rodriguez
+LOCATION:1300 E 1st St\, Los Angeles\, CA 90033
+URL:https://www.selfhelpgraphics.com/upcoming-events/0912-stencilscreenpri
+ nt
+DESCRIPTION:Self Help Graphics & Art · https://www.selfhelpgraphics.com/u
+ pcoming-events/0912-stencilscreenprint
+END:VEVENT
+BEGIN:VEVENT
 UID:autry-2026-09-12-street-food-cinema-shrek2001-drone-show-5d6b773640@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T003000Z
 DTEND:20260913T053000Z
 SUMMARY:Street Food Cinema |Shrek(2001) & Drone Show
@@ -47,7 +46,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-09-13-kids-art-class-animals-in-art-ages-68-296ccfccdd@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T170000Z
 SUMMARY:Kids Art Class: Animals in Art (Ages 6–8)
 LOCATION:W.M. Keck Education Center | LACMA
@@ -59,7 +58,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_villa-2026-09-13-artistatwork-papyrus-making-cfd4342585@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T180000Z
 SUMMARY:Artist-at-Work: Papyrus Making
 LOCATION:Getty Villa
@@ -68,8 +67,25 @@ DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/artist-at-wo
  rk-papyrus-making\n\nDemonstrations\, Family
 END:VEVENT
 BEGIN:VEVENT
+UID:human_resources-2026-09-13-la-familia-p-luche-8211-season-one-marat-fc231d8a35@art-in-la
+DTSTAMP:20260912T113428Z
+DTSTART:20260913T180000Z
+DTEND:20260914T000000Z
+SUMMARY:La Familia P. Luche – season one marathon
+LOCATION:410 Cottage Home St\, Los Angeles\, CA 90012
+URL:https://www.h-r.la/event/la-familia-p-luche-season-one-marathon/
+DESCRIPTION:Human Resources Los Angeles · Free · https://www.h-r.la/even
+ t/la-familia-p-luche-season-one-marathon/\n\nWidely regarded as one of th
+ e most deeply rooted series in Mexican TV culture\, La Familia P. Luche a
+ ired on public broadcasting from 2002 to 2012 with only three seasons. Cr
+ eated by and starring comedian Eugenio Derbez\, it follows a chaotic\, an
+ d deeply dysfunctional family led by his character Ludovico P. Luche and 
+ his domineering wife\, Federica (Consuelo Duval). Together with their str
+ ange childr
+END:VEVENT
+BEGIN:VEVENT
 UID:getty_villa-2026-09-13-papyrus-scroll-making-family-workshop-8df70f9539@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T180000Z
 SUMMARY:Papyrus Scroll Making: Family Workshop
 LOCATION:Getty Villa
@@ -79,7 +95,7 @@ DESCRIPTION:The Getty Villa · https://www.getty.edu/calendar/papyrus-scro
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-09-13-fiestas-patrias-family-day-free-with-rsv-e7e80505f6@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T190000Z
 SUMMARY:Fiestas Patrias Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -89,7 +105,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-09-13-la-stories-on-screen-my-familymi-familia-06471aee8a@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260913T200000Z
 DTEND:20260914T000000Z
 SUMMARY:L.A Stories on Screen |My Family/Mi Familia(1995)
@@ -101,7 +117,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-09-14-fistful-of-love-by-reynaldo-rivera-179373b47c@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260915T030000Z
 DTEND:20260915T043000Z
 SUMMARY:Fistful Of Love by Reynaldo Rivera
@@ -118,7 +134,7 @@ DESCRIPTION:Human Resources Los Angeles · Free · https://www.h-r.la/even
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-09-16-molaa-food-pantry-e5bfaf1bb3@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260916T230000Z
 SUMMARY:MOLAA Food Pantry
 LOCATION:Museum of Latin American Art\, 628 Alamitos Avenue
@@ -133,7 +149,7 @@ DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-18-artistatwork-tapa-making-79cb551fbb@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260918T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -143,7 +159,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-18-stories-in-ink-ttau-bookmark-workshop-8c8e40b9cb@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260918T180000Z
 SUMMARY:Stories in Ink: Tātau Bookmark Workshop
 LOCATION:Getty Center
@@ -153,7 +169,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:jaccc-2026-09-19-moveable-feast-edmund-de-waal-paul-holde-6d4ed57f6b@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART;VALUE=DATE:20260919
 SUMMARY:Moveable Feast Edmund de Waal & Paul Holdengräber in Conversation
   A Map of Remembering: Place\, Family\, Story
@@ -171,7 +187,7 @@ DESCRIPTION:Japanese American Cultural & Community Center · $10 · https:
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-09-19-south-bay-orchid-society-fall-show-038-s-6f7b5b8e54@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260919T170000Z
 DTEND:20260920T230000Z
 SUMMARY:South Bay Orchid Society Fall Show & Sale
@@ -189,7 +205,7 @@ DESCRIPTION:Palos Verdes Art Center · $5 · https://pvartcenter.org/upcom
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-19-artistatwork-tapa-making-368569406a@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260919T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -199,7 +215,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-19-stories-in-ink-ttau-bookmark-workshop-ec7c64f1f2@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260919T180000Z
 SUMMARY:Stories in Ink: Tātau Bookmark Workshop
 LOCATION:Getty Center
@@ -209,7 +225,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-19-navigating-our-media-ecosystem-reclaimin-99064be851@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260919T210000Z
 DTEND:20260919T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -227,7 +243,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-20-artistatwork-tapa-making-2bfac077b0@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260920T180000Z
 SUMMARY:Artist-at-Work: Tapa Making
 LOCATION:Getty Center
@@ -237,7 +253,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-tapa-ma
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-09-20-stories-in-ink-ttau-bookmark-workshop-5f2af17f2e@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260920T180000Z
 SUMMARY:Stories in Ink: Tātau Bookmark Workshop
 LOCATION:Getty Center
@@ -247,7 +263,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/tatau-bookm
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2026-09-21-kout-vwa-35766b47ff@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260922T023000Z
 DTEND:20260922T040000Z
 SUMMARY:Kouté Vwa
@@ -263,7 +279,7 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/koute-
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-25-esmoa-video-art-film-festival-freedom-sc-7013c0f57d@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260926T010000Z
 DTEND:20260926T030000Z
 SUMMARY:ESMoA Video Art + Film Festival: FREEDOM Screening + Award Ceremon
@@ -282,7 +298,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/esmoa-vi
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-09-27-2026-fall-icea-free-chess-the-wende-0d35999853@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260927T160000Z
 DTEND:20260928T010000Z
 SUMMARY:2026 Fall ICEA Free Chess @ The Wende
@@ -299,7 +315,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/2026-fal
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20260927T180000Z
 SUMMARY:Lucha Libre Film Screening and Family Expo!
 LOCATION:Museum of Latin American Art\, 628 Alamitos Avenue
@@ -315,7 +331,7 @@ DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-01-curators-tour-the-holy-family-at-home-ccbdff6cb2@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261001T220000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -326,7 +342,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-02-the-firefly-teen-experience-88a0a1c728@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261003T013000Z
 DTEND:20261003T040000Z
 SUMMARY:The Firefly Teen Experience
@@ -342,7 +358,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/the-fire
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-03-dropin-workshop-for-families-alebrijes-1bdfc9f8f6@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261003T193000Z
 DTEND:20261003T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -355,7 +371,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-03-navigating-our-media-ecosystem-reclaimin-9b0f7690bd@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261003T210000Z
 DTEND:20261003T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -373,7 +389,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261010T193000Z
 DTEND:20261010T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -386,7 +402,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-11-public-broadcast-stereo-fc40fc556a@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261011T230000Z
 DTEND:20261012T000000Z
 SUMMARY:PUBLIC BROADCAST STEREO
@@ -402,7 +418,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/public-broadcast
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-17-family-festival-la-and-mexico-in-focus-ac0ddb149b@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261017T170000Z
 SUMMARY:Family Festival: LA and Mexico in Focus
 LOCATION:Getty Center
@@ -412,7 +428,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/family-fest
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-21-the-bengali-an-evening-of-film-and-the-p-7f870e3125@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261022T010000Z
 DTEND:20261022T040000Z
 SUMMARY:The Bengali: An Evening of Film and the Power of Storytelling
@@ -430,7 +446,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/the-bengali-an-e
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -440,7 +456,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261105T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -451,7 +467,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261107T203000Z
 DTEND:20261107T223000Z
 SUMMARY:Drop-in Workshop for Families: Día de Muertos with Lil’ Libros
@@ -465,7 +481,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20261203T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -476,7 +492,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
-DTSTAMP:20260911T120827Z
+DTSTAMP:20260912T113428Z
 DTSTART:20270107T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center

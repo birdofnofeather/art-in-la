@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-11T12:08:27.697553+00:00",
+  "generated_at": "2026-09-12T11:34:28.109022+00:00",
   "verdict": "red",
   "totals": {
-    "events": 362,
-    "exhibitions": 63,
-    "venues_producing": 48,
+    "events": 370,
+    "exhibitions": 62,
+    "venues_producing": 49,
     "venues_checked": 59,
     "unpublishable_records": 0
   },
   "counts": {
     "red": 10,
-    "yellow": 10,
-    "green": 39
+    "yellow": 9,
+    "green": 40
   },
   "unreachable": [
     "art_practice",
@@ -53,9 +53,9 @@
       "events": 7,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 10,
+      "zero_streak": 11,
       "reasons": [
-        "no events for 10 consecutive runs (last produced 2026-09-01)"
+        "no events for 11 consecutive runs (last produced 2026-09-01)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -68,10 +68,10 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 50,
-      "zero_streak": 36,
+      "zero_streak": 37,
       "reasons": [
         "the venue's page advertises 50 upcoming dates but we extracted nothing",
-        "no events for 36 consecutive runs (last produced 2026-08-08)"
+        "no events for 37 consecutive runs (last produced 2026-08-08)"
       ],
       "known_gaps": []
     },
@@ -82,10 +82,10 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 28,
-      "zero_streak": 3,
+      "zero_streak": 4,
       "reasons": [
         "the venue's page advertises 28 upcoming dates but we extracted nothing",
-        "no events for 3 consecutive runs (last produced 2026-09-08)"
+        "no events for 4 consecutive runs (last produced 2026-09-08)"
       ],
       "known_gaps": []
     },
@@ -96,7 +96,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 11,
-      "zero_streak": 16,
+      "zero_streak": 17,
       "reasons": [
         "the venue's page advertises 11 upcoming dates but we extracted nothing"
       ],
@@ -109,9 +109,9 @@
       "events": 5,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 10,
+      "zero_streak": 11,
       "reasons": [
-        "no events for 10 consecutive runs (last produced 2026-09-01)"
+        "no events for 11 consecutive runs (last produced 2026-09-01)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -123,11 +123,11 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 0,
-      "dates_on_page": 12,
-      "zero_streak": 34,
+      "dates_on_page": 11,
+      "zero_streak": 35,
       "reasons": [
-        "the venue's page advertises 12 upcoming dates but we extracted nothing",
-        "no events for 34 consecutive runs (last produced 2026-08-10)"
+        "the venue's page advertises 11 upcoming dates but we extracted nothing",
+        "no events for 35 consecutive runs (last produced 2026-08-10)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -139,11 +139,11 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 0,
-      "dates_on_page": 12,
-      "zero_streak": 34,
+      "dates_on_page": 11,
+      "zero_streak": 35,
       "reasons": [
-        "the venue's page advertises 12 upcoming dates but we extracted nothing",
-        "no events for 34 consecutive runs (last produced 2026-08-10)"
+        "the venue's page advertises 11 upcoming dates but we extracted nothing",
+        "no events for 35 consecutive runs (last produced 2026-08-10)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -156,9 +156,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": 0,
-      "zero_streak": 10,
+      "zero_streak": 11,
       "reasons": [
-        "no events for 10 consecutive runs (last produced 2026-09-01)"
+        "no events for 11 consecutive runs (last produced 2026-09-01)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -171,9 +171,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 5,
-      "zero_streak": 52,
+      "zero_streak": 53,
       "reasons": [
-        "no events for 52 consecutive runs (last produced 2026-07-23)"
+        "no events for 53 consecutive runs (last produced 2026-07-23)"
       ],
       "known_gaps": []
     },
@@ -184,9 +184,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": 0,
-      "zero_streak": 10,
+      "zero_streak": 11,
       "reasons": [
-        "no events for 10 consecutive runs (last produced 2026-09-01)"
+        "no events for 11 consecutive runs (last produced 2026-09-01)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -199,9 +199,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 7,
+      "zero_streak": 8,
       "reasons": [
-        "no events for 7 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser",
+        "no events for 8 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser",
         "0 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
       ],
       "known_gaps": []
@@ -213,9 +213,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": null,
-      "zero_streak": 60,
+      "zero_streak": 61,
       "reasons": [
-        "no events for 60 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 61 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -226,22 +226,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 54,
+      "zero_streak": 55,
       "reasons": [
-        "no events for 54 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
-      ],
-      "known_gaps": []
-    },
-    {
-      "venue_id": "laband",
-      "verdict": "yellow",
-      "unreachable": false,
-      "events": 0,
-      "exhibitions": 0,
-      "dates_on_page": 1,
-      "zero_streak": 0,
-      "reasons": [
-        "scraped 2 record(s) but published none — everything it found was filtered out, so the site shows nothing for this venue"
+        "no events for 55 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -277,10 +264,10 @@
       "unreachable": false,
       "events": 2,
       "exhibitions": 0,
-      "dates_on_page": 36,
+      "dates_on_page": 35,
       "zero_streak": 0,
       "reasons": [
-        "the venue's page advertises 36 upcoming dates but we extracted only 2 — the parser may be reading the wrong part of the page"
+        "the venue's page advertises 35 upcoming dates but we extracted only 2 — the parser may be reading the wrong part of the page"
       ],
       "known_gaps": []
     },
@@ -327,7 +314,7 @@
       "venue_id": "academy_museum",
       "verdict": "green",
       "unreachable": false,
-      "events": 109,
+      "events": 107,
       "exhibitions": 2,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -362,7 +349,7 @@
       "venue_id": "autry",
       "verdict": "green",
       "unreachable": false,
-      "events": 4,
+      "events": 5,
       "exhibitions": 0,
       "dates_on_page": 2,
       "zero_streak": 0,
@@ -421,7 +408,7 @@
       "venue_id": "calarts",
       "verdict": "green",
       "unreachable": true,
-      "events": 5,
+      "events": 6,
       "exhibitions": 1,
       "dates_on_page": null,
       "zero_streak": 0,
@@ -456,7 +443,7 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 7,
-      "dates_on_page": 10,
+      "dates_on_page": 9,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -476,7 +463,7 @@
       "venue_id": "getty_center",
       "verdict": "green",
       "unreachable": false,
-      "events": 35,
+      "events": 38,
       "exhibitions": 11,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -502,7 +489,7 @@
       "unreachable": false,
       "events": 17,
       "exhibitions": 0,
-      "dates_on_page": 25,
+      "dates_on_page": 26,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -511,8 +498,8 @@
       "venue_id": "huntington",
       "verdict": "green",
       "unreachable": true,
-      "events": 19,
-      "exhibitions": 1,
+      "events": 20,
+      "exhibitions": 0,
       "dates_on_page": null,
       "zero_streak": 0,
       "reasons": [],
@@ -524,7 +511,7 @@
       "venue_id": "ica_la",
       "verdict": "green",
       "unreachable": false,
-      "events": 3,
+      "events": 4,
       "exhibitions": 0,
       "dates_on_page": 2,
       "zero_streak": 0,
@@ -546,9 +533,9 @@
       "venue_id": "janm",
       "verdict": "green",
       "unreachable": false,
-      "events": 5,
+      "events": 6,
       "exhibitions": 0,
-      "dates_on_page": 11,
+      "dates_on_page": 12,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": [
@@ -570,9 +557,20 @@
       "venue_id": "la_plaza",
       "verdict": "green",
       "unreachable": true,
-      "events": 17,
+      "events": 16,
       "exhibitions": 4,
       "dates_on_page": null,
+      "zero_streak": 0,
+      "reasons": [],
+      "known_gaps": []
+    },
+    {
+      "venue_id": "laband",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": 1,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -581,7 +579,7 @@
       "venue_id": "lacma",
       "verdict": "green",
       "unreachable": false,
-      "events": 11,
+      "events": 13,
       "exhibitions": 0,
       "dates_on_page": 7,
       "zero_streak": 0,
@@ -677,9 +675,9 @@
       "venue_id": "pieter",
       "verdict": "green",
       "unreachable": false,
-      "events": 8,
+      "events": 7,
       "exhibitions": 1,
-      "dates_on_page": 79,
+      "dates_on_page": 76,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -732,7 +730,7 @@
       "venue_id": "skirball",
       "verdict": "green",
       "unreachable": false,
-      "events": 5,
+      "events": 6,
       "exhibitions": 0,
       "dates_on_page": 12,
       "zero_streak": 0,
