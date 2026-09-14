@@ -5280,27 +5280,6 @@
     "audience": []
   },
   {
-    "id": "huntington-2026-06-17-drawing-from-the-gallery-97e41086a7",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-06-17T17:30:00-07:00",
-    "end": "2026-06-17T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DKG0rvTpI&w=1080&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-06-18T07:09:04+00:00",
-    "event_types": [
-      "other"
-    ],
-    "_default_type": "other",
-    "audience": []
-  },
-  {
     "id": "academy_museum-2026-06-18-10th-anniversary-of-spa-night-e9211be309",
     "venue_id": "academy_museum",
     "title": "10th Anniversary of Spa Night",
@@ -15834,29 +15813,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-09-09-drawing-from-the-gallery-0d702e4fe7",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-09",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-09-08T12:02:01+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "huntington-2026-09-09-experience-the-art-of-q-gng-with-kathy-y-71d6e83a9f",
     "venue_id": "huntington",
     "title": "Experience the Art of Qì Gōng with Kathy Yep",
@@ -16536,6 +16492,29 @@
     "_default_type": "other"
   },
   {
+    "id": "pvac-2026-09-12-malaga-cove-art-on-the-lawn-show-debe289d7b",
+    "venue_id": "pvac",
+    "title": "Malaga Cove Art on the Lawn Show",
+    "description": "PVAC Artists Groups present the Malaga Cove Art on the Lawn Show, happening next at 10am to 5pm on September 12-13. The event features paintings, jewelry, ceramics, photography, wearable art, and prints from artists from the seven art groups affiliated with Palos Verdes Art Center: Artists Open Group (AOG), Pacific Arts Group, Paletteers, Peninsula Artists, Photographic and Digital Artists (PADA, Third Dimension, and The Artists’ Studio (TAS). Read about the PVAC Artists Groups HERE . Malaga Cove Plaza is located at the entrance to the City of Palos Verdes Estates on scenic Palos Verdes Drive West between Via Chico and Via Corta. There is plenty of free parking.",
+    "event_type": "other",
+    "start": "2026-09-12T10:00:00-07:00",
+    "end": "2026-09-13T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/malaga-cove-art-on-the-lawn-show-13/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2021/08/IMG_7448-WEB3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-09-13T12:37:09+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "bergamot_station-2026-09-12-bergamot-station-fall-open-dbb74e785c",
     "venue_id": "bergamot_station",
     "title": "Bergamot Station Fall Open",
@@ -16778,5 +16757,460 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-13-20th-anniversary-of-marie-antoinette-wit-e4f8241a62",
+    "venue_id": "academy_museum",
+    "title": "20th Anniversary of Marie Antoinette with Sofia Coppola and Kirsten Dunst",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-13",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/20th-anniversary-of-marie-antoinette-with-sofia-coppola-and-019fc8ba-df50-d2c5-e7fd-83e0160ed0fa",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/FfizcKzacPAo8EJdBnnwn/20a41ba8e3c3d1a526a2b9e16d5bfcfe/SELECT_Sep13_MARIE_ANTOINETT_Spotlight3MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-14T13:45:42+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "molaa-2026-09-13-corner-garden-plein-air-workshop-anniver-a5050a6c15",
+    "venue_id": "molaa",
+    "title": "Corner Garden Plein Air Workshop: Anniversary Edition Gel Printing Plates",
+    "description": "Join us in celebrating three years of morning art workshops at our Garden! Teaching artist Maria Guadalupe leads this special edition workshop with Gel Printing Plates! All materials will be provided by MOLAA! Registration is required. Please arrive on time, as space is limited. Your spot will be offered to another attendee if you arrive more than 15 minutes late.",
+    "event_type": "workshop",
+    "start": "2026-09-13T09:00:00-07:00",
+    "end": "2026-09-13T11:00:00-07:00",
+    "all_day": false,
+    "url": "https://molaa.org/events/2026/cornergarden-september",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1630530507856-DNA2IHSSWW6VGL80WNVX/2021-Corner-Garden-Logo-Final.jpg",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-09-13T12:37:08+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-13-kids-art-class-animals-in-art-ages-68-296ccfccdd",
+    "venue_id": "lacma",
+    "title": "Kids Art Class: Animals in Art (Ages 6–8)",
+    "description": "Learn to make all sorts of creatures as we explore animals in art in this class taught by artist Shannon Green...",
+    "event_type": "workshop",
+    "start": "2026-09-13T10:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/kids-art-class-animals-art-2",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2025-09/07062025NEXGENLA_MonicaOrozco_164.jpg?itok=LTDCstQt",
+    "artists": [],
+    "location_override": "W.M. Keck Education Center | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-13T12:37:05+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_villa-2026-09-13-artistatwork-papyrus-making-cfd4342585",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Papyrus Making",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-09-13T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/artist-at-work-papyrus-making",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-13T12:37:04+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "human_resources-2026-09-13-la-familia-p-luche-8211-season-one-marat-fc231d8a35",
+    "venue_id": "human_resources",
+    "title": "La Familia P. Luche – season one marathon",
+    "description": "Widely regarded as one of the most deeply rooted series in Mexican TV culture, La Familia P. Luche aired on public broadcasting from 2002 to 2012 with only three seasons. Created by and starring comedian Eugenio Derbez, it follows a chaotic, and deeply dysfunctional family led by his character Ludovico P. Luche and his domineering wife, Federica (Consuelo Duval). Together with their strange children—Bibi, Ludoviquito, and Junior—and their Argentine maid, Exelsa, they all live under the same roof in the fictional Ciudad Peluche (“Plush City”) where clothes, appliances and even furniture are covered in an array of plush fabric — much like Human Resources these days. Join us for a lazy Sunday, or just enjoy an episode or two. This is a free event! Donations accepted at the door. Add to calend",
+    "event_type": "other",
+    "start": "2026-09-13T11:00:00-07:00",
+    "end": "2026-09-13T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/la-familia-p-luche-season-one-marathon/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-13T12:37:08+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_villa-2026-09-13-papyrus-scroll-making-family-workshop-8df70f9539",
+    "venue_id": "getty_villa",
+    "title": "Papyrus Scroll Making: Family Workshop",
+    "description": "Art Making, Family",
+    "event_type": "workshop",
+    "start": "2026-09-13T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/papyrus-scroll-workshop",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-13T12:37:04+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "pieter-2026-09-13-atraviesa-con-mama-948e7731c3",
+    "venue_id": "pieter",
+    "title": "aTRAVIESA con Mama",
+    "description": "A parent-and-child lead movement session where you connect, play and reconnect with you bodies!",
+    "event_type": "other",
+    "start": "2026-09-13T11:00:00-07:00",
+    "end": "2026-09-13T12:30:00-07:00",
+    "all_day": false,
+    "url": "https://pieterpasd.com/programs/atraviesaconmama-september",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d30f87ab8d965a2edb3f85/1787937875904-OO5PX5FLNPOHWNGSHXXP/atraveisaconmama_Square+%282%29.png",
+    "artists": [],
+    "location_override": "2701 North Broadway",
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-09-13T12:37:18+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-09-13-826lahammer-write-now-creativity-through-2147979a76",
+    "venue_id": "hammer",
+    "title": "826LA@Hammer: Write Now: Creativity Through Constraints",
+    "description": "An interactive writing workshop that challenges students to see writing rules not as limitations, but as tools for creativity, led by artist and educator Altesa Baker",
+    "event_type": "workshop",
+    "start": "2026-09-13T11:00:04-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/826lahammer-write-now-creativity-through-constraints",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/migrated-assets/media/programs/2019/Winter_2019/dungeon_826hero.jpg?h=c3635fa2&itok=ezhnFbjj",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-09-13T12:37:04+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-13-fiber-makers-circle-63d39ebaa0",
+    "venue_id": "lacma",
+    "title": "Fiber Maker's Circle",
+    "description": "Calling all fiber aficionados! Bring your current project or grab supplies from our stash. Led by Gem Lagonoy, you'll learn a new skill or help others in the circle. ...",
+    "event_type": "workshop",
+    "start": "2026-09-13T12:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/fiber-makers-circle-sept-13",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2023-02/IMG-3907.jpg?h=5f2ee7b9&itok=U6mM6YVD",
+    "artists": [],
+    "location_override": "W.M. Keck Education Plaza | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-13T12:37:05+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "autry-2026-09-13-la-stories-on-screen-my-familymi-familia-06471aee8a",
+    "venue_id": "autry",
+    "title": "L.A Stories on Screen |My Family/Mi Familia(1995)",
+    "description": "Film",
+    "event_type": "screening",
+    "start": "2026-09-13T13:00:00-07:00",
+    "end": "2026-09-13T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/film/la-stories-screen-my-familymi-familia-1995",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_mi%20familia.jpeg?h=495edfcb&itok=beZsEuYH",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-09-13T12:37:12+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-13-adult-art-class-acrylic-painting-1c12d2e6f1",
+    "venue_id": "lacma",
+    "title": "Adult Art Class: Acrylic Painting",
+    "description": "View art from LACMA’s collection to discover how great artists use color, composition, and brushwork to make a painting in this class taught by artist Rosanne Kleinerman. You'll learn basic painting skills while experimenting with acrylic paint and drawing tools...",
+    "event_type": "workshop",
+    "start": "2026-09-13T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/node/49909",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2022-09/lacma-9.jpg?h=6923a799&itok=N0zIxrg9",
+    "artists": [],
+    "location_override": "W.M. Keck Education Center | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-13T12:37:05+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-13-black-narcissus-f7e1ec7dda",
+    "venue_id": "academy_museum",
+    "title": "Black Narcissus",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-13T14:00:00-07:00",
+    "end": "2026-09-13T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/black-narcissus-019fc8b6-0074-37d8-71f0-06229547163d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/7dNnKhu9Jz4ApOvcc1n2Of/109602803360b47e86de9a7d68c12fa5/Sep13_BLACK_NARCISSUS_OscarSundays2TV.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-13T12:37:14+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "la_plaza-2026-09-13-book-talk-through-the-dark-with-yolanda-b5260c3097",
+    "venue_id": "la_plaza",
+    "title": "Book Talk: “Through the Dark” with Yolanda Nava | Free with RSVP",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-13T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://lapca.org/event/yolanda-nava/?event_date=2026-09-13",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/upcoming-programs/",
+    "scraped_at": "2026-09-13T12:37:27+00:00",
+    "event_types": [
+      "performance",
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
+    "id": "angels_gate--public-opening-reception-rooted-in-what-529bc85d96",
+    "venue_id": "angels_gate",
+    "title": "Public Opening Reception | Rooted In What Carries Us",
+    "description": "",
+    "event_type": "opening",
+    "start": "2026-09-13T14:00:00-07:00",
+    "end": "2026-09-13T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://angelsgateart.org/listing/public-opening-reception-rooted-in-what-carries-us/",
+    "image": "https://angelsgateart.org/wp-content/uploads/2026/09/Ad-for-Web-Rooted-in-What-Carries-Us-400x284.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "angelsgateart.org+llm",
+    "scraped_at": "2026-09-13T12:37:19+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "caam-2026-09-13-zine-workshop-sadie-barnette-how-to-fly-eaa4392c71",
+    "venue_id": "caam",
+    "title": "Zine Workshop: Sadie Barnette: How to Fly",
+    "description": "Create a zine with educators from Able ARTS Work.",
+    "event_type": "workshop",
+    "start": "2026-09-13T14:00:00-07:00",
+    "end": "2026-09-13T15:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/zine-workshop-sadie-barnette-how-to-fly-tickets-1999336676821",
+    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1192335352%2F214015320389%2F1%2Foriginal.20260901-031221?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f3f052c93b10f643b0951c57bb47a2e1",
+    "artists": [],
+    "location_override": "California African American Museum",
+    "source": "eventbrite.com (CAAM)",
+    "scraped_at": "2026-09-13T12:37:28+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-09-13-tea-dance-swing-1d650ca2ff",
+    "venue_id": "wende",
+    "title": "Tea Dance: Swing",
+    "description": "The Wende’s Tea Dance series invites you to move, mingle, and unwind through the joyful rhythm of social dance. Hosted in the Wende Museum’s Community Center, each session features different dance traditions, ranging from Argentine tango to vintage swing, led by local artists and dance instructors. No experience or partner required. This session will include a lesson on swing basics at 3 p.m., followed by open dancing at 4 p.m. Tea dances originated in early 20th-century Britain and America as daytime socials, often held in hotels and ballrooms, offering live music, light refreshments, and a welcoming space for community connection. Revived in the queer communities of mid-century America, the tradition evolved into a vibrant celebration of expression and belonging. In that spirit, our Sund",
+    "event_type": "workshop",
+    "start": "2026-09-13T15:00:00-07:00",
+    "end": "2026-09-13T18:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/tea-dance-swing/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/06/5a8eba27275b116340020852586f7144-EyyGxG.tmp_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-13T12:37:09+00:00",
+    "event_types": [
+      "workshop",
+      "performance",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "ica_la-2026-09-13-waste-vent-meet-greet-901d46a417",
+    "venue_id": "ica_la",
+    "title": "Waste & Vent Meet & Greet",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-09-13T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.theicala.org/en/events/3706-waste-vent-meet-greet",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "theicala.org",
+    "scraped_at": "2026-09-13T12:37:08+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "academy_museum-2026-09-13-making-marie-antoinette-book-signing-wit-01187bda2a",
+    "venue_id": "academy_museum",
+    "title": "Making Marie Antoinette Book Signing with Sofia Coppola and Andrew Durham",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-09-13T16:00:00-07:00",
+    "end": "2026-09-13T18:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/making-marie-antoinette-book-signing-with-sofia-coppola-019fdd99-9e6f-bd6d-2361-838c573abcca",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/Op5FLnaYR8ELZgXfsthOj/d15c5aa4e4d86a002c26b7e7277fafc2/IF_MariaAntoniette_Book.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-13T12:37:14+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-09-14-20th-anniversary-of-marie-antoinette-wit-00075bf314",
+    "venue_id": "academy_museum",
+    "title": "20th Anniversary of Marie Antoinette with Sofia Coppola and Kirsten Dunst",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-13T18:30:00-07:00",
+    "end": "2026-09-13T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/20th-anniversary-of-marie-antoinette-with-sofia-coppola-and-019fc8ba-df50-d2c5-e7fd-83e0160ed0fa",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/FfizcKzacPAo8EJdBnnwn/20a41ba8e3c3d1a526a2b9e16d5bfcfe/SELECT_Sep13_MARIE_ANTOINETT_Spotlight3MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-13T12:37:14+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]
