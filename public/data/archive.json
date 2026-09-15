@@ -17212,5 +17212,55 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "lacma-2026-09-14-personal-connections-in-person-029e2c56af",
+    "venue_id": "lacma",
+    "title": "Personal Connections (In Person)",
+    "description": "In this free in-person program, LACMA teaching artist Elonda Norris will guide an in-person tour of art highlights for people living with early stage Alzheimer’s and dementia and their care partners...",
+    "event_type": "lecture",
+    "start": "2026-09-14T10:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/node/49905",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2020-08/40_7%20-%20Karen%20Satzman.jpg?itok=FfEmeK2C",
+    "artists": [],
+    "location_override": "LACMA | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-14T13:45:34+00:00",
+    "event_types": [
+      "lecture",
+      "tour"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "human_resources-2026-09-14-fistful-of-love-by-reynaldo-rivera-179373b47c",
+    "venue_id": "human_resources",
+    "title": "Fistful Of Love by Reynaldo Rivera",
+    "description": "Tickets Shot largely over the 90s, Fistful of Love is the debut feature of the Mexico-born, Los Angeles-based photographer Reynaldo Rivera, and makes extensive use of his immense personal archive of Hi8 tapes. Vignettes from Rivera’s life in both Mexico and California—including raucous parties, punk clubs, drag performances, political protests, intimate moments with artist friends, family, and more—are elegantly edited together in a nonlinear fashion by filmmaker Pablo Bujosa Rodríguez, to present a nostalgia-free look back at el fin de siglo (end of the century), and the characters, music, and cities that make up a life. Add to calendar Google Calendar iCalendar Outlook 365 Outlook Live",
+    "event_type": "performance",
+    "start": "2026-09-14T20:00:00-07:00",
+    "end": "2026-09-14T21:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/fistful-of-love-by-reynaldo-rivera/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/I-got-poisoned-by-final-scaled.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-14T13:45:39+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
   }
 ]
