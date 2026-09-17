@@ -4308,7 +4308,9 @@
     "event_types": [
       "tour"
     ],
-    "audience": []
+    "audience": [],
+    "recurrence_note": "Also on Jul 30, Aug 27, Sep 10, Sep 24, Oct 8, Oct 22",
+    "recurrence_count": 8
   },
   {
     "id": "human_resources-2026-06-11-ex-tortion-6cde37134f",
@@ -9898,29 +9900,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_villa-2026-07-30-curators-tour-the-egyptian-book-of-the-d-99db8675ae",
-    "venue_id": "getty_villa",
-    "title": "Curator's Tour: *The Egyptian Book of the Dead*",
-    "description": "Learn how ancient Egyptians planned for their souls' transition to a divine afterlife in this 45-minute tour",
-    "event_type": "tour",
-    "start": "2026-07-30T15:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/curators-tour-book-dead",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-07-31T09:48:02+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "beyond_baroque-2026-07-30-skulls-stairs-will-alexander-emdash-bri-a2e69a82f7",
     "venue_id": "beyond_baroque",
     "title": "Skulls & Stairs: Will Alexander, Emdash, Bri Stokes, & Keith Carr Walsh",
@@ -13533,29 +13512,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_villa-2026-08-27-curators-tour-the-egyptian-book-of-the-d-66b1a0c75f",
-    "venue_id": "getty_villa",
-    "title": "Curator's Tour: *The Egyptian Book of the Dead*",
-    "description": "Learn how ancient Egyptians planned for their souls' transition to a divine afterlife in this 45-minute tour",
-    "event_type": "tour",
-    "start": "2026-08-27T15:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/curators-tour-book-dead",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-08-28T19:20:10+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "wende-2026-08-27-currents-composers-in-motion-be405371f4",
     "venue_id": "wende",
     "title": "CURRENTS: Composers in Motion",
@@ -15997,29 +15953,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_villa-2026-09-10-curators-tour-the-egyptian-book-of-the-d-fef2220e0a",
-    "venue_id": "getty_villa",
-    "title": "Curator's Tour: *The Egyptian Book of the Dead*",
-    "description": "Learn how ancient Egyptians planned for their souls' transition to a divine afterlife in this 45-minute tour",
-    "event_type": "tour",
-    "start": "2026-09-10T15:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/curators-tour-book-dead",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-09-10T12:07:14+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "mak_center-2026-09-10-final-projects-group-lix-spindrift-lix-f871d0998f",
     "venue_id": "mak_center",
     "title": "Opening Reception for Final Projects: Group LIX - spindrift LIX",
@@ -17394,6 +17327,262 @@
     "location_override": null,
     "source": "humanresourcesla.com",
     "scraped_at": "2026-09-16T12:29:36+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-16-emma-in-35mm-b69497c38b",
+    "venue_id": "academy_museum",
+    "title": "Emma in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-16",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/emma-019fc8aa-b2f6-34e4-0af9-8a7dffc5f782",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2DZlYk1UfaAbIqlFXp5taa/cb3c10ecae07efa524fa22ffecc09bb3/Sep16_EMMA_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-17T12:29:15+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "museum_of_tolerance-2026-09-16-the-righteous-roadtrip-3a7ec0a178",
+    "venue_id": "museum_of_tolerance",
+    "title": "The Righteous Roadtrip",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-16",
+    "end": "2026-09-16",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/the-righteous-roadtrip",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-09-15T12:32:07+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-09-16-lunchtime-art-talk-on-diane-arbus-e1c2aa8e4e",
+    "venue_id": "hammer",
+    "title": "Lunchtime Art Talk on Diane Arbus",
+    "description": "Curatorial assistant Jennifer Buonocore-Nedrelow leads an in-person discussion of the work of Diane Arbus.",
+    "event_type": "lecture",
+    "start": "2026-09-16T12:30:30-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-diane-arbus",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2022-04/August%2010_Diane%20Arbus%E2%80%99%20A%20Castle%20in%20Disneyland%2C%20California%2C%201964%2C%201964.jpeg?h=3e7b06f6&itok=lsLyulbs",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-09-16T12:29:30+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-09-16-visita-guiada-con-la-curadora-instantere-179824ca65",
+    "venue_id": "getty_center",
+    "title": "Visita guiada con la curadora: *Instante/revelación* (español)",
+    "description": "Este tour se adentrará en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía mexicana",
+    "event_type": "tour",
+    "start": "2026-09-16T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/visita-guiada-instante",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-16T12:29:31+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-16-communities-create-la-design-to-impress-b29f2a6935",
+    "venue_id": "lacma",
+    "title": "Communities Create LA! Design to Impress",
+    "description": "Design and dress your own character to the limits of your imagination inspired by theWoman's Dress (Bodice and Skirt)(c...",
+    "event_type": "workshop",
+    "start": "2026-09-16T15:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/node/49600",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-06/IMG_7415%20%281%29.jpeg?itok=XS2vKqTl",
+    "artists": [],
+    "location_override": "Lennox Library",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-16T12:29:32+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "calarts-2026-09-16-career-caf-la-in-motion-now-and-next-rei-bec532ed3c",
+    "venue_id": "calarts",
+    "title": "Career Café: LA in Motion Now and Next: Reimagining Art, Access & Policy Panel",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-09-16T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/la-in-motion-now-and-next-reimagining-art-access-policy-discussion-tickets-1997639779355?aff=ebdssbdestsearch",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-09-16T12:29:51+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-09-16-la-in-motion-now-038-next-reimagining-ar-785de98a1f",
+    "venue_id": "wende",
+    "title": "LA in Motion Now & Next: Reimagining Art, Access and Policy",
+    "description": "Dive into LA’s pubic art scene, learn about fresh policy moves shaping the city’s creative future. Case Studies: LAX Airport x LA Metro Join us in person for an insightful panel discussion where creative minds dive into the future of public art, accessibility, and policy in LA. Discover new perspectives, engage in dynamic conversations, and explore how art shapes our city’s landscape today and tomorrow. Don’t miss this chance to be part of the movement that’s reshaping our City’s cultural scene! Free Admission, Seating is limited – Panel Discussion with Reception Preceding and Following the Discussion Please RSVP here or on Eventbrite PANELISTS: • Maya Emsden, Executive Officer, Arts + Community Enrichment, LA Metro • Sarah Cifarelli, LAX Art Program Director • David Pagel, Claremont Gradu",
+    "event_type": "lecture",
+    "start": "2026-09-16T18:00:00-07:00",
+    "end": "2026-09-16T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/la-in-motion-now-next-reimagining-art-access-and-policy/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/09/W-QR-CODE-No-Sponsors-copy.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-16T12:29:36+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-09-16-afterhours-tour-stephanie-schrader-on-fi-6b53453f3c",
+    "venue_id": "hammer",
+    "title": "After-Hours Tour: Stephanie Schrader on Five Centuries of Works on Paper: The Grunwald Center at 70, Part II",
+    "description": "Join Curator of Drawings, J. Paul Getty Museum, Stephanie Schrader for an after-hours tour of the exhibition.",
+    "event_type": "lecture",
+    "start": "2026-09-16T18:00:30-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/after-hours-tour-stephanie-schrader-five-centuries-works-paper-grunwald-center",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-06/Hammer-2026-06-17_029-04---X-Large-%282400-px%29.jpg?h=19ad3fdd&itok=o3zJeCK3",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-09-16T12:29:30+00:00",
+    "event_types": [
+      "lecture",
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "human_resources-2026-09-16-empty-metal-3823733511",
+    "venue_id": "human_resources",
+    "title": "Empty Metal",
+    "description": "Tickets Empty Metal presented by Clara López Menéndez Length: 83 minutes Set in the abusive police state of the contemporary United States, EMPTY METAL follows five groups of characters, each emblematic of a different extreme political ideology, as they attempt insurrection against the status quo: a queer noise band is coerced into a dangerous assassination plot by a family of militant Native Americans who are aided by a Rastafarian computer hacker who is old friends with a Buddhist hermit whose son is a local militia leader. This tangled web of marginalized voices is as diverse and contradictory as the nation that spun it, but there is a common thread: all the characters teeter on the dull knife blade that is contemporary American politics, but they refuse to fall right or left. Instead,",
+    "event_type": "other",
+    "start": "2026-09-16T19:00:00-07:00",
+    "end": "2026-09-16T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/empty-metal/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/EmptyMetalStill6-crop.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-16T12:29:36+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-17-emma-in-35mm-7d96a6c2f2",
+    "venue_id": "academy_museum",
+    "title": "Emma in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-16T19:30:00-07:00",
+    "end": "2026-09-16T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/emma-019fc8aa-b2f6-34e4-0af9-8a7dffc5f782",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2DZlYk1UfaAbIqlFXp5taa/cb3c10ecae07efa524fa22ffecc09bb3/Sep16_EMMA_BranchSelects1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-16T12:29:40+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "lacma-2026-09-16-exclusive-membersonly-screening-hachan-s-f0c8563231",
+    "venue_id": "lacma",
+    "title": "Exclusive Members-Only Screening: Ha-Chan, Shake Your Booty!",
+    "description": "LACMA members are invited to join FILM at LACMA for a special advance screening ofHa-Chan, Shake Your Booty!...",
+    "event_type": "screening",
+    "start": "2026-09-16T19:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/exclusive-member-screening-ha-chan-shake-your-booty",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/10%20%281%29.jpg?VersionId=YhMaa_pkX6GhjaL7FG3MesCea5i8jnId&itok=GnYIZXrA",
+    "artists": [],
+    "location_override": null,
+    "source": "lacma.org",
+    "scraped_at": "2026-09-16T12:29:32+00:00",
     "event_types": [
       "screening"
     ],
