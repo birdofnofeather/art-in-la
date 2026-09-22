@@ -2401,27 +2401,6 @@
     "_default_type": "other"
   },
   {
-    "id": "the_broad-2026-03-15-sensory-morning-at-the-broad-da8854bbe7",
-    "venue_id": "the_broad",
-    "title": "Sensory Morning at The Broad",
-    "description": "Sensory Morning at The Broad is a free ticketed event that provides early access to the third-floor collections galleries, Robert Therrien: This is a Story , and Yayoi Kusama's immersive installation Infinity Mirrored Room—The Souls of Millions of Light Years Away (2013) to visitors who would benefit from a sensory-friendly experience. Reservations are required as space is limited.",
-    "event_type": "exhibition",
-    "start": "2026-03-15T09:00:00-07:00",
-    "end": "2026-09-20T10:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.thebroad.org/events/sensory-morning-broad-14",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "thebroad.org",
-    "scraped_at": "2026-05-31T00:04:58+00:00",
-    "_default_type": "other",
-    "event_types": [
-      "exhibition"
-    ],
-    "audience": []
-  },
-  {
     "id": "moah-2026-03-19-giras-en-espaol-ms-arte-ms-conexin-8640482226",
     "venue_id": "moah",
     "title": "Giras en Español: Más arte. Más conexión.",
@@ -19570,5 +19549,172 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-21-music-in-the-rose-garden-d76f48a1eb",
+    "venue_id": "huntington",
+    "title": "Music in the Rose Garden",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-21",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/music-rose-garden",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-03%2F2023_Rose_Garden_super_bloom_by_TC.jpg%3Fitok%3DCW-QFxgZ&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-20T12:06:22+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-21-personal-connections-virtual-16d551f72c",
+    "venue_id": "lacma",
+    "title": "Personal Connections (Virtual)",
+    "description": "...",
+    "event_type": "lecture",
+    "start": "2026-09-21T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/personal-connections-july-20-1",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2020-08/40_7%20-%20Karen%20Satzman.jpg?itok=FfEmeK2C",
+    "artists": [],
+    "location_override": "Online | Online",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-21T13:45:36+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "academy_museum-2026-09-21-how-to-marry-a-millionaire-a175d22192",
+    "venue_id": "academy_museum",
+    "title": "How to Marry a Millionaire",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-21T14:30:00-07:00",
+    "end": "2026-09-21T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/how-to-marry-a-millionaire-019fc894-7141-e330-b73d-4a62f069bd8e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/35dNwX0hQv8NrevaQU6zw8/74d4f4b84d080a09dd3bea6e5bbc5093/Sep21_HOW_TO_MARRY_A_MILLIONAIRE_Marilyn2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-21T13:45:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "lacma-2026-09-21-mindful-monday-cultivating-empathy-and-c-cf54b6d77d",
+    "venue_id": "lacma",
+    "title": "Mindful Monday: Cultivating Empathy and Connectedness @ Home...",
+    "description": "LACMA continues to bring art experiences to you!...",
+    "event_type": "lecture",
+    "start": "2026-09-21T16:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/node/49713",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2025-05/LACMA_WebBanner_MM_2025_2133x1308.png?itok=oOSGsIqA",
+    "artists": [],
+    "location_override": "Online",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-21T13:45:36+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "lacma-2026-09-21-member-monday-pacific-ocean-david-geffen-6971c60ab6",
+    "venue_id": "lacma",
+    "title": "Member Monday | Pacific Ocean, David Geffen Galleries",
+    "description": "Member Mondays are extended evening hours spotlighting select exhibitions, exclusively for LACMA members...",
+    "event_type": "exhibition",
+    "start": "2026-09-21T18:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/september-member-monday-0",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/SF3775_17-Gallery17-20260323.jpg?VersionId=KA.IQ4mgXRks7Yc7MjKoL7f6APRNkiXE&itok=BE60J9Q-",
+    "artists": [],
+    "location_override": "David Geffen Galleries | LACMA, LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-21T13:45:36+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-09-21-the-genesis-talks-marc-merrill-and-micha-21d2f49f5c",
+    "venue_id": "lacma",
+    "title": "The Genesis Talks: Marc Merrill and Michael Govan",
+    "description": "Hear from Riot Games co-founder Marc Merrill and LACMA CEO Michael Govan at an edition ofThe Genesis Talksexploring the intersection of culture, creativity, and innovation. ...",
+    "event_type": "lecture",
+    "start": "2026-09-21T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/genesis-talks-marc-merrill",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/EDU%20-%20GT%20Merrill%20%204000%20x%201600%2002A.jpg?VersionId=FnotA1wjqJoZ.JBrScdlmdirnE881676&itok=Q_zUH6hM",
+    "artists": [],
+    "location_override": "LACMA, East West Bank Commons",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-21T13:45:36+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "human_resources-2026-09-21-kout-vwa-35766b47ff",
+    "venue_id": "human_resources",
+    "title": "Kouté Vwa",
+    "description": "Tickets Kouté vwa (Listen to the Voices) Directed by Maxime Jean-Baptiste 2024, HD, color, sound, 76 minutes Los Angeles Premiere, Co-presented by Los Angeles Filmforum An elegy, but also a celebration, Kouté vwa (Listen to the Voices) portrays a family and a community as they experience grief, joy, and reconciliation in the wake of tragedy. Melrick, a 13-year-old boy, spends his summer vacation with his grandmother Nicole in Cayenne, French Guiana. His presence and his desire to learn how to play the drums brings back the memory of Nicole’s son and Melrick’s uncle, Lucas. Also a musician, Lucas died in tragic circumstances 11 years earlier. Faced with the grief that haunts his family and Lucas’s best friend’s desire for revenge, Melrick seeks his own path to forgiveness. “With a subtle bl",
+    "event_type": "screening",
+    "start": "2026-09-21T19:30:00-07:00",
+    "end": "2026-09-21T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/koute-vwa/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/08/KOUTE_VWA_Still2.png",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-09-21T13:45:40+00:00",
+    "event_types": [
+      "screening",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   }
 ]
