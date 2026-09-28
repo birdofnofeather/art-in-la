@@ -2446,6 +2446,30 @@
     "audience": []
   },
   {
+    "id": "lbma-2026-03-20-why-paint-a-landscape-c2c65ce814",
+    "venue_id": "lbma",
+    "title": "Why Paint a Landscape?",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-03-20",
+    "end": "2026-09-27",
+    "all_day": true,
+    "url": "https://www.lbma.org/exhibitions/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lbma.org",
+    "scraped_at": "2026-09-26T12:07:56+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "forest_lawn-2026-03-21-convergence-contemporary-artists-of-arme-66759b4196",
     "venue_id": "forest_lawn",
     "title": "Convergence: Contemporary Artists of Armenian Descent",
@@ -6138,6 +6162,32 @@
     "_default_type": "screening",
     "_asserted_type": "other",
     "audience": []
+  },
+  {
+    "id": "lbma-2026-06-26-positive-fragmentation-from-the-collecti-02caeb9381",
+    "venue_id": "lbma",
+    "title": "Positive Fragmentation: From the Collection of Jordan D. Schnitzer and His Family Foundation",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-06-26",
+    "end": "2026-09-27",
+    "all_day": true,
+    "url": "https://www.lbma.org/exhibitions/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lbma.org",
+    "scraped_at": "2026-09-26T12:07:56+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "academy_museum-2026-06-26-theres-no-business-like-show-business-f7f85c456b",
@@ -14239,6 +14289,30 @@
     "_default_type": "screening"
   },
   {
+    "id": "calarts-2026-08-30-la-writers-workshop-reading-series-008e57e568",
+    "venue_id": "calarts",
+    "title": "LA Writer’s Workshop Reading Series",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-08-30T15:30:00-07:00",
+    "end": "2026-09-27T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.centertheatregroup.org/shows-tickets/around-la/202627/la-writers-workshop/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-09-27T12:52:24+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "academy_museum-2026-08-31-one-battle-after-another-in-vistavision-c9718a6156",
     "venue_id": "academy_museum",
     "title": "One Battle After Another in VistaVision",
@@ -21301,5 +21375,314 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-27-mandarin-tour-this-land-is-bf81fb01b4",
+    "venue_id": "huntington",
+    "title": "Mandarin Tour: THIS LAND IS ...",
+    "description": "",
+    "event_type": "tour",
+    "start": "2026-09-27",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/chinese-tour-this-land-is",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13U3SF.jpg%3Fitok%3DdoWFIFxI&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-26T12:07:48+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-27-midautumn-moon-celebration-8046b2945c",
+    "venue_id": "huntington",
+    "title": "Mid-Autumn Moon Celebration",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-09-27",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/mid-autumn-moon-celebration",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZKWK.jpg%3Fitok%3DgmHmJSz3&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-26T12:07:48+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-09-27-reflective-writing-and-intuitive-collage-d72610beb0",
+    "venue_id": "huntington",
+    "title": "Reflective Writing and Intuitive Collage",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-27",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/restore-explore-reflective-writing-and-intuitive-collage",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2Frestore-explore-reflective-writing-collage-event-square.jpg%3Fitok%3Dmmt5EXkJ&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-26T12:07:48+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-27-they-live-with-john-carpenter-e4f7bf9fb3",
+    "venue_id": "academy_museum",
+    "title": "They Live with John Carpenter",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-27",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/they-live-with-john-carpenter-019fc8bd-7eb2-9037-e9c7-c5ede38fe138",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3v1dgCIT3G4IwNgLij4fz2/1d43d88e2cafd9610e63c9d467588fc5/Sep27_THEY_LIVE_Carpenter4MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-28T15:06:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "wende-2026-09-27-2026-fall-icea-free-chess-the-wende-0d35999853",
+    "venue_id": "wende",
+    "title": "2026 Fall ICEA Free Chess @ The Wende",
+    "description": "ICEA Chess hosts a free quarterly, one-day chess tournament for players of all ages and skill levels, with the venue generously sponsored by The Wende Museum. The event offers a fun, competitive, and welcoming chess experience in one of Culver City’s most unique and inspiring cultural venues. Whether you are an experienced tournament player or new to competitive chess, this event is a wonderful opportunity to sharpen your skills, meet fellow chess enthusiasts, and enjoy a day of strategy, learning, and community—all at no cost.",
+    "event_type": "other",
+    "start": "2026-09-27T09:00:00-07:00",
+    "end": "2026-09-27T18:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/2026-fall-icea-free-chess-the-wende-2/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/08/ICEA-Chess-@-The-Wende-2-1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-27T12:52:09+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "las_fotos_project-2026-09-27-sports-photography-workshop-8b531ac43f",
+    "venue_id": "las_fotos_project",
+    "title": "SPORTS PHOTOGRAPHY WORKSHOP",
+    "description": "Join us for a sports photography workshop!",
+    "event_type": "workshop",
+    "start": "2026-09-27T10:30:00-07:00",
+    "end": "2026-09-27T13:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.lasfotosproject.org/events/vkajnfv73gt36a173sti0pcxumt4pa-trgfy",
+    "image": "https://images.squarespace-cdn.com/content/v1/68194120b9fd46197daadae6/1790379954889-A589IJT20QCVWGX4CYGZ/0927_SportsPhotographyWorkshopFlier.png",
+    "artists": [],
+    "location_override": "Evolve Soccer LA, 1921 Blake Avenue",
+    "source": "lasfotosproject.org",
+    "scraped_at": "2026-09-27T12:52:16+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-09-27-family-day-dream-museum-5d08287e7f",
+    "venue_id": "wende",
+    "title": "Family Day: Dream Museum",
+    "description": "What would your dream museum look like? Join us at the Wende Museum for a fun-filled Family Day where you can imagine and create a museum of your very own! Using collage, drawing tools, stickers, and colorful paper, design the museum you’ve always dreamed of. Will it be filled with art, fascinating cultural objects, or something completely unexpected? There are no rules – let your imagination lead the way! All ages are welcome. All materials and light refreshments will be provided.",
+    "event_type": "fair",
+    "start": "2026-09-27T12:00:00-07:00",
+    "end": "2026-09-27T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/family-day-dream-museum/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/09/dream-museum-16x9-1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-09-27T12:52:09+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-09-27-postponed-curator-walkthrough-huguette-c-d182ec9f09",
+    "venue_id": "hammer",
+    "title": "POSTPONED: Curator Walk-through: Huguette Caland: A Life in Few Lines",
+    "description": "Exhibition curator Hannah Feldman leads a walk-through of the exhibition.",
+    "event_type": "lecture",
+    "start": "2026-09-27T12:00:04-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/postponed-curator-walk-through-huguette-caland-life-few-lines",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-05/HC_Caland%2C-L%E2%80%99argent-Ancestor_1994-1995.jpg?h=a3c6fb63&itok=YfLBJOnu",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-09-27T12:52:04+00:00",
+    "event_types": [
+      "lecture",
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "lacma-2026-09-27-fiber-makers-circle-48b7dacc33",
+    "venue_id": "lacma",
+    "title": "Fiber Maker's Circle",
+    "description": "Calling all fiber aficionados! Bring your current project or grab supplies from our stash. Led by Connie Rohman, you'll learn a new skill or help others in the circle. ...",
+    "event_type": "workshop",
+    "start": "2026-09-27T12:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/fiber-makers-circle-sept-27",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2023-02/IMG-3907.jpg?h=5f2ee7b9&itok=U6mM6YVD",
+    "artists": [],
+    "location_override": "W.M. Keck Education Center | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-09-27T12:52:05+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "academy_museum-2026-09-27-special-effects-in-horror-with-tom-belli-eb5642a480",
+    "venue_id": "academy_museum",
+    "title": "Special Effects in Horror with Tom Bellissimo",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-27T13:00:00-07:00",
+    "end": "2026-09-27T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/special-effects-in-horror-with-tom-bellissimo-019ff30c-48e0-4b61-5a86-0f2d2c9c23c8",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/7fu2okTdRzIHs7hFbzoiL1/d09886c96280183a115441d5d1c23ef7/e421da41-6f06-4dcb-b4bf-5ccaf97a0197.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-27T12:52:13+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-09-27-doctor-zhivago-028292e1be",
+    "venue_id": "academy_museum",
+    "title": "Doctor Zhivago",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-27T14:00:00-07:00",
+    "end": "2026-09-27T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/doctor-zhivago-019fc8b6-eb8f-e390-20b3-65c983b6d891",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/plGdm3GogEzDdbORU7g2I/1250e3ca593dce1fdb290f11ba19d32c/Sep27_DOCTOR_ZHIVAGO_OscarSundays2.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-27T12:52:13+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "redcat-2026-09-27-la-writers-workshop-reading-series-cente-addb85e469",
+    "venue_id": "redcat",
+    "title": "LA Writer’s Workshop Reading Series — Center Theatre Group",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-27T15:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.redcat.org/events/center-theatre-group",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-06/LAWW-ProdPage-1920x1080.jpg?h=d1cb525d&itok=qwt4wseM",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-09-27T12:52:06+00:00",
+    "event_types": [
+      "performance",
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
+    "id": "academy_museum-2026-09-28-they-live-with-john-carpenter-8c069e8d10",
+    "venue_id": "academy_museum",
+    "title": "They Live with John Carpenter",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-27T19:30:00-07:00",
+    "end": "2026-09-27T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/they-live-with-john-carpenter-019fc8bd-7eb2-9037-e9c7-c5ede38fe138",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3v1dgCIT3G4IwNgLij4fz2/1d43d88e2cafd9610e63c9d467588fc5/Sep27_THEY_LIVE_Carpenter4MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-27T12:52:13+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]
