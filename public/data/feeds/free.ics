@@ -6,24 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Free events
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2@art-in-la
-DTSTAMP:20260928T150901Z
-DTSTART:20260927T180000Z
-SUMMARY:Lucha Libre Film Screening and Family Expo!
-LOCATION:Museum of Latin American Art\, 628 Alamitos Avenue
-URL:https://molaa.org/events/2026/09/27/lucha-libre-screening-expo
-DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
- ts/2026/09/27/lucha-libre-screening-expo\n\nJoin us for an afternoon of f
- ood trucks\, art workshops\, panels\, meet & greet with Lucha Libre wrest
- lers\, and a rare film screening of La Mujer Murciélago (The Batwoman) h
- osted by art historian and film preservationist Viviana Garcia Besne\, an
- d more! Free admission with the Month of Lucha Libre All Access Badge Pas
- s. Badges go on sale July 6th. If spaces are still available\, individual
-  tickets to t
-END:VEVENT
-BEGIN:VEVENT
 UID:la_plaza-2026-10-02-da-del-sonidero-free-with-rsvp-e8c4cb2d2a@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T010000Z
 SUMMARY:Día del Sonidero | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -33,7 +17,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-02-the-firefly-teen-experience-88a0a1c728@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T013000Z
 DTEND:20261003T040000Z
 SUMMARY:The Firefly Teen Experience
@@ -48,8 +32,26 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/the-fire
   to everyone\, but teens (11-19yrs) are the guests of honor. Brought 
 END:VEVENT
 BEGIN:VEVENT
+UID:pvac-2026-10-03-pvac-95th-anniversary-open-house-b50f412bae@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261003T170000Z
+DTEND:20261004T230000Z
+SUMMARY:PVAC 95th Anniversary Open House
+LOCATION:5504 W Crestridge Rd\, Rancho Palos Verdes\, CA 90275
+URL:https://pvartcenter.org/upcoming_events/pvac-95th-anniversary-open-hou
+ se/
+DESCRIPTION:Palos Verdes Art Center · Free · https://pvartcenter.org/upc
+ oming_events/pvac-95th-anniversary-open-house/\n\nPALOS VERDES ART CENTER
+  95th ANNIVERSARY OPEN HOUSE OCTOBER 3 & 4 10am – 4pm FREE Join us this
+  Saturday and Sunday\, October 3rd and 4th\, to celebrate PVAC’s 95th a
+ nniversary with free art activities for kids and adults. Art projects wil
+ l be presented by members of PVAC’s seven artist groups ( PVACA )\, alo
+ ng with instructors from our art in the schools program\, Art At Your Fin
+ gertips \, and voluntee
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-10-03-dropin-workshop-for-families-alebrijes-1bdfc9f8f6@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T193000Z
 DTEND:20261003T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -62,7 +64,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-03-inside-barbie-to-anna-karenina-productio-1f0a8d631c@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T210000Z
 DTEND:20261003T220000Z
 SUMMARY:Inside Barbie to Anna Karenina: Production Design with Jan Pascale
@@ -75,7 +77,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-03-navigating-our-media-ecosystem-reclaimin-9b0f7690bd@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T210000Z
 DTEND:20261003T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -93,7 +95,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-04-urban-milpa-medicinal-teas-free-with-rsv-ae23e9263b@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261004T200000Z
 SUMMARY:Urban Milpa – Medicinal Teas | Free with RSVP | SOLD OUT
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -103,7 +105,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-10-09-artnight-pasadena-at-the-armory-1a47acfcbd@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART;VALUE=DATE:20261009
 SUMMARY:ArtNight Pasadena at the Armory
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -114,8 +116,28 @@ DESCRIPTION:Armory Center for the Arts · Free · https://armoryarts.org/c
  dly evening of art and performance.
 END:VEVENT
 BEGIN:VEVENT
+UID:sparc-2026-10-10-talkworkshop-the-history-and-traditions-2f97fdaabc@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261010T090000Z
+DTEND:20261010T230000Z
+SUMMARY:[Talk/Workshop] The History and Traditions of Día de los Muertos 
+ with Professor Martha Ramirez-Oropeza
+LOCATION:685 Venice Blvd\, Venice\, CA 90291
+URL:https://sparcinla.org/event/talk-workshop-the-history-and-traditions-o
+ f-dia-de-los-muertos-with-professor-martha-ramirez-oropeza/
+DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
+ inla.org/event/talk-workshop-the-history-and-traditions-of-dia-de-los-mue
+ rtos-with-professor-martha-ramirez-oropeza/\n\nBefore we gather to celebr
+ ate Día de los Muertos 2026 in November\, take an afternoon to discover 
+ the meaning behind the marigolds\, the ofrendas\, and the sugar skulls. J
+ oin Professor Martha Ramirez-Oropeza for a talk and workshop exploring th
+ e roots of one of Mexico’s most beloved traditions. From its Indigenous
+  origins to the vibrant celebrations of today\, you’ll learn how Día d
+ e los Muertos becam
+END:VEVENT
+BEGIN:VEVENT
 UID:pvac-2026-10-10-malaga-cove-art-on-the-lawn-show-e88e306667@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261010T170000Z
 DTEND:20261012T000000Z
 SUMMARY:Malaga Cove Art on the Lawn Show
@@ -133,7 +155,7 @@ DESCRIPTION:Palos Verdes Art Center · Free · https://pvartcenter.org/upc
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261010T193000Z
 DTEND:20261010T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -146,7 +168,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2026-10-11-atraviesa-groove-sessions-32d98778a6@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261011T180000Z
 DTEND:20261011T193000Z
 SUMMARY:aTRAVIESA Groove Sessions
@@ -161,7 +183,7 @@ DESCRIPTION:Pieter Performance Space · Free · https://pieterpasd.com/pro
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-14-the-guacanagarx-exchange-the-new-world-i-4e19706de9@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261015T020000Z
 SUMMARY:The Guacanagaríx Exchange: The New World Influence on Italian Cui
  sine | Free with RSVP
@@ -172,8 +194,29 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
  /the-guacanagarix-exchange/?event_date=2026-10-14
 END:VEVENT
 BEGIN:VEVENT
+UID:sparc-2026-10-17-workshop-i-learn-to-make-traditional-and-7660ca1b04@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261017T090000Z
+DTEND:20261017T230000Z
+SUMMARY:[Workshop I] Learn to make traditional and new decorations for Dí
+ a de los Muertos with Professor Martha Ramirez-Oropeza
+LOCATION:685 Venice Blvd\, Venice\, CA 90291
+URL:https://sparcinla.org/event/workshop-i-learn-to-make-traditional-and-n
+ ew-decorations-for-dia-de-los-muertos-with-professor-martha-ramirez-orope
+ za/
+DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
+ inla.org/event/workshop-i-learn-to-make-traditional-and-new-decorations-f
+ or-dia-de-los-muertos-with-professor-martha-ramirez-oropeza/\n\nJoin Prof
+ essor Martha Ramirez-Oropeza for a creative afternoon of making decoratio
+ ns for Día de los Muertos\, from time-honored traditional pieces to fres
+ h\, modern takes. Decorations are at the heart of the celebration. They b
+ ring color\, beauty\, and meaning to the ofrenda and invite our loved one
+ s back to visit. In this workshop\, you’ll learn the significance behin
+ d each piece as you create it. No 
+END:VEVENT
+BEGIN:VEVENT
 UID:18th_street-2026-10-18-citizen-artist-reading-group-d13572a903@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261018T170000Z
 DTEND:20261018T190000Z
 SUMMARY:Citizen Artist Reading Group
@@ -190,7 +233,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-10-22-catalyst-quartet-bessie-bartlett-frankel-4c2b4135e7@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261023T030000Z
 DTEND:20261023T043000Z
 SUMMARY:Catalyst Quartet: Bessie Bartlett Frankel Chamber Music Festival
@@ -207,8 +250,29 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
  , cello) believes in the unity that can be achie
 END:VEVENT
 BEGIN:VEVENT
+UID:sparc-2026-10-24-workshop-ii-learn-to-make-traditional-an-e546a813f9@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261024T090000Z
+DTEND:20261024T230000Z
+SUMMARY:[Workshop II] Learn to make traditional and new decorations for D
+ ía de los Muertos with Professor Martha Ramirez-Oropeza
+LOCATION:685 Venice Blvd\, Venice\, CA 90291
+URL:https://sparcinla.org/event/workshop-ii-learn-to-make-traditional-and-
+ new-decorations-for-dia-de-los-muertos-with-professor-martha-ramirez-orop
+ eza/
+DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
+ inla.org/event/workshop-ii-learn-to-make-traditional-and-new-decorations-
+ for-dia-de-los-muertos-with-professor-martha-ramirez-oropeza/\n\nJoin Pro
+ fessor Martha Ramirez-Oropeza for a creative afternoon of making decorati
+ ons for Día de los Muertos\, from time-honored traditional pieces to fre
+ sh\, modern takes. Decorations are at the heart of the celebration. They 
+ bring color\, beauty\, and meaning to the ofrenda and invite our loved on
+ es back to visit. In this workshop\, you’ll learn the significance behi
+ nd each piece as you create it. No 
+END:VEVENT
+BEGIN:VEVENT
 UID:caam-2026-10-24-zine-workshop-reggie-burrows-hodges-a-th-82a25d2032@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261024T210000Z
 DTEND:20261024T223000Z
 SUMMARY:Zine Workshop: Reggie Burrows Hodges: A Theater of Miracles
@@ -221,7 +285,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-10-24-claremont-concert-orchestra-fall-concert-615c7145af@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261025T023000Z
 DTEND:20261025T040000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -239,7 +303,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -249,7 +313,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-10-25-claremont-concert-orchestra-fall-concert-7dd44d8741@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261025T210000Z
 DTEND:20261025T223000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -267,7 +331,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-25-academy-museum-x-cinephile-movie-trivia-953a560852@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261025T233000Z
 DTEND:20261026T020000Z
 SUMMARY:Academy Museum x Cinephile: Movie Trivia Night
@@ -280,7 +344,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-30-gallery-spotlight-creating-the-horror-sh-860e3ea243@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261030T190000Z
 DTEND:20261030T200000Z
 SUMMARY:Gallery Spotlight: Creating The Horror Show
@@ -293,7 +357,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-01-museum-after-dark-01a263b534@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261101T020000Z
 DTEND:20261101T054500Z
 SUMMARY:Museum After Dark
@@ -305,8 +369,25 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
  -8932990ed413
 END:VEVENT
 BEGIN:VEVENT
+UID:sparc-2026-11-01-the-24th-annual-da-de-los-muertos-celebr-a8c4f7ac9d@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261101T133000Z
+DTEND:20261102T043000Z
+SUMMARY:The 24th annual Día de los Muertos celebration and ritual
+LOCATION:685 Venice Blvd\, Venice\, CA 90291
+URL:https://sparcinla.org/event/dia-de-los-muertos-2026/
+DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
+ inla.org/event/dia-de-los-muertos-2026/\n\nJoin us for our 24th annual D
+ ía de los Muertos celebration and ritual. The free event will take place
+  from 5:30 pm to 8:30 pm at SPARC’s historic headquarters at 685 Venice
+  Blvd .\, and will feature traditional altars\, art\, performances\, and 
+ special Oaxacan treats! The evening will begin with a traditional invocat
+ ion ritual at sunset\, conducted in Nahuatl\, Spanish\, and English\, hon
+ oring the rich cu
+END:VEVENT
+BEGIN:VEVENT
 UID:la_plaza-2026-11-01-24th-annual-encuentro-de-jaraneros-de-ca-3080ba9eaa@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261101T200000Z
 SUMMARY:24th Annual Encuentro de Jaraneros de California | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -317,7 +398,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261107T203000Z
 DTEND:20261107T223000Z
 SUMMARY:Drop-in Workshop for Families: Día de Muertos with Lil’ Libros
@@ -331,7 +412,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-08-sage-nija-whitson-revival-revival-eeb84b1d3a@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261108T210000Z
 DTEND:20261108T210000Z
 SUMMARY:Sage Ni’Ja Whitson: Revival_ _Revival
@@ -347,7 +428,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-11-14-the-artists8217-studio-celebration-of-ar-5fe45e1194@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261114T180000Z
 DTEND:20261116T000000Z
 SUMMARY:The Artists’ Studio Celebration of Art
@@ -365,7 +446,7 @@ DESCRIPTION:Palos Verdes Art Center · Free · https://pvartcenter.org/upc
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-dropin-workshop-for-teens-editing-for-ho-0a3984239e@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261121T003000Z
 DTEND:20261121T023000Z
 SUMMARY:Drop-in Workshop for Teens: Editing for Horror Films
@@ -378,7 +459,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-22-citizen-artist-reading-group-with-pilar-a63ea05a8e@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261122T180000Z
 DTEND:20261122T200000Z
 SUMMARY:Citizen Artist Reading Group with Pilar Tompkins Rivas
@@ -395,7 +476,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-06-winter-choral-concert-21ebb9fe61@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261206T230000Z
 DTEND:20261207T003000Z
 SUMMARY:Winter Choral Concert
@@ -413,7 +494,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-12-claremont-concert-orchestra-fall-concert-f7fe4bf625@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261213T033000Z
 DTEND:20261213T050000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -431,7 +512,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2026-12-13-atraviesa-groove-sessions-a6536eac0e@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261213T190000Z
 DTEND:20261213T203000Z
 SUMMARY:aTRAVIESA Groove Sessions
@@ -447,7 +528,7 @@ DESCRIPTION:Pieter Performance Space · Free · https://pieterpasd.com/pro
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-13-claremont-concert-orchestra-fall-concert-ce14295f25@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261213T220000Z
 DTEND:20261213T233000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -465,7 +546,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-12-20-citizen-artist-reading-group-6fde45417b@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261220T180000Z
 DTEND:20261220T200000Z
 SUMMARY:Citizen Artist Reading Group

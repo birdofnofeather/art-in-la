@@ -6,24 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2@art-in-la
-DTSTAMP:20260928T150901Z
-DTSTART:20260927T180000Z
-SUMMARY:Lucha Libre Film Screening and Family Expo!
-LOCATION:Museum of Latin American Art\, 628 Alamitos Avenue
-URL:https://molaa.org/events/2026/09/27/lucha-libre-screening-expo
-DESCRIPTION:Museum of Latin American Art · Free · https://molaa.org/even
- ts/2026/09/27/lucha-libre-screening-expo\n\nJoin us for an afternoon of f
- ood trucks\, art workshops\, panels\, meet & greet with Lucha Libre wrest
- lers\, and a rare film screening of La Mujer Murciélago (The Batwoman) h
- osted by art historian and film preservationist Viviana Garcia Besne\, an
- d more! Free admission with the Month of Lucha Libre All Access Badge Pas
- s. Badges go on sale July 6th. If spaces are still available\, individual
-  tickets to t
-END:VEVENT
-BEGIN:VEVENT
 UID:wende-2026-10-02-the-firefly-teen-experience-88a0a1c728@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T013000Z
 DTEND:20261003T040000Z
 SUMMARY:The Firefly Teen Experience
@@ -38,8 +22,26 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/the-fire
   to everyone\, but teens (11-19yrs) are the guests of honor. Brought 
 END:VEVENT
 BEGIN:VEVENT
+UID:pvac-2026-10-03-pvac-95th-anniversary-open-house-b50f412bae@art-in-la
+DTSTAMP:20260929T135430Z
+DTSTART:20261003T170000Z
+DTEND:20261004T230000Z
+SUMMARY:PVAC 95th Anniversary Open House
+LOCATION:5504 W Crestridge Rd\, Rancho Palos Verdes\, CA 90275
+URL:https://pvartcenter.org/upcoming_events/pvac-95th-anniversary-open-hou
+ se/
+DESCRIPTION:Palos Verdes Art Center · Free · https://pvartcenter.org/upc
+ oming_events/pvac-95th-anniversary-open-house/\n\nPALOS VERDES ART CENTER
+  95th ANNIVERSARY OPEN HOUSE OCTOBER 3 & 4 10am – 4pm FREE Join us this
+  Saturday and Sunday\, October 3rd and 4th\, to celebrate PVAC’s 95th a
+ nniversary with free art activities for kids and adults. Art projects wil
+ l be presented by members of PVAC’s seven artist groups ( PVACA )\, alo
+ ng with instructors from our art in the schools program\, Art At Your Fin
+ gertips \, and voluntee
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2026-10-03-tales-in-two-tongues-bilingual-russianen-5efa5d2643@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T173000Z
 DTEND:20261003T180000Z
 SUMMARY:Tales in Two Tongues: Bilingual Russian-English Storytime
@@ -55,7 +57,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/storytime/2026-1
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-10-03-boone-childrens-gallery-playful-gestures-76e60b045e@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T180000Z
 SUMMARY:Boone Children's Gallery: Playful Gestures
 LOCATION:W.M. Keck Education Center | LACMA
@@ -67,7 +69,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-03-dropin-workshop-for-families-alebrijes-1bdfc9f8f6@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T193000Z
 DTEND:20261003T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -80,7 +82,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-03-navigating-our-media-ecosystem-reclaimin-9b0f7690bd@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261003T210000Z
 DTEND:20261003T230000Z
 SUMMARY:Navigating Our Media Ecosystem: Reclaiming Our Stories & Media
@@ -98,7 +100,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/navigati
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-10-03-street-food-cinema-hocus-pocus1993-346ebce2db@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261004T003000Z
 DTEND:20261004T053000Z
 SUMMARY:Street Food Cinema |Hocus Pocus(1993)
@@ -112,7 +114,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-04-images-and-imagination-collage-workshop-d6b9dbc072@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261004T180000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -122,7 +124,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-04-artistatwork-serigraphy-artista-en-accin-dc81871de0@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261004T183000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -132,7 +134,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-10-09-artnight-pasadena-at-the-armory-1a47acfcbd@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART;VALUE=DATE:20261009
 SUMMARY:ArtNight Pasadena at the Armory
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -144,7 +146,7 @@ DESCRIPTION:Armory Center for the Arts · Free · https://armoryarts.org/c
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261010T193000Z
 DTEND:20261010T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -157,7 +159,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-11-public-broadcast-stereo-fc40fc556a@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261011T230000Z
 DTEND:20261012T000000Z
 SUMMARY:PUBLIC BROADCAST STEREO
@@ -173,7 +175,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/public-broadcast
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-10-17-family-festival-la-and-mexico-in-focus-ac0ddb149b@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261017T170000Z
 SUMMARY:Family Festival: LA and Mexico in Focus
 LOCATION:Getty Center
@@ -183,7 +185,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/family-fest
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-21-the-bengali-an-evening-of-film-and-the-p-7f870e3125@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261022T010000Z
 DTEND:20261022T040000Z
 SUMMARY:The Bengali: An Evening of Film and the Power of Storytelling
@@ -201,7 +203,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/the-bengali-an-e
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -211,7 +213,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261105T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -222,7 +224,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261107T203000Z
 DTEND:20261107T223000Z
 SUMMARY:Drop-in Workshop for Families: Día de Muertos with Lil’ Libros
@@ -236,7 +238,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-08-images-and-imagination-collage-workshop-fb5d957fb1@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261108T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -246,7 +248,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-08-artistatwork-serigraphy-artista-en-accin-01e88a8baa@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261108T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -256,7 +258,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-images-and-imagination-collage-workshop-c5184cdfb7@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261122T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -266,7 +268,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-artistatwork-serigraphy-artista-en-accin-046a7aa0ea@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261122T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -276,7 +278,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261203T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -287,7 +289,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-images-and-imagination-collage-workshop-0009c2d9f2@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261213T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -297,7 +299,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-artistatwork-serigraphy-artista-en-accin-62f8871fbb@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20261213T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -307,7 +309,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
-DTSTAMP:20260928T150901Z
+DTSTAMP:20260929T135430Z
 DTSTART:20270107T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center

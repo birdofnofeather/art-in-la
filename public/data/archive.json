@@ -19625,29 +19625,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-09-21-music-in-the-rose-garden-d76f48a1eb",
-    "venue_id": "huntington",
-    "title": "Music in the Rose Garden",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-21",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/music-rose-garden",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-03%2F2023_Rose_Garden_super_bloom_by_TC.jpg%3Fitok%3DCW-QFxgZ&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-09-20T12:06:22+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "lacma-2026-09-21-personal-connections-virtual-16d551f72c",
     "venue_id": "lacma",
     "title": "Personal Connections (Virtual)",
@@ -21517,6 +21494,32 @@
     "_default_type": "other"
   },
   {
+    "id": "molaa-2026-09-27-lucha-libre-film-screening-and-family-ex-d598b9a8c2",
+    "venue_id": "molaa",
+    "title": "Lucha Libre Film Screening and Family Expo!",
+    "description": "Join us for an afternoon of food trucks, art workshops, panels, meet & greet with Lucha Libre wrestlers, and a rare film screening of La Mujer Murciélago (The Batwoman) hosted by art historian and film preservationist Viviana Garcia Besne, and more! Free admission with the Month of Lucha Libre All Access Badge Pass. Badges go on sale July 6th. If spaces are still available, individual tickets to the expo will go on sale September 8.",
+    "event_type": "screening",
+    "start": "2026-09-27T11:00:00-07:00",
+    "end": "2026-09-28",
+    "all_day": false,
+    "url": "https://molaa.org/events/2026/09/27/lucha-libre-screening-expo",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1785871773515-DZ8Z7VYN4JW2UEV2KVIO/MOLAA-01.jpg",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-09-27T12:52:08+00:00",
+    "event_types": [
+      "screening",
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "wende-2026-09-27-family-day-dream-museum-5d08287e7f",
     "venue_id": "wende",
     "title": "Family Day: Dream Museum",
@@ -21677,6 +21680,145 @@
     "location_override": null,
     "source": "academymuseum.org",
     "scraped_at": "2026-09-27T12:52:13+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-09-28-assault-on-precinct-13-with-john-carpent-f20f902413",
+    "venue_id": "academy_museum",
+    "title": "Assault on Precinct 13 with John Carpenter",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-28",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/assault-on-precinct-13-with-john-carpenter-019fc8be-a43f-3889-be9f-d1e3d95ec179",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2l8noevlpi9QbxGx7rN4SV/89fec74551667a4c272b692d0e34c57b/Sep28_ASSAULT_ON_PRECINCT_13_Carpenter1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-29T13:51:53+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "getty_center-2026-09-28-black-portraitures-the-black-built-envir-56108cc134",
+    "venue_id": "getty_center",
+    "title": "Black Portraiture[s]: The Black Built Environment",
+    "description": "Conferences",
+    "event_type": "lecture",
+    "start": "2026-09-28",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.getty.edu/calendar/black-portraitures-black-built-environment",
+    "image": null,
+    "artists": [],
+    "location_override": "ucla-luskin-conference-center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-27T12:52:04+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "calarts-2026-09-28-school-of-music-visiting-artist-miguel-a-759eb206e0",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Miguel Atwood-Ferguson",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-28T13:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-miguel-atwood-ferguson",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-09-28T15:06:34+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-28-river-of-no-return-7724e0566f",
+    "venue_id": "academy_museum",
+    "title": "River of No Return",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-28T14:30:00-07:00",
+    "end": "2026-09-28T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/river-of-no-return-019fc896-414a-51ec-2ce7-fc2577e83ef5",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5ToaXamhbOZe5J27k2CL9o/cfcdbf47807f04bcd29c0a573a5798be/Sep28_RIVER_OF_NO_RETURN_Marilyn5.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-28T15:06:22+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-09-28-experimental-animation-visiting-artists-de8b179fee",
+    "venue_id": "calarts",
+    "title": "Experimental Animation Visiting Artists (EAVA) Series - Jamin Warren",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-28T16:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/experimental-animation-visiting-artists-eava-series-jamin-warren",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-09-28T15:06:34+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-09-29-assault-on-precinct-13-with-john-carpent-6190109b91",
+    "venue_id": "academy_museum",
+    "title": "Assault on Precinct 13 with John Carpenter",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-09-28T19:30:00-07:00",
+    "end": "2026-09-28T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/assault-on-precinct-13-with-john-carpenter-019fc8be-a43f-3889-be9f-d1e3d95ec179",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2l8noevlpi9QbxGx7rN4SV/89fec74551667a4c272b692d0e34c57b/Sep28_ASSAULT_ON_PRECINCT_13_Carpenter1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-09-28T15:06:22+00:00",
     "event_types": [
       "screening"
     ],
