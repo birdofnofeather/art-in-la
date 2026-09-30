@@ -21826,5 +21826,54 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "getty_center-2026-09-29-black-portraitures-the-black-built-envir-9068d420ed",
+    "venue_id": "getty_center",
+    "title": "Black Portraiture[s]: The Black Built Environment",
+    "description": "Conferences",
+    "event_type": "lecture",
+    "start": "2026-09-29",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.getty.edu/calendar/black-portraitures-black-built-environment",
+    "image": null,
+    "artists": [],
+    "location_override": "ucla-luskin-conference-center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-28T15:06:14+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "williamson_scripps-2026-09-29-2026-kathleen-obrien-wicker-endowed-lect-283e156790",
+    "venue_id": "williamson_scripps",
+    "title": "2026 Kathleen O'Brien Wicker Endowed Lecture",
+    "description": "Scripps Religious Studies Department Presents the 2026 Kathleen O’Brien Wicker Endowed Lecture Featuring Katherine Stewart. “Dobbs Was Just the Start: White Christian Nationalism and the Future of Women’s Rights” Katherine Stewart has covered the rise of the anti-democratic movement for over 17 years. Her latest book, Money, Lies, and God: Inside the Movement to Destroy American Democracy (Bloomsbury, 2025), a New York Times bestseller, was named one of the Best Books of 2025 by Foreign Affairs. Her previous book, The Power Worshippers: Inside the Dangerous Rise of Religious Nationalism (Bloomsbury, 2020), won First Place in the Nonfiction Books category from the Religion News Association, as well as the Morris B. Forkosch Best Book Award. The Power Worshippers also formed the basis of the",
+    "event_type": "screening",
+    "start": "2026-09-29T18:00:00-07:00",
+    "end": "2026-09-29T19:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.scrippscollege.edu/events/calendar/2026-kathleen-obrien-wicker-endowed-lecture",
+    "image": null,
+    "artists": [],
+    "location_override": "Balch Auditorium, 1030 Columbia Ave., Claremont, 91711",
+    "source": "scrippscollege.edu",
+    "scraped_at": "2026-09-29T13:51:51+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   }
 ]
