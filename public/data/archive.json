@@ -1413,6 +1413,30 @@
     "audience": []
   },
   {
+    "id": "la_plaza-2025-11-06-we-belong-here-c620e50f04",
+    "venue_id": "la_plaza",
+    "title": "We Belong Here",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2025-11-06",
+    "end": "2026-10-04",
+    "all_day": true,
+    "url": "https://lapca.org/exhibition/we-belong-here/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://lapca.org/exhibitions/",
+    "scraped_at": "2026-10-03T12:19:59+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "moah-2025-11-13-giras-en-espaol-a04a447514",
     "venue_id": "moah",
     "title": "Giras en Español",
@@ -7191,28 +7215,6 @@
     "audience": []
   },
   {
-    "id": "academy_museum-2026-07-05-member-appreciation-day-795ede03ed",
-    "venue_id": "academy_museum",
-    "title": "Member Appreciation Day",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-07-05T17:30:00-07:00",
-    "end": "2026-07-05T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/member-appreciation-day-018c2207-93d1-f9e5-8517-c724b043b4f5",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/385cSBFCQ1Sqw2vNgiWnkf/72f355a194f2c044e61bb45e14dc33e3/Member_Appreciation_October.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-07-06T11:39:51+00:00",
-    "event_types": [
-      "other"
-    ],
-    "_default_type": "screening",
-    "_asserted_type": "other",
-    "audience": []
-  },
-  {
     "id": "academy_museum-2026-07-06-30th-anniversary-of-bottle-rocket-with-w-f9f882872f",
     "venue_id": "academy_museum",
     "title": "30th Anniversary of Bottle Rocket with Wes Anderson",
@@ -10497,29 +10499,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "academy_museum-2026-08-02-member-appreciation-day-fc0bb7f882",
-    "venue_id": "academy_museum",
-    "title": "Member Appreciation Day",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-08-02T17:30:00-07:00",
-    "end": "2026-08-02T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/member-appreciation-day-018c2207-93d1-f9e5-8517-c724b043b4f5",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/385cSBFCQ1Sqw2vNgiWnkf/72f355a194f2c044e61bb45e14dc33e3/Member_Appreciation_October.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-08-03T10:45:25+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "screening"
   },
   {
     "id": "academy_museum-2026-08-03-a-man-escaped-in-35mm-16f671cc6b",
@@ -15607,52 +15586,6 @@
     "_default_type": "other"
   },
   {
-    "id": "academy_museum-2026-09-07-member-appreciation-day-13f3002821",
-    "venue_id": "academy_museum",
-    "title": "Member Appreciation Day",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-09-06T17:30:00-07:00",
-    "end": "2026-09-06T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/member-appreciation-day-018c2207-93d1-f9e5-8517-c724b043b4f5",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/385cSBFCQ1Sqw2vNgiWnkf/72f355a194f2c044e61bb45e14dc33e3/Member_Appreciation_October.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-09-06T11:34:08+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "screening"
-  },
-  {
-    "id": "academy_museum-2026-09-06-member-appreciation-day-21cad254d9",
-    "venue_id": "academy_museum",
-    "title": "Member Appreciation Day",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-09-06T17:30:00-07:00",
-    "end": "2026-09-06T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.academymuseum.org/en/programs/detail/member-appreciation-day-018c2207-93d1-f9e5-8517-c724b043b4f5",
-    "image": "https://images.ctfassets.net/m3qyzuwrf176/385cSBFCQ1Sqw2vNgiWnkf/72f355a194f2c044e61bb45e14dc33e3/Member_Appreciation_October.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "academymuseum.org",
-    "scraped_at": "2026-09-07T13:22:12+00:00",
-    "event_types": [
-      "screening"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "screening"
-  },
-  {
     "id": "academy_museum-2026-09-07-amadeus-in-4k-fa936b3093",
     "venue_id": "academy_museum",
     "title": "Amadeus in 4K",
@@ -16542,6 +16475,30 @@
     ],
     "is_free": true,
     "price_text": "Free",
+    "audience": [],
+    "_default_type": "exhibition"
+  },
+  {
+    "id": "bergamot_station-2026-09-12-nart-gallery-b4-time-out-of-time-a-new-s-f8393f1a8a",
+    "venue_id": "bergamot_station",
+    "title": "Nüart Gallery (B4) - Time Out of Time, a new solo exhibition by artist William T. Carson",
+    "description": "“Time Out of Time” opens Saturday, September 12 - October 3 Bringing deep geologic time face to face with the present moment through a solo exhibition by artist William T. Carson Opening Saturday, September 12, 2026 Artist reception from 3:00 to 5:00 PM Artist talk at 3:00 PM",
+    "event_type": "opening",
+    "start": "2026-09-12T11:00:00-07:00",
+    "end": "2026-10-04",
+    "all_day": false,
+    "url": "https://bergamotstation.com/exhibitions/2026/8/25/time-out-of-time-a-new-solo-exhibition-by-artist-william-t-carson",
+    "image": "https://images.squarespace-cdn.com/content/v1/5b09f62796e76f85aa85c08f/1787682870020-30NB7CUGYGGJLGPC2FPU/7-Carson+Montana+Studio+First+Batch.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "bergamotstation.com",
+    "scraped_at": "2026-10-03T12:19:44+00:00",
+    "event_types": [
+      "opening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
     "audience": [],
     "_default_type": "exhibition"
   },
@@ -23193,6 +23150,52 @@
     "_default_type": "screening"
   },
   {
+    "id": "huntington-2026-10-04-autumn-festival-ec9c760b47",
+    "venue_id": "huntington",
+    "title": "Autumn Festival",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-10-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/autumn-festival",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-04T13:05:35+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-04-hummingbirds-at-the-huntington-5592e309ec",
+    "venue_id": "huntington",
+    "title": "Hummingbirds at The Huntington",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/hummingbirds-huntington",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13XBSN.jpg%3Fitok%3DZ1zqffH0&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-03T12:19:50+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "las_fotos_project-2026-10-04-night-to-network-8cbe68a896",
     "venue_id": "las_fotos_project",
     "title": "Night to Network",
@@ -23214,5 +23217,289 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-04-sunday-supper-with-la-commons-7c617153d1",
+    "venue_id": "huntington",
+    "title": "Sunday Supper with LA Commons",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/sunday-supper-la-commons",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU1308GH.jpg%3Fitok%3DXKY8n-yo&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-03T12:19:50+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-04-the-thing-in-4k-0e3a4f39ee",
+    "venue_id": "academy_museum",
+    "title": "The Thing in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-thing-019fcda7-1449-ab44-0006-af9e9afec03e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/0VdRav0e7CyzJS2VTSnmw/7cabde42a8c1242ffd63d6f34851764c/Oct4_THING_Carpenter3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-05T15:40:57+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "huntington-2026-10-04-the-eight-directions-of-the-wind-listeni-15f27fa4fb",
+    "venue_id": "huntington",
+    "title": "‘the eight directions of the wind’ Listening Session Four: “Tehrangeles Vice (Iranian Diaspora Pop 1983-1993)”",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/eight-directions-wind-listening-session-four-tehrangeles-vice-iranian-diaspora-pop-1983-1993",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU1401Z4.jpg%3Fitok%3DBHYyVMC7&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-03T12:19:50+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "pvac-2026-10-04-pvac-95th-anniversary-open-house-10acb92bdf",
+    "venue_id": "pvac",
+    "title": "PVAC 95th Anniversary Open House",
+    "description": "PALOS VERDES ART CENTER 95th ANNIVERSARY OPEN HOUSE OCTOBER 3 & 4 10am – 4pm FREE Join us this Saturday and Sunday, October 3rd and 4th, to celebrate PVAC’s 95th anniversary with free art activities for kids and adults. Art projects will be presented by members of PVAC’s seven artist groups ( PVACA ), along with instructors from our art in the schools program, Art At Your Fingertips , and volunteers from Earth Studio @PVAC , a new community outreach garden program. All art supplies are free and will be provided with instruction. See event details HERE . Palos Verdes Art Center / Beverly G. Alpay Center for Arts Education, a nonprofit community visual arts school and gallery, inspires individuals to create, appreciate and celebrate art. Founded on May 11, 1931, PVAC’s exhibition, education",
+    "event_type": "fair",
+    "start": "2026-10-04T10:00:00-07:00",
+    "end": "2026-10-04T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/pvac-95th-anniversary-open-house/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2026/08/PVAC_95th_SQ.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-10-04T13:05:28+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-10-04-images-and-imagination-collage-workshop-d6b9dbc072",
+    "venue_id": "getty_center",
+    "title": "Images and Imagination: Collage Workshop (Bilingual)",
+    "description": "Art Making, Family",
+    "event_type": "workshop",
+    "start": "2026-10-04T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/images-imagination-collage",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-04T13:05:23+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-10-04-artistatwork-serigraphy-artista-en-accin-dc81871de0",
+    "venue_id": "getty_center",
+    "title": "Artist-at-Work: Serigraphy | Artista en acción: Serigrafía",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-10-04T11:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/aaw-serigraphy",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-04T13:05:23+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "autry-2026-10-04-the-art-of-protest-and-visual-storytelli-c14c62858a",
+    "venue_id": "autry",
+    "title": "The Art of Protest and Visual Storytelling | Creative Workshop",
+    "description": "Conversations, Member Events",
+    "event_type": "workshop",
+    "start": "2026-10-04T13:30:00-07:00",
+    "end": "2026-10-04T16:30:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/conversations/art-protest-and-visual-storytelling-creative-workshop",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-04/ev_art-of-protest.jpeg?h=28061b8a&itok=yO_ZjgrB",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-10-04T13:05:37+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-04-cabaret-29ee57b22d",
+    "venue_id": "academy_museum",
+    "title": "Cabaret",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-10-04T14:00:00-07:00",
+    "end": "2026-10-04T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/cabaret-019fce45-9a13-42b2-5717-e48163a64c67",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/vslxTfCznu4nGtcLOFUqB/475df85161e9b3fd9b15a4003c17d922/Oct4_CABARET_OscarSundays1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-04T13:05:34+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "getty_center-2026-10-04-seenunseen-a-closer-look-at-odilon-redon-37b1543179",
+    "venue_id": "getty_center",
+    "title": "Seen/Unseen: A Closer Look at Odilon Redon Drawings",
+    "description": "Talk",
+    "event_type": "lecture",
+    "start": "2026-10-04T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/redon-drawings",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center & Online",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-04T13:05:23+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-10-04-ever-present-a-moveable-feast-of-no-no-w-6414254e87",
+    "venue_id": "getty_center",
+    "title": "Ever Present: A Moveable Feast of No: No Wave Women with Adele Bertei",
+    "description": "Performance",
+    "event_type": "performance",
+    "start": "2026-10-04T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/ever-present-moveable-feast-no-wave",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-04T13:05:23+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "avenue_50-2026-10-04-archivos-vivos-the-tparty-legacy-788d461a80",
+    "venue_id": "avenue_50",
+    "title": "Archivos Vivos: The T-Party Legacy",
+    "description": "Archivos Vivos / Living Archives: The 1990s T-Party Legacy in L.A. is a multimedia performance that draws from an evolving archive of oral histories, photographs, graphic ephemera, personal collections, and […] \\n",
+    "event_type": "performance",
+    "start": "2026-10-04T18:30:00-07:00",
+    "end": "2026-10-04T20:30:00-07:00",
+    "all_day": false,
+    "url": "https://avenue50studio.org/event/archivos-vivos-the-t-party-legacy/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "avenue50studio.org",
+    "scraped_at": "2026-10-04T13:05:41+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-05-the-thing-in-4k-421b3850b2",
+    "venue_id": "academy_museum",
+    "title": "The Thing in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-04T18:30:00-07:00",
+    "end": "2026-10-04T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-thing-019fcda7-1449-ab44-0006-af9e9afec03e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/0VdRav0e7CyzJS2VTSnmw/7cabde42a8c1242ffd63d6f34851764c/Oct4_THING_Carpenter3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-04T13:05:34+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]
