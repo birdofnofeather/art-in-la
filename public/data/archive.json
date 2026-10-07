@@ -22674,29 +22674,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-10-03-restore-explore-fall-tai-chi-series-999afccfdb",
-    "venue_id": "huntington",
-    "title": "Restore + Explore: Fall Tai Chi Series",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-10-03",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/restore-explore-fall-tai-chi-series",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2Ftai-chi-kathy-chayan-key-image-square.jpg%3Fitok%3DOFGe9EOo&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-02T13:40:51+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "getty_center-2026-10-03-getty-creative-engagement-forum-amplifyi-31830ee65a",
     "venue_id": "getty_center",
     "title": "Getty Creative Engagement Forum: Amplifying Youth Voices through Arts Education",
@@ -23730,6 +23707,29 @@
     "event_types": [
       "performance",
       "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-06-the-rise-and-fall-of-the-overseas-chines-2c0be40fd7",
+    "venue_id": "huntington",
+    "title": "The Rise and Fall of the \"Overseas Chinese\" World in China",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-06",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/rise-and-fall-overseas-chinese-world-china",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU14008Z.jpg%3Fitok%3D3sZDoyxD&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-05T15:40:56+00:00",
+    "event_types": [
+      "other"
     ],
     "is_free": null,
     "price_text": null,
