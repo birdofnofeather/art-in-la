@@ -6,22 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Family-friendly
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:lacma-2026-10-07-communities-create-la-sculpting-sea-crea-5234a7fcec@art-in-la
-DTSTAMP:20261007T142145Z
-DTSTART:20261007T223000Z
-SUMMARY:Communities Create LA! Sculpting Sea Creatures
-LOCATION:Lennox Library
-URL:https://www.lacma.org/event/communities-create-la-sculpting-sea-creatu
- res
-DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
- t/communities-create-la-sculpting-sea-creatures\n\nDive into creativity a
- nd sculpt colorful sea creatures from clay inspired by Dora De Larios’s
- Ocean. Use shape\, color\, and texture to bring your marine animal to lif
- e.Children under 12 must be accompanied by an adult.
-END:VEVENT
-BEGIN:VEVENT
 UID:armory_pasadena-2026-10-09-artnight-pasadena-at-the-armory-1a47acfcbd@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART;VALUE=DATE:20261009
 SUMMARY:ArtNight Pasadena at the Armory
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -33,7 +19,7 @@ DESCRIPTION:Armory Center for the Arts · Free · https://armoryarts.org/c
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-10-10-fall-fantasy-book-faire-2026-bba410170d@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261010T170000Z
 DTEND:20261010T210000Z
 SUMMARY:Fall Fantasy Book Faire 2026
@@ -46,7 +32,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261010T193000Z
 DTEND:20261010T213000Z
 SUMMARY:Drop-in Workshop for Families: Alebrijes
@@ -59,7 +45,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-10-11-kids-art-class-painting-fundamentals-and-9d918bcc2d@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261011T170000Z
 SUMMARY:Kids Art Class: Painting Fundamentals and Mixed Media (Ages ...
 LOCATION:W.M. Keck Education Center | LACMA
@@ -72,7 +58,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/node
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-11-public-broadcast-stereo-fc40fc556a@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261011T230000Z
 DTEND:20261012T000000Z
 SUMMARY:PUBLIC BROADCAST STEREO
@@ -87,8 +73,34 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/public-broadcast
  \, Magic School Bus)\, Comedy (Monty Python’s Flying Circus)\, D
 END:VEVENT
 BEGIN:VEVENT
+UID:autry-2026-10-12-museum-open-for-indigenous-peoples-day-w-7eaf6bb13c@art-in-la
+DTSTAMP:20261008T142955Z
+DTSTART:20261012T170000Z
+DTEND:20261012T230000Z
+SUMMARY:Museum Open for Indigenous Peoples Day with Special Discount
+LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
+URL:https://theautry.org/events/family-activities/museum-open-indigenous-p
+ eoples-day-special-discount
+DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
+ ts/family-activities/museum-open-indigenous-peoples-day-special-discount\
+ n\nFamily Activities
+END:VEVENT
+BEGIN:VEVENT
+UID:autry-2026-10-15-autry-after-hours-an-evening-with-smiley-5e9ac8d698@art-in-la
+DTSTAMP:20261008T142955Z
+DTSTART:20261016T010000Z
+DTEND:20261016T040000Z
+SUMMARY:AUTRY AFTER HOURS | An Evening with Smiley Bone Jones
+LOCATION:4700 Western Heritage Way\, Los Angeles\, CA 90027
+URL:https://theautry.org/events/live-performances/autry-after-hours-evenin
+ g-smiley-bone-jones
+DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
+ ts/live-performances/autry-after-hours-evening-smiley-bone-jones\n\nLive 
+ Performances\, Member Events\, Autry Outdoors\, Family Activities
+END:VEVENT
+BEGIN:VEVENT
 UID:getty_center-2026-10-17-family-festival-la-and-mexico-in-focus-ac0ddb149b@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261017T170000Z
 SUMMARY:Family Festival: LA and Mexico in Focus
 LOCATION:Getty Center
@@ -98,7 +110,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/family-fest
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-10-17-drag-story-hour-free-and-queer-black-cal-b44afdd731@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261017T210000Z
 DTEND:20261017T220000Z
 SUMMARY:Drag Story Hour: Free and Queer: Black Californian Roots of Gay Li
@@ -114,7 +126,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-10-21-the-bengali-an-evening-of-film-and-the-p-7f870e3125@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261022T010000Z
 DTEND:20261022T040000Z
 SUMMARY:The Bengali: An Evening of Film and the Power of Storytelling
@@ -132,7 +144,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/the-bengali-an-e
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-10-22-family-astronomy-night-f7a8b4390a@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART;VALUE=DATE:20261022
 SUMMARY:Family Astronomy Night
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -142,7 +154,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-10-24-family-workshop-our-colorful-world-of-na-836fdda55a@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART;VALUE=DATE:20261024
 SUMMARY:Family Workshop: Our Colorful World of Natural Native Dyes
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -154,7 +166,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-10-25-da-de-los-muertos-family-day-free-with-r-eeb66620e3@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261025T190000Z
 SUMMARY:Día de los Muertos Family Day | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -164,7 +176,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-05-curators-tour-the-holy-family-at-home-c9175496a8@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261105T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -175,7 +187,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261107T203000Z
 DTEND:20261107T223000Z
 SUMMARY:Drop-in Workshop for Families: Día de Muertos with Lil’ Libros
@@ -189,7 +201,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-07-when-the-holy-family-went-viral-41f84ce1f8@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261108T000000Z
 SUMMARY:When the Holy Family Went Viral
 LOCATION:Getty Center & Online
@@ -199,7 +211,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/holy-family
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-08-images-and-imagination-collage-workshop-fb5d957fb1@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261108T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -209,7 +221,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-08-artistatwork-serigraphy-artista-en-accin-01e88a8baa@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261108T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -219,7 +231,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-images-and-imagination-collage-workshop-c5184cdfb7@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261122T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -229,7 +241,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-artistatwork-serigraphy-artista-en-accin-046a7aa0ea@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261122T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -239,7 +251,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261203T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -250,7 +262,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-images-and-imagination-collage-workshop-0009c2d9f2@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261213T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -260,7 +272,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-artistatwork-serigraphy-artista-en-accin-62f8871fbb@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20261213T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -270,7 +282,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
-DTSTAMP:20261007T142145Z
+DTSTAMP:20261008T142955Z
 DTSTART:20270107T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center

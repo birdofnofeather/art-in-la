@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-07T14:21:45.441813+00:00",
+  "generated_at": "2026-10-08T14:29:55.890430+00:00",
   "verdict": "red",
   "totals": {
-    "events": 274,
+    "events": 280,
     "exhibitions": 64,
     "venues_producing": 50,
     "venues_checked": 59,
@@ -10,8 +10,8 @@
   },
   "counts": {
     "red": 5,
-    "yellow": 19,
-    "green": 35
+    "yellow": 18,
+    "green": 36
   },
   "unreachable": [
     "18th_street",
@@ -58,10 +58,10 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 54,
-      "zero_streak": 62,
+      "zero_streak": 63,
       "reasons": [
         "the venue's page advertises 54 upcoming dates but we extracted nothing",
-        "no events for 62 consecutive runs (last produced 2026-08-08)"
+        "no events for 63 consecutive runs (last produced 2026-08-08)"
       ],
       "known_gaps": []
     },
@@ -72,7 +72,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 11,
-      "zero_streak": 42,
+      "zero_streak": 43,
       "reasons": [
         "the venue's page advertises 11 upcoming dates but we extracted nothing"
       ],
@@ -84,11 +84,11 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 0,
-      "dates_on_page": 17,
-      "zero_streak": 60,
+      "dates_on_page": 18,
+      "zero_streak": 61,
       "reasons": [
-        "the venue's page advertises 17 upcoming dates but we extracted nothing",
-        "no events for 60 consecutive runs (last produced 2026-08-10)"
+        "the venue's page advertises 18 upcoming dates but we extracted nothing",
+        "no events for 61 consecutive runs (last produced 2026-08-10)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -100,11 +100,11 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 0,
-      "dates_on_page": 17,
-      "zero_streak": 60,
+      "dates_on_page": 18,
+      "zero_streak": 61,
       "reasons": [
-        "the venue's page advertises 17 upcoming dates but we extracted nothing",
-        "no events for 60 consecutive runs (last produced 2026-08-10)"
+        "the venue's page advertises 18 upcoming dates but we extracted nothing",
+        "no events for 61 consecutive runs (last produced 2026-08-10)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -117,9 +117,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 5,
-      "zero_streak": 78,
+      "zero_streak": 79,
       "reasons": [
-        "no events for 78 consecutive runs (last produced 2026-07-23)"
+        "no events for 79 consecutive runs (last produced 2026-07-23)"
       ],
       "known_gaps": []
     },
@@ -130,9 +130,9 @@
       "events": 4,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 36,
+      "zero_streak": 37,
       "reasons": [
-        "no events for 36 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 37 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -158,9 +158,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": null,
-      "zero_streak": 86,
+      "zero_streak": 87,
       "reasons": [
-        "no events for 86 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 87 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -184,9 +184,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 80,
+      "zero_streak": 81,
       "reasons": [
-        "no events for 80 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 81 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -197,9 +197,9 @@
       "events": 3,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 36,
+      "zero_streak": 37,
       "reasons": [
-        "no events for 36 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 37 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -241,19 +241,6 @@
       "zero_streak": 0,
       "reasons": [
         "scraped 20 record(s) but published none — everything it found was filtered out, so the site shows nothing for this venue"
-      ],
-      "known_gaps": []
-    },
-    {
-      "venue_id": "las_fotos_project",
-      "verdict": "yellow",
-      "unreachable": false,
-      "events": 2,
-      "exhibitions": 0,
-      "dates_on_page": 22,
-      "zero_streak": 0,
-      "reasons": [
-        "the venue's page advertises 22 upcoming dates but we extracted only 2 — the parser may be reading the wrong part of the page"
       ],
       "known_gaps": []
     },
@@ -335,9 +322,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": null,
-      "zero_streak": 36,
+      "zero_streak": 37,
       "reasons": [
-        "no events for 36 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 37 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -350,9 +337,9 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": null,
-      "zero_streak": 36,
+      "zero_streak": 37,
       "reasons": [
-        "no events for 36 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 37 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -362,7 +349,7 @@
       "venue_id": "wende",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 11,
+      "events": 12,
       "exhibitions": 0,
       "dates_on_page": 2,
       "zero_streak": 0,
@@ -388,7 +375,7 @@
       "venue_id": "academy_museum",
       "verdict": "green",
       "unreachable": false,
-      "events": 72,
+      "events": 73,
       "exhibitions": 2,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -423,7 +410,7 @@
       "venue_id": "autry",
       "verdict": "green",
       "unreachable": false,
-      "events": 3,
+      "events": 5,
       "exhibitions": 0,
       "dates_on_page": 2,
       "zero_streak": 0,
@@ -504,7 +491,7 @@
       "venue_id": "corita_art_center",
       "verdict": "green",
       "unreachable": true,
-      "events": 1,
+      "events": 2,
       "exhibitions": 0,
       "dates_on_page": null,
       "zero_streak": 0,
@@ -548,7 +535,7 @@
       "venue_id": "hammer",
       "verdict": "green",
       "unreachable": false,
-      "events": 14,
+      "events": 12,
       "exhibitions": 1,
       "dates_on_page": 6,
       "zero_streak": 0,
@@ -561,9 +548,9 @@
       "venue_id": "human_resources",
       "verdict": "green",
       "unreachable": false,
-      "events": 5,
+      "events": 6,
       "exhibitions": 0,
-      "dates_on_page": 8,
+      "dates_on_page": 9,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -572,7 +559,7 @@
       "venue_id": "huntington",
       "verdict": "green",
       "unreachable": true,
-      "events": 16,
+      "events": 17,
       "exhibitions": 0,
       "dates_on_page": null,
       "zero_streak": 0,
@@ -631,7 +618,7 @@
       "venue_id": "lacma",
       "verdict": "green",
       "unreachable": false,
-      "events": 4,
+      "events": 3,
       "exhibitions": 0,
       "dates_on_page": 7,
       "zero_streak": 0,
@@ -647,6 +634,17 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": 0,
+      "zero_streak": 0,
+      "reasons": [],
+      "known_gaps": []
+    },
+    {
+      "venue_id": "las_fotos_project",
+      "verdict": "green",
+      "unreachable": false,
+      "events": 3,
+      "exhibitions": 0,
+      "dates_on_page": 23,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -694,7 +692,7 @@
       "unreachable": false,
       "events": 8,
       "exhibitions": 1,
-      "dates_on_page": 61,
+      "dates_on_page": 60,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -782,7 +780,7 @@
       "venue_id": "vincent_price",
       "verdict": "green",
       "unreachable": false,
-      "events": 1,
+      "events": 2,
       "exhibitions": 0,
       "dates_on_page": 0,
       "zero_streak": 0,

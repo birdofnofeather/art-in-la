@@ -23735,5 +23735,170 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-07-autumn-festival-e28a293df4",
+    "venue_id": "huntington",
+    "title": "Autumn Festival",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-10-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/autumn-festival",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-06T14:01:25+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-07-class-series-introduction-to-musicology-9c15329c3d",
+    "venue_id": "huntington",
+    "title": "Class Series: Introduction to Musicology in “This Land Is ...”",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-10-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/class-series-introduction-musicology-land",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZMAM.jpg%3Fitok%3DWzC7cWvU&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-06T14:01:25+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-10-07-lunchtime-art-talk-on-monica-majoli-1168f6e09d",
+    "venue_id": "hammer",
+    "title": "Lunchtime Art Talk on Monica Majoli",
+    "description": "Curatorial assistant Azul Silverio leads an in-person discussion of Monica Majoli's work.",
+    "event_type": "lecture",
+    "start": "2026-10-07T12:30:44-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-monica-majoli",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-08/Azul_MonicaMajoli.jpg?h=7061ad4d&itok=KSl8bgPH",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-10-07T14:18:44+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-07-theres-no-business-like-show-business-f40c7c4c7d",
+    "venue_id": "academy_museum",
+    "title": "There’s No Business Like Show Business",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-07T14:30:00-07:00",
+    "end": "2026-10-07T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/theres-no-business-like-show-business-019fce21-4b72-f70e-fd5c-ed37d22f368d",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2JZBivcA10gzLp4OzF9Svs/e3b0cdcaf8600f9cadaac0e5d29386f1/Oct5_THERES_NO_BUSINESS_LIKE_SHOW_BUSINESS_Marilyn5.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-07T14:18:55+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "lacma-2026-10-07-communities-create-la-sculpting-sea-crea-5234a7fcec",
+    "venue_id": "lacma",
+    "title": "Communities Create LA! Sculpting Sea Creatures",
+    "description": "Dive into creativity and sculpt colorful sea creatures from clay inspired by Dora De Larios’sOcean. Use shape, color, and texture to bring your marine animal to life.Children under 12 must be accompanied by an adult.",
+    "event_type": "workshop",
+    "start": "2026-10-07T15:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/communities-create-la-sculpting-sea-creatures",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-08/WSP_475472_jpg.jpg?VersionId=PzfG1l3sxWE0j9ABO.LAzaNvKnbUeUVU&itok=1zl0wFAH",
+    "artists": [],
+    "location_override": "Lennox Library",
+    "source": "lacma.org",
+    "scraped_at": "2026-10-07T14:18:46+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "academy_museum-2026-10-08-stalker-e8e175132b",
+    "venue_id": "academy_museum",
+    "title": "Stalker",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-07T19:30:00-07:00",
+    "end": "2026-10-07T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/stalker-019fce29-bd11-31bd-9f3e-486fb3077abb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2wuTdjdFedIH6b5sLSBKSq/88a83d3d1c03839f17ace3d9dc103b80/Oct7_STALKER_BranchSelects1Janus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-07T14:18:55+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-10-07-an-evening-with-cagney-lacey-91a165685b",
+    "venue_id": "hammer",
+    "title": "An Evening With Cagney & Lacey",
+    "description": "Actor Sharon Gless and executive producer Barney Rosenzweig will be in person to celebrate Cagney & Lacey, a television show that elevated the episodic police genre with its remarkable style and substance.",
+    "event_type": "screening",
+    "start": "2026-10-07T19:30:44-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/evening-cagney-lacey",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-10/cagney-lacey.jpg?h=efcac03c&itok=HrsTrzRl",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-10-07T14:18:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "screening"
   }
 ]
