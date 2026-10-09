@@ -3282,6 +3282,29 @@
     "_asserted_type": "exhibition"
   },
   {
+    "id": "the_broad-2026-05-28-yoko-ono-music-of-the-mind-free-thursday-d225116958",
+    "venue_id": "the_broad",
+    "title": "Yoko Ono: Music of the Mind | Free Thursday",
+    "description": "Every Thursday Evening 5 – 8 pm Yoko Ono: Music of the Mind is free every Thursday evening starting May 28, 2026. Tickets include free admission to the exhibition and The Broad’s collection galleries on Thursdays from 5 pm to 8 pm, which feature a frequently changing selection of works from the Broad collection. Separate reservations are required for Yayoi Kusama's Infinity Mirrored Room—The Souls of Millions of Light Years Away (2013), which can be booked here → Not seeing availability on your preferred date and time? We accept walk ups to the exhibition pending capacity. Book a general admission ticket for Thursday evening → Accessibility: See our accessibility resources and email info@thebroad.org for any questions or assistance.",
+    "event_type": "exhibition",
+    "start": "2026-05-28",
+    "end": "2026-10-08",
+    "all_day": true,
+    "url": "https://www.thebroad.org/art/free-accesss/yoko-ono-music-mind-free-thursday",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-10-07T14:18:45+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "luckman-2026-05-28-ballet-folklrico-de-mxico-de-amalia-hern-7d50aba447",
     "venue_id": "luckman",
     "title": "Ballet Folklórico de México de Amalia Hernández",
@@ -22559,29 +22582,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-10-03-autumn-festival-5cba1a5366",
-    "venue_id": "huntington",
-    "title": "Autumn Festival",
-    "description": "",
-    "event_type": "fair",
-    "start": "2026-10-03",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/autumn-festival",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-02T13:40:51+00:00",
-    "event_types": [
-      "fair"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "self_help_graphics-2026-10-03-da-de-los-muertos-community-art-workshop-9f7e6a2447",
     "venue_id": "self_help_graphics",
     "title": "Día de los Muertos Community Art Workshop #1: Stamp Collages",
@@ -23127,29 +23127,6 @@
     "_default_type": "screening"
   },
   {
-    "id": "huntington-2026-10-04-autumn-festival-ec9c760b47",
-    "venue_id": "huntington",
-    "title": "Autumn Festival",
-    "description": "",
-    "event_type": "fair",
-    "start": "2026-10-04",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/autumn-festival",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-04T13:05:35+00:00",
-    "event_types": [
-      "fair"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "huntington-2026-10-04-hummingbirds-at-the-huntington-5592e309ec",
     "venue_id": "huntington",
     "title": "Hummingbirds at The Huntington",
@@ -23504,29 +23481,6 @@
     "_asserted_type": "exhibition"
   },
   {
-    "id": "huntington-2026-10-05-autumn-festival-38b6e1f6bc",
-    "venue_id": "huntington",
-    "title": "Autumn Festival",
-    "description": "",
-    "event_type": "fair",
-    "start": "2026-10-05",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/autumn-festival",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-05T15:40:56+00:00",
-    "event_types": [
-      "fair"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "academy_museum-2026-10-05-resurrection-in-4k-with-ellen-burstyn-2bbeb7dbbc",
     "venue_id": "academy_museum",
     "title": "Resurrection in 4K with Ellen Burstyn",
@@ -23737,29 +23691,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-10-07-autumn-festival-e28a293df4",
-    "venue_id": "huntington",
-    "title": "Autumn Festival",
-    "description": "",
-    "event_type": "fair",
-    "start": "2026-10-07",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/autumn-festival",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZQ6L.jpg%3Fitok%3Dlaw2G8QT&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-06T14:01:25+00:00",
-    "event_types": [
-      "fair"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "huntington-2026-10-07-class-series-introduction-to-musicology-9c15329c3d",
     "venue_id": "huntington",
     "title": "Class Series: Introduction to Musicology in “This Land Is ...”",
@@ -23900,5 +23831,235 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-10-08-big-trouble-in-little-china-c05dee0884",
+    "venue_id": "academy_museum",
+    "title": "Big Trouble in Little China",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.academymuseum.org/en/programs/detail/big-trouble-in-little-china-019fcdac-482d-7d90-7fe4-d84bcfe95fe6",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/OefnYcdkqpzyj4msNKX6U/f9a6bc4b679c91fa4640d724cd3de7f4/Nov5_BIG_TROUBLE_IN_LITTLE_CHINA_HollywoodChinese1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-09T14:13:58+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "huntington-2026-10-08-creative-series-introduction-to-handsewn-3a9e0f35e4",
+    "venue_id": "huntington",
+    "title": "Creative Series: Introduction to Hand-Sewn Bookbinding",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-08",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/creative-series-introduction-hand-sewn-bookbinding",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZSPR.jpg%3Fitok%3DN5UAMxo4&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-07T14:18:54+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "angels_gate--20th-many-winters-gathering-of-elders-th-7ba0f54f38",
+    "venue_id": "angels_gate",
+    "title": "20th Many Winters Gathering of Elders | Thursday",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-08T11:00:00-07:00",
+    "end": "2026-10-08T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://angelsgateart.org/listing/20th-many-winters-gathering-of-elders-3/",
+    "image": "https://angelsgateart.org/wp-content/uploads/2026/09/MWGOE-2026-Bear-Logo-square-400x284.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "angelsgateart.org+llm",
+    "scraped_at": "2026-10-08T14:27:13+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-10-08-exhibition-tour-stendahls-world-marketin-96f50278bd",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour: Stendahl’s World: Marketing Ancient Mexico and Modern Art in Los Angeles",
+    "description": "Tour",
+    "event_type": "tour",
+    "start": "2026-10-08T13:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-stendahl-s-world-marketing-ancient-mexico-and-modern-art-in-los-angeles",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-08T14:26:59+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-10-08-school-of-music-visiting-artist-mick-jen-200a994e6a",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Mick Jenkins",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-08T13:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-mick-jenkins-0",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-08T14:27:20+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-10-08-photo-and-media-open-house-9ef16e1abc",
+    "venue_id": "calarts",
+    "title": "Photo and Media Open House",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-10-08T16:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/photo-and-media-open-house",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-08T14:27:20+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "clockshop-2026-10-08-take-me-to-your-river-publication-launch-948416a78d",
+    "venue_id": "clockshop",
+    "title": "Take Me to Your River Publication Launch",
+    "description": "Join us at Clockshop on Thursday, October 8, for the book launch of Take Me to…",
+    "event_type": "lecture",
+    "start": "2026-10-08T18:30:00-07:00",
+    "end": "2026-10-08T20:00:00-07:00",
+    "all_day": false,
+    "url": "https://clockshop.org/event/take-me-to-your-river-publication-launch/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "clockshop.org",
+    "scraped_at": "2026-10-08T14:27:28+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-10-08-creative-writing-mfas-writing-now-readin-e21e032b57",
+    "venue_id": "calarts",
+    "title": "Creative Writing MFA's Writing Now Reading Series: Nicholas Russell",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-10-08T19:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/creative-writing-mfas-writing-now-reading-series-nicholas-russell",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-08T14:27:20+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-10-08-don8217t-blame-me-i-voted-for-helen-gaha-9d81dd27e8",
+    "venue_id": "wende",
+    "title": "Don’t Blame Me, I Voted for Helen Gahagan Douglas",
+    "description": "Written by Wendy Kout and Michele Willens Starring Wendie Malick, Charles Shaughnessy, Diedrich Bader and Charlie Adler Today’s political pundits are predicting the upcoming midterms will determine the life or death of our democracy. But in 1950 a California Senate race also changed the world. It was then that a young Richard Nixon falsely accused his opponent, the beautiful, three term liberal congresswoman and ex-Broadway and opera star, Helen Gahagan Douglas, of being a Communist. Nixon earned the name “Tricky Dick,” Helen was dubbed the “Pink Lady.” He ascended to the Presidency… until Watergate. She was forgotten… until now. The play is set in the past and the present, in Hollywood and Washington D.C., and builds to that dirty, dramatic Senate race while telling the cautionary persona",
+    "event_type": "performance",
+    "start": "2026-10-08T19:00:00-07:00",
+    "end": "2026-10-08T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/dont-blame-me-i-voted-for-helen-gahagan-douglas/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/09/helen.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-10-08T14:27:04+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-09-big-trouble-in-little-china-84d255a477",
+    "venue_id": "academy_museum",
+    "title": "Big Trouble in Little China",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-08T19:30:00-07:00",
+    "end": "2026-10-08T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/big-trouble-in-little-china-019fcdac-482d-7d90-7fe4-d84bcfe95fe6",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/OefnYcdkqpzyj4msNKX6U/f9a6bc4b679c91fa4640d724cd3de7f4/Nov5_BIG_TROUBLE_IN_LITTLE_CHINA_HollywoodChinese1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-08T14:27:09+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]
