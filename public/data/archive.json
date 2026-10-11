@@ -9291,6 +9291,30 @@
     "_asserted_type": "performance"
   },
   {
+    "id": "beyond_baroque-2026-07-25-proxy-gallery-presents-f5788005f2",
+    "venue_id": "beyond_baroque",
+    "title": "Proxy Gallery Presents",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-07-25",
+    "end": "2026-10-10",
+    "all_day": true,
+    "url": "https://beyondbaroque.org/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://beyondbaroque.org/",
+    "scraped_at": "2026-07-18T08:50:33+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "academy_museum-2026-07-25-calm-morning-costume-designs-inspired-by-7be97973d8",
     "venue_id": "academy_museum",
     "title": "Calm Morning: Costume Designs Inspired by Disability Pride Month",
@@ -14073,29 +14097,6 @@
     "scraped_at": "2026-08-29T13:02:55+00:00",
     "event_types": [
       "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
-    "id": "huntington-2026-08-30-mandarin-tour-this-land-is-241cb5d029",
-    "venue_id": "huntington",
-    "title": "Mandarin Tour: THIS LAND IS ...",
-    "description": "",
-    "event_type": "tour",
-    "start": "2026-08-30",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/chinese-tour-this-land-is",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13U3SF.jpg%3Fitok%3DdoWFIFxI&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-08-29T13:02:49+00:00",
-    "event_types": [
-      "tour"
     ],
     "is_free": null,
     "price_text": null,
@@ -21311,29 +21312,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-09-27-mandarin-tour-this-land-is-bf81fb01b4",
-    "venue_id": "huntington",
-    "title": "Mandarin Tour: THIS LAND IS ...",
-    "description": "",
-    "event_type": "tour",
-    "start": "2026-09-27",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/chinese-tour-this-land-is",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13U3SF.jpg%3Fitok%3DdoWFIFxI&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-09-26T12:07:48+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "huntington-2026-09-27-midautumn-moon-celebration-8046b2945c",
     "venue_id": "huntington",
     "title": "Mid-Autumn Moon Celebration",
@@ -23318,6 +23296,30 @@
     "_asserted_type": "workshop"
   },
   {
+    "id": "calarts-2026-10-04-interview-portraitsexh-944e8e399b",
+    "venue_id": "calarts",
+    "title": "Interview Portraits",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-10-04T12:00:00-07:00",
+    "end": "2026-10-10T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/interview-portraits",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-10T13:23:53+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "autry-2026-10-04-the-art-of-protest-and-visual-storytelli-c14c62858a",
     "venue_id": "autry",
     "title": "The Art of Protest and Visual Storytelling | Creative Workshop",
@@ -24319,5 +24321,429 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "self_help_graphics-2026-10-10-da-de-los-muertos-community-art-workshop-7ccc3402e2",
+    "venue_id": "self_help_graphics",
+    "title": "Día de los Muertos Community Art Workshop #2: Calavera Masks",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-10-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.selfhelpgraphics.com/upcoming-events/101026-dod-calaveramask",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://www.selfhelpgraphics.com/events-calendar",
+    "scraped_at": "2026-10-09T14:13:51+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-10-flower-arranging-oaks-and-fifth-season-f-9492ea34ba",
+    "venue_id": "huntington",
+    "title": "Flower Arranging: Oaks and Fifth Season Florals",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/flower-arranging-oaks-and-fifth-season-florals",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13ZXS1.jpg%3Fitok%3Dp2dsPT0O&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-09T14:14:05+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-10-international-orchid-show-and-sale-463427daf0",
+    "venue_id": "huntington",
+    "title": "International Orchid Show and Sale",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-10",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/10th-annual-international-orchid-show-and-sale",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2Frail%2FHU13Z848.jpg%3Fitok%3D1dmL27Xi&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-10T13:23:42+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "williamson_scripps-2026-10-10-scripps-centennial-womens-leadership-sum-74890c26e2",
+    "venue_id": "williamson_scripps",
+    "title": "Scripps Centennial Women’s Leadership Summit",
+    "description": "BOLD LEGACY, BOUNDLESS FUTURE Be part of the momentum that’s redefining what women leaders can achieve now and into the future. This dynamic one-day event celebrates the achievements of Scripps graduates and brings together women leaders who are deeply committed to making a difference in their professions and communities. The summit promises to be an enriching experience, where women leaders come together to inspire, learn, and create lasting impact. Attendees can expect to experience: Empowering Conversations: Curated mentorship circles that spark new ideas and challenge conventional thinking. Conveners will share their experiences, lessons learned, and visions for innovation and positive change. Dynamic Networking: Connection with fellow attendees in a supportive space for Networking ses",
+    "event_type": "workshop",
+    "start": "2026-10-10T09:00:00-07:00",
+    "end": "2026-10-10T17:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.scrippscollege.edu/events/calendar/scripps-centennial-womens-leadership-summit",
+    "image": null,
+    "artists": [],
+    "location_override": "Garrison Theater, 10th Street, Claremont, CA, 91711",
+    "source": "scrippscollege.edu",
+    "scraped_at": "2026-10-10T13:23:41+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-10-10-fall-fantasy-book-faire-2026-bba410170d",
+    "venue_id": "autry",
+    "title": "Fall Fantasy Book Faire 2026",
+    "description": "Autry Outdoors, Family Activities, Community Partner Events",
+    "event_type": "other",
+    "start": "2026-10-10T10:00:00-07:00",
+    "end": "2026-10-10T14:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/autry-outdoors/fall-fantasy-book-faire-2026-0",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-05/ev_Fall%20Fantasy%20Book%20Faire%202026.png?h=0888b4ad&itok=qMcaIOBw",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-10-10T13:23:57+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "angels_gate--20th-many-winters-gathering-of-elders-sa-448ea8c06a",
+    "venue_id": "angels_gate",
+    "title": "20th Many Winters Gathering of Elders | Saturday",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": "2026-10-10T19:00:00-07:00",
+    "all_day": false,
+    "url": "https://angelsgateart.org/listing/20th-many-winters-gathering-of-elders-2-2/",
+    "image": "https://angelsgateart.org/wp-content/uploads/2026/09/MWGOE-2026-Bear-Logo-square-400x284.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "angelsgateart.org+llm",
+    "scraped_at": "2026-10-10T13:23:46+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-10-the-little-vampire-in-35mm-3e2787beb3",
+    "venue_id": "academy_museum",
+    "title": "The Little Vampire in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": "2026-10-10T12:15:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-little-vampire-019fce43-b9a7-6acf-46c8-25fdba2cb0c4",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4DvaAoR5FR6WscwELtyDR1/36ad01eed0c2dc70812644400198b08c/Oct10_LITTLE_VAMPIRE_FamilyMatinees1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-10T13:23:42+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-10-10-mavis-pusey-mobile-images-member-preview-258214ae3e",
+    "venue_id": "hammer",
+    "title": "Mavis Pusey: Mobile Images Member Preview",
+    "description": "Members can experience the exhibition before it opens to the public, along with up to four guests. Coffee and tea provided.",
+    "event_type": "exhibition",
+    "start": "2026-10-10T11:00:34-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/mavis-pusey-mobile-images-member-preview",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-09/040426_Hammer_Several_Eternities_Opening-357-04.jpg?h=7ef076da&itok=WaPv4Qa1",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-10-10T13:23:34+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-10-dropin-workshop-for-families-alebrijes-745f1bfa02",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Families: Alebrijes",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-10-10T12:30:00-07:00",
+    "end": "2026-10-10T14:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-alebrijes-01a04494-43f8-f66e-b152-d8116f352b43",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6eg9XxHliUixpmNPGdz53H/06ee463f010de0c1f95b2a0f7412190a/Option_1__231104MA_261_1_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-10T13:23:42+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "screening"
+  },
+  {
+    "id": "wende-2026-10-10-writegirl-neighborhood-workshop-8011b8aa0c",
+    "venue_id": "wende",
+    "title": "WriteGirl Neighborhood Workshop",
+    "description": "Uncover the power of poetry as we explore different styles of poetry and ways that poems can express your unique voice! PLUS, you’ll experiment with new techniques which will help you make your poetry expressive and impactful! Whether you’re someone who’s already passionate about poetry or just starting to explore it, you will benefit from this poetic workshop! The workshop will be held on Oct. 10, 2026 from 1pm – 2:30pm at the Wende Museum. WriteGirl is a Los Angeles-based creative writing and mentoring organization for teen girls and gender-expansive teens ages 13-18. WriteGirl offers workshops, mentoring and college guidance at no cost to participants. Learn more at www.writegirl.org or email membership@writegirl.org .",
+    "event_type": "workshop",
+    "start": "2026-10-10T13:00:00-07:00",
+    "end": "2026-10-10T14:30:00-07:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/writegirl-neighborhood-workshop-3/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/09/WriteGirl-Oct.-10th-workshop.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-10-10T13:23:39+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-10-10-what-is-a-western-pale-rider1985-ce020f985e",
+    "venue_id": "autry",
+    "title": "What Is a Western? |Pale Rider(1985)",
+    "description": "Film",
+    "event_type": "screening",
+    "start": "2026-10-10T13:30:00-07:00",
+    "end": "2026-10-10T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/film/what-western-pale-rider-1985",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_pale-rider.jpeg?h=f3659844&itok=XvjcTXZE",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-10-10T13:23:57+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "fowler-2026-10-10-special-program-uhengaparaoa-taonga-tuku-7674cee292",
+    "venue_id": "fowler",
+    "title": "Special Program: Uhengaparaoa Taonga Tuku Iho / Ancestral Gifts / Contemporary Māori Art",
+    "description": "This gathering marks the opening of a collaborative exhibition that connects contemporary Māori textile artists from Whakatōhea with an ancestral kaitaka (cloak) in the Fowler Museum collection. Inspired by the legacy of Uhengaparaoa, a renowned pre-18th century Whakatōhea weaver whose knowledge of raranga (weaving) was shared across communities, the exhibition celebrates taonga tuku iho—ancestral treasures and knowledge passed down through generations....",
+    "event_type": "opening",
+    "start": "2026-10-10T14:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://fowler.ucla.edu/events/special-program-uhengaparaoa-taonga-tuku-iho-ancestral-gifts-contemporary-maori-art/?occurrence=2026-10-10",
+    "image": "https://fowler.ucla.edu/wp-content/uploads/2026/08/10-11-Uhengaparaoa.png",
+    "artists": [],
+    "location_override": null,
+    "source": "fowler.ucla.edu",
+    "scraped_at": "2026-09-01T12:26:34+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "sparc-2026-10-10-talkworkshop-the-history-and-traditions-2f97fdaabc",
+    "venue_id": "sparc",
+    "title": "[Talk/Workshop] The History and Traditions of Día de los Muertos with Professor Martha Ramirez-Oropeza",
+    "description": "Before we gather to celebrate Día de los Muertos 2026 in November, take an afternoon to discover the meaning behind the marigolds, the ofrendas, and the sugar skulls. Join Professor Martha Ramirez-Oropeza for a talk and workshop exploring the roots of one of Mexico’s most beloved traditions. From its Indigenous origins to the vibrant celebrations of today, you’ll learn how Día de los Muertos became a joyful way to remember and honor those who came before us. RSVP here > This talk is part of our program series leading up to Día de los Muertos 2026. October 10th – Talk/Workshop: The History and Traditions of Día de los Muertos October 17th – Workshop I: Learn to make traditional and new decorations for Día de los Muertos October 24th – Workshop II: Learn to make traditional and new decoratio",
+    "event_type": "workshop",
+    "start": "2026-10-10T14:00:00-07:00",
+    "end": "2026-10-10T16:00:00-07:00",
+    "all_day": false,
+    "url": "https://sparcinla.org/event/talk-workshop-the-history-and-traditions-of-dia-de-los-muertos-with-professor-martha-ramirez-oropeza/",
+    "image": "https://sparcinla.org/wp-content/uploads/2026/09/Dia-de-los-muertos_2026_workshop.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "sparcinla.org",
+    "scraped_at": "2026-10-10T13:23:52+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-10-get-on-the-bus-30th-anniversary-screenin-40bc82681a",
+    "venue_id": "academy_museum",
+    "title": "Get on the Bus 30th Anniversary Screening in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-10T15:00:00-07:00",
+    "end": "2026-10-10T18:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/30th-anniversary-of-get-on-the-bus-019fce7d-e21b-f9de-ccf8-cfa1d672c55b",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/7HwGhrOqynk5KMxGzMYSsD/b661eb92d9fc651b5fdb268d241a7aaa/SELECT_Oct10_GET_ON_THE_BUS_Spotlight1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-10T13:23:42+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "getty_villa-2026-10-10-bacchus-uncorked-beer-in-ancient-mesopot-dd386400d6",
+    "venue_id": "getty_villa",
+    "title": "Bacchus Uncorked: Beer in Ancient Mesopotamia and Egypt",
+    "description": "Food & Drink",
+    "event_type": "other",
+    "start": "2026-10-10T17:15:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/bacchus-uncorked-mesopotamia-egypt",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-10T13:23:34+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "redcat-2026-10-10-democracy-sessions-order-and-its-others-e1f9aa018e",
+    "venue_id": "redcat",
+    "title": "Democracy Sessions: Order and Its Others — Wild Up",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-10-10T20:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.redcat.org/events/democracy-sessions-order-and-its-others",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/WUES2627_DemocracySessions-OrderAndItsOthers%20%281%29.jpg?h=bb151699&itok=kjXHU8Q0",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-10-10T13:23:36+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance"
+  },
+  {
+    "id": "lacma-2026-10-10-improvising-in-the-david-geffen-gallerie-d6a4f554b0",
+    "venue_id": "lacma",
+    "title": "Improvising in the David Geffen Galleries",
+    "description": "We are thrilled to present Improvising in the David Geffen Galleries, the first program in a new series of members-only events designed to bring members together for special opportunities to engage with the broader Los Angeles cultural scene while experiencing LACMA’s permanen...",
+    "event_type": "other",
+    "start": "2026-10-10T20:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/improvising-in-the-david-geffen-galleries",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/Untitled-1%20web.png?VersionId=GfSDJu7craQzrSnu94k8FCJUgmTmw1h5&itok=yOw0C4Cg",
+    "artists": [],
+    "location_override": "David Geffen Galleries | LACMA, LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-10-10T13:23:35+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-10-10-fall-exhibitions-celebration-b50ab249a0",
+    "venue_id": "hammer",
+    "title": "Fall Exhibitions Celebration",
+    "description": "Celebrate a pair of retrospectives featuring two prolific and trailblazing abstract artists, Huguette Caland and Mavis Pusey, with galleries open late and music in the courtyard.",
+    "event_type": "fair",
+    "start": "2026-10-10T20:00:34-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/fall-exhibitions-celebration",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2024-12/032523_Hammer_Opening_Party-007-04.jpg?h=c3635fa2&itok=cP1fGIM7",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-10-10T13:23:34+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
