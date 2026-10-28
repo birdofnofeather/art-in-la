@@ -30068,5 +30068,121 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-10-27-school-of-music-visiting-artist-anton-sa-f515f496d2",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Anton Sanko",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-27T10:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-anton-sanko",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-27T13:03:29+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "caam-2026-10-27-curatorial-walkthrough-sinners-sounds-th-5130c6c1ce",
+    "venue_id": "caam",
+    "title": "Curatorial Walkthrough: Sinners: Sounds That Summon",
+    "description": "Celebrate the opening of Sinners: Sounds That Summon with a special walkthrough led by curator Imani Y. Haynes.",
+    "event_type": "opening",
+    "start": "2026-10-27T14:00:00-07:00",
+    "end": "2026-10-27T15:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/curatorial-walkthrough-sinners-sounds-that-summon-tickets-2003671910622",
+    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196204167%2F214015320389%2F1%2Foriginal.20261020-164457?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=5a736d329353caf5b80c2bba5dd1e3c6",
+    "artists": [],
+    "location_override": "California African American Museum",
+    "source": "eventbrite.com (CAAM)",
+    "scraped_at": "2026-10-27T13:03:33+00:00",
+    "event_types": [
+      "opening",
+      "tour"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-10-27-a-painterly-pursuit-with-reggie-burrows-bca59f008c",
+    "venue_id": "getty_center",
+    "title": "A Painterly Pursuit with Reggie Burrows Hodges",
+    "description": "Talk",
+    "event_type": "lecture",
+    "start": "2026-10-27T18:30:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/painterly-pursuit-hodges",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center & Online",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-27T13:02:59+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-10-27-author-talk-he-has-the-people-abraham-li-6233fb4167",
+    "venue_id": "autry",
+    "title": "Author Talk |He Has the People: Abraham Lincoln and the Election of 1860",
+    "description": "Conversations, Member Events",
+    "event_type": "lecture",
+    "start": "2026-10-27T19:30:00-07:00",
+    "end": "2026-10-27T21:00:00-07:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/conversations/author-talk-he-has-people-abraham-lincoln-and-election-1860",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-07/ev_lincoln.jpeg?h=9069f6df&itok=KzP6AlAH",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-10-27T13:03:17+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-10-27-train-wreck-7fe4c984e6",
+    "venue_id": "calarts",
+    "title": "Train Wreck",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-27T20:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/train-wreck",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-27T13:03:29+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
