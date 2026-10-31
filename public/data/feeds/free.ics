@@ -6,21 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Free events
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:academy_museum-2026-10-30-gallery-spotlight-creating-the-horror-sh-860e3ea243@art-in-la
-DTSTAMP:20261030T135532Z
-DTSTART:20261030T190000Z
-DTEND:20261030T200000Z
-SUMMARY:Gallery Spotlight: Creating The Horror Show
-LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
-URL:https://www.academymuseum.org/en/programs/detail/gallery-spotlight-cre
- ating-the-horror-show-01a0b061-93a1-0e15-a2dd-07bbffe0cb05
-DESCRIPTION:Academy Museum of Motion Pictures · Free · https://www.acade
- mymuseum.org/en/programs/detail/gallery-spotlight-creating-the-horror-sho
- w-01a0b061-93a1-0e15-a2dd-07bbffe0cb05
-END:VEVENT
-BEGIN:VEVENT
 UID:caam-2026-10-31-caam-creates-with-design-hive-sinners-so-08c9d3cb81@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261031T210000Z
 DTEND:20261031T223000Z
 SUMMARY:CAAM Creates with Design Hive: Sinners: Sounds That Summon
@@ -34,7 +21,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:sparc-2026-11-01-the-24th-annual-da-de-los-muertos-celebr-a8c4f7ac9d@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261102T013000Z
 DTEND:20261102T043000Z
 SUMMARY:The 24th annual Día de los Muertos celebration and ritual
@@ -51,7 +38,7 @@ DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-02-personal-connections-in-person-cdc858d66e@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261102T183000Z
 SUMMARY:Personal Connections (In Person)
 LOCATION:LACMA | LACMA
@@ -64,7 +51,7 @@ DESCRIPTION:Los Angeles County Museum of Art · Free · https://www.lacma.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-11-04-pltica-erasing-and-restoring-memory-at-e-883b2f52c2@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261105T030000Z
 SUMMARY:Plática – Erasing and Restoring Memory at El Pueblo de Los Áng
  eles | Free with RSVP
@@ -76,7 +63,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-11-05-orgullosamente-aqu-a-selection-of-queer-0e1d562815@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261106T020000Z
 SUMMARY:Orgullosamente Aquí – A Selection of Queer Films | Free with RS
  VP
@@ -87,7 +74,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:the_broad-2026-11-07-la-ndn-flea-a-native-market-bf007aacf3@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261107T180000Z
 DTEND:20261108T010000Z
 SUMMARY:LA NDN Flea – A Native Market
@@ -103,7 +90,7 @@ DESCRIPTION:The Broad · Free · https://www.thebroad.org/events/la-ndn-fl
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-11-07-les-navegantes-tour-good-grief-visual-re-f2a4ecbaf7@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261107T200000Z
 SUMMARY:Les Navegantes Tour: Good Grief! Visual Representations of Grief a
  nd Activism | Free with RSVP
@@ -114,8 +101,8 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-07-after-the-vote-what-the-2026-midterms-te-2a46529816@art-in-la
-DTSTAMP:20261030T135532Z
-DTSTART:20261107T220031Z
+DTSTAMP:20261031T132719Z
+DTSTART:20261107T220019Z
 SUMMARY:After the Vote: What the 2026 Midterms Tell Us
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/after-vote-what-2026-midt
@@ -127,7 +114,7 @@ DESCRIPTION:Hammer Museum · Free · https://hammer.ucla.edu/programs-even
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-08-sage-nija-whitson-revival-revival-eeb84b1d3a@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261108T210000Z
 DTEND:20261108T210000Z
 SUMMARY:Sage Ni’Ja Whitson: Revival_ _Revival
@@ -143,7 +130,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-08-scavenger-hunt-fce8057396@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261108T220000Z
 DTEND:20261108T230000Z
 SUMMARY:Scavenger Hunt
@@ -156,7 +143,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-10-in-conversation-robert-garland-and-charm-7c1349770a@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261111T030000Z
 DTEND:20261111T043000Z
 SUMMARY:In Conversation: Robert Garland and Charmaine Jefferson
@@ -169,7 +156,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-12-in-conversation-lisbet-tellefsen-and-ala-2ca330972c@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261113T030000Z
 DTEND:20261113T040000Z
 SUMMARY:In Conversation: Lisbet Tellefsen and Alan Bell
@@ -182,7 +169,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-11-12-short-films-la-plaza-the-class-president-8ba2c6ed0d@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261113T030000Z
 SUMMARY:Short Films @ LA Plaza: The Class President | Free with RSVP
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -192,7 +179,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-13-noor-illuminating-oneness-through-music-a354a3ba3c@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261114T020000Z
 DTEND:20261114T043000Z
 SUMMARY:Noor: Illuminating Oneness Through Music
@@ -209,7 +196,7 @@ DESCRIPTION:Wende Museum · Free · https://wendemuseum.org/event/noor-ill
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-11-14-the-artists8217-studio-celebration-of-ar-5fe45e1194@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261114T180000Z
 DTEND:20261116T000000Z
 SUMMARY:The Artists’ Studio Celebration of Art
@@ -227,7 +214,7 @@ DESCRIPTION:Palos Verdes Art Center · Free · https://pvartcenter.org/upc
 END:VEVENT
 BEGIN:VEVENT
 UID:laband-2026-11-14-artist-curator-walkthrough-c69b47fb76@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261114T210000Z
 DTEND:20261114T220000Z
 SUMMARY:Artist + Curator Walkthrough
@@ -239,7 +226,7 @@ DESCRIPTION:Laband Art Gallery at LMU · Free · http://cal.lmu.edu/event/
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-17-artist-walkthrough-jamea-richmondedwards-cadaeb49ea@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261117T220000Z
 DTEND:20261117T230000Z
 SUMMARY:Artist Walkthrough: Jamea Richmond-Edwards: Another World and Yet 
@@ -254,7 +241,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-18-in-conversation-fred-wilson-and-gannit-a-771c7fe5a8@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261119T030000Z
 DTEND:20261119T043000Z
 SUMMARY:In Conversation: Fred Wilson and Gannit Ankori
@@ -267,7 +254,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-19-jazz-at-caam-miles-davis-100-with-keyon-0a10c3b1fa@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261120T030000Z
 DTEND:20261120T040000Z
 SUMMARY:Jazz at CAAM: Miles Davis 100 with Keyon Harrold
@@ -281,7 +268,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:angels_gate--open-studios-day-fall-2026-d28e423810@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261121T200000Z
 DTEND:20261122T010000Z
 SUMMARY:Open Studios Day | Fall 2026
@@ -292,7 +279,7 @@ DESCRIPTION:Angels Gate Cultural Center · Free · https://angelsgateart.o
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-21-caam-creates-with-design-hive-reggie-bur-9d6d7d8867@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261121T220000Z
 DTEND:20261121T233000Z
 SUMMARY:CAAM Creates with Design Hive: Reggie Burrows Hodges: A Theater of
@@ -308,7 +295,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-22-citizen-artist-reading-group-with-pilar-a63ea05a8e@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261122T180000Z
 DTEND:20261122T200000Z
 SUMMARY:Citizen Artist Reading Group with Pilar Tompkins Rivas
@@ -325,7 +312,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-22-zine-workshop-jamea-richmondedwards-anot-951fbc390c@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261122T220000Z
 DTEND:20261122T233000Z
 SUMMARY:Zine Workshop: Jamea Richmond-Edwards: Another World and Yet the S
@@ -340,7 +327,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-12-05-les-navegantes-tour-good-grief-visual-re-fee30fa76a@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261205T200000Z
 SUMMARY:Les Navegantes Tour: Good Grief! Visual Representations of Grief a
  nd Activism | Free with RSVP
@@ -351,7 +338,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-06-winter-choral-concert-21ebb9fe61@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261206T230000Z
 DTEND:20261207T003000Z
 SUMMARY:Winter Choral Concert
@@ -369,7 +356,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-12-claremont-concert-orchestra-fall-concert-f7fe4bf625@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261213T033000Z
 DTEND:20261213T050000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -387,7 +374,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2026-12-13-atraviesa-groove-sessions-a6536eac0e@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261213T190000Z
 DTEND:20261213T203000Z
 SUMMARY:aTRAVIESA Groove Sessions
@@ -403,7 +390,7 @@ DESCRIPTION:Pieter Performance Space · Free · https://pieterpasd.com/pro
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-13-claremont-concert-orchestra-fall-concert-ce14295f25@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261213T220000Z
 DTEND:20261213T233000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -421,7 +408,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-12-20-citizen-artist-reading-group-6fde45417b@art-in-la
-DTSTAMP:20261030T135532Z
+DTSTAMP:20261031T132719Z
 DTSTART:20261220T180000Z
 DTEND:20261220T200000Z
 SUMMARY:Citizen Artist Reading Group

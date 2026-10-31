@@ -30510,5 +30510,143 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "screening"
+  },
+  {
+    "id": "huntington-2026-10-30-strange-science-b676944339",
+    "venue_id": "huntington",
+    "title": "Strange Science",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-30",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/strange-science",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2Frail%2FHU1409PL.jpg%3Fh%3D45c2f7ca%26itok%3DMoMXuKtp&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-29T13:59:42+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-30-gallery-spotlight-creating-the-horror-sh-860e3ea243",
+    "venue_id": "academy_museum",
+    "title": "Gallery Spotlight: Creating The Horror Show",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-30T12:00:00-07:00",
+    "end": "2026-10-30T13:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/gallery-spotlight-creating-the-horror-show-01a0b061-93a1-0e15-a2dd-07bbffe0cb05",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/151IXA1PEa6G4BRgh98Him/b07fec8b8d91440d2d2b6e47608b5dfd/AMMP_TheHorrorShow_ExhibitionsPageBanner_103025_JBM_R1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-28T13:53:34+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-10-30-school-of-music-visiting-artist-gag-6d31c8026f",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Gag!",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-30T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-gag",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-30T13:54:51+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-10-30-jazz-at-lacma-hiroshima-81b3863ba9",
+    "venue_id": "lacma",
+    "title": "Jazz at LACMA: Hiroshima",
+    "description": "Celebrate L.A.'s finest jazz musicians with Jazz at LACMA, presented Friday evenings from May through October...",
+    "event_type": "other",
+    "start": "2026-10-30T18:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/jazz-lacma-hiroshima",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/2026-10-30_Hiroshima.jpeg?VersionId=NPL.0wp2U11oRWWXXkLDFnh_tXSRZhSy&itok=tpshNP89",
+    "artists": [],
+    "location_override": "Smidt Welcome Plaza",
+    "source": "lacma.org",
+    "scraped_at": "2026-10-30T13:54:31+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-10-31-decision-to-leave-with-park-haeil-0c2cf32da1",
+    "venue_id": "academy_museum",
+    "title": "Decision to Leave (헤어질 결심) with Park Hae-il",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-10-30T19:30:00-07:00",
+    "end": "2026-10-30T22:30:00-07:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/decision-to-leave-019fce27-6a63-4b4d-9352-4a2c3fd9026e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/zh7C6RHuCv38OLcWinUpI/990f11f8b2e267d45e695764d5d76fb0/Oct29_DECISION_TO_LEAVE_Park2.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-10-28T13:53:34+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-10-30-calarts-halloween-2026-the-descent-5c08ed7ae0",
+    "venue_id": "calarts",
+    "title": "CalArts Halloween 2026: The Descent",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-30T22:00:00-07:00",
+    "end": "2026-10-31T02:00:00-07:00",
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/calarts-halloween-2026-descent",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-10-30T13:54:51+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
