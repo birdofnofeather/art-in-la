@@ -1,67 +1,79 @@
 {
-  "generated_at": "2026-10-31T13:27:19.825658+00:00",
+  "generated_at": "2026-11-01T14:08:25.923972+00:00",
   "verdict": "red",
   "totals": {
-    "events": 263,
+    "events": 252,
     "exhibitions": 54,
     "venues_producing": 49,
     "venues_checked": 59,
     "unpublishable_records": 0
   },
   "counts": {
-    "red": 7,
-    "yellow": 20,
-    "green": 32
+    "red": 11,
+    "yellow": 19,
+    "green": 29
   },
   "unreachable": [
-    "18th_street",
+    "armory_pasadena",
     "art_practice",
     "beyond_baroque",
     "esmoa",
-    "fowler",
+    "huntington",
     "la_plaza",
-    "pacific_asia_museum",
-    "usc_fisher",
-    "armory_pasadena",
+    "norton_simon",
     "calarts",
     "corita_art_center",
-    "huntington",
-    "norton_simon",
     "sciarc"
   ],
   "known_exhibition_gap": [
-    "moca_geffen",
-    "moca_grand",
     "18th_street",
     "fowler",
-    "hammer",
-    "moah",
-    "molaa",
+    "moca_geffen",
+    "moca_grand",
     "pacific_asia_museum",
     "usc_fisher",
     "armory_pasadena",
+    "hammer",
+    "huntington",
+    "moah",
+    "molaa",
+    "norton_simon",
     "autry",
     "caam",
-    "huntington",
     "janm",
     "lacma",
     "lbma",
-    "norton_simon",
     "skirball",
     "vincent_price"
   ],
   "venues": [
     {
+      "venue_id": "18th_street",
+      "verdict": "red",
+      "unreachable": false,
+      "events": 3,
+      "exhibitions": 0,
+      "dates_on_page": 0,
+      "zero_streak": 61,
+      "reasons": [
+        "no events for 61 consecutive runs (last produced 2026-09-01)"
+      ],
+      "known_gaps": [
+        "exhibitions"
+      ]
+    },
+    {
       "venue_id": "academy_museum",
       "verdict": "red",
       "unreachable": false,
-      "events": 51,
+      "events": 47,
       "exhibitions": 1,
       "dates_on_page": 0,
-      "zero_streak": 3,
+      "zero_streak": 4,
       "reasons": [
-        "produced 52, far above its recent average of 14 — possibly picking up navigation or a different page",
-        "no events for 3 consecutive runs (last produced 2026-10-28)",
+        "produced 48, far above its recent average of 11 — possibly picking up navigation or a different page",
+        "no events for 4 consecutive runs (last produced 2026-10-28)",
+        "47 events, fewer than the expected 50",
         "1 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
       ],
       "known_gaps": []
@@ -73,10 +85,10 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 54,
-      "zero_streak": 86,
+      "zero_streak": 87,
       "reasons": [
         "the venue's page advertises 54 upcoming dates but we extracted nothing",
-        "no events for 86 consecutive runs (last produced 2026-08-08)"
+        "no events for 87 consecutive runs (last produced 2026-08-08)"
       ],
       "known_gaps": []
     },
@@ -87,9 +99,10 @@
       "events": 4,
       "exhibitions": 0,
       "dates_on_page": 200,
-      "zero_streak": 2,
+      "zero_streak": 3,
       "reasons": [
-        "the venue's page advertises 200 upcoming dates but we extracted nothing"
+        "the venue's page advertises 200 upcoming dates but we extracted nothing",
+        "no events for 3 consecutive runs (last produced 2026-10-29)"
       ],
       "known_gaps": []
     },
@@ -100,11 +113,27 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 11,
-      "zero_streak": 66,
+      "zero_streak": 67,
       "reasons": [
         "the venue's page advertises 11 upcoming dates but we extracted nothing"
       ],
       "known_gaps": []
+    },
+    {
+      "venue_id": "fowler",
+      "verdict": "red",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 0,
+      "dates_on_page": 0,
+      "zero_streak": 61,
+      "reasons": [
+        "no events for 61 consecutive runs (last produced 2026-09-01)",
+        "0 events, fewer than the expected 2"
+      ],
+      "known_gaps": [
+        "exhibitions"
+      ]
     },
     {
       "venue_id": "moca_geffen",
@@ -113,10 +142,10 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 13,
-      "zero_streak": 84,
+      "zero_streak": 85,
       "reasons": [
         "the venue's page advertises 13 upcoming dates but we extracted nothing",
-        "no events for 84 consecutive runs (last produced 2026-08-10)"
+        "no events for 85 consecutive runs (last produced 2026-08-10)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -129,10 +158,25 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 13,
-      "zero_streak": 84,
+      "zero_streak": 85,
       "reasons": [
         "the venue's page advertises 13 upcoming dates but we extracted nothing",
-        "no events for 84 consecutive runs (last produced 2026-08-10)"
+        "no events for 85 consecutive runs (last produced 2026-08-10)"
+      ],
+      "known_gaps": [
+        "exhibitions"
+      ]
+    },
+    {
+      "venue_id": "pacific_asia_museum",
+      "verdict": "red",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 1,
+      "dates_on_page": 0,
+      "zero_streak": 61,
+      "reasons": [
+        "no events for 61 consecutive runs (last produced 2026-09-01)"
       ],
       "known_gaps": [
         "exhibitions"
@@ -145,22 +189,38 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 5,
-      "zero_streak": 102,
+      "zero_streak": 103,
       "reasons": [
-        "no events for 102 consecutive runs (last produced 2026-07-23)"
+        "no events for 103 consecutive runs (last produced 2026-07-23)"
       ],
       "known_gaps": []
     },
     {
-      "venue_id": "18th_street",
+      "venue_id": "usc_fisher",
+      "verdict": "red",
+      "unreachable": false,
+      "events": 0,
+      "exhibitions": 1,
+      "dates_on_page": 0,
+      "zero_streak": 61,
+      "reasons": [
+        "no events for 61 consecutive runs (last produced 2026-09-01)"
+      ],
+      "known_gaps": [
+        "exhibitions"
+      ]
+    },
+    {
+      "venue_id": "armory_pasadena",
       "verdict": "yellow",
       "unreachable": true,
-      "events": 3,
+      "events": 4,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 60,
+      "zero_streak": 3,
       "reasons": [
-        "no events for 60 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "produced 4, well below its recent average of 12",
+        "no events for 3 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -186,9 +246,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 110,
+      "zero_streak": 111,
       "reasons": [
-        "no events for 110 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser",
+        "no events for 111 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser",
         "0 exhibitions, fewer than the expected 1 — a venue can look healthy on events while its exhibitions are broken"
       ],
       "known_gaps": []
@@ -213,27 +273,11 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 104,
+      "zero_streak": 105,
       "reasons": [
-        "no events for 104 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 105 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
-    },
-    {
-      "venue_id": "fowler",
-      "verdict": "yellow",
-      "unreachable": true,
-      "events": 0,
-      "exhibitions": 0,
-      "dates_on_page": null,
-      "zero_streak": 60,
-      "reasons": [
-        "no events for 60 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser",
-        "0 events, fewer than the expected 2"
-      ],
-      "known_gaps": [
-        "exhibitions"
-      ]
     },
     {
       "venue_id": "getty_center",
@@ -252,12 +296,27 @@
       "venue_id": "hammer",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 40,
+      "events": 38,
       "exhibitions": 1,
-      "dates_on_page": 5,
+      "dates_on_page": 6,
       "zero_streak": 0,
       "reasons": [
-        "40 events, more than the expected 30"
+        "38 events, more than the expected 30"
+      ],
+      "known_gaps": [
+        "exhibitions"
+      ]
+    },
+    {
+      "venue_id": "huntington",
+      "verdict": "yellow",
+      "unreachable": true,
+      "events": 10,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 3,
+      "reasons": [
+        "no events for 3 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -267,7 +326,7 @@
       "venue_id": "la_plaza",
       "verdict": "yellow",
       "unreachable": true,
-      "events": 9,
+      "events": 8,
       "exhibitions": 3,
       "dates_on_page": null,
       "zero_streak": 0,
@@ -309,9 +368,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 4,
-      "zero_streak": 0,
+      "zero_streak": 1,
       "reasons": [
-        "scraped 3 record(s) but published none — everything it found was filtered out, so the site shows nothing for this venue"
+        "nothing on the site for this venue, and no check could tell us why"
       ],
       "known_gaps": []
     },
@@ -374,30 +433,15 @@
       ]
     },
     {
-      "venue_id": "pacific_asia_museum",
+      "venue_id": "norton_simon",
       "verdict": "yellow",
       "unreachable": true,
-      "events": 0,
-      "exhibitions": 1,
+      "events": 1,
+      "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 60,
+      "zero_streak": 3,
       "reasons": [
-        "no events for 60 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
-      ],
-      "known_gaps": [
-        "exhibitions"
-      ]
-    },
-    {
-      "venue_id": "usc_fisher",
-      "verdict": "yellow",
-      "unreachable": true,
-      "events": 0,
-      "exhibitions": 1,
-      "dates_on_page": null,
-      "zero_streak": 60,
-      "reasons": [
-        "no events for 60 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 3 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": [
         "exhibitions"
@@ -441,19 +485,6 @@
       "known_gaps": []
     },
     {
-      "venue_id": "armory_pasadena",
-      "verdict": "green",
-      "unreachable": true,
-      "events": 4,
-      "exhibitions": 0,
-      "dates_on_page": null,
-      "zero_streak": 2,
-      "reasons": [],
-      "known_gaps": [
-        "exhibitions"
-      ]
-    },
-    {
       "venue_id": "autry",
       "verdict": "green",
       "unreachable": false,
@@ -494,7 +525,7 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 2,
-      "dates_on_page": 41,
+      "dates_on_page": 35,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -503,7 +534,7 @@
       "venue_id": "caam",
       "verdict": "green",
       "unreachable": false,
-      "events": 9,
+      "events": 8,
       "exhibitions": 0,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -560,25 +591,12 @@
       "venue_id": "human_resources",
       "verdict": "green",
       "unreachable": false,
-      "events": 6,
+      "events": 5,
       "exhibitions": 0,
-      "dates_on_page": 9,
+      "dates_on_page": 5,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
-    },
-    {
-      "venue_id": "huntington",
-      "verdict": "green",
-      "unreachable": true,
-      "events": 11,
-      "exhibitions": 1,
-      "dates_on_page": null,
-      "zero_streak": 2,
-      "reasons": [],
-      "known_gaps": [
-        "exhibitions"
-      ]
     },
     {
       "venue_id": "ica_la",
@@ -586,7 +604,7 @@
       "unreachable": false,
       "events": 5,
       "exhibitions": 0,
-      "dates_on_page": 1,
+      "dates_on_page": 3,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -686,19 +704,6 @@
       "known_gaps": []
     },
     {
-      "venue_id": "norton_simon",
-      "verdict": "green",
-      "unreachable": true,
-      "events": 1,
-      "exhibitions": 0,
-      "dates_on_page": null,
-      "zero_streak": 2,
-      "reasons": [],
-      "known_gaps": [
-        "exhibitions"
-      ]
-    },
-    {
       "venue_id": "pieter",
       "verdict": "green",
       "unreachable": false,
@@ -746,9 +751,9 @@
       "venue_id": "self_help_graphics",
       "verdict": "green",
       "unreachable": false,
-      "events": 4,
+      "events": 3,
       "exhibitions": 0,
-      "dates_on_page": 4,
+      "dates_on_page": 3,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -759,7 +764,7 @@
       "unreachable": false,
       "events": 5,
       "exhibitions": 0,
-      "dates_on_page": 15,
+      "dates_on_page": 14,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": [
