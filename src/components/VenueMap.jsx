@@ -6,7 +6,7 @@ import { parseDate } from "../lib/filters.js";
 import { LA_COUNTY_GEOJSON } from "../data/laRegions.js";
 
 // Fallback view (centroid of the current venue set); the map auto-fits to the
-// actual markers on first load via FitBoundsOnce below.
+// actual markers on first load via FitToVenues below.
 const CENTER = [34.05, -118.28];
 const ZOOM = 10;
 
@@ -124,22 +124,34 @@ function FlyController({ venues, focusedVenueId, markerRefs }) {
   return null;
 }
 
-/** Fit the map to the venue markers once, on first load — keeps the view
-    centered on whatever the current venue set actually covers. Skipped when a
-    venue is being focused (FlyController owns the camera then). */
-function FitBoundsOnce({ mappable, focusedVenueId }) {
+/** Frame the visible venues. Runs on load and whenever the set of visible
+    venues changes (filters). Far-flung outliers (Lancaster, Catalina) are left
+    out of the frame so the core cluster fills the map; they stay reachable by
+    zooming out. Skipped while a venue is focused (FlyController owns the
+    camera then). */
+export function frameBounds(points) {
+  if (points.length === 0) return null;
+  if (points.length <= 3) return L.latLngBounds(points);
+  const med = (arr) => { const a = [...arr].sort((x, y) => x - y); return a[Math.floor(a.length / 2)]; };
+  const cLat = med(points.map((p) => p[0]));
+  const cLng = med(points.map((p) => p[1]));
+  const dist = points.map((p) => Math.hypot(p[0] - cLat, (p[1] - cLng) * 0.83));
+  const cutoff = Math.max(med(dist) * 4, 0.15);
+  const core = points.filter((_, i) => dist[i] <= cutoff);
+  return L.latLngBounds(core.length >= 2 ? core : points);
+}
+
+function FitToVenues({ mappable, focusedVenueId }) {
   const map = useMap();
-  const done = useRef(false);
-
+  const lastKey = useRef("");
   useEffect(() => {
-    if (done.current || focusedVenueId || mappable.length === 0) return;
-    done.current = true;
-    // Default view: the core of LA where most venues sit — roughly Burbank
-    // down to Long Beach — instead of zooming out to fit Lancaster.
-    const CORE = L.latLngBounds([33.73, -118.56], [34.20, -118.10]);
-    map.fitBounds(CORE, { maxZoom: 12 });
+    if (focusedVenueId || mappable.length === 0) return;
+    const key = mappable.map((v) => v.id).sort().join(",");
+    if (key === lastKey.current) return;
+    lastKey.current = key;
+    const b = frameBounds(mappable.map((v) => [v.lat, v.lng]));
+    if (b) map.fitBounds(b, { padding: [28, 28], maxZoom: 14 });
   }, [map, mappable, focusedVenueId]);
-
   return null;
 }
 
@@ -217,6 +229,8 @@ export default function VenueMap({
         center={CENTER}
         zoom={ZOOM}
         scrollWheelZoom
+        zoomSnap={0.25}
+        zoomDelta={0.5}
         style={{ height: "min(70vh, 560px)", width: "100%" }}
       >
         <BaseTiles />
@@ -225,7 +239,7 @@ export default function VenueMap({
         <GeoJSON key="county" data={LA_COUNTY_GEOJSON} style={COUNTY_STYLE} interactive={false} />
 
         <FlyController venues={venues} focusedVenueId={focusedVenueId} markerRefs={markerRefs} />
-        <FitBoundsOnce mappable={mappable} focusedVenueId={focusedVenueId} />
+        <FitToVenues mappable={mappable} focusedVenueId={focusedVenueId} />
         {mappable.map((v) => {
           const vEvents = eventsByVenue.get(v.id) || [];
           const nextEvents = vEvents.slice(0, 3);
