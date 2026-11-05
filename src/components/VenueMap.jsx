@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, GeoJSON, useMap } from "react-l
 import L from "leaflet";
 import { TYPE_LABEL } from "../lib/constants.js";
 import { parseDate } from "../lib/filters.js";
-import { LA_COUNTY_GEOJSON, REGIONS_GEOJSON, REGION_LABELS } from "../data/laRegions.js";
+import { LA_COUNTY_GEOJSON } from "../data/laRegions.js";
 
 // Fallback view (centroid of the current venue set); the map auto-fits to the
 // actual markers on first load via FitBoundsOnce below.
@@ -28,21 +28,48 @@ const COUNTY_STYLE = {
   fill: false,
 };
 
-const REGION_STYLE = {
-  color: "#94a3b8",
-  weight: 0.8,
-  opacity: 0.5,
-  fillColor: "#94a3b8",
-  fillOpacity: 0.05,
-};
+// Basemap tiles. CARTO's free basemaps began requiring a paid API key in
+// 2026 (every tile rendered "API KEY REQUIRED"), so we use keyless providers:
+// OpenStreetMap's standard tiles (muted to a light grey with CSS so the venue
+// dots stay the focus), falling back automatically to Esri's light-grey
+// canvas if OSM tiles start failing. Neither needs a key or an account.
+const TILE_PROVIDERS = [
+  {
+    url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    className: "tiles-muted",
+    maxZoom: 19,
+  },
+  {
+    url: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+    attribution: "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors",
+    className: "",
+    maxZoom: 16,
+  },
+];
 
-function makeLabelIcon(text) {
-  return L.divIcon({
-    className: "region-label",
-    html: `<span>${text}</span>`,
-    iconSize: [130, 18],
-    iconAnchor: [65, 9],
-  });
+function BaseTiles() {
+  const [idx, setIdx] = React.useState(0);
+  const errors = useRef(0);
+  const p = TILE_PROVIDERS[idx];
+  return (
+    <TileLayer
+      key={idx}
+      url={p.url}
+      attribution={p.attribution}
+      className={p.className}
+      maxZoom={p.maxZoom}
+      eventHandlers={{
+        tileerror: () => {
+          errors.current += 1;
+          if (errors.current >= 4 && idx < TILE_PROVIDERS.length - 1) {
+            errors.current = 0;
+            setIdx(idx + 1);
+          }
+        },
+      }}
+    />
+  );
 }
 
 // Marker colour encodes what a venue offers, matching the filter pills:
@@ -192,25 +219,10 @@ export default function VenueMap({
         scrollWheelZoom
         style={{ height: "min(70vh, 560px)", width: "100%" }}
       >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &middot; <a href="https://carto.com/attributions">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-        />
-        {/* Region fills + county outline */}
-        <GeoJSON key="regions" data={REGIONS_GEOJSON} style={REGION_STYLE} interactive={false} />
+        <BaseTiles />
+        {/* County outline only — the old rectangular region boxes read as
+            map errors over real streets; regions remain a filter. */}
         <GeoJSON key="county" data={LA_COUNTY_GEOJSON} style={COUNTY_STYLE} interactive={false} />
-
-        {/* Region text labels at centroid */}
-        {REGION_LABELS.map(({ id, label, lat, lng }) => (
-          <Marker
-            key={`rl-${id}`}
-            position={[lat, lng]}
-            icon={makeLabelIcon(label)}
-            interactive={false}
-            keyboard={false}
-            zIndexOffset={-1000}
-          />
-        ))}
 
         <FlyController venues={venues} focusedVenueId={focusedVenueId} markerRefs={markerRefs} />
         <FitBoundsOnce mappable={mappable} focusedVenueId={focusedVenueId} />

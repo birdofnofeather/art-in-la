@@ -538,7 +538,7 @@ export default function App() {
       <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/55 md:px-6">
         <p>
           Listings are bot-maintained — confirm times with the venue before heading out.
-          Map tiles © OpenStreetMap contributors · CARTO.
+          Map data © OpenStreetMap contributors.
         </p>
       </footer>
 

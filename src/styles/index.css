@@ -98,6 +98,93 @@
   box-shadow: 0 0 0 3px #fff, 0 0 0 6px rgba(82, 122, 158, 0.4);
 }
 
+/* Basemap: OSM tiles muted to a quiet light grey so the venue dots lead. */
+.tiles-muted {
+  filter: grayscale(1) brightness(1.1) contrast(0.82);
+}
+
+@layer components {
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-ink/15 bg-card px-2.5 py-0.5 text-xs font-medium text-ink/70 transition-colors hover:border-ink/40 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/30;
+  }
+  .chip-active {
+    @apply border-ink bg-ink text-white hover:border-ink hover:text-white;
+  }
+  /* Free + Family filters read differently from the neutral date chips. */
+  .chip-free {
+    @apply border-emerald-600/30 bg-emerald-50 text-emerald-900 hover:border-emerald-600/60 hover:text-emerald-900;
+  }
+  .chip-free.chip-active {
+    @apply border-emerald-700 bg-emerald-700 text-white hover:text-white;
+  }
+  .chip-family {
+    @apply border-sky-600/30 bg-sky-50 text-sky-900 hover:border-sky-600/60 hover:text-sky-900;
+  }
+  .chip-family.chip-active {
+    @apply border-sky-700 bg-sky-700 text-white hover:text-white;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-md border border-ink/15 bg-card px-3 py-1.5 text-sm font-medium hover:border-ink/40;
+  }
+  .btn-primary {
+    @apply border-ink bg-ink text-white hover:bg-black;
+  }
+  .panel {
+    @apply rounded-xl border border-ink/10 bg-card shadow-card;
+  }
+  /* Small tag pills on cards */
+  .tag {
+    @apply inline-flex items-center rounded-full px-1.5 py-px text-[11px] font-semibold leading-4;
+  }
+}
+
+/* Mobile: comfortable tap targets and readable pills */
+@media (max-width: 640px) {
+  .chip {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 1px 7px;
+  }
+}
+
+/* Leaflet tweaks */
+.leaflet-container {
+  background: #eceae4;
+  font-family: inherit;
+}
+.leaflet-popup-content-wrapper {
+  @apply rounded-lg shadow-md;
+}
+.leaflet-popup-content {
+  margin: 10px 14px;
+  line-height: 1.4;
+}
+
+/* Map markers — one visual language:
+   filled terracotta dot = has upcoming events (bigger = more),
+   hollow gray dot = venue only (no upcoming events). */
+.dot-marker {
+  display: block;
+  border-radius: 999px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(28, 25, 23, 0.35);
+}
+.dot-marker.eventful {
+  background: #6f9cbf;
+  border: none;
+}
+.dot-marker.quiet {
+  background: rgba(111, 156, 191, 0.22);
+  border: 1px solid rgba(111, 156, 191, 0.45);
+  box-shadow: none;
+}
+.dot-marker.focused {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px rgba(82, 122, 158, 0.4);
+}
+
 /* Region map labels */
 .region-label {
   background: none !important;
