@@ -13,7 +13,7 @@ Actions cron and commit fresh JSON data.
 - Repo: `github.com/birdofnofeather/art-in-la`, default branch `main`.
 - Live site: `https://birdofnofeather.github.io/art-in-la/`
 - Scope: **nonprofit art AND performing-arts institutions** (Round 11). Commercial
-  galleries and for-profit promoters are excluded. **117 venues** (95 art /
+  galleries and for-profit promoters are excluded. **114 venues** (92 art /
   22 performing), each with exactly one scraper: 56 bespoke modules in
   `scrapers/venues/` + config-driven ones from `scrapers/generic_venues.yaml`.
 
@@ -64,7 +64,23 @@ Tour"). Real one-off curator/exhibition tours are kept.
 
 ### HTTP
 `scrapers/utils/http.py` sends a desktop-Chrome User-Agent because several venue
-sites (Norton Simon, Armory) 403/429 a bot UA. Keep it browser-like.
+sites (Norton Simon, Armory) 403/429 a bot UA. Keep it browser-like. The Chrome
+version is DERIVED FROM THE DATE (`_chrome_major`): a hard-coded "Chrome/124"
+went ~30 months stale and USC/UCLA firewalls began resetting connections —
+USC Fisher, USC Pacific Asia Museum and Fowler produced nothing from Sept 1,
+2026 until fixed. A connection reset is retried once with a Safari UA.
+
+### CI runners: pinned to ubuntu-24.04 (do not change to ubuntu-latest)
+`ubuntu-latest` became 26.04, for which Playwright has no Chromium build; the
+browser install is continue-on-error, so rendering silently stopped. A failed
+browser install now opens a "Headless browser missing" issue.
+
+### Rendered venues + snapshots
+JavaScript-built calendars have bespoke parsers on `venues/_rendered.py`
+(`render_page` → `custom_parse`): la_phil + ford_theatres (shared platform),
+la_opera, geffen_playhouse, cerritos_center. Parsers are written against real
+source fetched FROM GITHUB'S RUNNERS: Actions → "Snapshot venue pages" → venue
+ids → pages land on the `debug-snapshots` branch (never main).
 
 ### Parallel scraping
 `run_all.py` scrapes venues concurrently via a thread pool (`SCRAPE_WORKERS` env,
@@ -297,6 +313,18 @@ custom_parse_exhibitions → generic → llm.
   is reachable, an agent (claude-sonnet-5-5) edits ONLY that module; kept only
   if tests, check_rules and a live dry-run scrape pass. Max 2 runs/month,
   21-day cooldown per venue, each fix its own revertable commit.
+
+## Repair verification
+`python -m scrapers.verify_venue <id>` is the gate for the tier-2 repair agent:
+live scrape (parser only), full curation, and PASS only if published titles
+are real, dates plausible and curation didn't discard most of the harvest.
+
+## Frontend extras (Round 11b)
+Share button on every event/exhibition (`lib/share.js`, `ShareButton.jsx`);
+`#event=<id>` opens it with filters cleared and highlights it. Card actions
+are 36px icon buttons. WCAG 2.2 AA verified with axe-core on all tabs, phone
+and desktop (ink text ≥65% opacity, accent #456a8a, yellow "LA" on an ink
+badge). Feeds: internal `feeds/art.ics` + `feeds/performing.ics` only.
 
 ## Performing-arts runs
 `utils/runs.py` (called in classify.derive): at performing venues, the
