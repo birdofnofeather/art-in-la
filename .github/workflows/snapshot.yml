@@ -1,0 +1,68 @@
+name: Snapshot venue pages (diagnostic)
+
+# Manual diagnostic: fetch venue pages FROM GITHUB'S RUNNERS (the environment
+# the daily scrape actually runs in), both plain and browser-rendered, and
+# save them to the `debug-snapshots` branch for inspection. Never touches main.
+#   Actions → "Snapshot venue pages" → Run workflow → venue ids, comma-separated
+
+on:
+  workflow_dispatch:
+    inputs:
+      venues:
+        description: "Comma-separated venue ids from venues.json"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install -r scrapers/requirements.txt -r scrapers/requirements-render.txt
+          python -m playwright install --with-deps chromium
+      - name: Fetch pages
+        env:
+          VENUES: ${{ inputs.venues }}
+        run: |
+          mkdir -p /tmp/snap
+          python - <<'PY'
+          import json, os, pathlib
+          from scrapers.utils.http import get
+          from scrapers.utils.render import render_pages
+          rows = {v["id"]: v for v in json.load(open("public/data/venues.json"))}
+          out = pathlib.Path("/tmp/snap"); report = []
+          urls = {}
+          for vid in [v.strip() for v in os.environ["VENUES"].split(",") if v.strip()]:
+              row = rows.get(vid)
+              if not row: report.append(f"{vid}: not in venues.json"); continue
+              for kind in ("website", "events_url", "exhibitions_url"):
+                  u = row.get(kind)
+                  if not u: continue
+                  r = get(u)
+                  code = getattr(r, "status_code", None)
+                  report.append(f"{vid} {kind} {u} -> {code} {getattr(r,'url','')} {len(getattr(r,'text','') or '')}b")
+                  if r is not None:
+                      (out / f"{vid}.{kind}.html").write_text(r.text)
+                  urls[u] = f"{vid}.{kind}"
+          for u, html in render_pages(list(urls), timeout=600).items():
+              report.append(f"render {urls[u]} -> {len(html or '')}b")
+              if html:
+                  (out / f"{urls[u]}.rendered.html").write_text(html)
+          (out / "REPORT.txt").write_text("\n".join(report) + "\n")
+          print("\n".join(report))
+          PY
+      - name: Push to debug-snapshots branch
+        run: |
+          cd /tmp/snap
+          git init -q -b debug-snapshots
+          git config user.name art-in-la-bot
+          git config user.email art-in-la-bot@users.noreply.github.com
+          git add -A && git commit -qm "snapshots $(date -u +%FT%TZ)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" debug-snapshots
