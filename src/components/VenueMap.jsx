@@ -150,7 +150,7 @@ function FitToVenues({ mappable, focusedVenueId }) {
     if (key === lastKey.current) return;
     lastKey.current = key;
     const b = frameBounds(mappable.map((v) => [v.lat, v.lng]));
-    if (b) map.fitBounds(b, { padding: [28, 28], maxZoom: 14 });
+    if (b) map.fitBounds(b, { padding: [28, 28], maxZoom: mappable.length < 4 ? 12 : 14 });
   }, [map, mappable, focusedVenueId]);
   return null;
 }
@@ -231,7 +231,7 @@ export default function VenueMap({
         scrollWheelZoom
         zoomSnap={0.25}
         zoomDelta={0.5}
-        style={{ height: "min(70vh, 560px)", width: "100%" }}
+        style={{ height: "min(68vh, 600px)", minHeight: 360, width: "100%" }}
       >
         <BaseTiles />
         {/* County outline only — the old rectangular region boxes read as

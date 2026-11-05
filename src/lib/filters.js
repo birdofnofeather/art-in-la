@@ -69,9 +69,18 @@ export function eventfulVenueIds(events) {
   return ids;
 }
 
-/** Apply org-level filters (type, region, eventful). */
-export function filterVenues(venues, { types, regions, eventful, eventfulIds }) {
+/** A venue's discipline; anything unlabelled counts as visual art. */
+export function disciplineOf(v) {
+  return v?.discipline === "performing" ? "performing" : "visual";
+}
+export function matchesDiscipline(v, discipline) {
+  return !discipline || discipline === "all" || disciplineOf(v) === discipline;
+}
+
+/** Apply org-level filters (discipline, type, region, eventful). */
+export function filterVenues(venues, { discipline, types, regions, eventful, eventfulIds }) {
   return venues.filter((v) => {
+    if (!matchesDiscipline(v, discipline)) return false;
     if (types && types.size > 0 && !types.has(v.type)) return false;
     if (regions && regions.size > 0 && !regions.has(v.region)) return false;
     if (eventful && !eventfulIds.has(v.id)) return false;
@@ -152,19 +161,20 @@ export function resolveDatePreset(preset, now = new Date()) {
 
 /** Apply event-level filters (venue type, event type, date range / preset). */
 export function filterEvents(events, venuesById, {
-  venueTypes, eventTypes, regions, datePreset, startDate, endDate, free, family,
+  discipline, venueTypes, eventTypes, regions, datePreset, startDate, endDate, free, family,
 }) {
   const rawEventTypes = expandEventTypes(eventTypes);
   let start = null, end = null;
   if (datePreset && datePreset !== "all") {
     ({ start, end } = resolveDatePreset(datePreset));
   } else {
-    if (startDate) start = new Date(startDate);
+    if (startDate) start = new Date(startDate + "T00:00:00");
     if (endDate) end = new Date(endDate + "T23:59:59");
   }
   return events.filter((ev) => {
     const venue = venuesById[ev.venue_id];
     if (!venue) return false;
+    if (!matchesDiscipline(venue, discipline)) return false;
     if (venueTypes && venueTypes.size > 0 && !venueTypes.has(venue.type)) return false;
     if (rawEventTypes && !eventTypesOf(ev).some((t) => rawEventTypes.has(t))) return false;
     if (regions && regions.size > 0 && !regions.has(venue.region)) return false;

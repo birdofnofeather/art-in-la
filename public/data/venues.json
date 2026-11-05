@@ -42,8 +42,7 @@
       "instagram": "https://instagram.com/thebroadmuseum",
       "twitter": "https://twitter.com/thebroad",
       "facebook": "https://facebook.com/thebroadmuseum",
-      "tiktok": "https://tiktok.com/@thebroadmuseum",
-      "youtube": "https://youtube.com/@thebroadmuseum"
+      "tiktok": "https://tiktok.com/@thebroadmuseum"
     },
     "aliases": [
       "The Broad"
@@ -121,7 +120,7 @@
       "twitter": "https://twitter.com/hammer_museum",
       "facebook": "https://facebook.com/hammermuseum",
       "tiktok": "https://tiktok.com/@hammer_museum",
-      "youtube": "https://youtube.com/@hammermuseum"
+      "youtube": "https://www.youtube.com/user/HammerMuseum"
     },
     "aliases": [
       "Hammer",
@@ -194,8 +193,7 @@
     "socials": {
       "instagram": "https://instagram.com/nortonsimonmuseum",
       "twitter": "https://twitter.com/nortonsimon",
-      "facebook": "https://facebook.com/nortonsimonmuseum",
-      "youtube": "https://youtube.com/@nortonsimonmuseum"
+      "facebook": "https://facebook.com/nortonsimonmuseum"
     },
     "aliases": [
       "Norton Simon"
@@ -219,8 +217,7 @@
     "socials": {
       "instagram": "https://instagram.com/thehuntingtonlibrary",
       "twitter": "https://twitter.com/TheHuntington",
-      "facebook": "https://facebook.com/TheHuntingtonLibrary",
-      "youtube": "https://youtube.com/@thehuntingtonlibrary"
+      "facebook": "https://facebook.com/TheHuntingtonLibrary"
     },
     "discipline": "visual"
   },
@@ -267,8 +264,7 @@
     "socials": {
       "instagram": "https://instagram.com/caamuseum",
       "twitter": "https://twitter.com/caamuseum",
-      "facebook": "https://facebook.com/CAAMinLA",
-      "youtube": "https://youtube.com/@caamuseum"
+      "facebook": "https://facebook.com/CAAMinLA"
     },
     "aliases": [
       "CAAM"
@@ -317,8 +313,7 @@
     "socials": {
       "instagram": "https://instagram.com/theautry",
       "twitter": "https://twitter.com/theautry",
-      "facebook": "https://facebook.com/theautry",
-      "youtube": "https://youtube.com/@theautry"
+      "facebook": "https://facebook.com/theautry"
     },
     "discipline": "visual"
   },
@@ -407,7 +402,6 @@
     "neighborhood": "Brentwood",
     "socials": {
       "instagram": "https://instagram.com/skirball_cultural_center",
-      "twitter": "https://twitter.com/skirball_la",
       "facebook": "https://facebook.com/SkirballCulturalCenter"
     },
     "aliases": [
@@ -476,7 +470,6 @@
     "neighborhood": "East Village Arts District",
     "socials": {
       "instagram": "https://instagram.com/molaa_museum",
-      "twitter": "https://twitter.com/MOLAA_Museum",
       "facebook": "https://facebook.com/molaaartmuseum"
     },
     "aliases": [
@@ -523,7 +516,6 @@
     "neighborhood": "Pasadena",
     "socials": {
       "instagram": "https://instagram.com/armorycenter",
-      "twitter": "https://twitter.com/ArmoryArts",
       "facebook": "https://facebook.com/ArmoryCenterForTheArts"
     },
     "discipline": "visual"
@@ -567,7 +559,6 @@
     "neighborhood": "University Park",
     "socials": {
       "instagram": "https://instagram.com/uscfishermuseum",
-      "twitter": "https://twitter.com/USCFisher",
       "facebook": "https://facebook.com/USCFisherMuseum"
     },
     "aliases": [
@@ -1091,7 +1082,6 @@
     "neighborhood": "Boyle Heights",
     "socials": {
       "instagram": "https://instagram.com/selfhelpgraphics",
-      "twitter": "https://twitter.com/SelfHelpGraphix",
       "facebook": "https://facebook.com/selfhelpgraphicsandart"
     },
     "discipline": "visual"
@@ -1304,8 +1294,7 @@
     "region": "south",
     "neighborhood": "Crenshaw",
     "socials": {
-      "instagram": "https://instagram.com/destinationcrenshaw",
-      "twitter": "https://twitter.com/destcrenshaw"
+      "instagram": "https://instagram.com/destinationcrenshaw"
     },
     "discipline": "visual"
   },
@@ -1835,8 +1824,9 @@
     "type": "museum",
     "discipline": "visual",
     "description": "Museum in the historic Italian Hall at El Pueblo, with exhibitions on Italian American history and culture.",
-    "website": "https://iamla.org",
-    "events_url": "https://iamla.org/events/",
+    "website": "https://www.iamla.org",
+    "events_url": "https://www.iamla.org/",
+    "exhibitions_url": "https://www.iamla.org/temporary-exhibitions/",
     "address": "644 N Main St, Los Angeles, CA 90012",
     "lat": 34.05798,
     "lng": -118.23778,

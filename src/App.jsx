@@ -13,9 +13,19 @@ import { useFavorites } from "./lib/useFavorites.js";
 import {
   indexVenues, filterVenues, filterEvents, sortEvents,
   eventfulVenueIds, isUpcoming, partitionByMode, liveExhibitionsOnView,
-  sortByEndingSoonest, searchEvents, searchVenues,
+  sortByEndingSoonest, searchEvents, searchVenues, matchesDiscipline,
 } from "./lib/filters.js";
-import { ARCHIVE_LAUNCH_DATE } from "./lib/constants.js";
+
+// Art / Performing arts / All — remembered per visitor (a convenience only;
+// the page works identically when storage is unavailable).
+const DISC_KEY = "artinla.discipline";
+function storedDiscipline() {
+  try {
+    const v = window.localStorage.getItem(DISC_KEY);
+    return DISCIPLINES.some((d) => d.key === v) ? v : null;
+  } catch { return null; }
+}
+import { ARCHIVE_LAUNCH_DATE, DEFAULT_DISCIPLINE, DISCIPLINES } from "./lib/constants.js";
 
 // Lazy-load the Leaflet map — keeps it out of the initial bundle (~150 kb).
 const VenueMap = lazy(() => import("./components/VenueMap.jsx"));
@@ -88,6 +98,11 @@ export default function App() {
     ...EMPTY_FILTERS, datePreset: defaultDatePreset(),
   }));
   const { types, regions, eventTypes, datePreset, customStart, customEnd, query, free, family } = filters;
+  const [discipline, setDisciplineState] = useState(() => storedDiscipline() || DEFAULT_DISCIPLINE);
+  const setDiscipline = useCallback((d) => {
+    setDisciplineState(d);
+    try { window.localStorage.setItem(DISC_KEY, d); } catch { /* storage unavailable */ }
+  }, []);
   const patchFilters = useCallback((p) => {
     setFilters((prev) => ({ ...prev, ...p }));
   }, []);
@@ -148,6 +163,7 @@ export default function App() {
     if (p.get("q"))       slice.query = p.get("q");
     if (p.get("free"))    slice.free = p.get("free") === "1";
     if (p.get("family"))  slice.family = p.get("family") === "1";
+    if (DISCIPLINES.some((d) => d.key === p.get("d"))) setDisciplineState(p.get("d"));
     setFilters(slice);
     setTab(initTab);
     if (p.get("map"))   setMapOnlyEventful(p.get("map") !== "all");
@@ -159,6 +175,7 @@ export default function App() {
     if (!hashInit.current) return;
     const p = new URLSearchParams();
     p.set("tab", tab);
+    if (discipline !== DEFAULT_DISCIPLINE) p.set("d", discipline);
     if (types.size)   p.set("types",   [...types].join(","));
     if (regions.size) p.set("regions", [...regions].join(","));
     if (eventTypes.size) p.set("etypes", [...eventTypes].join(","));
@@ -171,7 +188,12 @@ export default function App() {
     if (query.trim()) p.set("q", query.trim());
     if (detailVenueId) p.set("venue", detailVenueId);
     writeHash(p);
-  }, [tab, types, regions, eventTypes, datePreset, customStart, customEnd, free, family, mapOnlyEventful, query, detailVenueId]);
+  }, [tab, discipline, types, regions, eventTypes, datePreset, customStart, customEnd, free, family, mapOnlyEventful, query, detailVenueId]);
+
+  // Performing-arts venues have no exhibitions: leave that tab when switching.
+  useEffect(() => {
+    if (discipline === "performing" && tab === "exhibitions") setTab("events");
+  }, [discipline, tab]);
 
   // ── Data load (extracted for retry) ───────────────────────────────────────
   const load = useCallback(() => {
@@ -194,35 +216,50 @@ export default function App() {
   const liveExhibitions = useMemo(() => allExhibitions.filter((ev) => isUpcoming(ev)), [allExhibitions]);
   const eventfulIds     = useMemo(() => eventfulVenueIds(upcomingEvents),  [upcomingEvents]);
 
-  // Map shows all or eventful-only depending on toggle
-  const eventfulFilter = tab === "map" && mapOnlyEventful;
-
   const filteredVenues = useMemo(
-    () => searchVenues(
-      filterVenues(data.venues, { types, regions, eventful: eventfulFilter, eventfulIds }),
-      query
-    ),
-    [data.venues, types, regions, eventfulFilter, eventfulIds, query]
+    () => searchVenues(filterVenues(data.venues, { discipline, types, regions }), query),
+    [data.venues, discipline, types, regions, query]
   );
 
   const filteredEvents = useMemo(
     () => sortEvents(searchEvents(filterEvents(upcomingEvents, venuesById, {
-      venueTypes: types, eventTypes, regions,
+      discipline, venueTypes: types, eventTypes, regions,
       datePreset: datePreset !== "custom" ? datePreset : "all",
       startDate: datePreset === "custom" ? customStart : undefined,
       endDate:   datePreset === "custom" ? customEnd   : undefined,
       free, family,
     }), venuesById, query)),
-    [upcomingEvents, venuesById, types, eventTypes, regions, datePreset, customStart, customEnd, free, family, query]
+    [upcomingEvents, venuesById, discipline, types, eventTypes, regions, datePreset, customStart, customEnd, free, family, query]
   );
 
   const filteredExhibitions = useMemo(
     () => sortByEndingSoonest(searchEvents(filterEvents(
       liveExhibitionsOnView(liveExhibitions),
-      venuesById, { venueTypes: types, regions, free, family }
+      venuesById, { discipline, venueTypes: types, regions, free, family }
     ), venuesById, query)),
-    [liveExhibitions, venuesById, types, regions, free, family, query]
+    [liveExhibitions, venuesById, discipline, types, regions, free, family, query]
   );
+
+  // Map: with "venues with events" on, show exactly the venues that have
+  // something matching the current filters (dates, Free, Family, search…),
+  // so the map and the lists always agree.
+  const mapEventfulIds = useMemo(() => {
+    const ids = new Set(filteredEvents.map((e) => e.venue_id));
+    for (const e of filteredExhibitions) ids.add(e.venue_id);
+    return ids;
+  }, [filteredEvents, filteredExhibitions]);
+  const mapVenues = useMemo(() => {
+    const hasEventFilter = query.trim() || free || family || eventTypes.size;
+    const base = searchVenues(filterVenues(data.venues, { discipline, types, regions }), "");
+    if (mapOnlyEventful || hasEventFilter) return base.filter((v) => mapEventfulIds.has(v.id));
+    return base;
+  }, [data.venues, discipline, types, regions, mapOnlyEventful, mapEventfulIds, query, free, family, eventTypes]);
+
+  // Venue types relevant to the current Art / Performing choice.
+  const typeOptions = useMemo(() => {
+    const present = new Set(data.venues.filter((v) => matchesDiscipline(v, discipline)).map((v) => v.type));
+    return ["museum", "community", "alternative", "academic", "theater", "music", "center"].filter((t) => present.has(t));
+  }, [data.venues, discipline]);
 
   // Archive holds both past events and past exhibitions. It is deliberately
   // ISOLATED from the org/region/event-type filters used on other tabs (those
@@ -269,6 +306,7 @@ export default function App() {
   // ── Callbacks ─────────────────────────────────────────────────────────────
   // Reset clears only the current tab's filters.
   const onReset = () => setFilters({ ...EMPTY_FILTERS, datePreset: defaultDatePreset() });
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
 
   const onHome = () => {
     setFilters({ ...EMPTY_FILTERS, datePreset: defaultDatePreset() });
@@ -297,18 +335,26 @@ export default function App() {
   const onViewExhibitions = useMemo(
     () => liveExhibitionsOnView(liveExhibitions), [liveExhibitions]
   );
+  const inDisc = (ev) => matchesDiscipline(venuesById[ev.venue_id], discipline);
   const stats = {
-    venues:      data.venues.length,
-    events:      upcomingEvents.length,
-    exhibitions: onViewExhibitions.length,
+    venues:      data.venues.filter((v) => matchesDiscipline(v, discipline)).length,
+    events:      upcomingEvents.filter(inDisc).length,
+    exhibitions: discipline === "performing" ? null : onViewExhibitions.filter(inDisc).length,
   };
+  const resultLabel = loading ? null : ({
+    events: plural(filteredEvents.length, "event"),
+    exhibitions: `${plural(filteredExhibitions.length, "exhibition")} on view`,
+    venues: plural(filteredVenues.length, "venue"),
+    map: plural(mapVenues.length, "venue"),
+  })[tab] || null;
+  const onViewInDisc = onViewExhibitions.filter(inDisc);
 
   // ── Render ────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen">
-      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} onAbout={() => setAboutOpen(true)} lastUpdated={lastUpdated} />
+      <Header tab={tab} setTab={setTab} stats={loading ? null : stats} savedCount={favs.size} onHome={onHome} onAbout={() => setAboutOpen(true)} lastUpdated={lastUpdated} discipline={discipline} setDiscipline={setDiscipline} />
 
-      <main className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
+      <main className="mx-auto max-w-7xl space-y-4 px-3 pb-4 pt-3 md:space-y-6 md:p-6">
         {/* Error panel with retry */}
         {error && (
           <div className="panel p-6 text-center space-y-3">
@@ -324,7 +370,7 @@ export default function App() {
         <FilterBar
           tab={tab}
           query={query} setQuery={setQuery}
-          types={types} setTypes={setTypes}
+          types={types} setTypes={setTypes} typeOptions={typeOptions}
           eventTypes={eventTypes} setEventTypes={setEventTypes}
           regions={regions} setRegions={setRegions}
           datePreset={datePreset} setDatePreset={setDatePreset}
@@ -333,6 +379,7 @@ export default function App() {
           free={free} setFree={setFree}
           family={family} setFamily={setFamily}
           onReset={onReset}
+          resultLabel={resultLabel}
         />
 
         {loading ? (
@@ -342,11 +389,11 @@ export default function App() {
             {tab === "map" && (
               <Suspense fallback={<div className="panel p-6 text-center text-sm text-ink/60">Loading map…</div>}>
                 <VenueMap
-                  venues={filteredVenues}
-                  eventfulIds={eventfulIds}
+                  venues={mapVenues}
+                  eventfulIds={mapEventfulIds}
                   onlyEventful={mapOnlyEventful}
                   setOnlyEventful={setMapOnlyEventful}
-                  upcomingEvents={upcomingEvents}
+                  upcomingEvents={filteredEvents}
                   focusedVenueId={focusedVenueId}
                   onShowDetail={setDetailVenueId}
                   onGoToEvents={onGoToEvents}
@@ -357,9 +404,13 @@ export default function App() {
             {tab === "events" && (
               <>
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                    {filteredEvents.length} event{filteredEvents.length === 1 ? "" : "s"}
-                  </div>
+                  {discipline !== "performing" ? (
+                    <p className="hidden text-xs text-ink/60 sm:block">
+                      Looking for commercial galleries? Try{" "}
+                      <a href="https://artguide.artforum.com/" target="_blank" rel="noreferrer"
+                        className="font-medium underline underline-offset-2 hover:text-ink">Artforum artguide</a>.
+                    </p>
+                  ) : <span />}
                   <button
                     type="button"
                     onClick={() => setStackByVenue(!effectiveStack)}
@@ -370,17 +421,6 @@ export default function App() {
                     Stack by venue
                   </button>
                 </div>
-                <p className="text-xs text-ink/60">
-                  Looking for galleries? Check{" "}
-                  <a
-                    href="https://artguide.artforum.com/artguide/place/los-angeles"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-medium underline underline-offset-2 hover:text-ink"
-                  >
-                    ARTFORUM artguide
-                  </a>.
-                </p>
                 <EventList
                   events={filteredEvents}
                   venuesById={venuesById}
@@ -390,14 +430,14 @@ export default function App() {
                   onToggleFav={toggleFav}
                   stackByVenue={effectiveStack}
                 />
-                {onViewExhibitions.length > 0 && (
+                {discipline !== "performing" && onViewInDisc.length > 0 && (
                   <div className="pt-2 text-center">
                     <button
                       type="button"
                       onClick={() => setTab("exhibitions")}
                       className="font-medium text-accent underline underline-offset-2 hover:text-ink"
                     >
-                      Also on view: {onViewExhibitions.length} exhibition{onViewExhibitions.length === 1 ? "" : "s"} →
+                      Also on view: {plural(onViewInDisc.length, "exhibition")} →
                     </button>
                   </div>
                 )}
@@ -406,10 +446,7 @@ export default function App() {
 
             {tab === "exhibitions" && (
               <>
-                <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                  {filteredExhibitions.length} exhibition{filteredExhibitions.length === 1 ? "" : "s"} on view now
-                  {filteredExhibitions.length > 0 ? " · ending soonest first" : ""}
-                </div>
+                <p className="text-xs text-ink/60">Temporary exhibitions on view now, ending soonest first.</p>
                 <ExhibitionsByVenue
                   exhibitions={filteredExhibitions}
                   venuesById={venuesById}
@@ -423,9 +460,6 @@ export default function App() {
 
             {tab === "venues" && (
               <>
-                <div role="status" aria-live="polite" className="text-xs text-ink/60">
-                  {filteredVenues.length} venue{filteredVenues.length === 1 ? "" : "s"}
-                </div>
                 <VenueList
                   onReset={onReset}
                   venues={filteredVenues}

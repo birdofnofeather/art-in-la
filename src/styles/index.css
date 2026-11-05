@@ -225,3 +225,7 @@
     text-stroke: 0.6px #7a5c00;
   }
 }
+
+/* Horizontally scrolling chip rows / tab bars: no visible scrollbar. */
+.no-scrollbar { scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

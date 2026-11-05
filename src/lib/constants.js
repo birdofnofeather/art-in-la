@@ -1,10 +1,27 @@
 // Shared taxonomy and UI constants.
 
+// Art vs. performing arts. Every venue in venues.json carries exactly one
+// `discipline`, assigned by its PRIMARY facility and core programme:
+//   visual     — its core programme is exhibiting art (museums, galleries,
+//                art centers). Its talks, screenings and concerts still count.
+//   performing — its main facility is a stage/auditorium and its core
+//                programme is live performance (music, theater, dance,
+//                spoken word).
+export const DISCIPLINES = [
+  { key: "visual",     label: "Art",             long: "Art venues" },
+  { key: "performing", label: "Performing arts", long: "Performing arts venues" },
+  { key: "all",        label: "All",             long: "All venues" },
+];
+export const DEFAULT_DISCIPLINE = "visual";
+
 export const TYPE_LABEL = {
   museum: "Museum",
   community: "Community",
   alternative: "Alternative",
   academic: "Academic",
+  theater: "Theater",
+  music: "Music & opera",
+  center: "Performing arts center",
 };
 
 export const TYPE_COLOR = {
@@ -12,6 +29,9 @@ export const TYPE_COLOR = {
   community: "#15803d",
   alternative: "#7c3aed",
   academic: "#b45309",
+  theater: "#9f1239",
+  music: "#1d4ed8",
+  center: "#0f766e",
 };
 
 export const TYPE_LETTER = {
@@ -28,7 +48,10 @@ export const TYPE_DEF = {
   museum: "Established nonprofit museums — permanent collections or major exhibition programs.",
   community: "Neighborhood cultural centers and nonprofits rooted in a specific community.",
   alternative: "Artist-run, experimental, noncommercial project spaces.",
-  academic: "Galleries and museums based at a university, college, or art school.",
+  academic: "Galleries, museums and stages based at a university, college, or art school.",
+  theater: "Nonprofit theater companies and playhouses.",
+  music: "Orchestras and opera companies at their home halls.",
+  center: "Performing arts centers presenting music, dance, and theater.",
 };
 
 export const REGION_LABEL = {
@@ -86,8 +109,8 @@ export const DATE_PRESETS = [
   { key: "today", label: "Today" },
   { key: "weekend", label: "This weekend" },
   { key: "nextweekend", label: "Next weekend" },
-  { key: "next7", label: "Next seven days" },
-  { key: "all", label: "All days" },
+  { key: "next7", label: "Next 7 days" },
+  { key: "all", label: "Any date" },
 ];
 
 // All presets render as one always-visible chip row.

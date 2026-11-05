@@ -1,95 +1,61 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
-  TYPE_LABEL, TYPE_COLOR, TYPE_DEF, REGION_LABEL,
-  EVENT_TYPE_FILTERS, DATE_PRESETS, PRIMARY_DATE_PRESETS,
+  TYPE_LABEL, TYPE_DEF, REGION_LABEL, EVENT_TYPE_FILTERS, DATE_PRESETS,
 } from "../lib/constants.js";
 
-function ToggleGroup({ label, options, labelMap, selected, onChange, colorMap, tipMap }) {
-  const toggle = (key) => {
-    const next = new Set(selected);
-    next.has(key) ? next.delete(key) : next.add(key);
-    onChange(next);
-  };
+// One compact, mobile-first filter bar shared by every tab.
+//
+//   ┌ search ──────────────────────────────────────────────┐
+//   [Today][This weekend][Next weekend][Next 7 days][Any date] | [Free][Family] [Filters •2]
+//   (active-filter chips · Clear all)
+//
+// The chip row never wraps on phones — it scrolls sideways, so the controls
+// take one line instead of four. Everything secondary (event type, area,
+// venue type, a custom date range) lives behind "Filters": a bottom sheet on
+// phones, an inline panel on larger screens.
+
+function Chip({ on, onClick, children, className = "", title }) {
   return (
-    <div>
-      <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">{label}</div>
-      <div className="flex flex-wrap gap-2">
-        {options.map((opt) => {
-          const on = selected.has(opt);
-          return (
-            <button
-              key={opt} type="button" onClick={() => toggle(opt)}
-              title={tipMap?.[opt]}
-              aria-pressed={on}
-              aria-label={tipMap?.[opt] ? `${(labelMap && labelMap[opt]) || opt} — ${tipMap[opt]}` : undefined}
-              className={`chip ${on ? "chip-active" : ""}`}
-              style={colorMap && !on ? { borderColor: colorMap[opt] + "55" } : undefined}
-            >
-              {colorMap && (
-                <span aria-hidden className="inline-block h-2 w-2 rounded-full" style={{ background: colorMap[opt] }} />
-              )}
-              {(labelMap && labelMap[opt]) || opt}
-            </button>
-          );
-        })}
-      </div>
-    </div>
+    <button
+      type="button" onClick={onClick} aria-pressed={!!on} title={title}
+      className={`chip shrink-0 whitespace-nowrap ${on ? "chip-active" : ""} ${className}`}
+    >
+      {children}
+    </button>
   );
 }
 
-function FilterChips({ items, selectedKey, onSelect }) {
+function Group({ label, children }) {
   return (
-    <div className="flex flex-wrap gap-2">
-      {items.map((it) => (
-        <button key={it.key} type="button" onClick={() => onSelect(it.key)}
-          aria-pressed={selectedKey === it.key}
-          className={`chip ${selectedKey === it.key ? "chip-active" : ""}`}>
-          {it.label}
-        </button>
-      ))}
-    </div>
+    <fieldset>
+      <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">{label}</legend>
+      <div className="flex flex-wrap gap-2">{children}</div>
+    </fieldset>
   );
 }
 
-function EventTypeChips({ selected, onChange }) {
-  const toggle = (key) => {
-    const next = new Set(selected);
-    next.has(key) ? next.delete(key) : next.add(key);
-    onChange(next);
-  };
-  return (
-    <div className="flex flex-wrap gap-2">
-      {EVENT_TYPE_FILTERS.map((f) => {
-        const on = selected.has(f.key);
-        return (
-          <button key={f.key} type="button" onClick={() => toggle(f.key)}
-            aria-pressed={on}
-            className={`chip ${on ? "chip-active" : ""}`}>
-            {f.label}
-          </button>
-        );
-      })}
-    </div>
-  );
+function toggleIn(set, key) {
+  const next = new Set(set);
+  next.has(key) ? next.delete(key) : next.add(key);
+  return next;
 }
 
-/** Pill shown when the filter tray is closed and a filter is active. */
-function ActivePill({ label, onRemove }) {
-  return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-ink px-2.5 py-0.5 text-xs font-medium text-white">
-      {label}
-      <button type="button" onClick={onRemove} aria-label={`Remove ${label} filter`}
-        className="ml-0.5 rounded-full hover:text-white/70">×</button>
-    </span>
-  );
+function useIsSmall() {
+  const [small, setSmall] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const apply = () => setSmall(mq.matches);
+    apply();
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
+  }, []);
+  return small;
 }
-
-const PRIMARY_PRESET_ITEMS = DATE_PRESETS.filter((p) => PRIMARY_DATE_PRESETS.includes(p.key));
 
 export default function FilterBar({
   tab,
   query, setQuery,
-  types, setTypes,
+  types, setTypes, typeOptions,
   eventTypes, setEventTypes,
   regions, setRegions,
   datePreset, setDatePreset,
@@ -98,169 +64,185 @@ export default function FilterBar({
   free, setFree,
   family, setFamily,
   onReset,
+  resultLabel,
 }) {
   const [open, setOpen] = useState(false);
+  const small = useIsSmall();
+  const sheetRef = useRef(null);
 
   const isArchive = tab === "archive";
-  const showEventFilters = tab === "events" || tab === "whatson";
-  const showDates = tab === "events" || tab === "whatson";
-  const showFreeFamily = tab === "events" || tab === "whatson" || tab === "exhibitions";
-  const showPrimaryRow = !isArchive && (showDates || showFreeFamily);
+  const showDates = tab === "events" || tab === "map";
+  const showEventTypes = tab === "events";
+  const showFreeFamily = tab === "events" || tab === "exhibitions" || tab === "map";
+  const showMore = !isArchive && tab !== "saved";
 
-  const activeCount =
-    (types?.size   || 0) +
-    (regions?.size  || 0) +
-    (showEventFilters ? (eventTypes?.size || 0) : 0) +
-    (showDates && datePreset && datePreset !== "all" ? 1 : 0) +
-    (showFreeFamily && free ? 1 : 0) +
-    (showFreeFamily && family ? 1 : 0);
+  // Close the sheet with Escape, and lock page scroll while it is open on phones.
+  useEffect(() => {
+    if (!open) return undefined;
+    const onKey = (e) => { if (e.key === "Escape") setOpen(false); };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    if (small) document.body.style.overflow = "hidden";
+    sheetRef.current?.focus();
+    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = prev; };
+  }, [open, small]);
 
-  // Pills for closed-tray summary (venue type + region + event type only; the
-  // date/Free/Family controls live in the always-visible primary row).
-  const activePills = [];
-  if (types?.size) {
-    for (const t of types) activePills.push({
-      label: TYPE_LABEL[t] || t,
-      remove: () => { const s = new Set(types); s.delete(t); setTypes(s); },
-    });
-  }
-  if (regions?.size) {
-    for (const r of regions) activePills.push({
-      label: REGION_LABEL[r] || r,
-      remove: () => { const s = new Set(regions); s.delete(r); setRegions(s); },
-    });
-  }
-  if (showEventFilters && eventTypes?.size) {
-    for (const et of eventTypes) {
+  const opts = (typeOptions && typeOptions.length) ? typeOptions : Object.keys(TYPE_LABEL);
+  const activeTypes = [...(types || [])].filter((t) => opts.includes(t));
+
+  const pills = [];
+  for (const t of activeTypes) pills.push({ label: TYPE_LABEL[t] || t, remove: () => setTypes(toggleIn(types, t)) });
+  for (const r of regions || []) pills.push({ label: REGION_LABEL[r] || r, remove: () => setRegions(toggleIn(regions, r)) });
+  if (showEventTypes) {
+    for (const et of eventTypes || []) {
       const f = EVENT_TYPE_FILTERS.find((x) => x.key === et);
-      activePills.push({
-        label: f?.label || et,
-        remove: () => { const s = new Set(eventTypes); s.delete(et); setEventTypes(s); },
-      });
+      pills.push({ label: f?.label || et, remove: () => setEventTypes(toggleIn(eventTypes, et)) });
     }
   }
+  if (showDates && datePreset === "custom" && (customStart || customEnd)) {
+    pills.push({
+      label: `${customStart || "…"} → ${customEnd || "…"}`,
+      remove: () => { setCustomStart(""); setCustomEnd(""); setDatePreset("next7"); },
+    });
+  }
+  const moreCount = pills.length;
+
+  const panel = (
+    <div className="space-y-5">
+      {showEventTypes && (
+        <Group label="What">
+          {EVENT_TYPE_FILTERS.map((f) => (
+            <Chip key={f.key} on={eventTypes.has(f.key)} onClick={() => setEventTypes(toggleIn(eventTypes, f.key))}>
+              {f.label}
+            </Chip>
+          ))}
+        </Group>
+      )}
+      <Group label="Area">
+        {Object.keys(REGION_LABEL).map((r) => (
+          <Chip key={r} on={regions.has(r)} onClick={() => setRegions(toggleIn(regions, r))}>{REGION_LABEL[r]}</Chip>
+        ))}
+      </Group>
+      <Group label="Venue type">
+        {opts.map((t) => (
+          <Chip key={t} on={types.has(t)} title={TYPE_DEF[t]} onClick={() => setTypes(toggleIn(types, t))}>
+            {TYPE_LABEL[t] || t}
+          </Chip>
+        ))}
+      </Group>
+      {showDates && (
+        <fieldset>
+          <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">Specific dates</legend>
+          <div className="flex flex-wrap items-center gap-2 text-sm">
+            <label className="flex items-center gap-1.5">
+              <span className="text-ink/60">From</span>
+              <input type="date" value={customStart || ""} className="rounded-md border border-black/15 bg-white px-2 py-1"
+                onChange={(e) => { setCustomStart(e.target.value); setDatePreset("custom"); }} />
+            </label>
+            <label className="flex items-center gap-1.5">
+              <span className="text-ink/60">To</span>
+              <input type="date" value={customEnd || ""} className="rounded-md border border-black/15 bg-white px-2 py-1"
+                onChange={(e) => { setCustomEnd(e.target.value); setDatePreset("custom"); }} />
+            </label>
+          </div>
+        </fieldset>
+      )}
+    </div>
+  );
 
   return (
-    <div className="panel">
-      {/* Search + filter toggle row */}
-      <div className="flex w-full items-center gap-3 px-4 py-3">
-        <div className="relative flex-1 min-w-0">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+    <div className="panel sticky top-0 z-40 md:static">
+      <div className="flex items-center gap-2 px-3 pt-3 md:px-4">
+        <div className="relative min-w-0 flex-1">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden
             className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink/50">
             <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
           </svg>
           <input
-            type="text"
-            value={query || ""}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search events, exhibitions, venues, artists…"
+            type="search" value={query || ""} onChange={(e) => setQuery(e.target.value)}
+            placeholder={tab === "venues" ? "Search venues…" : "Search titles, venues, artists…"}
             aria-label="Search"
-            className="w-full rounded-md border border-black/15 bg-white py-1.5 pl-8 pr-8 text-sm placeholder:text-ink/50 focus:border-ink/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/30"
+            className="w-full rounded-md border border-black/15 bg-white py-2 pl-8 pr-8 text-base placeholder:text-ink/50 focus:border-ink/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/30 md:py-1.5 md:text-sm"
           />
           {query && (
             <button type="button" onClick={() => setQuery("")} aria-label="Clear search"
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-ink/50 hover:text-ink">×</button>
+              className="absolute right-1 top-1/2 h-8 w-8 -translate-y-1/2 text-lg text-ink/50 hover:text-ink">×</button>
           )}
         </div>
-        {!isArchive && (
-          <button
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-            className="flex shrink-0 items-center gap-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 rounded"
-          >
-            <span className="text-xs text-ink/60" aria-hidden>{open ? "▲" : "▼"}</span>
-            <span className="font-display text-sm font-semibold tracking-tight">Filters</span>
-            {activeCount > 0 && (
-              <span className="rounded-full bg-ink px-2 py-0.5 text-xs font-medium text-white">
-                {activeCount}
-              </span>
-            )}
-          </button>
-        )}
+          {showMore && (
+            <button
+              type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open}
+              className={`chip shrink-0 whitespace-nowrap py-2 md:py-1 ${moreCount ? "border-ink" : ""}`}
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                <path d="M3 6h18M7 12h10M10 18h4" />
+              </svg>
+              Filters
+              {moreCount > 0 && (
+                <span className="rounded-full bg-ink px-1.5 text-xs font-medium text-white">{moreCount}</span>
+              )}
+            </button>
+          )}
       </div>
 
-      {/* Always-visible primary filters: dates + Free + Family */}
-      {showPrimaryRow && (
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-black/5 px-4 py-2.5">
-          {showDates && (
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider text-ink/60">When</span>
-              {PRIMARY_PRESET_ITEMS.map((it) => (
-                <button key={it.key} type="button" onClick={() => setDatePreset(it.key)}
-                  aria-pressed={(datePreset || "all") === it.key}
-                  className={`chip ${(datePreset || "all") === it.key ? "chip-active" : ""}`}>
-                  {it.label}
-                </button>
-              ))}
-            </div>
-          )}
-          {showFreeFamily && (
-            <div className="flex flex-wrap items-center gap-2">
-              <button type="button" onClick={() => setFree(!free)}
-                aria-pressed={!!free}
-                className={`chip chip-free ${free ? "chip-active" : ""}`}>
-                Free
-              </button>
-              <button type="button" onClick={() => setFamily(!family)}
-                aria-pressed={!!family}
-                title="Events tagged for families / kids"
-                className={`chip chip-family ${family ? "chip-active" : ""}`}>
-                Family-friendly
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Active filter pills — shown when tray is closed */}
-      {!isArchive && !open && activePills.length > 0 && (
-        <div className="flex flex-wrap gap-2 border-t border-black/5 px-4 py-2">
-          {activePills.map((p, i) => (
-            <ActivePill key={i} label={p.label} onRemove={p.remove} />
+      {!isArchive && (
+        <div className="no-scrollbar flex items-center gap-2 overflow-x-auto px-3 py-2.5 md:flex-wrap md:overflow-visible md:px-4">
+          {showDates && DATE_PRESETS.map((p) => (
+            <Chip key={p.key} on={(datePreset || "all") === p.key} onClick={() => setDatePreset(p.key)}>{p.label}</Chip>
           ))}
-          <button type="button" onClick={onReset} className="text-xs text-ink/60 hover:text-ink underline-offset-2 hover:underline">
-            Clear all
-          </button>
-        </div>
-      )}
-
-      {!isArchive && open && (
-        <div className="space-y-4 border-t border-black/5 px-4 py-4">
-          <ToggleGroup
-            label="Venue type"
-            options={Object.keys(TYPE_LABEL)}
-            labelMap={TYPE_LABEL}
-            selected={types}
-            onChange={setTypes}
-            colorMap={TYPE_COLOR}
-            tipMap={TYPE_DEF}
-          />
-          <ToggleGroup
-            label="Region"
-            options={Object.keys(REGION_LABEL)}
-            labelMap={REGION_LABEL}
-            selected={regions}
-            onChange={setRegions}
-          />
-
-          {showEventFilters && (
+          {showDates && showFreeFamily && <span aria-hidden className="mx-0.5 h-5 w-px shrink-0 bg-ink/15" />}
+          {showFreeFamily && (
             <>
-              <div>
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">Event type</div>
-                <EventTypeChips selected={eventTypes} onChange={setEventTypes} />
-              </div>
+              <Chip on={free} onClick={() => setFree(!free)} className="chip-free">Free</Chip>
+              <Chip on={family} onClick={() => setFamily(!family)} className="chip-family" title="Tagged for families and kids">
+                Family
+              </Chip>
             </>
           )}
+        </div>
+      )}
 
-          {tab === "exhibitions" && (
-            <p className="text-xs text-ink/60">
-              Showing temporary exhibitions on view now, ending soonest first.
-            </p>
+      {(pills.length > 0 || resultLabel) && !isArchive && (
+        <div className="flex flex-wrap items-center gap-2 border-t border-black/5 px-3 py-2 text-xs md:px-4">
+          {resultLabel && <span role="status" aria-live="polite" className="text-ink/60">{resultLabel}</span>}
+          {pills.map((p, i) => (
+            <span key={i} className="inline-flex items-center gap-1 rounded-full bg-ink px-2.5 py-0.5 font-medium text-white">
+              {p.label}
+              <button type="button" onClick={p.remove} aria-label={`Remove ${p.label}`} className="-mr-1 px-1 hover:text-white/70">×</button>
+            </span>
+          ))}
+          {(pills.length > 0 || free || family || query) && (
+            <button type="button" onClick={onReset} className="text-ink/60 underline-offset-2 hover:text-ink hover:underline">
+              Clear all
+            </button>
           )}
+        </div>
+      )}
 
-          <div className="flex items-center justify-end pt-1">
-            <button type="button" onClick={onReset} className="chip">Reset filters</button>
+      {/* Secondary filters: inline panel (desktop) / bottom sheet (phone). */}
+      {open && !small && (
+        <div className="border-t border-black/5 px-4 py-4">
+          {panel}
+          <div className="mt-4 flex justify-end">
+            <button type="button" className="chip" onClick={() => setOpen(false)}>Done</button>
+          </div>
+        </div>
+      )}
+      {open && small && (
+        <div className="fixed inset-0 z-[1100] flex flex-col justify-end" role="dialog" aria-modal="true" aria-label="Filters">
+          <button type="button" aria-label="Close filters" className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
+          <div ref={sheetRef} tabIndex={-1}
+            className="relative max-h-[85vh] overflow-y-auto rounded-t-2xl bg-card px-4 pb-4 pt-3 shadow-2xl focus:outline-none">
+            <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-ink/20" aria-hidden />
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="font-display text-lg font-semibold">Filters</h2>
+              <button type="button" className="text-sm text-ink/60 underline" onClick={onReset}>Reset</button>
+            </div>
+            {panel}
+            <button type="button" onClick={() => setOpen(false)}
+              className="sticky bottom-0 mt-5 w-full rounded-lg bg-ink py-3 text-sm font-semibold text-white">
+              {resultLabel ? `Show ${resultLabel}` : "Done"}
+            </button>
           </div>
         </div>
       )}

@@ -71,10 +71,10 @@ const RESOURCES = [
   {
     group: "Also covering visual art",
     items: [
-      { name: "ARTFORUM artguide", url: "https://artguide.artforum.com/artguide/place/los-angeles", blurb: "commercial galleries + museums" },
+      { name: "ARTFORUM artguide", url: "https://artguide.artforum.com/", blurb: "commercial galleries + museums" },
       { name: "Curate LA", url: "https://curate.la/", blurb: "gallery openings, the scene" },
-      { name: "Mommy Poppins LA", url: "https://mommypoppins.com/los-angeles-kids", blurb: "kids & family activities" },
-      { name: "LAist: Things to Do", url: "https://laist.com/best-things-to-do", blurb: "editorial picks of the week" },
+      { name: "Mommy Poppins LA", url: "https://mommypoppins.com/los-angeles", blurb: "kids & family activities" },
+      { name: "LAist: Things to Do", url: "https://laist.com/news/arts-and-entertainment/best-things-to-do", blurb: "editorial picks of the week" },
     ],
   },
   {
@@ -155,17 +155,23 @@ export default function AboutDialog({ onClose }) {
           {/* What this is */}
           <div className="space-y-2 text-sm text-ink/70">
             <p>
-              <em className="not-italic font-semibold text-ink">Events and Exhibitions at non-profit art venues across LA County.</em>{" "}
-              Museums, community art centers, university galleries, and artist-run
-              spaces — their exhibitions, openings, screenings, talks, and
-              workshops, in one free place. No accounts, no ads, no ticket-seller noise.
+              <em className="not-italic font-semibold text-ink">Exhibitions, events and performances at nonprofit arts venues across LA County.</em>{" "}
+              Museums, community art centers, university galleries, artist-run
+              spaces, and nonprofit theaters, concert halls and performing-arts
+              centers — in one free place. No accounts, no ads, no ticket-seller noise.
             </p>
             <p>
-              What we deliberately leave out: <em>commercial galleries</em> (see
-              the guides below — they cover that world well) and{" "}
-              <em>performing-arts venues</em> — theater, opera, and dance have
-              their own calendars, also linked below. Museum film screenings and
-              performances <em>inside</em> art venues are included.
+              Use the <strong>Art · Performing arts · All</strong> switch at the
+              top. Every venue is one or the other, by its main purpose:{" "}
+              <em>art venues</em> exist mainly to exhibit art (their talks,
+              screenings and concerts are included); <em>performing-arts venues</em>{" "}
+              are built around a stage — music, theater, dance, spoken word. A
+              play's many performances are shown once, with its run dates.
+            </p>
+            <p>
+              What we deliberately leave out: <em>commercial galleries</em> and
+              for-profit concert promoters (see the guides below), and standing
+              weekly programs such as daily docent tours.
             </p>
             <p>
               Listings are gathered automatically: a bot reads each venue's own
