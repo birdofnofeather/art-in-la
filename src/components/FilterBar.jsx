@@ -29,7 +29,7 @@ function Chip({ on, onClick, children, className = "", title }) {
 function Group({ label, children }) {
   return (
     <fieldset>
-      <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">{label}</legend>
+      <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/65">{label}</legend>
       <div className="flex flex-wrap gap-2">{children}</div>
     </fieldset>
   );
@@ -133,15 +133,15 @@ export default function FilterBar({
       </Group>
       {showDates && (
         <fieldset>
-          <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/60">Specific dates</legend>
+          <legend className="mb-2 text-xs font-semibold uppercase tracking-wider text-ink/65">Specific dates</legend>
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <label className="flex items-center gap-1.5">
-              <span className="text-ink/60">From</span>
+              <span className="text-ink/65">From</span>
               <input type="date" value={customStart || ""} className="rounded-md border border-black/15 bg-white px-2 py-1"
                 onChange={(e) => { setCustomStart(e.target.value); setDatePreset("custom"); }} />
             </label>
             <label className="flex items-center gap-1.5">
-              <span className="text-ink/60">To</span>
+              <span className="text-ink/65">To</span>
               <input type="date" value={customEnd || ""} className="rounded-md border border-black/15 bg-white px-2 py-1"
                 onChange={(e) => { setCustomEnd(e.target.value); setDatePreset("custom"); }} />
             </label>
@@ -156,18 +156,18 @@ export default function FilterBar({
       <div className="flex items-center gap-2 px-3 pt-3 md:px-4">
         <div className="relative min-w-0 flex-1">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden
-            className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink/50">
+            className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-ink/65">
             <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
           </svg>
           <input
             type="search" value={query || ""} onChange={(e) => setQuery(e.target.value)}
             placeholder={tab === "venues" ? "Search venues…" : "Search titles, venues, artists…"}
             aria-label="Search"
-            className="w-full rounded-md border border-black/15 bg-white py-2 pl-8 pr-8 text-base placeholder:text-ink/50 focus:border-ink/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/30 md:py-1.5 md:text-sm"
+            className="w-full rounded-md border border-black/15 bg-white py-2 pl-8 pr-8 text-base placeholder:text-ink/65 focus:border-ink/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-ink/30 md:py-1.5 md:text-sm"
           />
           {query && (
             <button type="button" onClick={() => setQuery("")} aria-label="Clear search"
-              className="absolute right-1 top-1/2 h-8 w-8 -translate-y-1/2 text-lg text-ink/50 hover:text-ink">×</button>
+              className="absolute right-1 top-1/2 h-8 w-8 -translate-y-1/2 text-lg text-ink/65 hover:text-ink">×</button>
           )}
         </div>
           {showMore && (
@@ -205,7 +205,7 @@ export default function FilterBar({
 
       {(pills.length > 0 || resultLabel) && !isArchive && (
         <div className="flex flex-wrap items-center gap-2 border-t border-black/5 px-3 py-2 text-xs md:px-4">
-          {resultLabel && <span role="status" aria-live="polite" className="text-ink/60">{resultLabel}</span>}
+          {resultLabel && <span role="status" aria-live="polite" className="text-ink/65">{resultLabel}</span>}
           {pills.map((p, i) => (
             <span key={i} className="inline-flex items-center gap-1 rounded-full bg-ink px-2.5 py-0.5 font-medium text-white">
               {p.label}
@@ -213,7 +213,7 @@ export default function FilterBar({
             </span>
           ))}
           {(pills.length > 0 || free || family || query) && (
-            <button type="button" onClick={onReset} className="text-ink/60 underline-offset-2 hover:text-ink hover:underline">
+            <button type="button" onClick={onReset} className="text-ink/65 underline-offset-2 hover:text-ink hover:underline">
               Clear all
             </button>
           )}
@@ -237,7 +237,7 @@ export default function FilterBar({
             <div className="mx-auto mb-3 h-1 w-10 rounded-full bg-ink/20" aria-hidden />
             <div className="mb-4 flex items-center justify-between">
               <h2 className="font-display text-lg font-semibold">Filters</h2>
-              <button type="button" className="text-sm text-ink/60 underline" onClick={onReset}>Reset</button>
+              <button type="button" className="text-sm text-ink/65 underline" onClick={onReset}>Reset</button>
             </div>
             {panel}
             <button type="button" onClick={() => setOpen(false)}

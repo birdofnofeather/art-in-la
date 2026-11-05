@@ -1,5 +1,6 @@
 import React from "react";
 import { TYPE_COLOR, TYPE_LABEL, REGION_LABEL } from "../lib/constants.js";
+import ShareButton from "./ShareButton.jsx";
 import { parseDate } from "../lib/filters.js";
 
 const DATE_OPTS = { month: "short", day: "numeric" };
@@ -46,11 +47,11 @@ function StarButton({ isFav, onToggle, label }) {
  * soonest-closing show; the incoming list is already ending-soonest first.
  */
 export default function ExhibitionsByVenue({
-  exhibitions, venuesById, onShowDetail, onReset, favs, onToggleFav,
+  exhibitions, venuesById, onShowDetail, onReset, favs, onToggleFav, highlightId = null,
 }) {
   if (!exhibitions || exhibitions.length === 0) {
     return (
-      <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+      <div className="panel space-y-3 p-6 text-center text-sm text-ink/65">
         <div>No exhibitions match these filters.</div>
         {onReset && (
           <button type="button" onClick={onReset} className="chip">Clear filters &amp; search</button>
@@ -100,7 +101,7 @@ export default function ExhibitionsByVenue({
                     <a href={venue.website} target="_blank" rel="noreferrer" className="hover:underline">{venue.name}</a>
                   ) : venue.name}
                   {venue.neighborhood && (
-                    <span className="ml-1 text-sm font-normal text-ink/60">· {venue.neighborhood}</span>
+                    <span className="ml-1 text-sm font-normal text-ink/65">· {venue.neighborhood}</span>
                   )}
                 </h3>
               </div>
@@ -111,7 +112,8 @@ export default function ExhibitionsByVenue({
                   const closeIn = daysUntilClose(ev);
                   const closingSoon = closeIn !== null && closeIn >= 0 && closeIn <= 14;
                   return (
-                    <li key={ev.id} className="flex items-start gap-2 py-2 first:pt-0 last:pb-0">
+                    <li key={ev.id} id={`ev-${ev.id}`}
+                      className={`flex items-start gap-2 rounded py-2 first:pt-0 last:pb-0 ${highlightId === ev.id ? "shared-target" : ""}`}>
                       {onToggleFav && (
                         <StarButton
                           isFav={favs?.has(ev.id) ?? false}
@@ -125,18 +127,19 @@ export default function ExhibitionsByVenue({
                             <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a>
                           ) : ev.title}
                         </div>
-                        <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink/55">
+                        <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-ink/65">
                           {fmtRange(ev) && <span>{fmtRange(ev)}</span>}
                           {closingSoon && (
-                            <span className="inline-flex items-center rounded-full bg-red-500 px-1.5 py-0.5 font-semibold text-white">
+                            <span className="inline-flex items-center rounded-full bg-red-700 px-1.5 py-0.5 font-semibold text-white">
                               {closeIn === 0 ? "Closes today" : closeIn === 1 ? "Closes tomorrow" : `Closes in ${closeIn}d`}
                             </span>
                           )}
                         </div>
                         {ev.artists?.length > 0 && (
-                          <div className="mt-0.5 text-xs text-ink/45">{ev.artists.join(", ")}</div>
+                          <div className="mt-0.5 text-xs text-ink/65">{ev.artists.join(", ")}</div>
                         )}
                       </div>
+                      <ShareButton ev={ev} venueName={venue.name} />
                     </li>
                   );
                 })}

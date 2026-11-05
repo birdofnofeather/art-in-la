@@ -83,7 +83,9 @@ const MARKER = {
   none:   { bg: "transparent", border: "1.5px solid #1c1917" },
 };
 function makeIcon(kind, focused = false) {
-  const size = 14;
+  // A 14px dot inside a 26px transparent hit area: same look, but a tap
+  // target that meets WCAG 2.5.8 (24px minimum).
+  const size = 14, hit = 26;
   const m = MARKER[kind] || MARKER.none;
   const ring = focused ? "box-shadow:0 0 0 3px #fff,0 0 0 6px rgba(47,111,159,.4);" : "";
   const html = `<div style="width:${size}px;height:${size}px;border-radius:999px;`
@@ -91,9 +93,9 @@ function makeIcon(kind, focused = false) {
     + `box-shadow:0 0 0 2px #fff,0 1px 3px rgba(28,25,23,.3);${ring}"></div>`;
   return L.divIcon({
     className: "",
-    html,
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
+    html: `<div style="width:${hit}px;height:${hit}px;display:flex;align-items:center;justify-content:center">${html}</div>`,
+    iconSize: [hit, hit],
+    iconAnchor: [hit / 2, hit / 2],
     popupAnchor: [0, -(size / 2 + 4)],
   });
 }
@@ -252,12 +254,15 @@ export default function VenueMap({
               key={v.id}
               position={[v.lat, v.lng]}
               icon={iconFor(v)}
+              title={v.name}
+              alt={v.name}
+              eventHandlers={{ add: (e) => e.target.getElement()?.setAttribute("aria-label", v.name) }}
               ref={(el) => { if (el) markerRefs.current[v.id] = el; }}
             >
               <Popup>
                 <div className="space-y-1.5" style={{ minWidth: 180 }}>
                   <div className="font-semibold text-sm">{v.name}</div>
-                  <div className="text-xs text-ink/60">
+                  <div className="text-xs text-ink/65">
                     {v.neighborhood || TYPE_LABEL[v.type]}
                   </div>
                   {v.description && (
@@ -271,7 +276,7 @@ export default function VenueMap({
                           <div className="font-medium leading-snug line-clamp-1">
                             {ev.url ? <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a> : ev.title}
                           </div>
-                          <div className="text-ink/60">
+                          <div className="text-ink/65">
                             {ev.start ? fmtEventDate(ev.start) : ""}
                             {ev.is_free === true && <span className="ml-1 font-semibold text-emerald-700">Free</span>}
                             {(ev.audience || []).includes("family") && <span className="ml-1 font-semibold text-sky-700">Family</span>}
@@ -279,29 +284,29 @@ export default function VenueMap({
                         </div>
                       ))}
                       {vEvents.length > 3 && (
-                        <div className="text-xs text-ink/60">+{vEvents.length - 3} more</div>
+                        <div className="text-xs text-ink/65">+{vEvents.length - 3} more</div>
                       )}
                     </div>
                   )}
 
                   <div className="flex flex-wrap gap-1.5 pt-1 text-xs border-t border-black/10 mt-1">
                     {v.website && (
-                      <a href={v.website} target="_blank" rel="noreferrer" className="underline text-ink/60">Website</a>
+                      <a href={v.website} target="_blank" rel="noreferrer" className="underline text-ink/65">Website</a>
                     )}
                     {v.events_url && (
-                      <a href={v.events_url} target="_blank" rel="noreferrer" className="underline text-ink/60">Events</a>
+                      <a href={v.events_url} target="_blank" rel="noreferrer" className="underline text-ink/65">Events</a>
                     )}
                     {v.address && (
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v.address)}`}
-                        target="_blank" rel="noreferrer" className="underline text-ink/60"
+                        target="_blank" rel="noreferrer" className="underline text-ink/65"
                       >Directions</a>
                     )}
                     {onShowDetail && (
-                      <button type="button" onClick={() => onShowDetail(v.id)} className="underline text-ink/60">Details</button>
+                      <button type="button" onClick={() => onShowDetail(v.id)} className="underline text-ink/65">Details</button>
                     )}
                     {onGoToEvents && vEvents.length > 0 && (
-                      <button type="button" onClick={() => onGoToEvents(v.id)} className="underline text-ink/60">
+                      <button type="button" onClick={() => onGoToEvents(v.id)} className="underline text-ink/65">
                         See events →
                       </button>
                     )}

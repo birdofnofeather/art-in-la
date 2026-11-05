@@ -33,7 +33,7 @@ function StarButton({ isFav, onToggle }) {
 export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap, onShowDetail, onReset, favs, onToggleFav }) {
   if (venues.length === 0) {
     return (
-      <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+      <div className="panel space-y-3 p-6 text-center text-sm text-ink/65">
         <div>No venues match these filters.</div>
         {onReset && (
           <button type="button" onClick={onReset} className="chip">Clear filters & search</button>
@@ -58,12 +58,12 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
             <div className="space-y-2 p-3">
               <div className="flex flex-wrap items-center gap-1.5 text-xs">
                 <span className="tag bg-ink/5 text-ink/70">{TYPE_LABEL[v.type]}</span>
-                <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[v.region] || v.region}</span>
+                <span className="tag bg-ink/5 text-ink/65">{REGION_LABEL[v.region] || v.region}</span>
                 {eventfulIds.has(v.id) && (
-                  <span className="tag text-white" style={{ background: "#6f9cbf" }}>Upcoming events</span>
+                  <span className="tag text-white" style={{ background: "#3d6d94" }}>Upcoming events</span>
                 )}
                 {!hasScraped && (
-                  <span className="tag bg-ink/5 text-ink/50" title="No automated scraper — events added manually or not yet tracked">
+                  <span className="tag bg-ink/5 text-ink/65" title="No automated scraper — events added manually or not yet tracked">
                     Not tracked
                   </span>
                 )}
@@ -86,7 +86,7 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
               </h3>
 
               <div className="text-sm text-ink/70">{v.description}</div>
-              <div className="text-xs text-ink/60">
+              <div className="text-xs text-ink/65">
                 {v.address}
                 {v.address && v.neighborhood && " · "}
                 {!v.address && v.neighborhood}
@@ -122,7 +122,7 @@ export default function VenueList({ venues, eventfulIds, scrapedIds, onShowOnMap
               </div>
 
               {SOCIAL_ORDER.some((k) => socials[k]) && (
-                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-ink/50">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-ink/65">
                   {SOCIAL_ORDER.filter((k) => socials[k]).map((k, i, arr) => (
                     <React.Fragment key={k}>
                       <a href={socials[k]} target="_blank" rel="noreferrer" className="hover:text-ink hover:underline">

@@ -141,6 +141,11 @@ export default function App() {
     return () => mq.removeEventListener?.("change", apply);
   }, []);
 
+  // Shared link (#event=<id>): which item to jump to, and a notice when the
+  // shared item has already ended or no longer exists.
+  const [sharedId, setSharedId] = useState(null);
+  const [sharedNotice, setSharedNotice] = useState(null);
+
   // About / feedback dialog
   const [aboutOpen, setAboutOpen] = useState(false);
 
@@ -168,6 +173,7 @@ export default function App() {
     setTab(initTab);
     if (p.get("map"))   setMapOnlyEventful(p.get("map") !== "all");
     if (p.get("venue")) setDetailVenueId(p.get("venue"));
+    if (p.get("event")) setSharedId(p.get("event"));
   }, []);
 
   // ── URL hash: write the ACTIVE tab's filters ──────────────────────────────
@@ -312,6 +318,34 @@ export default function App() {
     }
   }, [detailVenueId, venuesById]);
 
+  // Resolve a shared link once data is loaded: show the item with filters
+  // cleared (so nothing hides it), in the right tab and Art/Performing view.
+  useEffect(() => {
+    if (!sharedId || loading || !data.events.length) return;
+    const all = [...upcomingEvents, ...liveExhibitionsOnView(liveExhibitions)];
+    const ev = all.find((e) => e.id === sharedId);
+    if (!ev) {
+      const past = (data.archive || []).find((e) => e.id === sharedId);
+      setSharedNotice(past ? `“${past.title}” has already ended. Here's what's on now.` : "That shared listing is no longer shown. Here's what's on now.");
+      setSharedId(null);
+      return;
+    }
+    const v = venuesById[ev.venue_id];
+    setFilters({ ...EMPTY_FILTERS, datePreset: "all" });
+    setDisciplineState(v && v.discipline === "performing" ? "performing" : "visual");
+    setStackByVenue(false);
+    setTab(ev.event_type === "exhibition" ? "exhibitions" : "events");
+    const t = setTimeout(() => {
+      const el = document.getElementById(`ev-${ev.id}`);
+      if (el) {
+        el.scrollIntoView({ block: "center", behavior: "smooth" });
+        el.querySelector("a, button")?.focus({ preventScroll: true });
+      }
+    }, 350);
+    const done = setTimeout(() => setSharedId(null), 4000);   // release the highlight
+    return () => { clearTimeout(t); clearTimeout(done); };
+  }, [sharedId, loading, data, upcomingEvents, liveExhibitions, venuesById]);
+
   // ── Callbacks ─────────────────────────────────────────────────────────────
   // Reset clears only the current tab's filters.
   const onReset = () => setFilters({ ...EMPTY_FILTERS, datePreset: defaultDatePreset() });
@@ -368,10 +402,17 @@ export default function App() {
         {error && (
           <div className="panel p-6 text-center space-y-3">
             <p className="text-sm font-medium">We couldn't load the latest event data.</p>
-            <p className="text-xs text-ink/50">{error}</p>
+            <p className="text-xs text-ink/65">{error}</p>
             <button type="button" onClick={load} className="chip">
               Try again
             </button>
+          </div>
+        )}
+
+        {sharedNotice && (
+          <div role="status" className="panel flex items-start justify-between gap-3 p-3 text-sm">
+            <span>{sharedNotice}</span>
+            <button type="button" className="text-ink/65 underline" onClick={() => setSharedNotice(null)}>Dismiss</button>
           </div>
         )}
 
@@ -396,7 +437,7 @@ export default function App() {
         ) : (
           <>
             {tab === "map" && (
-              <Suspense fallback={<div className="panel p-6 text-center text-sm text-ink/60">Loading map…</div>}>
+              <Suspense fallback={<div className="panel p-6 text-center text-sm text-ink/65">Loading map…</div>}>
                 <VenueMap
                   venues={mapVenues}
                   eventfulIds={mapEventfulIds}
@@ -414,7 +455,7 @@ export default function App() {
               <>
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   {discipline !== "performing" ? (
-                    <p className="hidden text-xs text-ink/60 sm:block">
+                    <p className="hidden text-xs text-ink/65 sm:block">
                       Looking for commercial galleries? Try{" "}
                       <a href="https://artguide.artforum.com/" target="_blank" rel="noreferrer"
                         className="font-medium underline underline-offset-2 hover:text-ink">Artforum artguide</a>.
@@ -438,6 +479,7 @@ export default function App() {
                   favs={favs}
                   onToggleFav={toggleFav}
                   stackByVenue={effectiveStack}
+                  highlightId={sharedId}
                 />
                 {discipline !== "performing" && onViewInDisc.length > 0 && (
                   <div className="pt-2 text-center">
@@ -455,9 +497,10 @@ export default function App() {
 
             {tab === "exhibitions" && (
               <>
-                <p className="text-xs text-ink/60">Temporary exhibitions on view now, ending soonest first.</p>
+                <p className="text-xs text-ink/65">Temporary exhibitions on view now, ending soonest first.</p>
                 <ExhibitionsByVenue
                   exhibitions={filteredExhibitions}
+                  highlightId={sharedId}
                   venuesById={venuesById}
                   onShowDetail={setDetailVenueId}
                   onReset={onReset}
@@ -484,7 +527,7 @@ export default function App() {
 
             {tab === "archive" && (
               <>
-                <div className="panel p-3 text-xs text-ink/60">
+                <div className="panel p-3 text-xs text-ink/65">
                   Archive launched {new Date(ARCHIVE_LAUNCH_DATE).toLocaleDateString(
                     "en-US", { year: "numeric", month: "long", day: "numeric" }
                   )}. Past listings captured by the daily scrape appear here.
@@ -504,7 +547,7 @@ export default function App() {
                   ))}
                 </div>
 
-                <div role="status" aria-live="polite" className="text-xs text-ink/60">
+                <div role="status" aria-live="polite" className="text-xs text-ink/65">
                   {filteredArchive.length} past {archiveMode === "exhibitions" ? "exhibition" : "event"}{filteredArchive.length === 1 ? "" : "s"}
                   {filteredArchive.length > 0 ? " (most recent first)" : ""}
                 </div>
@@ -533,7 +576,7 @@ export default function App() {
             {tab === "saved" && (
               <>
                 {favs.size === 0 ? (
-                  <div className="panel p-10 text-center space-y-3 text-sm text-ink/50">
+                  <div className="panel p-10 text-center space-y-3 text-sm text-ink/65">
                     <div className="text-3xl">☆</div>
                     <div>Tap the star on any event or venue to save it here.</div>
                   </div>
@@ -541,7 +584,7 @@ export default function App() {
                   <div className="space-y-8">
                     {savedEvents.length > 0 && (
                       <div>
-                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/60">
+                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/65">
                           {savedEvents.length} saved event{savedEvents.length !== 1 ? "s" : ""}
                         </div>
                         <EventList
@@ -556,7 +599,7 @@ export default function App() {
                     )}
                     {savedVenues.length > 0 && (
                       <div>
-                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/60">
+                        <div role="status" aria-live="polite" className="mb-3 text-xs text-ink/65">
                           {savedVenues.length} saved venue{savedVenues.length !== 1 ? "s" : ""}
                         </div>
                         <VenueList
@@ -578,7 +621,7 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/55 md:px-6">
+      <footer className="mx-auto max-w-7xl px-4 pb-10 pt-4 text-xs text-ink/65 md:px-6">
         <p>
           Listings are bot-maintained — confirm times with the venue before heading out.
           Map data © OpenStreetMap contributors.

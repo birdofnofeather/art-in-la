@@ -4,6 +4,7 @@ import {
 } from "../lib/constants.js";
 import { getRelativeLabel, parseDate, eventTypesOf, isExhibition } from "../lib/filters.js";
 import { downloadICS, googleCalUrl } from "../lib/calendar.js";
+import ShareButton from "./ShareButton.jsx";
 
 const DATE_OPTS  = { weekday: "short", month: "short", day: "numeric", year: "numeric" };
 const TIME_OPTS  = { hour: "numeric", minute: "2-digit" };
@@ -114,8 +115,8 @@ function groupByDate(events) {
 }
 
 const LABEL_STYLE = {
-  "Now":          "bg-red-500 text-white",
-  "Today":        "bg-amber-500 text-white",
+  "Now":          "bg-red-700 text-white",
+  "Today":        "bg-amber-700 text-white",
   "Tomorrow":     "bg-amber-100 text-amber-800",
   "This weekend": "bg-sky-100 text-sky-800",
   "This week":    "bg-sky-50 text-sky-700",
@@ -131,7 +132,7 @@ function daysUntilClose(ev, now = new Date()) {
 
 // ── Calendar icon (10×10, matching map-pin style) ───────────────────────────
 const CalIcon = () => (
-  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0" aria-hidden>
     <rect x="3" y="4" width="18" height="18" rx="2"/>
     <line x1="16" y1="2" x2="16" y2="6"/>
     <line x1="8" y1="2" x2="8" y2="6"/>
@@ -170,16 +171,18 @@ function CalendarMenu({ ev, venue }) {
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="chip text-xs"
+        className="icon-btn"
         aria-haspopup="menu"
         aria-expanded={open}
+        aria-label={`Add ${ev.title} to calendar`}
+        title="Add to calendar"
       >
-        <CalIcon /> Add to calendar
+        <CalIcon />
       </button>
       {open && (
         <div
           role="menu"
-          className="absolute left-0 bottom-full z-20 mb-1 w-44 rounded-lg border border-black/10 bg-white p-1 shadow-lg"
+          className="absolute right-0 bottom-full z-20 mb-1 w-44 rounded-lg border border-black/10 bg-white p-1 shadow-lg"
         >
           <button
             type="button"
@@ -207,7 +210,7 @@ function CalendarMenu({ ev, venue }) {
   );
 }
 
-function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
+function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav, highlight }) {
   const venue = venuesById[ev.venue_id] || { name: ev.venue_id, type: "other" };
   const venueColor = TYPE_COLOR[venue.type] || "#666";
   const exhibition = isExhibition(ev);
@@ -222,7 +225,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
   )];
 
   return (
-    <article className="panel flex overflow-hidden">
+    <article id={`ev-${ev.id}`} className={`panel flex overflow-hidden ${highlight ? "shared-target" : ""}`}>
       <div className="w-1 shrink-0" style={{ background: venueColor }} />
       {ev.image && (
         <img
@@ -261,7 +264,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
             <span key={label} className="tag bg-ink/5 text-ink/70">{label}</span>
           ))}
           {venue.region && (
-            <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[venue.region] || venue.region}</span>
+            <span className="tag bg-ink/5 text-ink/65">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
           {ev.is_free === true ? (
             <span className="tag bg-emerald-100 text-emerald-900">Free</span>
@@ -285,7 +288,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
             </span>
           )}
           {closingSoon && (
-            <span className="inline-flex items-center rounded-full bg-red-500 px-2 py-0.5 text-xs font-semibold text-white">
+            <span className="inline-flex items-center rounded-full bg-red-700 px-2 py-0.5 text-xs font-semibold text-white">
               {closeIn === 0 ? "Closes today" : closeIn === 1 ? "Closes tomorrow" : `Closes in ${closeIn} days`}
             </span>
           )}
@@ -309,7 +312,7 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
             {venue.name}
           </a>
           {venue.neighborhood && (
-            <span className="text-ink/60"> · {venue.neighborhood}</span>
+            <span className="text-ink/65"> · {venue.neighborhood}</span>
           )}
         </div>
 
@@ -320,24 +323,26 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav }) {
           <p className="line-clamp-2 text-[13px] leading-snug text-ink/70">{stripHtml(ev.description)}</p>
         )}
         {ev.artists && ev.artists.length > 0 && (
-          <div className="text-xs text-ink/60">
+          <div className="text-xs text-ink/65">
             <span className="font-medium">Featuring:</span> {ev.artists.join(", ")}
           </div>
         )}
 
-        {/* Action row */}
-        <div className="flex flex-wrap gap-1.5 mt-1">
+        {/* Action row: compact icons (map · calendar · share) */}
+        <div className="mt-1 flex items-center gap-1.5">
           {onShowOnMap && venue.lat && (
             <button
               type="button"
               onClick={() => onShowOnMap(ev.venue_id)}
-              className="chip text-xs"
+              className="icon-btn"
+              aria-label={`Show ${venue.name} on map`}
+              title="Show on map"
             >
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              Show on map
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
             </button>
           )}
           {ev.start && !exhibition && <CalendarMenu ev={ev} venue={venue} />}
+          <ShareButton ev={ev} venueName={venue.name} />
         </div>
       </div>
     </article>
@@ -373,9 +378,9 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
         <div className="flex flex-wrap items-center gap-1.5 text-xs">
           <span className="tag bg-ink/5 text-ink/70">{TYPE_LABEL[venue.type]}</span>
           {venue.region && (
-            <span className="tag bg-ink/5 text-ink/60">{REGION_LABEL[venue.region] || venue.region}</span>
+            <span className="tag bg-ink/5 text-ink/65">{REGION_LABEL[venue.region] || venue.region}</span>
           )}
-          <span className="text-ink/60">{sorted.length} event{sorted.length !== 1 ? "s" : ""}</span>
+          <span className="text-ink/65">{sorted.length} event{sorted.length !== 1 ? "s" : ""}</span>
         </div>
 
         <h3 className="font-display text-base font-semibold leading-snug">
@@ -383,7 +388,7 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
             {venue.name}
           </a>
           {venue.neighborhood && (
-            <span className="text-sm font-normal text-ink/60"> · {venue.neighborhood}</span>
+            <span className="text-sm font-normal text-ink/65"> · {venue.neighborhood}</span>
           )}
         </h3>
 
@@ -392,7 +397,7 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
             const isFav = favs?.has(ev.id) ?? false;
             return (
               <li key={ev.id} className="flex items-start gap-3 py-2">
-                <div className="w-24 shrink-0 pt-0.5 text-xs text-ink/60">{shortWhen(ev)}</div>
+                <div className="w-24 shrink-0 pt-0.5 text-xs text-ink/65">{shortWhen(ev)}</div>
                 <div className="min-w-0 flex-1 text-sm">
                   {ev.url ? (
                     <a href={ev.url} target="_blank" rel="noreferrer" className="hover:underline">{ev.title}</a>
@@ -423,7 +428,7 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
             <button
               type="button"
               onClick={() => setExpanded((e) => !e)}
-              className="text-xs font-medium text-ink/60 underline-offset-2 hover:text-ink hover:underline"
+              className="text-xs font-medium text-ink/65 underline-offset-2 hover:text-ink hover:underline"
             >
               {expanded ? "Show fewer" : `Show all ${sorted.length}`}
             </button>
@@ -446,10 +451,10 @@ function VenueStackCard({ venueId, events, venuesById, onShowOnMap, favs, onTogg
  * render a single flat grid in the order given (sorted by closing date), since
  * grouping by start date would scatter the ending-soonest ordering.
  */
-export default function EventList({ events, venuesById, onShowOnMap, onReset, grouped = true, favs, onToggleFav, stackByVenue = false }) {
+export default function EventList({ events, venuesById, onShowOnMap, onReset, grouped = true, favs, onToggleFav, stackByVenue = false, highlightId = null }) {
   if (events.length === 0) {
     return (
-      <div className="panel space-y-3 p-6 text-center text-sm text-ink/60">
+      <div className="panel space-y-3 p-6 text-center text-sm text-ink/65">
         <div>No events match these filters.</div>
         {onReset && (
           <button type="button" onClick={onReset} className="chip">Clear filters & search</button>
@@ -460,6 +465,7 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset, gr
 
   const renderCard = (ev) => (
     <EventCard
+      highlight={highlightId === ev.id}
       key={ev.id}
       ev={ev}
       venuesById={venuesById}
@@ -515,7 +521,7 @@ export default function EventList({ events, venuesById, onShowOnMap, onReset, gr
           {/* Date group header */}
           <div className="mb-3 flex items-baseline gap-3">
             <h4 className="font-display text-base font-semibold tracking-tight">{label}</h4>
-            <span className="text-xs text-ink/60">{groupEvents.length} event{groupEvents.length !== 1 ? "s" : ""}</span>
+            <span className="text-xs text-ink/65">{groupEvents.length} event{groupEvents.length !== 1 ? "s" : ""}</span>
           </div>
 
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">

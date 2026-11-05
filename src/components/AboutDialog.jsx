@@ -93,7 +93,7 @@ function ResourcesSection() {
       <h3 className="text-sm font-semibold">Looking for something else?</h3>
       {RESOURCES.map((g) => (
         <div key={g.group} className="space-y-1.5">
-          <div className="text-xs font-semibold uppercase tracking-wider text-ink/60">{g.group}</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-ink/65">{g.group}</div>
           <ul className="space-y-0.5 text-xs text-ink/70">
             {g.items.map((r) => (
               <li key={r.name}>
@@ -144,7 +144,7 @@ export default function AboutDialog({ onClose }) {
             <h2 id="about-heading" className="font-display text-xl font-bold">About Art in LA</h2>
             <button
               type="button" onClick={onClose} aria-label="Close"
-              className="shrink-0 rounded-full p-1.5 text-ink/50 hover:bg-black/5 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
+              className="shrink-0 rounded-full p-1.5 text-ink/65 hover:bg-black/5 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />

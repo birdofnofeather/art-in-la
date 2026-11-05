@@ -60,12 +60,12 @@ export default function Header({
             <p className="mt-1 text-xs text-ink/70">
               {subtitle}
               {stats && (
-                <span className="hidden text-ink/55 sm:inline">
+                <span className="hidden text-ink/65 sm:inline">
                   {" "}· {stats.venues} venues{stats.exhibitions != null ? ` · ${stats.exhibitions} exhibitions` : ""} · {stats.events} events
                 </span>
               )}
               {lastUpdated && (
-                <span className="hidden text-ink/45 md:inline">
+                <span className="hidden text-ink/65 md:inline">
                   {" "}· updated {lastUpdated.toLocaleDateString("en-US", { month: "short", day: "numeric" })}
                 </span>
               )}
@@ -96,7 +96,7 @@ export default function Header({
           })}
           {onAbout && (
             <button type="button" onClick={onAbout}
-              className="ml-auto inline-flex shrink-0 items-center rounded-md px-3 py-2 text-sm font-medium text-ink/60 transition-colors hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 md:py-1.5">
+              className="ml-auto inline-flex shrink-0 items-center rounded-md px-3 py-2 text-sm font-medium text-ink/65 transition-colors hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 md:py-1.5">
               About
             </button>
           )}
