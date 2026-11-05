@@ -652,6 +652,31 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-06-06-youth-clay-class-wheel-lab-780a265561",
+    "venue_id": "amoca",
+    "title": "Youth Clay Class: Wheel Lab",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-06-06T16:30:00-07:00",
+    "end": "2025-06-06T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "craft_contemporary--iao-olfactory-storylab-makerinresidence-7438203f0a",
     "venue_id": "craft_contemporary",
     "title": "IAO Olfactory Storylab Maker-in-Residence",
@@ -674,6 +699,56 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
+  },
+  {
+    "id": "amoca-2025-06-07-teen-wheel-throwing-7cdab1dcf2",
+    "venue_id": "amoca",
+    "title": "Teen Wheel Throwing",
+    "description": "",
+    "event_type": "other",
+    "start": "2025-06-07T10:00:00-07:00",
+    "end": "2025-06-07T12:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-06-08-youth-hand-building-landscapes-of-clay-6d2588cba9",
+    "venue_id": "amoca",
+    "title": "Youth Hand Building: Landscapes of Clay",
+    "description": "",
+    "event_type": "other",
+    "start": "2025-06-08T11:00:00-07:00",
+    "end": "2025-06-08T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2025-06-10-3-bill-evidence-of-queer-livesexh-64371c2909",
@@ -716,6 +791,52 @@
       "exhibition"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2025-06-11-bg-members-tour-hot-ready-69bc1a0c60",
+    "venue_id": "amoca",
+    "title": "BG: Members Tour: Hot! & Ready",
+    "description": "Join with Google Meet: https://meet.google.com/cek-zdpq-ydr Or dial: (US) +1 413-591-4122 PIN: 690853227# More phone numbers: https://tel.meet/cek-zdpq-ydr?pin=4764459507248&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "tour",
+    "start": "2025-06-11T12:00:00-07:00",
+    "end": "2025-06-11T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-06-13-intro-class-with-isabella-a022e467a4",
+    "venue_id": "amoca",
+    "title": "Intro Class with Isabella",
+    "description": "Join with Google Meet: https://meet.google.com/jiy-scgz-vfo Or dial: (US) +1 224-702-0198 PIN: 534839448# More phone numbers: https://tel.meet/jiy-scgz-vfo?pin=3041227529777&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "workshop",
+    "start": "2025-06-13T19:30:00-07:00",
+    "end": "2025-06-13T20:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2025-06-14-5th-annual-dena-juneteenth-community-par-a99249f427",
@@ -784,6 +905,77 @@
     ]
   },
   {
+    "id": "amoca-2025-06-14-soda-workshop-ns-e9120520a3",
+    "venue_id": "amoca",
+    "title": "Soda Workshop: NS",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-06-14T09:00:00-07:00",
+    "end": "2025-06-14T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-06-15-soda-workshop-ns-26541b6cbd",
+    "venue_id": "amoca",
+    "title": "Soda Workshop: NS",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-06-15T09:00:00-07:00",
+    "end": "2025-06-15T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-06-16-youth-clay-class-altars-342093ed75",
+    "venue_id": "amoca",
+    "title": "Youth Clay Class: Altars",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-06-16T13:00:00-07:00",
+    "end": "2025-06-16T15:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "getty_center-2025-06-17-queer-lens-a-history-of-photographyexh-61909567c0",
     "venue_id": "getty_center",
     "title": "Queer Lens: A History of Photography",
@@ -850,6 +1042,29 @@
     "_asserted_type": "exhibition"
   },
   {
+    "id": "amoca-2025-06-21-soda-workshop-ns-c4b2130254",
+    "venue_id": "amoca",
+    "title": "Soda Workshop: NS",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-06-21T10:00:00-07:00",
+    "end": "2025-06-21T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-06-22-dine-out-pasadena-streetfest-community-p-eb78e1c09b",
     "venue_id": "armory_pasadena",
     "title": "Dine Out Pasadena Streetfest (Community Partner Event)",
@@ -869,6 +1084,29 @@
       "other"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2025-06-26-nathans-going-away-bbq-923fac73b5",
+    "venue_id": "amoca",
+    "title": "Nathan's going away BBQ :(",
+    "description": "",
+    "event_type": "other",
+    "start": "2025-06-26T12:00:00-07:00",
+    "end": "2025-06-26T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_villa-2025-06-27-the-kingdom-of-pylos-warriorprinces-of-m-be77e23fbf",
@@ -914,6 +1152,52 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-07-11-member-clay-day-intro-class-0f17432c53",
+    "venue_id": "amoca",
+    "title": "Member Clay Day intro class",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-07-11T17:30:00-07:00",
+    "end": "2025-07-11T18:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-07-11-intro-class-a54a777a0a",
+    "venue_id": "amoca",
+    "title": "Intro class",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-07-11T19:30:00-07:00",
+    "end": "2025-07-11T20:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-07-12-free-creative-wellness-workshop-for-adul-6f93451ab0",
     "venue_id": "armory_pasadena",
     "title": "Free Creative Wellness Workshop for Adults Affected by the Eaton Fire",
@@ -933,6 +1217,54 @@
       "workshop"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2025-07-12-animal-heads-youth-workshop-ca04e9df7c",
+    "venue_id": "amoca",
+    "title": "Animal Heads Youth Workshop",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2025-07-12T10:00:00-07:00",
+    "end": "2025-07-12T14:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-07-12-butter-churning-workshop-gallery-aoutsid-2685cab58f",
+    "venue_id": "amoca",
+    "title": "Butter Churning Workshop - Gallery A/outside?",
+    "description": "check-in on Humanitix ( procedure is here ) Pre-registration is required. Be sure to register in advance! To give us time to prepare butter-making materials, ticket sales will end at 5pm on Friday, July 11. Event: https://www.amoca.org/events/butter_experience/ Join with Google Meet: https://meet.google.com/icg-xseu-ccs Or dial: (US) +1 347-289-7589 PIN: 285868635# More phone numbers: https://tel.meet/icg-xseu-ccs?pin=6689893379537&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "workshop",
+    "start": "2025-07-12T11:00:00-07:00",
+    "end": "2025-07-12T12:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2025-07-14-last-looks-at-the-academy-museumexh-1c3e587add",
@@ -957,6 +1289,54 @@
     "audience": [],
     "_default_type": "screening",
     "_asserted_type": "exhibition"
+  },
+  {
+    "id": "amoca-2025-07-15-michelle-air-talk-virtual-5f6321ba9a",
+    "venue_id": "amoca",
+    "title": "Michelle AIR Talk - virtual",
+    "description": "registration & info: https://www.amoca.org/events/solorzano-artist-talk-july/ Join with Google Meet: https://meet.google.com/sps-brby-rig Or dial: (US) +1 252-713-7138 PIN: 396980959# More phone numbers: https://tel.meet/sps-brby-rig?pin=5317870858447&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "lecture",
+    "start": "2025-07-15T12:00:00-07:00",
+    "end": "2025-07-15T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-08-01-family-day-slitslot-sculptures-24df4c36eb",
+    "venue_id": "amoca",
+    "title": "Family Day: Slit-Slot Sculptures",
+    "description": "check-in on Humanitix ( procedure is here ) Please count total # of in-person participants (preregistered + walk up) & let GK know Event info: https://www.amoca.org/events/slitslot_familyday/",
+    "event_type": "fair",
+    "start": "2025-08-01T14:00:00-07:00",
+    "end": "2025-08-01T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2025-08-02-identity-remix-ba435d936b",
@@ -1001,6 +1381,75 @@
       "screening"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2025-08-05-reniel-air-talk-1635ac8984",
+    "venue_id": "amoca",
+    "title": "Reniel AIR Talk",
+    "description": "event page / to register: https://www.amoca.org/events/delrosario-artist-talk-2025/ Join with Google Meet: https://meet.google.com/xeo-cgik-dfv Or dial: (US) +1 413-400-3131 PIN: 897182811# More phone numbers: https://tel.meet/xeo-cgik-dfv?pin=2114945909875&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "lecture",
+    "start": "2025-08-05T12:00:00-07:00",
+    "end": "2025-08-05T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-08-08-drop-off-krista-furutan-95448201c4",
+    "venue_id": "amoca",
+    "title": "Drop Off - Krista Furutan",
+    "description": "",
+    "event_type": "other",
+    "start": "2025-08-08T12:00:00-07:00",
+    "end": "2025-08-08T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-08-13-pedestal-pick-up-day-7f832401b6",
+    "venue_id": "amoca",
+    "title": "Pedestal Pick Up Day",
+    "description": "Free pedestals will be available in the AMOCA parking lot; pick up is on Wednesday, August 13, between 10 AM and 6 PM. Select the pedestals you’d like, and take them back to your studio, home, or display area. No reservations are needed, just stop by during during pick-up hours and choose some peds. Pedestal pick up is first come, first served . No holds! Peds will be available beginning at 10am on August 13 AMOCA staff are not available to help lift or secure your peds Straps or packing supplies are not provided https://www.amoca.org/events/free_ped_pickup/",
+    "event_type": "other",
+    "start": "2025-08-13T10:00:00-07:00",
+    "end": "2025-08-13T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2025-08-16-with-seeds-in-their-hands-03f9d1d52a",
@@ -1248,6 +1697,56 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-08-30-mythical-armor-workshop-cancelled-223d18da03",
+    "venue_id": "amoca",
+    "title": "Mythical Armor workshop - CANCELLED",
+    "description": "CANCELLED! We refunded the ticket for Elisabeth Frederickson and let her know she can visit the museum for free on Sat 8/30. Please let her in for free if she visits today. https://www.amoca.org/events/mythical_armor/ - in Gallery B Checking in guests for paid Humantix events (ex: Family Days, Meet Cute) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered/walk-in attendees, collect payment on LS (Admission - Event) This ticket type has no dollar amount associated with it. For each event, you must enter the ticket price to accept payment. Jenifer is our LS wizard. Check with her if you have Qs about event admission Later that Day Add # of Humanitix attendees t",
+    "event_type": "workshop",
+    "start": "2025-08-30T12:00:00-07:00",
+    "end": "2025-08-30T14:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-08-31-kurinuki-workshop-50adb49a72",
+    "venue_id": "amoca",
+    "title": "Kurinuki Workshop",
+    "description": "https://www.amoca.org/events/kurinuki_family/ Checking in guests for paid Humantix events (ex: Family Days, Meet Cute) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered/walk-in attendees, collect payment on LS (Admission - Event) This ticket type has no dollar amount associated with it. For each event, you must enter the ticket price to accept payment. Jenifer is our LS wizard. Check with her if you have Qs about event admission Later that Day Add # of Humanitix attendees to LS (Admission - Event). When you add this attendee #, write the Event name, date, and “tickets via Humanitix” in the Event Description box. No payment will be entered at this step. Join",
+    "event_type": "workshop",
+    "start": "2025-08-31T11:00:00-07:00",
+    "end": "2025-08-31T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "getty_center-2025-09-02-going-places-travel-in-the-middle-agesex-31a2576b6b",
     "venue_id": "getty_center",
     "title": "Going Places: Travel in the Middle Ages",
@@ -1267,6 +1766,29 @@
       "exhibition"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2025-09-09-air-talk-yoon-a6db30336f",
+    "venue_id": "amoca",
+    "title": "AiR Talk - Yoon",
+    "description": "https://www.amoca.org/events/hwang-artist-talk/ Join with Google Meet: https://meet.google.com/pmc-udet-ynt Or dial: (US) +1 646-627-9121 PIN: 289081637# More phone numbers: https://tel.meet/pmc-udet-ynt?pin=7180570507806&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "lecture",
+    "start": "2025-09-09T12:00:00-07:00",
+    "end": "2025-09-09T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "autry-2025-09-15-museum-teacher-programs-for-schools-1d63a838a3",
@@ -1355,6 +1877,54 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-09-25-member-tour-hot-ready-6466a435f8",
+    "venue_id": "amoca",
+    "title": "Member Tour - Hot & Ready",
+    "description": "Thursday, September 25, 2025 • 12:00–1:00 PM • In Person Join us for a tour of AMOCA’s exhibition Hot! & Ready to Serve: Celebrating Functional Ceramics with Executive Director Beth Ann Gerstein. Go behind the scenes and learn about the traditions, influences, and inspirations that contributed to this exciting exhibition. https://www.amoca.org/events/memberstour-sept25/",
+    "event_type": "tour",
+    "start": "2025-09-25T12:00:00-07:00",
+    "end": "2025-09-25T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-09-27-weaving-stories-family-workshop-7772c3c2d7",
+    "venue_id": "amoca",
+    "title": "Weaving Stories Family Workshop",
+    "description": "https://www.amoca.org/events/family_weaving/ Checking in guests for paid Humantix events (ex: Family Days, Meet Cute) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered/walk-in attendees, collect payment on LS (Admission - Event) This ticket type has no dollar amount associated with it. For each event, you must enter the ticket price to accept payment. Jenifer is our LS wizard. Check with her if you have Qs about event admission Later that Day Add # of Humanitix attendees to LS (Admission - Event). When you add this attendee #, write the Event name, date, and “tickets via Humanitix” in the Event Description box. No payment will be entered at this step. Satur",
+    "event_type": "workshop",
+    "start": "2025-09-27T11:00:00-07:00",
+    "end": "2025-09-27T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-09-28-closing-celebration-here-lay-a-home-154f851b76",
     "venue_id": "armory_pasadena",
     "title": "Closing Celebration: Here Lay A Home",
@@ -1400,6 +1970,55 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-10-03-teen-wheel-lab-fc10971dce",
+    "venue_id": "amoca",
+    "title": "Teen Wheel Lab",
+    "description": "Teen Wheel Lab Wheel Lab • First Friday of the Month • 4:30 – 6 PM • Ages 12-16 • $10 ($35 optional firing fee) Join one of AMOCA’s teaching artists for a 1-day wheel throwing lab, where youth ages 12-16 are invited to try their hand at the wheel and learn the steps to make their own pottery. With our introductory wheel lab, students will receive step-by-step instruction to open the door to ceramics with the paid option to return to the studio to receive a mini-glaze workshop and fire their work. Note: the optional $35 firing fee can be paid the day of class, after we’ve thrown on the wheel. We ask all parents of children in our one-day kids and teens pottery classes to stay to supervise – we do not allow drop offs. We are sure you will enjoy watching them or participating in the fun! Be s",
+    "event_type": "workshop",
+    "start": "2025-10-03T16:30:00-07:00",
+    "end": "2025-10-03T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$10–$35",
+    "audience": [
+      "family",
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-07-bianca-air-talk-f35055b497",
+    "venue_id": "amoca",
+    "title": "Bianca AIR Talk",
+    "description": "https://www.amoca.org/events/macpherson-artist-talk/ Registrants will be sent a zoom link the day of the talk, 1 hr before, and when the talk begins.",
+    "event_type": "lecture",
+    "start": "2025-10-07T12:00:00-07:00",
+    "end": "2025-10-07T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-10-10-artnight-pasadena-at-the-armory-b39bdb1c21",
     "venue_id": "armory_pasadena",
     "title": "ArtNight Pasadena at the Armory",
@@ -1421,6 +2040,29 @@
     "audience": [
       "family"
     ]
+  },
+  {
+    "id": "amoca-2025-10-10-studio-class-introductory-session-454912d60e",
+    "venue_id": "amoca",
+    "title": "Studio Class: Introductory Session",
+    "description": "Introductory sessions, offered monthly, are the perfect way to get your hands dirty, relax, and have fun! Learn the basics of throwing on the potter’s wheel. If you successfully create a bowl, staff will glaze and fire it after the class is completed—all included in the price of the class. If you’d like to take the piece home with you, you can come back and pick it up. Introductory sessions last 60 minutes and cost $75. This fee includes everything needed for the class (including clay, glaze, and firing services). Introductory sessions are for adults ages 18 and over (students 16+ may attend when accompanied by a paying adult). Along with your class comes complimentary admission to the Museum’s galleries – don’t miss the chance to explore one of the largest collections of ceramic art in th",
+    "event_type": "workshop",
+    "start": "2025-10-10T17:00:00-07:00",
+    "end": "2025-10-10T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2025-10-21-learning-to-drawexh-6c18cbe660",
@@ -1460,6 +2102,121 @@
     "scraped_at": "2026-07-19T02:02:28+00:00",
     "event_types": [
       "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-25-fired-in-revolution-ceramics-from-the-pe-334f641839",
+    "venue_id": "amoca",
+    "title": "Fired in Revolution: Ceramics from the People's Republic of China",
+    "description": "Fired in Revolution: Ceramics from the People’s Republic of China presents ceramics created during the Cultural Revolution, 1966-1976. Fired in Revolution is on view in the Armstrong Gallery October 25, 2025–May 3, 2026 Learn more about the exhibition: https://www.amoca.org/current-exhibits/fired_in_revolution/ AMOCA is open for visitors Fridays, Saturdays, and Sundays from 11am-4pm. Plan your visit.",
+    "event_type": "exhibition",
+    "start": "2025-10-25",
+    "end": "2026-05-04",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-25-fired-in-revolution-private-reception-eeb8ef6510",
+    "venue_id": "amoca",
+    "title": "Fired in Revolution private reception",
+    "description": "Private reception for invited guests. Public reception begins at 4pm https://events.humanitix.com/private-reception-fired-in-revolution Checking in guests for free Humantix events (ex: Opening Reception) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered attendees, ask them to to register (w/Humanitix QR Code), and then check them in on Humantix, or to write in their name/email/ # of guests on the sign in sheet Later that Day Add total # of Humantix checked-in AND walk-up attendees to LS (Admission - Event). When you add this attendee #, write the Event name and date in the Event Description box. No payment will be entered at this step.",
+    "event_type": "opening",
+    "start": "2025-10-25T15:00:00-07:00",
+    "end": "2025-10-25T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-25-fired-in-revolution-opening-reception-f26f80d1f7",
+    "venue_id": "amoca",
+    "title": "Fired in Revolution opening Reception",
+    "description": "https://www.amoca.org/events/fired_in_reception/ Checking in guests for free Humantix events (ex: Opening Reception) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered attendees, ask them to to register (w/Humanitix QR Code), and then check them in on Humantix, or to write in their name/email/ # of guests on the sign in sheet Later that Day Add total # of Humantix checked-in AND walk-up attendees to LS (Admission - Event). When you add this attendee #, write the Event name and date in the Event Description box. No payment will be entered at this step. _____________ Join us for the opening reception for Fired in Revolution: Ceramics from the People’s Republic",
+    "event_type": "opening",
+    "start": "2025-10-25T16:00:00-07:00",
+    "end": "2025-10-25T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-26-martha-ronk-poetry-reading-162667b207",
+    "venue_id": "amoca",
+    "title": "Martha Ronk Poetry Reading",
+    "description": "https://www.amoca.org/events/poetry_ronk/ Poetry at AMOCA: Martha Ronk Sunday, October 26, 2025 • 3:00 – 4:00 PM • In Person • free w/admission Join us in the gallery for a poetry reading with southern California poet Martha Ronk. Ronk’s newest book Clay: Bodies + Matter is comprised of poems that find meaning and connection in the process of creating pottery from clay. + book signing, light snacks and beverages Gallery B Join with Google Meet: https://meet.google.com/qjf-creb-cta Or dial: (US) +1 929-251-5920 PIN: 622506361# More phone numbers: https://tel.meet/qjf-creb-cta?pin=3771944116534&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "lecture",
+    "start": "2025-10-26T15:00:00-07:00",
+    "end": "2025-10-26T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-10-28-max-air-talk-c5b6253e89",
+    "venue_id": "amoca",
+    "title": "Max AIR Talk",
+    "description": "https://www.amoca.org/events/henderson-artist-talk/ Registrants will be sent an email with the Zoom link the day of the talk. (1hr before, and again when the talk begins) Join with Google Meet: https://meet.google.com/yjy-ouqb-fia Or dial: (US) +1 662-747-1039 PIN: 101639445# More phone numbers: https://tel.meet/yjy-ouqb-fia?pin=4064389913024&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "lecture",
+    "start": "2025-10-28T12:00:00-07:00",
+    "end": "2025-10-28T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
     ],
     "is_free": null,
     "price_text": null,
@@ -1512,6 +2269,29 @@
     "_asserted_type": "exhibition"
   },
   {
+    "id": "amoca-2025-11-12-member-tour-making-in-betweenmata-ortiz-6d628fd06c",
+    "venue_id": "amoca",
+    "title": "Member Tour: Making in Between/Mata Ortiz",
+    "description": "Join us for a tour of AMOCA’s exhibition Making in Between: Indigenous Americans with Exhibitions Manager Pam Aliaga. As time allows, we may also tour In Their Hands: The Evolution of Mata Ortiz Pottery . https://www.amoca.org/events/memberstour-nov25/",
+    "event_type": "tour",
+    "start": "2025-11-12T12:00:00-08:00",
+    "end": "2025-11-12T13:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2025-11-13-giras-en-espaol-a04a447514",
     "venue_id": "moah",
     "title": "Giras en Español",
@@ -1528,6 +2308,29 @@
     "scraped_at": "2026-07-19T02:02:28+00:00",
     "event_types": [
       "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-11-14-introductory-session-530pm-in-studio-00bf7a625f",
+    "venue_id": "amoca",
+    "title": "Introductory Session 5:30pm in Studio",
+    "description": "https://www.amoca.org/studio1/classes/#1-introductory-sessions note: 5:30pm class is also Member Clay Day",
+    "event_type": "workshop",
+    "start": "2025-11-14T17:30:00-08:00",
+    "end": "2025-11-14T18:30:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
     ],
     "is_free": null,
     "price_text": null,
@@ -1625,6 +2428,56 @@
     ]
   },
   {
+    "id": "amoca-2025-11-22-family-activity-storytime-in-the-gallery-be73392532",
+    "venue_id": "amoca",
+    "title": "Family Activity: Storytime in the Gallery",
+    "description": "https://www.amoca.org/events/storytime_family/ - Gallery B check-in (free/paid event) on Humanitix ( procedure is here ) Join us for storytime in the gallery in partnership with the Pomona Public Library! Children will enjoy a story and complementary age-appropriate art activity while viewing AMOCA’s exhibition Making in Between: indigenous Americans . This month we’re reading “We are Water Protectors” by Carole Lindstrom and Michaela Goade. Guests will get to learn more about the importance of water in our lives based on the Ontario Museum’s exhibition “Built on Water” and create a simple, fun art project that kids will love. Registration includes admission to the museum on Saturday, November 22. Storytime in the Gallery is geared towards children ages 2-8, but all are welcome to particip",
+    "event_type": "lecture",
+    "start": "2025-11-22T11:30:00-08:00",
+    "end": "2025-11-22T12:30:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-11-28-black-friglaze-bd7e13eba8",
+    "venue_id": "amoca",
+    "title": "Black FriGlaze!",
+    "description": "https://www.amoca.org/events/black-friglaze-2025/ FriGlaze is 2 sessions, beginning at 11am and 1pm. Check Melissa/Chinelo please confer about how to check people in/get them to the studio.... _________________________ Checking in guests for paid Humantix events (ex: Family Days, Meet Cute) Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered/walk-in attendees, collect payment on LS (Admission - Event) This ticket type has no dollar amount associated with it. For each event, you must enter the ticket price to accept payment. Jenifer is our LS wizard. Check with her if you have Qs about event admission Later that Day Add # of Humanitix attendees to LS (Admissio",
+    "event_type": "other",
+    "start": "2025-11-28T12:30:00-08:00",
+    "end": "2025-11-28T14:30:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2025-11-29-2nd-annual-holiday-market-13109af39c",
     "venue_id": "moah",
     "title": "2nd Annual Holiday Market",
@@ -1690,6 +2543,100 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-12-05-treasure-sale-23c292dffa",
+    "venue_id": "amoca",
+    "title": "Treasure Sale",
+    "description": "https://www.amoca.org/events/treasure_sale_2025/ Member preview 10-11 AM is for current AMOCA members only . Check Member Status list or LS to verify current membership. For non-members: invite them to purchase a membership now, or wait until 11am to enter. Checking in guests for free Humantix events Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered attendees, ask them to to register (w/Humanitix QR Code), and then check them in on Humantix, or to write in their name/email/ # of guests on the sign in sheet Later that Day Add total # of Humantix checked-in AND walk-up attendees to LS (Admission - Event). When you add this attendee #, write the Event name and",
+    "event_type": "other",
+    "start": "2025-12-05T10:00:00-08:00",
+    "end": "2025-12-05T16:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-12-06-treasure-sale-9b6da85cb3",
+    "venue_id": "amoca",
+    "title": "Treasure Sale",
+    "description": "https://www.amoca.org/events/treasure_sale_2025/ Member preview 10-11 AM is for current AMOCA members only . Check Member Status list or LS to verify current membership. For non-members: invite them to purchase a membership now, or wait until 11am to enter. Checking in guests for free Humantix events Upon Arrival Check in registered guests via Humanitix (Manage Event >> Manage Attendees >> Attendees >> and “check in” at Action column (at far right of attendee list) For unregistered attendees, ask them to to register (w/Humanitix QR Code), and then check them in on Humantix, or to write in their name/email/ # of guests on the sign in sheet Later that Day Add total # of Humantix checked-in AND walk-up attendees to LS (Admission - Event). When you add this attendee #, write the Event name and",
+    "event_type": "other",
+    "start": "2025-12-06T10:00:00-08:00",
+    "end": "2025-12-06T16:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-12-07-treasure-sale-97ee57db77",
+    "venue_id": "amoca",
+    "title": "Treasure Sale",
+    "description": "check-in (free event) on Humanitix ( procedure is here ) Event page: https://www.amoca.org/events/treasure_sale_2025/",
+    "event_type": "other",
+    "start": "2025-12-07T11:00:00-08:00",
+    "end": "2025-12-07T16:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-12-07-family-workshop-holiday-ornaments-d6045a939d",
+    "venue_id": "amoca",
+    "title": "Family Workshop: Holiday Ornaments",
+    "description": "https://www.amoca.org/events/holiday_family/ check-in (paid event) on Humanitix ( procedure is here ) Fun for the whole family! AMOCA invites you to join us for a one-day holiday ornament decorating workshop where you’ll craft rustic holiday ornaments. Create unique ornaments with a whimsical, handmade charm with underglaze and ribbon to add to your tree or mantle.",
+    "event_type": "workshop",
+    "start": "2025-12-07T12:00:00-08:00",
+    "end": "2025-12-07T14:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-12-12-armory-community-holiday-decoration-work-4477b9ef6b",
     "venue_id": "armory_pasadena",
     "title": "Armory Community Holiday Decoration Workshop",
@@ -1734,6 +2681,52 @@
     "audience": []
   },
   {
+    "id": "amoca-2025-12-12-mata-ortiz-curatorial-tour-8ae0063853",
+    "venue_id": "amoca",
+    "title": "Mata Ortiz: Curatorial Tour",
+    "description": "Free w/Admission/Pay admission at the door. Front Desk: Check in registered guests on Humanitix Front Desk: Count total # of guests (pre-registered & walk up) on the tour (do not enter tour guests into LS; they're counted separately as admission) https://www.amoca.org/events/mata_ortiz_tour/ Join with Google Meet: https://meet.google.com/vjm-bkfq-ujo Or dial: (US) +1 601-803-2856 PIN: 368331319# More phone numbers: https://tel.meet/vjm-bkfq-ujo?pin=9839047505902&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "tour",
+    "start": "2025-12-12T11:00:00-08:00",
+    "end": "2025-12-12T12:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2025-12-12-introductory-session-530pm-in-studio-85aa886b7b",
+    "venue_id": "amoca",
+    "title": "Introductory Session 5:30pm in Studio",
+    "description": "https://www.amoca.org/studio1/classes/#1-introductory-sessions",
+    "event_type": "workshop",
+    "start": "2025-12-12T17:30:00-08:00",
+    "end": "2025-12-12T18:30:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2025-12-14-stardust-memorias-an-eaton-fire-storytel-c9d670432c",
     "venue_id": "armory_pasadena",
     "title": "Stardust Memorias: An Eaton Fire Storytelling Retreat",
@@ -1757,6 +2750,31 @@
     ]
   },
   {
+    "id": "amoca-2025-12-20-family-activity-storytime-in-the-gallery-cd05839189",
+    "venue_id": "amoca",
+    "title": "Family Activity: Storytime in the Gallery",
+    "description": "https://www.amoca.org/events/storytime_family_dec/ check-in (paid event) on Humanitix ( procedure is here ) Join us for storytime in the gallery in partnership with the Pomona Public Library! Children will enjoy a story and complimentary age-appropriate art activity while viewing AMOCA’s latest gallery exhibit, In their Hands: the Evolution of Mata Ortiz Pottery . This month we’re reading “The Pot that Juan Built” by Nancy Andrews-Goebel and David Diaz. Guests will get to learn about the Mata Ortiz pottery community and create a simple, fun art project that kids will love. Registration includes admission to the museum on Saturday, December 13. Storytime in the Gallery is geared towards children ages 2-8, but all are welcome to participate in the art activity. Caregivers must be present. Th",
+    "event_type": "lecture",
+    "start": "2025-12-20T11:30:00-08:00",
+    "end": "2025-12-20T12:30:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2026-01-10-be-present-hold-space-an-eaton-fire-obse-c8835d2c02",
     "venue_id": "armory_pasadena",
     "title": "Be Present, Hold Space: An Eaton Fire Observance",
@@ -1776,6 +2794,98 @@
       "other"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2026-01-17-air-2026-compulsion-e4ef7046d0",
+    "venue_id": "amoca",
+    "title": "AIR 2026: Compulsion",
+    "description": "AIR 2026: Compulsion features new work by four AMOCA Artists in Residence: Bianca MacPherson, Kristy Moreno, Maxwell Henderson, and Yoon Hwang. The exhibition presents new and current work these artists have made in the AMOCA Ceramics Studio during their time in residency. Compulsion will be on view in Gallery B at AMOCA January 17-May 31, 2026. Learn more about the exhibition: https://www.amoca.org/current-exhibits/compulsion/ AMOCA is open for visitors Fridays, Saturdays, and Sundays from 11am-4pm. Plan your visit.",
+    "event_type": "exhibition",
+    "start": "2026-01-17",
+    "end": "2026-06-01",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-01-17-the-store-of-sturtevants-the-store-of-cl-207beeda6d",
+    "venue_id": "amoca",
+    "title": "The Store of Sturtevant’s The Store of Claes Oldenburg",
+    "description": "Reniel Del Rosario's conceptual exhibition The Store of Sturtevant’s The Store of Claes Oldenburg consists of clay paintings, ceramics, and soft sculptures. The Store will be on view in the Igal & Diane Silber Vault Gallery at AMOCA from January 17–May 17, 2026. Learn more about the exhibition: https://www.amoca.org/in-the-vault/the_store/ AMOCA is open for visitors Fridays, Saturdays, and Sundays from 11am-4pm. Plan your visit.",
+    "event_type": "exhibition",
+    "start": "2026-01-17",
+    "end": "2026-05-18",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-01-17-private-reception-air-compulsion-reniel-05767fc59c",
+    "venue_id": "amoca",
+    "title": "Private Reception AIR: Compulsion & Reniel",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-01-17T15:00:00-08:00",
+    "end": "2026-01-18",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-01-18-opening-reception-air-compulsion-reniel-f4a7a23010",
+    "venue_id": "amoca",
+    "title": "Opening Reception AIR: Compulsion & Reniel",
+    "description": "https://www.amoca.org/events/compulsion_reception/",
+    "event_type": "opening",
+    "start": "2026-01-18",
+    "end": "2026-01-17T18:00:00-08:00",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "las_fotos_project-2026-01-24-fall-2025-culmination-resistencia-y-orgu-b4c8062892",
@@ -2191,6 +3301,29 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-02-13-curator-walk-through-fired-in-revolution-3bc36c15d6",
+    "venue_id": "amoca",
+    "title": "Curator Walk Through- Fired in Revolution",
+    "description": "Pre-registration on Humanitix; pay admission at the door. https://www.amoca.org/events/curator_rev/ Join with Google Meet: https://meet.google.com/ray-fqki-zhn Or dial: (US) +1 475-328-0709 PIN: 288358608# More phone numbers: https://tel.meet/ray-fqki-zhn?pin=1938421261822&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "tour",
+    "start": "2026-02-13T13:00:00-08:00",
+    "end": "2026-02-13T14:00:00-08:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "pacific_asia_museum-2026-02-14-mythical-creatures-the-stories-we-carry-44bdea82e5",
     "venue_id": "pacific_asia_museum",
     "title": "Mythical Creatures: The Stories We Carry",
@@ -2350,6 +3483,52 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-02-22-socal-free-for-all-day-7766432a47",
+    "venue_id": "amoca",
+    "title": "SoCal Free For All Day",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-02-22",
+    "end": "2026-02-23",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-02-22-socal-free-for-all-free-day-661c72f6f6",
+    "venue_id": "amoca",
+    "title": "SoCal Free For All free day",
+    "description": "Enjoy free admission to AMOCA—with advance registration—on Sunday, February 22 as part of SoCal Museums (SCM) ‘s Free-for-All day. AMOCA is open 11 AM-4 PM on February 22; last entry is at 3 PM. https://www.amoca.org/events/socal-free-for-all-2026/",
+    "event_type": "other",
+    "start": "2026-02-22T11:00:00-08:00",
+    "end": "2026-02-23",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "getty_center-2026-02-24-photography-and-the-black-arts-movement-7a9fa2b09b",
     "venue_id": "getty_center",
     "title": "Photography and the Black Arts Movement, 1955–1985",
@@ -2480,6 +3659,29 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "performance"
+  },
+  {
+    "id": "amoca-2026-03-09-mahjong-madness-f13ff23c4f",
+    "venue_id": "amoca",
+    "title": "Mahjong Madness",
+    "description": "https://www.amoca.org/events/mahjong/",
+    "event_type": "other",
+    "start": "2026-03-09T17:30:00-07:00",
+    "end": "2026-03-09T19:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "armory_pasadena-2026-03-13-artnight-pasadena-at-the-armory-8decd762b5",
@@ -2710,6 +3912,31 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-03-28-fired-in-revolution-foam-block-printing-0400a89de0",
+    "venue_id": "amoca",
+    "title": "Fired in Revolution: Foam Block Printing",
+    "description": "https://www.amoca.org/events/foam-block-printing-workshop/ Saturday, March 28, 2026 • 11:30 AM–12:30 PM • In Person • $15/$10 Discover the story of block printing and create your own foam print as we explore our current exhibition, Fired in Revolution ! Learn the basic techniques of relief printing through foam paper for this easy and accessible workshop perfect for the whole family. From drawing your design to carving it into foam, we’ll walk you through how to make fun and one-of-a-kind prints! This workshop is open to all ages and no prior experience is necessary. All materials and tools are provided. We recommend wearing clothes that can get a bit messy! AMOCA’s family workshops are for all ages and everyone is welcome! Both adults and children will be given supplies to participate in",
+    "event_type": "workshop",
+    "start": "2026-03-28T11:30:00-07:00",
+    "end": "2026-03-28T13:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$10–$15",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "lamag-2026-04-02-heavy-metal-5b41ef76dd",
     "venue_id": "lamag",
     "title": "Heavy Metal",
@@ -2865,6 +4092,29 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-04-11-labubootlegs-soft-sculpture-workshop-66d3c6c8f1",
+    "venue_id": "amoca",
+    "title": "Labubootlegs: Soft Sculpture workshop",
+    "description": "https://www.amoca.org/events/labubootlegs-soft-sculpture/ Labubootlegs: Soft Sculpture Workshop w/Reniel Del Rosario Saturday, April 11, 2026 • 12:00–1:30 PM • In Person • $30/$15 Come make your own soft sculptures with artist Reniel Del Rosario. Inspired by work in on view in the Vault exhibition The Store of Sturtevant’s The Store of Claes Oldenburg , you’ll make your own foodie-inspired soft sculpture of a hamburger, pie slice, or ice cream cone. Those experienced in sewing are free to explore new ideas. All materials are included in your ticket cost and no prior experience needed. Everyone will be given enough materials to make one soft sculpture keychain; AMOCA will provide assistance with sewing and assemblage. Our staff will be there to guide you through this sewing extravaganza! Sh",
+    "event_type": "workshop",
+    "start": "2026-04-11T12:00:00-07:00",
+    "end": "2026-04-11T13:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$15–$30",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2026-04-11-nathan-huff-heavy-hope-exhibition-walkth-42bb3c47d9",
     "venue_id": "moah",
     "title": "Nathan Huff: Heavy Hope - Exhibition Walkthrough & Workshop",
@@ -2978,6 +4228,29 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-04-17-galleries-open-114-b71bb518c7",
+    "venue_id": "amoca",
+    "title": "Galleries Open 11-4",
+    "description": "AMOCA is open for visitors! Current Exhibitions: https://www.amoca.org/exhibitions/current/ Admission Information: https://www.amoca.org/visit/",
+    "event_type": "exhibition",
+    "start": "2026-04-17T11:00:00-07:00",
+    "end": "2026-04-19T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "art_practice-2026-04-18-kinship-community-5cc946b779",
     "venue_id": "art_practice",
     "title": "Kinship & Community:",
@@ -3024,6 +4297,54 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
+  },
+  {
+    "id": "amoca-2026-04-18-clay-play-d5fe588ea6",
+    "venue_id": "amoca",
+    "title": "Clay Play",
+    "description": "check-in (paid event) on Humanitix ( procedure is here ) https://www.amoca.org/events/clay_play/ Third Saturdays, 2026 • times vary • In Person • $5 Looking to fill your Saturday with fun, exciting activities that are all about clay? Come to AMOCA the third Saturday of every month for Clay Play, where we will offer educational clay activities, admission to our current exhibitions, and undeniable fun for families and caregivers. AMOCA’s family activities are for all ages and everyone is welcome! Both adults and children who register for Clay Play will be given supplies to participate in the art project. Registration includes admission to the museum the day of the event. AMOCA is open from 11 AM -4 PM on Saturdays Both adults and children registered for the Art Activity will be given supplie",
+    "event_type": "exhibition",
+    "start": "2026-04-18T14:30:00-07:00",
+    "end": "2026-09-19T14:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": "$5",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-04-20-mahjong-madness-2c66369807",
+    "venue_id": "amoca",
+    "title": "Mahjong Madness",
+    "description": "Mahjong Madness is back for April! On Monday, April 20, join the fun and play mahjong, the popular Chinese tile game, at AMOCA! Beth Ann Gerstein will welcome guests and offer a brief introduction to Cultural Revolution ceramic production at 5:30 before game play begins at 6:00pm. https://www.amoca.org/events/mahjong/",
+    "event_type": "other",
+    "start": "2026-04-20T17:30:00-07:00",
+    "end": "2026-04-20T20:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "laband-2026-04-23-opening-reception-4ac75c714b",
@@ -3114,6 +4435,75 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-04-28-virtual-artist-talk-wkristy-moreno-c7d20485ed",
+    "venue_id": "amoca",
+    "title": "Virtual Artist Talk w/Kristy Moreno",
+    "description": "Join us for a virtual artist talk with Artist in Residence Kristy Moreno to celebrate the her residency in the AMOCA Studio. Moreno will share about her practice, past work, and future directions. There will be an opportunity for Q & A following the presentation. Register: https://www.amoca.org/events/artist-talk-kristy-moreno/ Registrants will be sent an email with the Zoom link the day of the talk.",
+    "event_type": "lecture",
+    "start": "2026-04-28T12:00:00-07:00",
+    "end": "2026-04-28T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-04-29-exhibition-tour-fired-in-revolution-2b3e727673",
+    "venue_id": "amoca",
+    "title": "Exhibition Tour - Fired in Revolution",
+    "description": "Join us for a special tour of AMOCA’s exhibition Fired in Revolution: Ceramics from the People’s Republic of China and go behind the scenes with Executive Director Beth Ann Gerstein. Register at https://www.amoca.org/events/fired-rev-member-tour/ . This tour is free for AMOCA members.",
+    "event_type": "tour",
+    "start": "2026-04-29T12:00:00-07:00",
+    "end": "2026-04-29T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-05-02-air-compulsion-artist-panel-de184496d4",
+    "venue_id": "amoca",
+    "title": "AIR Compulsion - artist panel",
+    "description": "Join us in the gallery for a fun and informative panel discussion with artists Bianca McPherson, Kristy Moreno, Maxwell Henderson, and Yoon Hwang, the artists behind the exhibition AIR 2026: Compulsion . This in-person event is free with museum admission. Register: https://www.amoca.org/events/air-2026-artists-in-conversation/",
+    "event_type": "lecture",
+    "start": "2026-05-02T12:00:00-07:00",
+    "end": "2026-05-02T13:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": "Gallery B",
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "pieter-2026-05-03-pieterlates-party-with-devika-1470e12051",
     "venue_id": "pieter",
     "title": "Pieterlates Party!!!! with Devika",
@@ -3157,6 +4547,52 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
+  },
+  {
+    "id": "amoca-2026-05-08-in-the-studio-introductory-hand-building-53bc0269af",
+    "venue_id": "amoca",
+    "title": "In the Studio - Introductory Hand Building: Garden Gnomes",
+    "description": "Introductory Clay Class: Garden Gnomes w/Kat Hopkins Friday, May 8, 2026 • 5:30-7:30 PM • In Person • $75 The perfect way to get your hands dirty, relax, and have fun! In this evening introductory class, you’ll learn the basics of hand building, using air dry clay. You’ll craft your own whimsical garden gnome, perfect for your patio, desk, or bookshelf. Register: https://events.humanitix.com/intro-clay-gnomes-5-8-26",
+    "event_type": "workshop",
+    "start": "2026-05-08T17:30:00-07:00",
+    "end": "2026-05-08T19:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-05-08-in-the-studio-introductory-clay-class-wh-10a47e513f",
+    "venue_id": "amoca",
+    "title": "In the Studio - Introductory Clay Class: Wheel Throwing",
+    "description": "Introductory Clay Class: Wheel Throwing in the Studio Friday, May 8, 2026 • 7:30-8:30 PM • In person • $75 The perfect way to get your hands dirty, relax, and have fun! In this one-hour introductory class, you’ll learn the basics of throwing on the potter’s wheel. Advance registration required. Register: https://www.amoca.org/studio1/classes/#1-introductory-sessions",
+    "event_type": "workshop",
+    "start": "2026-05-08T19:30:00-07:00",
+    "end": "2026-05-08T20:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "redcat-2026-05-09-redskyfalls-rplica-61st-la-biennale-alex-6cae961847",
@@ -3314,6 +4750,54 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-05-16-high-school-exhibition-virtual-premiere-1402de9735",
+    "venue_id": "amoca",
+    "title": "High School Exhibition virtual premiere",
+    "description": "AMOCA will premiere a pre-recorded awards ceremony, including a presentation of the entire 2026 High School Ceramics Exhibition, on our YouTube channel at 10 AM PDT on Saturday, May 16, 2026. https://www.amoca.org/education/annual-high-school-exhibition/ Humanitix registered viewers will be emailed a direct link to view the Virtual Premiere the morning of Saturday, May 16. AMOCA's YouTube channel is https://www.youtube.com/amocamuseum",
+    "event_type": "exhibition",
+    "start": "2026-05-16T10:00:00-07:00",
+    "end": "2026-05-16T11:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-05-16-international-museum-day-637551857b",
+    "venue_id": "amoca",
+    "title": "International Museum Day",
+    "description": "Enjoy free admission to AMOCA—with advance registration—on Saturday, May 16 as part of International Museum Day . AMOCA is open 11 AM-4 PM on May 16; last entry is at 3 PM. Register: https://www.amoca.org/events/international-museum-day-2026/",
+    "event_type": "other",
+    "start": "2026-05-16T11:00:00-07:00",
+    "end": "2026-05-16T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2026-05-16-opening-celebration-new-exhibitions-at-m-c251e0d2f8",
     "venue_id": "moah",
     "title": "Opening Celebration: New Exhibitions at MOAH",
@@ -3382,6 +4866,33 @@
       "exhibition"
     ],
     "audience": []
+  },
+  {
+    "id": "amoca-2026-05-17-family-day-make-your-mark-8017575f89",
+    "venue_id": "amoca",
+    "title": "Family Day: Make Your Mark",
+    "description": "Family Day: Make Your Mark Sunday, May 17, 2026 • 11:00 AM–2:00 PM • In Person • $5 per person or $15 for 4 people Bring the whole family to AMOCA for an inspiring day of hands-on art activities, gallery exploration, and interactive experiences designed for all ages. Walk-ups are welcome as space allows, but pre-registration is highly encouraged. Register: https://www.amoca.org/events/family-day-make-your-mark/ AMOCA’s Family Day makes ceramic art accessible, playful, and meaningful — giving kids and grown-ups the chance to create together, discover new artists, and spark big imaginations. Make your own “dessert” using air-dry clay Learn to screenprint and revamp your wardrobe with original designs by AMOCA artists Hands-on photo archiving workshop for creative expression. Tours of our pri",
+    "event_type": "workshop",
+    "start": "2026-05-17T11:00:00-07:00",
+    "end": "2026-05-17T14:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop",
+      "tour",
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": "$5–$15",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
   },
   {
     "id": "las_fotos_project-2026-05-22-makerspace-study-break-0913edfa62",
@@ -3474,6 +4985,29 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
+  },
+  {
+    "id": "amoca-2026-05-27-exhibition-tour-air-compulsion-ef8ea86867",
+    "venue_id": "amoca",
+    "title": "Exhibition Tour: AIR Compulsion",
+    "description": "Join us for a tour of AMOCA’s exhibition AIR 2026: Compulsion and go behind the scenes with Exhibitions Manager Pam Aliaga. Register: https://www.amoca.org/events/may-2026-compulsion-tour/ Free for members, advance registration required. This exhibition features new work by four AMOCA Artists in Residence: Bianca MacPherson, Kristy Moreno, Maxwell Henderson, and Yoon Hwang. MacPherson works exclusively in black and white clay, engaging with her personal and collective histories to confront racial hierarchies and the constraints of identity. Moreno’s figurative work reflects the influences of her community, drawing inspiration from her background in painting and illustration. Henderson experiments with form and glaze to evoke both calm and chaos within his work. Hwang sculpts pieces reminis",
+    "event_type": "tour",
+    "start": "2026-05-27T12:00:00-07:00",
+    "end": "2026-05-27T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "the_broad-2026-05-28-yoko-ono-music-of-the-mind-free-thursday-d225116958",
@@ -5205,6 +6739,29 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-06-13-opening-reception-7c063fb6b1",
+    "venue_id": "amoca",
+    "title": "Opening Reception",
+    "description": "Join us for the opening reception for Tōgei: Contemporary Japanese Ceramics , exploring Japan’s ceramic tradition and its evolution from functional wares to modern artistic expression. Also opening tonight will be Stop, Drop, + Pose: Clay in Motion , tracing the evolution of clay as a time-based medium. Admission to the event and Museum galleries is complimentary with advance registration. Light refreshments will be served. Register: https://www.amoca.org/events/opening-reception-for-togei/",
+    "event_type": "opening",
+    "start": "2026-06-13T16:00:00-07:00",
+    "end": "2026-06-13T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "getty_center-2026-06-13-off-the-405-hunx-and-his-punx-e2e4ac6822",
     "venue_id": "getty_center",
     "title": "Off the 405: Hunx and His Punx",
@@ -6759,6 +8316,30 @@
     "audience": []
   },
   {
+    "id": "amoca-2026-06-27-summer-studio-sale-050d083be8",
+    "venue_id": "amoca",
+    "title": "Summer Studio Sale",
+    "description": "Discover one-of-a-kind art pieces created by talented local artists! From functional pottery to stunning decorative pieces, you’ll find unique, handcrafted art you won’t see anywhere else. No registration required, just stop by the studio between 1 and 5 pm! The Ceramics Studio entrance is on Monterey Ave., between Garey and Main. Free parking is available in the AMOCA Museum lot; enter the parking lot on Center Street. What to Expect: A wide selection of original artwork for sale Meet local artists and learn about their creative process Explore our spacious studio and see where the magic happens Live demonstrations throughout the event Come for the art, stay for the experience! Whether you’re a collector, a beginner, or just curious, this is the perfect chance to connect with the local ar",
+    "event_type": "workshop",
+    "start": "2026-06-27T13:00:00-07:00",
+    "end": "2026-06-28",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
     "id": "academy_museum-2026-06-27-i-confess-in-35mm-with-guillermo-del-tor-91f37b9a4f",
     "venue_id": "academy_museum",
     "title": "I Confess in 35mm with Guillermo del Toro",
@@ -6801,6 +8382,31 @@
     "_default_type": "screening",
     "_asserted_type": "other",
     "audience": []
+  },
+  {
+    "id": "amoca-2026-06-27-opening-reception-a7d4ec72a7",
+    "venue_id": "amoca",
+    "title": "Opening Reception",
+    "description": "Join us for the opening reception for Fractured Foundations: 250 Years of American History , an exhibition coinciding with the 250th anniversary of the founding of the United States. Also opening tonight is in-person component of the 2026 High School Ceramics Exhibition , featuring selected winners and finalists from each grade level category. Admission to the event and Museum galleries is complimentary with advance registration. Light refreshments will be served. Register: https://www.amoca.org/events/opening-reception-fractured-foundations/",
+    "event_type": "opening",
+    "start": "2026-06-27T16:00:00-07:00",
+    "end": "2026-06-27T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
   },
   {
     "id": "academy_museum-2026-06-27-rock-and-reel-with-richard-gibbs-3e271a3ca0",
@@ -7406,6 +9012,29 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-07-04-fourth-of-july-holiday-museum-closed-21c4c44680",
+    "venue_id": "amoca",
+    "title": "Fourth of July Holiday - Museum closed",
+    "description": "We're closed today for the holiday, but we're open Friday, July 3 and Sunday, July 5, 11am-4pm. See you then!",
+    "event_type": "other",
+    "start": "2026-07-04",
+    "end": "2026-07-05",
+    "all_day": true,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "academy_museum-2026-07-04-jaws-in-4k-bd3fe9f04e",
     "venue_id": "academy_museum",
     "title": "Jaws in 4K",
@@ -7981,6 +9610,31 @@
     "audience": [
       "family"
     ]
+  },
+  {
+    "id": "amoca-2026-07-11-mochi-making-party-5e7ee6effe",
+    "venue_id": "amoca",
+    "title": "Mochi Making Party!",
+    "description": "Mochi Making Party @ AMOCA Saturday, July 11, 2026 • 1:00–2:30 PM • In Person • $30/$20 Join us for a step-by-step workshop to learn the process of making mochi, a traditional Japanese dessert made from glutinous rice flour that is pounded and shaped into soft, sticky treats. Participants will learn about the cultural significance of mochi in Japan, explore its unique texture and flavor, and discover different ways it can be filled and enjoyed. This event is perfect for those with no experience and those who have been wanting to learn. All materials will be provided. This event is geared toward adults 16 and over; youth may attend if accompanied by a paying adult. To help us prepare workshop materials, pre-registration is required . Be sure to purchase your ticket by noon on Friday, July 1",
+    "event_type": "workshop",
+    "start": "2026-07-11T13:00:00-07:00",
+    "end": "2026-07-11T14:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$20–$30",
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
   },
   {
     "id": "wende-2026-07-11-frameworks-maral-annapurna-kumar-rearran-f247635c68",
@@ -9688,6 +11342,32 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-07-25-parasol-painting-amoca-dcf80d68a9",
+    "venue_id": "amoca",
+    "title": "Parasol Painting @ AMOCA",
+    "description": "Parasol Painting @ AMOCA Saturday, July 25, 2026 • 12:00–1:00 PM • In Person • $20/$15 Get the chance to decorate your very own parasol at AMOCA. Just in time for summer attendees will be able to paint a paper parasol–perfect for strolling in the sun–and visit the three exhibits currently on view: Stop, Drop, and Pose: Clay in Motion , Fractured Foundations , and Togei: Contemporary Japanese Ceramics . Materials will be provided and no experience is required; this is an opportunity to relax, paint, and get creative! Register at https://www.amoca.org/events/parasol-painting-amoca/ Registration includes admission to the museum Saturday, July 25 so you might want to plan to arrive early or stay late to explore the museum. AMOCA is open from 11 AM -4 PM on Saturdays. Children and youth under 1",
+    "event_type": "exhibition",
+    "start": "2026-07-25T12:00:00-07:00",
+    "end": "2026-07-25T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": "$15–$20",
+    "audience": [
+      "family",
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "esmoa-2026-07-25-esmoa-soundwalk-with-artist-brittney-fra-dd377df167",
     "venue_id": "esmoa",
     "title": "ESMoA Soundwalk with artist Brittney Franco",
@@ -10018,6 +11698,53 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-07-26-translation-workshop-poetry-reading-with-ef405d3fdb",
+    "venue_id": "amoca",
+    "title": "Translation Workshop & Poetry Reading with Naoko Fujimoto",
+    "description": "Translation Workshop & Poetry Reading with Naoko Fujimoto Sunday, July 26, 2026 • 2:00–4:00 PM • In Person • $20/$15 Join us at the museum for an afternoon of poetry with translator Naoko Fujimoto! Fujimoto's latest book of Women: 20 Japanese Female Poets / 20 Waka Poems is a collection of translations of Japanese waka-poems from the seventh century to the twelfth century, featuring twenty female poets from this period, when Japanese women’s literature flourished. This book includes poems by famous writers from the era, such as Sei Shonagon ( The Pillow Book ) and Murasaki Shikibu ( The Tale of Genji ), and introduces some lesser-known female poets as well. Waka compacts much information in a short form: words with double meanings, unfamiliar phrases, habits foreign to non-Japanese speaker",
+    "event_type": "workshop",
+    "start": "2026-07-26T14:00:00-07:00",
+    "end": "2026-07-26T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": "$15–$20",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-07-26-poetry-reading-with-naoko-fujimoto-e07321383a",
+    "venue_id": "amoca",
+    "title": "Poetry Reading with Naoko Fujimoto",
+    "description": "Poetry Reading with Naoko Fujimoto Sunday, July 26, 2026 • 3:00–4:00 PM • In Person • Free w/ admission Join us at the museum for an afternoon of poetry with translator Naoko Fujimoto! Fujimoto’s latest book of Women: 20 Japanese Female Poets / 20 Waka Poems is a collection of translations of Japanese waka-poems from the seventh century to the twelfth century, featuring twenty female poets from this period, when Japanese women’s literature flourished. This book includes poems by famous writers from the era, such as Sei Shonagon ( The Pillow Book ) and Murasaki Shikibu ( The Tale of Genji ), and introduces some lesser-known female poets as well. At 3pm, join us in the gallery for a poetry reading. With Tōgei: Contemporary Japanese Ceramics as her backdrop, Fujimoto will read from her collec",
+    "event_type": "lecture",
+    "start": "2026-07-26T15:00:00-07:00",
+    "end": "2026-07-26T16:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "getty_center-2026-07-26-screening-acting-like-women-2017dceb1f",
     "venue_id": "getty_center",
     "title": "Screening: *Acting Like Women*",
@@ -10087,6 +11814,30 @@
     "_default_type": "other",
     "_run": true,
     "recurrence_note": "Runs Jul 27 – Aug 12"
+  },
+  {
+    "id": "amoca-2026-07-28-virtual-air-talk-with-bianca-macpherson-580a2e6977",
+    "venue_id": "amoca",
+    "title": "Virtual AIR Talk with Bianca MacPherson",
+    "description": "Join us for a virtual artist talk with Artist in Residence Bianca MacPherson to celebrate the culmination of her residency in the AMOCA Studio. MacPherson will share about her recent work and future directions. There will be an opportunity for Q & A following the presentation. RSVP at https://www.amoca.org/events/closing-artist-talk-macpherson/ . If you prefer, you may also register by emailing communications@amoca.org. Registrants will be sent an email with the Zoom link the day of the talk.",
+    "event_type": "closing",
+    "start": "2026-07-28T12:00:00-07:00",
+    "end": "2026-07-28T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "closing",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "getty_center-2026-07-28-curators-tour-odilon-redon-otherworldly-45cb00317d",
@@ -12140,6 +13891,29 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-08-14-studio-class-introductory-clay-class-c5a22b27a4",
+    "venue_id": "amoca",
+    "title": "Studio Class: Introductory Clay Class",
+    "description": "Introductory sessions, offered monthly, are the perfect way to get your hands dirty, relax, and have fun! Introductory sessions last 60 minutes and cost $75. This fee includes everything needed for the class (including clay, glaze, and firing services). Introductory sessions are for adults ages 18 and over (students 16+ may attend when accompanied by a paying adult). Along with your class comes complimentary admission to the Museum’s galleries – don’t miss the chance to explore one of the largest collections of ceramic art in the United States! Learn more and register at https://www.amoca.org/studio1/classes/#1-introductory-sessions",
+    "event_type": "workshop",
+    "start": "2026-08-14T19:30:00-07:00",
+    "end": "2026-08-14T20:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "human_resources-2026-08-14-hail-the-new-puritan-3f490e3c80",
     "venue_id": "human_resources",
     "title": "Hail The New Puritan",
@@ -14100,6 +15874,30 @@
     "_default_type": "screening"
   },
   {
+    "id": "amoca-2026-08-29-curator-walkthrough-tgei-contemporary-ja-9e28a9ff79",
+    "venue_id": "amoca",
+    "title": "Curator Walk-Through: Tōgei: Contemporary Japanese Ceramics",
+    "description": "Curator Walk-Through: Tōgei: Contemporary Japanese Ceramics Saturday, August 29, 2026 • 12:00–1:00 PM • In Person Join curator Hollis Goodal on a walk-through of Tōgei: Contemporary Japanese Ceramics . Goodall will talk about the exhibition, share details about the collection, and discuss how the concept came to a realization. Tōgei explores Japan’s ceramic tradition and its evolution from functional wares to modern artistic expression. Japan’s ceramic traditions are among the most revered in the world, shaped over centuries by regional kilns, tea culture, ikebana flower arranging, devotional practices, and a profound respect for material and process. Some of the artists engage directly with functional wares such as food serving bowls, tea bowls, and flower vessels, while others challenge",
+    "event_type": "lecture",
+    "start": "2026-08-29T12:00:00-07:00",
+    "end": "2026-08-29T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture",
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2026-08-29-book-signing-with-eugene-rodriguez-conve-5f1facb3f1",
     "venue_id": "moah",
     "title": "Book Signing with Eugene Rodriguez - Conversando con Pedro Guzman",
@@ -14116,6 +15914,29 @@
     "scraped_at": "2026-08-29T13:03:01+00:00",
     "event_types": [
       "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-08-29-build-brew-mug-making-workshop-4c5ebf446b",
+    "venue_id": "amoca",
+    "title": "Build & Brew: Mug Making Workshop",
+    "description": "Build and Brew: Mug Making workshop with Pull-Up Coffee In partnership with Pull-Up join us for a mug making mixer and enjoy community, creativity, and caffeine! More info/to register: https://www.amoca.org/events/build-and-brew/",
+    "event_type": "workshop",
+    "start": "2026-08-29T13:00:00-07:00",
+    "end": "2026-08-29T15:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
     ],
     "is_free": null,
     "price_text": null,
@@ -14753,6 +16574,29 @@
     "location_override": "Getty Center",
     "source": "getty.edu",
     "scraped_at": "2026-09-01T12:26:26+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-09-01-virtual-lecture-forming-narratives-aroun-a0128c99ba",
+    "venue_id": "amoca",
+    "title": "Virtual Lecture: Forming Narratives around Clay: Perspectives from Hollis Goodall and Kaoru Kuribayashi",
+    "description": "Join curators Hollis Goodall and Kaoru Kuribayashi as they introduce and discuss their respective exhibitions at American Museum of Ceramic Art (AMOCA) and The Japan Foundation, Los Angeles (JFLA), during a special online conversation. Tōgei: Contemporary Japanese Ceramics , curated by Goodall for AMOCA, features 106 works presented categorically in zones dedicated to modern precursors, utensils for tea, sake, dining, incense, vase forms, and then non-utilitarian boxes and pure sculpture. Each zone explicates the aesthetic range from traditional, wabi-sabi style, to contemporary interpretations of utilitarian form, made expressive through form, gesture, and creative reengineering of pre-modern glazes. Kinetic Stillness: Sculptural Ceramics , curated by Kuribayashi for JFLA, brings together",
+    "event_type": "lecture",
+    "start": "2026-09-01T19:00:00-07:00",
+    "end": "2026-09-01T20:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
     "event_types": [
       "lecture"
     ],
@@ -16406,6 +18250,29 @@
     "_default_type": "screening"
   },
   {
+    "id": "amoca-2026-09-11-studio-class-introductory-session-f00564db07",
+    "venue_id": "amoca",
+    "title": "Studio Class: Introductory Session",
+    "description": "Introductory sessions, offered monthly, are the perfect way to get your hands dirty, relax, and have fun! Learn the basics of throwing on the potter’s wheel. If you successfully create a bowl, staff will glaze and fire it after the class is completed—all included in the price of the class. If you’d like to take the piece home with you, you can come back and pick it up. Introductory sessions last 60 minutes and cost $75. This fee includes everything needed for the class (including clay, glaze, and firing services). Introductory sessions are for adults ages 18 and over (students 16+ may attend when accompanied by a paying adult). Along with your class comes complimentary admission to the Museum’s galleries – don’t miss the chance to explore one of the largest collections of ceramic art in th",
+    "event_type": "workshop",
+    "start": "2026-09-11T17:30:00-07:00",
+    "end": "2026-09-11T18:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "lacma-2026-09-11-jazz-at-lacma-la-jazz-treasure-award-15a5760cfe",
     "venue_id": "lacma",
     "title": "Jazz at LACMA: L.A. Jazz Treasure Award",
@@ -16496,6 +18363,29 @@
     ],
     "is_free": true,
     "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-09-11-studio-class-wheel-wine-introductory-cla-6784f20796",
+    "venue_id": "amoca",
+    "title": "Studio Class: Wheel & Wine Introductory Clay Class",
+    "description": "Friday, September 11, 2026 • Wheel & Wine Introductory Class • 7:30-9:00 PM • $95 The perfect way to get your hands dirty, relax, and have fun! Enjoy local wine and savory snacks while you learn the basics of throwing on the potter’s wheel. For those who successfully create a cup or bowl, staff will glaze and fire your work after the class is completed—all included in the price of the class. Your class fee includes everything you’ll need: instruction, clay, wine or a non-alcoholic beverage, selected snacks, and glaze and firing services. Each student also receives a guest pass to AMOCA; when you come back to pick up your fired work, take some time to explore our current exhibitions ! Note: Wheel & Wine classes are for adults ages 21 and over only. Learn more & register: https://www.amoca.o",
+    "event_type": "workshop",
+    "start": "2026-09-11T19:30:00-07:00",
+    "end": "2026-09-11T21:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$95",
     "audience": [],
     "_default_type": "other"
   },
@@ -17500,6 +19390,29 @@
     "scraped_at": "2026-09-14T13:45:42+00:00",
     "event_types": [
       "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-09-15-virtual-artist-talk-wliz-stringer-da4681398a",
+    "venue_id": "amoca",
+    "title": "Virtual Artist Talk w/Liz Stringer",
+    "description": "Virtual Artist Talk with Liz Stringer Tuesday, September 15, 2026 • 12 –1 PM (PST) • Online Join us for a virtual artist talk with Artist in Residence Liz Stringer to celebrate her residency in the AMOCA Studio. Stringer will share about her past practice, recent work, and future directions. There will be an opportunity for Q & A following the presentation. Event RSVP RSVP at https://www.amoca.org/events/artist-talk-with-liz-stringer/ Registrants will be sent an email with the Zoom link the day of the talk.",
+    "event_type": "lecture",
+    "start": "2026-09-15T12:00:00-07:00",
+    "end": "2026-09-15T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
     ],
     "is_free": null,
     "price_text": null,
@@ -19465,6 +21378,29 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-09-20-tea-ceremony-whisking-workshop-with-rebe-926f5cfdde",
+    "venue_id": "amoca",
+    "title": "Tea Ceremony + Whisking Workshop with Rebecca Corbett",
+    "description": "Tea Ceremony + Whisking Workshop with Rebecca Corbett Sunday, September 20, 2026 • 12:00–1:00 PM • In Person • $30 Want to learn more about the Japanese tea ceremony and matcha? Join scholars Dr. Rebecca Corbett and Dr. Michelle Liu Carriger for an afternoon exploring Japanese tea culture at AMOCA. During this one-hour event, Corbett and Carriger will share their expertise as scholars and practitioners of chanoyu (Japanese tea ceremony), guiding participants through preparing their own bowl of matcha while introducing the history and practice of the Japanese tea ceremony. Every participant will prepare their own bowl of tea and enjoy a traditional sweet alongside it. Learn more and register at https://www.amoca.org/events/tea-ceremony-with-rebecca-corbett/",
+    "event_type": "workshop",
+    "start": "2026-09-20T12:00:00-07:00",
+    "end": "2026-09-20T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$30",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "lacma-2026-09-20-sketch-the-view-in-the-david-geffen-gall-3d1d4e9c7b",
     "venue_id": "lacma",
     "title": "Sketch the View in the David Geffen Galleries",
@@ -20069,6 +22005,29 @@
     "scraped_at": "2026-09-23T12:38:52+00:00",
     "event_types": [
       "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-09-23-exhibition-tour-fractured-foundations-87dd0be185",
+    "venue_id": "amoca",
+    "title": "Exhibition Tour - Fractured Foundations",
+    "description": "Join us for a tour of AMOCA’s exhibition Fractured Foundations: 250 Years of American History with Exhibitions Manager Pam Aliaga. Fractured Foundations coincides with the 250 th anniversary of the founding of the United States. The exhibition asks what it means to celebrate a nation whose history is inseparable from contradiction. Art may not pass legislation or overturn court decisions, but it does make injustices visible. By naming what has been suppressed, honoring those who have resisted, and placing present-day threats within their historical context, these works call on viewers to move from witness to participant by engaging, advocating, and holding American democracy to account for all its people. During the tour, you’ll go behind the scenes and learn about how this exciting exhibi",
+    "event_type": "tour",
+    "start": "2026-09-23T12:00:00-07:00",
+    "end": "2026-09-23T13:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "tour"
     ],
     "is_free": null,
     "price_text": null,
@@ -21237,6 +23196,29 @@
     "scraped_at": "2026-09-26T12:07:42+00:00",
     "event_types": [
       "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-09-26-opening-reception-a-change-in-our-nature-3e94f43204",
+    "venue_id": "amoca",
+    "title": "Opening Reception: A Change in Our Nature",
+    "description": "Join us for the opening reception for A Change in Our Nature , a new exhibition opening in AMOCA’s Robert and Colette Wilson Gallery. Through ceramic works produced at the Villeroy & Boch factory in Mettlach, A Change in Our Nature traces the evolving conceptualization of nature amid industrialization. Admission to the event and Museum galleries is complimentary with advance registration. Light refreshments will be served. Learn more and register: https://www.amoca.org/events/opening-reception-a-change-nature/ Join with Google Meet: https://meet.google.com/oez-vsoo-jwc Or dial: (US) +1 781-514-9227 PIN: 195833011# More phone numbers: https://tel.meet/oez-vsoo-jwc?pin=9845600937247&hs=7 Learn more about Meet at: https://support.google.com/a/users/answer/9282720",
+    "event_type": "opening",
+    "start": "2026-09-26T16:00:00-07:00",
+    "end": "2026-09-26T18:00:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "opening"
     ],
     "is_free": null,
     "price_text": null,
@@ -22938,6 +24920,31 @@
     "_default_type": "screening"
   },
   {
+    "id": "amoca-2026-10-03-family-workshop-pinch-pot-pumpkins-1af4f7e4f5",
+    "venue_id": "amoca",
+    "title": "Family Workshop: Pinch Pot Pumpkins",
+    "description": "Family Workshop: Pinch Pot Pumpkins Saturday, October 3, 2026 • 11:30 AM–1:30 PM • In Person • $55/$40 Fall is fast approaching and so is the spooky season! Join AMOCA this October to build your own ceramic pumpkin to last you through many Halloweens to come! In this one-day pottery class, you’ll learn how to hand-build and decorate your very own pumpkin, perfectly sized to hold a tea light and glow throughout the month. Guided by a friendly instructor, you’ll shape your jack-o’-lantern from clay, carve out your design, and give it a personality that’s uniquely yours. You’ll add holes, patterns, and designs that, when lit from within, cast the most beautiful warm glow. Finish up your pumpkin with a variety of colorful glazes and our team will handle the rest. This class is perfect for begi",
+    "event_type": "workshop",
+    "start": "2026-10-03T11:30:00-07:00",
+    "end": "2026-10-03T13:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$40–$55",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "ica_la-2026-10-03-artistinresidence-fall-open-studios-e0fc493f18",
     "venue_id": "ica_la",
     "title": "Artist-in-Residence Fall Open Studios",
@@ -23123,6 +25130,29 @@
     ],
     "is_free": null,
     "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-10-03-skat-game-party-amoca-f6721039a2",
+    "venue_id": "amoca",
+    "title": "Skat Game Party @ AMOCA",
+    "description": "Skat Game Party @ AMOCA Saturday, October 3, 2026 • 3:00–4:30 PM • In Person • $15/$10 End Oktoberfest strong this year and come learn to play Skat, the national card game of Germany! Skat is a beloved three player trick-taking card game, widely played across German speaking regions. At AMOCA, you’ll enjoy a brewski and friendly competition, and take a guided peek into the just-opened Villeroy & Boch Exhibition . Through ceramic works produced at the Villeroy & Boch factory in Mettlach, A Change in Our Nature traces the evolving conceptualization of nature amid industrialization. The Villeroy & Boch company was founded in 1836 through a merger between two competing ceramics factories owned by Nicolas Villeroy (1759-1843) and Jean François Boch (1782-1858). The company went on to pioneer th",
+    "event_type": "exhibition",
+    "start": "2026-10-03T15:00:00-07:00",
+    "end": "2026-10-03T16:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": "$10–$15",
     "audience": [],
     "_default_type": "other"
   },
@@ -24343,6 +26373,29 @@
     ],
     "is_free": null,
     "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "amoca-2026-10-09-studio-class-introductory-session-0ea16d5a71",
+    "venue_id": "amoca",
+    "title": "Studio Class: Introductory Session",
+    "description": "Introductory sessions, offered monthly, are the perfect way to get your hands dirty, relax, and have fun! Learn the basics of throwing on the potter’s wheel. If you successfully create a bowl, staff will glaze and fire it after the class is completed—all included in the price of the class. If you’d like to take the piece home with you, you can come back and pick it up. Introductory sessions last 60 minutes and cost $75. This fee includes everything needed for the class (including clay, glaze, and firing services). Introductory sessions are for adults ages 18 and over (students 16+ may attend when accompanied by a paying adult). Along with your class comes complimentary admission to the Museum’s galleries – don’t miss the chance to explore one of the largest collections of ceramic art in th",
+    "event_type": "workshop",
+    "start": "2026-10-09T17:30:00-07:00",
+    "end": "2026-10-09T18:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": "$75",
     "audience": [],
     "_default_type": "other"
   },
@@ -28941,6 +30994,29 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-10-24-fractured-foundations-artists-in-convers-c403b9ea37",
+    "venue_id": "amoca",
+    "title": "Fractured Foundations: Artists in Conversation",
+    "description": "Fractured Foundations : Artists in Conversation Saturday, October 24, 2026 • 12:00–1:30 PM • In Person • Free w/Admission Join us in the gallery for a panel discussion with artists Akinsanya Kambon and Bianca MacPherson, two artists whose work is included in Fractured Foundations: 250 Years of American History. This panel, which will take place in the exhibition gallery, will be hosted by Exhibition Manager Pam Aliaga. Both artists will talk about their narratives of Black Diaspora and how their work resonates within history and contemporary life. Learn more and reserve your ticket at https://www.amoca.org/events/fractured-foundations-artists-in-conversation/",
+    "event_type": "lecture",
+    "start": "2026-10-24T12:00:00-07:00",
+    "end": "2026-10-24T13:30:00-07:00",
+    "all_day": false,
+    "url": null,
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-05T15:15:55+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "la_plaza-2026-10-24-urban-milpa-garden-series-5-preparing-fo-c73032150a",
     "venue_id": "la_plaza",
     "title": "Urban Milpa – Garden Series #5 Preparing for Harvest | SOLD OUT",
@@ -31459,6 +33535,53 @@
     "_default_type": "other"
   },
   {
+    "id": "huntington-2026-11-04-huntington-u-laura-aguilars-lens-aa185357fa",
+    "venue_id": "huntington",
+    "title": "Huntington U: Laura Aguilar’s Lens",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/huntington-u-laura-aguilars-lens",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2F2026-03%2F43ctbiyq.png%3Fh%3Db832c0f5%26itok%3Dh0xZf4cN&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-29T13:59:42+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-04-wednesday-night-poetry-workshop-with-roo-27f92c20d8",
+    "venue_id": "beyond_baroque",
+    "title": "Wednesday Night Poetry Workshop with Rooja Mohassessy",
+    "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
+    "event_type": "workshop",
+    "start": "2026-11-04",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/wednesday-night-poetry-workshop8-17-dd9xz-mztaz-ybd4y-gpmej-55jw5-6t324-4tafx-xkzd6-4jwfx-a3t9b-ag9hr",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1785369848490-QVZMWQH30W2370CU9IJ0/IG_rooja.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-05T03:44:10+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "hammer-2026-11-04-lunchtime-art-talk-on-mavis-pusey-1c52dd80b7",
     "venue_id": "hammer",
     "title": "Lunchtime Art Talk on Mavis Pusey",
@@ -31527,6 +33650,75 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "human_resources-2026-11-04-normal-dreams-8211-liana-zhenai-astrid-s-7a3f2901e9",
+    "venue_id": "human_resources",
+    "title": "Normal Dreams – Liana Zhen-Ai + Astrid Sonne",
+    "description": "tickets Pretty but Wicked presents Normal Dreams , a new performance by dancer Liana Zhen-Ai and musician Astrid Sonne. First presented as a part of the Pairings series at La Mama Experimental Theatre Club in New York, curated and produced by Cameron Sczempka, now brought to London via Club Cheek and Qu Junktions. Expect never heard before songs, movement, noise, props and a video call from the big apple. doors at 7 and performance at 8 About Liana Zhen-Ai Liana Zhen-ai is a Brooklyn/London-based dancer and interdisciplinary artist from Los Angeles. She has performed as a soloist with choreographers Holly Blakey, Andrea Miller, and Akira Uchida. Her dancing has been featured in Vogue US, NOWNESS, and Face Magazine, and in venues including MoMA, Lincoln Center, Southbank Centre, and Théâtre",
+    "event_type": "performance",
+    "start": "2026-11-04T19:00:00-08:00",
+    "end": "2026-11-04T21:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.h-r.la/event/normal-dreams/",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/Still-Photo-Normal-Dreams-scaled.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "humanresourcesla.com",
+    "scraped_at": "2026-11-05T03:43:32+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-05-my-dad-is-100-years-old-with-rome-open-c-52bdbae8a2",
+    "venue_id": "academy_museum",
+    "title": "My Dad Is 100 Years Old with Rome, Open City presented by Isabella Rossellini",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-04T19:30:00-08:00",
+    "end": "2026-11-04T21:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/my-dad-is-100-years-old-with-rome-open-city-019fce8c-8328-1ce4-64d2-ca0302f3fadb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5xbbRiSqmplIeHQkYt6eRM/f1594d939bfe87899edda43e94ca7d1b/mydadis100_romeopencity.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-05T03:43:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-11-05-memories-of-murder-in-4k-9a8cc85816",
+    "venue_id": "academy_museum",
+    "title": "Memories of Murder (살인의 추억) in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-04T20:00:00-08:00",
+    "end": "2026-11-04T21:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/memories-of-murder-019fce98-88b8-c32d-e44b-c505ede880cb",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2e9NIh3c89BV1U1LPpyFYA/b3eb57ee21e44a1772751d118d4ac1c0/Nov4_MEMORIES_OF_MURDER_Park1Neon.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-05T03:43:44+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   },
   {
     "id": "molaa-2026-11-05-molaa-food-pantry-43d3fe2a45",

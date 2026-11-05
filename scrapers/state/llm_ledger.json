@@ -41,7 +41,7 @@
    "listing:mona": 3,
    "listing:murmurs": 2,
    "listing:natural_history_museum": 5,
-   "listing:navel": 2,
+   "listing:navel": 3,
    "listing:norton_simon": 1,
    "listing:pacific_asia_museum": 1,
    "listing:plaza_de_la_raza": 2,
@@ -55,11 +55,11 @@
    "listing:vincent_price": 2,
    "listing:watts_towers": 1,
    "listing:weisman_pepperdine": 2,
-   "recover": 12
+   "recover": 19
   },
-  "calls": 125,
-  "input_tokens": 479331,
-  "output_tokens": 60888,
-  "usd": 0.07832
+  "calls": 133,
+  "input_tokens": 498807,
+  "output_tokens": 62195,
+  "usd": 0.08091
  }
 }
