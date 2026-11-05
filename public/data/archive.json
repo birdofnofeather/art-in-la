@@ -6505,6 +6505,31 @@
     "audience": []
   },
   {
+    "id": "redcat-2026-06-26-bewitching-petals-partch-ensemble-31a6a8ffe5",
+    "venue_id": "redcat",
+    "title": "Bewitching Petals — PARTCH Ensemble",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-06-26",
+    "end": "2026-06-27",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/2026/partch-ensemble",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2025-12/20.png?h=77521bd0&itok=I2lVhoL2",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-06-27T09:30:53+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "performance",
+    "audience": [],
+    "_run": true,
+    "run_count": 2,
+    "recurrence_note": "2 performances · Jun 26 – Jun 27"
+  },
+  {
     "id": "academy_museum-2026-06-26-pom-poko-f25aaec164",
     "venue_id": "academy_museum",
     "title": "Pom Poko",
@@ -6616,28 +6641,6 @@
     ],
     "_default_type": "screening",
     "_asserted_type": "other",
-    "audience": []
-  },
-  {
-    "id": "redcat-2026-06-26-bewitching-petals-partch-ensemble-31a6a8ffe5",
-    "venue_id": "redcat",
-    "title": "Bewitching Petals — PARTCH Ensemble",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-06-26T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/2026/partch-ensemble",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2025-12/20.png?h=77521bd0&itok=I2lVhoL2",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-06-27T09:30:53+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "performance",
     "audience": []
   },
   {
@@ -6815,28 +6818,6 @@
     ],
     "_default_type": "other",
     "_asserted_type": "workshop",
-    "audience": []
-  },
-  {
-    "id": "redcat-2026-06-27-bewitching-petals-partch-ensemble-6184cf5018",
-    "venue_id": "redcat",
-    "title": "Bewitching Petals — PARTCH Ensemble",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-06-27T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/2026/partch-ensemble",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2025-12/20.png?h=77521bd0&itok=I2lVhoL2",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-06-28T10:05:41+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "performance",
     "audience": []
   },
   {
@@ -8562,6 +8543,33 @@
     "_default_type": "screening"
   },
   {
+    "id": "redcat-2026-07-18-yoko-onos-sky-piece-to-jesus-christ-los-71e0da45b6",
+    "venue_id": "redcat",
+    "title": "Yoko Ono’s Sky Piece to Jesus Christ +… — Los Angeles Chamber Orchestra…",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-07-18",
+    "end": "2026-07-19",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/2026/yoko-ono",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-05/Sky%20Piece%20to%20Jesus%20Christ%20%2B%20Cut%20Piece.png?h=8b463d00&itok=mVMojYCW",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-07-19T02:02:15+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "recurrence_note": "2 performances · Jul 18 – Jul 19"
+  },
+  {
     "id": "sparc-2026-07-18-runwalk-step-up-for-team-sparc-la-marath-0703071a53",
     "venue_id": "sparc",
     "title": "[Run/Walk] Step Up for Team SPARC: LA Marathon 5K Charity Partner Kick-Off",
@@ -8869,30 +8877,6 @@
     "_default_type": "other"
   },
   {
-    "id": "redcat-2026-07-18-yoko-onos-sky-piece-to-jesus-christ-los-71e0da45b6",
-    "venue_id": "redcat",
-    "title": "Yoko Ono’s Sky Piece to Jesus Christ +… — Los Angeles Chamber Orchestra…",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-07-18T18:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/2026/yoko-ono",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-05/Sky%20Piece%20to%20Jesus%20Christ%20%2B%20Cut%20Piece.png?h=8b463d00&itok=mVMojYCW",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-07-19T02:02:15+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
-  },
-  {
     "id": "pvac-2026-07-18-evelyn-schmitt-opening-reception-ecf450f708",
     "venue_id": "pvac",
     "title": "Evelyn Schmitt Opening Reception",
@@ -9106,30 +9090,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
-  },
-  {
-    "id": "redcat-2026-07-19-yoko-onos-sky-piece-to-jesus-christ-los-5baafbff4d",
-    "venue_id": "redcat",
-    "title": "Yoko Ono’s Sky Piece to Jesus Christ +… — Los Angeles Chamber Orchestra…",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-07-19T14:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/2026/yoko-ono",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-05/Sky%20Piece%20to%20Jesus%20Christ%20%2B%20Cut%20Piece.png?h=8b463d00&itok=mVMojYCW",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-07-20T10:15:23+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "wende-2026-07-19-tea-dances-groove-and-step-with-ronnie-m-d9aa0f84e7",
@@ -17959,6 +17919,33 @@
     "_default_type": "other"
   },
   {
+    "id": "redcat-2026-09-17-the-fordhill-project-lee-sunday-evans-an-a6b4f8f111",
+    "venue_id": "redcat",
+    "title": "The Ford/Hill Project — Lee Sunday Evans and Waterwell",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-17",
+    "end": "2026-09-19",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/fordhill-project",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/_Ford%20Hill_Emilio%20Madrid_0552.jpg?h=7cbfcc1f&itok=f0Xs_Cx_",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-09-17T12:29:08+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance",
+    "_run": true,
+    "run_count": 3,
+    "recurrence_note": "3 performances · Sep 17 – Sep 19"
+  },
+  {
     "id": "lacma-2026-09-17-member-previewstextile-alchemy-the-art-o-c10caff81d",
     "venue_id": "lacma",
     "title": "Member Previews—Textile Alchemy: The Art of Reiko Sudō and N...",
@@ -18097,30 +18084,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "redcat-2026-09-17-the-fordhill-project-lee-sunday-evans-an-a6b4f8f111",
-    "venue_id": "redcat",
-    "title": "The Ford/Hill Project — Lee Sunday Evans and Waterwell",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-09-17T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/fordhill-project",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/_Ford%20Hill_Emilio%20Madrid_0552.jpg?h=7cbfcc1f&itok=f0Xs_Cx_",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-09-17T12:29:08+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-09-18-the-king-of-comedy-with-dave-karger-and-20a2e91d99",
@@ -18523,30 +18486,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
-  },
-  {
-    "id": "redcat-2026-09-18-the-fordhill-project-lee-sunday-evans-an-05d9f29130",
-    "venue_id": "redcat",
-    "title": "The Ford/Hill Project — Lee Sunday Evans and Waterwell",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-09-18T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/fordhill-project",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/_Ford%20Hill_Emilio%20Madrid_0552.jpg?h=7cbfcc1f&itok=f0Xs_Cx_",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-09-18T12:08:03+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "academy_museum-2026-09-19-the-uncles-in-16mm-with-tacita-dean-and-97174b8868",
@@ -19257,30 +19196,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "redcat-2026-09-19-the-fordhill-project-lee-sunday-evans-an-e7d655392e",
-    "venue_id": "redcat",
-    "title": "The Ford/Hill Project — Lee Sunday Evans and Waterwell",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-09-19T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/fordhill-project",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/_Ford%20Hill_Emilio%20Madrid_0552.jpg?h=7cbfcc1f&itok=f0Xs_Cx_",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-09-19T11:50:35+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "human_resources-2026-09-19-nosferatu-e1ea3cb6b3",
@@ -27436,6 +27351,33 @@
     "_default_type": "screening"
   },
   {
+    "id": "redcat-2026-10-20-ulysse-marion-dimitri-chamblas-0da3964c54",
+    "venue_id": "redcat",
+    "title": "Ulysse Marion — Dimitri Chamblas",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-10-20",
+    "end": "2026-10-21",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/ulysse-marion",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/LPH4063004.jpg?h=a85030a4&itok=PqRdsXll",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-10-20T12:36:17+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "recurrence_note": "2 performances · Oct 20 – Oct 21"
+  },
+  {
     "id": "calarts-2026-10-20-music-careers-in-teaching-448bf3d08c",
     "venue_id": "calarts",
     "title": "Music Careers In Teaching",
@@ -27553,30 +27495,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "redcat-2026-10-20-ulysse-marion-dimitri-chamblas-0da3964c54",
-    "venue_id": "redcat",
-    "title": "Ulysse Marion — Dimitri Chamblas",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-10-20T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/ulysse-marion",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/LPH4063004.jpg?h=a85030a4&itok=PqRdsXll",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-10-20T12:36:17+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "armory_pasadena-2026-10-21-creative-wellbeing-through-visual-art-in-bb73093768",
@@ -27811,30 +27729,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "redcat-2026-10-21-ulysse-marion-dimitri-chamblas-7477a5cfeb",
-    "venue_id": "redcat",
-    "title": "Ulysse Marion — Dimitri Chamblas",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-10-21T20:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/ulysse-marion",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/LPH4063004.jpg?h=a85030a4&itok=PqRdsXll",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-10-21T12:47:31+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "performance"
   },
   {
     "id": "huntington-2026-10-22-chinese-patchwork-ancient-traditions-and-c8d53107b6",
@@ -28657,6 +28551,33 @@
     "_default_type": "other"
   },
   {
+    "id": "redcat-2026-10-24-as-ocean-people-symposium-screenings-gyo-8212225728",
+    "venue_id": "redcat",
+    "title": "As Ocean People: Symposium, Screenings,… — GYOPO",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-10-24",
+    "end": "2026-10-25",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/ocean-people-symposium-screenings-and-performance",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/Pohakuloa%20karaoke%20video%20Sean%20Connelly.png?h=849aa043&itok=SC6qOHMy",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-10-24T11:54:05+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "talk",
+    "_run": true,
+    "run_count": 2,
+    "recurrence_note": "2 performances · Oct 24 – Oct 25"
+  },
+  {
     "id": "huntington-2026-10-24-creative-workshop-our-colorful-world-of-e6f60b31b5",
     "venue_id": "huntington",
     "title": "Creative Workshop: Our Colorful World of Natural Native Dyes",
@@ -29156,31 +29077,6 @@
     "_default_type": "other"
   },
   {
-    "id": "redcat-2026-10-24-as-ocean-people-symposium-screenings-gyo-8212225728",
-    "venue_id": "redcat",
-    "title": "As Ocean People: Symposium, Screenings,… — GYOPO",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-10-24T17:15:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/ocean-people-symposium-screenings-and-performance",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/Pohakuloa%20karaoke%20video%20Sean%20Connelly.png?h=849aa043&itok=SC6qOHMy",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-10-24T11:54:05+00:00",
-    "event_types": [
-      "screening",
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "talk"
-  },
-  {
     "id": "avenue_50-2026-10-24-cocina-con-la-madrina-october-2026-a26997b213",
     "venue_id": "avenue_50",
     "title": "Cocina Con La Madrina – October 2026",
@@ -29555,31 +29451,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
-  },
-  {
-    "id": "redcat-2026-10-25-as-ocean-people-symposium-screenings-gyo-2740a99911",
-    "venue_id": "redcat",
-    "title": "As Ocean People: Symposium, Screenings,… — GYOPO",
-    "description": "",
-    "event_type": "screening",
-    "start": "2026-10-25T17:15:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.redcat.org/events/ocean-people-symposium-screenings-and-performance",
-    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-07/Pohakuloa%20karaoke%20video%20Sean%20Connelly.png?h=849aa043&itok=SC6qOHMy",
-    "artists": [],
-    "location_override": null,
-    "source": "redcat.org",
-    "scraped_at": "2026-10-25T12:24:35+00:00",
-    "event_types": [
-      "screening",
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "talk"
   },
   {
     "id": "academy_museum-2026-10-26-christine-c79ee6564d",
@@ -31531,6 +31402,78 @@
     "is_free": null,
     "price_text": null,
     "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-11-04-lunchtime-art-talk-on-mavis-pusey-1c52dd80b7",
+    "venue_id": "hammer",
+    "title": "Lunchtime Art Talk on Mavis Pusey",
+    "description": "Curatorial assistant and collection specialist Jennie Waldow leads an in-person discussion of Mavis Pusey's work.",
+    "event_type": "lecture",
+    "start": "2026-11-04T12:30:27-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-mavis-pusey-1",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-11/Jennie%20W_Mavis%20Pusey%20plate%20for%20Decaying%207%20case.jpg?h=a32b3037&itok=UnvqifjX",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-04T15:13:27+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-04-communities-create-la-art-in-motion-514900f895",
+    "venue_id": "lacma",
+    "title": "Communities Create LA! Art in Motion",
+    "description": "...",
+    "event_type": "workshop",
+    "start": "2026-11-04T15:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/communities-create-la-art-motion",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-08/WSP_475474_jpg.jpg?VersionId=TixU7vJ3QCoL_rJzqTxmYroDZ9R4tghG&itok=_aBRWH2H",
+    "artists": [],
+    "location_override": "Lennox Library",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-04T15:13:29+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "molaa-2026-11-05-molaa-food-pantry-43d3fe2a45",
+    "venue_id": "molaa",
+    "title": "MOLAA Food Pantry",
+    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
+    "event_type": "other",
+    "start": "2026-11-05",
+    "end": "2026-11-04T17:00:00-08:00",
+    "all_day": true,
+    "url": "https://molaa.org/events/2026/11/04/foodpantry",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-11-04T15:13:33+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
     "_default_type": "other"
   }
 ]
