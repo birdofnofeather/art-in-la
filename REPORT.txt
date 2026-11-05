@@ -1,0 +1,89 @@
+japan_house website https://www.japanhousela.com -> 200 https://www.japanhousela.com/ 223815b
+japan_house events_url https://www.japanhousela.com/events/ -> 200 https://www.japanhousela.com/happenings/events/ 181163b
+japan_house exhibitions_url https://www.japanhousela.com/exhibitions/ -> 200 https://www.japanhousela.com/happenings/exhibition/ 170653b
+otis_ben_maltz website https://www.otis.edu/ben-maltz-gallery -> 404 https://www.otis.edu/ben-maltz-gallery 55051b
+otis_ben_maltz events_url https://www.otis.edu/ben-maltz-gallery -> 404 https://www.otis.edu/ben-maltz-gallery 55051b
+weisman_pepperdine website https://arts.pepperdine.edu/museum/ -> 200 https://arts.pepperdine.edu/museum/ 32472b
+weisman_pepperdine events_url https://arts.pepperdine.edu/museum/ -> 200 https://arts.pepperdine.edu/museum/ 32472b
+broad_stage website https://www.thebroadstage.org -> None  0b
+broad_stage events_url https://www.thebroadstage.org/events -> None  0b
+cerritos_center website https://www.cerritoscenter.com -> None  0b
+cerritos_center events_url https://www.cerritoscenter.com/ -> None  0b
+caer website https://www.centerartseaglerock.org -> 522 https://www.centerartseaglerock.org/ 7309b
+caer events_url https://www.centerartseaglerock.org/events -> 522 https://www.centerartseaglerock.org/events 7309b
+iamla website https://www.iamla.org -> 200 https://www.iamla.org/ 185540b
+iamla events_url https://www.iamla.org/ -> 200 https://www.iamla.org/ 185540b
+iamla exhibitions_url https://www.iamla.org/temporary-exhibitions/ -> 200 https://www.iamla.org/temporary-exhibitions/ 176920b
+catalina_museum website https://www.catalinamuseum.org -> 200 https://www.catalinamuseum.org/ 45838b
+catalina_museum events_url https://www.catalinamuseum.org/calendar -> 200 https://www.catalinamuseum.org/calendar 25517b
+catalina_museum exhibitions_url https://www.catalinamuseum.org/whats-happening -> 200 https://www.catalinamuseum.org/whats-happening 26225b
+amoca website https://www.amoca.org -> 200 https://www.amoca.org/ 162789b
+amoca events_url https://www.amoca.org/calendar/ -> 200 https://www.amoca.org/calendar/ 133774b
+amoca exhibitions_url https://www.amoca.org/exhibitions/ -> 200 https://www.amoca.org/exhibitions/ 159583b
+maaa website https://maaala.org -> 200 https://maaala.org/ 143455b
+maaa events_url https://maaala.org/museum-2/exhibitions/ -> 200 https://maaala.org/museum-2/exhibitions/ 81276b
+csun_galleries website https://www.csun.edu/mike-curb-arts-media-communication/art-galleries -> 200 https://www.csun.edu/mike-curb-arts-media-communication/art-galleries 80037b
+csun_galleries events_url https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events -> 200 https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events 73821b
+la_phil website https://www.laphil.com -> 200 https://www.laphil.com/ 973272b
+la_phil events_url https://www.laphil.com/events -> 200 https://www.laphil.com/tickets-and-events/calendar 497937b
+ford_theatres website https://www.fordtheatres.org -> 200 https://www.theford.com:443/ 458203b
+ford_theatres events_url https://www.fordtheatres.org/calendar/ -> 200 https://www.theford.com:443/tickets-and-events/calendar 476340b
+geffen_playhouse website https://www.geffenplayhouse.org -> 200 https://www.geffenplayhouse.org/ 262606b
+geffen_playhouse events_url https://www.geffenplayhouse.org/tickets/ -> 200 https://www.geffenplayhouse.org/tickets/ 220546b
+the_soraya website https://thesoraya.org -> 200 https://thesoraya.org/en/ 103184b
+the_soraya events_url https://thesoraya.org/en/whats-on-calendar/ -> 200 https://thesoraya.org/en/whats-on-calendar/ 65304b
+the_wallis website https://thewallis.org -> 200 https://thewallis.org/ 510576b
+the_wallis events_url https://thewallis.org/whats-on -> 200 https://thewallis.org/whats-on 49010b
+la_opera website https://www.laopera.org -> 200 https://www.laopera.org/ 261368b
+la_opera events_url https://www.laopera.org/performances/ -> 200 https://www.laopera.org/whats-on 205793b
+fountain_theatre website https://www.fountaintheatre.com -> 200 https://www.fountaintheatre.com/ 227066b
+fountain_theatre events_url https://www.fountaintheatre.com/ -> 200 https://www.fountaintheatre.com/ 227066b
+a_noise_within website https://www.anoisewithin.org -> 200 https://www.anoisewithin.org/ 204497b
+a_noise_within events_url https://www.anoisewithin.org/calendar/ -> 200 https://www.anoisewithin.org/calendar/ 203241b
+lucas_museum website https://lucasmuseum.org -> 200 https://lucasmuseum.org/ 204052b
+lucas_museum events_url https://lucasmuseum.org -> 200 https://lucasmuseum.org/ 204052b
+grand_performances website https://www.grandperformances.org -> 200 https://www.grandperformances.org/ 462280b
+grand_performances events_url https://www.grandperformances.org/events -> 200 https://www.grandperformances.org/events 946157b
+render japan_house.website -> 0b
+render japan_house.events_url -> 0b
+render japan_house.exhibitions_url -> 0b
+render otis_ben_maltz.events_url -> 74073b
+render weisman_pepperdine.events_url -> 134920b
+render broad_stage.website -> 274473b
+render broad_stage.events_url -> 56929b
+render cerritos_center.website -> 116408b
+render cerritos_center.events_url -> 114886b
+render caer.website -> 7037b
+render caer.events_url -> 7037b
+render iamla.website -> 0b
+render iamla.events_url -> 0b
+render iamla.exhibitions_url -> 0b
+render catalina_museum.website -> 61265b
+render catalina_museum.events_url -> 190467b
+render catalina_museum.exhibitions_url -> 34934b
+render amoca.website -> 164199b
+render amoca.events_url -> 135337b
+render amoca.exhibitions_url -> 160960b
+render maaa.website -> 197762b
+render maaa.events_url -> 97824b
+render csun_galleries.website -> 76261b
+render csun_galleries.events_url -> 75033b
+render la_phil.website -> 779151b
+render la_phil.events_url -> 797456b
+render ford_theatres.website -> 420461b
+render ford_theatres.events_url -> 420677b
+render geffen_playhouse.website -> 284228b
+render geffen_playhouse.events_url -> 236297b
+render the_soraya.website -> 144680b
+render the_soraya.events_url -> 182103b
+render the_wallis.website -> 585874b
+render the_wallis.events_url -> 110502b
+render la_opera.website -> 301671b
+render la_opera.events_url -> 255366b
+render fountain_theatre.website -> 236708b
+render fountain_theatre.events_url -> 236709b
+render a_noise_within.website -> 278250b
+render a_noise_within.events_url -> 275529b
+render lucas_museum.events_url -> 282554b
+render grand_performances.website -> 490897b
+render grand_performances.events_url -> 952068b
