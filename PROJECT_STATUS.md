@@ -1,4 +1,68 @@
-# Art in LA — Status & Next Steps (2026-05-30)
+# Art in LA — Status & Next Steps
+
+## Round 11 (2026-11-05): map fix, 33 venues, art/performing split, AI reading + self-healing, new filters
+
+Restore point before this round: commit `e8d514b`. Owner how-to: OWNER_GUIDE.md.
+
+- **Map fixed.** CARTO basemaps began returning "API KEY REQUIRED" tiles (now a
+  paid product). Switched to keyless OpenStreetMap tiles (CSS-muted) with
+  automatic fallback to Esri light grey. The map frames the visible venues
+  (outliers excluded), works on mobile, and follows the active filters. Removed
+  the rectangular region overlay.
+- **Venues 85 → 117.**
+  - Added 16 art venues: Chinese American Museum, AMOCA, Velaslavasay Panorama,
+    Weisman (Pepperdine), Otis Ben Maltz, CSUN Galleries, IAMLA, Art Share
+    L.A., LACP, CAER, Japan House, Catalina Museum, Claremont Lewis, MAAA,
+    Side Street, WGSAC.
+  - Added 17 nonprofit performing-arts venues: LA Phil, LA Opera, CTG, Wallis,
+    Ford, Geffen, Pasadena Playhouse, Soraya, CAP UCLA, Broad Stage, East West
+    Players, Carpenter, Fountain, Grand Performances, A Noise Within, Highways,
+    Cerritos Center.
+  - Removed Bergamot Station (commercial).
+  - Sources cross-checked: Wikipedia's list of LA museums, the Hyper SoCal
+    2026 nonprofit/municipal venue directory, and Time Out's 2026 exhibitions
+    guide.
+- **Art vs. performing.** Every venue carries `discipline`, assigned by its
+  primary facility and programme. The header switch Art · Performing arts ·
+  All filters everything (default Art). Performing venues' productions
+  collapse into one "run" listing.
+- **Coverage for venues without feeds.**
+  - Config-driven scrapers (`generic_venues.yaml`).
+  - A hand-verified generic card reader for 9 venues.
+  - A Claude Haiku 5.5 reader for the rest, plus 17 museum exhibitions pages:
+    - content-hash cache;
+    - $3/month hard cap;
+    - each title and date must appear on the page.
+  - The Haiku reader needs the ANTHROPIC_API_KEY secret; until it is set those
+    venues are YELLOW "waiting", not RED.
+- **Self-healing.**
+  - Tier 1: the LLM reader takes over when a parser returns nothing or
+    collapses.
+  - Tier 2: repair-scraper.yml lets an agent rewrite one broken module. The
+    fix is kept only if tests, rules and a live scrape pass. Max 2/month.
+- **Filters redesigned for mobile.**
+  - One swipeable chip row: dates, Free, Family.
+  - The Filters bottom sheet holds what / area / venue type / custom dates.
+  - Active-filter chips and a live result count.
+- **Link audit** of 685 links:
+  - removed dead X/YouTube profiles;
+  - fixed the IAMLA, Artforum artguide, Mommy Poppins and LAist links;
+  - Instagram/Facebook can't be machine-verified (login wall), so they were
+    kept.
+- **Bugs fixed:**
+  - http.get crashed on a malformed gzip body;
+  - cross-year ranges ("Nov 20 – Jan 10, 2027") were parsed a year late;
+  - a performing production was dropped as "recurring" while its marketing
+    variants survived.
+
+### Next steps
+1. Owner: add ANTHROPIC_API_KEY (OWNER_GUIDE.md §1).
+2. After ~a week with the key, review `scrapers/state/llm_cache.json` output
+   per venue. Promote any venue whose page has a stable structure to
+   `heuristic: true`, or give it a bespoke module (cheaper, faster).
+3. Center Theatre Group sits behind a Queue-it bot wall. If the LLM reader
+   gets nothing there, consider the render path (`utils/render.py`).
+
 
 ## Round 10 (2026-07-21): tab revert, headline identity, 5 presets, map recolor
 
