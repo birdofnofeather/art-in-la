@@ -327,21 +327,69 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
 
 
 # ── public API ─────────────────────────────────────────────────────────────
+# What the LLM reader saw this run, per venue: (items the model listed, items
+# that passed validation). The monitor uses it as an independent second
+# opinion — if the model read the page and found nothing upcoming, a raw date
+# count on that page is past/undated listings, not a broken parser.
+READS: dict[str, tuple[int, int]] = {}
+MAX_RENDERS_PER_RUN = 25
+_renders = 0
+
+
+def _render(url: str) -> str | None:
+    """Rendered HTML for JavaScript-built pages (headless Chromium, CI only)."""
+    global _renders
+    with _LOCK:
+        if _renders >= MAX_RENDERS_PER_RUN:
+            return None
+        _renders += 1
+    try:
+        from .render import render_page
+        return render_page(url)
+    except Exception as e:  # noqa: BLE001
+        print(f"  [llm] render failed for {url}: {e}")
+        return None
+
+
 def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "events",
                     html: str | None = None, force: bool = False, address: str = "") -> list[dict]:
-    """Listings on `url` as validated dicts (see validate_items). [] when disabled."""
+    """Listings on `url` as validated dicts (see validate_items). [] when disabled.
+
+    Reads the plain HTML first. If that has little text, or the model finds
+    nothing on it, the page is probably built by JavaScript — so it is rendered
+    in a headless browser (when available, i.e. in CI) and read again.
+    """
     if not enabled():
         return []
+    rendered = False
     if html is None:
         resp = get(url)
-        if resp is None or not resp.ok:
-            return []
-        html, url = resp.text, resp.url
-    text = page_text(html, url)
+        if resp is not None and resp.ok:
+            html, url = resp.text, resp.url
+    text = page_text(html, url) if html else ""
+    if len(text) < 1500:
+        r = _render(url)
+        if r:
+            html, rendered = r, True
+            text = page_text(html, url)
     if len(text) < 200:
         return []
+    n_raw, kept = _read(venue_id, venue_name, url, mode, text, force, address, rendered)
+    if n_raw == 0 and not rendered:
+        r = _render(url)
+        if r:
+            text2 = page_text(r, url)
+            if len(text2) >= 200 and text2 != text:
+                n_raw, kept = _read(venue_id, venue_name, url, mode, text2, force, address, True)
+    with _LOCK:
+        prev = READS.get(venue_id, (0, 0))
+        READS[venue_id] = (prev[0] + n_raw, prev[1] + len(kept))
+    return kept
+
+
+def _read(venue_id, venue_name, url, mode, text, force, address, rendered) -> tuple[int, list[dict]]:
     digest = hashlib.sha256(text.encode("utf-8")).hexdigest()[:20]
-    key = f"{venue_id}|{mode}|{url}"
+    key = f"{venue_id}|{mode}|{url}" + ("|rendered" if rendered else "")
     now = datetime.now(timezone.utc)
     with _LOCK:
         cached = _load(CACHE_PATH).get(key)
@@ -353,7 +401,7 @@ def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "event
         if age < timedelta(days=CACHE_TTL_DAYS):
             items = cached.get("items") or []
             print(f"  [{venue_id}] llm cache hit ({len(items)} items, page unchanged)")
-            return validate_items(items, text)
+            return len(items), validate_items(items, text)
 
     prompt = _LISTING_PROMPT.format(
         mode=mode, venue=venue_name, today=date.today().isoformat(),
@@ -365,15 +413,17 @@ def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "event
     got = _ask(prompt, f"listing:{venue_id}")
     if got is None:
         # Budget exhausted / API down: fall back to the last good answer, if any.
-        return validate_items((cached or {}).get("items") or [], text) if cached else []
+        items = (cached or {}).get("items") or []
+        return len(items), validate_items(items, text)
     raw_items = got.get("items") or []
     kept = validate_items(raw_items, text)
-    print(f"  [{venue_id}] llm read {mode}: {len(raw_items)} items, {len(kept)} passed validation")
+    print(f"  [{venue_id}] llm read {mode}{' (rendered)' if rendered else ''}: "
+          f"{len(raw_items)} items, {len(kept)} passed validation")
     with _LOCK:
         cache = _load(CACHE_PATH)
         cache[key] = {"hash": digest, "at": now.isoformat(timespec="seconds"), "items": raw_items}
         _save(CACHE_PATH, cache)
-    return kept
+    return len(raw_items), kept
 
 
 _RECOVER_PROMPT = """From this event page, extract the event's date.

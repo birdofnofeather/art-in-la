@@ -124,6 +124,19 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
             starts = sorted({_day(m.get("start")) for m in members})
             gaps = sorted((b - a).days for a, b in zip(starts, starts[1:]))
             median_gap = gaps[len(gaps) // 2] if gaps else 99
+            if len(members) == 1 and not is_recurring_by_keyword(display[k]):
+                # One record already spanning several days is a production run
+                # as the venue itself published it ("The Music Man, Nov 4 – Dec 20").
+                m = dict(members[0])
+                first, last = _day(m.get("start")), _day(m.get("end"))
+                if first and last and (last - first).days >= 2:
+                    m.update({"_run": True,
+                              "recurrence_note": f"Runs {_fmt(first)} – {_fmt(last)}"})
+                    if m.get("event_type") in ("opening", "closing", "screening", "workshop", "fair", "other"):
+                        m["event_type"] = "performance"
+                        m["event_types"] = ["performance"]
+                out.append(m)
+                continue
             if (len(starts) < 2 or median_gap > 3
                     or is_recurring_by_keyword(display[k])):
                 out.extend(members)

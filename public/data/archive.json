@@ -1845,6 +1845,31 @@
     "audience": []
   },
   {
+    "id": "jaccc-2026-01-31-perfectly-imperfect-discover-kintsugi-wi-99357751df",
+    "venue_id": "jaccc",
+    "title": "Perfectly Imperfect: Discover Kintsugi with POJ Studio",
+    "description": "- 11:30 am Select Saturdays – 2026 Schedule (Concluded): January 31, February 28, March 28, April 25, May 23, June 27, July 25, August 29, September 12 & September 26. Where Kosaka Center for Art & Crafts 244 S. San Pedro Street, 5th Floor, Los Angeles, CA 90012 Price $180.00 (+ $18.00 fee) This event is 13+. Includes workshop materials & a take-h",
+    "event_type": "performance",
+    "start": "2026-01-31T10:00:00-08:00",
+    "end": "2026-09-26",
+    "all_day": false,
+    "url": "https://jaccc.org/events/perfectly-imperfect-discover-kintsugi-with-poj-studio-2026/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "jaccc.org",
+    "scraped_at": "2026-11-03T14:54:34+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": "$18–$180",
+    "audience": [],
+    "_default_type": "other",
+    "_run": true,
+    "recurrence_note": "Runs Jan 31 – Sep 26"
+  },
+  {
     "id": "moah-2026-01-31-opening-celebration-new-exhibitions-at-m-38f04d274c",
     "venue_id": "moah",
     "title": "Opening Celebration: New Exhibitions at MOAH and MOAH:CEDAR",
@@ -4602,7 +4627,9 @@
     "event_types": [
       "performance"
     ],
-    "audience": []
+    "audience": [],
+    "_run": true,
+    "recurrence_note": "Runs Jun 11 – Jun 13"
   },
   {
     "id": "getty_villa-2026-06-11-curators-tour-the-egyptian-book-of-the-d-dd1f46dec3",
@@ -10057,7 +10084,9 @@
     "is_free": true,
     "price_text": "Free",
     "audience": [],
-    "_default_type": "other"
+    "_default_type": "other",
+    "_run": true,
+    "recurrence_note": "Runs Jul 27 – Aug 12"
   },
   {
     "id": "getty_center-2026-07-28-curators-tour-odilon-redon-otherworldly-45cb00317d",
@@ -16566,6 +16595,31 @@
       "family"
     ],
     "_default_type": "other"
+  },
+  {
+    "id": "jaccc-2026-09-12-healing-with-gold-the-art-of-kintsugi-on-e830adea67",
+    "venue_id": "jaccc",
+    "title": "Healing with Gold: The Art of Kintsugi on Ceramics & Beyond",
+    "description": "Tuesdays - Sundays • 12:00 pm - 4:00 pm Opening Reception: September 12, 2026 • 5:00 pm - 7:00 pm Curator's Tour: September 19 & October 4, 2026 • 11:00 am Special Classical Dance Demonstration: October 18, 2026 • 2:00 pm Where George J. Doizaki Gallery 244 S. San Pedro St., Lobby, Los Angeles, CA 90012 Price Free, RSVP now required. RSVP Share Ab",
+    "event_type": "performance",
+    "start": "2026-09-12",
+    "end": "2026-10-18",
+    "all_day": true,
+    "url": "https://jaccc.org/events/healing-with-gold-the-art-of-kintsugi-on-ceramics-beyond/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "jaccc.org",
+    "scraped_at": "2026-10-17T11:29:17+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_run": true,
+    "recurrence_note": "Runs Sep 12 – Oct 18"
   },
   {
     "id": "armory_pasadena-2026-09-12-nurtured-flames-curatorial-walkthrough-w-77c49e2635",

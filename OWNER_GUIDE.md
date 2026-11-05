@@ -3,7 +3,13 @@
 This explains, in plain language, what runs on its own, the one setup step
 left, what it costs, and how to undo anything.
 
-## 1. The one thing to do: add your Anthropic API key (about 2 minutes)
+## 1. Your Anthropic API key (already set up)
+
+**Update (Nov 5):** your repository already has an `ANTHROPIC_API_KEY`
+secret, so the AI tier is live. On its first day it read 54 pages for $0.03.
+The one recommended step left is a spend limit in the Anthropic Console
+(step 2 below) as a second safety net. The steps below are kept for reference,
+in case you ever need to replace the key.
 
 About 40 venues have no machine-readable calendar. An AI reader (Claude Haiku)
 reads their web pages instead. The same reader fills in exhibitions for 17

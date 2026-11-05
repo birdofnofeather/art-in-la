@@ -152,6 +152,12 @@ def llm_pending_ids() -> set[str]:
     return {vid for vid, c in (cfg.get("venues") or {}).items() if not (c or {}).get("heuristic")}
 
 
+def _llm_found_nothing_upcoming(venue_id: str) -> bool:
+    from .utils import llm_extract
+    seen = llm_extract.READS.get(venue_id)
+    return seen is not None and seen[1] == 0
+
+
 # ── The per-venue assessment ──────────────────────────────────────────────
 
 def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
@@ -186,6 +192,12 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
             known_gaps.append(
                 "waiting for the LLM reader — this venue has no feed; add the "
                 "ANTHROPIC_API_KEY repository secret to switch it on"
+            )
+        elif n_harvested == 0 and _llm_found_nothing_upcoming(venue_id):
+            verdict = _worst(verdict, YELLOW)
+            known_gaps.append(
+                f"the page shows {dates_on_page} dates, but the LLM reader examined it "
+                f"and found nothing upcoming — past or undated listings, not a broken parser"
             )
         elif n_harvested == 0:
             verdict = RED

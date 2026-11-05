@@ -124,3 +124,28 @@ def test_dry_run_never_calls_llm(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "x")
     monkeypatch.setenv("ART_IN_LA_DRY_RUN", "1")
     assert llm.enabled() is False
+
+
+def test_single_record_with_range_is_a_run():
+    ev = _ev("The Music Man", "2026-11-04")
+    ev["end"] = "2026-12-20"
+    out = collapse_runs([ev], {"theater"})
+    assert out[0].get("_run") and out[0]["recurrence_note"].startswith("Runs Nov 4")
+
+
+def test_llm_render_fallback_and_reads(monkeypatch):
+    import json as _json
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "x")
+    monkeypatch.delenv("ART_IN_LA_DRY_RUN", raising=False)
+    monkeypatch.setattr(llm, "_save", lambda *a, **k: None)
+    monkeypatch.setattr(llm, "_load", lambda *a, **k: {})
+    rendered = "<main>" + "<p>Season programs and tickets. " * 60 + \
+               "</p><h3>Fiddler on the Roof</h3><p>November 12 – December 20</p></main>"
+    monkeypatch.setattr(llm, "_render", lambda url: rendered)
+    monkeypatch.setattr(llm, "_ask", lambda prompt, purpose, max_tokens=8000: {"items": [
+        {"title": "Fiddler on the Roof", "kind": "event", "start_date": "2026-11-12",
+         "end_date": "2026-12-20", "start_time": None, "url": None, "price_text": None,
+         "description": None}]} if "Fiddler" in prompt else {"items": []})
+    out = llm.extract_listing("ctg", "CTG", "https://x.org", html="<div id=app></div>")
+    assert [o["title"] for o in out] == ["Fiddler on the Roof"]
+    assert llm.READS["ctg"][1] == 1

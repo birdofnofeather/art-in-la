@@ -285,7 +285,9 @@ custom_parse_exhibitions → generic → llm.
   per M tokens) via the anthropic SDK, structured JSON output. Content-hash
   cache (`scrapers/state/llm_cache.json`, re-read at most every 21 days if
   unchanged), hard monthly budget `LLM_MONTHLY_BUDGET_USD` (=3 in CI) metered
-  into `scrapers/state/llm_ledger.json`, ≤40 calls/run. Output is kept only if
+  into `scrapers/state/llm_ledger.json`, ≤150 calls/run. JavaScript-built pages
+  (little text, or nothing found) are re-read after rendering in headless
+  Chromium (`utils/render.py`, CI only, ≤25/run). Output is kept only if
   each title appears verbatim on the page and its day-of-month appears near
   it. No key → silent no-op; such venues show YELLOW "waiting", not RED.
 - Tier 1 self-healing: the llm strategy runs when every parser returns nothing,
@@ -346,9 +348,14 @@ python -m scrapers.run_all --only norton_simon,huntington --dry-run
 Commit + push (Windows): `.\commit.ps1 "message"` (validates JSON, stages,
 commits, rebases, pushes).
 
-## Owner setup still needed
-Add the `ANTHROPIC_API_KEY` repository secret (see OWNER_GUIDE.md). Until then
-~40 config-driven venues and the 17 museum exhibitions pages wait (yellow).
+## LLM tier is live
+The `ANTHROPIC_API_KEY` repository secret is set; first live day: 54 reads,
+$0.034. The monitor uses the LLM's reading as a second opinion: if it examined
+a venue page and found nothing upcoming, a raw date count on that page is past
+or undated listings → YELLOW, not RED (`monitor._llm_found_nothing_upcoming`).
+A single performing-venue record spanning ≥2 days is itself a run.
+First tier-2 repair (2026-11-05): academy_museum, site moved to the Next.js App
+Router; agent added an RSC flight-data parser (commit e3fe2a1).
 
 ## Open next steps (from PROJECT_STATUS.md)
 
