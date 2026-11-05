@@ -127,9 +127,9 @@ def update_health(results: list[tuple[str, list]]) -> tuple[dict, list]:
     today = datetime.now(timezone.utc).date().isoformat()
     stale = []
     for vid, events in results:
-        h = health.get(vid) or {}
+        h = dict(health.get(vid) or {})      # keep recent_counts history
         if events:
-            h = {"zero_streak": 0, "last_success": today}
+            h.update({"zero_streak": 0, "last_success": today})
         else:
             h["zero_streak"] = int(h.get("zero_streak", 0)) + 1
             h.setdefault("last_success", None)
@@ -211,7 +211,11 @@ def main(argv=None) -> int:
     # Optional LLM rescue for records dropped purely for a missing date.
     # No-op unless ANTHROPIC_API_KEY is set (a repo secret in CI).
     if result.dropped_hygiene and llm_extract.enabled():
-        recovered = llm_extract.recover(result.dropped_hygiene)
+        try:
+            recovered = llm_extract.recover(result.dropped_hygiene)
+        except Exception as e:  # noqa: BLE001 — optional tier never sinks a run
+            print(f"  [llm] recover failed: {type(e).__name__}: {e}")
+            recovered = []
         if recovered:
             raw = dedupe(raw + recovered)
             result = derive(raw)

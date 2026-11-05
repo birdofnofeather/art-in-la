@@ -104,3 +104,23 @@ def test_weekly_series_is_not_a_run():
     evs = [_ev("Dance Practice with Adie", f"2026-11-{d:02d}T18:00:00-08:00") for d in (5, 12, 19, 26)]
     out = collapse_runs(evs, {"theater"})
     assert not any(e.get("_run") for e in out)      # left for the recurring filter to hide
+
+
+def test_times_and_dashes_are_not_ranges():
+    assert gl.parse_dates("Saturday, December 6, 2026 - 7pm", TODAY) == (date(2026, 12, 6), None, "19:00")
+    assert gl.parse_dates("Dec 12 - 8:00 PM", TODAY) == (date(2026, 12, 12), None, "20:00")
+    assert gl.parse_dates("Dec 6 2026 | 7-9pm", TODAY)[2] == "19:00"
+    assert gl.parse_dates("Dec 6, 11-1pm", TODAY)[2] == "11:00"
+
+
+def test_annual_production_is_not_one_run():
+    evs = [_ev("The Nutcracker", f"2025-12-{d:02d}T19:00:00-08:00") for d in (5, 6, 7)] + \
+          [_ev("The Nutcracker", f"2026-12-{d:02d}T19:00:00-08:00") for d in (12, 13, 14)]
+    runs = [e for e in collapse_runs(evs, {"theater"}) if e.get("_run")]
+    assert sorted((r["start"], r["end"]) for r in runs) == [("2025-12-05", "2025-12-07"), ("2026-12-12", "2026-12-14")]
+
+
+def test_dry_run_never_calls_llm(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "x")
+    monkeypatch.setenv("ART_IN_LA_DRY_RUN", "1")
+    assert llm.enabled() is False

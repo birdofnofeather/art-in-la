@@ -150,8 +150,12 @@ function FitToVenues({ mappable, focusedVenueId }) {
     if (key === lastKey.current) return;
     lastKey.current = key;
     const b = frameBounds(mappable.map((v) => [v.lat, v.lng]));
+    // (cleanup below stops any running animation before unmount)
     if (b) map.fitBounds(b, { padding: [28, 28], maxZoom: mappable.length < 4 ? 12 : 14 });
   }, [map, mappable, focusedVenueId]);
+  // Stop any running fit/fly animation before the map unmounts — otherwise
+  // Leaflet throws "_leaflet_pos of undefined" when you switch tabs mid-zoom.
+  useEffect(() => () => { try { map.stop(); } catch { /* already gone */ } }, [map]);
   return null;
 }
 
@@ -201,7 +205,7 @@ export default function VenueMap({
   );
 
   return (
-    <div className="panel overflow-hidden">
+    <div className="panel relative isolate z-0 overflow-hidden">
       {/* Controls above the map: toggle (left) · key (right) */}
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-ink/10 px-4 py-2.5 text-xs text-ink/70">
         <label className="inline-flex cursor-pointer items-center gap-2 select-none">

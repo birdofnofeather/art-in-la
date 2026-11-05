@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   TYPE_LABEL, TYPE_DEF, REGION_LABEL, EVENT_TYPE_FILTERS, DATE_PRESETS,
 } from "../lib/constants.js";
@@ -228,7 +229,7 @@ export default function FilterBar({
           </div>
         </div>
       )}
-      {open && small && (
+      {open && small && createPortal(
         <div className="fixed inset-0 z-[1100] flex flex-col justify-end" role="dialog" aria-modal="true" aria-label="Filters">
           <button type="button" aria-label="Close filters" className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
           <div ref={sheetRef} tabIndex={-1}
@@ -244,7 +245,8 @@ export default function FilterBar({
               {resultLabel ? `Show ${resultLabel}` : "Done"}
             </button>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </div>
   );

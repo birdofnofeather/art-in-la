@@ -62,6 +62,10 @@ _calls_this_run = 0
 
 
 def enabled() -> bool:
+    # Dry runs (local checks, the repair agent's verification) never call the
+    # model: they must test the real parser, and must not spend unmetered.
+    if os.environ.get("ART_IN_LA_DRY_RUN"):
+        return False
     return bool(os.environ.get("ANTHROPIC_API_KEY"))
 
 
@@ -74,9 +78,9 @@ def _budget() -> float:
 
 def _max_calls() -> int:
     try:
-        return int(os.environ.get("LLM_MAX_CALLS_PER_RUN", "40"))
+        return int(os.environ.get("LLM_MAX_CALLS_PER_RUN", "70"))
     except ValueError:
-        return 40
+        return 70
 
 
 # ── persistent state (cache + ledger) ─────────────────────────────────────
@@ -236,17 +240,21 @@ def _ask(prompt: str, purpose: str, max_tokens: int = 8000) -> dict | None:
     except anthropic.APIConnectionError as e:
         print(f"  [llm] connection failed: {e}")
         return None
+    except Exception as e:  # noqa: BLE001 — this optional tier must never crash a run
+        print(f"  [llm] call failed: {type(e).__name__}: {e}")
+        return None
     usage = getattr(resp, "usage", None)
     if usage is not None:
         _record_spend(usage.input_tokens or 0, usage.output_tokens or 0, purpose)
     if resp.stop_reason in ("refusal", "max_tokens"):
         print(f"  [llm] stop_reason={resp.stop_reason} — ignoring answer")
         return None
-    text = next((b.text for b in resp.content if b.type == "text"), "")
+    text = next((getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text"), "")
     try:
-        return json.loads(text)
+        got = json.loads(text)
     except ValueError:
         return None
+    return got if isinstance(got, dict) else None
 
 
 # ── validation: keep only what the page itself supports ──────────────────
@@ -292,6 +300,11 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
         if end:
             days.add(str(end.day))
         if not any(re.search(rf"(?<!\d){d}(?!\d)", window) for d in days):
+            continue
+        # …and so must its month (by name, or numerically as in 11/12).
+        mon = start.strftime("%b").lower()
+        if not re.search(rf"\b{mon}", window) and not re.search(
+                rf"(?<!\d)0?{start.month}[/.\-]0?{start.day}(?!\d)", window):
             continue
         key = (nt, start)
         if key in seen:

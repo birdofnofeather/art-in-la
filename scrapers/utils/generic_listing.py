@@ -53,7 +53,9 @@ _ONE_DM = re.compile(_dm(1), re.I)
 _ONE_NUM = re.compile(r"\b(?P<nm1>\d{1,2})/(?P<nd1>\d{1,2})/(?P<ny1>(?:20)?\d\d)\b")
 # A range whose second half may omit the month: "Oct 5 – 19, 2026"
 _RANGE = re.compile(
-    _md(1) + _SEP + r"(?:(?P<m2>" + _MON + r")\s+)?(?P<d2>\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(?P<y2>20\d\d))?",
+    _md(1) + _SEP + r"(?:(?P<m2>" + _MON + r")\s+)?(?P<d2>\d{1,2})(?:st|nd|rd|th)?"
+    # the second number must not be an HOUR ("Dec 6 - 7pm", "Dec 12 - 8:00 PM")
+    r"(?!\s*(?::\d|[ap]\.?m\b|o'?clock))(?:,?\s+(?P<y2>20\d\d))?",
     re.I,
 )
 _TIME = re.compile(r"\b(?P<h>\d{1,2})(?::(?P<mi>\d{2}))?\s*(?P<ap>a\.?m\.?|p\.?m\.?)", re.I)
@@ -123,8 +125,8 @@ def parse_dates(text: str, today: date) -> Optional[tuple[date, Optional[date], 
                 start = _mk(end.year, m1, d1, today)
                 if start and start > end:
                     start = _mk(end.year - 1, m1, d1, today)
-            if start and end and end < start:
-                end = None
+            if start and end and (end < start or (end - start).days > 400):
+                start, end = None, None        # implausible: fall back to single date
     if not start:
         for rx, mk, dk, yk in ((_ONE, "m1", "d1", "y1"), (_ONE_DM, "m1", "d1", "y1")):
             mm = rx.search(text)
@@ -141,7 +143,24 @@ def parse_dates(text: str, today: date) -> Optional[tuple[date, Optional[date], 
     if not start:
         return None
     tm = None
+    # Look for the time only in what is left once the dates are removed, so a
+    # day number ("Dec 12 - 8 PM") is never read as an hour.
+    text = _ONE_NUM.sub(" ", _ONE_DM.sub(" ", _ONE.sub(" ", _RANGE.sub(" ", text))))
+    # "7-9pm" / "7:30 – 9 PM": the START hour takes the meridiem of the end.
+    span = re.search(r"\b(\d{1,2})(?::(\d{2}))?\s*(?:–|—|-|to)\s*\d{1,2}(?::\d{2})?\s*([ap])\.?m\b", text, re.I)
     t = _TIME.search(text)
+    if span and (not t or span.start() <= t.start()):
+        h = int(span.group(1)); mi = int(span.group(2) or 0)
+        if 1 <= h <= 12 and mi < 60:
+            pm = span.group(3).lower() == "p"
+            if pm and h != 12 and h < 12:
+                # "11-1pm" starts in the morning; otherwise same meridiem as the end
+                end_h = int(re.search(r"(?:–|—|-|to)\s*(\d{1,2})", span.group(0)).group(1))
+                if not (h > end_h and end_h != 12):
+                    h += 12
+            if not pm and h == 12:
+                h = 0
+            return start, end, f"{h:02d}:{mi:02d}"
     if t:
         h = int(t.group("h")); mi = int(t.group("mi") or 0)
         if 1 <= h <= 12 and mi < 60:

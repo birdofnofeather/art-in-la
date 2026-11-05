@@ -62,6 +62,7 @@ def decide(today: date | None = None) -> dict:
         except (KeyError, ValueError):
             pass
 
+    modules = _module_paths()
     candidates = []
     for vid, h in health.items():
         if not isinstance(h, dict):
@@ -70,8 +71,8 @@ def decide(today: date | None = None) -> dict:
             continue        # never worked → not a regression; nothing to restore
         if vid in unreachable:
             continue
-        module = ROOT / "scrapers" / "venues" / f"{vid}.py"
-        if not module.exists():
+        module = modules.get(vid)          # venue ids don't always match file names
+        if module is None:
             continue
         if vid in recent and (today - recent[vid]).days < REPAIR_COOLDOWN_DAYS:
             continue
@@ -80,7 +81,22 @@ def decide(today: date | None = None) -> dict:
         return {"run": False, "why": "no venue needs a code repair"}
     candidates.sort(reverse=True)
     streak, vid = candidates[0]
-    return {"run": True, "venue": vid, "why": f"{vid} silent for {streak} runs"}
+    return {"run": True, "venue": vid, "module": modules[vid],
+            "why": f"{vid} silent for {streak} runs"}
+
+
+def _module_paths() -> dict[str, str]:
+    """venue_id → repo-relative path of its BESPOKE scraper module."""
+    from .registry import SCRAPERS
+    out = {}
+    for cls in SCRAPERS:
+        mod = cls.__module__                       # e.g. scrapers.venues.moca
+        if not mod.startswith("scrapers.venues.") or mod.endswith("._generic"):
+            continue
+        path = mod.replace(".", "/") + ".py"
+        if (ROOT / path).exists():
+            out[cls.venue_id] = path
+    return out
 
 
 def record(venue: str, outcome: str) -> None:

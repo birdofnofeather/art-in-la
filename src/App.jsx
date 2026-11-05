@@ -190,6 +190,15 @@ export default function App() {
     writeHash(p);
   }, [tab, discipline, types, regions, eventTypes, datePreset, customStart, customEnd, free, family, mapOnlyEventful, query, detailVenueId]);
 
+  // Venue-type filters that don't exist in the new Art/Performing view would
+  // silently empty the results with no visible chip — drop them on switch.
+  useEffect(() => {
+    if (!data.venues.length || types.size === 0) return;
+    const ok = new Set(data.venues.filter((v) => matchesDiscipline(v, discipline)).map((v) => v.type));
+    const kept = [...types].filter((t) => ok.has(t));
+    if (kept.length !== types.size) setFilters((prev) => ({ ...prev, types: new Set(kept) }));
+  }, [discipline, data.venues]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Performing-arts venues have no exhibitions: leave that tab when switching.
   useEffect(() => {
     if (discipline === "performing" && tab === "exhibitions") setTab("events");

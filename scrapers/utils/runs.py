@@ -37,6 +37,9 @@ _AT_PLACE = re.compile(
 _SEP_TAIL = re.compile(r"[\s:\-–—|,]+$")
 
 
+RUN_GAP_DAYS = 21
+
+
 def _base(title: str) -> str:
     t = (title or "").strip()
     for _ in range(2):
@@ -95,6 +98,22 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                 if letters and letters.isupper():
                     groups[parent].extend(groups.pop(k))
                     break
+        # 2b. split each group where performances are > RUN_GAP_DAYS apart —
+        #     an annual Nutcracker is a new run each December, not one
+        #     year-long record spanning two seasons.
+        split: dict[str, list[dict]] = {}
+        for k, members in groups.items():
+            members = sorted(members, key=lambda m: str(m.get("start")))
+            chunk, last, n = [], None, 0
+            for m in members:
+                d = _day(m.get("start"))
+                if last and d and (d - last).days > RUN_GAP_DAYS:
+                    split[f"{k}#{n}"] = chunk; chunk, n = [], n + 1
+                chunk.append(m); last = d or last
+            split[f"{k}#{n}"] = chunk
+        groups = split
+        display = {gk: display[gk.rsplit("#", 1)[0]] for gk in groups}
+
         # 3. one record per production with 2+ dates — but only when the dates
         #    look like a RUN (performances clustered a few days apart). A
         #    weekly class or monthly series is a standing programme: leave it
@@ -109,7 +128,7 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                     or is_recurring_by_keyword(display[k])):
                 out.extend(members)
                 continue
-            plain = [m for m in members if _key(m.get("title") or "") == k]
+            plain = [m for m in members if _key(m.get("title") or "") == k.rsplit("#", 1)[0]]
             best = dict(max(plain or members,
                             key=lambda m: sum(1 for f in ("description", "url", "image") if m.get(f))))
             first, last = days[0], days[-1]
