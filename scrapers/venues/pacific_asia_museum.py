@@ -57,7 +57,7 @@ class Scraper(BaseScraper):
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
         soup = BeautifulSoup(html, "lxml")
         now = now_utc_iso()
-        seen: set[str] = set()
+        seen: set[tuple[str, str]] = set()
 
         date_re_any = re.compile(
             r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}",
@@ -94,16 +94,19 @@ class Scraper(BaseScraper):
             # Find link
             a = section.find("a", href=re.compile(r"/exhibitions/"))
             if not a:
-                a = section.find("a", href=True)
+                # Only the museum's own links: an exhibition card may credit a
+                # lending institution (e.g. a link to rubinmuseum.org).
+                a = section.find("a", href=re.compile(r"^(/|https?://pacificasiamuseum\.usc\.edu)"))
             url = a["href"] if a else self.events_url
             if url and not url.startswith("http"):
                 url = BASE + url
             # strip fragment
             url = url.split("#")[0] if url else self.events_url
 
-            if url in seen:
+            # Several shows can share the fallback URL, so dedupe on both.
+            if (url, title) in seen:
                 continue
-            seen.add(url)
+            seen.add((url, title))
 
             start_str, end_str = _parse_date_range(date_str) if date_str else (None, None)
             start = to_la_iso(start_str) if start_str else None

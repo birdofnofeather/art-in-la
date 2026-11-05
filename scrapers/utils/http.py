@@ -9,10 +9,27 @@ import requests
 # Several venue sites (Norton Simon, Armory, etc.) return 403/429 to non-browser
 # User-Agents, so we present a current desktop-Chrome UA. We stay polite: low
 # request volume, retries with backoff, and a single daily run.
+def _chrome_major(today=None) -> int:
+    """A current Chrome major version, derived from the date.
+
+    The UA used to be hard-coded "Chrome/124". By late 2026 that was ~30
+    months stale, and university WAFs (USC Fisher, USC Pacific Asia Museum,
+    UCLA Fowler) began resetting connections that claimed it — four museums
+    silently produced nothing from Sept 1. Chrome ships a major version every
+    4 weeks (124 on 2024-04-16), so derive it; stay 2 versions behind the
+    newest, which is what most real browsers report.
+    """
+    import datetime as _dt
+    today = today or _dt.date.today()
+    return 124 + max(0, (today - _dt.date(2024, 4, 16)).days // 28) - 2
+
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    f"(KHTML, like Gecko) Chrome/{_chrome_major()}.0.0.0 Safari/537.36"
 )
+# Tried once if a site resets the connection on the browser UA.
+FALLBACK_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15"
 
 DEFAULT_TIMEOUT = 20
 
@@ -64,7 +81,16 @@ def get(url: str, *, timeout: int = DEFAULT_TIMEOUT, retries: int = 2,
             if attempt < retries:
                 time.sleep(backoff ** attempt)
                 continue
-    if last_err:
+    if last_err is not None:
+        # Connection reset on our browser identity: try once as Safari before
+        # giving up (some WAFs fingerprint one UA family, not the other).
+        try:
+            h = dict(headers or {}); h["User-Agent"] = FALLBACK_UA
+            resp = session().get(url, timeout=timeout, headers=h, allow_redirects=True)
+            print(f"  [http] {url}: recovered with fallback UA ({resp.status_code})")
+            return resp
+        except Exception:  # noqa: BLE001
+            pass
         print(f"  [http] giving up on {url}: {last_err}")
     return None
 
