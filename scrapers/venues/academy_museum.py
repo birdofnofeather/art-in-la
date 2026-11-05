@@ -32,9 +32,46 @@ _NEXT_DATA_RE = re.compile(
     r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.DOTALL
 )
 
+_FLIGHT_RE = re.compile(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)</script>', re.DOTALL)
+
 # Max span (days) for which we bother fetching detail pages to get showtimes.
 # Programs longer than this are treated as exhibitions (all-day date range).
 _EVENT_SPAN_DAYS = 90
+
+
+def _extract_programs(html: str) -> dict:
+    """cfProgramsKeyedByTkId from the page.
+
+    The site moved from the Pages router (__NEXT_DATA__) to the App router,
+    which streams props as RSC flight chunks (self.__next_f.push). Try the
+    old format first, then decode the flight stream.
+    """
+    m = _NEXT_DATA_RE.search(html)
+    if m:
+        try:
+            nd = json.loads(m.group(1))
+            progs = nd.get("props", {}).get("pageProps", {}).get(
+                "cfProgramsKeyedByTkId", {})
+            if progs:
+                return progs
+        except Exception:
+            pass
+    parts = []
+    for c in _FLIGHT_RE.findall(html):
+        try:
+            parts.append(json.loads('"' + c + '"'))
+        except Exception:
+            continue
+    flight = "".join(parts)
+    key = '"cfProgramsKeyedByTkId":'
+    i = flight.find(key)
+    if i < 0:
+        return {}
+    try:
+        obj, _ = json.JSONDecoder().raw_decode(flight, i + len(key))
+    except Exception:
+        return {}
+    return obj if isinstance(obj, dict) else {}
 
 
 # ── time-pattern helpers ──────────────────────────────────────────────────────
@@ -278,17 +315,9 @@ class Scraper(BaseScraper):
         yield from self.custom_parse(resp.text, resp.url)
 
     def custom_parse(self, html: str, base_url: str) -> Iterable[Event]:
-        m = _NEXT_DATA_RE.search(html)
-        if not m:
+        programs = _extract_programs(html)
+        if not programs:
             return
-        try:
-            nd = json.loads(m.group(1))
-        except Exception:
-            return
-
-        programs = nd.get("props", {}).get("pageProps", {}).get(
-            "cfProgramsKeyedByTkId", {}
-        )
         seen: set[str] = set()
         now_iso = now_utc_iso()
 
