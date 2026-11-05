@@ -78,9 +78,9 @@ def _budget() -> float:
 
 def _max_calls() -> int:
     try:
-        return int(os.environ.get("LLM_MAX_CALLS_PER_RUN", "70"))
+        return int(os.environ.get("LLM_MAX_CALLS_PER_RUN", "150"))
     except ValueError:
-        return 70
+        return 150
 
 
 # ── persistent state (cache + ledger) ─────────────────────────────────────
@@ -195,10 +195,13 @@ _ITEM_SCHEMA = {
     "additionalProperties": False,
 }
 
-_LISTING_PROMPT = """You are reading the {mode} page of {venue}, an arts venue in Los Angeles.
+_LISTING_PROMPT = """You are reading the {mode} page of {venue}, an arts venue in Los Angeles{where}.
 Today is {today}. Extract every individual {mode_noun} listed on the page below.
 
 Rules:
+- If the page lists several sites of the same organization, include only items at this venue's
+  site{where_rule}.
+- Skip closures, holiday hours, and "museum closed" notices — they are not events.
 - Copy each title EXACTLY as written on the page (no rewording, no added words).
 - Only include items that show a specific date on this page. Skip items with no date.
 - Skip navigation, newsletters, membership, donation, venue-rental, and shop items.
@@ -325,7 +328,7 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
 
 # ── public API ─────────────────────────────────────────────────────────────
 def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "events",
-                    html: str | None = None, force: bool = False) -> list[dict]:
+                    html: str | None = None, force: bool = False, address: str = "") -> list[dict]:
     """Listings on `url` as validated dicts (see validate_items). [] when disabled."""
     if not enabled():
         return []
@@ -354,6 +357,8 @@ def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "event
 
     prompt = _LISTING_PROMPT.format(
         mode=mode, venue=venue_name, today=date.today().isoformat(),
+        where=f" ({address})" if address else "",
+        where_rule=f" ({address}); if an item's site is not stated, include it" if address else "",
         mode_noun="exhibition" if mode == "exhibitions" else "event or exhibition",
         text=text,
     )

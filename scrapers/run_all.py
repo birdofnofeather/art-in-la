@@ -89,6 +89,7 @@ def scrape(only: set[str] | None) -> tuple[list[dict], list[tuple[str, list]], l
         # name for the LLM prompt, and its typical harvest size so a partial
         # collapse can be noticed.
         inst.venue_name = venue_rows[inst.venue_id].get("name", inst.venue_id)
+        inst.venue_address = venue_rows[inst.venue_id].get("address", "")
         # venues.json can name an exhibitions page for ANY venue, bespoke
         # scraper or not; it is read by the exhibitions pass (LLM tier).
         if not inst.exhibitions_url and venue_rows[inst.venue_id].get("exhibitions_url"):

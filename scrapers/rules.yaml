@@ -231,6 +231,10 @@ recurring:
     - '\boffice\s+hours\b'
     - '\bstudio\s+closed\b'
 
+    # Closure notices are not events ("Office/Campus Closure Dates")
+    - '\bclosure\s+dates?\b'
+    - '\b(?:office|campus|museum|gallery|center)s?\s+(?:closure|closed\s+(?:for|on))\b'
+
     # Standing weekday screening slots (Lucas Museum's "Friday Film Program")
     - '\b(?:mon|tues|wednes|thurs|fri|satur|sun)day\s+film\s+program\b'
 
@@ -248,6 +252,8 @@ recurring:
       - "K-12 Educators Virtual Office Hours"         # Huntington
       - "STUDIO CLOSED"
       - "Robert Flaherty Theater: Friday Film Program"  # Lucas Museum
+      - "Happy Thanksgiving – Office/Campus Closure Dates"  # Tierra del Sol
+      - "Museum Closed for Thanksgiving"
     reject:
       # These must SURVIVE — they are real, one-off, worth listing.
       - "Curator's Tour: Instante/revelación"
@@ -255,6 +261,7 @@ recurring:
       - "Opening Reception: New Work"
       - "Mid-Autumn Moon Celebration"
       - "Film Program: Agnès Varda Retrospective"
+      - "Closing Reception: Gallery Closed Doors"
 
   # ── (b) Caught by rhythm ────────────────────────────────────────────────
   cadence:

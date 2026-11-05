@@ -227,6 +227,7 @@ class BaseScraper:
     # a run collapses far below it, the LLM reader is consulted as well.
     expected_count: int = 0
     venue_name: str = ""
+    venue_address: str = ""
 
     def _harvest(self, url: str, default_type: str, allow_custom: bool,
                  label: str = "") -> list[Event]:
@@ -607,7 +608,8 @@ class BaseScraper:
             return
         mode = "exhibitions" if self.default_event_type == "exhibition" else "events"
         items = llm_extract.extract_listing(
-            self.venue_id, self.venue_name or self.venue_id, self.events_url, mode=mode)
+            self.venue_id, self.venue_name or self.venue_id, self.events_url, mode=mode,
+            address=self.venue_address)
         yield from self._items_to_events(items, "+llm")
 
     # ------- Post-processing -------
