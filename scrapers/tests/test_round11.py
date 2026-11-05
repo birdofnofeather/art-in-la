@@ -158,3 +158,12 @@ def test_llm_unsupported_time_is_dropped_not_the_item():
               "description": None}]
     out = llm.validate_items(items, page, today=TODAY)
     assert len(out) == 1 and out[0]["time"] is None
+
+
+def test_llm_image_must_be_on_page():
+    page = "Artist Talk: Jane Doe [image: https://v.org/jane.jpg]\nThursday, November 12\n"
+    base = {"title": "Artist Talk: Jane Doe", "kind": "event", "start_date": "2026-11-12",
+            "end_date": None, "start_time": None, "url": None, "price_text": None, "description": None}
+    ok = llm.validate_items([dict(base, image="https://v.org/jane.jpg")], page, today=TODAY)
+    bad = llm.validate_items([dict(base, image="https://stock.example/x.jpg")], page, today=TODAY)
+    assert ok[0]["image"] == "https://v.org/jane.jpg" and bad[0]["image"] is None

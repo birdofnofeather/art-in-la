@@ -28,16 +28,13 @@ venues:
   amoca: {}
   velaslavasay: {}
   weisman_pepperdine: {default_event_type: exhibition}
-  otis_ben_maltz: {default_event_type: exhibition}
   csun_galleries: {}
   iamla: {}
   art_share_la: {}
-  caer: {}
   japan_house: {}
   catalina_museum: {}
   claremont_lewis: {}
   maaa: {default_event_type: exhibition}
-  wgsac: {}
   lucas_museum: {}
   natural_history_museum: {}
   csulb_kleefeld: {}
@@ -65,16 +62,11 @@ venues:
   highways: {heuristic: true, default_event_type: performance}
   carpenter_center: {heuristic: true, default_event_type: performance}
   pasadena_playhouse: {default_event_type: performance}   # WordPress Tribe feed
-  la_phil: {default_event_type: performance}
-  la_opera: {default_event_type: performance}
   center_theatre_group: {default_event_type: performance}
   the_wallis: {default_event_type: performance}
-  ford_theatres: {default_event_type: performance}
-  geffen_playhouse: {default_event_type: performance}
   the_soraya: {default_event_type: performance}
   cap_ucla: {default_event_type: performance}
   broad_stage: {default_event_type: performance}
   fountain_theatre: {default_event_type: performance}
   grand_performances: {default_event_type: performance}
   a_noise_within: {default_event_type: performance}
-  cerritos_center: {default_event_type: performance}

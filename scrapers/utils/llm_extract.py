@@ -57,6 +57,8 @@ LEDGER_PATH = STATE_DIR / "llm_ledger.json"
 
 MAX_PAGE_CHARS = 60_000          # ~15K tokens; long pages are cut at item boundaries
 CACHE_TTL_DAYS = 21              # re-read an unchanged page at least this often
+# Bump when the prompt/schema changes so cached answers are re-read once.
+PROMPT_VERSION = 2
 _LOCK = threading.Lock()
 _calls_this_run = 0
 
@@ -143,6 +145,17 @@ def page_text(html: str, base_url: str = "") -> str:
                             "nav", "footer", "header"]):
         t.decompose()
     root = soup.find("main") or soup.body or soup
+    # Event images stay visible to the model as [image: URL] so a listing can
+    # keep the picture the venue itself shows next to it (validated below:
+    # the URL must appear on the page). Tiny icons/logos/data URIs are skipped.
+    for img in root.find_all("img"):
+        src = img.get("src") or img.get("data-src") or ""
+        if (not src or src.startswith("data:") or re.search(r"logo|icon|sprite|avatar|\.svg", src, re.I)):
+            continue
+        if base_url:
+            from urllib.parse import urljoin
+            src = urljoin(base_url, src)
+        img.replace_with(f" [image: {src}] ")
     for a in root.find_all("a", href=True):
         href = a["href"]
         if href.startswith(("http", "/")) and a.get_text(strip=True):
@@ -183,10 +196,11 @@ _ITEM_SCHEMA = {
                     "start_time": {"type": ["string", "null"]},
                     "url": {"type": ["string", "null"]},
                     "price_text": {"type": ["string", "null"]},
+                    "image": {"type": ["string", "null"]},
                     "description": {"type": ["string", "null"]},
                 },
                 "required": ["title", "kind", "start_date", "end_date", "start_time",
-                             "url", "price_text", "description"],
+                             "url", "price_text", "image", "description"],
                 "additionalProperties": False,
             },
         }
@@ -213,6 +227,8 @@ Rules:
 - kind = "exhibition" for an art exhibition/installation on view over a date range; otherwise "event".
 - url = the item's own link if one appears next to it (shown in <angle brackets>), else null.
 - price_text like "Free", "$15", "$10–$25" only if printed, else null.
+- image = the [image: URL] shown with that item on the page, if there is one; else null.
+  Never use an image belonging to a different item.
 - description: one short factual sentence from the page, or null.
 
 PAGE TEXT:
@@ -316,10 +332,13 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
         tm = it.get("start_time")
         tm = tm if isinstance(tm, str) and _HHMM.match(tm) and _time_on_page(tm, window) else None
         url = it.get("url") if isinstance(it.get("url"), str) and it["url"].startswith("http") else None
+        image = it.get("image") if isinstance(it.get("image"), str) else None
+        if image and (not image.startswith("http") or image not in text):
+            image = None                       # only an image actually on the page
         out.append({
             "title": title,
             "kind": "exhibition" if it.get("kind") == "exhibition" else "event",
-            "start": start, "end": end, "time": tm, "url": url,
+            "start": start, "end": end, "time": tm, "url": url, "image": image,
             "price_text": (it.get("price_text") or None) and str(it["price_text"])[:24],
             "description": (it.get("description") or "")[:400],
         })
@@ -410,7 +429,7 @@ def extract_listing(venue_id: str, venue_name: str, url: str, mode: str = "event
 
 def _read(venue_id, venue_name, url, mode, text, force, address, rendered) -> tuple[int, list[dict]]:
     digest = hashlib.sha256(text.encode("utf-8")).hexdigest()[:20]
-    key = f"{venue_id}|{mode}|{url}" + ("|rendered" if rendered else "")
+    key = f"v{PROMPT_VERSION}|{venue_id}|{mode}|{url}" + ("|rendered" if rendered else "")
     now = datetime.now(timezone.utc)
     with _LOCK:
         cached = _load(CACHE_PATH).get(key)

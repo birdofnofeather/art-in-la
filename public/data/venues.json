@@ -1780,25 +1780,6 @@
     ]
   },
   {
-    "id": "otis_ben_maltz",
-    "name": "Ben Maltz Gallery at Otis College",
-    "short_name": "Ben Maltz Gallery",
-    "type": "academic",
-    "discipline": "visual",
-    "description": "Otis College of Art and Design's public gallery, known for contemporary and LA-focused exhibitions.",
-    "website": "https://www.otis.edu/ben-maltz-gallery",
-    "events_url": "https://www.otis.edu/ben-maltz-gallery",
-    "address": "9045 Lincoln Blvd, Los Angeles, CA 90045",
-    "lat": 33.9583,
-    "lng": -118.4179,
-    "region": "westside",
-    "neighborhood": "Westchester",
-    "socials": {},
-    "aliases": [
-      "Otis"
-    ]
-  },
-  {
     "id": "csun_galleries",
     "name": "CSUN Art Galleries",
     "short_name": "CSUN Galleries",
@@ -1870,25 +1851,6 @@
     "socials": {},
     "aliases": [
       "LACP"
-    ]
-  },
-  {
-    "id": "caer",
-    "name": "Center for the Arts Eagle Rock",
-    "short_name": "CAER",
-    "type": "community",
-    "discipline": "visual",
-    "description": "Community arts center in a historic Eagle Rock library building, with exhibitions, workshops, and performances.",
-    "website": "https://www.centerartseaglerock.org",
-    "events_url": "https://www.centerartseaglerock.org/events",
-    "address": "2225 Colorado Blvd, Los Angeles, CA 90041",
-    "lat": 34.13963,
-    "lng": -118.21491,
-    "region": "eastside",
-    "neighborhood": "Eagle Rock",
-    "socials": {},
-    "aliases": [
-      "CAER"
     ]
   },
   {
@@ -1981,25 +1943,6 @@
     "socials": {}
   },
   {
-    "id": "wgsac",
-    "name": "William Grant Still Arts Center",
-    "short_name": "WGSAC",
-    "type": "community",
-    "discipline": "visual",
-    "description": "City of LA arts center in West Adams presenting exhibitions and programs centered on African American art and culture.",
-    "website": "https://wgsac.org",
-    "events_url": "https://wgsac.org",
-    "address": "2520 S West View St, Los Angeles, CA 90016",
-    "lat": 34.03311,
-    "lng": -118.34801,
-    "region": "south",
-    "neighborhood": "West Adams",
-    "socials": {},
-    "aliases": [
-      "WGSAC"
-    ]
-  },
-  {
     "id": "la_phil",
     "name": "Los Angeles Philharmonic (Walt Disney Concert Hall)",
     "short_name": "LA Phil",
@@ -2007,7 +1950,7 @@
     "discipline": "performing",
     "description": "The LA Phil's concerts at Walt Disney Concert Hall and the Hollywood Bowl.",
     "website": "https://www.laphil.com",
-    "events_url": "https://www.laphil.com/events",
+    "events_url": "https://www.laphil.com/tickets-and-events/calendar",
     "address": "111 S Grand Ave, Los Angeles, CA 90012",
     "lat": 34.05554,
     "lng": -118.24902,
@@ -2068,8 +2011,8 @@
     "type": "center",
     "discipline": "performing",
     "description": "LA County's outdoor amphitheater in the Cahuenga Pass, presenting music, dance, and theater.",
-    "website": "https://www.fordtheatres.org",
-    "events_url": "https://www.fordtheatres.org/calendar/",
+    "website": "https://www.theford.com",
+    "events_url": "https://www.theford.com/tickets-and-events/calendar",
     "address": "2580 Cahuenga Blvd E, Los Angeles, CA 90068",
     "lat": 34.11428,
     "lng": -118.33574,
@@ -2293,7 +2236,7 @@
     "discipline": "performing",
     "description": "Los Angeles' opera company, performing at the Dorothy Chandler Pavilion at the Music Center.",
     "website": "https://www.laopera.org",
-    "events_url": "https://www.laopera.org/performances/",
+    "events_url": "https://www.laopera.org/whats-on",
     "address": "135 N Grand Ave, Los Angeles, CA 90012",
     "lat": 34.0577,
     "lng": -118.2486,

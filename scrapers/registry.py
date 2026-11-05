@@ -159,6 +159,15 @@ SCRAPERS = [
     ArtCenter,
 ]
 
+# --- Round 11: rendered (JavaScript-built) performing-arts calendars ---
+from .venues.la_phil import Scraper as LAPhil
+from .venues.ford_theatres import Scraper as FordTheatres
+from .venues.la_opera import Scraper as LAOpera
+from .venues.geffen_playhouse import Scraper as GeffenPlayhouse
+from .venues.cerritos_center import Scraper as CerritosCenter
+
+SCRAPERS += [LAPhil, FordTheatres, LAOpera, GeffenPlayhouse, CerritosCenter]
+
 # --- Round 11: config-driven venues (scrapers/generic_venues.yaml) ---
 # Venues without a bespoke module. A venue id must appear only once overall;
 # a bespoke module always wins over a generic entry.
