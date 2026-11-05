@@ -1,6 +1,6 @@
 """Generate subscribable .ics calendar feeds.
 
-Writes public/data/feeds/{all,free,family}.ics so a user can add the whole
+Writes public/data/feeds/{art,performing}.ics (internal; split by discipline) so the whole
 calendar to Google/Apple Calendar once and never visit the site again — the
 lowest-maintenance form of the project's "runs itself" promise.
 

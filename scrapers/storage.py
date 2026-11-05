@@ -92,13 +92,19 @@ def write_feeds(upcoming: list[dict]) -> None:
 
     venues = venues_by_id()
     oneoff = [e for e in upcoming if e.get("event_type") != "exhibition"]
+
+    def perf(e):
+        return (venues.get(e.get("venue_id")) or {}).get("discipline") == "performing"
+
+    # Internal feeds (not advertised on the site), split by discipline — a
+    # single all-events feed mixing concerts and gallery talks is too much.
     feeds = {
-        "all": (oneoff, "Art in LA — All events"),
-        "free": ([e for e in oneoff if e.get("is_free")], "Art in LA — Free events"),
-        "family": ([e for e in oneoff if "family" in (e.get("audience") or [])],
-                   "Art in LA — Family-friendly"),
+        "art": ([e for e in oneoff if not perf(e)], "Art in LA — Art venues"),
+        "performing": ([e for e in oneoff if perf(e)], "Art in LA — Performing arts"),
     }
     FEEDS_DIR.mkdir(parents=True, exist_ok=True)
+    for stale in ("all", "free", "family"):
+        (FEEDS_DIR / f"{stale}.ics").unlink(missing_ok=True)
     for key, (events, name) in feeds.items():
         (FEEDS_DIR / f"{key}.ics").write_text(
             build_ics(events, venues, name), encoding="utf-8"

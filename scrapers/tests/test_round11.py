@@ -149,3 +149,12 @@ def test_llm_render_fallback_and_reads(monkeypatch):
     out = llm.extract_listing("ctg", "CTG", "https://x.org", html="<div id=app></div>")
     assert [o["title"] for o in out] == ["Fiddler on the Roof"]
     assert llm.READS["ctg"][1] == 1
+
+
+def test_llm_unsupported_time_is_dropped_not_the_item():
+    page = "Artist Talk: Jane Doe\nThursday, November 12\nFree\n"
+    items = [{"title": "Artist Talk: Jane Doe", "kind": "event", "start_date": "2026-11-12",
+              "end_date": None, "start_time": "19:00", "url": None, "price_text": None,
+              "description": None}]
+    out = llm.validate_items(items, page, today=TODAY)
+    assert len(out) == 1 and out[0]["time"] is None

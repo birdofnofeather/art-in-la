@@ -314,7 +314,7 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
             continue
         seen.add(key)
         tm = it.get("start_time")
-        tm = tm if isinstance(tm, str) and _HHMM.match(tm) else None
+        tm = tm if isinstance(tm, str) and _HHMM.match(tm) and _time_on_page(tm, window) else None
         url = it.get("url") if isinstance(it.get("url"), str) and it["url"].startswith("http") else None
         out.append({
             "title": title,
@@ -324,6 +324,27 @@ def validate_items(items: list, text: str, today: date | None = None) -> list[di
             "description": (it.get("description") or "")[:400],
         })
     return out
+
+
+def _time_on_page(hhmm: str, window: str) -> bool:
+    """Is this time actually printed near the item? An unsupported time is
+    dropped — the item stays, date-only — because a fabricated time is worse
+    than none. `window` is the normalised page text (punctuation → spaces,
+    so "7:30 p.m." reads "7 30 p m" and "19:30" reads "19 30")."""
+    h, m = int(hhmm[:2]), int(hhmm[3:])
+    h12 = h % 12 or 12
+    ap = "p" if h >= 12 else "a"
+    mm = rf" {m:02d}" if m else r"(?: 00)?"
+    pats = [
+        # 7 pm · 7 30 pm · 7 30pm · 7 p m · 7 9 pm (range: start hour first)
+        rf"(?<!\d){h12}{mm} ?(?:to )?(?:\d{{1,2}}(?: \d{{2}})? ?)?{ap} ?m\b",
+        rf"(?<!\d){h12}{mm}{ap}m\b",
+        rf"(?<!\d){h:02d} {m:02d}(?!\d)",
+        rf"(?<!\d){h} {m:02d}(?!\d)" if h >= 13 else r"(?!x)x",
+    ]
+    if h == 12 and m == 0:
+        pats.append(r"\bnoon\b")
+    return any(re.search(p, window) for p in pats)
 
 
 # ── public API ─────────────────────────────────────────────────────────────

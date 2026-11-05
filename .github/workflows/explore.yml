@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   explore:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: Playwright has no Chromium build for ubuntu-latest (26.04)
     steps:
       - name: Checkout
         uses: actions/checkout@v4

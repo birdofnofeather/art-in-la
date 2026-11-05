@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: Playwright has no Chromium build for ubuntu-latest (26.04)
     timeout-minutes: 30
     steps:
       - name: Checkout
@@ -33,6 +33,7 @@ jobs:
         run: pip install -r scrapers/requirements.txt
 
       - name: Install headless browser (for bot-gated venues)
+        id: browser
         # Norton Simon (Cloudflare) and Huntington (Vercel checkpoint) only
         # yield events to a real browser. If this step ever fails, the run still
         # proceeds — those two scrapers degrade to zero events, not an error.
@@ -64,6 +65,17 @@ jobs:
           # metered from the API's token counts into scrapers/state/llm_ledger.json;
           # once reached, LLM calls stop until the 1st of the next month.
           LLM_MONTHLY_BUDGET_USD: "3"
+
+      - name: Warn loudly if the headless browser is missing
+        if: always() && steps.browser.outcome == 'failure'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          msg="The headless browser failed to install, so Norton Simon, the Huntington and every JavaScript-built venue page were NOT read this run (usually a new runner OS that Playwright does not support yet — check runs-on in .github/workflows/daily-scrape.yml). Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "### ⚠️ $msg" >> "$GITHUB_STEP_SUMMARY"
+          existing=$(gh issue list --state open --search "Headless browser missing in:title" --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -z "$existing" ]; then gh issue create --title "Headless browser missing in daily scrape" --body "$msg"; fi
 
       - name: Post scraper warnings summary
         if: always()

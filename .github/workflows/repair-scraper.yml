@@ -35,7 +35,7 @@ concurrency:
 
 jobs:
   repair:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: Playwright has no Chromium build for ubuntu-latest (26.04)
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
@@ -123,11 +123,10 @@ jobs:
           if ! grep -q . /tmp/changed.txt; then echo "Agent changed nothing."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           python -m pytest scrapers/tests -q || { echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; }
           python -m scrapers.check_rules || { echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; }
-          # A real scrape of that venue, parser only (dry runs never use the LLM).
-          python -m scrapers.run_all --only "$VENUE" --dry-run --no-probe | tee /tmp/run.txt
-          n=$(grep -oP "→ ${VENUE}: \K\d+" /tmp/run.txt | head -1)
-          echo "events=${n:-0}"
-          if [ "${n:-0}" -ge 1 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
+          # A real scrape of that venue (parser only — dry runs never use the
+          # LLM), judged on what would be PUBLISHED: real titles, plausible
+          # dates, not mostly junk. See scrapers/verify_venue.py.
+          if python -m scrapers.verify_venue "$VENUE"; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
 
       - name: Commit the verified repair
         if: always() && steps.plan.outputs.run == 'true' && steps.verify.outputs.ok == 'true'
