@@ -331,7 +331,7 @@ badge). Feeds: internal `feeds/art.ics` + `feeds/performing.ics` only.
 performances of one production collapse into ONE record (`_run: True`,
 `run_count`, `recurrence_note` "N performances · Nov 4 – Nov 29"), folding
 variants ("(Opening Night)", "Passing Strange WINE WEDNESDAY"). Only when
-dates cluster (median gap ≤ 3 days) — weekly classes are left to the recurring
+dates cluster (median gap ≤ 4 days — theaters dark Mon–Wed) — weekly classes are left to the recurring
 filter; venues with `venue_overrides: drop` (Pieter) are never bundled. Runs
 are exempt from the recurring filter and the >4-day one-off hygiene rule.
 

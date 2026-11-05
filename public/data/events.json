@@ -1425,29 +1425,6 @@
     "recurrence_note": "Runs Oct 17 – Nov 7"
   },
   {
-    "id": "pacific_asia_museum--current-exhibitions-6c6cb5fba2",
-    "venue_id": "pacific_asia_museum",
-    "title": "Current Exhibitions",
-    "description": "",
-    "event_type": "exhibition",
-    "start": "2026-10-17",
-    "end": "2027-01-10",
-    "all_day": true,
-    "url": "https://pacificasiamuseum.usc.edu/whats-on-view/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pacificasiamuseum.usc.edu+llm",
-    "scraped_at": "2026-11-05T03:43:57+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "pacific_asia_museum-2026-10-17-gateway-to-himalayan-art-9eb78cccd3",
     "venue_id": "pacific_asia_museum",
     "title": "Gateway to Himalayan Art",
@@ -1806,6 +1783,32 @@
     "_default_type": "exhibition"
   },
   {
+    "id": "a_noise_within-2026-11-01-come-from-away-ff4e5f86e2",
+    "venue_id": "a_noise_within",
+    "title": "Come From Away",
+    "description": "Come From Away performance on Sunday, November 1 at 2:00pm, Sold Out.",
+    "event_type": "performance",
+    "start": "2026-11-01",
+    "end": "2026-11-08",
+    "all_day": true,
+    "url": "https://www.anoisewithin.org/play/come-from-away/",
+    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "anoisewithin.org+llm",
+    "scraped_at": "2026-11-05T03:45:23+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 3,
+    "recurrence_note": "3 performances · Nov 1 – Nov 8"
+  },
+  {
     "id": "pasadena_playhouse-2026-11-04-passing-strange-5eb5e56fb2",
     "venue_id": "pasadena_playhouse",
     "title": "Passing Strange",
@@ -1996,13 +1999,13 @@
     "_asserted_type": "exhibition"
   },
   {
-    "id": "east_west_players-2026-11-05-when-yuri-met-malcolm-at-venice-abbot-ki-b6d46255de",
+    "id": "east_west_players-2026-11-05-when-yuri-met-malcolm-2ecea80c13",
     "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Venice - Abbot Kinney Memorial Branch Library",
-    "description": "",
+    "title": "WHEN YURI MET MALCOLM",
+    "description": "At: Venice - Abbot Kinney Memorial Branch Library; Baldwin Hills Branch Library; Little Tokyo Branch Library; Westwood Branch Library; Chinatown Branch Library; Fairfax Branch Library.",
     "event_type": "performance",
     "start": "2026-11-05",
-    "end": null,
+    "end": "2026-12-05",
     "all_day": true,
     "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7",
     "image": null,
@@ -2016,7 +2019,10 @@
     "is_free": null,
     "price_text": null,
     "audience": [],
-    "_default_type": "performance"
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 6,
+    "recurrence_note": "6 performances · Nov 5 – Dec 5"
   },
   {
     "id": "huntington-2026-11-05-why-it-matters-hctor-tobar-in-conversati-d7dac292a3",
@@ -2230,29 +2236,6 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "performance"
-  },
-  {
-    "id": "a_noise_within-2026-11-05-come-from-away-e3d94d6666",
-    "venue_id": "a_noise_within",
-    "title": "Come From Away",
-    "description": "Come From Away performance on Thursday, November 5 at 7:30pm, Limited availability.",
-    "event_type": "performance",
-    "start": "2026-11-05T19:30:00-08:00",
-    "end": "2026-11-08",
-    "all_day": false,
-    "url": "https://www.anoisewithin.org/play/come-from-away/",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "anoisewithin.org+llm",
-    "scraped_at": "2026-11-05T03:45:23+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
   },
   {
     "id": "academy_museum-2026-11-06-viva-ingrid-with-journey-to-italy-presen-c1fa341cde",
@@ -3159,29 +3142,6 @@
     "_default_type": "screening"
   },
   {
-    "id": "a_noise_within-2026-11-07-come-from-away-2d2136d8eb",
-    "venue_id": "a_noise_within",
-    "title": "Come From Away",
-    "description": "Come From Away performance on Saturday, November 7 at 2:00pm, Limited availability.",
-    "event_type": "performance",
-    "start": "2026-11-07T14:00:00-08:00",
-    "end": "2026-11-08",
-    "all_day": false,
-    "url": "https://www.anoisewithin.org/play/come-from-away/",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "artists": [],
-    "location_override": null,
-    "source": "anoisewithin.org+llm",
-    "scraped_at": "2026-11-05T03:45:23+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
-  },
-  {
     "id": "hammer-2026-11-07-after-the-vote-what-the-2026-midterms-te-2a46529816",
     "venue_id": "hammer",
     "title": "After the Vote: What the 2026 Midterms Tell Us",
@@ -3984,29 +3944,6 @@
     "_default_type": "performance",
     "_run": true,
     "recurrence_note": "Runs Nov 10 – Dec 6"
-  },
-  {
-    "id": "east_west_players-2026-11-10-when-yuri-met-malcolm-at-baldwin-hills-b-d6fb763989",
-    "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Baldwin Hills Branch Library",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-11-10",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7-rt3lg",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "eastwestplayers.org",
-    "scraped_at": "2026-11-05T03:45:09+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
   },
   {
     "id": "hammer-2026-11-10-cocktails-with-a-curator-5df57fb5f4",
@@ -5269,7 +5206,7 @@
     "id": "east_west_players-2026-11-14-toki-the-japanese-elvis-ea2c2b6c69",
     "venue_id": "east_west_players",
     "title": "Toki the Japanese Elvis",
-    "description": "",
+    "description": "At: David Henry Hwang Theater.",
     "event_type": "performance",
     "start": "2026-11-14",
     "end": "2026-11-15",
@@ -5290,29 +5227,6 @@
     "_run": true,
     "run_count": 2,
     "recurrence_note": "2 performances · Nov 14 – Nov 15"
-  },
-  {
-    "id": "east_west_players-2026-11-14-when-yuri-met-malcolm-at-little-tokyo-br-37ce57464e",
-    "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Little Tokyo Branch Library",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-11-14",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7-rt3lg-tm6cn",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "eastwestplayers.org",
-    "scraped_at": "2026-11-05T03:45:09+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
   },
   {
     "id": "side_street-2026-11-14-cara-levine-silverlinings-fe594535b0",
@@ -6298,29 +6212,6 @@
     "_default_type": "other"
   },
   {
-    "id": "east_west_players-2026-11-17-when-yuri-met-malcolm-at-westwood-branch-a9ed5c8597",
-    "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Westwood Branch Library",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-11-17",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7-rt3lg-j59j5",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "eastwestplayers.org",
-    "scraped_at": "2026-11-05T03:45:09+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
-  },
-  {
     "id": "caam-2026-11-17-artist-walkthrough-jamea-richmondedwards-cadaeb49ea",
     "venue_id": "caam",
     "title": "Artist Walkthrough: Jamea Richmond-Edwards: Another World and Yet the Same",
@@ -7244,29 +7135,6 @@
     "price_text": "Free",
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "east_west_players-2026-11-21-when-yuri-met-malcolm-at-chinatown-branc-ff57d11d72",
-    "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Chinatown Branch Library",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-11-21",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7-rt3lg-j59j5-xd6c2",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "eastwestplayers.org",
-    "scraped_at": "2026-11-05T03:45:09+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
   },
   {
     "id": "vincent_price-2026-11-21-francis-and-anthony-almendrez-navigating-183104961a",
@@ -8834,29 +8702,6 @@
     "_default_type": "other"
   },
   {
-    "id": "east_west_players-2026-12-05-when-yuri-met-malcolm-at-fairfax-branch-3c277ed135",
-    "venue_id": "east_west_players",
-    "title": "WHEN YURI MET MALCOLM at Fairfax Branch Library",
-    "description": "",
-    "event_type": "performance",
-    "start": "2026-12-05",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.eastwestplayers.org/events/jcekghnwm7my8n4xuu3347pruk66j8-82nfd-wekg9-6ch44-7brar-wyl7w-xgew7-rt3lg-j59j5-xd6c2-y2x23",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "eastwestplayers.org",
-    "scraped_at": "2026-11-05T03:45:09+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "performance"
-  },
-  {
     "id": "side_street-2026-12-05-build-over-buy-intro-to-bandsaw-box-e0a57fc8cd",
     "venue_id": "side_street",
     "title": "Build Over Buy: Intro to Bandsaw Box",
@@ -9965,29 +9810,6 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
-  },
-  {
-    "id": "pacific_asia_museum--upcoming-exhibitions-bd795bec4b",
-    "venue_id": "pacific_asia_museum",
-    "title": "Upcoming Exhibitions",
-    "description": "",
-    "event_type": "exhibition",
-    "start": "2026-12-12",
-    "end": "2027-07-03",
-    "all_day": true,
-    "url": "https://pacificasiamuseum.usc.edu/whats-on-view/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "pacificasiamuseum.usc.edu+llm",
-    "scraped_at": "2026-11-05T03:43:57+00:00",
-    "event_types": [
-      "exhibition"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
   },
   {
     "id": "highways-2026-12-12-jpeg-productions-the-martini-hour-prinst-544731a171",

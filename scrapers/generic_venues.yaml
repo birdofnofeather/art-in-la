@@ -25,7 +25,8 @@ venues:
   tsa_la: {heuristic: true, url_must_contain: "tigerstrikesasteroid.com/la/", default_event_type: exhibition}
 
   # ── Art venues: no reliable pattern — LLM reader only ──────────────────
-  amoca: {}
+  amoca:   # public Google Calendar embedded on /calendar/ (verified feed)
+    ical_url: "https://calendar.google.com/calendar/ical/c_eaf49a3791eea287f5b61e67a82348bebb7b0f080211531fdf45641f7fa0ba60%40group.calendar.google.com/public/basic.ics"
   velaslavasay: {}
   weisman_pepperdine: {default_event_type: exhibition}
   csun_galleries: {}

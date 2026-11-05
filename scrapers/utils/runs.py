@@ -38,6 +38,9 @@ _SEP_TAIL = re.compile(r"[\s:\-–—|,]+$")
 
 
 RUN_GAP_DAYS = 21
+# Theaters go dark Mon–Wed, so a Thu–Sun run has gaps of up to 4 days;
+# a weekly class (7) must never qualify.
+RUN_MAX_MEDIAN_GAP = 4
 
 
 def _base(title: str) -> str:
@@ -137,7 +140,7 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                         m["event_types"] = ["performance"]
                 out.append(m)
                 continue
-            if (len(starts) < 2 or median_gap > 3
+            if (len(starts) < 2 or median_gap > RUN_MAX_MEDIAN_GAP
                     or is_recurring_by_keyword(display[k])):
                 out.extend(members)
                 continue
@@ -146,6 +149,15 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                             key=lambda m: sum(1 for f in ("description", "url", "image") if m.get(f))))
             first, last = days[0], days[-1]
             n = len({(m.get("start") or "") for m in members})
+            # A touring production ("… at Westwood Branch Library") keeps its
+            # list of places in the description, so folding loses nothing.
+            places = []
+            for m in sorted(members, key=lambda m: str(m.get("start"))):
+                hit = _AT_PLACE.search(m.get("title") or "")
+                if hit:
+                    place = re.sub(r"^\s+(?:at|@)\s+(?:the\s+)?", "", hit.group(0)).strip()
+                    if place and place not in places:
+                        places.append(place)
             best.update({
                 "id": event_id(venue_id, first.isoformat(), display[k]),
                 "title": display[k],
@@ -156,6 +168,8 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                 "run_count": n,
                 "recurrence_note": f"{n} performances · {_fmt(first)} – {_fmt(last)}",
             })
+            if places:
+                best["description"] = ("At: " + "; ".join(places) + ". " + (best.get("description") or "")).strip()
             if best.get("event_type") in ("opening", "closing", "screening", "workshop", "fair", "other"):
                 best["event_type"] = "performance"
                 best["event_types"] = ["performance"]

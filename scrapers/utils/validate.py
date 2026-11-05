@@ -111,6 +111,13 @@ def validate(events, now=None):
         # An exhibition with no dates at all can't be placed on a timeline and
         # never reaches the (dates-required) Exhibitions tab, so it is clutter.
         # It re-enters automatically if the scraper later finds dates.
+        # Page furniture / standing displays are never a show (rules.yaml
+        # exhibitions.never_patterns). Checked here too, so a pattern added
+        # later applies retroactively to stored records.
+        if is_exh and any(p.search(ev.get("title") or "") for p in rules.exh_never):
+            _drop(ev, "not an exhibition (page heading or standing display)")
+            continue
+
         if is_exh and start is None and end is None:
             _drop(ev, "undated exhibition")
             continue

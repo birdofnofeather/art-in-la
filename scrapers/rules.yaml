@@ -234,6 +234,7 @@ recurring:
     # Closure notices are not events ("Office/Campus Closure Dates")
     - '\bclosure\s+dates?\b'
     - '\b(?:office|campus|museum|gallery|center)s?\s+(?:closure|closed\s+(?:for|on))\b'
+    - '^\s*closed\b|\b(?:museum|gallery|center)\s+is\s+closed\b'
 
     # Standing weekday screening slots (Lucas Museum's "Friday Film Program")
     - '\b(?:mon|tues|wednes|thurs|fri|satur|sun)day\s+film\s+program\b'
@@ -254,6 +255,8 @@ recurring:
       - "Robert Flaherty Theater: Friday Film Program"  # Lucas Museum
       - "Happy Thanksgiving – Office/Campus Closure Dates"  # Tierra del Sol
       - "Museum Closed for Thanksgiving"
+      - "Christmas Holiday - Museum is Closed"        # AMOCA calendar
+      - "CLOSED for private event"
     reject:
       # These must SURVIVE — they are real, one-off, worth listing.
       - "Curator's Tour: Instante/revelación"
@@ -319,6 +322,10 @@ exhibitions:
     - '\b(permanent|semi[- ]permanent)\b'
     - '\bon\s+view\s+indefinitely\b'
     - '\b(admission|hours|visit|directions|membership)\b'
+    # Section headings mistaken for a show ("Current Exhibitions")
+    - '^\s*(?:current|upcoming|past|on view now|now on view)\s+exhibit(?:ion)?s?\s*$'
+    # Closure notices that span days ("Closed for New Year's Day")
+    - '^\s*closed\b|\b(?:museum|gallery|center)\s+is\s+closed\b'
 
   # Event types that must NEVER be promoted to "exhibition" just because they
   # run over several days. A three-week run of workshops is a programme.
@@ -335,10 +342,14 @@ exhibitions:
   examples:
     match:
       - "Sixty Years of Prints"
+      - "Current Exhibitions in Ceramics: A Survey"
       - "Instante/revelación: Moments in Mexican Photography"
     reject:
       - "Permanent Collection Installation"
       - "Museum Hours and Admission"
+      - "Current Exhibitions"
+      - "Upcoming Exhibitions"
+      - "Closed for New Year's Day"
 
 
 # ──────────────────────────────────────────────────────────────────────────

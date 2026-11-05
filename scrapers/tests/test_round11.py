@@ -167,3 +167,10 @@ def test_llm_image_must_be_on_page():
     ok = llm.validate_items([dict(base, image="https://v.org/jane.jpg")], page, today=TODAY)
     bad = llm.validate_items([dict(base, image="https://stock.example/x.jpg")], page, today=TODAY)
     assert ok[0]["image"] == "https://v.org/jane.jpg" and bad[0]["image"] is None
+
+
+def test_thu_to_sun_run_with_dark_days_collapses():
+    evs = [_ev("Come From Away", s) for s in ("2026-11-01T14:00:00-08:00", "2026-11-05T19:30:00-08:00",
+                                               "2026-11-07T14:00:00-08:00")]
+    runs = [e for e in collapse_runs(evs, {"theater"}) if e.get("_run")]
+    assert len(runs) == 1 and runs[0]["run_count"] == 3
