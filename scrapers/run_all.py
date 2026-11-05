@@ -72,7 +72,9 @@ def prune_raw(records: list[dict], now=None) -> list[dict]:
 
 def scrape(only: set[str] | None) -> tuple[list[dict], list[tuple[str, list]], list[str]]:
     """Run the scrapers. Returns (all_events, per_venue_results, venue_ids_run)."""
-    known_venues = {v["id"] for v in storage.load_venues()}
+    venue_rows = {v["id"]: v for v in storage.load_venues()}
+    known_venues = set(venue_rows)
+    health = storage.load_health()
 
     targets = []
     for cls in SCRAPERS:
@@ -83,6 +85,18 @@ def scrape(only: set[str] | None) -> tuple[list[dict], list[tuple[str, list]], l
             print(f"  [warn] scraper venue_id={inst.venue_id} not in venues.json — skipping",
                   file=sys.stderr)
             continue
+        # Context for self-healing (see BaseScraper.run): the venue's display
+        # name for the LLM prompt, and its typical harvest size so a partial
+        # collapse can be noticed.
+        inst.venue_name = venue_rows[inst.venue_id].get("name", inst.venue_id)
+        # venues.json can name an exhibitions page for ANY venue, bespoke
+        # scraper or not; it is read by the exhibitions pass (LLM tier).
+        if not inst.exhibitions_url and venue_rows[inst.venue_id].get("exhibitions_url"):
+            inst.exhibitions_url = venue_rows[inst.venue_id]["exhibitions_url"]
+        counts = sorted(c for c in (health.get(inst.venue_id) or {}).get("recent_counts") or []
+                        if isinstance(c, int))
+        if counts:
+            inst.expected_count = counts[len(counts) // 2]
         targets.append(inst)
 
     def _run_one(inst):
@@ -144,6 +158,9 @@ def main(argv=None) -> int:
           f"{len(rules.recurring_drop)} always-drop patterns.\n")
 
     only = {s.strip() for s in args.only.split(",") if s.strip()} if args.only else None
+    if args.dry_run:
+        # The LLM tier's cache/ledger must not be written by a dry run.
+        os.environ["ART_IN_LA_DRY_RUN"] = "1"
 
     existing_raw = storage.load_raw()
     health, stale_venues = storage.load_health(), []

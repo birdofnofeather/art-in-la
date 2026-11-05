@@ -133,6 +133,25 @@ def _recent_average(history: list[int]) -> float | None:
     return sum(values) / len(values) if values else None
 
 
+# ── Venues waiting for the LLM reader ─────────────────────────────────────
+
+def llm_pending_ids() -> set[str]:
+    """Config-driven venues that can only be read by the LLM tier, while that
+    tier is switched off (no ANTHROPIC_API_KEY). Producing nothing is expected
+    for them, so it is reported as YELLOW ("waiting"), not RED ("broken") —
+    otherwise ~40 venues would raise a false alarm every day."""
+    from .utils import llm_extract
+    if llm_extract.enabled():
+        return set()
+    try:
+        import yaml
+        from pathlib import Path
+        cfg = yaml.safe_load((Path(__file__).parent / "generic_venues.yaml").read_text()) or {}
+    except Exception:  # noqa: BLE001
+        return set()
+    return {vid for vid, c in (cfg.get("venues") or {}).items() if not (c or {}).get("heuristic")}
+
+
 # ── The per-venue assessment ──────────────────────────────────────────────
 
 def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
@@ -162,7 +181,13 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
     # well-curated venue as broken.
     n_harvested = len(produced)
     if dates_on_page is not None and dates_on_page >= MIN_DATES_TO_JUDGE:
-        if n_harvested == 0:
+        if n_harvested == 0 and venue_id in llm_pending_ids():
+            verdict = _worst(verdict, YELLOW)
+            known_gaps.append(
+                "waiting for the LLM reader — this venue has no feed; add the "
+                "ANTHROPIC_API_KEY repository secret to switch it on"
+            )
+        elif n_harvested == 0:
             verdict = RED
             reasons.append(
                 f"the venue's page advertises {dates_on_page} upcoming dates "

@@ -60,6 +60,10 @@ jobs:
           # Optional: enables the LLM fallback for events whose dates the
           # scrapers can't parse. Set in Settings → Secrets → Actions.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Hard monthly ceiling for the LLM reading tier (Claude Haiku). Spend is
+          # metered from the API's token counts into scrapers/state/llm_ledger.json;
+          # once reached, LLM calls stop until the 1st of the next month.
+          LLM_MONTHLY_BUDGET_USD: "3"
 
       - name: Post scraper warnings summary
         if: always()
@@ -139,6 +143,8 @@ jobs:
           git add public/data/events.json public/data/archive.json public/data/raw_events.json \
                   public/data/warnings.json public/data/scraped_venues.json \
                   public/data/health.json public/data/status.json public/data/feeds
+          # LLM tier cache + spend ledger (may not exist until the key is set).
+          [ -d scrapers/state ] && git add scrapers/state || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0

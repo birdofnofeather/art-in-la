@@ -231,6 +231,9 @@ recurring:
     - '\boffice\s+hours\b'
     - '\bstudio\s+closed\b'
 
+    # Standing weekday screening slots (Lucas Museum's "Friday Film Program")
+    - '\b(?:mon|tues|wednes|thurs|fri|satur|sun)day\s+film\s+program\b'
+
   # Examples for the drop_patterns above. `match` must be hidden; `reject` must
   # stay visible. These are what stop a deliberate exclusion being quietly
   # weakened to make a venue's event count look healthier.
@@ -244,12 +247,14 @@ recurring:
       - "Dzogchen-LA meditation"                      # 18th Street
       - "K-12 Educators Virtual Office Hours"         # Huntington
       - "STUDIO CLOSED"
+      - "Robert Flaherty Theater: Friday Film Program"  # Lucas Museum
     reject:
       # These must SURVIVE — they are real, one-off, worth listing.
       - "Curator's Tour: Instante/revelación"
       - "Artist Talk: Sadie Barnette"
       - "Opening Reception: New Work"
       - "Mid-Autumn Moon Celebration"
+      - "Film Program: Agnès Varda Retrospective"
 
   # ── (b) Caught by rhythm ────────────────────────────────────────────────
   cadence:

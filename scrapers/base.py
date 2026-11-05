@@ -211,6 +211,23 @@ class BaseScraper:
     # Subclass can opt out of post-processing if they really do want raw output.
     drop_exhibitions: bool = True
 
+    # ── Round 11: generic page reading + self-healing ──────────────────────
+    # `heuristic`: run utils/generic_listing (title+date "cards") on the page
+    # when no feed works. Opt-in per venue, after its output has been checked
+    # by hand — it is right on many sites and wrong on some.
+    heuristic: bool = False
+    # Only keep heuristic/LLM items whose URL contains this (e.g. "/la/" for a
+    # multi-city organisation). None = no filter.
+    url_must_contain: Optional[str] = None
+    # `llm_fallback`: when every other strategy returns nothing, let Claude
+    # Haiku read the page (utils/llm_extract; needs ANTHROPIC_API_KEY, metered
+    # and capped). This is the self-healing path for a redesigned site.
+    llm_fallback: bool = True
+    # Set by run_all from health.json: this venue's typical harvest size. When
+    # a run collapses far below it, the LLM reader is consulted as well.
+    expected_count: int = 0
+    venue_name: str = ""
+
     def _harvest(self, url: str, default_type: str, allow_custom: bool,
                  label: str = "") -> list[Event]:
         """Run the strategy chain against one URL, first non-empty result wins.
@@ -228,6 +245,8 @@ class BaseScraper:
                 ("eventbrite",  self._strategy_eventbrite),
                 ("feed",        self._strategy_feed),
                 ("custom",      self._strategy_custom),
+                ("generic",     self._strategy_generic),
+                ("llm",         self._strategy_llm),
             ]
         else:
             # The exhibitions pass. Only strategies that actually READ THE URL
@@ -242,6 +261,9 @@ class BaseScraper:
                 ("squarespace", self._strategy_squarespace),
                 ("jsonld",      self._strategy_jsonld),
                 ("feed",        self._strategy_feed),
+                ("custom_exh",  self._strategy_custom_exhibitions_current),
+                ("generic",     self._strategy_generic),
+                ("llm",         self._strategy_llm),
             ]
 
         prev_url, prev_default = self.events_url, self.default_event_type
@@ -279,13 +301,24 @@ class BaseScraper:
         if self.exhibitions_url:
             shows = self._harvest(self.exhibitions_url, "exhibition",
                                   allow_custom=False, label="exhibitions")
-            if not shows:
-                shows = list(self._strategy_custom_exhibitions())
             for ev in shows:
                 ev.event_type = "exhibition"
             existing = {(e.title or "").strip().lower() for e in events}
             events += [e for e in shows
                        if (e.title or "").strip().lower() not in existing]
+
+        # Self-healing for a partial collapse. A venue that normally yields
+        # 40 records and today yields 3 has almost certainly been redesigned
+        # in a way that broke our parser without breaking it completely, so
+        # the zero-result fallback above never fired. Ask the LLM reader too
+        # and keep whichever answer is fuller.
+        if (self.llm_fallback and self.expected_count >= 5
+                and len(events) < 0.3 * self.expected_count):
+            healed = list(self._strategy_llm())
+            if len(healed) > len(events):
+                print(f"  [{self.venue_id}] self-heal: parser gave {len(events)}, "
+                      f"usual ~{self.expected_count}; LLM reader gave {len(healed)}")
+                events = healed
 
         if not events:
             print(f"  [{self.venue_id}] no strategy returned events")
@@ -511,6 +544,71 @@ class BaseScraper:
     # and reusing one parser for both silently produces garbage.
     def custom_parse_exhibitions(self, html: str, base_url: str) -> Iterable[Event]:
         return []
+
+    def _strategy_custom_exhibitions_current(self) -> Iterable[Event]:
+        """Exhibitions pass: the venue's bespoke exhibitions parser, if any.
+
+        During the exhibitions pass `events_url` is temporarily the
+        exhibitions page, so this reads the right page."""
+        if type(self).custom_parse_exhibitions is BaseScraper.custom_parse_exhibitions:
+            return
+        resp = get(self.events_url)
+        if not resp or not resp.ok:
+            return
+        yield from self.custom_parse_exhibitions(resp.text, resp.url)
+
+    def _items_to_events(self, items: list[dict], source_tag: str) -> Iterable[Event]:
+        """Shared by the heuristic and LLM readers: plain dicts → Events."""
+        for it in items:
+            url = it.get("url")
+            if self.url_must_contain and (not url or self.url_must_contain not in url):
+                continue
+            start_d, end_d, tm = it["start"], it.get("end"), it.get("time")
+            start = to_la_iso(f"{start_d.isoformat()}T{tm}") if tm else start_d.isoformat()
+            end = end_d.isoformat() if end_d else None
+            title = it["title"]
+            desc = it.get("description") or ""
+            if it.get("kind") == "exhibition" or self.default_event_type == "exhibition":
+                etype = "exhibition"
+            else:
+                etype = infer_type(title, desc, default=self.default_event_type)
+            price = it.get("price_text")
+            yield Event(
+                id=event_id(self.venue_id, start, title),
+                venue_id=self.venue_id,
+                title=title,
+                description=desc[:800],
+                event_type=etype,
+                start=start,
+                end=end,
+                all_day=not tm,
+                url=url or self.events_url,
+                image=it.get("image"),
+                source=(self.source_label or self._domain(self.events_url)) + source_tag,
+                scraped_at=now_utc_iso(),
+                is_free=True if (price or "").strip().lower() == "free" else None,
+                price_text=price,
+            )
+
+    def _strategy_generic(self) -> Iterable[Event]:
+        if not self.heuristic or not self.events_url:
+            return
+        from .utils import generic_listing
+        resp = get(self.events_url)
+        if not resp or not resp.ok:
+            return
+        yield from self._items_to_events(generic_listing.extract(resp.text, resp.url), "")
+
+    def _strategy_llm(self) -> Iterable[Event]:
+        if not self.llm_fallback or not self.events_url:
+            return
+        from .utils import llm_extract
+        if not llm_extract.enabled():
+            return
+        mode = "exhibitions" if self.default_event_type == "exhibition" else "events"
+        items = llm_extract.extract_listing(
+            self.venue_id, self.venue_name or self.venue_id, self.events_url, mode=mode)
+        yield from self._items_to_events(items, "+llm")
 
     # ------- Post-processing -------
 

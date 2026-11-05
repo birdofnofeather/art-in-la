@@ -28,6 +28,15 @@ from .utils.event_type import infer as infer_type, infer_all as infer_types, all
 from .utils.recurring import filter_recurring
 from .utils.text import normalise, title_key
 from .utils.validate import validate, quality_issues
+from .utils.runs import collapse_runs
+
+
+def _performing_ids() -> set[str]:
+    from . import storage
+    try:
+        return {v["id"] for v in storage.load_venues() if v.get("discipline") == "performing"}
+    except Exception:  # noqa: BLE001 — classification must not fail on this
+        return set()
 
 
 @dataclass
@@ -137,13 +146,14 @@ def derive(raw_events: list[dict], now=None) -> Derived:
     Order matters:
       1. relabel   — apply the current taxonomy to every record
       2. dedupe    — one record per event, keeping the richest version
-      3. merge     — collapse repeated records of the same exhibition
+      3. merge     — collapse repeated records of the same exhibition, and
+                     a performing venue's performances into one run each
       4. recurring — hide standing programmes (by name, then by rhythm)
       5. archive   — move anything already finished out of the live list
       6. validate  — structural and quality gate on what's left
     """
     labelled = [relabel(ev) for ev in raw_events]
-    combined = merge_exhibitions(dedupe(labelled))
+    combined = collapse_runs(merge_exhibitions(dedupe(labelled)), _performing_ids())
 
     kept, dropped_recurring = filter_recurring(combined)
 

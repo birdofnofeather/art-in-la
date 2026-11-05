@@ -6,3 +6,4 @@ icalendar>=5.0.11
 feedparser>=6.0.11
 pytz>=2024.1
 PyYAML>=6.0          # reads scrapers/rules.yaml
+anthropic>=2.0,<3       # optional LLM reading tier (only used when ANTHROPIC_API_KEY is set)

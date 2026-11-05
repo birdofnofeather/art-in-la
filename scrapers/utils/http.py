@@ -58,7 +58,8 @@ def get(url: str, *, timeout: int = DEFAULT_TIMEOUT, retries: int = 2,
                 time.sleep(wait)
                 continue
             return resp  # non-200 but not retryable; caller can inspect
-        except (requests.RequestException, OSError) as e:
+        except Exception as e:  # noqa: BLE001 — a malformed body (bad gzip,
+            # zlib.error) must fail this one fetch, never crash the venue.
             last_err = e
             if attempt < retries:
                 time.sleep(backoff ** attempt)

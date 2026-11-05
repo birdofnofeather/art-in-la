@@ -30,7 +30,6 @@ from .venues.wende import Scraper as Wende
 from .venues.vincent_price import Scraper as VincentPrice
 from .venues.pvac import Scraper as PVAC
 from .venues.molaa import Scraper as MOLAA
-from .venues.bergamot_station import Scraper as BergamotStation
 from .venues.williamson_scripps import Scraper as WilliamsonScripps
 from .venues.destination_crenshaw import Scraper as DestinationCrenshaw
 from .venues.mak_center import Scraper as MAKCenter
@@ -110,7 +109,6 @@ SCRAPERS = [
     VincentPrice,
     PVAC,
     MOLAA,
-    BergamotStation,
     WilliamsonScripps,
     DestinationCrenshaw,
     MAKCenter,
@@ -160,3 +158,11 @@ SCRAPERS = [
     JACCC,
     ArtCenter,
 ]
+
+# --- Round 11: config-driven venues (scrapers/generic_venues.yaml) ---
+# Venues without a bespoke module. A venue id must appear only once overall;
+# a bespoke module always wins over a generic entry.
+from .venues import _generic
+
+_bespoke = {cls.venue_id for cls in SCRAPERS}
+SCRAPERS += [c for c in _generic.build() if c.venue_id not in _bespoke]

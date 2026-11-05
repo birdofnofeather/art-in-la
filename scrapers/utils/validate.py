@@ -103,7 +103,7 @@ def validate(events, now=None):
 
         # A "one-off" spanning more than a few days is a standing programme
         # ("Guided Tours  May 28 - Jul 23"), not something to put on a calendar.
-        if not is_exh and start is not None and end is not None:
+        if not is_exh and not ev.get("_run") and start is not None and end is not None:
             if (end - start) > timedelta(days=4):
                 _drop(ev, "multi-week range, not a one-off event")
                 continue

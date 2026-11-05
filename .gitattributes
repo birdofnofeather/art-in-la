@@ -23,3 +23,6 @@ public/data/raw_events.json      merge=ours
 public/data/feeds/*.ics          -text merge=ours
 
 # --- Keep debug artifacts out of the repo -----------------------------------
+
+# LLM tier state, written by CI (cache + spend ledgers)
+scrapers/state/*.json            merge=ours

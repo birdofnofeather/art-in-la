@@ -7,6 +7,7 @@
     "description": "The largest art museum in the western U.S., with encyclopedic collections spanning antiquity to the present.",
     "website": "https://www.lacma.org",
     "events_url": "https://www.lacma.org/event",
+    "exhibitions_url": "https://www.lacma.org/art/exhibitions/current",
     "address": "5905 Wilshire Blvd, Los Angeles, CA 90036",
     "lat": 34.0638,
     "lng": -118.3594,
@@ -21,7 +22,8 @@
     },
     "aliases": [
       "LACMA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "the_broad",
@@ -45,7 +47,8 @@
     },
     "aliases": [
       "The Broad"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "moca_grand",
@@ -55,6 +58,7 @@
     "description": "MOCA's flagship building on Grand Avenue, home to its permanent contemporary art collection.",
     "website": "https://www.moca.org",
     "events_url": "https://www.moca.org/programs",
+    "exhibitions_url": "https://www.moca.org/exhibitions",
     "address": "250 S Grand Ave, Los Angeles, CA 90012",
     "lat": 34.0535,
     "lng": -118.2506,
@@ -70,7 +74,8 @@
     "aliases": [
       "MOCA",
       "MoCA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "moca_geffen",
@@ -94,7 +99,8 @@
       "MOCA",
       "Geffen",
       "MOCA Geffen"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "hammer",
@@ -104,6 +110,7 @@
     "description": "UCLA-affiliated museum known for contemporary art exhibitions, the biennial Made in L.A., and free public programs.",
     "website": "https://hammer.ucla.edu",
     "events_url": "https://hammer.ucla.edu/programs-events",
+    "exhibitions_url": "https://hammer.ucla.edu/exhibitions",
     "address": "10899 Wilshire Blvd, Los Angeles, CA 90024",
     "lat": 34.0594,
     "lng": -118.4438,
@@ -119,7 +126,8 @@
     "aliases": [
       "Hammer",
       "UCLA Hammer"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "getty_center",
@@ -143,7 +151,8 @@
     },
     "aliases": [
       "Getty"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "getty_villa",
@@ -165,7 +174,8 @@
     },
     "aliases": [
       "Getty"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "norton_simon",
@@ -175,6 +185,7 @@
     "description": "Seven centuries of European art from the Renaissance to the 20th century, plus South and Southeast Asian art.",
     "website": "https://www.nortonsimon.org",
     "events_url": "https://www.nortonsimon.org/calendar",
+    "exhibitions_url": "https://www.nortonsimon.org/exhibitions/current",
     "address": "411 W Colorado Blvd, Pasadena, CA 91105",
     "lat": 34.1456,
     "lng": -118.1598,
@@ -188,7 +199,8 @@
     },
     "aliases": [
       "Norton Simon"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "huntington",
@@ -198,6 +210,7 @@
     "description": "Collections-based research and cultural institution with American and European art, rare books, and 120 acres of gardens.",
     "website": "https://www.huntington.org",
     "events_url": "https://huntington.org/calendar",
+    "exhibitions_url": "https://www.huntington.org/exhibitions",
     "address": "1151 Oxford Rd, San Marino, CA 91108",
     "lat": 34.129,
     "lng": -118.1147,
@@ -208,7 +221,8 @@
       "twitter": "https://twitter.com/TheHuntington",
       "facebook": "https://facebook.com/TheHuntingtonLibrary",
       "youtube": "https://youtube.com/@thehuntingtonlibrary"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "academy_museum",
@@ -233,7 +247,8 @@
     "aliases": [
       "Academy Museum",
       "AMPAS"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "caam",
@@ -243,6 +258,7 @@
     "description": "Museum researching, collecting, and preserving the art, history, and culture of African Americans with a focus on California and the West.",
     "website": "https://caamuseum.org",
     "events_url": "https://caamuseum.org/programs",
+    "exhibitions_url": "https://caamuseum.org/exhibitions",
     "address": "600 State Dr, Los Angeles, CA 90037",
     "lat": 34.0159,
     "lng": -118.2866,
@@ -256,7 +272,8 @@
     },
     "aliases": [
       "CAAM"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "janm",
@@ -266,6 +283,7 @@
     "description": "Museum sharing the experience of Americans of Japanese ancestry through exhibitions, programs, and a national resource center.",
     "website": "https://www.janm.org",
     "events_url": "https://www.janm.org/events",
+    "exhibitions_url": "https://www.janm.org/exhibitions",
     "address": "100 N Central Ave, Los Angeles, CA 90012",
     "lat": 34.0499,
     "lng": -118.2386,
@@ -279,7 +297,8 @@
     },
     "aliases": [
       "JANM"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "autry",
@@ -289,6 +308,7 @@
     "description": "Museum exploring the experiences and perceptions of diverse peoples of the American West through art, artifacts, and programs.",
     "website": "https://theautry.org",
     "events_url": "https://theautry.org/events",
+    "exhibitions_url": "https://theautry.org/exhibitions",
     "address": "4700 Western Heritage Way, Los Angeles, CA 90027",
     "lat": 34.1483,
     "lng": -118.284,
@@ -299,7 +319,8 @@
       "twitter": "https://twitter.com/theautry",
       "facebook": "https://facebook.com/theautry",
       "youtube": "https://youtube.com/@theautry"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "fowler",
@@ -309,6 +330,7 @@
     "description": "Free museum at UCLA exploring the arts and cultures of Africa, Asia, the Pacific, and the Americas, past and present.",
     "website": "https://fowler.ucla.edu",
     "events_url": "https://fowler.ucla.edu/events/",
+    "exhibitions_url": "https://fowler.ucla.edu/exhibitions/",
     "address": "308 Charles E Young Dr N, Los Angeles, CA 90024",
     "lat": 34.074,
     "lng": -118.4432,
@@ -322,7 +344,8 @@
     },
     "aliases": [
       "Fowler"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "ica_la",
@@ -346,7 +369,8 @@
       "ICA LA",
       "ICALA",
       "ICA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "craft_contemporary",
@@ -365,7 +389,8 @@
       "instagram": "https://instagram.com/craftcontemporary",
       "twitter": "https://twitter.com/CraftContemp",
       "facebook": "https://facebook.com/craftcontemporary"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "skirball",
@@ -387,7 +412,8 @@
     },
     "aliases": [
       "Skirball"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "wende",
@@ -406,7 +432,8 @@
       "instagram": "https://instagram.com/wendemuseum",
       "twitter": "https://twitter.com/WendeMuseum",
       "facebook": "https://facebook.com/WendeMuseum"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "mak_center",
@@ -430,7 +457,8 @@
       "MAK",
       "MAK Center",
       "Schindler House"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "molaa",
@@ -440,6 +468,7 @@
     "description": "The only museum in the U.S. dedicated exclusively to modern and contemporary Latin American and Latino art.",
     "website": "https://molaa.org",
     "events_url": "https://molaa.org/events",
+    "exhibitions_url": "https://molaa.org/exhibitions",
     "address": "628 Alamitos Ave, Long Beach, CA 90802",
     "lat": 33.7746,
     "lng": -118.1812,
@@ -452,7 +481,8 @@
     },
     "aliases": [
       "MOLAA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "lbma",
@@ -462,6 +492,7 @@
     "description": "Oceanfront museum with a collection focused on American modernism and contemporary California art.",
     "website": "https://www.lbma.org",
     "events_url": "https://www.lbma.org/events",
+    "exhibitions_url": "https://lbma.org/exhibitions/",
     "address": "2300 E Ocean Blvd, Long Beach, CA 90803",
     "lat": 33.7621,
     "lng": -118.1605,
@@ -473,7 +504,8 @@
     },
     "aliases": [
       "LBMA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "armory_pasadena",
@@ -483,6 +515,7 @@
     "description": "Pasadena nonprofit offering contemporary art exhibitions and extensive arts education programs.",
     "website": "https://armoryarts.org",
     "events_url": "https://armoryarts.org/calendar/events",
+    "exhibitions_url": "https://armoryarts.org/exhibitions/current",
     "address": "145 N Raymond Ave, Pasadena, CA 91103",
     "lat": 34.1484,
     "lng": -118.1494,
@@ -492,7 +525,8 @@
       "instagram": "https://instagram.com/armorycenter",
       "twitter": "https://twitter.com/ArmoryArts",
       "facebook": "https://facebook.com/ArmoryCenterForTheArts"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "vincent_price",
@@ -502,6 +536,7 @@
     "description": "Teaching museum at East Los Angeles College focused on community engagement and cultural education.",
     "website": "https://vpam.org",
     "events_url": "https://vpam.org/events/",
+    "exhibitions_url": "https://vpam.org/exhibitions/",
     "address": "1301 Avenida Cesar Chavez, Monterey Park, CA 91754",
     "lat": 34.0437,
     "lng": -118.1581,
@@ -513,7 +548,8 @@
     },
     "aliases": [
       "VPAM"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "usc_fisher",
@@ -523,6 +559,7 @@
     "description": "University art museum presenting historical and contemporary exhibitions, with a focus on Los Angeles.",
     "website": "https://fisher.usc.edu",
     "events_url": "https://fisher.usc.edu/events",
+    "exhibitions_url": "https://fisher.usc.edu/exhibitions/",
     "address": "823 Exposition Blvd, Los Angeles, CA 90089",
     "lat": 34.0207,
     "lng": -118.2888,
@@ -536,7 +573,8 @@
     "aliases": [
       "Fisher",
       "USC Fisher"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "ucla_broad",
@@ -558,7 +596,8 @@
     "aliases": [
       "UCLA Broad",
       "Broad Art Center"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "benton",
@@ -576,7 +615,8 @@
     "socials": {
       "instagram": "https://instagram.com/bentonmuseum",
       "facebook": "https://facebook.com/pomonacollegemuseumofart"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "williamson_scripps",
@@ -593,7 +633,8 @@
     "neighborhood": "Claremont",
     "socials": {
       "instagram": "https://instagram.com/scrippsart"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "laband",
@@ -610,7 +651,8 @@
     "neighborhood": "Westchester",
     "socials": {
       "instagram": "https://instagram.com/labandgallery"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "csulb_kleefeld",
@@ -631,7 +673,8 @@
     "aliases": [
       "Kleefeld",
       "CSULB"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "moah",
@@ -641,6 +684,7 @@
     "description": "Contemporary art and regional history museum in Lancaster serving the Antelope Valley.",
     "website": "https://www.lancastermoah.org",
     "events_url": "https://www.eventbrite.com/cc/moah-4338203",
+    "exhibitions_url": "https://www.lancastermoah.org/exhibitions",
     "address": "665 W Lancaster Blvd, Lancaster, CA 93534",
     "lat": 34.6974,
     "lng": -118.1402,
@@ -652,7 +696,8 @@
     },
     "aliases": [
       "MOAH"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "mona",
@@ -673,7 +718,8 @@
     },
     "aliases": [
       "MONA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "forest_lawn",
@@ -690,7 +736,8 @@
     "neighborhood": "Glendale",
     "socials": {
       "instagram": "https://instagram.com/forestlawnmuseum"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "brand_library",
@@ -708,7 +755,8 @@
     "socials": {
       "instagram": "https://instagram.com/brandlibrary",
       "facebook": "https://facebook.com/BrandLibrary"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "lamag",
@@ -730,7 +778,8 @@
     "aliases": [
       "LAMAG",
       "Barnsdall"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "lucas_museum",
@@ -749,7 +798,8 @@
       "instagram": "https://instagram.com/lucasmuseum",
       "twitter": "https://twitter.com/lucasmuseum",
       "facebook": "https://facebook.com/lucasmuseum"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "marciano",
@@ -770,7 +820,8 @@
     },
     "aliases": [
       "Marciano"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "torrance_art_museum",
@@ -788,7 +839,8 @@
     "socials": {
       "instagram": "https://instagram.com/torranceartmuseum",
       "facebook": "https://facebook.com/TorranceArtMuseum"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "pvac",
@@ -809,7 +861,8 @@
     },
     "aliases": [
       "PVAC"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "angels_gate",
@@ -827,7 +880,8 @@
     "socials": {
       "instagram": "https://instagram.com/angelsgatecc",
       "facebook": "https://facebook.com/angelsgatecc"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "murmurs",
@@ -844,7 +898,8 @@
     "neighborhood": "Arts District",
     "socials": {
       "instagram": "https://instagram.com/murmursla"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "monte_vista",
@@ -861,7 +916,8 @@
     "neighborhood": "Highland Park",
     "socials": {
       "instagram": "https://instagram.com/montevistaprojects"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "coaxial",
@@ -878,7 +934,8 @@
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/coaxialarts"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "navel",
@@ -895,7 +952,8 @@
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/navel_la"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "human_resources",
@@ -915,7 +973,8 @@
     },
     "aliases": [
       "HRLA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "lace",
@@ -937,13 +996,14 @@
     },
     "aliases": [
       "LACE"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "redcat",
     "name": "REDCAT",
     "short_name": "REDCAT",
-    "type": "alternative",
+    "type": "center",
     "description": "Roy and Edna Disney/CalArts Theater — a multidisciplinary venue in Downtown LA presenting contemporary art, performance, and film.",
     "website": "https://www.redcat.org",
     "events_url": "https://www.redcat.org/events",
@@ -959,7 +1019,8 @@
     },
     "aliases": [
       "REDCAT"
-    ]
+    ],
+    "discipline": "performing"
   },
   {
     "id": "joan",
@@ -976,7 +1037,8 @@
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/joan__losangeles"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "the_mistake_room",
@@ -993,7 +1055,8 @@
     "neighborhood": "Downtown",
     "socials": {
       "instagram": "https://instagram.com/themistakeroom"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "tin_flats",
@@ -1010,7 +1073,8 @@
     "neighborhood": "Frogtown",
     "socials": {
       "instagram": "https://instagram.com/tinflats"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "self_help_graphics",
@@ -1029,7 +1093,8 @@
       "instagram": "https://instagram.com/selfhelpgraphics",
       "twitter": "https://twitter.com/SelfHelpGraphix",
       "facebook": "https://facebook.com/selfhelpgraphicsandart"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "18th_street",
@@ -1048,7 +1113,8 @@
       "instagram": "https://instagram.com/18thstreetarts",
       "twitter": "https://twitter.com/18thStreetArts",
       "facebook": "https://facebook.com/18thStreetArts"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "sparc",
@@ -1069,7 +1135,8 @@
     },
     "aliases": [
       "SPARC"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "plaza_de_la_raza",
@@ -1087,7 +1154,8 @@
     "socials": {
       "instagram": "https://instagram.com/plazadelaraza",
       "facebook": "https://facebook.com/PlazaDeLaRaza"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "watts_towers",
@@ -1105,7 +1173,8 @@
     "socials": {
       "instagram": "https://instagram.com/wattstowersartscenter",
       "facebook": "https://facebook.com/wattstowers"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "la_artcore",
@@ -1122,7 +1191,8 @@
     "neighborhood": "Little Tokyo",
     "socials": {
       "instagram": "https://instagram.com/laartcore"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "avenue_50",
@@ -1140,7 +1210,8 @@
     "socials": {
       "instagram": "https://instagram.com/avenue50studio",
       "facebook": "https://facebook.com/avenue50studio"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "arroyo_arts",
@@ -1158,7 +1229,8 @@
     "socials": {
       "instagram": "https://instagram.com/arroyoartscollective",
       "facebook": "https://facebook.com/ArroyoArtsCollective"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "tsa_la",
@@ -1179,7 +1251,8 @@
     "aliases": [
       "TSA LA",
       "Tiger Strikes Asteroid"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "actual_size",
@@ -1196,7 +1269,8 @@
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/actualsizela"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "crenshaw_dairy_mart",
@@ -1213,7 +1287,8 @@
     "neighborhood": "Inglewood",
     "socials": {
       "instagram": "https://instagram.com/crenshawdairymart"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "destination_crenshaw",
@@ -1231,7 +1306,8 @@
     "socials": {
       "instagram": "https://instagram.com/destinationcrenshaw",
       "twitter": "https://twitter.com/destcrenshaw"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "las_fotos_project",
@@ -1249,7 +1325,8 @@
     "socials": {
       "instagram": "https://instagram.com/lasfotosproject",
       "twitter": "https://twitter.com/lasfotosproject"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "laca",
@@ -1269,7 +1346,8 @@
     },
     "aliases": [
       "LACA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "craft_in_america",
@@ -1287,7 +1365,8 @@
     "socials": {
       "instagram": "https://instagram.com/craftinamerica",
       "facebook": "https://facebook.com/craftinamerica"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "tierra_del_sol",
@@ -1304,7 +1383,8 @@
     "neighborhood": "Chinatown",
     "socials": {
       "instagram": "https://instagram.com/tierradelsolgallery"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "fulcrum",
@@ -1321,7 +1401,8 @@
     "neighborhood": "Hollywood",
     "socials": {
       "instagram": "https://instagram.com/fulcrumarts"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "pieter",
@@ -1338,7 +1419,8 @@
     "neighborhood": "Lincoln Heights",
     "socials": {
       "instagram": "https://instagram.com/pieter.pasd"
-    }
+    },
+    "discipline": "performing"
   },
   {
     "id": "bridge_projects",
@@ -1355,7 +1437,8 @@
     "neighborhood": "Hollywood",
     "socials": {
       "instagram": "https://instagram.com/bridge_projects"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "in_situ",
@@ -1372,24 +1455,8 @@
     "neighborhood": "Varies",
     "socials": {
       "instagram": "https://instagram.com/insitu_la"
-    }
-  },
-  {
-    "id": "bergamot_station",
-    "name": "Bergamot Station",
-    "short_name": "Bergamot Station",
-    "type": "community",
-    "description": "Santa Monica arts complex housing multiple galleries across warehouse spaces — a longtime anchor of the Westside scene.",
-    "website": "https://bergamotstation.com",
-    "events_url": "https://bergamotstation.com/exhibitions",
-    "address": "2525 Michigan Ave, Santa Monica, CA 90404",
-    "lat": 34.0308,
-    "lng": -118.482,
-    "region": "westside",
-    "neighborhood": "Santa Monica",
-    "socials": {
-      "instagram": "https://instagram.com/bergamotstation"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "museum_of_tolerance",
@@ -1407,7 +1474,8 @@
     "socials": {
       "instagram": "https://instagram.com/museumoftolerance",
       "facebook": "https://facebook.com/museumoftolerance"
-    }
+    },
+    "discipline": "visual"
   },
   {
     "id": "pacific_asia_museum",
@@ -1417,6 +1485,7 @@
     "description": "USC-affiliated museum in Pasadena dedicated to art and culture of Asia and the Pacific Islands.",
     "website": "https://pacificasiamuseum.usc.edu",
     "events_url": "https://pacificasiamuseum.usc.edu/exhibitions/",
+    "exhibitions_url": "https://pacificasiamuseum.usc.edu/exhibitions/",
     "address": "46 N Los Robles Ave, Pasadena, CA 91101",
     "lat": 34.1461,
     "lng": -118.1488,
@@ -1429,7 +1498,8 @@
     "aliases": [
       "PAM",
       "USC PAM"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "natural_history_museum",
@@ -1439,6 +1509,7 @@
     "description": "One of the largest natural and historical museums in the western US, with art, culture, and science collections.",
     "website": "https://nhm.org",
     "events_url": "https://nhm.org/calendar",
+    "exhibitions_url": "https://nhm.org/experience-nhm/exhibitions-natural-history-museum",
     "address": "900 Exposition Blvd, Los Angeles, CA 90007",
     "lat": 34.0175,
     "lng": -118.2882,
@@ -1452,7 +1523,8 @@
     "aliases": [
       "NHM",
       "NHMLA"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "art_practice",
@@ -1464,7 +1536,8 @@
     "website": "https://artandpractice.org",
     "instagram": "@artandpractice",
     "type": "community",
-    "region": "south"
+    "region": "south",
+    "discipline": "visual"
   },
   {
     "id": "calarts",
@@ -1479,7 +1552,8 @@
     "region": "valley",
     "aliases": [
       "CalArts"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "sciarc",
@@ -1495,7 +1569,8 @@
     "aliases": [
       "SCI-Arc",
       "SCIArc"
-    ]
+    ],
+    "discipline": "visual"
   },
   {
     "id": "beyond_baroque",
@@ -1507,7 +1582,8 @@
     "website": "https://www.beyondbaroque.org",
     "instagram": "@beyondbaroque",
     "type": "community",
-    "region": "westside"
+    "region": "westside",
+    "discipline": "performing"
   },
   {
     "id": "corita_art_center",
@@ -1519,7 +1595,8 @@
     "website": "https://www.corita.org/",
     "instagram": "@coritaartcenter",
     "type": "community",
-    "region": "central"
+    "region": "central",
+    "discipline": "visual"
   },
   {
     "id": "la_plaza",
@@ -1531,7 +1608,8 @@
     "website": "https://lapca.org/",
     "instagram": "@laplaza_ca",
     "type": "museum",
-    "region": "downtown"
+    "region": "downtown",
+    "discipline": "visual"
   },
   {
     "id": "clockshop",
@@ -1549,7 +1627,8 @@
     "socials": {
       "instagram": "https://instagram.com/clockshopla"
     },
-    "aliases": []
+    "aliases": [],
+    "discipline": "visual"
   },
   {
     "id": "mjt",
@@ -1564,7 +1643,8 @@
     "lng": -118.3907,
     "region": "westside",
     "neighborhood": "Culver City",
-    "socials": {}
+    "socials": {},
+    "discipline": "visual"
   },
   {
     "id": "jaccc",
@@ -1579,7 +1659,8 @@
     "lng": -118.2404,
     "region": "downtown",
     "neighborhood": "Little Tokyo",
-    "socials": {}
+    "socials": {},
+    "discipline": "performing"
   },
   {
     "id": "esmoa",
@@ -1594,14 +1675,15 @@
     "lng": -118.4167,
     "region": "southbay",
     "neighborhood": "El Segundo",
-    "socials": {}
+    "socials": {},
+    "discipline": "visual"
   },
   {
     "id": "luckman",
-    "name": "Luckman Gallery at Cal State LA",
+    "name": "Luckman Fine Arts Complex at Cal State LA",
     "short_name": "Luckman Gallery",
     "type": "academic",
-    "description": "Cal State LA's fine arts gallery at the Luckman Fine Arts Complex.",
+    "description": "Cal State LA's performing arts complex — the Luckman Theatre plus the Luckman Gallery's exhibitions.",
     "website": "https://theluckman.org",
     "events_url": "https://theluckman.org/events/",
     "address": "5151 State University Dr, Los Angeles, CA 90032",
@@ -1609,7 +1691,8 @@
     "lng": -118.171,
     "region": "eastside",
     "neighborhood": "University Hills",
-    "socials": {}
+    "socials": {},
+    "discipline": "performing"
   },
   {
     "id": "artcenter",
@@ -1624,6 +1707,612 @@
     "lng": -118.1857,
     "region": "pasadena",
     "neighborhood": "Pasadena",
+    "socials": {},
+    "discipline": "visual"
+  },
+  {
+    "id": "chinese_american_museum",
+    "name": "Chinese American Museum",
+    "short_name": "CAM",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Museum of the Chinese American experience in the historic Garnier Building at El Pueblo, with rotating art and history exhibitions.",
+    "website": "https://camla.org",
+    "events_url": "https://camla.org/upcoming-events/",
+    "exhibitions_url": "https://camla.org/current-exhibits/",
+    "address": "425 N Los Angeles St, Los Angeles, CA 90012",
+    "lat": 34.05571,
+    "lng": -118.23921,
+    "region": "downtown",
+    "neighborhood": "El Pueblo",
+    "socials": {},
+    "aliases": [
+      "CAM",
+      "CAMLA"
+    ]
+  },
+  {
+    "id": "amoca",
+    "name": "American Museum of Ceramic Art",
+    "short_name": "AMOCA",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "One of the largest museums in the U.S. devoted to ceramic art, with exhibitions, a ceramics studio, and public programs.",
+    "website": "https://www.amoca.org",
+    "events_url": "https://www.amoca.org/calendar/",
+    "exhibitions_url": "https://www.amoca.org/exhibitions/",
+    "address": "399 N Garey Ave, Pomona, CA 91767",
+    "lat": 34.06114,
+    "lng": -117.75072,
+    "region": "pasadena",
+    "neighborhood": "Pomona",
+    "socials": {},
+    "aliases": [
+      "AMOCA"
+    ]
+  },
+  {
+    "id": "velaslavasay",
+    "name": "Velaslavasay Panorama",
+    "short_name": "Panorama",
+    "type": "alternative",
+    "discipline": "visual",
+    "description": "Nonprofit exhibition hall in a historic theater presenting a 360-degree painted panorama, installations, and screenings.",
+    "website": "https://www.panoramaonview.org",
+    "events_url": "https://www.panoramaonview.org/upcoming-events",
+    "exhibitions_url": "https://www.panoramaonview.org/on-view",
+    "address": "1122 W 24th St, Los Angeles, CA 90007",
+    "lat": 34.03431,
+    "lng": -118.28463,
+    "region": "south",
+    "neighborhood": "West Adams",
+    "socials": {},
+    "aliases": [
+      "Panorama"
+    ]
+  },
+  {
+    "id": "weisman_pepperdine",
+    "name": "Frederick R. Weisman Museum of Art at Pepperdine",
+    "short_name": "Weisman Museum",
+    "type": "academic",
+    "discipline": "visual",
+    "description": "Pepperdine University's art museum in Malibu, presenting exhibitions of modern and contemporary art.",
+    "website": "https://arts.pepperdine.edu/museum/",
+    "events_url": "https://arts.pepperdine.edu/museum/",
+    "address": "24255 Pacific Coast Hwy, Malibu, CA 90263",
+    "lat": 34.0397,
+    "lng": -118.7091,
+    "region": "westside",
+    "neighborhood": "Malibu",
+    "socials": {},
+    "aliases": [
+      "Weisman Museum"
+    ]
+  },
+  {
+    "id": "otis_ben_maltz",
+    "name": "Ben Maltz Gallery at Otis College",
+    "short_name": "Ben Maltz Gallery",
+    "type": "academic",
+    "discipline": "visual",
+    "description": "Otis College of Art and Design's public gallery, known for contemporary and LA-focused exhibitions.",
+    "website": "https://www.otis.edu/ben-maltz-gallery",
+    "events_url": "https://www.otis.edu/ben-maltz-gallery",
+    "address": "9045 Lincoln Blvd, Los Angeles, CA 90045",
+    "lat": 33.9583,
+    "lng": -118.4179,
+    "region": "westside",
+    "neighborhood": "Westchester",
+    "socials": {},
+    "aliases": [
+      "Otis"
+    ]
+  },
+  {
+    "id": "csun_galleries",
+    "name": "CSUN Art Galleries",
+    "short_name": "CSUN Galleries",
+    "type": "academic",
+    "discipline": "visual",
+    "description": "Cal State Northridge's art galleries, presenting student, faculty, and touring exhibitions.",
+    "website": "https://www.csun.edu/mike-curb-arts-media-communication/art-galleries",
+    "events_url": "https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events",
+    "address": "18111 Nordhoff St, Northridge, CA 91330",
+    "lat": 34.24553,
+    "lng": -118.52632,
+    "region": "valley",
+    "neighborhood": "Northridge",
+    "socials": {},
+    "aliases": [
+      "CSUN"
+    ]
+  },
+  {
+    "id": "iamla",
+    "name": "Italian American Museum of Los Angeles",
+    "short_name": "IAMLA",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Museum in the historic Italian Hall at El Pueblo, with exhibitions on Italian American history and culture.",
+    "website": "https://iamla.org",
+    "events_url": "https://iamla.org/events/",
+    "address": "644 N Main St, Los Angeles, CA 90012",
+    "lat": 34.05798,
+    "lng": -118.23778,
+    "region": "downtown",
+    "neighborhood": "El Pueblo",
+    "socials": {},
+    "aliases": [
+      "IAMLA"
+    ]
+  },
+  {
+    "id": "art_share_la",
+    "name": "Art Share L.A.",
+    "short_name": "Art Share",
+    "type": "community",
+    "discipline": "visual",
+    "description": "Arts District nonprofit with gallery exhibitions, screenings, and programs supporting emerging artists.",
+    "website": "https://artsharela.org",
+    "events_url": "https://artsharela.org/events",
+    "address": "801 E 4th Pl, Los Angeles, CA 90013",
+    "lat": 34.04462,
+    "lng": -118.23629,
+    "region": "downtown",
+    "neighborhood": "Arts District",
     "socials": {}
+  },
+  {
+    "id": "lacp",
+    "name": "Los Angeles Center of Photography",
+    "short_name": "LACP",
+    "type": "community",
+    "discipline": "visual",
+    "description": "Nonprofit photography center in Hollywood with exhibitions, talks, and portfolio events.",
+    "website": "https://lacphoto.org",
+    "events_url": "https://lacphoto.org/events/",
+    "address": "1515 Wilcox Ave, Los Angeles, CA 90028",
+    "lat": 34.09833,
+    "lng": -118.33111,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {},
+    "aliases": [
+      "LACP"
+    ]
+  },
+  {
+    "id": "caer",
+    "name": "Center for the Arts Eagle Rock",
+    "short_name": "CAER",
+    "type": "community",
+    "discipline": "visual",
+    "description": "Community arts center in a historic Eagle Rock library building, with exhibitions, workshops, and performances.",
+    "website": "https://www.centerartseaglerock.org",
+    "events_url": "https://www.centerartseaglerock.org/events",
+    "address": "2225 Colorado Blvd, Los Angeles, CA 90041",
+    "lat": 34.13963,
+    "lng": -118.21491,
+    "region": "eastside",
+    "neighborhood": "Eagle Rock",
+    "socials": {},
+    "aliases": [
+      "CAER"
+    ]
+  },
+  {
+    "id": "japan_house",
+    "name": "Japan House Los Angeles",
+    "short_name": "Japan House",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Free gallery and library in Hollywood presenting exhibitions and programs on Japanese art, design, and culture.",
+    "website": "https://www.japanhousela.com",
+    "events_url": "https://www.japanhousela.com/events/",
+    "exhibitions_url": "https://www.japanhousela.com/exhibitions/",
+    "address": "6801 Hollywood Blvd, Level 2, Los Angeles, CA 90028",
+    "lat": 34.10269,
+    "lng": -118.34047,
+    "region": "central",
+    "neighborhood": "Hollywood",
+    "socials": {}
+  },
+  {
+    "id": "catalina_museum",
+    "name": "Catalina Island Museum for Art & History",
+    "short_name": "Catalina Museum",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Avalon's art and history museum on Catalina Island, with rotating art exhibitions and events.",
+    "website": "https://www.catalinamuseum.org",
+    "events_url": "https://www.catalinamuseum.org/calendar",
+    "exhibitions_url": "https://www.catalinamuseum.org/whats-happening",
+    "address": "217 Metropole Ave, Avalon, CA 90704",
+    "lat": 33.34336,
+    "lng": -118.32801,
+    "region": "southbay",
+    "neighborhood": "Avalon",
+    "socials": {}
+  },
+  {
+    "id": "claremont_lewis",
+    "name": "Claremont Lewis Museum of Art",
+    "short_name": "CLMoA",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Community art museum in Claremont's historic Packing House, focused on regional artists.",
+    "website": "https://clmoa.org",
+    "events_url": "https://clmoa.org/events/",
+    "exhibitions_url": "https://clmoa.org/exhibitions/",
+    "address": "200 W First St, Claremont, CA 91711",
+    "lat": 34.0937,
+    "lng": -117.7202,
+    "region": "pasadena",
+    "neighborhood": "Claremont",
+    "socials": {},
+    "aliases": [
+      "CLMoA"
+    ]
+  },
+  {
+    "id": "maaa",
+    "name": "Museum of African American Art",
+    "short_name": "MAAA",
+    "type": "museum",
+    "discipline": "visual",
+    "description": "Founded in 1976, a museum of art by artists of the African diaspora, at Baldwin Hills Crenshaw Plaza.",
+    "website": "https://maaala.org",
+    "events_url": "https://maaala.org/museum-2/exhibitions/",
+    "address": "4005 Crenshaw Blvd, 3rd Floor, Los Angeles, CA 90008",
+    "lat": 34.01129,
+    "lng": -118.33519,
+    "region": "south",
+    "neighborhood": "Crenshaw",
+    "socials": {},
+    "aliases": [
+      "MAAA"
+    ]
+  },
+  {
+    "id": "side_street",
+    "name": "Side Street Projects",
+    "short_name": "Side Street",
+    "type": "community",
+    "discipline": "visual",
+    "description": "Artist-run nonprofit (since 1992) offering artist programs, woodshop skills workshops, and community events.",
+    "website": "https://www.sidestreet.org",
+    "events_url": "https://www.sidestreet.org/calendar",
+    "address": "730 N Fair Oaks Ave, Pasadena, CA 91103",
+    "lat": 34.15855,
+    "lng": -118.15015,
+    "region": "pasadena",
+    "neighborhood": "Pasadena",
+    "socials": {}
+  },
+  {
+    "id": "wgsac",
+    "name": "William Grant Still Arts Center",
+    "short_name": "WGSAC",
+    "type": "community",
+    "discipline": "visual",
+    "description": "City of LA arts center in West Adams presenting exhibitions and programs centered on African American art and culture.",
+    "website": "https://wgsac.org",
+    "events_url": "https://wgsac.org",
+    "address": "2520 S West View St, Los Angeles, CA 90016",
+    "lat": 34.03311,
+    "lng": -118.34801,
+    "region": "south",
+    "neighborhood": "West Adams",
+    "socials": {},
+    "aliases": [
+      "WGSAC"
+    ]
+  },
+  {
+    "id": "la_phil",
+    "name": "Los Angeles Philharmonic (Walt Disney Concert Hall)",
+    "short_name": "LA Phil",
+    "type": "music",
+    "discipline": "performing",
+    "description": "The LA Phil's concerts at Walt Disney Concert Hall and the Hollywood Bowl.",
+    "website": "https://www.laphil.com",
+    "events_url": "https://www.laphil.com/events",
+    "address": "111 S Grand Ave, Los Angeles, CA 90012",
+    "lat": 34.05554,
+    "lng": -118.24902,
+    "region": "downtown",
+    "neighborhood": "Bunker Hill",
+    "socials": {},
+    "aliases": [
+      "LA Phil",
+      "Disney Hall",
+      "Hollywood Bowl"
+    ]
+  },
+  {
+    "id": "center_theatre_group",
+    "name": "Center Theatre Group",
+    "short_name": "CTG",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "LA's largest nonprofit theater company, at the Ahmanson Theatre, Mark Taper Forum, and Kirk Douglas Theatre.",
+    "website": "https://www.centertheatregroup.org",
+    "events_url": "https://www.centertheatregroup.org/tickets/",
+    "address": "135 N Grand Ave, Los Angeles, CA 90012",
+    "lat": 34.05661,
+    "lng": -118.24892,
+    "region": "downtown",
+    "neighborhood": "Bunker Hill",
+    "socials": {},
+    "aliases": [
+      "CTG",
+      "Ahmanson",
+      "Mark Taper Forum",
+      "Kirk Douglas Theatre"
+    ]
+  },
+  {
+    "id": "the_wallis",
+    "name": "The Wallis",
+    "short_name": "The Wallis",
+    "type": "center",
+    "discipline": "performing",
+    "description": "Wallis Annenberg Center for the Performing Arts: theater, dance, and music in Beverly Hills.",
+    "website": "https://thewallis.org",
+    "events_url": "https://thewallis.org/whats-on",
+    "address": "9390 N Santa Monica Blvd, Beverly Hills, CA 90210",
+    "lat": 34.0699,
+    "lng": -118.4004,
+    "region": "westside",
+    "neighborhood": "Beverly Hills",
+    "socials": {},
+    "aliases": [
+      "Wallis Annenberg Center"
+    ]
+  },
+  {
+    "id": "ford_theatres",
+    "name": "The Ford",
+    "short_name": "The Ford",
+    "type": "center",
+    "discipline": "performing",
+    "description": "LA County's outdoor amphitheater in the Cahuenga Pass, presenting music, dance, and theater.",
+    "website": "https://www.fordtheatres.org",
+    "events_url": "https://www.fordtheatres.org/calendar/",
+    "address": "2580 Cahuenga Blvd E, Los Angeles, CA 90068",
+    "lat": 34.11428,
+    "lng": -118.33574,
+    "region": "central",
+    "neighborhood": "Hollywood Hills",
+    "socials": {},
+    "aliases": [
+      "Ford Theatres",
+      "Ford Amphitheatre"
+    ]
+  },
+  {
+    "id": "geffen_playhouse",
+    "name": "Geffen Playhouse",
+    "short_name": "Geffen Playhouse",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "Nonprofit theater in Westwood Village producing new plays and revivals.",
+    "website": "https://www.geffenplayhouse.org",
+    "events_url": "https://www.geffenplayhouse.org/tickets/",
+    "address": "10886 Le Conte Ave, Los Angeles, CA 90024",
+    "lat": 34.06346,
+    "lng": -118.44453,
+    "region": "westside",
+    "neighborhood": "Westwood",
+    "socials": {},
+    "aliases": [
+      "Geffen"
+    ]
+  },
+  {
+    "id": "pasadena_playhouse",
+    "name": "Pasadena Playhouse",
+    "short_name": "Pasadena Playhouse",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "The State Theatre of California, a historic nonprofit theater in Pasadena's Playhouse District.",
+    "website": "https://pasadenaplayhouse.org",
+    "events_url": "https://pasadenaplayhouse.org/",
+    "address": "39 S El Molino Ave, Pasadena, CA 91101",
+    "lat": 34.14513,
+    "lng": -118.1373,
+    "region": "pasadena",
+    "neighborhood": "Pasadena",
+    "socials": {}
+  },
+  {
+    "id": "the_soraya",
+    "name": "The Soraya",
+    "short_name": "The Soraya",
+    "type": "center",
+    "discipline": "performing",
+    "description": "CSUN's performing arts center presenting dance, music, and theater in the San Fernando Valley.",
+    "website": "https://thesoraya.org",
+    "events_url": "https://thesoraya.org/en/whats-on-calendar/",
+    "address": "18111 Nordhoff St, Northridge, CA 91330",
+    "lat": 34.2364,
+    "lng": -118.5301,
+    "region": "valley",
+    "neighborhood": "Northridge",
+    "socials": {},
+    "aliases": [
+      "Valley Performing Arts Center"
+    ]
+  },
+  {
+    "id": "cap_ucla",
+    "name": "CAP UCLA (Royce Hall)",
+    "short_name": "CAP UCLA",
+    "type": "center",
+    "discipline": "performing",
+    "description": "UCLA's Center for the Art of Performance, presenting contemporary music, dance, and theater at Royce Hall.",
+    "website": "https://cap.ucla.edu",
+    "events_url": "https://cap.ucla.edu/calendar",
+    "address": "340 Royce Dr, Los Angeles, CA 90095",
+    "lat": 34.0729,
+    "lng": -118.4422,
+    "region": "westside",
+    "neighborhood": "Westwood",
+    "socials": {},
+    "aliases": [
+      "Royce Hall"
+    ]
+  },
+  {
+    "id": "broad_stage",
+    "name": "The Broad Stage",
+    "short_name": "Broad Stage",
+    "type": "center",
+    "discipline": "performing",
+    "description": "Santa Monica College's performing arts center presenting music, theater, and dance.",
+    "website": "https://www.thebroadstage.org",
+    "events_url": "https://www.thebroadstage.org/events",
+    "address": "1310 11th St, Santa Monica, CA 90401",
+    "lat": 34.02246,
+    "lng": -118.49032,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {}
+  },
+  {
+    "id": "east_west_players",
+    "name": "East West Players",
+    "short_name": "East West Players",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "The nation's longest-running professional theater of color (since 1965), at the David Henry Hwang Theater.",
+    "website": "https://www.eastwestplayers.org",
+    "events_url": "https://www.eastwestplayers.org/shows-tickets",
+    "address": "120 Judge John Aiso St, Los Angeles, CA 90012",
+    "lat": 34.05076,
+    "lng": -118.24015,
+    "region": "downtown",
+    "neighborhood": "Little Tokyo",
+    "socials": {},
+    "aliases": [
+      "EWP"
+    ]
+  },
+  {
+    "id": "carpenter_center",
+    "name": "Carpenter Performing Arts Center",
+    "short_name": "Carpenter Center",
+    "type": "center",
+    "discipline": "performing",
+    "description": "Cal State Long Beach's performing arts center presenting music, dance, and theater.",
+    "website": "https://www.carpenterarts.org",
+    "events_url": "https://www.carpenterarts.org/",
+    "address": "6200 E Atherton St, Long Beach, CA 90815",
+    "lat": 33.7882,
+    "lng": -118.11196,
+    "region": "southbay",
+    "neighborhood": "Long Beach",
+    "socials": {}
+  },
+  {
+    "id": "fountain_theatre",
+    "name": "Fountain Theatre",
+    "short_name": "Fountain Theatre",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "Award-winning nonprofit theater in East Hollywood known for new plays and flamenco.",
+    "website": "https://www.fountaintheatre.com",
+    "events_url": "https://www.fountaintheatre.com/",
+    "address": "5060 Fountain Ave, Los Angeles, CA 90029",
+    "lat": 34.09516,
+    "lng": -118.29993,
+    "region": "central",
+    "neighborhood": "East Hollywood",
+    "socials": {}
+  },
+  {
+    "id": "grand_performances",
+    "name": "Grand Performances",
+    "short_name": "Grand Performances",
+    "type": "center",
+    "discipline": "performing",
+    "description": "Free outdoor performing arts series at California Plaza, mostly in summer.",
+    "website": "https://www.grandperformances.org",
+    "events_url": "https://www.grandperformances.org/events",
+    "address": "350 S Grand Ave, Los Angeles, CA 90071",
+    "lat": 34.0522,
+    "lng": -118.2512,
+    "region": "downtown",
+    "neighborhood": "Bunker Hill",
+    "socials": {}
+  },
+  {
+    "id": "a_noise_within",
+    "name": "A Noise Within",
+    "short_name": "A Noise Within",
+    "type": "theater",
+    "discipline": "performing",
+    "description": "Classical repertory theater company in Pasadena.",
+    "website": "https://www.anoisewithin.org",
+    "events_url": "https://www.anoisewithin.org/calendar/",
+    "address": "3352 E Foothill Blvd, Pasadena, CA 91107",
+    "lat": 34.15001,
+    "lng": -118.08124,
+    "region": "pasadena",
+    "neighborhood": "East Pasadena",
+    "socials": {}
+  },
+  {
+    "id": "highways",
+    "name": "Highways Performance Space",
+    "short_name": "Highways",
+    "type": "alternative",
+    "discipline": "performing",
+    "description": "Santa Monica's experimental performance and gallery space, presenting new performance since 1989.",
+    "website": "https://www.highwaysperformance.org",
+    "events_url": "https://www.highwaysperformance.org/shows",
+    "address": "1651 18th St, Santa Monica, CA 90404",
+    "lat": 34.02339,
+    "lng": -118.47734,
+    "region": "westside",
+    "neighborhood": "Santa Monica",
+    "socials": {}
+  },
+  {
+    "id": "cerritos_center",
+    "name": "Cerritos Center for the Performing Arts",
+    "short_name": "Cerritos Center",
+    "type": "center",
+    "discipline": "performing",
+    "description": "City-owned performing arts center presenting concerts, dance, and family shows.",
+    "website": "https://www.cerritoscenter.com",
+    "events_url": "https://www.cerritoscenter.com/",
+    "address": "18000 Park Plaza Dr, Cerritos, CA 90703",
+    "lat": 33.86757,
+    "lng": -118.06166,
+    "region": "southbay",
+    "neighborhood": "Cerritos",
+    "socials": {}
+  },
+  {
+    "id": "la_opera",
+    "name": "LA Opera (Dorothy Chandler Pavilion)",
+    "short_name": "LA Opera",
+    "type": "music",
+    "discipline": "performing",
+    "description": "Los Angeles' opera company, performing at the Dorothy Chandler Pavilion at the Music Center.",
+    "website": "https://www.laopera.org",
+    "events_url": "https://www.laopera.org/performances/",
+    "address": "135 N Grand Ave, Los Angeles, CA 90012",
+    "lat": 34.0577,
+    "lng": -118.2486,
+    "region": "downtown",
+    "neighborhood": "Bunker Hill",
+    "socials": {},
+    "aliases": [
+      "LA Opera",
+      "Dorothy Chandler Pavilion"
+    ]
   }
 ]

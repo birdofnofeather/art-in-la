@@ -1,0 +1,138 @@
+name: Repair a broken scraper (tier 2 self-healing)
+
+# Tier 1 (Claude Haiku, inside the daily scrape) recovers a broken venue's DATA.
+# This workflow is tier 2: when a venue with its own scraper module has been
+# silent for days despite tier 1, an agent rewrites that ONE scraper.
+#
+# Guard rails (all enforced here, not by trusting the agent):
+#   * rationed by scrapers/repair_plan.py — max 2 runs/month, 21-day cooldown
+#     per venue, never for a venue whose website is unreachable;
+#   * the agent may only change scrapers/venues/<venue>.py — any other change
+#     is discarded;
+#   * the fix is kept only if the test suite passes, the curation rules check
+#     passes, and a real scrape of that venue now returns events;
+#   * otherwise nothing is committed and the attempt is reported in the
+#     "Scraper health alert" issue.
+# Every repair is its own commit, so `git revert <sha>` undoes it.
+#
+# Cost: runs at most twice a month on claude-sonnet-5-5 (~$1–2 per run).
+# Requires the ANTHROPIC_API_KEY repository secret; without it this is a no-op.
+
+on:
+  workflow_run:
+    workflows: ["Daily scrape"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: repair-scraper
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scrapers/requirements.txt
+
+      - run: pip install -r scrapers/requirements.txt pytest
+
+      - name: Decide whether a repair is needed
+        id: plan
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          decision=$(python -m scrapers.repair_plan)
+          echo "$decision"
+          echo "run=$(echo "$decision" | python -c 'import json,sys;print(str(json.load(sys.stdin)["run"]).lower())')" >> "$GITHUB_OUTPUT"
+          echo "venue=$(echo "$decision" | python -c 'import json,sys;print(json.load(sys.stdin).get("venue",""))')" >> "$GITHUB_OUTPUT"
+
+      - name: Let the agent repair the scraper
+        if: steps.plan.outputs.run == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: "--model claude-sonnet-5-5 --max-turns 40"
+          prompt: |
+            The Art in LA scraper for venue `${{ steps.plan.outputs.venue }}` has returned
+            zero events for several days in a row, so the venue's website probably changed.
+            Read CLAUDE.md first.
+
+            Your job: make `scrapers/venues/${{ steps.plan.outputs.venue }}.py` work again.
+            1. Fetch the venue's events page (its URL is in public/data/venues.json and in
+               the module) and work out how events are now published (JSON-LD, a JSON API
+               the page calls, a Tribe/Squarespace feed, or HTML structure).
+            2. Update ONLY scrapers/venues/${{ steps.plan.outputs.venue }}.py.
+               Do not edit rules.yaml, tests, other venues, or data files.
+            3. Verify with:
+                 python -m scrapers.run_all --only ${{ steps.plan.outputs.venue }} --dry-run
+               The events must be real, upcoming, with correct LA-local dates and clean
+               titles (no navigation text). Never invent a time for a date-only listing.
+            4. Run `python -m pytest scrapers/tests -q`.
+            Do not commit or push — the workflow verifies and commits your change.
+            If the site is unreachable or has no events, change nothing and say so.
+
+      - name: Verify the repair independently
+        if: steps.plan.outputs.run == 'true'
+        id: verify
+        env:
+          VENUE: ${{ steps.plan.outputs.venue }}
+        run: |
+          set +e
+          # 1. Only the venue's own module may change.
+          git diff --name-only > /tmp/changed.txt
+          git ls-files --others --exclude-standard >> /tmp/changed.txt
+          bad=$(grep -v -x "scrapers/venues/${VENUE}.py" /tmp/changed.txt | grep -v '^$')
+          if [ -n "$bad" ]; then echo "Out-of-scope changes:"; echo "$bad"; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if ! grep -q . /tmp/changed.txt; then echo "Agent changed nothing."; echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # 2. Tests and curation rules.
+          python -m pytest scrapers/tests -q || { echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          python -m scrapers.check_rules || { echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          # 3. A real scrape of that venue must now return events.
+          python -m scrapers.run_all --only "$VENUE" --dry-run --no-probe | tee /tmp/run.txt
+          n=$(grep -oP "→ ${VENUE}: \K\d+" /tmp/run.txt | head -1)
+          echo "events=${n:-0}"
+          if [ "${n:-0}" -ge 1 ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Commit the verified repair
+        if: steps.plan.outputs.run == 'true' && steps.verify.outputs.ok == 'true'
+        env:
+          VENUE: ${{ steps.plan.outputs.venue }}
+        run: |
+          git config user.name  "art-in-la-bot"
+          git config user.email "art-in-la-bot@users.noreply.github.com"
+          python -m scrapers.repair_plan --record "$VENUE" fixed
+          git add "scrapers/venues/${VENUE}.py" scrapers/state/repair_ledger.json
+          git commit -m "fix(${VENUE}): automated scraper repair (verified: tests + live scrape)"
+          git pull --rebase origin main
+          git push
+
+      - name: Record a failed attempt and tell the owner
+        if: steps.plan.outputs.run == 'true' && steps.verify.outputs.ok != 'true'
+        env:
+          VENUE: ${{ steps.plan.outputs.venue }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git checkout -- . && git clean -fd -- scrapers/venues
+          git config user.name  "art-in-la-bot"
+          git config user.email "art-in-la-bot@users.noreply.github.com"
+          python -m scrapers.repair_plan --record "$VENUE" failed
+          git add scrapers/state/repair_ledger.json
+          git commit -m "chore(repair): log failed repair attempt for ${VENUE}" && git pull --rebase origin main && git push
+          body="Automated repair of \`${VENUE}\` did not pass verification, so nothing was changed. The venue's events are still being recovered by the LLM reader where possible. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          existing=$(gh issue list --state open --search "Scraper health alert in:title" --json number --jq '.[0].number' 2>/dev/null || echo "")
+          if [ -n "$existing" ]; then gh issue comment "$existing" --body "$body"; else gh issue create --title "Scraper health alert" --body "$body"; fi

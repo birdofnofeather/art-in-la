@@ -1,0 +1,80 @@
+# Venues scraped WITHOUT a bespoke parser (see scrapers/venues/_generic.py).
+#
+# URLs come from public/data/venues.json (events_url, exhibitions_url) — the
+# single source of truth. This file only says HOW to read each venue:
+#
+#   heuristic: true        run the generic title+date card reader. Only set
+#                          after its output for that venue was checked by hand
+#                          (it is reliable on some sites, wrong on others).
+#   url_must_contain: ...  keep only items whose link contains this text
+#                          (multi-city organisations).
+#   default_event_type:    type when the title gives no clue (e.g. performance
+#                          at a theater, exhibition for a gallery page).
+#
+# Every venue here also gets the LLM reader (needs ANTHROPIC_API_KEY) as the
+# last resort, so a venue with no flags simply waits for that tier.
+# A venue with a bespoke module in scrapers/venues/ must NOT be listed here.
+
+venues:
+  # ── Art venues: checked, generic reader on ─────────────────────────────
+  chinese_american_museum: {heuristic: true}
+  lacp: {heuristic: true}
+  side_street: {heuristic: true, default_event_type: workshop}
+  fulcrum: {heuristic: true}
+  monte_vista: {heuristic: true, default_event_type: exhibition}
+  tsa_la: {heuristic: true, url_must_contain: "tigerstrikesasteroid.com/la/", default_event_type: exhibition}
+
+  # ── Art venues: no reliable pattern — LLM reader only ──────────────────
+  amoca: {}
+  velaslavasay: {}
+  weisman_pepperdine: {default_event_type: exhibition}
+  otis_ben_maltz: {default_event_type: exhibition}
+  csun_galleries: {}
+  iamla: {}
+  art_share_la: {}
+  caer: {}
+  japan_house: {}
+  catalina_museum: {}
+  claremont_lewis: {}
+  maaa: {default_event_type: exhibition}
+  wgsac: {}
+  lucas_museum: {}
+  natural_history_museum: {}
+  csulb_kleefeld: {}
+  mona: {}
+  ucla_broad: {}
+  murmurs: {}
+  coaxial: {}
+  navel: {}
+  the_mistake_room: {}
+  tin_flats: {}
+  plaza_de_la_raza: {}
+  watts_towers: {}
+  la_artcore: {}
+  arroyo_arts: {}
+  actual_size: {}
+  crenshaw_dairy_mart: {}
+  laca: {}
+  craft_in_america: {}
+  tierra_del_sol: {}
+  bridge_projects: {}
+  in_situ: {}
+
+  # ── Performing arts venues ─────────────────────────────────────────────
+  east_west_players: {heuristic: true, default_event_type: performance}
+  highways: {heuristic: true, default_event_type: performance}
+  carpenter_center: {heuristic: true, default_event_type: performance}
+  pasadena_playhouse: {default_event_type: performance}   # WordPress Tribe feed
+  la_phil: {default_event_type: performance}
+  la_opera: {default_event_type: performance}
+  center_theatre_group: {default_event_type: performance}
+  the_wallis: {default_event_type: performance}
+  ford_theatres: {default_event_type: performance}
+  geffen_playhouse: {default_event_type: performance}
+  the_soraya: {default_event_type: performance}
+  cap_ucla: {default_event_type: performance}
+  broad_stage: {default_event_type: performance}
+  fountain_theatre: {default_event_type: performance}
+  grand_performances: {default_event_type: performance}
+  a_noise_within: {default_event_type: performance}
+  cerritos_center: {default_event_type: performance}

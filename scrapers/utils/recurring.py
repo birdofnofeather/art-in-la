@@ -134,8 +134,10 @@ def filter_recurring(events: list[dict]) -> tuple[list[dict], list[dict]]:
     # every week". Without this exemption a long-running show is mistaken for a
     # standing programme and vanishes from the site, which is how MOCA's
     # MONUMENTS and four other shows disappeared.
-    exhibitions = [e for e in events if _is_exhibition(e)]
-    candidates = [e for e in events if not _is_exhibition(e)]
+    # A performing venue's production run (utils/runs.py) is likewise a date
+    # range, and is exempt for the same reason.
+    exhibitions = [e for e in events if _is_exhibition(e) or e.get("_run")]
+    candidates = [e for e in events if not (_is_exhibition(e) or e.get("_run"))]
 
     # ── Pass 1: by name ───────────────────────────────────────────────────
     for ev in candidates:
