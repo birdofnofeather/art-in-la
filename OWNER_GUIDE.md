@@ -14,7 +14,7 @@ in case you ever need to replace the key.
 About 40 venues have no machine-readable calendar. An AI reader (Claude Haiku)
 reads their web pages instead. The same reader fills in exhibitions for 17
 museums (LACMA, Hammer, Huntington, Autry, JANM…) and repairs listings when a
-venue redesigns its site. It is switched off until you add the key.
+venue redesigns its site. (Without a key it simply switches off; nothing breaks.)
 
 1. Get a key at https://console.anthropic.com → **API Keys** → **Create Key**.
    Copy it (it starts with `sk-ant-`).
