@@ -1,4 +1,120 @@
 {
+ "a_noise_within|events|https://www.anoisewithin.org/calendar/": {
+  "at": "2026-11-05T01:37:15+00:00",
+  "hash": "fc36edb35bdddbbc73fd",
+  "items": [
+   {
+    "description": "Come From Away performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-01",
+    "start_time": "14:00",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-01",
+    "start_time": "19:00",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-05",
+    "start_time": "19:30",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-06",
+    "start_time": "19:30",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-07",
+    "start_time": "14:00",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away closing week performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-07",
+    "start_time": "19:30",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "Come From Away closing performance at A Noise Within.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-08",
+    "start_time": "19:00",
+    "title": "Come From Away",
+    "url": "https://www.anoisewithin.org/play/come-from-away/"
+   },
+   {
+    "description": "A Christmas Carol preview performance at A Noise Within.",
+    "end_date": "2026-11-29",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-28",
+    "start_time": "14:00",
+    "title": "A Christmas Carol",
+    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
+   },
+   {
+    "description": "A Christmas Carol opening night at A Noise Within.",
+    "end_date": "2026-11-29",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-28",
+    "start_time": "19:00",
+    "title": "A Christmas Carol",
+    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
+   },
+   {
+    "description": "A Christmas Carol relaxed performance at A Noise Within.",
+    "end_date": "2026-11-29",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-29",
+    "start_time": "11:00",
+    "title": "A Christmas Carol",
+    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
+   },
+   {
+    "description": "A Christmas Carol performance at A Noise Within.",
+    "end_date": "2026-11-29",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-29",
+    "start_time": "14:00",
+    "title": "A Christmas Carol",
+    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
+   }
+  ]
+ },
  "actual_size|events|https://www.actualsizela.com/": {
   "at": "2026-11-05T01:20:46+00:00",
   "hash": "c1a84ade2eaed3b21aa0",
@@ -256,6 +372,448 @@
     "start_time": null,
     "title": "Micol Hebron",
     "url": null
+   }
+  ]
+ },
+ "cap_ucla|events|https://cap.ucla.edu/calendar": {
+  "at": "2026-11-05T01:37:07+00:00",
+  "hash": "583f687bd8ea33590d68",
+  "items": [
+   {
+    "description": "Composed by Jiři Trtik, libretto by Jan Škrob, produced by the Opera of Timur in collaboration with Brightwork Ensemble.",
+    "end_date": "2026-11-14",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-12",
+    "start_time": "20:00",
+    "title": "Kafka’s Letter to His Father",
+    "url": "https://cap.ucla.edu/event/kafkas-letter-his-father"
+   },
+   {
+    "description": "School matinee performance for grades 9-12 at Royce Hall.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-20",
+    "start_time": "11:00",
+    "title": "Cloud Gate Dance Theatre of Taiwan",
+    "url": "https://cap.ucla.edu/event/design-sharing-cloud-gate-dance-theatre-taiwan"
+   },
+   {
+    "description": "Resonant Encounters: Boulez, Feldman, Cage and Beyond, presented in partnership with Piano Spheres.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-20",
+    "start_time": "20:00",
+    "title": "Gloria Cheng and Ralph van Raat",
+    "url": "https://cap.ucla.edu/event/gloria-cheng-and-ralph-van-raat"
+   },
+   {
+    "description": "Cloud Gate Dance Theatre of Taiwan performs at Royce Hall.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-21",
+    "start_time": "20:00",
+    "title": "Blue Hour / Beckoning: A Double Bill",
+    "url": "https://cap.ucla.edu/event/cloud-gate"
+   },
+   {
+    "description": "With Andrew Yee and Rothko String Quartet.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-04",
+    "start_time": "20:00",
+    "title": "inti figgis-vizueta’s Music for Transitions",
+    "url": "https://cap.ucla.edu/event/inti-figgis-vizueta"
+   },
+   {
+    "description": "Meow Meow live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-05",
+    "start_time": "20:00",
+    "title": "Feline Festive",
+    "url": "https://cap.ucla.edu/event/meow-meow-2026-27"
+   },
+   {
+    "description": "POOR Magazine and Green Diamond Projects present a screening at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-11",
+    "start_time": "19:00",
+    "title": "Crushing Wheelchairs",
+    "url": "https://cap.ucla.edu/event/crushing-wheelchairs"
+   },
+   {
+    "description": "SPELLLING live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-12",
+    "start_time": "20:00",
+    "title": "The Unknown Exalted",
+    "url": "https://cap.ucla.edu/event/spellling"
+   },
+   {
+    "description": "Written by Kathy Acker and the Mekons, performed at The Nimoy.",
+    "end_date": "2027-01-09",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-01-08",
+    "start_time": "20:00",
+    "title": "Pussy, King of the Pirates",
+    "url": "https://cap.ucla.edu/event/pussy-king-pirates"
+   },
+   {
+    "description": "School matinee performance for grades 6-12 with Vijay Iyer, composer and piano, at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-01-15",
+    "start_time": "10:45",
+    "title": "JENNIFER KOH, violin",
+    "url": "https://cap.ucla.edu/event/design-sharing-jennifer-koh-and-vijay-iyer"
+   },
+   {
+    "description": "Jennifer Koh, violin, and Vijay Iyer, composer and piano, at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-01-16",
+    "start_time": "20:00",
+    "title": "Music from Scenes of Living and Dying",
+    "url": "https://cap.ucla.edu/event/jennifer-koh-and-vijay-iyer"
+   },
+   {
+    "description": "Live performance at The Nimoy.",
+    "end_date": "2027-01-23",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-01-22",
+    "start_time": "20:00",
+    "title": "Cuervo",
+    "url": "https://cap.ucla.edu/event/cuervo"
+   },
+   {
+    "description": "Live performance at Freud Playhouse.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-01-31",
+    "start_time": "16:00",
+    "title": "Kronos Quartet",
+    "url": "https://cap.ucla.edu/event/kronos-quartet-2026-27"
+   },
+   {
+    "description": "School matinee performance for grades 4-8 at Freud Playhouse.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-01",
+    "start_time": "10:45",
+    "title": "Kronos Quartet",
+    "url": "https://cap.ucla.edu/event/design-sharing-kronos-quartet"
+   },
+   {
+    "description": "Live performance at Freud Playhouse.",
+    "end_date": "2027-02-06",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-05",
+    "start_time": "20:00",
+    "title": "Catarina",
+    "url": "https://cap.ucla.edu/event/catarina"
+   },
+   {
+    "description": "School matinee performance for grades 5-8 at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-10",
+    "start_time": "10:45",
+    "title": "Sō Percussion",
+    "url": "https://cap.ucla.edu/event/design-sharing-so-percussion"
+   },
+   {
+    "description": "Just Like the World, performed at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-10",
+    "start_time": "20:00",
+    "title": "Helado Negro, Kate Stables and Sō Percussion",
+    "url": "https://cap.ucla.edu/event/helado-negro-kate-stables-and-so-percussion"
+   },
+   {
+    "description": "Live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-13",
+    "start_time": "20:00",
+    "title": "Piano Spheres performs Enno Poppe's Rundfunk",
+    "url": "https://cap.ucla.edu/event/piano-spheres-performs-enno-poppes-rundfunk"
+   },
+   {
+    "description": "after it's over, it's gone in the air, performed at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-20",
+    "start_time": "20:00",
+    "title": "Wild Up at The Nimoy",
+    "url": "https://cap.ucla.edu/event/wild-nimoy-2026-27"
+   },
+   {
+    "description": "Marks of RED, performed at Royce Hall.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-27",
+    "start_time": "20:00",
+    "title": "Shamel Pitts | TRIBE",
+    "url": "https://cap.ucla.edu/event/shamel-pitts-tribe"
+   },
+   {
+    "description": "La Vie Secrète des Vieux, an installation-performance at The Nimoy.",
+    "end_date": "2027-03-05",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-03-04",
+    "start_time": "20:00",
+    "title": "Mohamed El Khatib",
+    "url": "https://cap.ucla.edu/event/mohamed-el-khatib"
+   },
+   {
+    "description": "Live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-03-20",
+    "start_time": "20:00",
+    "title": "Roomful of Teeth",
+    "url": "https://cap.ucla.edu/event/roomful-teeth"
+   },
+   {
+    "description": "Or, The Whale, performed at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-03-27",
+    "start_time": "20:00",
+    "title": "Andrew Yee and Caroline Shaw",
+    "url": "https://cap.ucla.edu/event/andrew-yee-and-caroline-shaw"
+   },
+   {
+    "description": "Music for Violas, performed at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-04-10",
+    "start_time": "20:00",
+    "title": "Nadia Sirota",
+    "url": "https://cap.ucla.edu/event/nadia-sirota"
+   },
+   {
+    "description": "School matinee performance for grades 6-12.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-04-16",
+    "start_time": "10:45",
+    "title": "Varijashree Venugopal",
+    "url": "https://cap.ucla.edu/event/design-sharing-varijashree-venugopal"
+   },
+   {
+    "description": "Varijashree Venugopal live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-04-16",
+    "start_time": "20:00",
+    "title": "Vari - Live",
+    "url": "https://cap.ucla.edu/event/varijashree-venugopal"
+   },
+   {
+    "description": "Dorian Wood live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-04-24",
+    "start_time": "20:00",
+    "title": "I Do Not Want What I Haven’t Got",
+    "url": "https://cap.ucla.edu/event/dorian-wood"
+   },
+   {
+    "description": "Caleb Teicher and Nic Gareiss live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-05-15",
+    "start_time": "20:00",
+    "title": "Ear to the Ground",
+    "url": "https://cap.ucla.edu/event/ear-ground"
+   },
+   {
+    "description": "eucademix live performance at The Nimoy.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-05-22",
+    "start_time": "20:00",
+    "title": "A Mouth Full of Dirt",
+    "url": "https://cap.ucla.edu/event/eucademix"
+   }
+  ]
+ },
+ "center_theatre_group|events|https://www.centertheatregroup.org/shows-tickets/": {
+  "at": "2026-11-05T01:37:06+00:00",
+  "hash": "7ded954e989bfecee1b5",
+  "items": [
+   {
+    "description": "There's trouble in River City when a fast-talking salesman gets his heart stolen by the town librarian.",
+    "end_date": "2026-11-08",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-10-27",
+    "start_time": null,
+    "title": "The Music Man",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/the-music-man/"
+   },
+   {
+    "description": "A miserable, suffocated Mary Todd Lincoln in the weeks leading up to Abraham Lincoln's assassination, examined through the lens of an idiot.",
+    "end_date": "2026-12-06",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-10",
+    "start_time": null,
+    "title": "Oh, Mary!",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/oh-mary/"
+   },
+   {
+    "description": "The Cornley Amateur Drama Society tackle Charles Dickens' classic, A Christmas Carol.",
+    "end_date": "2027-01-10",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-12",
+    "start_time": null,
+    "title": "Christmas Carol Goes Wrong",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/christmas-carol-goes-wrong/"
+   },
+   {
+    "description": "Drama Desk Award-winning production presented in Yiddish with English and Russian supertitles.",
+    "end_date": "2027-03-14",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-02-13",
+    "start_time": null,
+    "title": "Fiddler on the Roof",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/fiddler-on-the-roof/"
+   },
+   {
+    "description": "A thrilling celebration of music and dance with Grammy Award-winning music and breathtaking choreography.",
+    "end_date": "2027-04-18",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-04-13",
+    "start_time": null,
+    "title": "Riverdance 30: The New Generation",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/riverdance/"
+   },
+   {
+    "description": "A Broadway musical-comedy bringing Betty Boop to life in New York City.",
+    "end_date": "2027-08-01",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-07-06",
+    "start_time": null,
+    "title": "BOOP!® The Musical",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/2026-27/boop-the-musical/"
+   },
+   {
+    "description": "Studio Ghibli's Oscar-winning Spirited Away re-imagined for the stage with puppets and a live orchestra.",
+    "end_date": "2027-10-24",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-09-02",
+    "start_time": null,
+    "title": "Spirited Away",
+    "url": "https://www.centertheatregroup.org/shows-tickets/ahmanson/202728/spirited-away/"
+   },
+   {
+    "description": "Karen Zacarías' hilarious hit takes you on an emotional rollercoaster of telenovela melodrama.",
+    "end_date": "2026-12-20",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-11",
+    "start_time": null,
+    "title": "Destiny of Desire",
+    "url": "https://www.centertheatregroup.org/shows-tickets/taper/202627/destiny-of-desire/"
+   },
+   {
+    "description": "Five young women in a Georgia high school AP English class question the stories and heroes they've been taught.",
+    "end_date": "2027-04-25",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-03-17",
+    "start_time": null,
+    "title": "John Proctor is the Villain",
+    "url": "https://www.centertheatregroup.org/shows-tickets/taper/202627/john-proctor-is-the-villain/"
+   },
+   {
+    "description": "August Wilson's Fences explores the walls we build around ourselves and our loved ones.",
+    "end_date": "2027-07-03",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-05-26",
+    "start_time": null,
+    "title": "Fences",
+    "url": "https://www.centertheatregroup.org/shows-tickets/taper/202627/fences/"
+   },
+   {
+    "description": "A world premiere folk-infused mystery-box musical about two friends at a secluded wellness retreat.",
+    "end_date": "2027-10-17",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-09-08",
+    "start_time": null,
+    "title": "The Turning",
+    "url": "https://www.centertheatregroup.org/shows-tickets/taper/202627/the-turning/"
+   },
+   {
+    "description": "A joyous new musical bringing Kristy, Mary Anne, Claudia, and Stacey's world to life onstage.",
+    "end_date": "2027-06-13",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-05-06",
+    "start_time": null,
+    "title": "The Baby-sitters Club: A New Musical",
+    "url": "https://www.centertheatregroup.org/shows-tickets/douglas/2026-27/baby-sitters-club/"
+   },
+   {
+    "description": "Follow activist Dolores Huerta on her journey to improve conditions for farm workers.",
+    "end_date": "2026-11-15",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-07",
+    "start_time": null,
+    "title": "¡SÍ SE PUEDE!",
+    "url": "https://www.centertheatregroup.org/shows-tickets/around-la/202627/sí-se-puede/"
+   },
+   {
+    "description": "Six brand-new play readings from local playwrights at the Kirk Douglas Theatre and REDCAT.",
+    "end_date": "2026-12-06",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-07-12",
+    "start_time": null,
+    "title": "2026 LA Writers' Workshop Reading Series",
+    "url": "https://www.centertheatregroup.org/shows-tickets/around-la/202627/la-writers-workshop/"
    }
   ]
  },
@@ -634,6 +1192,267 @@
   "hash": "9f236078610b24dffe00",
   "items": []
  },
+ "fountain_theatre|events|https://www.fountaintheatre.com/": {
+  "at": "2026-11-05T01:37:09+00:00",
+  "hash": "54681417042c341d3640",
+  "items": []
+ },
+ "grand_performances|events|https://www.grandperformances.org/events": {
+  "at": "2026-11-05T01:37:09+00:00",
+  "hash": "dfa6ca3dbcf3dd1c8982",
+  "items": [
+   {
+    "description": "A free, family-friendly celebration of live music, lucha libre exhibitions, film and interactive activities.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-10-24",
+    "start_time": "11:00",
+    "title": "Lucha x Sound: Music, Masks and Culture",
+    "url": "https://www.grandperformances.org/events/gaaaa"
+   },
+   {
+    "description": "Celebrating Dolly Parton's life and legacy with a special lunch hour performance during your 9-to-5!",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-09-25",
+    "start_time": "12:00",
+    "title": "Dolly Parton Day",
+    "url": "https://www.grandperformances.org/events/dolly-parton-day"
+   },
+   {
+    "description": "A night of classical music: Across Borders, Across Scores.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-09-03",
+    "start_time": "18:00",
+    "title": "Classical X DTLA ARTNIGHT (SEPTEMBER 2026)",
+    "url": "https://www.grandperformances.org/events/classical-across-borders"
+   },
+   {
+    "description": "The grand finale to the 40th summer season featuring Son Rompe Pera, Bloco Obini and QVLN.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-08-29",
+    "start_time": "18:00",
+    "title": "Grand Performances Season Finale ft. Son Rompe Pera + Bloco Obini + QVLN",
+    "url": "https://www.grandperformances.org/events/son-rompe-pera"
+   },
+   {
+    "description": "In remembrance of Ritchie Valens, pioneering Mexican-American rock and roll singer, guitarist, and songwriter.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-08-22",
+    "start_time": "18:00",
+    "title": "Ritchie Forever",
+    "url": "https://www.grandperformances.org/events/ritchie-valens-tribute"
+   },
+   {
+    "description": "Los Angeles-based ensemble Ethio-Cali celebrates their 15th anniversary with DJ Nu-Mark and special guests.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-08-15",
+    "start_time": "18:00",
+    "title": "15 Years of Ethio Cali + DJ Nu-Mark",
+    "url": "https://www.grandperformances.org/events/ethiocali"
+   },
+   {
+    "description": "A special night celebrating Indigenous and Korean cultures with masked dancing.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-08-08",
+    "start_time": "18:00",
+    "title": "Tradition in Motion: Mask and Sound ft Pamyua + Insun Park & Generals",
+    "url": "https://www.grandperformances.org/events/insunpark-and-generals"
+   },
+   {
+    "description": "A night of classical music: Hidden Architects of the Classical Era.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-08-06",
+    "start_time": "18:00",
+    "title": "Classical X DTLA ARTNIGHT",
+    "url": "https://www.grandperformances.org/events/classical-hidden-architects"
+   },
+   {
+    "description": "Sly5thAve, Kassa Overall, and special guests highlight the enduring impact of Roy Ayers.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-08-01",
+    "start_time": "18:00",
+    "title": "Bees & Things & Flowers: A Tribute to the Music of Roy Ayers by Sly5thAve Ft Special Guest Kassa Overall + Linafornia Celebrates J Dilla's 'Donuts'",
+    "url": "https://www.grandperformances.org/events/roy-ayers-tribute"
+   },
+   {
+    "description": "A Friday night amphitheater concert featuring Peruvian-born guitarist and composer Ciro Hurtado.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-31",
+    "start_time": "19:00",
+    "title": "An Evening with Ciro Hurtado and Friends",
+    "url": "https://www.grandperformances.org/events/an-evening-with-ciro-hurtado-and-friends"
+   },
+   {
+    "description": "KCRW Summer Nights returns with Mariachi El Bronx and Tijuana Panthers.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-07-25",
+    "start_time": "18:00",
+    "title": "KCRW Summer Nights 2026",
+    "url": "https://www.grandperformances.org/events/kcrw-summer-nights-2026"
+   },
+   {
+    "description": "This dance party honoring Stevie Wonder's legacy turns 20, presented by Footlong Development and Nancy Arte Productions.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-07-18",
+    "start_time": "18:00",
+    "title": "WONDER-FULL Tribute to the Music of Stevie Wonder",
+    "url": "https://www.grandperformances.org/events/wonder-full"
+   },
+   {
+    "description": "An evening of poetry and music with Rey M. Rodríguez, Lorna Dee Cervantes, Aideed Medina, Ceasar K. Avelar, Janet Gonzalez and Las Chorizeras.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-17",
+    "start_time": "18:00",
+    "title": "Todos Somos Sagrados (All Are Sacred) An Evening of Flor y Canto with Rey M. Rodriguez and Friends",
+    "url": "https://www.grandperformances.org/events/bjlpo2c5nlkauhlum3uq9i2jssxcj8"
+   },
+   {
+    "description": "A free open-air concert and French market at California Plaza celebrating French culture, music and food.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-14",
+    "start_time": "17:00",
+    "title": "Bastille Day Los Angeles 2026",
+    "url": "https://www.grandperformances.org/events/bastille-day-los-angeles-2026"
+   },
+   {
+    "description": "A unique event expounding on the DJ crossfade and how it builds cultural bridges.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-07-11",
+    "start_time": "18:00",
+    "title": "J. PERIOD and Josh Kun Present: The Art of the Crossfade (Live Mixtape)",
+    "url": "https://www.grandperformances.org/events/the-art-of-the-crossfade"
+   },
+   {
+    "description": "An interactive community workshop that uses the crossfader to create a new mixtape for Los Angeles.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-11",
+    "start_time": "14:00",
+    "title": "The Art of Crossfade COMMUNITY WORKSHOP",
+    "url": "https://www.grandperformances.org/events/the-art-of-crossfade-community-workshop"
+   },
+   {
+    "description": "A musical lecture on the DJ crossfader exploring how cultures can be bridged through music.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-10",
+    "start_time": "18:00",
+    "title": "J. PERIOD and Josh Kun Present: The Art of the Crossfade (Musical Lecture)",
+    "url": "https://www.grandperformances.org/events/the-art-of-crossfade-lecture-and-workshop"
+   },
+   {
+    "description": "In partnership with DTLA ArtNight, Grand Performances celebrates 40 years with an All '80s Night.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-07-09",
+    "start_time": "17:30",
+    "title": "Grand Performances X DTLA Artnight (All '80s Night.)",
+    "url": "https://www.grandperformances.org/events/grand-performances-x-dtla-artnight-2026"
+   },
+   {
+    "description": "Culture Clash presents American Payasos: End Times Variety Cabaret.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-27",
+    "start_time": "18:00",
+    "title": "AMERICAN PAYASOS! Culture Clash's End Times Cabaret",
+    "url": "https://www.grandperformances.org/events/culture-clash"
+   },
+   {
+    "description": "Traditional Korean dance, Brazilian music, and a multi-sensory piece inspired by Sojourner Truth.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-26",
+    "start_time": "19:00",
+    "title": "COLA Fellows 2026 (Night Two)",
+    "url": "https://www.grandperformances.org/events/cola-2026-night-two"
+   },
+   {
+    "description": "An homage to Sun Ra and his Arkestra through opera, dance, and contemporary modalities.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-20",
+    "start_time": "18:00",
+    "title": "Jimetta Rose presents The World Debut of Metta Sun: A Sun Ra Operatic Experience",
+    "url": "https://www.grandperformances.org/events/mettasun"
+   },
+   {
+    "description": "New and imaginative works across poetry, memoir, and technology-infused music by LA-based artists.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-19",
+    "start_time": "19:00",
+    "title": "COLA Artist Fellows 2026 (Night One)",
+    "url": "https://www.grandperformances.org/events/cola-2026-night-one"
+   },
+   {
+    "description": "Grand Performances' 40th anniversary party featuring up-and-comers and LA legends.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-13",
+    "start_time": "18:00",
+    "title": "GP 40th Celebration ft Ozomatli + Jungle Fire + Healing Gems + DJ Liza Richardson",
+    "url": "https://www.grandperformances.org/events/40th-anniversary-party"
+   },
+   {
+    "description": "A high-energy inter-generational cumbia dance party to kick off the 40th season.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-06",
+    "start_time": "18:00",
+    "title": "Season Kickoff! ft Grupo Soñador + Wachiwara + DJ Turbo Sonidero",
+    "url": "https://www.grandperformances.org/events/grupo-sonador"
+   },
+   {
+    "description": "In partnership with DTLA ArtNight, featuring sets by Susie White Eagle, Jen Rock, and Jessica Jane.",
+    "end_date": null,
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-06-04",
+    "start_time": "17:00",
+    "title": "The Art of Vinyl: Women on Wax (DTLA ARTNIGHT)",
+    "url": "https://www.grandperformances.org/events/wbegs8obwtypmd70ao2uthzdvre7lo"
+   }
+  ]
+ },
  "hammer|exhibitions|https://hammer.ucla.edu/exhibitions/on-view": {
   "at": "2026-11-05T01:20:00+00:00",
   "hash": "55012296723b90d30453",
@@ -690,6 +1509,11 @@
    }
   ]
  },
+ "in_situ|events|https://insituproject.org/": {
+  "at": "2026-11-05T01:37:01+00:00",
+  "hash": "f5548bfed4581b76a17f",
+  "items": []
+ },
  "janm|exhibitions|https://www.janm.org/exhibitions": {
   "at": "2026-11-05T01:20:09+00:00",
   "hash": "4f8472f4ff511f49aa6c",
@@ -729,6 +1553,11 @@
  "la_artcore|events|https://laartcore.org/": {
   "at": "2026-11-05T01:20:44+00:00",
   "hash": "9dc501cf573774e711b7",
+  "items": []
+ },
+ "la_opera|events|https://www.laopera.org/whats-on": {
+  "at": "2026-11-05T01:37:08+00:00",
+  "hash": "6fc1f437d51ecf0e57f3",
   "items": []
  },
  "lacma|exhibitions|https://www.lacma.org/art/exhibitions/current": {
@@ -973,14 +1802,182 @@
    }
   ]
  },
+ "moca_geffen|events|https://www.moca.org/exhibitions": {
+  "at": "2026-11-05T01:36:17+00:00",
+  "hash": "10df6ec6164cfccc46e8",
+  "items": [
+   {
+    "description": "Recent acquisitions displayed at MOCA Grand Avenue.",
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "In These Times: Recent Acquisitions at MOCA",
+    "url": "https://www.moca.org/exhibitions/in-these-times-recent-acquisitions-at-moca"
+   },
+   {
+    "description": "Exhibition by Alexander Apóstol at MOCA Grand Avenue.",
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "Regime: Dramatis Personae",
+    "url": "https://www.moca.org/exhibitions/alexander-apostol-regime-dramatis-personae"
+   },
+   {
+    "description": "Cecilia Vicuña exhibition at MOCA Grand Avenue.",
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "The Dream of Water: Quipu of Encounters Maricunga",
+    "url": "https://www.moca.org/exhibitions/the-dream-of-water"
+   },
+   {
+    "description": "Exhibition by Julian Charrière at MOCA Grand Avenue.",
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Julian Charrière: Deep End",
+    "url": "https://www.moca.org/exhibitions/julian-charriere"
+   },
+   {
+    "description": "Exhibition on Japanese American artists and the postwar era at MOCA Grand Avenue.",
+    "end_date": "2027-09-12",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-02-23",
+    "start_time": null,
+    "title": "Afterlives: Japanese American Artists and the Postwar Era",
+    "url": "https://www.moca.org/exhibitions/afterlives"
+   }
+  ]
+ },
+ "moca_grand|events|https://www.moca.org/exhibitions": {
+  "at": "2026-11-05T01:36:06+00:00",
+  "hash": "10df6ec6164cfccc46e8",
+  "items": [
+   {
+    "description": null,
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "In These Times: Recent Acquisitions at MOCA",
+    "url": "https://www.moca.org/exhibitions/in-these-times-recent-acquisitions-at-moca"
+   },
+   {
+    "description": null,
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "Alexander Apóstol Regime: Dramatis Personae",
+    "url": "https://www.moca.org/exhibitions/alexander-apostol-regime-dramatis-personae"
+   },
+   {
+    "description": null,
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Cecilia Vicuña The Dream of Water: Quipu of Encounters Maricunga",
+    "url": "https://www.moca.org/exhibitions/the-dream-of-water"
+   },
+   {
+    "description": null,
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Julian Charrière: Deep End",
+    "url": "https://www.moca.org/exhibitions/julian-charriere"
+   },
+   {
+    "description": null,
+    "end_date": "2027-09-12",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-02-23",
+    "start_time": null,
+    "title": "Afterlives: Japanese American Artists and the Postwar Era",
+    "url": "https://www.moca.org/exhibitions/afterlives"
+   }
+  ]
+ },
+ "moca_grand|exhibitions|https://www.moca.org/exhibitions": {
+  "at": "2026-11-05T01:36:13+00:00",
+  "hash": "10df6ec6164cfccc46e8",
+  "items": [
+   {
+    "description": null,
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "In These Times: Recent Acquisitions at MOCA",
+    "url": "https://www.moca.org/exhibitions/in-these-times-recent-acquisitions-at-moca"
+   },
+   {
+    "description": null,
+    "end_date": "2027-01-03",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-20",
+    "start_time": null,
+    "title": "Alexander Apóstol Regime: Dramatis Personae",
+    "url": "https://www.moca.org/exhibitions/alexander-apostol-regime-dramatis-personae"
+   },
+   {
+    "description": null,
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Cecilia Vicuña The Dream of Water: Quipu of Encounters Maricunga",
+    "url": "https://www.moca.org/exhibitions/the-dream-of-water"
+   },
+   {
+    "description": null,
+    "end_date": "2027-06-06",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Julian Charrière: Deep End",
+    "url": "https://www.moca.org/exhibitions/julian-charriere"
+   },
+   {
+    "description": null,
+    "end_date": "2027-09-12",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-02-23",
+    "start_time": null,
+    "title": "Afterlives: Japanese American Artists and the Postwar Era",
+    "url": "https://www.moca.org/exhibitions/afterlives"
+   }
+  ]
+ },
  "molaa|exhibitions|https://molaa.org/exhibitions": {
   "at": "2026-11-05T01:20:05+00:00",
   "hash": "1b40dc3dc63ecf8c370d",
   "items": []
  },
  "mona|events|https://www.neonmona.org/events/": {
-  "at": "2026-11-05T01:20:42+00:00",
-  "hash": "3c39383f77c7bbfeb1f4",
+  "at": "2026-11-05T01:37:05+00:00",
+  "hash": "84e9d45efb2e24ce7772",
   "items": []
  },
  "murmurs|events|https://www.murmurs.la/programs": {
@@ -1054,6 +2051,11 @@
  "the_mistake_room|events|https://www.tmr.la/": {
   "at": "2026-11-05T01:20:42+00:00",
   "hash": "add8c32528d52c3da6b7",
+  "items": []
+ },
+ "the_wallis|events|https://thewallis.org/whats-on": {
+  "at": "2026-11-05T01:37:05+00:00",
+  "hash": "83d11f1b54439674fd6d",
   "items": []
  },
  "tierra_del_sol|events|https://www.tierradelsol.org/homepage-3/events/": {
