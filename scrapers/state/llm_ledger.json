@@ -1,19 +1,19 @@
 {
  "2026-11": {
   "by_purpose": {
-   "listing:a_noise_within": 2,
+   "listing:a_noise_within": 3,
    "listing:actual_size": 2,
    "listing:amoca": 4,
    "listing:armory_pasadena": 1,
    "listing:arroyo_arts": 2,
    "listing:artcenter": 2,
    "listing:autry": 2,
-   "listing:beyond_baroque": 2,
+   "listing:beyond_baroque": 3,
    "listing:caam": 1,
    "listing:cap_ucla": 2,
    "listing:center_theatre_group": 1,
    "listing:chinese_american_museum": 2,
-   "listing:claremont_lewis": 4,
+   "listing:claremont_lewis": 5,
    "listing:clockshop": 1,
    "listing:coaxial": 2,
    "listing:crenshaw_dairy_mart": 2,
@@ -21,7 +21,7 @@
    "listing:csun_galleries": 2,
    "listing:destination_crenshaw": 2,
    "listing:fountain_theatre": 2,
-   "listing:fowler": 1,
+   "listing:fowler": 2,
    "listing:grand_performances": 2,
    "listing:hammer": 2,
    "listing:iamla": 2,
@@ -31,6 +31,7 @@
    "listing:la_artcore": 2,
    "listing:la_opera": 1,
    "listing:lacma": 2,
+   "listing:lacp": 1,
    "listing:lbma": 1,
    "listing:lucas_museum": 3,
    "listing:maaa": 3,
@@ -55,11 +56,11 @@
    "listing:vincent_price": 2,
    "listing:watts_towers": 1,
    "listing:weisman_pepperdine": 2,
-   "recover": 19
+   "recover": 26
   },
-  "calls": 133,
-  "input_tokens": 498807,
-  "output_tokens": 62195,
-  "usd": 0.08091
+  "calls": 145,
+  "input_tokens": 536727,
+  "output_tokens": 68483,
+  "usd": 0.08786
  }
 }
