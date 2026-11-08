@@ -20,7 +20,7 @@
    "listing:csulb_kleefeld": 2,
    "listing:csun_galleries": 2,
    "listing:destination_crenshaw": 2,
-   "listing:fountain_theatre": 3,
+   "listing:fountain_theatre": 4,
    "listing:fowler": 2,
    "listing:grand_performances": 2,
    "listing:hammer": 2,
@@ -28,11 +28,11 @@
    "listing:in_situ": 2,
    "listing:jaccc": 1,
    "listing:janm": 2,
-   "listing:japan_house": 3,
+   "listing:japan_house": 4,
    "listing:la_artcore": 2,
    "listing:la_opera": 1,
    "listing:lacma": 3,
-   "listing:lacp": 2,
+   "listing:lacp": 3,
    "listing:lbma": 1,
    "listing:lucas_museum": 3,
    "listing:maaa": 3,
@@ -55,15 +55,15 @@
    "listing:tin_flats": 2,
    "listing:torrance_art_museum": 2,
    "listing:usc_fisher": 1,
-   "listing:velaslavasay": 4,
+   "listing:velaslavasay": 5,
    "listing:vincent_price": 2,
    "listing:watts_towers": 1,
    "listing:weisman_pepperdine": 2,
-   "recover": 33
+   "recover": 40
   },
-  "calls": 165,
-  "input_tokens": 591816,
-  "output_tokens": 76107,
-  "usd": 0.09716
+  "calls": 176,
+  "input_tokens": 624327,
+  "output_tokens": 78182,
+  "usd": 0.10145
  }
 }

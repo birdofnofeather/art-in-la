@@ -976,8 +976,8 @@
   "items": []
  },
  "v2|fountain_theatre|events|https://www.fountaintheatre.com/": {
-  "at": "2026-11-07T13:49:11+00:00",
-  "hash": "de4d3f6c9d7aaa297274",
+  "at": "2026-11-08T14:10:23+00:00",
+  "hash": "3f5c845ef812fa9009b1",
   "items": []
  },
  "v2|fowler|exhibitions|https://fowler.ucla.edu/exhibitions/": {
@@ -1235,8 +1235,8 @@
   ]
  },
  "v2|japan_house|events|https://www.japanhousela.com/happenings/events/": {
-  "at": "2026-11-05T03:44:42+00:00",
-  "hash": "e0c6d18d6505f086b902",
+  "at": "2026-11-08T14:09:58+00:00",
+  "hash": "f9d8429e9d0c93e5b117",
   "items": [
    {
     "description": null,
@@ -1266,7 +1266,7 @@
     "image": "https://www.japanhousela.com/wp-content/uploads/2025/02/Mindfulness-Lounge-1280-655x328.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-08",
     "start_time": null,
     "title": "Mindfulness Lounge",
     "url": null
@@ -1435,8 +1435,8 @@
   ]
  },
  "v2|lacp|events|https://lacphoto.org/events/": {
-  "at": "2026-11-07T13:48:39+00:00",
-  "hash": "fbc412fae14afb38f2df",
+  "at": "2026-11-08T14:09:46+00:00",
+  "hash": "299ecf8b1ce4118513f7",
   "items": []
  },
  "v2|lbma|exhibitions|https://lbma.org/exhibitions/|rendered": {
@@ -2166,44 +2166,22 @@
   ]
  },
  "v2|velaslavasay|events|https://www.panoramaonview.org/upcoming-events": {
-  "at": "2026-11-05T03:44:36+00:00",
-  "hash": "1ed87baf7581e78d528f",
+  "at": "2026-11-08T14:09:55+00:00",
+  "hash": "42ef55ea6b4b384a05b5",
   "items": [
    {
-    "description": "Sara Velas presents an illustrated lecture on the panoramic form through utopian thought, visionary living and frontier explorations, at the Philosophical Research Society in Los Feliz.",
-    "end_date": null,
-    "image": "https://panoramaonview.org/sites/default/files/PanoramicVistas-PRS-500.png",
-    "kind": "event",
-    "price_text": "$14",
-    "start_date": "2026-11-05",
-    "start_time": "19:00",
-    "title": "Panoramic Vistas, Visionary Dreams",
-    "url": "https://www.panoramaonview.org/events/panoramic-vistas-visionary-dreams"
-   },
-   {
-    "description": "Photographs and personal reflections from nine women in South LA, presented at Mercado La Paloma on November 6.",
-    "end_date": null,
-    "image": null,
-    "kind": "event",
-    "price_text": "Free",
-    "start_date": "2026-11-06",
-    "start_time": "16:00",
-    "title": "BELLA Fellows PhotoVoice Exhibition",
-    "url": "https://www.panoramaonview.org/events/bella-fellows-photovoice-exhibition-mercado-la-paloma"
-   },
-   {
-    "description": "An experimental slideshow by Sara Velas and Ruby Carlson with introduction by Norman Klein and Margo Bistis, opening the Florence in Ruin installation.",
+    "description": "Archivists Sara Velas and Ruby Carlson present a 20 min. experimental slideshow for the opening of the installation Florence in Ruin: An Excavation by Sara Velas.",
     "end_date": null,
     "image": "https://panoramaonview.org/sites/default/files/Slide-Florence-Poster-500px.jpg",
     "kind": "event",
     "price_text": "$18",
     "start_date": "2026-11-12",
-    "start_time": "19:30",
+    "start_time": "20:00",
     "title": "Florence in Ruin—or—The Great Escape",
     "url": "https://www.panoramaonview.org/events/florence-ruin-or-great-escape"
    },
    {
-    "description": "An installation displaying a psychic fixation on the Alameda Corridor and the Port of Long Beach as a terminal for corruption, paranoia, petroleum industries, and the transmission of art history.",
+    "description": "An installation that organizes and displays a psychic fixation on the Alameda Corridor and the Port of Long Beach as a terminal for corruption, paranoia, petroleum industries, and the transmission of art history.",
     "end_date": "2026-12-19",
     "image": "https://panoramaonview.org/sites/default/files/FIR-ExcavationTitle-HyperSoCal-500.jpg",
     "kind": "exhibition",

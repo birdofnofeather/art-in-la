@@ -20502,6 +20502,29 @@
     "_default_type": "other"
   },
   {
+    "id": "torrance_art_museum-2026-09-19-bakers-dozen-2026-dd42d99844",
+    "venue_id": "torrance_art_museum",
+    "title": "Baker’s Dozen 2026",
+    "description": "A survey exhibition featuring thirteen artists whose work made a positive impression on the curators over the past year.",
+    "event_type": "exhibition",
+    "start": "2026-09-19",
+    "end": "2026-11-07",
+    "all_day": true,
+    "url": "https://www.torranceartmuseum.com/bakers-dozen",
+    "image": "https://images.squarespace-cdn.com/content/v1/538a508ee4b00fa9a361f222/1771969549349-F9WDO9MO6H51LGE00FSG/Baker%27s+Dozen+2025+Postcard+Side+A.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "torranceartmuseum.com+llm",
+    "scraped_at": "2026-11-06T14:56:18+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "armory_pasadena-2026-09-19-curator-walkthrough-all-the-ways-to-hold-337f608e6e",
     "venue_id": "armory_pasadena",
     "title": "Curator Walkthrough: all the ways to hold tender this land",
@@ -22846,6 +22869,31 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "la_opera-2026-09-26-saturday-mornings-at-the-opera-open-door-fced6bf599",
+    "venue_id": "la_opera",
+    "title": "Saturday Mornings at the Opera: Open Door Days",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-09-26",
+    "end": "2026-11-07",
+    "all_day": true,
+    "url": "https://www.laopera.org/performances/2026-27/open-door-days-saturday-mornings-at-the-opera",
+    "image": "https://laopera.imgix.net//laopera/community%20and%20learning/smo-kids-opera-helmets.jpg?format=auto&fit=crop&w=500&h=380&auto=format",
+    "artists": [],
+    "location_override": null,
+    "source": "laopera.org",
+    "scraped_at": "2026-11-06T14:56:55+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "recurrence_note": "Runs Sep 26 – Nov 7"
   },
   {
     "id": "academy_museum-2026-09-26-calm-morning-frightfully-fun-movie-poste-53672dc289",
@@ -28401,6 +28449,31 @@
     "_default_type": "other"
   },
   {
+    "id": "la_opera-2026-10-17-carmen-3a94776c18",
+    "venue_id": "la_opera",
+    "title": "Carmen",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-10-17",
+    "end": "2026-11-07",
+    "all_day": true,
+    "url": "https://www.laopera.org/performances/2026-27/carmen",
+    "image": "https://laopera.imgix.net//laopera/26-27_card-detail-thumbnails/26-27-card-detail_carmen.jpg?format=auto&fit=crop&w=372&h=380&auto=format",
+    "artists": [],
+    "location_override": null,
+    "source": "laopera.org",
+    "scraped_at": "2026-11-06T14:56:55+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "recurrence_note": "Runs Oct 17 – Nov 7"
+  },
+  {
     "id": "self_help_graphics-2026-10-17-da-de-los-muertos-community-art-workshop-6395479dc3",
     "venue_id": "self_help_graphics",
     "title": "Día de los Muertos Community Art Workshop #3: Day of the Dead Recuerdo Posters",
@@ -33769,6 +33842,30 @@
     "_default_type": "other"
   },
   {
+    "id": "redcat-2026-11-05-multiple-now-2026-alfonso-abraham-cerver-4bdea4ed27",
+    "venue_id": "redcat",
+    "title": "Multiple — NOW 2026 — Alfonso Abraham Cervera and…",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-11-05",
+    "end": "2026-11-07",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/now-2026-week-one",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-10/now%20w1%20for%20web.JPG?h=ed80be45&itok=x9Zk8p31",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-11-06T14:55:54+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "huntington-2026-11-05-why-it-matters-hctor-tobar-in-conversati-d7dac292a3",
     "venue_id": "huntington",
     "title": "Why It Matters: Héctor Tobar in Conversation with Karen R. Lawrence",
@@ -34121,6 +34218,32 @@
     "_default_type": "other"
   },
   {
+    "id": "highways-2026-11-06-madeline-elaine-lizzie-esses-algae-c7a8f93390",
+    "venue_id": "highways",
+    "title": "Madeline Elaine / Lizzie Esses - ALGAE",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-06",
+    "end": "2026-11-07",
+    "all_day": true,
+    "url": "https://www.highwaysperformance.org/events/madeline-elaine-lizzie-esses-algae-2026-11-06-20-00",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "highwaysperformance.org",
+    "scraped_at": "2026-11-05T15:16:33+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "recurrence_note": "2 performances · Nov 6 – Nov 7"
+  },
+  {
     "id": "fowler-2026-11-06-paths-of-memory-paths-of-healing-shipibo-976283a09c",
     "venue_id": "fowler",
     "title": "Paths of Memory, Paths of Healing: Shipibo-Konibo Kene Art",
@@ -34351,5 +34474,551 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-07-abolish-ice-roots-and-resistance-309123cb74",
+    "venue_id": "beyond_baroque",
+    "title": "ABOLISH ICE! Roots and Resistance",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/abolish-ice-roots-and-resistance",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/b59f9032-5bbd-47fe-a8b4-d6d25d6d85a3/ablshicenov7exhibit+%283%29.png",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-06T14:56:31+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "japan_house-2026-11-07-curators-talk-behind-the-japan-craft-exh-331d1e9af4",
+    "venue_id": "japan_house",
+    "title": "Curator’s Talk | Behind the “JAPAN CRAFT” Exhibition",
+    "description": "",
+    "event_type": "lecture",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.japanhousela.com/events/",
+    "image": "https://www.japanhousela.com/wp-content/uploads/2026/09/JAPAN-CRAFT-Curator-Talk-Main-1280x400.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "japanhousela.com+llm",
+    "scraped_at": "2026-11-06T14:57:08+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-11-07-educator-workshop-the-art-of-breaking-th-73c6dce276",
+    "venue_id": "huntington",
+    "title": "Educator Workshop: The Art of Breaking the Mold",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/educator-workshop-art-breaking-mold",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2F2026-06%2FCropped_HU130RFW--1703695491.jpg%3Fh%3Da05dec19%26itok%3D6MLAWfMe&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-06T14:56:02+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-11-07-flower-arranging-american-art-nest-flora-6f2ec37470",
+    "venue_id": "huntington",
+    "title": "Flower Arranging: American Art Nest Florals",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/flower-arranging-american-art-nest-florals",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2Frail%2FHU13ZXS0.jpg%3Fh%3Dbcc5e01b%26itok%3Dt_D5Q761&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-06T14:56:02+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-07-la-book-launches-sheilanagig-press-6126ceb303",
+    "venue_id": "beyond_baroque",
+    "title": "L.A. Book Launches: Sheila-Na-Gig Press",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/la-book-launches-sheila-na-gig-press",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1792191976583-IVSAIGPEA5FK91TY4L2H/Nov7-2pmIG.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-06T14:56:31+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "self_help_graphics-2026-11-07-self-help-graphics-arts-53rd-annual-da-d-929dcf84f7",
+    "venue_id": "self_help_graphics",
+    "title": "Self Help Graphics & Art’s 53rd Annual Día de los Muertos Celebration",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.selfhelpgraphics.com/upcoming-events/110726-dod",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "https://www.selfhelpgraphics.com/events-calendar",
+    "scraped_at": "2026-11-06T14:55:53+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-11-07-takes-care-of-them-7dce3cbf23",
+    "venue_id": "autry",
+    "title": "Takes Care of Them",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://theautry.org/exhibitions/takes-care-them",
+    "image": "https://theautry.org/sites/default/files/styles/golden_small/public/2025-04/Untitled%20design%20%2810%29.png?h=afebe79b&itok=r3-YcrzQ",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org+llm",
+    "scraped_at": "2026-11-06T14:56:12+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
+    "id": "beyond_baroque-2026-11-07-the-poets-memoir-a-generative-workshop-w-1aa68d89c5",
+    "venue_id": "beyond_baroque",
+    "title": "The Poet’s Memoir: A Generative Workshop with Truong Tran",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-11-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/the-poets-memoirwith",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1789173390997-E2NO9RIPYXB4LFGUO1BY/Instagram+Graphic+New+Size+%232+%281%29.png",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-06T14:56:31+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "side_street-2026-11-07-postponed-free-skillshares-how-to-make-a-ef6a0d5557",
+    "venue_id": "side_street",
+    "title": "(POSTPONED) Free Skillshares - How To Make a Great (Art) Crate",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.sidestreet.org/event-calendar/artcrate",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "sidestreet.org",
+    "scraped_at": "2026-11-07T13:48:39+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "workshop"
+  },
+  {
+    "id": "side_street-2026-11-07-free-oneoff-youth-woodworking-9b83c8c447",
+    "venue_id": "side_street",
+    "title": "FREE One-Off Youth Woodworking",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.sidestreet.org/event-calendar/ww-youth-bk4wl-y2ket-5bhds-yjb2k-jf3t3-686x5-fwysr-wxmhx",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "sidestreet.org",
+    "scraped_at": "2026-11-07T13:48:39+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "workshop"
+  },
+  {
+    "id": "the_broad-2026-11-07-la-ndn-flea-a-native-market-bf007aacf3",
+    "venue_id": "the_broad",
+    "title": "LA NDN Flea – A Native Market",
+    "description": "Your favorite Indigenous makers’ market is back at The Broad, in collaboration with The Chapter House. Get a head start on holiday shopping at LA NDN Flea – A Native Market and celebrate National Native American History Month. Modeled after flea markets that can be found on many reservations, this market which takes place in spring and fall each year features unique, handcrafted goods by local and visiting Indigenous makers, from recycled clothing and handcrafted jewelry to original art and much more. Enjoy a hands-on Family Weekend Workshop inspired by Broad collection artist Jeffrey Gibson (Mississippi Band of Choctaw Indians and Cherokee) and take home a free, limited-run poster featuring his work. Connect with local Indigenous groups, dance to curated DJ sets, and enjoy",
+    "event_type": "workshop",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": "2026-11-07T17:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.thebroad.org/events/la-ndn-flea-native-market",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-11-07T13:47:34+00:00",
+    "event_types": [
+      "workshop",
+      "performance",
+      "fair"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-11-07-sacred-path-x-the-autry-pow-wow-2026-46b6d5cb4e",
+    "venue_id": "autry",
+    "title": "Sacred Path x The Autry Pow Wow 2026",
+    "description": "Family Activities, Member Events, Live Performances, Autry Outdoors, Community Partner Events",
+    "event_type": "performance",
+    "start": "2026-11-07T10:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://theautry.org/events/family-activities/sacred-path-x-autry-pow-wow-2026",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-08/MTK06855.JPG?h=d4e133c9&itok=0dmWpkp2",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-11-07T13:47:53+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-07-communities-create-la-da-de-los-muertos-fbdc0e9eb8",
+    "venue_id": "lacma",
+    "title": "Communities Create LA! Día de los Muertos Calavera",
+    "description": "Sculpt a clay calavera (skull) like the one in Manuel Álvarez Bravo’sDía de Todos Muertosin honor of ancestral traditions. Create a multi-media artwork using clay, tissue paper, and colorful embellishments in remembrance of a loved one...",
+    "event_type": "workshop",
+    "start": "2026-11-07T10:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/communities-create-la-magical-mini-treasure-chest-0",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-08/WSP_475469_jpg.JPG?VersionId=eJWFgqHS3vP5XfrQ2LDlu4thqRzSdLth&itok=WrSMXF6O",
+    "artists": [],
+    "location_override": "Earvin “Magic” Johnson Park",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-07T13:47:34+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
+    "id": "wende-2026-11-07-tales-in-two-tongues-bilingual-russianen-3937a6802a",
+    "venue_id": "wende",
+    "title": "Tales in Two Tongues: Bilingual Russian-English Storytime",
+    "description": "Join us at the Wende Museum for a special bilingual children’s storytime, featuring captivating Russian tales from the Wende’s collection of Soviet Books. Hosted by Archives Assistant Anya Ponomareva, stories will be presented in both English and Russian, offering a fun and engaging experience for young listeners of all backgrounds. Perfect for children aged 4-8 and their families, this event celebrates culture and language through the joy of storytelling!",
+    "event_type": "other",
+    "start": "2026-11-07T10:30:00-08:00",
+    "end": "2026-11-07T11:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/storytime/2026-11-07/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/12/krylov-covers_16x9.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-07T13:47:40+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-07-the-haunted-mansion-05d0a5d5e2",
+    "venue_id": "academy_museum",
+    "title": "The Haunted Mansion",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-07T11:00:00-08:00",
+    "end": "2026-11-07T12:15:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-haunted-mansion-019fce9c-5db0-34c6-1956-cdcf167842e5",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6dwuRkUKXpuWOLn4IX5mcz/421f74e4c2cb96b6d9f462f3efb795d5/Nov7_HAUNTED_MANSION_FamilyMatinees3.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-07T13:47:49+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "wende-2026-11-07-exhibition-opening-competing-cosmologies-2080451c99",
+    "venue_id": "wende",
+    "title": "Exhibition Opening: Competing Cosmologies: Interpreting the Sky",
+    "description": "Join the Wende Museum for the opening of Competing Cosmologies: Interpreting the Sky on Saturday, November 7. 12 p.m.: Curator-led tour 2 p.m.: Opening speeches 3 p.m.: Opening reception Co-curated by the Wende Museum’s chief curator Joes Segal, associate curator Emma Diffley, and NASA historian Lois Rosson, Competing Cosmologies explores how new discoveries in space exploration during and after the Cold War have inspired visual artists around the world. Its four sections, Astronomy, the Space Race, Futurisms, and Aliens, bring together artists from the East, the West, and the Global South and trace how they responded to advances in space science and technology and connected these discoveries to their own cultural contexts. The exhibition combines historical artifacts, including a full-sca",
+    "event_type": "opening",
+    "start": "2026-11-07T12:00:00-08:00",
+    "end": "2026-11-07T17:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/exhibition-opening-competing-cosmologies-interpreting-the-sky/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/10/Paul-Laffoley-Thanaton-III_16x9.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-07T13:47:40+00:00",
+    "event_types": [
+      "opening",
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-07-dropin-workshop-for-families-da-de-muert-21bb672c2b",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Families: Día de Muertos with Lil’ Libros",
+    "description": "",
+    "event_type": "workshop",
+    "start": "2026-11-07T12:30:00-08:00",
+    "end": "2026-11-07T14:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-families-dia-de-muertos-with-lil-libros-019ff30e-9869-3535-8289-ab4f6c8def82",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2DQnte7dmmfUWhwpBOxixm/801dff41a776ce4080789c2ee3f03656/Catrinas.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-07T13:47:49+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-11-07-after-the-vote-what-the-2026-midterms-te-2a46529816",
+    "venue_id": "hammer",
+    "title": "After the Vote: What the 2026 Midterms Tell Us",
+    "description": "Join the Hammer for a free panel discussion with political scientists and election law experts exploring what the 2026 midterms mean for the country and for California.",
+    "event_type": "lecture",
+    "start": "2026-11-07T14:00:34-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/after-vote-what-2026-midterms-tell-us",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-10/Forum_After%20the%20Vote_web.jpg?h=44b879e5&itok=AJy0M0Nv",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-07T13:47:34+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-11-07-when-the-holy-family-went-viral-41f84ce1f8",
+    "venue_id": "getty_center",
+    "title": "When the Holy Family Went Viral",
+    "description": "Talk",
+    "event_type": "lecture",
+    "start": "2026-11-07T16:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/holy-family-viral",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center & Online",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-07T13:47:33+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "norton_simon-2026-11-07-living-traditions-of-sri-lankan-dance-3c90b443a7",
+    "venue_id": "norton_simon",
+    "title": "Living Traditions of Sri Lankan Dance",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-07T17:00:00-08:00",
+    "end": "2026-11-07T18:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.nortonsimon.org/calendar/2026/fall-2026/Living-Traditions-of-Sri-Lankan-Dance-11-7-2026-500PM#2026-11-07",
+    "image": "https://www.nortonsimon.org/assets/events-images/dance_SandaWaruna_600x600__ScaleWidthWzMwMF0.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "nortonsimon.org",
+    "scraped_at": "2026-11-07T13:48:05+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-08-rome-open-city-roma-citt-aperta-in-35mm-d869213fcf",
+    "venue_id": "academy_museum",
+    "title": "Rome, Open City (Roma città aperta) in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-07T19:30:00-08:00",
+    "end": "2026-11-07T22:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/rome-open-city-019fce9e-c52e-1ee3-a07b-2484acf4e5f2",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/69fZcCU7K1CPujWMPeXc0a/bf71fa1eff091626be213a1f155eddde/Nov4_ROME_OPEN_CITY_Rossellini5MHL.png",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-07T13:47:49+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-11-07-food-and-film-babettes-feast-ee364d432e",
+    "venue_id": "hammer",
+    "title": "Food and Film: Babette’s Feast",
+    "description": "We’re pleased to present this Academy Award-winning classic of the culinary screen to mark the fifth anniversary of Lulu at the Hammer Museum.",
+    "event_type": "screening",
+    "start": "2026-11-07T19:30:34-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/food-and-film-babettes-feast",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-10/Babette%27s-Feast-2.jpg?h=2f0f01e1&itok=iKsOJbfr",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-07T13:47:34+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "cerritos_center-2026-11-07-revisiting-creedence-the-legacy-continue-4a0a9189f9",
+    "venue_id": "cerritos_center",
+    "title": "Revisiting Creedence: The Legacy Continues",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-07T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.ticketmaster.com/revisiting-creedence-cerritos-california-11-07-2026/event/0B0064979EF65042",
+    "image": "https://www.cerritoscenter.com/media/gq1nvox0/e-4.png?width=400&height=400&v=1dd4a2ce5754ff0&format=webp",
+    "artists": [],
+    "location_override": null,
+    "source": "cerritoscenter.com",
+    "scraped_at": "2026-11-07T13:48:49+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
   }
 ]
