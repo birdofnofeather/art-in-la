@@ -299,53 +299,9 @@
   ]
  },
  "v2|beyond_baroque|events|https://www.beyondbaroque.org/": {
-  "at": "2026-11-06T14:56:24+00:00",
-  "hash": "78767fd96a03536c962a",
+  "at": "2026-11-09T17:17:08+00:00",
+  "hash": "614339560700cd808e0f",
   "items": [
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1791329271042-6QD2P2QJ7KL3074295TA/IGnov6.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-06",
-    "start_time": null,
-    "title": "How To Exi(s)t: Truong Tran & Mimi Tempestt",
-    "url": "https://www.beyondbaroque.org/calendar/how-to-exist-truong-tran-mimi-tempestt"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1789173390997-E2NO9RIPYXB4LFGUO1BY/Instagram+Graphic+New+Size+%232+%281%29.png",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": null,
-    "title": "The Poet’s Memoir: A Generative Workshop with Truong Tran",
-    "url": "https://www.beyondbaroque.org/calendar/the-poets-memoirwith"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1792191976583-IVSAIGPEA5FK91TY4L2H/Nov7-2pmIG.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": null,
-    "title": "L.A. Book Launches: Sheila-Na-Gig Press",
-    "url": "https://www.beyondbaroque.org/calendar/la-book-launches-sheila-na-gig-press"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/b59f9032-5bbd-47fe-a8b4-d6d25d6d85a3/ablshicenov7exhibit+%283%29.png",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": null,
-    "title": "ABOLISH ICE! Roots and Resistance",
-    "url": "https://www.beyondbaroque.org/calendar/abolish-ice-roots-and-resistance"
-   },
    {
     "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
     "end_date": null,
@@ -358,11 +314,11 @@
     "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n"
    },
    {
-    "description": "The West Coast’s longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
+    "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
     "end_date": null,
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1785369848490-QVZMWQH30W2370CU9IJ0/IG_rooja.jpg",
     "kind": "event",
-    "price_text": null,
+    "price_text": "Free",
     "start_date": "2026-11-11",
     "start_time": null,
     "title": "Wednesday Night Poetry Workshop with Rooja Mohassessy",
@@ -402,6 +358,50 @@
     "url": "https://www.beyondbaroque.org/calendar/earth-magic-home"
    },
    {
+    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-16",
+    "start_time": null,
+    "title": "Monday Night Fiction Workshop with Raquel Baker",
+    "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n-9n336"
+   },
+   {
+    "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1785369848490-QVZMWQH30W2370CU9IJ0/IG_rooja.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-11-18",
+    "start_time": null,
+    "title": "Wednesday Night Poetry Workshop with Rooja Mohassessy",
+    "url": "https://www.beyondbaroque.org/calendar/wednesday-night-poetry-workshop8-17-dd9xz-mztaz-ybd4y-gpmej-55jw5-6t324-4tafx-xkzd6-4jwfx-a3t9b-ag9hr-4pb2k-kmrpg"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793144005414-26G3N23NTFPKO63DV2PU/IGnov19.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-19",
+    "start_time": null,
+    "title": "The Cabinet of Dr. Caligari, Screening with Live Score + Readings",
+    "url": "https://www.beyondbaroque.org/calendar/cabinet-of-dr-caligari-screening-with-live-score"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793045116820-VFMMAOTZ854UJ6CE1GIL/Nov.20.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-20",
+    "start_time": null,
+    "title": "L.A. Book Launch: Daughter of Salt by Leila Farjami",
+    "url": "https://www.beyondbaroque.org/calendar/daughter-of-salt-by-leila-farjami"
+   },
+   {
     "description": "Mike Kelley Gallery exhibition on view November 7, 2026 - January 16, 2027.",
     "end_date": "2027-01-16",
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/43cde167-0180-414c-818a-c74302f0497f/EVgallery.jpg",
@@ -413,14 +413,14 @@
     "url": null
    },
    {
-    "description": "Micol Hebron exhibition at proxy gallery on view October 24 - Dec 5, 2026.",
+    "description": "proxy gallery exhibition on view October 24 - Dec 5, 2026.",
     "end_date": "2026-12-05",
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/43cde167-0180-414c-818a-c74302f0497f/EVgallery.jpg",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-10-24",
     "start_time": null,
-    "title": "Am I the Asshole?",
+    "title": "Micol Hebron",
     "url": null
    }
   ]
@@ -938,6 +938,23 @@
   "hash": "ca4179c0b1689deb6d58",
   "items": []
  },
+ "v2|craft_in_america|events|https://www.craftinamerica.org/": {
+  "at": "2026-11-09T17:18:17+00:00",
+  "hash": "58b64de4e1d4e8ae3c2e",
+  "items": [
+   {
+    "description": "Now on view.",
+    "end_date": null,
+    "image": null,
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-09",
+    "start_time": null,
+    "title": "Laura Andreson and Her Legacy",
+    "url": "https://www.craftinamerica.org/exhibition/laura-andreson-and-her-legacy"
+   }
+  ]
+ },
  "v2|crenshaw_dairy_mart|events|https://www.crenshawdairymart.com/exhibitions": {
   "at": "2026-11-05T03:45:06+00:00",
   "hash": "1fc6bccbab04a8375eb1",
@@ -1308,11 +1325,11 @@
   ]
  },
  "v2|lacma|exhibitions|https://www.lacma.org/art/exhibitions/current": {
-  "at": "2026-11-07T13:47:37+00:00",
-  "hash": "8470fbba27dcd0a87985",
+  "at": "2026-11-09T17:16:37+00:00",
+  "hash": "df532a5409df5d5367d6",
   "items": [
    {
-    "description": "The first large-scale exhibition dedicated to the impact of the Brockman Gallery, founded in South L.A. by brothers Alonzo and Dale Brockman Davis in the wake of the Watts Rebellion.",
+    "description": "The first large-scale exhibition dedicated to the impact of the Brockman Gallery, founded in South L.A. by brothers Alonzo and Dale Brockman Davis.",
     "end_date": "2027-01-24",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/Brockman-Image.jpg.webp?h=daec638f&itok=alFaoQIB",
     "kind": "exhibition",
@@ -1323,7 +1340,7 @@
     "url": null
    },
    {
-    "description": "Between 1925 and 1985, Americans were offered an astonishing array of domestic utopias, shown through architectural models, drawings, photographs, films, and objects.",
+    "description": "Between 1925 and 1985, Americans were offered an array of domestic utopias, shown through models, drawings, photographs, films, and objects.",
     "end_date": "2027-03-14",
     "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-09/EX8979_121_RGB_0__jpg/3717.webp?VersionId=PwazLZtSyJdVYuMDLJz3L3OE4nUvY.eI&itok=gqhyp_Ms&h=18835d19",
     "kind": "exhibition",
@@ -1334,7 +1351,7 @@
     "url": null
    },
    {
-    "description": "Brings two influential kitchens from LACMA's collection into conversation: Margarete Schütte-Lihotzky's 1926–30 kitchen for the New Frankfurt social housing program and Charlotte Perriand's kitchen.",
+    "description": "Brings two influential kitchens from LACMA's collection into conversation: Margarete Schütte-Lihotzky's New Frankfurt kitchen and Charlotte Perriand's kitchen.",
     "end_date": "2027-03-14",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-06/AC1992_197_113-HWphoto.jpg.webp?h=aaa09563&itok=OsPLVpjK",
     "kind": "exhibition",
@@ -1345,9 +1362,9 @@
     "url": null
    },
    {
-    "description": "Provides an in-depth survey of Japanese designer Reiko Sudō's textile work created with her collective NUNO.",
+    "description": "An in-depth survey of Japanese designer Reiko Sudō's work created with her textile collective NUNO.",
     "end_date": "2027-03-07",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/EX9537_17.jpg.webp?VersionId=LaBksI5foTeG.R52uRH7BycZfbBNhlHt&h=4eafd198&itok=5KipEjFX",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/M2020_288_8-DL001_3_2.jpg.webp?VersionId=cmAAi3nQI9M7PxlI_m1AlzEn3U4.K6KW&h=fce98eae&itok=WyKsop0O",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-09-20",
@@ -1356,9 +1373,9 @@
     "url": null
    },
    {
-    "description": "Presents the photography and video of Los Angeles–based artist Eileen Cowin, who has explored romance, rivalry, and daily life for more than 50 years.",
+    "description": "Presents the photography and video of Los Angeles–based artist Eileen Cowin, who has worked for more than 50 years.",
     "end_date": "2027-01-03",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-06/M88_91_20a%20%281%29%20%281%29__jpg/3718.webp?VersionId=ek4ktByxmBqw.yb0Z6Ma5NTBJ03Fkjl5&itok=218UWSBG&h=3264ebaa",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/EX9537_17.jpg.webp?VersionId=LaBksI5foTeG.R52uRH7BycZfbBNhlHt&h=4eafd198&itok=5KipEjFX",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-08-23",
@@ -1367,9 +1384,9 @@
     "url": null
    },
    {
-    "description": "Explores the danse macabre (dance of death) allegory of life's impermanence in prints from the 14th century onward.",
+    "description": "Explores the danse macabre (dance of death) allegory as depicted in prints from the 14th century onward.",
     "end_date": "2026-12-06",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-06/M2005_70_101__jpg/3719.webp?VersionId=OP.7xYeMgOE.ycWlFebMPtpFiUfB3kB1&itok=vhX0PDQa&h=e47d152a",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/media_4_3/public/2026-06/M88_91_20a%20%281%29%20%281%29__jpg/3749.webp?VersionId=fPmnUNi8237qBT9IBJvZhY4XzL5t_YMd&itok=oRf1GqMp&h=2c7b2181",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-06-12",
@@ -1378,9 +1395,9 @@
     "url": null
    },
    {
-    "description": "Draws from Picasso's personal life to depict lovers, friends, rivals, and himself across his career in portraiture.",
+    "description": "Surveys the portraiture of Pablo Picasso, who depicted lovers, friends, rivals, and himself throughout his career.",
     "end_date": "2026-12-06",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-06/EX9627-VW018_0__jpg/3720.webp?VersionId=M2xgC8liPacqtJOuwNqprv3_5YMXhtn9&itok=wcHtwp9v&h=79b5ae1d",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/media_4_3/public/2026-06/M2005_70_101.jpg.webp?VersionId=0jsD9PA5n2bWz3_GJb5I.5vjX1zyGPA8&itok=3cTqMpEo",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-06-12",
@@ -1389,20 +1406,9 @@
     "url": null
    },
    {
-    "description": "The inaugural exhibition in a series devoted to contemporary artists in the W.M. Keck Foundation Gallery, featuring Christina Quarles's large-scale canvases.",
-    "end_date": "2026-11-08",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3721.webp?VersionId=dWb4MTUPJhH098OIanKk_Wy4Z0GITufY&itok=N-N3AuRm&h=0f8e3b93",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-03",
-    "start_time": null,
-    "title": "Christina Quarles: Now We’re There (And We’ Only Just Begun)",
-    "url": null
-   },
-   {
-    "description": "Features 12 benches designed by Gonzalez installed along LACMA's Kendall Concourse, drawing on rotulismo mexicano hand-painted signage.",
+    "description": "Features 12 benches designed by the artist installed along LACMA's Kendall Concourse, drawing on Mexican hand-painted signage.",
     "end_date": "2026-12-01",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3748.webp?VersionId=TiFQbpJHW6Lxs5P6NcFpzFOJQb.5g2TT&itok=lfDm_yQz&h=397fea20",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/media_4_3/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3748.webp?VersionId=TiFQbpJHW6Lxs5P6NcFpzFOJQb.5g2TT&itok=lfDm_yQz&h=397fea20",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-02-22",
@@ -1411,7 +1417,7 @@
     "url": null
    },
    {
-    "description": "Examines visual culture in France in the final quarter of the 19th century, expanding beyond painting to printmaking, photography, decorative arts, and fashion.",
+    "description": "Examines visual culture in France in the final quarter of the 19th century beyond painting, sculpture, and drawing.",
     "end_date": "2027-01-03",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2025-05/M2024_83-AV001-20240314-Access_CROP.png.webp?h=e4b038af&itok=3IFH1wnu",
     "kind": "exhibition",
@@ -1422,7 +1428,7 @@
     "url": null
    },
    {
-    "description": "A year-long artwork designed for mobile browsers, in which Irish artist john gerrard transforms 96 collected plastic sandals and shoes into sculptural forms.",
+    "description": "A year-long artwork designed to be experienced on a mobile browser, transforming 96 collected plastic sandals and shoes into sculptural forms.",
     "end_date": "2026-12-20",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-09/john_gerrard_spirit_75.jpg.webp?VersionId=a0hvyNtuGjJgGJFqbeCC52ojLygaLiUN&h=b2e63824&itok=SZxLIOUB",
     "kind": "exhibition",
