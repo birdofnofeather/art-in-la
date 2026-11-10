@@ -14,6 +14,64 @@ Run it yourself with `python -m scrapers.evals`.
 
 ---
 
+## 2026-11-10 — WARN
+
+24 passed, 0 failed, 2 need watching, 0 could not run.
+
+### Nothing is broken
+
+Every check that can fail, passed.
+
+### Worth watching
+
+- **A3** Do the links we publish still work? — 4 of 25 sampled links could not be opened. Some venues block automated requests while working fine in a browser, so a handful is expected; a lot means we are sending people to pages that no longer exist.
+    - [cerritos_center] https://www.ticketmaster.com/straight-no-chaser-cerritos-california-11-13-2026/event/0B0064AB9F7237A2
+    - [getty_center] https://www.getty.edu/calendar/exhibition-tour-instante-revelacion-espanol
+    - [norton_simon] https://www.nortonsimon.org/calendar/2026/fall-2026/zurbaran-nov-12-2026#2026-11-12
+- **D2** Is the status report quiet enough to be worth reading? — 2 red and 62 yellow out of 112 venues (57% flagged). If almost everything is flagged every day, the report stops being information and becomes noise you learn to skip — which is how the real failures get missed.
+
+### Checked against the outside world
+
+3 of these checks compared us against the venues' own websites rather than against our own code. 1 of them found a problem — those are listed above.
+
+### Every check
+
+| | Check | Result |
+|---|---|---|
+| `A1` 🌐 | Do the events we publish actually appear on the venue's own page? | **PASS** |
+| `A2` 🌐 | Does each event's date actually appear on the venue's page? | **PASS** |
+| `A3` 🌐 | Do the links we publish still work? | **WARN** |
+| `B1`  | Has any of our record of past events been lost? | **PASS** |
+| `B2`  | Did events that had not happened yet disappear from the site? | **PASS** |
+| `B3`  | Has the overall number of events moved sharply? | **PASS** |
+| `B4`  | Has any individual venue lost most of its events? | **PASS** |
+| `C1`  | Does the safety gate still refuse to publish obviously broken data? | **PASS** |
+| `C2`  | Do the text-quality rules still catch unreadable text? | **PASS** |
+| `C3`  | Are the curation decisions you made on purpose still holding? | **PASS** |
+| `D1`  | Is the status report calling anything healthy that clearly is not? | **PASS** |
+| `D2`  | Is the status report quiet enough to be worth reading? | **WARN** |
+| `D3`  | Are the written expectations still sensible? | **PASS** |
+| `E1`  | Is any published text still garbled? | **PASS** |
+| `E2`  | Does the same event appear more than once? | **PASS** |
+| `E3`  | Does every event belong to a venue we actually know about? | **PASS** |
+| `E4`  | Are we still advertising events that already happened? | **PASS** |
+| `E5`  | Does every event have a date? | **PASS** |
+| `E6`  | How many events could we not put into any category? | **PASS** |
+| `E7`  | Are any weekly or monthly programmes still leaking onto the site? | **PASS** |
+| `F1`  | Is the daily scrape still running? | **PASS** |
+| `F2`  | Did the last run manage to publish? | **PASS** |
+| `F3`  | Can the published list be reproduced exactly from the stored harvest? | **PASS** |
+| `F4`  | Does the test suite still pass? | **PASS** |
+| `F5`  | Do the curation rules still agree with their own examples? | **PASS** |
+| `G1`  | Can these checks still detect a problem when there is one? | **PASS** |
+
+---
+### Notes from this run
+
+Automatic run from GitHub Actions.
+
+---
+
 ## 2026-11-07 — WARN
 
 23 passed, 0 failed, 3 need watching, 0 could not run.
