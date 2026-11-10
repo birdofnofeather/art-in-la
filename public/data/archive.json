@@ -21772,30 +21772,6 @@
     "_default_type": "other"
   },
   {
-    "id": "lacma-2026-09-21-personal-connections-virtual-16d551f72c",
-    "venue_id": "lacma",
-    "title": "Personal Connections (Virtual)",
-    "description": "...",
-    "event_type": "lecture",
-    "start": "2026-09-21T11:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.lacma.org/event/personal-connections-july-20-1",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2020-08/40_7%20-%20Karen%20Satzman.jpg?itok=FfEmeK2C",
-    "artists": [],
-    "location_override": "Online | Online",
-    "source": "lacma.org",
-    "scraped_at": "2026-09-21T13:45:36+00:00",
-    "event_types": [
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "lecture"
-  },
-  {
     "id": "academy_museum-2026-09-21-how-to-marry-a-millionaire-a175d22192",
     "venue_id": "academy_museum",
     "title": "How to Marry a Millionaire",
@@ -29505,30 +29481,6 @@
     "_default_type": "screening"
   },
   {
-    "id": "lacma-2026-10-19-personal-connections-virtual-54137e4a2a",
-    "venue_id": "lacma",
-    "title": "Personal Connections (Virtual)",
-    "description": "...",
-    "event_type": "lecture",
-    "start": "2026-10-19T11:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.lacma.org/event/personal-connections-july-20-2",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/events/2020-08/40_7%20-%20Karen%20Satzman.jpg?itok=FfEmeK2C",
-    "artists": [],
-    "location_override": "Online | Online",
-    "source": "lacma.org",
-    "scraped_at": "2026-10-19T14:27:10+00:00",
-    "event_types": [
-      "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other",
-    "_asserted_type": "lecture"
-  },
-  {
     "id": "las_fotos_project-2026-10-19-lfp-fundraiser-breathe-and-pause-f50dcb5e9b",
     "venue_id": "las_fotos_project",
     "title": "LFP Fundraiser: Breathe and Pause",
@@ -29550,6 +29502,30 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-10-19-open-containerexh-8709d53900",
+    "venue_id": "calarts",
+    "title": "Open Container",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-10-19T16:00:00-07:00",
+    "end": "2026-11-09T18:00:00-08:00",
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/open-container",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-09T17:17:04+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
   },
   {
     "id": "calarts-2026-10-19-experimental-animation-visiting-artists-6283536e55",
@@ -33749,29 +33725,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-11-04-huntington-u-laura-aguilars-lens-aa185357fa",
-    "venue_id": "huntington",
-    "title": "Huntington U: Laura Aguilar’s Lens",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-11-04",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/huntington-u-laura-aguilars-lens",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2F2026-03%2F43ctbiyq.png%3Fh%3Db832c0f5%26itok%3Dh0xZf4cN&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-29T13:59:42+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "beyond_baroque-2026-11-04-wednesday-night-poetry-workshop-with-roo-27f92c20d8",
     "venue_id": "beyond_baroque",
     "title": "Wednesday Night Poetry Workshop with Rooja Mohassessy",
@@ -35454,6 +35407,29 @@
     "_default_type": "other"
   },
   {
+    "id": "academy_museum-2026-11-08-chicago-in-35mm-b6415bb15d",
+    "venue_id": "academy_museum",
+    "title": "Chicago in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-08T14:00:00-08:00",
+    "end": "2026-11-09",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/chicago-019fcea0-a79c-07fd-95cf-01f9e0b0b58b",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/57dYl6eZ3zezuV19kkU8d7/63ac10e6ad45548da09750cd9748e8b2/Nov8_CHICAGO_OscarSundays1MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-08T14:09:03+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
     "id": "wende-2026-11-08-picture-book-workshops-with-stephanie-lu-98328489b3",
     "venue_id": "wende",
     "title": "Picture Book Workshops with Stephanie Lunkewitz",
@@ -35686,5 +35662,120 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-09-monday-night-fiction-workshop-with-raque-7b039eea20",
+    "venue_id": "beyond_baroque",
+    "title": "Monday Night Fiction Workshop with Raquel Baker",
+    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
+    "event_type": "workshop",
+    "start": "2026-11-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-08T14:09:16+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "museum_of_tolerance-2026-11-09-rosenthal-the-great-showman-8489415007",
+    "venue_id": "museum_of_tolerance",
+    "title": "ROSENTHAL: The Great Showman",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-09",
+    "end": "2026-11-09",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/rosenthal-the-great-showman",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-11-08T14:09:11+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-11-09-school-of-music-visiting-artist-hitomi-o-0a18216b39",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Hitomi Oba",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-09T13:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-hitomi-oba",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-09T17:17:04+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-11-09-experimental-animation-visiting-artists-ea820713ce",
+    "venue_id": "calarts",
+    "title": "Experimental Animation Visiting Artists (EAVA) Series - Lyndon J Barrois, Sr",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-09T16:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/experimental-animation-visiting-artists-eava-series-lyndon-j-barrois-sr",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-09T17:17:04+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-10-moss-a9f5f3d61f",
+    "venue_id": "academy_museum",
+    "title": "Moss (이끼)",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-09T19:30:00-08:00",
+    "end": "2026-11-09T21:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/moss-019fcea5-0914-56f5-74e2-969a3339a5ec",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/Td6TaFHCQ9NwK2Qsg9sR9/fe70a4da32266293108a21152d9afb06/moss_08.JPG",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-09T17:16:51+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]

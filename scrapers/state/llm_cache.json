@@ -1,10 +1,10 @@
 {
  "v2|a_noise_within|events|https://www.anoisewithin.org/calendar/": {
-  "at": "2026-11-07T13:49:15+00:00",
-  "hash": "fcb72bd8eae28adca075",
+  "at": "2026-11-10T15:30:16+00:00",
+  "hash": "2c13e51d4af4d0a1e46a",
   "items": [
    {
-    "description": "Sold out performance on November 1 at 2:00pm.",
+    "description": "Calendar listing for Come From Away performances, including a closing performance on Sun 08.",
     "end_date": "2026-11-08",
     "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
     "kind": "event",
@@ -15,122 +15,12 @@
     "url": "https://www.anoisewithin.org/play/come-from-away/"
    },
    {
-    "description": "Limited availability performance on November 1 at 7:00pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-01",
-    "start_time": "19:00",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Limited availability performance on November 5 at 7:30pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": "19:30",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Limited availability performance on November 6 at 7:30pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-06",
-    "start_time": "19:30",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Limited availability performance on November 7 at 2:00pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": "14:00",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Limited availability performance on November 7 at 7:30pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": "19:30",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Limited availability performance on November 8 at 2:00pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-08",
-    "start_time": "14:00",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Closing performance on November 8 at 7:00pm.",
-    "end_date": "2026-11-08",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/05/come_from_away.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-08",
-    "start_time": "19:00",
-    "title": "Come From Away",
-    "url": "https://www.anoisewithin.org/play/come-from-away/"
-   },
-   {
-    "description": "Preview performance on November 28 at 2:00pm.",
+    "description": "Preview performances of A Christmas Carol with opening night on Sat 28, with a relaxed performance on Sun 29.",
     "end_date": "2026-11-29",
     "image": "https://www.anoisewithin.org/wp-content/uploads/2026/10/ACC-Web-horiz-poster.jpg",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-28",
-    "start_time": "14:00",
-    "title": "A Christmas Carol",
-    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
-   },
-   {
-    "description": "Opening night performance on November 28 at 7:00pm.",
-    "end_date": "2026-11-29",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/10/ACC-Web-horiz-poster.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-28",
-    "start_time": "19:00",
-    "title": "A Christmas Carol",
-    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
-   },
-   {
-    "description": "Relaxed performance on November 29 at 11:00am.",
-    "end_date": "2026-11-29",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/10/ACC-Web-horiz-poster.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-29",
-    "start_time": "11:00",
-    "title": "A Christmas Carol",
-    "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
-   },
-   {
-    "description": "Performance on November 29 at 2:00pm.",
-    "end_date": "2026-11-29",
-    "image": "https://www.anoisewithin.org/wp-content/uploads/2026/10/ACC-Web-horiz-poster.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-29",
     "start_time": "14:00",
     "title": "A Christmas Carol",
     "url": "https://www.anoisewithin.org/play/a-christmas-carol-5/"
@@ -878,11 +768,11 @@
   ]
  },
  "v2|claremont_lewis|events|https://clmoa.org/events/|rendered": {
-  "at": "2026-11-06T14:57:15+00:00",
-  "hash": "7c64b5898014b56b6941",
+  "at": "2026-11-10T15:30:07+00:00",
+  "hash": "5be1ed70eb702f6474e0",
   "items": [
    {
-    "description": "Critic and educator Richard Allen May III will moderate a panel discussion on the enduring vision of Samella Lewis at the Museum 5-7 pm.",
+    "description": "Critic and educator Richard Allen May III will moderate a panel discussion 5-7 pm on the enduring vision of Samella Lewis.",
     "end_date": null,
     "image": "https://clmoa.org/wp-content/uploads/2026/09/Samella-Lewis-Portrait-Scripps-1995_horzweb.jpg",
     "kind": "event",
@@ -993,8 +883,8 @@
   "items": []
  },
  "v2|fountain_theatre|events|https://www.fountaintheatre.com/": {
-  "at": "2026-11-08T14:10:23+00:00",
-  "hash": "3f5c845ef812fa9009b1",
+  "at": "2026-11-10T15:30:14+00:00",
+  "hash": "70aa373620d4678526fc",
   "items": []
  },
  "v2|fowler|exhibitions|https://fowler.ucla.edu/exhibitions/": {
@@ -1308,28 +1198,28 @@
   ]
  },
  "v2|la_artcore|events|https://laartcore.org/": {
-  "at": "2026-11-05T03:45:03+00:00",
-  "hash": "d09c6c9ea2a60f1f4793",
+  "at": "2026-11-10T15:30:05+00:00",
+  "hash": "d6cd44e4258eac7ce24a",
   "items": [
    {
-    "description": null,
+    "description": "Since founded in 1979, LA Artcore remains to operate as a non-profit art space dedicated to the creative exploration, discovery, and expression of Los Angeles and global residents while supporting the careers of established and emerging contemporary artists.",
     "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/58d195bf197aea92138ec1b1/1793076643623-6QL4JM2OFV2M259IPTC1/Annual+2.PNG",
+    "image": "https://images.squarespace-cdn.com/content/v1/58d195bf197aea92138ec1b1/1794270633976-RK3NXGURQO79YXL39PHB/becoming+a+wave.png",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-10",
     "start_time": null,
-    "title": "Annual",
-    "url": null
+    "title": "Becoming the Wave",
+    "url": "https://laartcore.org/becoming-the-wave"
    }
   ]
  },
  "v2|lacma|exhibitions|https://www.lacma.org/art/exhibitions/current": {
-  "at": "2026-11-09T17:16:37+00:00",
-  "hash": "df532a5409df5d5367d6",
+  "at": "2026-11-10T15:28:28+00:00",
+  "hash": "a0f76663b7cc85bb827e",
   "items": [
    {
-    "description": "The first large-scale exhibition dedicated to the impact of the Brockman Gallery, founded in South L.A. by brothers Alonzo and Dale Brockman Davis.",
+    "description": "The first large-scale exhibition dedicated to the impact of the Brockman Gallery, founded in South L.A. by brothers Alonzo and Dale Brockman Davis in the wake of the Watts Rebellion.",
     "end_date": "2027-01-24",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/Brockman-Image.jpg.webp?h=daec638f&itok=alFaoQIB",
     "kind": "exhibition",
@@ -1340,7 +1230,7 @@
     "url": null
    },
    {
-    "description": "Between 1925 and 1985, Americans were offered an array of domestic utopias, shown through models, drawings, photographs, films, and objects.",
+    "description": "Traces how the American home of tomorrow was imagined, packaged, and sold, through architectural models, drawings, photographs, films, and objects.",
     "end_date": "2027-03-14",
     "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-09/EX8979_121_RGB_0__jpg/3717.webp?VersionId=PwazLZtSyJdVYuMDLJz3L3OE4nUvY.eI&itok=gqhyp_Ms&h=18835d19",
     "kind": "exhibition",
@@ -1351,7 +1241,7 @@
     "url": null
    },
    {
-    "description": "Brings two influential kitchens from LACMA's collection into conversation: Margarete Schütte-Lihotzky's New Frankfurt kitchen and Charlotte Perriand's kitchen.",
+    "description": "Brings two influential kitchens from LACMA's collection into conversation, by Margarete Schütte-Lihotzky and by Charlotte Perriand and Le Corbusier.",
     "end_date": "2027-03-14",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-06/AC1992_197_113-HWphoto.jpg.webp?h=aaa09563&itok=OsPLVpjK",
     "kind": "exhibition",
@@ -1362,9 +1252,9 @@
     "url": null
    },
    {
-    "description": "An in-depth survey of Japanese designer Reiko Sudō's work created with her textile collective NUNO.",
+    "description": "The largest retrospective of Reiko Sudō's textiles, surveying work created with her textile collective NUNO.",
     "end_date": "2027-03-07",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/M2020_288_8-DL001_3_2.jpg.webp?VersionId=cmAAi3nQI9M7PxlI_m1AlzEn3U4.K6KW&h=fce98eae&itok=WyKsop0O",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/M2020_288_8-DL001_3_2.jpg.webp?h=fce98eae&itok=WyKsop0O",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-09-20",
@@ -1373,7 +1263,7 @@
     "url": null
    },
    {
-    "description": "Presents the photography and video of Los Angeles–based artist Eileen Cowin, who has worked for more than 50 years.",
+    "description": "Presents the photography and video of Los Angeles–based artist Eileen Cowin, surveying more than 50 years of work.",
     "end_date": "2027-01-03",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/EX9537_17.jpg.webp?VersionId=LaBksI5foTeG.R52uRH7BycZfbBNhlHt&h=4eafd198&itok=5KipEjFX",
     "kind": "exhibition",
@@ -1384,9 +1274,9 @@
     "url": null
    },
    {
-    "description": "Explores the danse macabre (dance of death) allegory as depicted in prints from the 14th century onward.",
+    "description": "Explores the danse macabre, a visual allegory of life's impermanence, in prints from the 14th century through German Expressionism.",
     "end_date": "2026-12-06",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/media_4_3/public/2026-06/M88_91_20a%20%281%29%20%281%29__jpg/3749.webp?VersionId=fPmnUNi8237qBT9IBJvZhY4XzL5t_YMd&itok=oRf1GqMp&h=2c7b2181",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-06/M2005_70_101__jpg/3719.webp?VersionId=OP.7xYeMgOE.ycWlFebMPtpFiUfB3kB1&itok=vhX0PDQa&h=e47d152a",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-06-12",
@@ -1395,7 +1285,7 @@
     "url": null
    },
    {
-    "description": "Surveys the portraiture of Pablo Picasso, who depicted lovers, friends, rivals, and himself throughout his career.",
+    "description": "Surveys Picasso's portraits of lovers, friends, rivals, and himself across his career, from Cubism to his late work.",
     "end_date": "2026-12-06",
     "image": "https://www-images.lacma.org/s3fs-public/styles/media_4_3/public/2026-06/M2005_70_101.jpg.webp?VersionId=0jsD9PA5n2bWz3_GJb5I.5vjX1zyGPA8&itok=3cTqMpEo",
     "kind": "exhibition",
@@ -1406,9 +1296,9 @@
     "url": null
    },
    {
-    "description": "Features 12 benches designed by the artist installed along LACMA's Kendall Concourse, drawing on Mexican hand-painted signage.",
+    "description": "Features 12 benches designed by Gonzalez installed along LACMA's Kendall Concourse, drawing on rotulismo mexicano.",
     "end_date": "2026-12-01",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/media_4_3/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3748.webp?VersionId=TiFQbpJHW6Lxs5P6NcFpzFOJQb.5g2TT&itok=lfDm_yQz&h=397fea20",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3721.webp?VersionId=dWb4MTUPJhH098OIanKk_Wy4Z0GITufY&itok=N-N3AuRm&h=0f8e3b93",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-02-22",
@@ -1417,7 +1307,7 @@
     "url": null
    },
    {
-    "description": "Examines visual culture in France in the final quarter of the 19th century beyond painting, sculpture, and drawing.",
+    "description": "Offers a narrative about the people and institutions that shaped the collecting of Impressionism and expanded visual culture in late 19th-century France.",
     "end_date": "2027-01-03",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2025-05/M2024_83-AV001-20240314-Access_CROP.png.webp?h=e4b038af&itok=3IFH1wnu",
     "kind": "exhibition",
@@ -1428,7 +1318,7 @@
     "url": null
    },
    {
-    "description": "A year-long artwork designed to be experienced on a mobile browser, transforming 96 collected plastic sandals and shoes into sculptural forms.",
+    "description": "A year-long artwork experienced on a mobile browser, transforming 96 plastic sandals and shoes collected from beaches into sculptural forms.",
     "end_date": "2026-12-20",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-09/john_gerrard_spirit_75.jpg.webp?VersionId=a0hvyNtuGjJgGJFqbeCC52ojLygaLiUN&h=b2e63824&itok=SZxLIOUB",
     "kind": "exhibition",
@@ -1441,8 +1331,8 @@
   ]
  },
  "v2|lacp|events|https://lacphoto.org/events/": {
-  "at": "2026-11-08T14:09:46+00:00",
-  "hash": "299ecf8b1ce4118513f7",
+  "at": "2026-11-10T15:29:30+00:00",
+  "hash": "6214845da0e975c16c64",
   "items": []
  },
  "v2|lbma|exhibitions|https://lbma.org/exhibitions/|rendered": {
@@ -1471,6 +1361,67 @@
   "at": "2026-11-05T03:44:55+00:00",
   "hash": "ecc84ae74af5d6823332",
   "items": []
+ },
+ "v2|luckman|events|https://theluckman.org/events/": {
+  "at": "2026-11-10T15:29:16+00:00",
+  "hash": "33683eb36870e30705a1",
+  "items": [
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://theluckman.org/wp-content/uploads/2026/08/Millie-opening-reception.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-10-27",
+    "start_time": null,
+    "title": "Catherine Opie Walkthrough of Millie Wilson: The Museum of Lesbian Dreams",
+    "url": "https://theluckman.org/gallery/millie-wilson-artist-led-walkthrough/"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://theluckman.org/wp-content/uploads/2026/04/millie-wilson-responsive-slider.png",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-06-08",
+    "start_time": null,
+    "title": "Millie Wilson: The Museum of Lesbian Dreams",
+    "url": "https://theluckman.org/gallery/millie-wilson/"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://theluckman.org/wp-content/uploads/2026/08/ext-2-Nicolas-Reyes-Photo-by-Anthony-Mulcahy3.png",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-06-07",
+    "start_time": null,
+    "title": "Gipsy Kings featuring Nicolas Reyes",
+    "url": "https://theluckman.org/events/gipsy-kings-nicolas-reyes/"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-05-28",
+    "start_time": null,
+    "title": "Ballet Folklórico de México de Amalia Hernández",
+    "url": "https://theluckman.org/events/ballet-folklorico-2027/"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://theluckman.org/wp-content/uploads/2026/11/cirque-kalabante-2027-ft.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-05-28",
+    "start_time": null,
+    "title": "Cirque Kalabanté",
+    "url": "https://theluckman.org/events/cirque-kalabante-2027/"
+   }
+  ]
  },
  "v2|maaa|exhibitions|https://maaala.org/museum-2/exhibitions/": {
   "at": "2026-11-05T03:44:45+00:00",
@@ -1770,8 +1721,8 @@
   ]
  },
  "v2|mona|events|https://www.neonmona.org/events/": {
-  "at": "2026-11-07T13:49:04+00:00",
-  "hash": "326424ddb26d01ef9b1a",
+  "at": "2026-11-10T15:29:59+00:00",
+  "hash": "4d1d776b0c5ee3a753f1",
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/|rendered": {
