@@ -49,6 +49,11 @@
   "hash": "dd93c56223f71334ac24",
   "items": []
  },
+ "v2|amoca|exhibitions|https://www.amoca.org/exhibitions/": {
+  "at": "2026-11-11T15:09:12+00:00",
+  "hash": "439618c303c9c5415292",
+  "items": []
+ },
  "v2|amoca|exhibitions|https://www.amoca.org/exhibitions/|rendered": {
   "at": "2026-11-05T03:44:48+00:00",
   "hash": "439618c303c9c5415292",
@@ -83,25 +88,36 @@
   ]
  },
  "v2|arroyo_arts|events|https://arroyoartscollective.org/": {
-  "at": "2026-11-05T03:45:07+00:00",
-  "hash": "fe3f9513aed8ce7c689e",
+  "at": "2026-11-11T15:09:26+00:00",
+  "hash": "f629bd71074cff015acb",
   "items": [
    {
-    "description": "Diverse/City (Series V) opens and runs through November 14th, 2026.",
-    "end_date": "2026-11-14",
+    "description": "Diverse/City (Series VI) opens November 14th, 2026 at Underdog Books with an opening reception and free watercolor workshop 11am-1pm.",
+    "end_date": null,
+    "image": null,
+    "kind": "exhibition",
+    "price_text": "Free",
+    "start_date": "2026-11-14",
+    "start_time": null,
+    "title": "Diverse/City (Series VI)",
+    "url": "https://arroyoartscollective.org/whats-new/"
+   },
+   {
+    "description": "Beauties of Hollywood Blvd runs through November 20th at Outfitter Wig, 6626 Hollywood Blvd.",
+    "end_date": "2026-11-20",
     "image": null,
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-11",
     "start_time": null,
-    "title": "Diverse/City (Series V)",
+    "title": "Beauties of Hollywood Blvd",
     "url": "https://arroyoartscollective.org/whats-new/"
    }
   ]
  },
  "v2|artcenter|events|https://www.artcenter.edu/about/exhibitions/overview.html": {
-  "at": "2026-11-05T03:44:29+00:00",
-  "hash": "1b4f7eb41ac2808153e9",
+  "at": "2026-11-11T15:09:15+00:00",
+  "hash": "9512d7628d567d5f6db1",
   "items": [
    {
     "description": "Created in collaboration with artist collective, Torolab. The unique exhibition examines the dynamics of life across the political and physical boundaries of the US/Mexico border.",
@@ -189,20 +205,9 @@
   ]
  },
  "v2|beyond_baroque|events|https://www.beyondbaroque.org/": {
-  "at": "2026-11-09T17:17:08+00:00",
-  "hash": "614339560700cd808e0f",
+  "at": "2026-11-11T15:08:54+00:00",
+  "hash": "f8c38a86544eb6a52d05",
   "items": [
-   {
-    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-09",
-    "start_time": null,
-    "title": "Monday Night Fiction Workshop with Raquel Baker",
-    "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n"
-   },
    {
     "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
     "end_date": null,
@@ -222,13 +227,13 @@
     "price_text": null,
     "start_date": "2026-11-12",
     "start_time": null,
-    "title": "Mouths and Nostrils: Renée Petropoulos & Lorraine Wild",
+    "title": "Nostrils and Mouths: Renée Petropoulos & Lorraine Wild",
     "url": "https://www.beyondbaroque.org/calendar/mouths-and-nostrils-rene-petropoulos-lorraine-wild"
    },
    {
     "description": null,
     "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1792621985550-MM2PPD1KC41R776SE7NB/IGnov13.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1792366855420-4HIPGORGT7DKGUSZOL6R/Nov14IG+.jpg",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-13",
@@ -272,7 +277,7 @@
    {
     "description": null,
     "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793144005414-26G3N23NTFPKO63DV2PU/IGnov19.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793045116820-VFMMAOTZ854UJ6CE1GIL/Nov.20.jpg",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-19",
@@ -292,9 +297,20 @@
     "url": "https://www.beyondbaroque.org/calendar/daughter-of-salt-by-leila-farjami"
    },
    {
+    "description": null,
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1790891946552-R9B9GGQ0FRJ3VW3IPNSU/brendanIG.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-21",
+    "start_time": null,
+    "title": "Everything Strange and New: A Workshop with Brendan Constantine",
+    "url": "https://www.beyondbaroque.org/calendar/everything-strange-and-new"
+   },
+   {
     "description": "Mike Kelley Gallery exhibition on view November 7, 2026 - January 16, 2027.",
     "end_date": "2027-01-16",
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/43cde167-0180-414c-818a-c74302f0497f/EVgallery.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/c3ceaf12-aff4-4951-abaf-c3a486922384/Tidal-Wave-4-imgg-gi3-yhhtl_1d.png",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-11-07",
@@ -303,14 +319,14 @@
     "url": null
    },
    {
-    "description": "proxy gallery exhibition on view October 24 - Dec 5, 2026.",
+    "description": "Proxy gallery exhibition on view October 24 - Dec 5, 2026.",
     "end_date": "2026-12-05",
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/43cde167-0180-414c-818a-c74302f0497f/EVgallery.jpg",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-10-24",
     "start_time": null,
-    "title": "Micol Hebron",
+    "title": "Micol Hebron Am I the Asshole?",
     "url": null
    }
   ]
@@ -751,11 +767,11 @@
   ]
  },
  "v2|claremont_lewis|events|https://clmoa.org/events/": {
-  "at": "2026-11-05T03:46:47+00:00",
-  "hash": "7c64b5898014b56b6941",
+  "at": "2026-11-11T15:09:16+00:00",
+  "hash": "5be1ed70eb702f6474e0",
   "items": [
    {
-    "description": "Critic and educator Richard Allen May III will moderate a panel discussion on the enduring vision of Samella Lewis at the Museum.",
+    "description": "Critic and educator Richard Allen May III will moderate a panel discussion 5-7 pm on the enduring vision of Samella Lewis.",
     "end_date": null,
     "image": "https://clmoa.org/wp-content/uploads/2026/09/Samella-Lewis-Portrait-Scripps-1995_horzweb.jpg",
     "kind": "event",
@@ -823,6 +839,56 @@
    }
   ]
  },
+ "v2|clockshop|events|https://clockshop.org/events/": {
+  "at": "2026-11-11T15:09:05+00:00",
+  "hash": "6f40025b81570c5545aa",
+  "items": [
+   {
+    "description": "Join Clockshop and CD4 to learn about the earthly and celestial animals that walk among us.",
+    "end_date": null,
+    "image": "https://clockshop.org/wp-content/uploads/2026/10/Field-Day_-After-Dark-Event-scaled-1434x956-c-default.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-12",
+    "start_time": "18:00",
+    "title": "Field Day: After Dark",
+    "url": "https://clockshop.org/event/field-day-after-dark/"
+   },
+   {
+    "description": "In conjunction with LaRissa Rogers's subterranean convergence, film curator Jheanelle Brown presents a film screening.",
+    "end_date": null,
+    "image": "https://clockshop.org/wp-content/uploads/2026/10/CAVES-ARE-OUR-WAY-HOME-FRONT-1_4-scaled-1434x956-c-default.png",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-03",
+    "start_time": "18:00",
+    "title": "subterranean convergence: Film Screening",
+    "url": "https://clockshop.org/event/subterranean-convergence-film-screening/"
+   },
+   {
+    "description": "Clockshop presents a temporary Reading Room at the Welcome Pavilion at LA State Historic Park, near the Los Angeles River.",
+    "end_date": "2027-01-30",
+    "image": "https://clockshop.org/wp-content/uploads/2026/10/Reading-Room-2-scaled-1434x956-c-default.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-01-27",
+    "start_time": null,
+    "title": "subterranean convergence: Reading Room",
+    "url": "https://clockshop.org/event/subterranean-convergence-reading-room/"
+   },
+   {
+    "description": "Artist LaRissa Rogers will join artist and scholar Ayasha Guerin in conversation, moderated by a curator.",
+    "end_date": null,
+    "image": "https://clockshop.org/wp-content/uploads/2026/10/HiRes_2026-25-26_LaRissa_OpeningReception_MaryCosta_41-scaled-1434x956-c-default.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2027-03-06",
+    "start_time": "14:00",
+    "title": "subterranean convergence: Closing Reception and Conversation",
+    "url": "https://clockshop.org/event/subterranean-convergence-closing-reception-and-conversation/"
+   }
+  ]
+ },
  "v2|coaxial|events|https://coaxialarts.org/events/": {
   "at": "2026-11-05T03:45:02+00:00",
   "hash": "ca4179c0b1689deb6d58",
@@ -873,8 +939,8 @@
   "items": []
  },
  "v2|csun_galleries|events|https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events": {
-  "at": "2026-11-05T03:44:37+00:00",
-  "hash": "d072a7592ce952172d21",
+  "at": "2026-11-11T15:09:16+00:00",
+  "hash": "042e2b962df51916b5e8",
   "items": []
  },
  "v2|destination_crenshaw|events|https://destinationcrenshaw.la/news/": {
@@ -883,8 +949,8 @@
   "items": []
  },
  "v2|fountain_theatre|events|https://www.fountaintheatre.com/": {
-  "at": "2026-11-10T15:30:14+00:00",
-  "hash": "70aa373620d4678526fc",
+  "at": "2026-11-11T15:09:33+00:00",
+  "hash": "ecb6903f1279fcbc8870",
   "items": []
  },
  "v2|fowler|exhibitions|https://fowler.ucla.edu/exhibitions/": {
@@ -1214,9 +1280,14 @@
    }
   ]
  },
+ "v2|la_opera|events|https://www.laopera.org/whats-on": {
+  "at": "2026-11-11T15:09:07+00:00",
+  "hash": "5c96e24d71fd8abfad68",
+  "items": []
+ },
  "v2|lacma|exhibitions|https://www.lacma.org/art/exhibitions/current": {
-  "at": "2026-11-10T15:28:28+00:00",
-  "hash": "a0f76663b7cc85bb827e",
+  "at": "2026-11-11T15:08:41+00:00",
+  "hash": "616740402e32dd384ef7",
   "items": [
    {
     "description": "The first large-scale exhibition dedicated to the impact of the Brockman Gallery, founded in South L.A. by brothers Alonzo and Dale Brockman Davis in the wake of the Watts Rebellion.",
@@ -1230,7 +1301,7 @@
     "url": null
    },
    {
-    "description": "Traces how the American home of tomorrow was imagined, packaged, and sold, through architectural models, drawings, photographs, films, and objects.",
+    "description": "Traces how the American home of tomorrow was imagined, packaged, and sold, through models, drawings, photographs, films, and objects.",
     "end_date": "2027-03-14",
     "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-09/EX8979_121_RGB_0__jpg/3717.webp?VersionId=PwazLZtSyJdVYuMDLJz3L3OE4nUvY.eI&itok=gqhyp_Ms&h=18835d19",
     "kind": "exhibition",
@@ -1252,7 +1323,7 @@
     "url": null
    },
    {
-    "description": "The largest retrospective of Reiko Sudō's textiles, surveying work created with her textile collective NUNO.",
+    "description": "The largest retrospective of Reiko Sudō's textiles, created with her collective NUNO over more than 40 years.",
     "end_date": "2027-03-07",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/M2020_288_8-DL001_3_2.jpg.webp?h=fce98eae&itok=WyKsop0O",
     "kind": "exhibition",
@@ -1263,9 +1334,9 @@
     "url": null
    },
    {
-    "description": "Presents the photography and video of Los Angeles–based artist Eileen Cowin, surveying more than 50 years of work.",
+    "description": "A survey of the provocative photography and video of Los Angeles–based artist Eileen Cowin, spanning more than 50 years.",
     "end_date": "2027-01-03",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/EX9537_17.jpg.webp?VersionId=LaBksI5foTeG.R52uRH7BycZfbBNhlHt&h=4eafd198&itok=5KipEjFX",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-02/EX9537_17.jpg.webp?h=ANY",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-08-23",
@@ -1274,7 +1345,7 @@
     "url": null
    },
    {
-    "description": "Explores the danse macabre, a visual allegory of life's impermanence, in prints from the 14th century through German Expressionism.",
+    "description": "Explores the danse macabre (dance of death) visual allegory in prints from the 14th century through German Expressionism.",
     "end_date": "2026-12-06",
     "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-06/M2005_70_101__jpg/3719.webp?VersionId=OP.7xYeMgOE.ycWlFebMPtpFiUfB3kB1&itok=vhX0PDQa&h=e47d152a",
     "kind": "exhibition",
@@ -1285,9 +1356,9 @@
     "url": null
    },
    {
-    "description": "Surveys Picasso's portraits of lovers, friends, rivals, and himself across his career, from Cubism to his late work.",
+    "description": "Reveals how many of Picasso's portraits operate in disguise, drawn from his personal life across his career.",
     "end_date": "2026-12-06",
-    "image": "https://www-images.lacma.org/s3fs-public/styles/media_4_3/public/2026-06/M2005_70_101.jpg.webp?VersionId=0jsD9PA5n2bWz3_GJb5I.5vjX1zyGPA8&itok=3cTqMpEo",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3721.webp?VersionId=dWb4MTUPJhH098OIanKk_Wy4Z0GITufY&itok=N-N3AuRm&h=0f8e3b93",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-06-12",
@@ -1296,9 +1367,9 @@
     "url": null
    },
    {
-    "description": "Features 12 benches designed by Gonzalez installed along LACMA's Kendall Concourse, drawing on rotulismo mexicano.",
+    "description": "Twelve benches designed by Alfonso Gonzalez Jr. installed along LACMA's Kendall Concourse, drawing on rotulismo mexicano.",
     "end_date": "2026-12-01",
-    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/me_full_width_1x/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3721.webp?VersionId=dWb4MTUPJhH098OIanKk_Wy4Z0GITufY&itok=N-N3AuRm&h=0f8e3b93",
+    "image": "https://www-images.lacma.org/s3fs-public/contextual/styles/media_4_3/public/2026-08/470753scr_1f469e479a7212e%20%281%29__jpg/3748.webp?VersionId=TiFQbpJHW6Lxs5P6NcFpzFOJQb.5g2TT&itok=lfDm_yQz&h=397fea20",
     "kind": "exhibition",
     "price_text": null,
     "start_date": "2026-02-22",
@@ -1307,7 +1378,7 @@
     "url": null
    },
    {
-    "description": "Offers a narrative about the people and institutions that shaped the collecting of Impressionism and expanded visual culture in late 19th-century France.",
+    "description": "Offers a narrative about the people and collections behind French Impressionism at American art museums.",
     "end_date": "2027-01-03",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/primary_image/2025-05/M2024_83-AV001-20240314-Access_CROP.png.webp?h=e4b038af&itok=3IFH1wnu",
     "kind": "exhibition",
@@ -1318,7 +1389,7 @@
     "url": null
    },
    {
-    "description": "A year-long artwork experienced on a mobile browser, transforming 96 plastic sandals and shoes collected from beaches into sculptural forms.",
+    "description": "A year-long artwork built from 96 plastic sandals and shoes collected from beaches, experienced on a mobile browser.",
     "end_date": "2026-12-20",
     "image": "https://www-images.lacma.org/s3fs-public/styles/me_full_width_1x/public/2026-09/john_gerrard_spirit_75.jpg.webp?VersionId=a0hvyNtuGjJgGJFqbeCC52ojLygaLiUN&h=b2e63824&itok=SZxLIOUB",
     "kind": "exhibition",
@@ -1331,9 +1402,26 @@
   ]
  },
  "v2|lacp|events|https://lacphoto.org/events/": {
-  "at": "2026-11-10T15:29:30+00:00",
-  "hash": "6214845da0e975c16c64",
+  "at": "2026-11-11T15:09:11+00:00",
+  "hash": "cc0ff0b6fe8e625eda37",
   "items": []
+ },
+ "v2|lbma|exhibitions|https://lbma.org/exhibitions/": {
+  "at": "2026-11-11T15:08:47+00:00",
+  "hash": "5a131fd699557722d208",
+  "items": [
+   {
+    "description": null,
+    "end_date": "2027-02-28",
+    "image": "https://lbma.org/client-uploads/transform/Exhibitions/Mario-Ayala-Alfonso-Gonzalez-Jr.-MA_AGJ/_goldenRatioTest/MA-AGJ_800x800.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-10-16",
+    "start_time": null,
+    "title": "Mario Ayala and Alfonso Gonzalez Jr.",
+    "url": "https://lbma.org/exhibitions/mario-ayala-and-alfonso-gonzalez-jr"
+   }
+  ]
  },
  "v2|lbma|exhibitions|https://lbma.org/exhibitions/|rendered": {
   "at": "2026-11-05T03:43:56+00:00",
@@ -1721,8 +1809,8 @@
   ]
  },
  "v2|mona|events|https://www.neonmona.org/events/": {
-  "at": "2026-11-10T15:29:59+00:00",
-  "hash": "4d1d776b0c5ee3a753f1",
+  "at": "2026-11-11T15:09:22+00:00",
+  "hash": "e92c9525b42f1be1f5bd",
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/|rendered": {
@@ -2056,41 +2144,30 @@
   "items": []
  },
  "v2|torrance_art_museum|events|https://www.torranceartmuseum.com/onview": {
-  "at": "2026-11-05T03:43:54+00:00",
-  "hash": "a9ed07f6c93e159d31ca",
+  "at": "2026-11-11T15:08:49+00:00",
+  "hash": "8b31056271fe161e573f",
   "items": [
    {
-    "description": "A survey exhibition featuring thirteen artists whose work made a positive impression on the curators over the past year.",
-    "end_date": "2026-11-07",
-    "image": "https://images.squarespace-cdn.com/content/v1/538a508ee4b00fa9a361f222/1771969549349-F9WDO9MO6H51LGE00FSG/Baker%27s+Dozen+2025+Postcard+Side+A.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-09-19",
-    "start_time": null,
-    "title": "Baker’s Dozen 2026",
-    "url": "https://www.torranceartmuseum.com/bakers-dozen"
-   },
-   {
-    "description": "A three-year exchange between Berlin, Los Angeles, and Mexico City artist-run initiatives featuring artists from UOOORS (Los Angeles), Venice Institute of Contemporary Art (ViCA) (Los Angeles) and Die Möglichkeit einer Insel (Berlin).",
-    "end_date": "2026-11-07",
-    "image": "https://images.squarespace-cdn.com/content/v1/538a508ee4b00fa9a361f222/1771969549349-F9WDO9MO6H51LGE00FSG/Baker%27s+Dozen+2025+Postcard+Side+A.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-09-19",
-    "start_time": null,
-    "title": "B-LA-M",
-    "url": "https://blam"
-   },
-   {
-    "description": "Special Event, Saturday, October 31, 12 p.m. - 3 p.m.",
+    "description": "A one-night-only celebration of artists, by artists.",
     "end_date": null,
-    "image": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/538a508ee4b00fa9a361f222/e0521fae-30cd-47e9-be7a-5f1448a1bd0e/MAS+Attack+2026+Insta.png",
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-10-31",
-    "start_time": "12:00",
-    "title": "B-LA-M",
-    "url": null
+    "start_date": "2026-12-05",
+    "start_time": "18:00",
+    "title": "MAS Attack",
+    "url": "https://www.torranceartmuseum.com/mas-attack-2026"
+   },
+   {
+    "description": "An immersive, site-specific hallway installation by Los Angeles-based artist Darel Carey.",
+    "end_date": "2026-11-07",
+    "image": "https://images.squarespace-cdn.com/content/v1/538a508ee4b00fa9a361f222/52624640-71db-4918-8353-beb78aa0f677/image-asset.jpeg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-19",
+    "start_time": null,
+    "title": "MAIN HALLWAY: liminal level",
+    "url": "http://www.torranceartmuseum.com/darelcarey"
    }
   ]
  },
