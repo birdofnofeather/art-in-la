@@ -227,7 +227,9 @@ export default function VenueMap({
           <span className="inline-flex items-center gap-1.5">{dot("#0f7d55")} Free</span>
           <span className="inline-flex items-center gap-1.5">{dot("#2f6f9f")} Family</span>
           <span className="inline-flex items-center gap-1.5">{dot("#9c9690")} Events</span>
-          <span className="inline-flex items-center gap-1.5">{dot("transparent", "1.5px solid #1c1917")} No events</span>
+          {!onlyEventful && (
+            <span className="inline-flex items-center gap-1.5">{dot("transparent", "1.5px solid #1c1917")} No events</span>
+          )}
         </div>
       </div>
 

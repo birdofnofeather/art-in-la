@@ -231,6 +231,9 @@ recurring:
     - '\boffice\s+hours\b'
     - '\bstudio\s+closed\b'
 
+    # Community services hosted at a venue, not arts programming
+    - '\bfood\s+(?:pantry|bank|distribution)\b'
+
     # Closure notices are not events ("Office/Campus Closure Dates")
     - '\bclosure\s+dates?\b'
     - '\b(?:office|campus|museum|gallery|center)s?\s+(?:closure|closed\s+(?:for|on))\b'
@@ -257,6 +260,7 @@ recurring:
       - "Museum Closed for Thanksgiving"
       - "Christmas Holiday - Museum is Closed"        # AMOCA calendar
       - "CLOSED for private event"
+      - "MOLAA Food Pantry"
     reject:
       # These must SURVIVE — they are real, one-off, worth listing.
       - "Curator's Tour: Instante/revelación"
@@ -359,10 +363,12 @@ audience:
   family:
     patterns:
       # (?!\s+of\s) keeps exhibition titles like 'The Family of Man' untagged.
-      - '\b(family(?!\s+of\s)|families|kids?|children|all\s+ages|toddlers?|storytime|story\s+time)\b'
+      - '\b((?<!holy\s)family(?!\s+of\s)(?!\s+(?:history|archive|album|portraits?|photographs?|tree)\b)|families|kids?|children|all\s+ages|toddlers?|storytime|story\s+time)\b'
     examples:
       match: ["Family Day at the Museum", "Storytime for Toddlers"]
-      reject: ["The Family of Man: Photographs"]     # an exhibition title
+      reject: ["The Family of Man: Photographs",     # an exhibition title
+               "Curator's Tour: The Holy Family at Home",   # Getty: religious art, not a kids' program
+               "Family Portraits of the Gilded Age"]
   teen:
     patterns:
       - '\b(teens?|youth|high\s+school|young\s+adults?)\b'

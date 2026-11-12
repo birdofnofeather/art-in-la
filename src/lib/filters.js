@@ -196,6 +196,16 @@ export function filterEvents(events, venuesById, {
     if ((start || end) && !evStart) return false;
     if (start && evEnd && evEnd < start) return false;
     if (end && evStart && evStart > end) return false;
+    // A production run with known performance days is "on" only on those
+    // days — not on its dark days in between.
+    if ((start || end) && Array.isArray(ev.run_dates) && ev.run_dates.length) {
+      const lo = start ? new Date(start.getFullYear(), start.getMonth(), start.getDate()) : null;
+      const hit = ev.run_dates.some((ds) => {
+        const d = parseDate(ds);
+        return d && (!lo || d >= lo) && (!end || d <= end);
+      });
+      if (!hit) return false;
+    }
     return true;
   });
 }

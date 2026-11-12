@@ -353,6 +353,17 @@ function EventCard({ ev, venuesById, onShowOnMap, isFav, onToggleFav, highlight 
 function shortWhen(ev) {
   const d = parseDate(ev.start);
   if (!d) return "Date TBD";
+  // Multi-day items (production runs, multi-day programs): show the span,
+  // or "Through …" once under way — never just the opening date, which made
+  // a run look like an event from another day.
+  const e = parseDate(ev.end);
+  const md = { month: "short", day: "numeric" };
+  if (e && e.toDateString() !== d.toDateString()) {
+    const today0 = new Date(); today0.setHours(0, 0, 0, 0);
+    return d < today0
+      ? `Through ${e.toLocaleDateString("en-US", md)}`
+      : `${d.toLocaleDateString("en-US", md)} – ${e.toLocaleDateString("en-US", md)}`;
+  }
   const datePart = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   return hasTime(ev.start) && !ev.all_day ? `${datePart} · ${fmtTimeOnly(d)}` : datePart;
 }

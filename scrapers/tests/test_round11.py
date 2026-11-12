@@ -174,3 +174,14 @@ def test_thu_to_sun_run_with_dark_days_collapses():
                                                "2026-11-07T14:00:00-08:00")]
     runs = [e for e in collapse_runs(evs, {"theater"}) if e.get("_run")]
     assert len(runs) == 1 and runs[0]["run_count"] == 3
+
+
+def test_free_needs_price_wording_not_the_bare_word():
+    from scrapers.utils.pricing import infer_from_text as f
+    assert f("FREE One-Off Youth Woodworking")[0] is True
+    assert f("Film Night | Free")[0] is True
+    assert f("Concert", "Admission is free and open to the public.")[0] is True
+    assert f("Concert", "Free + open to the public")[0] is True
+    assert f("In Conversation", "in conjunction with Free & Queer: Black Californian roots")[0] is None
+    assert f("Groove Sessions", "reconnect with your body, free from judgment")[0] is None
+    assert f("World AIDS Day", "to champion free speech")[0] is None

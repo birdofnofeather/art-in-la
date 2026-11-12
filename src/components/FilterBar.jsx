@@ -66,6 +66,7 @@ export default function FilterBar({
   family, setFamily,
   onReset,
   resultLabel,
+  groupByVenue = null, setGroupByVenue,
 }) {
   const [open, setOpen] = useState(false);
   const small = useIsSmall();
@@ -203,9 +204,19 @@ export default function FilterBar({
         </div>
       )}
 
-      {(pills.length > 0 || resultLabel) && !isArchive && (
+      {(pills.length > 0 || resultLabel || groupByVenue !== null) && !isArchive && (
         <div className="flex flex-wrap items-center gap-2 border-t border-black/5 px-3 py-2 text-xs md:px-4">
           {resultLabel && <span role="status" aria-live="polite" className="text-ink/65">{resultLabel}</span>}
+          {groupByVenue !== null && (
+            <button type="button" onClick={() => setGroupByVenue(!groupByVenue)} aria-pressed={groupByVenue}
+              title="Show each venue's events together in one card"
+              className={`chip shrink-0 ${groupByVenue ? "chip-active" : ""}`}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+                <rect x="3" y="4" width="18" height="6" rx="1.5" /><rect x="3" y="14" width="18" height="6" rx="1.5" />
+              </svg>
+              Group by venue
+            </button>
+          )}
           {pills.map((p, i) => (
             <span key={i} className="inline-flex items-center gap-1 rounded-full bg-ink px-2.5 py-0.5 font-medium text-white">
               {p.label}

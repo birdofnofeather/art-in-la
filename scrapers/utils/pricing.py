@@ -14,8 +14,19 @@ from __future__ import annotations
 import re
 
 _FREE_PHRASE = re.compile(
-    r"\b(free\s+admission|free\s+event|free\s+to\s+attend|free\s+and\s+open|"
-    r"no\s+charge|admission\s+is\s+free|free\s+with\s+rsvp|rsvp[^.]{0,24}\bfree\b)\b",
+    r"\b(free\s+admission|free\s+event|free\s+to\s+attend|free\s*(?:and|\+|&)\s*open|"
+    r"no\s+charge|free\s+of\s+charge|admission\s*(?:is|:)\s*free|free\s+entry|"
+    r"free\s+(?:with|w/)\s+(?:rsvp|registration|museum\s+admission)|"
+    r"rsvp[^.]{0,24}\bfree\b|free\s+(?:public\s+)?(?:concert|screening|program|workshop|talk|lecture|performance|tickets?))\b",
+    re.I,
+)
+# "free" as a price tag IN THE TITLE: "FREE One-Off Youth Woodworking",
+# "Film Night | Free", "(Free)". A bare "free" anywhere in the text is NOT
+# enough — audits found "Free & Queer" (an exhibition title), "free speech"
+# and "free from judgment" labelled as free events.
+_TITLE_FREE = re.compile(
+    r"^\s*free\b(?!\s*(?:&|and\b|from\b|speech|will\b|spirit|form\b|verse|style|fall|jazz|the\b))"
+    r"|[|(\[–—:-]\s*free\b(?!\s*(?:&|from\b|speech))|\bfree\s*[)\]]|\bfree\s*$",
     re.I,
 )
 _FREE_WORD = re.compile(r"\bfree\b", re.I)
@@ -97,7 +108,7 @@ def infer_from_text(title: str, description: str = "") -> tuple[bool | None, str
     m = _PRICE.findall(text)
     if m:
         return None, _fmt_range([float(x) for x in m])
-    if _FREE_WORD.search(text) and not _PAID_HINT.search(text):
+    if _TITLE_FREE.search(title or "") and not _PAID_HINT.search(text):
         return True, "Free"
     return None, None
 

@@ -1526,7 +1526,8 @@
     "instagram": "@artandpractice",
     "type": "community",
     "region": "south",
-    "discipline": "visual"
+    "discipline": "visual",
+    "description": "Leimert Park nonprofit founded by artist Mark Bradford, presenting free exhibitions and public programs alongside support for transition-age foster youth."
   },
   {
     "id": "calarts",
@@ -1542,7 +1543,8 @@
     "aliases": [
       "CalArts"
     ],
-    "discipline": "visual"
+    "discipline": "visual",
+    "description": "California Institute of the Arts in Valencia — its galleries, student shows, readings and performances open to the public."
   },
   {
     "id": "sciarc",
@@ -1559,7 +1561,8 @@
       "SCI-Arc",
       "SCIArc"
     ],
-    "discipline": "visual"
+    "discipline": "visual",
+    "description": "Southern California Institute of Architecture's public gallery in the Arts District, with exhibitions and lectures on architecture and design."
   },
   {
     "id": "beyond_baroque",
@@ -1572,7 +1575,8 @@
     "instagram": "@beyondbaroque",
     "type": "community",
     "region": "westside",
-    "discipline": "performing"
+    "discipline": "visual",
+    "description": "Venice's literary arts center since 1968 — poetry readings, writing workshops and book launches, plus exhibitions in the Mike Kelley Gallery."
   },
   {
     "id": "corita_art_center",
@@ -1585,7 +1589,8 @@
     "instagram": "@coritaartcenter",
     "type": "community",
     "region": "central",
-    "discipline": "visual"
+    "discipline": "visual",
+    "description": "Hollywood center preserving and exhibiting the work of artist and educator Corita Kent, with exhibitions and printmaking programs."
   },
   {
     "id": "la_plaza",
@@ -1598,7 +1603,8 @@
     "instagram": "@laplaza_ca",
     "type": "museum",
     "region": "downtown",
-    "discipline": "visual"
+    "discipline": "visual",
+    "description": "Museum and cultural center at El Pueblo celebrating Mexican and Mexican American history and culture in Los Angeles, with exhibitions, performances and festivals."
   },
   {
     "id": "clockshop",
@@ -1649,7 +1655,7 @@
     "region": "downtown",
     "neighborhood": "Little Tokyo",
     "socials": {},
-    "discipline": "performing"
+    "discipline": "visual"
   },
   {
     "id": "esmoa",

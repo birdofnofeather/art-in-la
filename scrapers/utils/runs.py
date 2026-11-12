@@ -166,6 +166,9 @@ def collapse_runs(events: list[dict], performing_ids: set[str]) -> list[dict]:
                 "all_day": True,
                 "_run": True,
                 "run_count": n,
+                # Each performance day, so the site's "Today"/"This weekend"
+                # include a run only on days it actually plays.
+                "run_dates": sorted({str(m.get("start"))[:10] for m in members if m.get("start")}),
                 "recurrence_note": f"{n} performances · {_fmt(first)} – {_fmt(last)}",
             })
             if places:

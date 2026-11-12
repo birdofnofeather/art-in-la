@@ -2955,31 +2955,6 @@
     "audience": []
   },
   {
-    "id": "jaccc-2026-01-31-perfectly-imperfect-discover-kintsugi-wi-99357751df",
-    "venue_id": "jaccc",
-    "title": "Perfectly Imperfect: Discover Kintsugi with POJ Studio",
-    "description": "- 11:30 am Select Saturdays – 2026 Schedule (Concluded): January 31, February 28, March 28, April 25, May 23, June 27, July 25, August 29, September 12 & September 26. Where Kosaka Center for Art & Crafts 244 S. San Pedro Street, 5th Floor, Los Angeles, CA 90012 Price $180.00 (+ $18.00 fee) This event is 13+. Includes workshop materials & a take-h",
-    "event_type": "performance",
-    "start": "2026-01-31T10:00:00-08:00",
-    "end": "2026-09-26",
-    "all_day": false,
-    "url": "https://jaccc.org/events/perfectly-imperfect-discover-kintsugi-with-poj-studio-2026/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "jaccc.org",
-    "scraped_at": "2026-11-03T14:54:34+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": null,
-    "price_text": "$18–$180",
-    "audience": [],
-    "_default_type": "other",
-    "_run": true,
-    "recurrence_note": "Runs Jan 31 – Sep 26"
-  },
-  {
     "id": "moah-2026-01-31-opening-celebration-new-exhibitions-at-m-38f04d274c",
     "venue_id": "moah",
     "title": "Opening Celebration: New Exhibitions at MOAH and MOAH:CEDAR",
@@ -11855,9 +11830,7 @@
     "is_free": true,
     "price_text": "Free",
     "audience": [],
-    "_default_type": "other",
-    "_run": true,
-    "recurrence_note": "Runs Jul 27 – Aug 12"
+    "_default_type": "other"
   },
   {
     "id": "amoca-2026-07-28-virtual-air-talk-with-bianca-macpherson-580a2e6977",
@@ -16793,31 +16766,6 @@
     "_asserted_type": "workshop"
   },
   {
-    "id": "molaa-2026-09-02-molaa-food-pantry-35ee5fdb63",
-    "venue_id": "molaa",
-    "title": "MOLAA Food Pantry",
-    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
-    "event_type": "other",
-    "start": "2026-09-02T16:00:00-07:00",
-    "end": "2026-09-03",
-    "all_day": false,
-    "url": "https://molaa.org/events/2026/09/02/foodpantry",
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
-    "artists": [],
-    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
-    "source": "molaa.org",
-    "scraped_at": "2026-09-02T12:00:36+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other"
-  },
-  {
     "id": "calarts-2026-09-02-school-of-music-welcome-concert-5eca006768",
     "venue_id": "calarts",
     "title": "School of Music Welcome Concert",
@@ -18554,31 +18502,6 @@
     "_default_type": "other"
   },
   {
-    "id": "jaccc-2026-09-12-healing-with-gold-the-art-of-kintsugi-on-e830adea67",
-    "venue_id": "jaccc",
-    "title": "Healing with Gold: The Art of Kintsugi on Ceramics & Beyond",
-    "description": "Tuesdays - Sundays • 12:00 pm - 4:00 pm Opening Reception: September 12, 2026 • 5:00 pm - 7:00 pm Curator's Tour: September 19 & October 4, 2026 • 11:00 am Special Classical Dance Demonstration: October 18, 2026 • 2:00 pm Where George J. Doizaki Gallery 244 S. San Pedro St., Lobby, Los Angeles, CA 90012 Price Free, RSVP now required. RSVP Share Ab",
-    "event_type": "performance",
-    "start": "2026-09-12",
-    "end": "2026-10-18",
-    "all_day": true,
-    "url": "https://jaccc.org/events/healing-with-gold-the-art-of-kintsugi-on-ceramics-beyond/",
-    "image": null,
-    "artists": [],
-    "location_override": null,
-    "source": "jaccc.org",
-    "scraped_at": "2026-10-17T11:29:17+00:00",
-    "event_types": [
-      "performance"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [],
-    "_default_type": "other",
-    "_run": true,
-    "recurrence_note": "Runs Sep 12 – Oct 18"
-  },
-  {
     "id": "armory_pasadena-2026-09-12-nurtured-flames-curatorial-walkthrough-w-77c49e2635",
     "venue_id": "armory_pasadena",
     "title": "Nurtured Flames: Curatorial Walkthrough with joel garcia",
@@ -19694,31 +19617,6 @@
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "workshop"
-  },
-  {
-    "id": "molaa-2026-09-16-molaa-food-pantry-e5bfaf1bb3",
-    "venue_id": "molaa",
-    "title": "MOLAA Food Pantry",
-    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
-    "event_type": "other",
-    "start": "2026-09-16T16:00:00-07:00",
-    "end": "2026-09-17",
-    "all_day": false,
-    "url": "https://molaa.org/events/2026/09/16/foodpantry",
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
-    "artists": [],
-    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
-    "source": "molaa.org",
-    "scraped_at": "2026-09-16T12:29:35+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other"
   },
   {
     "id": "calarts-2026-09-16-career-caf-la-in-motion-now-and-next-rei-bec532ed3c",
@@ -33888,31 +33786,6 @@
     "_default_type": "screening"
   },
   {
-    "id": "molaa-2026-11-05-molaa-food-pantry-43d3fe2a45",
-    "venue_id": "molaa",
-    "title": "MOLAA Food Pantry",
-    "description": "In partnership with Help Me Help You, MOLAA supports our local communities by hosting a food pantry twice a month. You can come to MOLAA and enter through the 6th Street entrance to receive free groceries for your family. Drive-through and walk-up services will be provided. You do not have to show identification or prove your income. No need to register. You can attend without an appointment.",
-    "event_type": "other",
-    "start": "2026-11-05",
-    "end": "2026-11-04T17:00:00-08:00",
-    "all_day": true,
-    "url": "https://molaa.org/events/2026/11/04/foodpantry",
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1622076149992-OQ1I97VQAW0QOSE608IE/Sq+Sp+Events+Tab+Graphic%402x.png",
-    "artists": [],
-    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
-    "source": "molaa.org",
-    "scraped_at": "2026-11-04T15:13:33+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": true,
-    "price_text": "Free",
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other"
-  },
-  {
     "id": "lacp-2026-11-05-member-mixer-bae892f9fc",
     "venue_id": "lacp",
     "title": "Member Mixer",
@@ -34025,9 +33898,7 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ],
+    "audience": [],
     "_default_type": "other"
   },
   {
@@ -35067,9 +34938,7 @@
     ],
     "is_free": null,
     "price_text": null,
-    "audience": [
-      "family"
-    ],
+    "audience": [],
     "_default_type": "other"
   },
   {
@@ -35913,6 +35782,52 @@
     "scraped_at": "2026-11-10T15:28:29+00:00",
     "event_types": [
       "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-11-11-wellness-wednesday-returns-november-18-700da9935f",
+    "venue_id": "wende",
+    "title": "Wellness Wednesday Returns November 18",
+    "description": "No session on Wednesday, November 11 for Veterans Day. Wellness Wednesday returns on Wednesday, November 18.",
+    "event_type": "other",
+    "start": "2026-11-11T09:00:00-08:00",
+    "end": "2026-11-11T10:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/wellness-wednesday-mindfulness-meditations-2-6-2/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2025/10/94237881cc02d3db79b376f886316abb-F4KLFg.tmp_.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-11T15:08:39+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-11-11-exhibition-tour-en-espaol-instanterevela-7fb8e99285",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour en español: *Instante/revelacion: Moments in Mexican Photography*",
+    "description": "Adentran en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía en México",
+    "event_type": "tour",
+    "start": "2026-11-11T15:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-instante-revelacion-espanol",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-11T15:08:33+00:00",
+    "event_types": [
+      "tour"
     ],
     "is_free": null,
     "price_text": null,

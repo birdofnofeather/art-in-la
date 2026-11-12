@@ -109,7 +109,7 @@ export default function App() {
   const setTypes       = (v) => patchFilters({ types: v });
   const setRegions     = (v) => patchFilters({ regions: v });
   const setEventTypes  = (v) => patchFilters({ eventTypes: v });
-  const setDatePreset  = (v) => patchFilters({ datePreset: v });
+  const setDatePreset  = (v) => { patchFilters({ datePreset: v }); setStackByVenue(null); };
   const setCustomStart = (v) => patchFilters({ customStart: v });
   const setCustomEnd   = (v) => patchFilters({ customEnd: v });
   const setQuery       = (v) => patchFilters({ query: v });
@@ -266,9 +266,16 @@ export default function App() {
   const mapVenues = useMemo(() => {
     const hasEventFilter = query.trim() || free || family || eventTypes.size;
     const base = searchVenues(filterVenues(data.venues, { discipline, types, regions }), "");
-    if (mapOnlyEventful || hasEventFilter) return base.filter((v) => mapEventfulIds.has(v.id));
-    return base;
-  }, [data.venues, discipline, types, regions, mapOnlyEventful, mapEventfulIds, query, free, family, eventTypes]);
+    const shown = (mapOnlyEventful || hasEventFilter) ? base.filter((v) => mapEventfulIds.has(v.id)) : base;
+    // "Show on map" must always find its venue, even one with no upcoming
+    // events or outside the current filters — otherwise there is nothing to
+    // zoom to (this is why it only worked for busy venues like the Getty).
+    if (focusedVenueId && !shown.some((v) => v.id === focusedVenueId)) {
+      const f = data.venues.find((v) => v.id === focusedVenueId);
+      if (f) return [...shown, f];
+    }
+    return shown;
+  }, [data.venues, discipline, types, regions, mapOnlyEventful, mapEventfulIds, query, free, family, eventTypes, focusedVenueId]);
 
   // Venue types relevant to the current Art / Performing choice.
   const typeOptions = useMemo(() => {
@@ -373,7 +380,9 @@ export default function App() {
 
   // Stack-by-venue: explicit user choice wins; otherwise auto-on for
   // mobile + Today (dense same-day listings read better stacked).
-  const effectiveStack = stackByVenue ?? (isMobile && datePreset === "today");
+  // Grouping by venue is the default for "Today" (dense same-day listings),
+  // on every device; an explicit choice wins until the date preset changes.
+  const effectiveStack = stackByVenue ?? (datePreset === "today");
 
   const onViewExhibitions = useMemo(
     () => liveExhibitionsOnView(liveExhibitions), [liveExhibitions]
@@ -430,6 +439,8 @@ export default function App() {
           family={family} setFamily={setFamily}
           onReset={onReset}
           resultLabel={resultLabel}
+          groupByVenue={tab === "events" ? effectiveStack : null}
+          setGroupByVenue={(v) => setStackByVenue(v)}
         />
 
         {loading ? (
@@ -453,24 +464,13 @@ export default function App() {
 
             {tab === "events" && (
               <>
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  {discipline !== "performing" ? (
-                    <p className="hidden text-xs text-ink/65 sm:block">
-                      Looking for commercial galleries? Try{" "}
-                      <a href="https://artguide.artforum.com/" target="_blank" rel="noreferrer"
-                        className="font-medium underline underline-offset-2 hover:text-ink">Artforum artguide</a>.
-                    </p>
-                  ) : <span />}
-                  <button
-                    type="button"
-                    onClick={() => setStackByVenue(!effectiveStack)}
-                    className={`chip text-xs ${effectiveStack ? "chip-active" : ""}`}
-                    aria-pressed={effectiveStack}
-                    title="Group each venue's events into a single card"
-                  >
-                    Stack by venue
-                  </button>
-                </div>
+                {discipline !== "performing" && (
+                  <p className="hidden text-xs text-ink/65 sm:block">
+                    Looking for commercial galleries? Try{" "}
+                    <a href="https://artguide.artforum.com/" target="_blank" rel="noreferrer"
+                      className="font-medium underline underline-offset-2 hover:text-ink">Artforum artguide</a>.
+                  </p>
+                )}
                 <EventList
                   events={filteredEvents}
                   venuesById={venuesById}
