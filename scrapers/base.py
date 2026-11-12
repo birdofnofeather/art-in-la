@@ -337,6 +337,10 @@ class BaseScraper:
             # type from scratch later (see scrapers/classify.py). Without it, a
             # change to rules.yaml could only affect events scraped afterwards.
             d["_default_type"] = self.default_event_type
+            # Every listing links somewhere: items from a feed without their
+            # own link (e.g. AMOCA's Google Calendar) point at the venue's page.
+            if not d.get("url"):
+                d["url"] = self.events_url
 
             # Many venues publish their own category for an event (Getty's
             # category field, LA Plaza's section, Academy Museum's Contentful

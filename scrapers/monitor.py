@@ -235,7 +235,17 @@ def assess_venue(venue_id: str, produced: list[dict], published: list[dict],
 
     streak = int(health.get("zero_streak") or 0)
     if streak >= 3 and health.get("last_success"):
-        if unreachable:
+        if dates_on_page is not None and dates_on_page < MIN_DATES_TO_JUDGE and not unreachable:
+            # Gone quiet, but the venue's own page shows no upcoming dates
+            # either: nothing scheduled (LACP between seasons), or a bot wall
+            # serving an empty page (Center Theatre Group's waiting room).
+            # Not a broken parser — report it, don't raise the alarm.
+            verdict = _worst(verdict, YELLOW)
+            known_gaps.append(
+                f"no events for {streak} runs, and the venue's page currently shows "
+                f"no upcoming dates either (nothing scheduled, or a bot wall)"
+            )
+        elif unreachable:
             # THEIR problem, not ours. Sending an automated repair at a scraper
             # whose website is simply refusing us produces confident, wrong
             # changes to code that was never broken. Several venues block

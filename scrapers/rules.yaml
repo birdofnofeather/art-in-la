@@ -231,6 +231,9 @@ recurring:
     - '\boffice\s+hours\b'
     - '\bstudio\s+closed\b'
 
+    # Members-only events are not open to the public
+    - '\bmembers?\s*(?:-|:)?\s*(?:only|preview|tour|welcome|clay\s+day|night|reception)\b|\bmembers?[- ]only\b'
+
     # Community services hosted at a venue, not arts programming
     - '\bfood\s+(?:pantry|bank|distribution)\b'
 
@@ -261,6 +264,8 @@ recurring:
       - "Christmas Holiday - Museum is Closed"        # AMOCA calendar
       - "CLOSED for private event"
       - "MOLAA Food Pantry"
+      - "Member Preview, Re-Opening"                    # AMOCA (members only)
+      - "Member Tour: Making in Between/Mata Ortiz"
     reject:
       # These must SURVIVE — they are real, one-off, worth listing.
       - "Curator's Tour: Instante/revelación"
@@ -268,6 +273,7 @@ recurring:
       - "Opening Reception: New Work"
       - "Mid-Autumn Moon Celebration"
       - "Film Program: Agnès Varda Retrospective"
+      - "Re-Opening Celebration"
       - "Closing Reception: Gallery Closed Doors"
 
   # ── (b) Caught by rhythm ────────────────────────────────────────────────
