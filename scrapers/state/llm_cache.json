@@ -949,8 +949,8 @@
   "items": []
  },
  "v2|fountain_theatre|events|https://www.fountaintheatre.com/": {
-  "at": "2026-11-11T15:09:33+00:00",
-  "hash": "ecb6903f1279fcbc8870",
+  "at": "2026-11-12T02:58:48+00:00",
+  "hash": "b56d778b8b528c7f4bf1",
   "items": []
  },
  "v2|fowler|exhibitions|https://fowler.ucla.edu/exhibitions/": {
@@ -1100,6 +1100,67 @@
     "start_time": null,
     "title": "Hammer Projects: Mike Cloud",
     "url": "https://hammer.ucla.edu/exhibitions/2026/hammer-projects-mike-cloud"
+   }
+  ]
+ },
+ "v2|human_resources|events|https://www.h-r.la/events/": {
+  "at": "2026-11-12T02:57:20+00:00",
+  "hash": "57c810c38f34872fe137",
+  "items": [
+   {
+    "description": "Pretty but Wicked presents Normal Dreams, a new performance by dancer Liana Zhen-Ai and musician Astrid Sonne.",
+    "end_date": null,
+    "image": "https://www.h-r.la/wp-content/uploads/2026/09/Still-Photo-Normal-Dreams-scaled.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-04",
+    "start_time": "19:00",
+    "title": "Normal Dreams – Liana Zhen-Ai + Astrid Sonne",
+    "url": "https://www.h-r.la/event/normal-dreams/"
+   },
+   {
+    "description": "SONANCE NO.1 is a 30-minute musical performance featuring a group of collaborating musicians, composed for an audience of humans and plants.",
+    "end_date": null,
+    "image": "https://www.h-r.la/wp-content/uploads/2026/10/IMG_3518-1.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-05",
+    "start_time": "20:30",
+    "title": "SONANCE NO.1",
+    "url": "https://www.h-r.la/event/sonance-no-1/"
+   },
+   {
+    "description": "UPEND Presents Leila Bordreuil, Twig Harper and Elif Dinçer performing amplified cello and experimental sets.",
+    "end_date": null,
+    "image": "https://www.h-r.la/wp-content/uploads/2026/10/leila_Pedro-Roque.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-06",
+    "start_time": "20:00",
+    "title": "Leila Bordreuil / Twig Harper / Elif Dinçer",
+    "url": "https://www.h-r.la/event/leila-bordreuil-twig-harper-elif-dincer/"
+   },
+   {
+    "description": "Film and performance by Vitreous Chamber, Malic Amalya and Nathan Hill, over two nights of film and live sound.",
+    "end_date": "2026-11-08",
+    "image": "https://www.h-r.la/wp-content/uploads/2026/10/Graves_Holes_Mythographies_POST.png",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-07",
+    "start_time": "20:00",
+    "title": "GRAVES, HOLES, AND MYTHOGRAPHIES",
+    "url": "https://www.h-r.la/event/graves-holes-and-mythographies/"
+   },
+   {
+    "description": "Long form durational explorations of contemporary music, non-cover covers and experiments with crafts through others' creations.",
+    "end_date": null,
+    "image": "https://www.h-r.la/wp-content/uploads/2026/11/IMG_8724-scaled.jpeg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-10",
+    "start_time": "20:00",
+    "title": "Unnatural Beauty (Experimental, Durational, Non-Cover Covers)",
+    "url": "https://www.h-r.la/event/unnatural-beauty/"
    }
   ]
  },
