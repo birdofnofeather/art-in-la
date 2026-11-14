@@ -1,4 +1,9 @@
 {
+ "v2|18th_street|events|https://www.18thstreet.org/events/|rendered": {
+  "at": "2026-11-14T13:59:47+00:00",
+  "hash": "324bf9031a92bef38c34",
+  "items": []
+ },
  "v2|a_noise_within|events|https://www.anoisewithin.org/2026-27-season-those-better-angels/": {
   "at": "2026-11-12T15:52:40+00:00",
   "hash": "ef12285cf9999893d124",
@@ -277,20 +282,9 @@
   ]
  },
  "v2|beyond_baroque|events|https://www.beyondbaroque.org/": {
-  "at": "2026-11-13T15:12:06+00:00",
-  "hash": "c24b7cb6509caf034e1b",
+  "at": "2026-11-14T14:00:21+00:00",
+  "hash": "7b04b650495ce93d305b",
   "items": [
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1792707933843-RVJGHRLGJVZS8DSAYWWH/novt12IG+%281%29.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-12",
-    "start_time": null,
-    "title": "Nostrils and Mouths: Renée Petropoulos & Lorraine Wild",
-    "url": "https://www.beyondbaroque.org/calendar/mouths-and-nostrils-rene-petropoulos-lorraine-wild"
-   },
    {
     "description": null,
     "end_date": null,
@@ -338,7 +332,7 @@
    {
     "description": null,
     "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793045116820-VFMMAOTZ854UJ6CE1GIL/Nov.20.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1794522243524-5V3W01ZFF4243L90MM0Y/instagram_post_2.png",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-20",
@@ -349,7 +343,7 @@
    {
     "description": null,
     "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1794522243524-5V3W01ZFF4243L90MM0Y/instagram_post_2.png",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1790891946552-R9B9GGQ0FRJ3VW3IPNSU/brendanIG.jpg",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-21",
@@ -367,6 +361,28 @@
     "start_time": null,
     "title": "Everything Strange and New: A Workshop with Brendan Constantine",
     "url": "https://www.beyondbaroque.org/calendar/everything-strange-and-new"
+   },
+   {
+    "description": "Join us for a session of careful, attentive live reading and interpretation of \"What is Authority\" by Hannah Arendt and The School of Public Life by the late Fred Dewey.",
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793838200902-ATD5QPDHX8NY95MXPYSE/TableReadTemplate+%283%29.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-21",
+    "start_time": null,
+    "title": "Table Reading",
+    "url": "https://www.beyondbaroque.org/calendar/what-remains-erasure-as-resistance-and-reclamation-l72a5-l4ya9-56er6"
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793045303115-024WPMBPV2V02OANTHKU/jhdznov21+%283%29.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-21",
+    "start_time": null,
+    "title": "L.A. Book Launch: The Lighthouse Tattoo by Jose Hernandez Diaz",
+    "url": "https://www.beyondbaroque.org/calendar/the-lighthouse-tattoo-by-jose-hernandez-diaz"
    },
    {
     "description": "Mike Kelley Gallery exhibition on view November 7, 2026 - January 16, 2027.",
@@ -796,9 +812,21 @@
   ]
  },
  "v2|chinese_american_museum|events|https://camla.org/upcoming-events/|rendered": {
-  "at": "2026-11-07T13:48:46+00:00",
-  "hash": "ae6f151ed7b7c6f9e147",
-  "items": []
+  "at": "2026-11-14T14:01:00+00:00",
+  "hash": "3ec785e31b7d61034b6a",
+  "items": [
+   {
+    "description": "Join the Chinese American Museum and Ms. Rita from the Los Angeles Public Library’s Chinatown Branch for this month’s Kids’ Storytime on Tuesday, November 17, at 4pm PST, hosted virtually on Zoom.",
+    "end_date": null,
+    "image": "https://camla.org/wp-content/uploads/2026/11/KS-11.17.26-1-819x1024.png",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-11-17",
+    "start_time": "16:00",
+    "title": "Kids’ Storytime",
+    "url": "https://camla.org/upcoming-events/"
+   }
+  ]
  },
  "v2|chinese_american_museum|exhibitions|https://camla.org/current-exhibits/|rendered": {
   "at": "2026-11-07T13:48:56+00:00",
@@ -1253,8 +1281,8 @@
   "items": []
  },
  "v2|jaccc|events|https://jaccc.org/events/|rendered": {
-  "at": "2026-11-07T13:48:25+00:00",
-  "hash": "e03622a681e4483200a9",
+  "at": "2026-11-14T14:00:38+00:00",
+  "hash": "d8f9796c6fc7a1e5e399",
   "items": [
    {
     "description": "A weekly Saturday market with fresh produce, EBT Market Match, and cultural experiences in the heart of Little Tokyo.",
@@ -1262,19 +1290,19 @@
     "image": null,
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-10-31",
+    "start_date": "2026-11-14",
     "start_time": null,
     "title": "Little Tokyo Farmers' Market",
     "url": "https://jaccc.org/events/little-tokyo-farmers-market-2026/"
    },
    {
-    "description": "Returning by popular demand, this two-session sashiko series led by Sanae Suzuki introduces the foundations of Japanese stitching.",
-    "end_date": "2026-11-21",
+    "description": "Returning by popular demand, this two-session sashiko series led by Sanae Suzuki introduces the foundations of Japanese stitching alongside ...",
+    "end_date": null,
     "image": null,
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-07",
-    "start_time": null,
+    "start_date": "2026-11-21",
+    "start_time": "10:00",
     "title": "Sashiko with Sanae Suzuki",
     "url": "https://jaccc.org/events/sashiko-with-sanae-suzuki/"
    },
@@ -1569,8 +1597,8 @@
   ]
  },
  "v2|lbma|exhibitions|https://lbma.org/exhibitions/|rendered": {
-  "at": "2026-11-05T03:43:56+00:00",
-  "hash": "5a131fd699557722d208",
+  "at": "2026-11-14T14:00:08+00:00",
+  "hash": "1022959e2bbdfdff8210",
   "items": [
    {
     "description": null,
@@ -1582,6 +1610,17 @@
     "start_time": null,
     "title": "Mario Ayala and Alfonso Gonzalez Jr.",
     "url": "https://lbma.org/exhibitions/mario-ayala-and-alfonso-gonzalez-jr"
+   },
+   {
+    "description": null,
+    "end_date": "2027-03-28",
+    "image": "https://lbma.org/client-uploads/transform/_squareTest/image.png",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-14",
+    "start_time": null,
+    "title": "DABSMYLA presents Garden Party",
+    "url": "https://lbma.org/exhibitions/dabsmyla"
    }
   ]
  },
@@ -1954,8 +1993,8 @@
   ]
  },
  "v2|mona|events|https://www.neonmona.org/events/": {
-  "at": "2026-11-11T15:09:22+00:00",
-  "hash": "e92c9525b42f1be1f5bd",
+  "at": "2026-11-14T14:01:11+00:00",
+  "hash": "2e4e656e80469ba4e933",
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/|rendered": {
@@ -2246,8 +2285,8 @@
   "items": []
  },
  "v2|sparc|events|https://sparcinla.org/calendar/|rendered": {
-  "at": "2026-11-07T13:48:14+00:00",
-  "hash": "f26c2cf2877d06db0dba",
+  "at": "2026-11-14T14:00:28+00:00",
+  "hash": "f08a39930b60cf59a324",
   "items": [
    {
     "description": "This exhibition follows the groundbreaking career of artist and educator Judith F. Baca and the creation of The Great Wall of Los Angeles.",
@@ -2255,7 +2294,7 @@
     "image": "https://sparcinla.org/wp-content/uploads/2026/03/SPARC50_the-BLUEPRINT_Horizontal_WEB.jpg",
     "kind": "exhibition",
     "price_text": "Free",
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-10",
     "start_time": null,
     "title": "Exhibition: A People's Legacy: Public Memory, Social Justice, and The Great Wall of Los Angeles",
     "url": "https://sparcinla.org/event/exhibition-a-peoples-legacy-public-memory-social-justice-and-the-great-wall-of-los-angeles/"
@@ -2266,10 +2305,32 @@
     "image": "https://sparcinla.org/wp-content/uploads/2026/05/2025.05.15_Painting-Day-31_edtied.jpg",
     "kind": "exhibition",
     "price_text": "Free",
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-10",
     "start_time": null,
     "title": "Exhibition: The 1980s: The Taste of Bitter Fruit",
     "url": "https://sparcinla.org/event/exhibition-the-1980s-the-taste-of-bitter-fruit/"
+   },
+   {
+    "description": "Free community art workshop with Elsie Sims, artist-in-residence; two sessions, 12:30pm–2:30pm and 3:30pm–5:30pm, space is limited.",
+    "end_date": null,
+    "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_LEAVEs_2026.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-11-22",
+    "start_time": "12:30",
+    "title": "Workshop: Autumn Leaf Monoprinting Workshops",
+    "url": "https://sparcinla.org/event/workshop-autumn-leaf-monoprinting-workshops/"
+   },
+   {
+    "description": "Free community art workshop with Elsie Sims, artist-in-residence; two sessions, 12:30pm–2:30pm and 3:30pm–5:30pm, space is limited.",
+    "end_date": null,
+    "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_LIGHT_2026.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-12-13",
+    "start_time": "12:30",
+    "title": "Workshop: Celebrating the Season of Light Monoprinting Workshop",
+    "url": "https://sparcinla.org/event/workshop-celebrating-the-season-of-light-monoprinting-workshop/"
    }
   ]
  },
@@ -2345,37 +2406,71 @@
   ]
  },
  "v2|velaslavasay|events|https://www.panoramaonview.org/upcoming-events": {
-  "at": "2026-11-08T14:09:55+00:00",
-  "hash": "42ef55ea6b4b384a05b5",
+  "at": "2026-11-14T14:00:59+00:00",
+  "hash": "faff102f455c76f38b47",
   "items": [
    {
-    "description": "Archivists Sara Velas and Ruby Carlson present a 20 min. experimental slideshow for the opening of the installation Florence in Ruin: An Excavation by Sara Velas.",
-    "end_date": null,
-    "image": "https://panoramaonview.org/sites/default/files/Slide-Florence-Poster-500px.jpg",
-    "kind": "event",
-    "price_text": "$18",
-    "start_date": "2026-11-12",
-    "start_time": "20:00",
-    "title": "Florence in Ruin—or—The Great Escape",
-    "url": "https://www.panoramaonview.org/events/florence-ruin-or-great-escape"
-   },
-   {
-    "description": "An installation that organizes and displays a psychic fixation on the Alameda Corridor and the Port of Long Beach as a terminal for corruption, paranoia, petroleum industries, and the transmission of art history.",
+    "description": "Florence in Ruin: An Excavation is an installation that organizes and displays a psychic fixation on the Alameda Corridor and the Port of Long Beach as a terminal for corruption, paranoia, petroleum industries, and the transmission of art history.",
     "end_date": "2026-12-19",
     "image": "https://panoramaonview.org/sites/default/files/FIR-ExcavationTitle-HyperSoCal-500.jpg",
     "kind": "exhibition",
     "price_text": "$7 suggested donation",
     "start_date": "2026-11-13",
     "start_time": "11:00",
-    "title": "Florence in Ruin: An Excavation",
-    "url": "https://panoramaonview.org/events/florence-ruin-excavation"
+    "title": "Florence In Ruin: An Excavation",
+    "url": "https://www.panoramaonview.org/events/florence-ruin-excavation"
+   },
+   {
+    "description": "Archivists Ruby Carlson and Sara Velas present a 20 min. experimental slideshow as the debut event for the exhibition Florence in Ruin: An Excavation.",
+    "end_date": null,
+    "image": null,
+    "kind": "event",
+    "price_text": "$18",
+    "start_date": "2026-11-12",
+    "start_time": "19:30",
+    "title": "Florence in Ruin—or—The Great Escape",
+    "url": "https://panoramaonview.org/events/florence-ruin-or-great-escape"
    }
   ]
  },
  "v2|velaslavasay|exhibitions|https://www.panoramaonview.org/on-view": {
-  "at": "2026-11-05T03:44:41+00:00",
-  "hash": "0899b249e363ad4f62a9",
-  "items": []
+  "at": "2026-11-14T14:01:02+00:00",
+  "hash": "b21ade8c7dacc35f0650",
+  "items": [
+   {
+    "description": "360-Degree Panorama on view at the Velaslavasay Panorama.",
+    "end_date": null,
+    "image": null,
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-14",
+    "start_time": null,
+    "title": "Shengjing Panorama",
+    "url": "https://panoramaonview.org/home/shengjing-panorama"
+   },
+   {
+    "description": "On view in the Theatre at the Velaslavasay Panorama.",
+    "end_date": null,
+    "image": null,
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-14",
+    "start_time": null,
+    "title": "Florence in Ruin: An Excavation",
+    "url": "https://panoramaonview.org/events/florence-ruin-excavation"
+   },
+   {
+    "description": "On view in the Ancillary Salon at the Velaslavasay Panorama.",
+    "end_date": null,
+    "image": null,
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-14",
+    "start_time": null,
+    "title": "The Nova Tuskhut",
+    "url": "http://panoramaonview.org/on-view/ancillary-salon"
+   }
+  ]
  },
  "v2|vincent_price|exhibitions|https://vpam.org/exhibitions/": {
   "at": "2026-11-13T15:11:43+00:00",
