@@ -7,14 +7,14 @@
    "listing:amoca": 5,
    "listing:armory_pasadena": 1,
    "listing:arroyo_arts": 3,
-   "listing:artcenter": 4,
+   "listing:artcenter": 5,
    "listing:autry": 2,
    "listing:beyond_baroque": 7,
    "listing:caam": 1,
-   "listing:cap_ucla": 2,
+   "listing:cap_ucla": 3,
    "listing:center_theatre_group": 1,
    "listing:chinese_american_museum": 6,
-   "listing:claremont_lewis": 7,
+   "listing:claremont_lewis": 9,
    "listing:clockshop": 2,
    "listing:coaxial": 2,
    "listing:craft_in_america": 1,
@@ -34,7 +34,7 @@
    "listing:japan_house": 4,
    "listing:la_artcore": 3,
    "listing:la_opera": 2,
-   "listing:lacma": 6,
+   "listing:lacma": 7,
    "listing:lacp": 5,
    "listing:lbma": 3,
    "listing:lucas_museum": 3,
@@ -63,11 +63,11 @@
    "listing:vincent_price": 3,
    "listing:watts_towers": 1,
    "listing:weisman_pepperdine": 2,
-   "recover": 84
+   "recover": 91
   },
-  "calls": 266,
-  "input_tokens": 923410,
-  "output_tokens": 114601,
-  "usd": 0.14956
+  "calls": 278,
+  "input_tokens": 966925,
+  "output_tokens": 123747,
+  "usd": 0.15849
  }
 }
