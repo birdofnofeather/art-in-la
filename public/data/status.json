@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-15T14:38:26.769900+00:00",
+  "generated_at": "2026-11-16T17:09:08.850119+00:00",
   "verdict": "yellow",
   "totals": {
-    "events": 430,
-    "exhibitions": 121,
-    "venues_producing": 78,
+    "events": 421,
+    "exhibitions": 116,
+    "venues_producing": 77,
     "venues_checked": 112,
     "unpublishable_records": 0
   },
   "counts": {
     "red": 0,
-    "yellow": 60,
-    "green": 52
+    "yellow": 61,
+    "green": 51
   },
   "unreachable": [
     "armory_pasadena",
@@ -26,6 +26,7 @@
     "tierra_del_sol",
     "ucla_broad",
     "cerritos_center",
+    "claremont_lewis",
     "corita_art_center",
     "huntington",
     "sciarc"
@@ -44,12 +45,12 @@
       "venue_id": "academy_museum",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 25,
+      "events": 24,
       "exhibitions": 1,
       "dates_on_page": 0,
       "zero_streak": 0,
       "reasons": [
-        "25 events, fewer than the expected 50",
+        "24 events, fewer than the expected 50",
         "1 exhibitions, fewer than the expected 2 — a venue can look healthy on events while its exhibitions are broken"
       ],
       "known_gaps": []
@@ -61,7 +62,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 1,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -76,7 +77,7 @@
       "dates_on_page": 0,
       "zero_streak": 0,
       "reasons": [
-        "produced 7, well below its recent average of 123"
+        "produced 7, well below its recent average of 133"
       ],
       "known_gaps": []
     },
@@ -89,7 +90,7 @@
       "dates_on_page": null,
       "zero_streak": 0,
       "reasons": [
-        "produced 7, well below its recent average of 45"
+        "produced 7, well below its recent average of 49"
       ],
       "known_gaps": []
     },
@@ -153,7 +154,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -166,7 +167,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -176,12 +177,12 @@
       "venue_id": "calarts",
       "verdict": "yellow",
       "unreachable": true,
-      "events": 7,
+      "events": 8,
       "exhibitions": 1,
       "dates_on_page": null,
       "zero_streak": 0,
       "reasons": [
-        "7 events, more than the expected 6"
+        "8 events, more than the expected 6"
       ],
       "known_gaps": []
     },
@@ -192,7 +193,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -202,13 +203,13 @@
       "venue_id": "center_theatre_group",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 13,
+      "events": 12,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 13,
+      "zero_streak": 14,
       "reasons": [],
       "known_gaps": [
-        "no events for 13 runs, and the venue's page currently shows no upcoming dates either (nothing scheduled, or a bot wall)"
+        "no events for 14 runs, and the venue's page currently shows no upcoming dates either (nothing scheduled, or a bot wall)"
       ]
     },
     {
@@ -218,7 +219,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 24,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [],
       "known_gaps": [
         "the page shows 24 dates, but the LLM reader examined it and found nothing upcoming — past or undated listings, not a broken parser"
@@ -231,7 +232,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -242,11 +243,12 @@
       "verdict": "yellow",
       "unreachable": false,
       "events": 0,
-      "exhibitions": 1,
+      "exhibitions": 0,
       "dates_on_page": 25,
       "zero_streak": 0,
       "reasons": [
-        "the venue's page advertises 25 upcoming dates but we extracted only 1 — the parser may be reading the wrong part of the page"
+        "the venue's page advertises 25 upcoming dates but we extracted only 1 — the parser may be reading the wrong part of the page",
+        "scraped 1 record(s) but published none — everything it found was filtered out, so the site shows nothing for this venue"
       ],
       "known_gaps": []
     },
@@ -257,7 +259,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -270,7 +272,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -283,7 +285,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 11,
-      "zero_streak": 85,
+      "zero_streak": 86,
       "reasons": [],
       "known_gaps": [
         "the page shows 11 dates, but the LLM reader examined it and found nothing upcoming — past or undated listings, not a broken parser"
@@ -293,12 +295,12 @@
       "venue_id": "east_west_players",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 6,
+      "events": 5,
       "exhibitions": 0,
       "dates_on_page": 26,
       "zero_streak": 0,
       "reasons": [
-        "produced 6, well below its recent average of 28"
+        "produced 5, well below its recent average of 27"
       ],
       "known_gaps": []
     },
@@ -309,9 +311,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 123,
+      "zero_streak": 124,
       "reasons": [
-        "no events for 123 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 124 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -322,7 +324,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -337,7 +339,7 @@
       "dates_on_page": 0,
       "zero_streak": 0,
       "reasons": [
-        "produced 1, well below its recent average of 15"
+        "produced 1, well below its recent average of 17"
       ],
       "known_gaps": []
     },
@@ -345,12 +347,12 @@
       "venue_id": "getty_center",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 21,
+      "events": 20,
       "exhibitions": 8,
       "dates_on_page": 0,
       "zero_streak": 0,
       "reasons": [
-        "produced 29, well below its recent average of 249",
+        "produced 28, well below its recent average of 247",
         "8 exhibitions, fewer than the expected 11 — a venue can look healthy on events while its exhibitions are broken"
       ],
       "known_gaps": []
@@ -372,12 +374,12 @@
       "venue_id": "hammer",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 27,
+      "events": 25,
       "exhibitions": 5,
-      "dates_on_page": 6,
+      "dates_on_page": 5,
       "zero_streak": 0,
       "reasons": [
-        "produced 32, well below its recent average of 105"
+        "produced 30, well below its recent average of 105"
       ],
       "known_gaps": []
     },
@@ -401,7 +403,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -414,7 +416,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -440,7 +442,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -481,7 +483,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -521,7 +523,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 1,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -534,9 +536,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 4,
-      "zero_streak": 0,
+      "zero_streak": 1,
       "reasons": [
-        "scraped 3 record(s) but published none — everything it found was filtered out, so the site shows nothing for this venue"
+        "nothing on the site for this venue, and no check could tell us why"
       ],
       "known_gaps": []
     },
@@ -547,7 +549,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -557,12 +559,13 @@
       "venue_id": "mak_center",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 1,
+      "events": 0,
       "exhibitions": 1,
       "dates_on_page": 32,
       "zero_streak": 0,
       "reasons": [
-        "the venue's page advertises 32 upcoming dates but we extracted only 1 — the parser may be reading the wrong part of the page"
+        "the venue's page advertises 32 upcoming dates but we extracted only 1 — the parser may be reading the wrong part of the page",
+        "0 events, fewer than the expected 1"
       ],
       "known_gaps": []
     },
@@ -587,7 +590,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 19,
-      "zero_streak": 1,
+      "zero_streak": 2,
       "reasons": [],
       "known_gaps": [
         "the page shows 19 dates, but the LLM reader examined it and found nothing upcoming — past or undated listings, not a broken parser",
@@ -601,7 +604,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -614,9 +617,22 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
+      ],
+      "known_gaps": []
+    },
+    {
+      "venue_id": "museum_of_tolerance",
+      "verdict": "yellow",
+      "unreachable": false,
+      "events": 1,
+      "exhibitions": 0,
+      "dates_on_page": 3,
+      "zero_streak": 0,
+      "reasons": [
+        "produced 1, well below its recent average of 4"
       ],
       "known_gaps": []
     },
@@ -626,8 +642,8 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 0,
-      "dates_on_page": 1,
-      "zero_streak": 15,
+      "dates_on_page": 5,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -640,7 +656,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -676,12 +692,12 @@
       "venue_id": "pieter",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 5,
+      "events": 4,
       "exhibitions": 1,
-      "dates_on_page": 60,
+      "dates_on_page": 59,
       "zero_streak": 0,
       "reasons": [
-        "produced 6, well below its recent average of 35"
+        "produced 5, well below its recent average of 35"
       ],
       "known_gaps": []
     },
@@ -692,7 +708,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 8,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [],
       "known_gaps": [
         "the page shows 8 dates, but the LLM reader examined it and found nothing upcoming — past or undated listings, not a broken parser"
@@ -703,11 +719,11 @@
       "verdict": "yellow",
       "unreachable": false,
       "events": 1,
-      "exhibitions": 4,
-      "dates_on_page": 2,
+      "exhibitions": 3,
+      "dates_on_page": 1,
       "zero_streak": 0,
       "reasons": [
-        "produced 5, well below its recent average of 23"
+        "produced 4, well below its recent average of 23"
       ],
       "known_gaps": []
     },
@@ -718,7 +734,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -731,7 +747,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -744,7 +760,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -757,9 +773,9 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 13,
+      "zero_streak": 14,
       "reasons": [
-        "no events for 13 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
+        "no events for 14 runs, but the website could not be reached at all — this looks like their site or a block on our address, not our parser"
       ],
       "known_gaps": []
     },
@@ -770,7 +786,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -783,7 +799,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": null,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue, and no check could tell us why"
       ],
@@ -798,7 +814,7 @@
       "dates_on_page": 11,
       "zero_streak": 0,
       "reasons": [
-        "produced 1, well below its recent average of 15"
+        "produced 1, well below its recent average of 17"
       ],
       "known_gaps": [
         "exhibitions"
@@ -811,7 +827,7 @@
       "events": 0,
       "exhibitions": 0,
       "dates_on_page": 0,
-      "zero_streak": 15,
+      "zero_streak": 16,
       "reasons": [
         "nothing on the site for this venue — though its own page shows no upcoming dates either, so this may simply be a quiet period"
       ],
@@ -821,7 +837,7 @@
       "venue_id": "wende",
       "verdict": "yellow",
       "unreachable": false,
-      "events": 20,
+      "events": 19,
       "exhibitions": 0,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -978,11 +994,11 @@
     {
       "venue_id": "claremont_lewis",
       "verdict": "green",
-      "unreachable": false,
+      "unreachable": true,
       "events": 0,
-      "exhibitions": 3,
-      "dates_on_page": 4,
-      "zero_streak": 0,
+      "exhibitions": 1,
+      "dates_on_page": null,
+      "zero_streak": 1,
       "reasons": [],
       "known_gaps": []
     },
@@ -1014,7 +1030,7 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 4,
-      "dates_on_page": 8,
+      "dates_on_page": 11,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -1045,7 +1061,7 @@
       "venue_id": "fowler",
       "verdict": "green",
       "unreachable": false,
-      "events": 3,
+      "events": 5,
       "exhibitions": 4,
       "dates_on_page": 5,
       "zero_streak": 0,
@@ -1078,8 +1094,8 @@
       "venue_id": "huntington",
       "verdict": "green",
       "unreachable": true,
-      "events": 18,
-      "exhibitions": 1,
+      "events": 19,
+      "exhibitions": 0,
       "dates_on_page": null,
       "zero_streak": 0,
       "reasons": [],
@@ -1104,7 +1120,7 @@
       "unreachable": false,
       "events": 4,
       "exhibitions": 1,
-      "dates_on_page": 12,
+      "dates_on_page": 14,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": [
@@ -1137,7 +1153,7 @@
       "venue_id": "la_opera",
       "verdict": "green",
       "unreachable": false,
-      "events": 10,
+      "events": 9,
       "exhibitions": 0,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -1148,7 +1164,7 @@
       "venue_id": "la_phil",
       "verdict": "green",
       "unreachable": false,
-      "events": 81,
+      "events": 80,
       "exhibitions": 0,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -1159,7 +1175,7 @@
       "venue_id": "lacma",
       "verdict": "green",
       "unreachable": false,
-      "events": 18,
+      "events": 19,
       "exhibitions": 10,
       "dates_on_page": 7,
       "zero_streak": 0,
@@ -1194,7 +1210,7 @@
       "unreachable": false,
       "events": 0,
       "exhibitions": 2,
-      "dates_on_page": 5,
+      "dates_on_page": 4,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -1225,9 +1241,9 @@
       "venue_id": "molaa",
       "verdict": "green",
       "unreachable": false,
-      "events": 10,
+      "events": 9,
       "exhibitions": 0,
-      "dates_on_page": 46,
+      "dates_on_page": 45,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": [
@@ -1241,17 +1257,6 @@
       "events": 0,
       "exhibitions": 1,
       "dates_on_page": 0,
-      "zero_streak": 0,
-      "reasons": [],
-      "known_gaps": []
-    },
-    {
-      "venue_id": "museum_of_tolerance",
-      "verdict": "green",
-      "unreachable": false,
-      "events": 3,
-      "exhibitions": 0,
-      "dates_on_page": 3,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -1271,9 +1276,9 @@
       "venue_id": "pvac",
       "verdict": "green",
       "unreachable": false,
-      "events": 3,
+      "events": 2,
       "exhibitions": 1,
-      "dates_on_page": 4,
+      "dates_on_page": 3,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -1284,7 +1289,7 @@
       "unreachable": false,
       "events": 3,
       "exhibitions": 2,
-      "dates_on_page": 13,
+      "dates_on_page": 11,
       "zero_streak": 0,
       "reasons": [],
       "known_gaps": []
@@ -1383,7 +1388,7 @@
       "venue_id": "vincent_price",
       "verdict": "green",
       "unreachable": false,
-      "events": 1,
+      "events": 2,
       "exhibitions": 3,
       "dates_on_page": 0,
       "zero_streak": 0,
@@ -1417,7 +1422,7 @@
   "fleet_checks": {
     "blocking": [],
     "warnings": [
-      "2 venue(s) went quiet: laband, moah"
+      "1 venue(s) went quiet: crenshaw_dairy_mart"
     ]
   }
 }

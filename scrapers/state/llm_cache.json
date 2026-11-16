@@ -1043,6 +1043,11 @@
   "hash": "13a37452296a750f5dfe",
   "items": []
  },
+ "v2|esmoa|events|https://esmoa.org/experience/|rendered": {
+  "at": "2026-11-16T16:51:41+00:00",
+  "hash": "1d41a96b2f5a90b08fba",
+  "items": []
+ },
  "v2|fountain_theatre|events|https://www.fountaintheatre.com/": {
   "at": "2026-11-12T02:58:48+00:00",
   "hash": "b56d778b8b528c7f4bf1",
@@ -1314,20 +1319,9 @@
   ]
  },
  "v2|janm|exhibitions|https://www.janm.org/exhibitions": {
-  "at": "2026-11-13T15:11:50+00:00",
-  "hash": "bba84694218a028b515f",
+  "at": "2026-11-16T16:51:07+00:00",
+  "hash": "e25bef788c32ee029ef1",
   "items": [
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2026-08/janm-barracks-gallery-rendering-crop-1.png?h=f853f5c3&itok=8Ny2Vxu5",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-13",
-    "start_time": null,
-    "title": "In the Future We Call Now",
-    "url": "https://www.janm.org/exhibits/in-the-future-we-call-now"
-   },
    {
     "description": null,
     "end_date": "2027-08-29",
@@ -1341,36 +1335,14 @@
    },
    {
     "description": null,
-    "end_date": null,
-    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2026-08/storyfile-singles-stripe-6f.png?h=bbfc7686&itok=vK7qij-v",
+    "end_date": "2026-09-25",
+    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2026-06/mario-reyes-event-1.png?h=366ea0cf&itok=8eypI5YF",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-13",
+    "start_date": "2026-07-15",
     "start_time": null,
-    "title": "Interactive StoryFiles",
-    "url": "https://www.janm.org/exhibits/storyfiles"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2022-10/janm-ireicho-blue-room-header_0.jpg?h=bde28bee&itok=EClqCXqX",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-13",
-    "start_time": null,
-    "title": "Ireichō",
-    "url": "https://www.janm.org/exhibits/ireicho"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://www.janm.org/sites/default/files/styles/small_image/public/2024-03/hibi-painting-traveling-exhibition-japan-header.png?h=f2a5c980&itok=Y4FawAne",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-13",
-    "start_time": null,
-    "title": "Japanese American History and Art from JANM’s Collection",
-    "url": "https://www.janm.org/exhibits/japanese-american-history-and-art"
+    "title": "OBRAS DE LUZ (Works of Light) at the Mercado La Paloma",
+    "url": "https://www.janm.org/exhibits/mario-reyes-mercado"
    }
   ]
  },
@@ -2320,6 +2292,11 @@
  "v2|the_mistake_room|events|https://www.tmr.la/": {
   "at": "2026-11-05T03:45:01+00:00",
   "hash": "455833f498cbf4082a40",
+  "items": []
+ },
+ "v2|the_mistake_room|events|https://www.tmr.la/|rendered": {
+  "at": "2026-11-16T16:52:26+00:00",
+  "hash": "df18346fb7e384c8bfcf",
   "items": []
  },
  "v2|the_wallis|events|https://thewallis.org/whats-on": {

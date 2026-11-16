@@ -3589,6 +3589,27 @@
     "_default_type": "other"
   },
   {
+    "id": "the_broad-2026-03-15-sensory-morning-at-the-broad-da8854bbe7",
+    "venue_id": "the_broad",
+    "title": "Sensory Morning at The Broad",
+    "description": "Sensory Morning at The Broad is a free ticketed event that provides early access to the third-floor collections galleries, Robert Therrien: This is a Story , and Yayoi Kusama's immersive installation Infinity Mirrored Room—The Souls of Millions of Light Years Away (2013) to visitors who would benefit from a sensory-friendly experience. Reservations are required as space is limited.",
+    "event_type": "exhibition",
+    "start": "2026-03-15T09:00:00-07:00",
+    "end": "2026-11-15T10:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.thebroad.org/events/sensory-morning-broad-14",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "thebroad.org",
+    "scraped_at": "2026-05-31T00:04:58+00:00",
+    "_default_type": "other",
+    "event_types": [
+      "exhibition"
+    ],
+    "audience": []
+  },
+  {
     "id": "moah-2026-03-19-giras-en-espaol-ms-arte-ms-conexin-8640482226",
     "venue_id": "moah",
     "title": "Giras en Español: Más arte. Más conexión.",
@@ -3837,6 +3858,29 @@
     "_default_type": "other",
     "_asserted_type": "exhibition",
     "audience": []
+  },
+  {
+    "id": "claremont_lewis-2026-04-04-window-galleries-featured-artist-megan-g-003f890592",
+    "venue_id": "claremont_lewis",
+    "title": "Window Galleries: Featured Artist Megan Geckler",
+    "description": "Megan Geckler explores the intersection of pattern, perception, and the built environment through immersive installations.",
+    "event_type": "exhibition",
+    "start": "2026-04-04",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://clmoa.org/exhibit/window-galleries-featured-artist-megan-geckler/",
+    "image": "https://clmoa.org/wp-content/uploads/2026/04/f06377e7-913d-4aa6-b559-d8b80db5e699.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "clmoa.org+llm",
+    "scraped_at": "2026-11-14T14:01:06+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   },
   {
     "id": "las_fotos_project-2026-04-04-vientos-familiares-opening-reception-1131cb2d0e",
@@ -13800,6 +13844,30 @@
     ],
     "is_free": true,
     "price_text": "Free",
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
+    "id": "claremont_lewis-2026-08-15-samella-lewis-962e20df61",
+    "venue_id": "claremont_lewis",
+    "title": "Samella Lewis",
+    "description": "A seminal figure in 20th-century American art, Dr. Samella Lewis was an art historian, educator, philanthropist, and artist.",
+    "event_type": "exhibition",
+    "start": "2026-08-15",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://clmoa.org/exhibit/samella/",
+    "image": "https://clmoa.org/wp-content/uploads/2026/01/Lewis-Black-Sun-1970_web.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "clmoa.org+llm",
+    "scraped_at": "2026-11-14T14:01:06+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
     "audience": [],
     "_default_type": "other",
     "_asserted_type": "exhibition"
@@ -28313,6 +28381,29 @@
     "_default_type": "other"
   },
   {
+    "id": "crenshaw_dairy_mart-2026-10-17-kenturah-davis-rest-stops-9a9c4e6cc1",
+    "venue_id": "crenshaw_dairy_mart",
+    "title": "Kenturah Davis: Rest Stops",
+    "description": "Exhibition of the artist's prototypes and drawings reimagining public and private thresholds across Altadena, co-presented with Destination Crenshaw.",
+    "event_type": "exhibition",
+    "start": "2026-10-17",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://www.crenshawdairymart.com/exhibitions",
+    "image": "https://images.squarespace-cdn.com/content/v1/5d54ceae9ce6c90001516251/1a6be9b2-d7d3-4f4c-8265-d73186e5c5e8/CDM_KD_10.12.260150.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "crenshawdairymart.com+llm",
+    "scraped_at": "2026-11-14T14:01:09+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "huntington-2026-10-17-restore-explore-forest-bathing-95f621a26d",
     "venue_id": "huntington",
     "title": "Restore + Explore: Forest Bathing",
@@ -34548,6 +34639,31 @@
     "_default_type": "other"
   },
   {
+    "id": "center_theatre_group-2026-11-07-s-se-puede-0a3a03eac6",
+    "venue_id": "center_theatre_group",
+    "title": "¡SÍ SE PUEDE!",
+    "description": "Follow activist Dolores Huerta on her journey to improve conditions for farm workers.",
+    "event_type": "performance",
+    "start": "2026-11-07",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://www.centertheatregroup.org/shows-tickets/around-la/202627/sí-se-puede/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "centertheatregroup.org+llm",
+    "scraped_at": "2026-11-05T01:37:12+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "recurrence_note": "Runs Nov 7 – Nov 15"
+  },
+  {
     "id": "side_street-2026-11-07-postponed-free-skillshares-how-to-make-a-ef6a0d5557",
     "venue_id": "side_street",
     "title": "(POSTPONED) Free Skillshares - How To Make a Great (Art) Crate",
@@ -36325,6 +36441,36 @@
     "recurrence_note": "2 performances · Nov 13 – Nov 14"
   },
   {
+    "id": "la_phil-2026-11-13-tchaikovskys-fourth-symphony-49e787869a",
+    "venue_id": "la_phil",
+    "title": "Tchaikovsky’s Fourth Symphony",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-13",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://www.laphil.com/events/instances/k0x6b7bn/2026-11-13/tchaikovskys-fourth-symphony",
+    "image": "https://images.baskercdn.com/laphil/media/v/1781134841303/StevenBanks-1-Hero-1200x1000.png?w=250&h=250&f=cover&fx=50&fy=50",
+    "artists": [],
+    "location_override": null,
+    "source": "laphil.com",
+    "scraped_at": "2026-11-13T15:12:38+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "run_dates": [
+      "2026-11-13",
+      "2026-11-15"
+    ],
+    "recurrence_note": "2 performances · Nov 13 – Nov 15"
+  },
+  {
     "id": "huntington-2026-11-13-this-land-is-common-and-contested-ground-7eacc84257",
     "venue_id": "huntington",
     "title": "This Land Is …: Common and Contested Ground in American History and Culture",
@@ -36913,6 +37059,36 @@
     "_default_type": "other"
   },
   {
+    "id": "east_west_players-2026-11-14-toki-the-japanese-elvis-ea2c2b6c69",
+    "venue_id": "east_west_players",
+    "title": "Toki the Japanese Elvis",
+    "description": "At: David Henry Hwang Theater.",
+    "event_type": "performance",
+    "start": "2026-11-14",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://www.eastwestplayers.org/events/toki-the-japanese-elvis-at-david-henry-hwang-theater",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "eastwestplayers.org",
+    "scraped_at": "2026-11-13T15:13:16+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "run_dates": [
+      "2026-11-14",
+      "2026-11-15"
+    ],
+    "recurrence_note": "2 performances · Nov 14 – Nov 15"
+  },
+  {
     "id": "side_street-2026-11-14-cara-levine-silverlinings-fe594535b0",
     "venue_id": "side_street",
     "title": "Cara Levine: Silverlinings",
@@ -36977,6 +37153,29 @@
     "scraped_at": "2026-11-14T13:59:40+00:00",
     "event_types": [
       "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "pvac-2026-11-14-the-artists8217-studio-celebration-of-ar-5fe45e1194",
+    "venue_id": "pvac",
+    "title": "The Artists’ Studio Celebration of Art",
+    "description": "CELEBRATION OF ART Saturday & Sunday, November 14 & 15 10am-4pm Please join us at The Artists’ Studio of Palos Verdes “Celebration of Art,” an annual TAS event to be held on the Atrium at Palos Verdes Art Center November 14th and 15th. Jewelry, clothing, fabrics, paintings, ceramics, glass, woodwork and more will be on sale throughout the weekend show and sale. Attendance is free and purchases include free raffle tickets for prizes. Twenty-seven artists. Two days. One very full Atrium. The annual Celebration of Art, presented by The Artists’ Studio of Palos Verdes, transforms the Atrium at Palos Verdes Art Center into a showcase of creativity and imagination. Wander from booth to booth among photography and paintings in oil, acrylic, and watercolor. Jewelers and glass artists show their sp",
+    "event_type": "fair",
+    "start": "2026-11-14T10:00:00-08:00",
+    "end": "2026-11-15T16:00:00-08:00",
+    "all_day": false,
+    "url": "https://pvartcenter.org/upcoming_events/the-artists-studio-celebration-of-art-2/",
+    "image": "https://pvartcenter.org/2024/wp-content/uploads/2023/11/Celeb-Art-web-SQ.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "pvartcenter.org",
+    "scraped_at": "2026-11-15T14:35:36+00:00",
+    "event_types": [
+      "fair"
     ],
     "is_free": null,
     "price_text": null,
@@ -37116,6 +37315,29 @@
     "location_override": "Lancaster Museum of Art and History",
     "source": "eventbrite.com/cc/moah",
     "scraped_at": "2026-11-14T14:00:29+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "mak_center-2026-11-14-housing-for-whom-building-a-more-afforda-2f2dc4ff55",
+    "venue_id": "mak_center",
+    "title": "Housing for Whom? Building a More Affordable Los Angeles",
+    "description": "The MAK Center for Art and Architecture presents Housing for Whom? Building a More Affordable Los Angeles , a panel discussion organized in conjunction with the exhibition Social Housing: Vienna—Los Angeles , currently on view at the MAK Center at the Schindler House.",
+    "event_type": "lecture",
+    "start": "2026-11-14T14:00:00-08:00",
+    "end": "2026-11-15",
+    "all_day": false,
+    "url": "https://www.makcenter.org/events/housing-for-whom-building-a-more-affordable-los-angeles",
+    "image": "https://images.squarespace-cdn.com/content/v1/6059737e4b8d6e3976d3d5de/1793230723951-X3C5U86H74EU70HQTHBB/mak-la-agency-com-square.jpg",
+    "artists": [],
+    "location_override": "Schindler House, 835 Kings Road",
+    "source": "makcenter.org",
+    "scraped_at": "2026-11-14T13:59:48+00:00",
     "event_types": [
       "lecture"
     ],
@@ -37380,5 +37602,288 @@
     "price_text": null,
     "audience": [],
     "_default_type": "performance"
+  },
+  {
+    "id": "huntington-2026-11-15-acts-of-remembrance-laura-aguilars-day-o-1d448a4ec8",
+    "venue_id": "huntington",
+    "title": "Acts of Remembrance: Laura Aguilar’s Day of the Dead Photographs",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/acts-remembrance-laura-aguilars-day-dead-photographs",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2Frail%2FHU13ZN5D.jpg%3Fh%3D449b32a6%26itok%3DS1Lxh5e7&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-14T13:59:49+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "la_opera-2026-11-15-jamie-barton-349646262f",
+    "venue_id": "la_opera",
+    "title": "Jamie Barton",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-15",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.laopera.org/performances/2026-27/jamie-barton",
+    "image": "https://laopera.imgix.net//laopera/26-27_card-detail-thumbnails/26-27-card-detail_barton_1.jpg?format=auto&fit=crop&w=372&h=380&auto=format",
+    "artists": [],
+    "location_override": null,
+    "source": "laopera.org",
+    "scraped_at": "2026-11-14T14:00:56+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
+  },
+  {
+    "id": "museum_of_tolerance-2026-11-15-joe-samuels-9d7baa0b7a",
+    "venue_id": "museum_of_tolerance",
+    "title": "Joe Samuels",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-15",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/wtt-speaker-joe-samuels11.15.26",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-11-14T14:00:06+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "museum_of_tolerance-2026-11-15-witness-to-truth-dr-jack-wetter-6740eb6c28",
+    "venue_id": "museum_of_tolerance",
+    "title": "Witness to Truth: Dr. Jack Wetter",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-15",
+    "end": "2026-11-15",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/wtt-speaker-jack-wetter-nov15-2026",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-11-14T14:00:06+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "molaa-2026-11-15-corner-garden-plein-air-workshop-waterco-3287e782a0",
+    "venue_id": "molaa",
+    "title": "Corner Garden Plein Air Workshop: Watercolors, watercolor pencils & micron pens on watercolor paper",
+    "description": "Join us in celebrating three years of morning art workshops at our Garden! Teaching artist Maria Guadalupe leads this special edition workshop with Watercolors, watercolor pencils & micron pens on watercolor paper! All materials will be provided by MOLAA! Registration is required. Please arrive on time, as space is limited. Your spot will be offered to another attendee if you arrive more than 15 minutes late.",
+    "event_type": "workshop",
+    "start": "2026-11-15T09:00:00-08:00",
+    "end": "2026-11-15T11:00:00-08:00",
+    "all_day": false,
+    "url": "https://molaa.org/events/2026/cornergarden-november",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1630530507856-DNA2IHSSWW6VGL80WNVX/2021-Corner-Garden-Logo-Final.jpg",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-11-15T14:35:35+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-15-member-shopping-days-bfc8e19e2a",
+    "venue_id": "lacma",
+    "title": "Member Shopping Days",
+    "description": "Member Shopping Days mean extra discounts to thank members for supporting LACMA! Double your member discount at the LACMA Store in person and online, and enjoy 20% off select merchandise instead of your usual 10% off...",
+    "event_type": "other",
+    "start": "2026-11-15T10:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/member-shopping-days-nov15",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-10/SF3780_11.jpg?VersionId=zlrLBtnm9hvm3Q2NUrGf9CJgOk9hasZA&itok=WIgmEy1L",
+    "artists": [],
+    "location_override": "The LACMA Store at the David Geffen Galleries | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-15T14:35:31+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-11-15-826lahammer-rooted-and-rising-honing-you-23fa075193",
+    "venue_id": "hammer",
+    "title": "826LA@Hammer: Rooted and Rising: Honing Your Roots through Writing to Empower Yourself and Your Community",
+    "description": "Poetry workshop led by Mexican-American poet Solany Lara for students delving into their cultural heritage in the pursuit of discovering and expressing their true voice.",
+    "event_type": "workshop",
+    "start": "2026-11-15T11:00:29-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/826lahammer-rooted-and-rising-honing-your-roots-through-writing-empower",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2025-04/826LAHM2016_71.jpg?h=fcf9520a&itok=WeNzPy0M",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-15T14:35:29+00:00",
+    "event_types": [
+      "workshop",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "pieter-2026-11-15-embodiment-workshop-with-erin-sprinkle-761cef8de4",
+    "venue_id": "pieter",
+    "title": "Embodiment Workshop with Erin Sprinkle",
+    "description": "Embodiment Workshop with Erin Sprinkle",
+    "event_type": "workshop",
+    "start": "2026-11-15T13:30:00-08:00",
+    "end": "2026-11-15T15:30:00-08:00",
+    "all_day": false,
+    "url": "https://pieterpasd.com/programs/embodiment-workshop-with-erin-sprinkle",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d30f87ab8d965a2edb3f85/1793654941048-M5Y8FYOGXL3F382Z2HHE/Screenshot+2026-11-02+at+1.28.48%E2%80%AFPM.png",
+    "artists": [],
+    "location_override": "Pieter Performance Space, 2701 North Broadway",
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-11-15T14:35:52+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-11-15-movement-through-life-d2194990a2",
+    "venue_id": "wende",
+    "title": "Movement Through Life",
+    "description": "Movement Through Life: An Interactive Showcase Merging Professional Dance, Neuroscience, and Community Presented by Invertigo Dance Theatre Join Invertigo Dance Theatre for the premiere of Movement Through Life, a unique interactive showcase that bridges high-caliber performance art with neuro-specialized community impact. Taking place at the A-Frame Theatre, this event brings Invertigo’s professional company dancers and dancers from its Dancing Through Parkinson’s program together on a single stage. Structured as a blend of a live performance and an interactive “TED Talk,” Movement Through Life breaks down the barrier between audience and performer to demonstrate how movement sparks neuroplasticity, cognitive well-being, and artistic expression across all ages and mobility levels. Event H",
+    "event_type": "closing",
+    "start": "2026-11-15T14:00:00-08:00",
+    "end": "2026-11-15T16:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/movement-through-life/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/10/Movement-Through-Life-2-16x9-1.png",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-15T14:35:35+00:00",
+    "event_types": [
+      "closing",
+      "performance",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "closing"
+  },
+  {
+    "id": "getty_center-2026-11-15-oaxacan-recipes-and-remembrance-with-bri-7fe642700f",
+    "venue_id": "getty_center",
+    "title": "Oaxacan Recipes and Remembrance with Bricia Lopez",
+    "description": "Food & Drink",
+    "event_type": "other",
+    "start": "2026-11-15T17:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/oaxacan-recipes-lopez",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-15T14:35:30+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-16-germany-year-zero-germania-anno-zero-in-65a58d4dc0",
+    "venue_id": "academy_museum",
+    "title": "Germany Year Zero (Germania anno zero) in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-15T19:00:00-08:00",
+    "end": "2026-11-15T20:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/germany-year-zero-019fceb0-6341-861a-27b3-b8a22f7f663a",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/6WWudZ1es55Xcz1WBa22aj/0e3684de998937fbd58d6ffd43ea39f9/Nov15_GERMANY_YEAR_ZERO_Rossellin3.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-15T14:35:45+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "hammer-2026-11-15-archive-talks-trans-cinema-making-commun-56b17109a2",
+    "venue_id": "hammer",
+    "title": "Archive Talks: Trans Cinema: Making Communities, Identities, and Worlds",
+    "description": "Author Laura Horak of \"Trans Cinema: Making Communities, Identities, and Worlds\" will host a talk before a ten part screening of films showcasing trans representation and trans history in media.",
+    "event_type": "screening",
+    "start": "2026-11-15T19:00:29-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/archive-talks-trans-cinema-making-communities-identities-and-worlds",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-10/Honor-Black-Trans-Womxn.jpg?h=44b879e5&itok=UgJq85zv",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-15T14:35:29+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
