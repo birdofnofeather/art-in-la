@@ -35568,29 +35568,6 @@
     "_default_type": "other"
   },
   {
-    "id": "beyond_baroque-2026-11-09-monday-night-fiction-workshop-with-raque-7b039eea20",
-    "venue_id": "beyond_baroque",
-    "title": "Monday Night Fiction Workshop with Raquel Baker",
-    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
-    "event_type": "workshop",
-    "start": "2026-11-09",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n",
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
-    "artists": [],
-    "location_override": null,
-    "source": "beyondbaroque.org+llm",
-    "scraped_at": "2026-11-08T14:09:16+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "museum_of_tolerance-2026-11-09-rosenthal-the-great-showman-8489415007",
     "venue_id": "museum_of_tolerance",
     "title": "ROSENTHAL: The Great Showman",
@@ -37742,6 +37719,32 @@
     "_default_type": "other"
   },
   {
+    "id": "amoca-2026-11-15-reopening-celebration-df8958e6bd",
+    "venue_id": "amoca",
+    "title": "Re-Opening Celebration",
+    "description": "Join us for a re-opening celebration at AMOCA and enjoy free admission, family fun, and activations of the museum’s newly renovated spaces! Admission to today's event is complimentary with advance registration. Learn more and register at https://www.amoca.org/events/re-opening-celebration/",
+    "event_type": "opening",
+    "start": "2026-11-15T11:00:00-08:00",
+    "end": "2026-11-16",
+    "all_day": false,
+    "url": "https://www.amoca.org/calendar/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "amoca.org",
+    "scraped_at": "2026-11-15T14:36:36+00:00",
+    "event_types": [
+      "opening",
+      "fair"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
     "id": "hammer-2026-11-15-826lahammer-rooted-and-rising-honing-you-23fa075193",
     "venue_id": "hammer",
     "title": "826LA@Hammer: Rooted and Rising: Honing Your Roots through Writing to Empower Yourself and Your Community",
@@ -37817,6 +37820,52 @@
     "_asserted_type": "closing"
   },
   {
+    "id": "academy_museum-2026-11-15-the-grand-budapest-hotel-in-35mm-8e8f9ad947",
+    "venue_id": "academy_museum",
+    "title": "The Grand Budapest Hotel in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-15T14:00:00-08:00",
+    "end": "2026-11-16",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-grand-budapest-hotel-019fcead-4761-2c05-b6ca-afca843ad169",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/4AUHAnsEe5DiZTwmELbKbI/61a1f1e4b468919fa7af19f91de51eb6/Nov15_GRAND_BUDAPEST_HOTEL_OscarSundays3MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-15T14:35:45+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "academy_museum-2026-11-15-paisn-in-35mm-4b9170417e",
+    "venue_id": "academy_museum",
+    "title": "Paisàn in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-15T14:30:00-08:00",
+    "end": "2026-11-16",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/paisan-019fceae-f096-eafc-82d4-f45ed5f0628e",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5KFWEbKm2SAgVje3GTtZZj/2b7102364ef8f49a7eba59108d60e126/Nov15_PAISAN_Rosselini3janus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-15T14:35:45+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
     "id": "getty_center-2026-11-15-oaxacan-recipes-and-remembrance-with-bri-7fe642700f",
     "venue_id": "getty_center",
     "title": "Oaxacan Recipes and Remembrance with Bricia Lopez",
@@ -37885,5 +37934,121 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-16-member-shopping-days-383c039c18",
+    "venue_id": "lacma",
+    "title": "Member Shopping Days",
+    "description": "Member Shopping Days mean extra discounts to thank members for supporting LACMA! Double your member discount at the LACMA Store in person and online, and enjoy 20% off select merchandise instead of your usual 10% off...",
+    "event_type": "other",
+    "start": "2026-11-16T11:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/member-shopping-days-nov16",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-10/SF3780_11.jpg?VersionId=zlrLBtnm9hvm3Q2NUrGf9CJgOk9hasZA&itok=WIgmEy1L",
+    "artists": [],
+    "location_override": "The LACMA Store at the David Geffen Galleries, Online | LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-16T16:50:56+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-16-academy-awardcontender-series-bunker-and-ccfa6bedbb",
+    "venue_id": "lacma",
+    "title": "Academy Award®-Contender Series: Bunker and Post-Screening C...",
+    "description": "LACMA members at the Friend-level and above are invited to join FILM at LACMA for a special advance screening ofBunker, with a pre-reception and a conversation with star Penélope Cruz and director Florian Zeller...",
+    "event_type": "screening",
+    "start": "2026-11-16T12:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/exclusive-member-screening-bunker",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-11/Bunker%20Image%201%20copy.jpg?VersionId=9nQ0TwfDWl_Cg00bXsGLf85QHK3qJ5xq&itok=YsORUjFn",
+    "artists": [],
+    "location_override": null,
+    "source": "lacma.org",
+    "scraped_at": "2026-11-16T16:50:56+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-11-16-experimental-animation-visiting-artists-78d479979b",
+    "venue_id": "calarts",
+    "title": "Experimental Animation Visiting Artists (EAVA) Series - Jordan Wong",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-16T16:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/experimental-animation-visiting-artists-eava-series-jordan-wong",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-16T16:51:26+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-16-member-monday-paul-r-williams-home-of-th-6e1d4de026",
+    "venue_id": "lacma",
+    "title": "Member Monday | Paul R. Williams, Home of the Future, Textil...",
+    "description": "Member Mondays are extended evening hours spotlighting select exhibitions, exclusively for LACMA members...",
+    "event_type": "exhibition",
+    "start": "2026-11-16T18:30:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/member-monday-nov16",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-10/SF3758_33.jpg?VersionId=eD7BSldgnp6kkhSDVdlHRmpfXFh5xnYt&itok=TU9DkJp_",
+    "artists": [],
+    "location_override": "Resnick Pavilion | LACMA, LACMA",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-16T16:50:56+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-17-lamore-in-35mm-5ba303599c",
+    "venue_id": "academy_museum",
+    "title": "L’amore in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-16T19:30:00-08:00",
+    "end": "2026-11-16T20:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/lamore-019fceb4-23c7-f820-6cf6-bf395ffa1298",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/1EjEMKYdIpTPAbfT4FFgto/bb7fea84f145ec84dcc121eaa122bb33/Nov16_LAMORE_Rossellini1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-16T16:51:09+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
   }
 ]

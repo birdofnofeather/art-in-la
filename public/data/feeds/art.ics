@@ -6,111 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:Art in LA — Art venues
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-UID:amoca-2026-11-15-reopening-celebration-df8958e6bd@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261115T190000Z
-SUMMARY:Re-Opening Celebration
-LOCATION:399 N Garey Ave\, Pomona\, CA 91767
-URL:https://www.amoca.org/calendar/
-DESCRIPTION:American Museum of Ceramic Art · Free · https://www.amoca.or
- g/calendar/\n\nJoin us for a re-opening celebration at AMOCA and enjoy fr
- ee admission\, family fun\, and activations of the museum’s newly renov
- ated spaces! Admission to today's event is complimentary with advance reg
- istration. Learn more and register at https://www.amoca.org/events/re-ope
- ning-celebration/
-END:VEVENT
-BEGIN:VEVENT
-UID:academy_museum-2026-11-15-the-grand-budapest-hotel-in-35mm-8e8f9ad947@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261115T220000Z
-SUMMARY:The Grand Budapest Hotel in 35mm
-LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
-URL:https://www.academymuseum.org/en/programs/detail/the-grand-budapest-ho
- tel-019fcead-4761-2c05-b6ca-afca843ad169
-DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
- .org/en/programs/detail/the-grand-budapest-hotel-019fcead-4761-2c05-b6ca-
- afca843ad169
-END:VEVENT
-BEGIN:VEVENT
-UID:academy_museum-2026-11-15-paisn-in-35mm-4b9170417e@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261115T223000Z
-SUMMARY:Paisàn in 35mm
-LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
-URL:https://www.academymuseum.org/en/programs/detail/paisan-019fceae-f096-
- eafc-82d4-f45ed5f0628e
-DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
- .org/en/programs/detail/paisan-019fceae-f096-eafc-82d4-f45ed5f0628e
-END:VEVENT
-BEGIN:VEVENT
-UID:beyond_baroque-2026-11-16-monday-night-fiction-workshop-with-raque-c1b3b433b9@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART;VALUE=DATE:20261116
-SUMMARY:Monday Night Fiction Workshop with Raquel Baker
-LOCATION:681 Venice Blvd\, Venice\, CA 90291
-URL:https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445
- -6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n-9n336
-DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
- que.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-
- kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n-9n336\n\nA community writing workshop
-  in which participants are asked to bring 2-3 pages of fiction to read an
- d receive feedback. Facilitated by Raquel Baker via Zoom. Registration re
- quired.
-END:VEVENT
-BEGIN:VEVENT
-UID:lacma-2026-11-16-member-shopping-days-383c039c18@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261116T190000Z
-SUMMARY:Member Shopping Days
-LOCATION:The LACMA Store at the David Geffen Galleries\, Online | LACMA
-URL:https://www.lacma.org/event/member-shopping-days-nov16
-DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
- t/member-shopping-days-nov16\n\nMember Shopping Days mean extra discounts
-  to thank members for supporting LACMA! Double your member discount at th
- e LACMA Store in person and online\, and enjoy 20% off select merchandise
-  instead of your usual 10% off...
-END:VEVENT
-BEGIN:VEVENT
-UID:lacma-2026-11-16-academy-awardcontender-series-bunker-and-ccfa6bedbb@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261116T200000Z
-SUMMARY:Academy Award®-Contender Series: Bunker and Post-Screening C...
-LOCATION:5905 Wilshire Blvd\, Los Angeles\, CA 90036
-URL:https://www.lacma.org/event/exclusive-member-screening-bunker
-DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
- t/exclusive-member-screening-bunker\n\nLACMA members at the Friend-level 
- and above are invited to join FILM at LACMA for a special advance screeni
- ng ofBunker\, with a pre-reception and a conversation with star Penélope
-  Cruz and director Florian Zeller...
-END:VEVENT
-BEGIN:VEVENT
-UID:calarts-2026-11-16-experimental-animation-visiting-artists-78d479979b@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261117T003000Z
-SUMMARY:Experimental Animation Visiting Artists (EAVA) Series - Jordan Won
- g
-LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
-URL:https://calarts.edu/calarts-events/experimental-animation-visiting-art
- ists-eava-series-jordan-wong
-DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
- edu/calarts-events/experimental-animation-visiting-artists-eava-series-jo
- rdan-wong
-END:VEVENT
-BEGIN:VEVENT
-UID:academy_museum-2026-11-17-lamore-in-35mm-5ba303599c@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261117T033000Z
-DTEND:20261117T043000Z
-SUMMARY:L’amore in 35mm
-LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
-URL:https://www.academymuseum.org/en/programs/detail/lamore-019fceb4-23c7-
- f820-6cf6-bf395ffa1298
-DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
- .org/en/programs/detail/lamore-019fceb4-23c7-f820-6cf6-bf395ffa1298
-END:VEVENT
-BEGIN:VEVENT
 UID:huntington-2026-11-17-writing-the-novel-abstraction-as-source-51be6c700e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261117
 SUMMARY:Writing the Novel: Abstraction as Source or Departure
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -122,7 +19,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-17-school-of-music-visiting-artist-ryan-lot-2d8f1d7da0@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261117T180000Z
 SUMMARY:School of Music Visiting Artist - Ryan Lott
 LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
@@ -133,7 +30,7 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-17-member-shopping-days-a7a564ccf2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261117T190000Z
 SUMMARY:Member Shopping Days
 LOCATION:The LACMA Store at the David Geffen Galleries | LACMA
@@ -146,7 +43,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:fowler-2026-11-17-curator-talk-reclaiming-our-historyrenew-1f50a5778d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261117T193000Z
 SUMMARY:Curator Talk: Reclaiming Our History—Renewing Connections with M
  āori Taonga
@@ -160,7 +57,7 @@ DESCRIPTION:Fowler Museum at UCLA · https://fowler.ucla.edu/events/curato
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-17-artist-walkthrough-jamea-richmondedwards-cadaeb49ea@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261117T220000Z
 DTEND:20261117T230000Z
 SUMMARY:Artist Walkthrough: Jamea Richmond-Edwards: Another World and Yet 
@@ -175,7 +72,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-17-cocreate-studio-open-house-tours-3e3db4fa8b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T000000Z
 DTEND:20261118T003000Z
 SUMMARY:Co-Create Studio Open House Tours
@@ -192,7 +89,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-17-communities-create-la-blossoms-in-waterc-71dba193cf@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T000000Z
 SUMMARY:Communities Create LA! Blossoms in Watercolor
 LOCATION:A C Bilbrew Library
@@ -205,7 +102,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-17-communities-create-la-da-de-los-muertos-8b0a008108@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T000000Z
 SUMMARY:Communities Create LA! Día de los Muertos Calavera
 LOCATION:A C Bilbrew Library
@@ -220,18 +117,19 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:chinese_american_museum-2026-11-17-kids-storytime-96425fcc26@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T000000Z
 SUMMARY:Kids’ Storytime
 LOCATION:425 N Los Angeles St\, Los Angeles\, CA 90012
 URL:https://camla.org/upcoming-events/
 DESCRIPTION:Chinese American Museum · https://camla.org/upcoming-events/\
- n\nMs. Rita from the Los Angeles Public Library’s Chinatown Branch read
- s My Someone: A Pet Adoption Story by Yuko Torii on Zoom.
+ n\nJoin the Chinese American Museum and Ms. Rita from the Los Angeles Pub
+ lic Library’s Chinatown Branch for this month’s Kids’ Storytime on 
+ Tuesday\, November 17\, at 4pm PST\, hosted virtually on Zoom.
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-11-17-evening-for-educators-coffee-community-y-d111541424@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T003000Z
 DTEND:20261118T023000Z
 SUMMARY:Evening for Educators: Coffee\, Community\, y Cuentas
@@ -247,7 +145,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-17-intersection-with-banita-mistry-2574a05542@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T010000Z
 DTEND:20261118T030000Z
 SUMMARY:Intersection with Banita Mistry
@@ -264,7 +162,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-11-17-student-recital-0a2f7824c7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T033000Z
 DTEND:20261118T050000Z
 SUMMARY:Student Recital
@@ -277,8 +175,8 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-17-possible-love-8ecabd0f62@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261118T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261118T033057Z
 SUMMARY:Possible Love
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/possible-love
@@ -290,7 +188,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-18-american-landmarks-the-walking-purchase-7a94ffd084@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261118
 SUMMARY:American Landmarks: The Walking Purchase of 1737
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -302,7 +200,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-18-drawing-from-the-gallery-8ae2c17b94@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261118
 SUMMARY:Drawing from the Gallery
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -312,8 +210,8 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-18-lunchtime-art-talk-on-anonymous-ad9b2ebdda@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261118T203054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261118T203057Z
 SUMMARY:Lunchtime Art Talk on Anonymous
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-anonym
@@ -324,7 +222,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-18-visita-guiada-con-la-curadora-instantere-d2ae724c20@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T230000Z
 SUMMARY:Visita guiada con la curadora: *Instante/revelación* (español)
 LOCATION:Getty Center
@@ -336,7 +234,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/visita-guia
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-18-communities-create-la-painting-with-yarn-5359a8b0af@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261118T233000Z
 SUMMARY:Communities Create LA! Painting with Yarn
 LOCATION:Lennox Library
@@ -349,7 +247,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-18-school-of-music-visiting-artist-jennifer-c39a65072e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T000000Z
 SUMMARY:School of Music Visiting Artist - Jennifer Kampani
 LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
@@ -360,7 +258,7 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-11-18-a-healing-story-circle-a-return-to-the-r-44fcf5656e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T010000Z
 DTEND:20261119T030000Z
 SUMMARY:A Healing Story Circle: A Return to the Roots with Miguel Rivera a
@@ -379,7 +277,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:fowler-2026-11-18-fowler-out-loud-readymade-a0e8977931@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T010000Z
 SUMMARY:Fowler Out Loud: readymade
 LOCATION:308 Charles E Young Dr N\, Los Angeles\, CA 90024
@@ -391,7 +289,7 @@ DESCRIPTION:Fowler Museum at UCLA · https://fowler.ucla.edu/events/fowler
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-18-herhealing8217s-monthly-sister-circle-42bb17954a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T023000Z
 DTEND:20261119T033000Z
 SUMMARY:HerHealing’s Monthly Sister Circle
@@ -406,7 +304,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/herhealings-mont
 END:VEVENT
 BEGIN:VEVENT
 UID:ica_la-2026-11-18-cyberdeck-diary-with-whisper-fa1d5cc571@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T030000Z
 SUMMARY:Cyberdeck Diary with Whisper
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -416,7 +314,7 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-18-in-conversation-fred-wilson-and-gannit-a-771c7fe5a8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T030000Z
 DTEND:20261119T040000Z
 SUMMARY:In Conversation: Fred Wilson and Gannit Ankori
@@ -429,7 +327,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-18-paul-r-williams-and-the-idea-of-home-d1bdc90208@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T030000Z
 SUMMARY:Paul R. Williams and the Idea of Home
 LOCATION:East West Bank Commons
@@ -441,7 +339,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-19-the-getaway-in-35mm-59985f92fc@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T033000Z
 DTEND:20261119T063000Z
 SUMMARY:The Getaway in 35mm
@@ -453,8 +351,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-18-archive-talks-trouble-in-paradise-df84d7d9cd@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261119T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261119T033057Z
 SUMMARY:Archive Talks: Trouble in Paradise
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/archive-talks-trouble-par
@@ -467,7 +365,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-11-19-creative-wellbeing-through-visual-art-ge-6bde7ce117@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:Creative Wellbeing Through Visual Art: Getting to Know Your Neighb
  or
@@ -481,7 +379,7 @@ DESCRIPTION:Armory Center for the Arts · https://armoryarts.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:self_help_graphics-2026-11-19-curatorial-walkthrough-and-panel-discuss-3054e945d4@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:Curatorial Walkthrough and Panel Discussion: Monarchs & Migration
 LOCATION:1300 E 1st St\, Los Angeles\, CA 90033
@@ -491,34 +389,20 @@ DESCRIPTION:Self Help Graphics & Art · https://www.selfhelpgraphics.com/u
  pcoming-events/111926-monarchsandmigrationpanel
 END:VEVENT
 BEGIN:VEVENT
-UID:jaccc-2026-11-19-little-tokyo-breakfast-club-dc1c26f582@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART;VALUE=DATE:20261119
-SUMMARY:Little Tokyo Breakfast Club
-LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
-URL:https://jaccc.org/events/little-tokyo-breakfast-club-november-2026/
-DESCRIPTION:Japanese American Cultural & Community Center · $10 · https:
- //jaccc.org/events/little-tokyo-breakfast-club-november-2026/\n\n• 8:30
-  am - 10:00 am Where TWCCC & James Irvine Japanese Garden 244 S. San Pedr
- o Street\, Los Angeles\, CA 90012 Price $10.00 (fees included) Includes a
-  traditional Japanese breakfast. Walk-up Availability Refer to this secti
- on for day-of availability. Buy Tickets Share About Join us on the third 
- Thursday of every month for the Little Tokyo Breakfas
-END:VEVENT
-BEGIN:VEVENT
 UID:beyond_baroque-2026-11-19-the-cabinet-of-dr-caligari-screening-wit-8852601a7d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:The Cabinet of Dr. Caligari\, Screening with Live Score + Readings
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
 URL:https://www.beyondbaroque.org/calendar/cabinet-of-dr-caligari-screenin
  g-with-live-score
 DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
- que.org/calendar/cabinet-of-dr-caligari-screening-with-live-score
+ que.org/calendar/cabinet-of-dr-caligari-screening-with-live-score\n\nCabi
+ net of Dr. Caligari Screening with Live Score.
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-19-visualization-of-ideals-and-realization-971261aa61@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:Visualization of Ideals and Realization of Life Philosophy: Poetry
   and the Garden Soswaewon
@@ -531,7 +415,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:lacp-2026-11-19-the-crux-of-visibility-portraits-vision-9f7ab979c7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261119T200000Z
 SUMMARY:The Crux of Visibility: Portraits\, Vision\, and Empathy – Virtu
  al Exhibition Opening Reception
@@ -542,7 +426,7 @@ DESCRIPTION:Los Angeles Center of Photography · https://lacphoto.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-19-curator-walkthrough-of-the-brockman-gall-aba2cee04c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T000000Z
 SUMMARY:Curator Walkthrough of The Brockman Gallery: Los Angeles\, 19...
 LOCATION:BCAM\, Level 1
@@ -555,7 +439,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:fowler-2026-11-19-fowler-talk-vodou-art-and-resilience-825fe1eb3e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T010000Z
 SUMMARY:Fowler Talk: Vodou\, Art\, and Resilience
 LOCATION:308 Charles E Young Dr N\, Los Angeles\, CA 90024
@@ -567,7 +451,7 @@ DESCRIPTION:Fowler Museum at UCLA · https://fowler.ucla.edu/events/fowler
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-19-legados-de-fotgrafos-mexicanos-legacies-c452a20748@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T010000Z
 SUMMARY:Legados de fotógrafos mexicanos | Legacies of Mexican Photographe
  rs
@@ -578,7 +462,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/legacies-me
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-19-sacred-heritage-in-the-andes-conserving-a933e9deff@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T020000Z
 SUMMARY:Sacred Heritage in the Andes: Conserving the Baroque Church of Ron
  docan
@@ -590,7 +474,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/sacred-heri
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-19-a-century-of-the-new-yorker-covers-6134275214@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T030000Z
 SUMMARY:A Century of The New Yorker Covers
 LOCATION:East West Bank Commons
@@ -600,8 +484,20 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
  ed\, provoked\, and captured the spirit of the times...
 END:VEVENT
 BEGIN:VEVENT
+UID:calarts-2026-11-19-creative-writing-mfas-writing-now-readin-e9dadfa8c5@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261120T030000Z
+SUMMARY:Creative Writing MFA's Writing Now Reading series: Matt Sedillo
+LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
+URL:https://calarts.edu/calarts-events/creative-writing-mfas-writing-now-r
+ eading-series-matt-sedillo
+DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
+ edu/calarts-events/creative-writing-mfas-writing-now-reading-series-matt-
+ sedillo
+END:VEVENT
+BEGIN:VEVENT
 UID:caam-2026-11-19-jazz-at-caam-miles-davis-100-with-keyon-0a10c3b1fa@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T030000Z
 DTEND:20261120T040000Z
 SUMMARY:Jazz at CAAM: Miles Davis 100 with Keyon Harrold
@@ -615,7 +511,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-20-50th-anniversary-of-carrie-with-sissy-sp-a0dd260d93@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T033000Z
 DTEND:20261120T053000Z
 SUMMARY:50th Anniversary of Carrie with Sissy Spacek
@@ -628,8 +524,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-19-the-invite-4696b03373@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261120T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261120T033057Z
 SUMMARY:The Invite
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/invite
@@ -640,18 +536,19 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond_baroque-2026-11-20-la-book-launch-daughter-of-salt-by-leila-937950e6fd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:L.A. Book Launch: Daughter of Salt by Leila Farjami
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
 URL:https://www.beyondbaroque.org/calendar/daughter-of-salt-by-leila-farja
  mi
 DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
- que.org/calendar/daughter-of-salt-by-leila-farjami
+ que.org/calendar/daughter-of-salt-by-leila-farjami\n\nDaughter of Salt by
+  Leila Farjami.
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-11-20-nurtured-flames-gather-film-screening-co-35c3f6068e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:Nurtured Flames: Gather— Film Screening & Community Conversation
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -665,7 +562,7 @@ DESCRIPTION:Armory Center for the Arts · https://armoryarts.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-20-the-huntington-holiday-market-preview-b112baa161@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:The Huntington Holiday Market Preview
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -675,7 +572,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-11-20-making-history-manets-execution-of-maxim-f9508017e8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T210000Z
 DTEND:20261120T220000Z
 SUMMARY:Making History: Manet’s Execution of Maximilian from the Nationa
@@ -690,7 +587,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-20-modern-dance-figure-drawing-ce34994f12@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T220000Z
 SUMMARY:Modern Dance Figure Drawing
 LOCATION:BCAM\, Level 3
@@ -703,7 +600,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-20-the-misfits-in-4k-1e6181beda@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261120T223000Z
 SUMMARY:The Misfits in 4K
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
@@ -714,7 +611,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-20-behind-the-scenes-lighting-lacma-e3d379720d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T000000Z
 SUMMARY:Behind the Scenes: Lighting LACMA
 LOCATION:David Geffen Galleries
@@ -725,7 +622,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-dropin-workshop-for-teens-editing-for-ho-0a3984239e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T003000Z
 DTEND:20261121T023000Z
 SUMMARY:Drop-in Workshop for Teens: Editing for Horror Films
@@ -738,7 +635,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-20-alumni-night-at-the-odyssey-theater-the-2a1d9ad2dd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T030000Z
 SUMMARY:Alumni Night at the Odyssey Theater The Farce Awakens: Feydeau x 2
   directed by Daniel Passer
@@ -749,7 +646,7 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://alumnini
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-20-musicwords-la-curated-by-inna-faliks-3b6315236a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T030000Z
 DTEND:20261121T050000Z
 SUMMARY:Music/Words LA: Curated by Inna Faliks
@@ -765,7 +662,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/music-words-la-c
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-journey-to-italy-viaggio-in-italia-in-4k-7f65353b21@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T033000Z
 DTEND:20261121T063000Z
 SUMMARY:Journey to Italy (Viaggio in Italia) in 4K
@@ -778,7 +675,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-20-beca-villanueva-bfa-midresidency-recital-2223b4d8da@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T040000Z
 SUMMARY:Beca Villanueva BFA Mid-Residency Recital
 LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
@@ -789,7 +686,7 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond_baroque-2026-11-21-everything-strange-and-new-a-workshop-wi-18aebf8bf2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:Everything Strange and New: A Workshop with Brendan Constantine
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
@@ -799,7 +696,7 @@ DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond_baroque-2026-11-21-indiependent-voices-a-celebration-of-aut-2c86fab80c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:Indie-Pendent Voices: A Celebration of Authors and Zines
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
@@ -809,18 +706,19 @@ DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond_baroque-2026-11-21-la-book-launch-the-lighthouse-tattoo-by-9ce56eb97e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:L.A. Book Launch: The Lighthouse Tattoo by Jose Hernandez Diaz
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
 URL:https://www.beyondbaroque.org/calendar/the-lighthouse-tattoo-by-jose-h
  ernandez-diaz
 DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
- que.org/calendar/the-lighthouse-tattoo-by-jose-hernandez-diaz
+ que.org/calendar/the-lighthouse-tattoo-by-jose-hernandez-diaz\n\nThe Ligh
+ thouse Tattoo by Jose Hernandez Diaz.
 END:VEVENT
 BEGIN:VEVENT
 UID:lacp-2026-11-21-member-mimosa-hour-86167ef852@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:Member Mimosa Hour
 LOCATION:1515 Wilcox Ave\, Los Angeles\, CA 90028
@@ -830,7 +728,7 @@ DESCRIPTION:Los Angeles Center of Photography · https://lacphoto.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:angels_gate--open-studios-day-fall-2026-d28e423810@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:Open Studios Day | Fall 2026
 LOCATION:3601 S Gaffey St\, San Pedro\, CA 90731
@@ -840,7 +738,7 @@ DESCRIPTION:Angels Gate Cultural Center · Free · https://angelsgateart.o
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond_baroque-2026-11-21-table-reading-9e0b546478@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:Table Reading
 LOCATION:681 Venice Blvd\, Venice\, CA 90291
@@ -849,12 +747,12 @@ URL:https://www.beyondbaroque.org/calendar/what-remains-erasure-as-resista
 DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
  que.org/calendar/what-remains-erasure-as-resistance-and-reclamation-l72a5
  -l4ya9-56er6\n\nJoin us for a session of careful\, attentive live reading
-  and interpretation of "What is Authority" by Hannah Arendt and The Schoo
- l of Public Life by the late Fred Dewey.
+  and interpretation of “What is Authority” by Hannah Arendt and The S
+ chool of Public Life by the late Fred Dewey.
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-21-the-huntington-holiday-market-2c52131ed5@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:The Huntington Holiday Market
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -864,7 +762,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-21-love-exclusive-photo-opportunity-cd1ac18f09@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261121
 SUMMARY:‘LOVE’ Exclusive Photo Opportunity
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -874,7 +772,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-sound-bath-in-the-david-geffen-galleries-dd8ca6336d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T170000Z
 SUMMARY:Sound Bath in the David Geffen Galleries
 LOCATION:David Geffen Galleries
@@ -885,7 +783,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-adult-art-class-expressionist-printmakin-35e66d4693@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T180000Z
 SUMMARY:Adult Art Class: Expressionist Printmaking
 LOCATION:LACMA | LACMA
@@ -896,7 +794,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/node
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-live-from-the-whitney-operators-act-iii-0d6702702a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T180000Z
 SUMMARY:Live from the Whitney: Operator's Act III
 LOCATION:W.M. Keck Plaza
@@ -909,7 +807,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-paul-revere-was-here-copresented-with-lo-92bc2432f4@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T180000Z
 SUMMARY:Paul Revere Was Here\, Co-presented with Los Angeles Conserva...
 LOCATION:Around Los Angeles\, LACMA
@@ -920,8 +818,20 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
  Was Herehas been added at 12 pm...
 END:VEVENT
 BEGIN:VEVENT
+UID:jaccc-2026-11-21-sashiko-with-sanae-suzuki-26e3c40dda@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261121T180000Z
+SUMMARY:Sashiko with Sanae Suzuki
+LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
+URL:https://jaccc.org/events/sashiko-with-sanae-suzuki/
+DESCRIPTION:Japanese American Cultural & Community Center · https://jaccc
+ .org/events/sashiko-with-sanae-suzuki/\n\nReturning by popular demand\, t
+ his two-session sashiko series led by Sanae Suzuki introduces the foundat
+ ions of Japanese stitching alongside ...
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2026-11-21-reuters-at-175-connecting-the-world-thro-c144472eb8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T190000Z
 DTEND:20261121T210000Z
 SUMMARY:Reuters at 175: Connecting the World Through Radio
@@ -939,7 +849,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/reuters-at-175-c
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-wendell-wild-2ddc497836@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T190000Z
 DTEND:20261121T203000Z
 SUMMARY:Wendell & Wild
@@ -951,7 +861,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-chess-at-lacma-9d08669d29@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T200000Z
 SUMMARY:Chess at LACMA
 LOCATION:W.M. Keck Plaza
@@ -964,7 +874,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-21-double-dutch-at-lacma-bca5372455@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T200000Z
 SUMMARY:Double Dutch at LACMA
 LOCATION:Smidt Welcome Plaza
@@ -977,7 +887,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/node
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-dropin-workshop-for-families-shadow-pupp-f301d6faae@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T203000Z
 DTEND:20261121T223000Z
 SUMMARY:Drop-in Workshop for Families: Shadow Puppet Storytelling
@@ -990,7 +900,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:fowler-2026-11-21-special-program-counterhistoriesmemory-m-3c51369ddd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T210000Z
 SUMMARY:Special Program: Counter-Histories—Memory\, Materiality\, & Sout
  h Asian Artistic Practices
@@ -1007,7 +917,7 @@ DESCRIPTION:Fowler Museum at UCLA · https://fowler.ucla.edu/events/specia
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-11-21-what-is-a-western-sheriff-walter-johnson-0355f86282@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T213000Z
 DTEND:20261122T000000Z
 SUMMARY:What Is a Western? |Sheriff Walter Johnson(2024)
@@ -1019,7 +929,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-21-caam-creates-with-design-hive-reggie-bur-9d6d7d8867@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T220000Z
 DTEND:20261121T233000Z
 SUMMARY:CAAM Creates with Design Hive: Reggie Burrows Hodges: A Theater of
@@ -1035,7 +945,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-21-visualizing-the-cosmos-science-art-histo-090259d29d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T220000Z
 DTEND:20261122T003000Z
 SUMMARY:Visualizing the Cosmos: Science | Art | History
@@ -1052,7 +962,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/visualizing-the-
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-21-the-misfits-in-4k-with-kim-morgan-c80756aea7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261121T223000Z
 SUMMARY:The Misfits in 4K with Kim Morgan
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
@@ -1062,8 +972,18 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
  .org/en/programs/detail/the-misfits-019fceb2-f294-8b76-65ba-9dfb991f3ebc
 END:VEVENT
 BEGIN:VEVENT
+UID:calarts-2026-11-21-calarts-reef-open-house-open-studio-bd5e7a6d65@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261122T010000Z
+SUMMARY:CalArts: Reef Open House & Open Studio
+LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
+URL:https://calarts.edu/calarts-events/calarts-reef-open-house-open-studio
+DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
+ edu/calarts-events/calarts-reef-open-house-open-studio
+END:VEVENT
+BEGIN:VEVENT
 UID:autry-2026-11-21-autry-tree-lighting-holiday-celebration-6b9bb7418b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T020000Z
 DTEND:20261122T050000Z
 SUMMARY:Autry Tree Lighting Holiday Celebration
@@ -1076,7 +996,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:vincent_price-2026-11-21-endofyear-exhibitions-518a2942ef@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T020000Z
 DTEND:20261122T040000Z
 SUMMARY:opening reception for end-of-year Exhibitions
@@ -1093,7 +1013,7 @@ DESCRIPTION:Vincent Price Art Museum · https://vpam.org/event/opening-rec
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-22-stromboli-in-35mm-9f58cd4c8a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T033000Z
 DTEND:20261122T063000Z
 SUMMARY:Stromboli in 35mm
@@ -1105,8 +1025,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-21-60th-anniversary-screening-hollywood-squ-673e1acaf7@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261122T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261122T033057Z
 SUMMARY:60th Anniversary Screening: Hollywood Squares
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/60th-anniversary-screenin
@@ -1118,7 +1038,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-21-jax-and-miles-midres-recital-e4f44df88d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T040000Z
 SUMMARY:Jax and Miles' Mid-Res Recital
 LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
@@ -1127,8 +1047,18 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
  edu/calarts-events/jax-and-miles-mid-res-recital
 END:VEVENT
 BEGIN:VEVENT
+UID:beyond_baroque-2026-11-22-popup-poems-at-lacma-67c8822508@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART;VALUE=DATE:20261122
+SUMMARY:Pop-Up Poems at LACMA
+LOCATION:681 Venice Blvd\, Venice\, CA 90291
+URL:https://www.beyondbaroque.org/calendar/pop-up-poems-at-lacma
+DESCRIPTION:Beyond Baroque / Mike Kelley Gallery · https://www.beyondbaro
+ que.org/calendar/pop-up-poems-at-lacma
+END:VEVENT
+BEGIN:VEVENT
 UID:museum_of_tolerance-2026-11-22-susanne-reyto-951f479faa@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261122
 SUMMARY:Susanne Reyto
@@ -1139,7 +1069,7 @@ DESCRIPTION:Museum of Tolerance · https://museumoftolerance.com/event/wtt
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-22-love-exclusive-photo-opportunity-02b682b8f2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261122
 SUMMARY:‘LOVE’ Exclusive Photo Opportunity
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -1149,7 +1079,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-images-and-imagination-collage-workshop-c5184cdfb7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -1159,7 +1089,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-22-popup-poems-e61a264f96@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T190000Z
 SUMMARY:Pop-Up Poems
 LOCATION:Smidt Welcome Plaza
@@ -1170,8 +1100,8 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-22-thoku-documentary-trilogy-21229caa78@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261122T190054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261122T190057Z
 SUMMARY:Tōhoku Documentary Trilogy
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/tohoku-documentary-trilog
@@ -1183,7 +1113,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-artistatwork-serigraphy-artista-en-accin-046a7aa0ea@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -1193,25 +1123,20 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:sparc-2026-11-22-workshop-autumn-leaf-monoprinting-worksh-79bafe9fa9@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T203000Z
-DTEND:20261123T013000Z
-SUMMARY:[Workshop] Autumn Leaf Monoprinting Workshops
+SUMMARY:Workshop: Autumn Leaf Monoprinting Workshops
 LOCATION:685 Venice Blvd\, Venice\, CA 90291
 URL:https://sparcinla.org/event/workshop-autumn-leaf-monoprinting-workshop
  s/
 DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
- inla.org/event/workshop-autumn-leaf-monoprinting-workshops/\n\nSunday\, N
- ov 22 Join Us for a Free Community Art Workshop with Elsie Sims\, artist-
- in-residence Two Workshop Options: Workshop for all ages: 12:30pm – 2:3
- 0pm Workshop for all ages: 3:30pm – 5:30pm SPACE IS LIMITED! Use this f
- orm to register for one of these two FREE workshops below. You may regist
- er multiple people for a workshop. No experience needed\, all supplies pr
- ovided! All workshops take place
+ inla.org/event/workshop-autumn-leaf-monoprinting-workshops/\n\nFree commu
+ nity art workshop with Elsie Sims\, artist-in-residence\; two sessions\, 
+ 12:30pm–2:30pm and 3:30pm–5:30pm\, space is limited.
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-11-22-comics-the-heritage-of-a-latinoax-40de09a322@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T210000Z
 DTEND:20261122T230000Z
 SUMMARY:Comics: The Heritage of a Latino/a/x
@@ -1227,7 +1152,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-11-22-rembrandt-painting-with-light-50be196b1a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T210000Z
 DTEND:20261122T220000Z
 SUMMARY:Rembrandt: Painting with Light
@@ -1239,8 +1164,8 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-22-artist-walkthrough-felipe-baeza-anima-a0d1b6df28@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261122T210054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261122T210057Z
 SUMMARY:Artist Walk-through: Felipe Baeza: Anima
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/artist-walk-through-felip
@@ -1252,7 +1177,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:lacma-2026-11-22-eileen-cowin-and-fred-tomaselli-on-makin-e9787fe70b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T220000Z
 SUMMARY:Eileen Cowin and Fred Tomaselli on Making Art in Turbulent T...
 LOCATION:BCAM\, Level 2
@@ -1264,7 +1189,7 @@ DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-22-the-favourite-dcc999962c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T220000Z
 SUMMARY:The Favourite
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
@@ -1276,7 +1201,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-11-22-zine-workshop-jamea-richmondedwards-anot-951fbc390c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261122T220000Z
 DTEND:20261122T233000Z
 SUMMARY:Zine Workshop: Jamea Richmond-Edwards: Another World and Yet the S
@@ -1291,8 +1216,8 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-22-shakespeares-most-misunderstood-play-rob-9c1dca88b1@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261122T220054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261122T220057Z
 SUMMARY:Shakespeare’s Most Misunderstood Play: Robert N. Watson on Hamle
  t
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
@@ -1306,7 +1231,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:calarts-2026-11-22-song-garland-76ad277d5e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261123T010000Z
 SUMMARY:Song Garland
 LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
@@ -1316,7 +1241,7 @@ DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:autry-2026-11-22-burbank-human-relations-council-night-at-b004da0ee1@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261123T013000Z
 DTEND:20261123T040000Z
 SUMMARY:Burbank Human Relations Council Night at The Autry Museum
@@ -1329,7 +1254,7 @@ DESCRIPTION:Autry Museum of the American West · https://theautry.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-22-getty-supper-club-la-belle-poque-742f7f2f97@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261123T020000Z
 SUMMARY:Getty Supper Club: La Belle Époque
 LOCATION:Getty Center
@@ -1339,7 +1264,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/getty-suppe
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-23-the-flowers-of-st-francis-francesco-giul-98ef02b5d6@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261123T023000Z
 DTEND:20261123T063000Z
 SUMMARY:The Flowers of St. Francis (Francesco\, giullare di Dio) in 35mm
@@ -1352,7 +1277,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:fowler-2026-11-23-fowler-talk-native-american-curators-in-84d097b0e5@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261123T193000Z
 SUMMARY:Fowler Talk: Native American Curators in Conversation
 LOCATION:308 Charles E Young Dr N\, Los Angeles\, CA 90024
@@ -1364,18 +1289,19 @@ DESCRIPTION:Fowler Museum at UCLA · https://fowler.ucla.edu/events/fowler
  ative...
 END:VEVENT
 BEGIN:VEVENT
-UID:calarts-2026-11-23-jazz-forum-katisse-buckingham-6e1173d1ad@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261123T210000Z
-SUMMARY:Jazz Forum - Katisse Buckingham
-LOCATION:24700 McBean Pkwy\, Valencia\, CA 91355
-URL:https://calarts.edu/calarts-events/jazz-forum-katisse-buckingham
-DESCRIPTION:California Institute of the Arts (CalArts) · https://calarts.
- edu/calarts-events/jazz-forum-katisse-buckingham
+UID:lacma-2026-11-23-an-evening-with-catherine-opie-0c93ade9c9@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261124T020000Z
+SUMMARY:An Evening with Catherine Opie
+LOCATION:Smidt Welcome Plaza
+URL:https://www.lacma.org/event/evening-catherine-opie
+DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
+ t/evening-catherine-opie\n\nHear from photographer Catherine Opie in conv
+ ersation with LACMA curator Britt Salvesen...
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-23-a-road-of-many-colors-two-films-on-oscar-ba407c7c78@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261124T030000Z
 DTEND:20261124T060000Z
 SUMMARY:A Road of Many Colors: Two Films on Oscar Rabin & Valentina Kropiv
@@ -1391,8 +1317,20 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/a-road-of-many-c
  ter Rabin and his wife\, the painter Valentina 
 END:VEVENT
 BEGIN:VEVENT
+UID:lacma-2026-11-23-film-screening-addams-family-values-302f334576@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261124T033000Z
+SUMMARY:Film Screening: Addams Family Values
+LOCATION:Smidt Welcome Plaza
+URL:https://www.lacma.org/event/addams-family-values
+DESCRIPTION:Los Angeles County Museum of Art · https://www.lacma.org/even
+ t/addams-family-values\n\nGather for an unconventional Turkey Day celebra
+ tion with the dark humor and macabre antics of Barry Sonnenfeld’sAddams
+  Family Values(1993)...
+END:VEVENT
+BEGIN:VEVENT
 UID:academy_museum-2026-11-24-the-machine-that-kills-bad-people-la-mac-92bc3426dc@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261124T033000Z
 DTEND:20261124T063000Z
 SUMMARY:The Machine That Kills Bad People (La macchina ammazzacattivi) in 
@@ -1406,7 +1344,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-11-24-curators-tour-every-minute-is-history-bbadcec663@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261124T230000Z
 SUMMARY:Curator's Tour: *Every Minute is History*
 LOCATION:Getty Center
@@ -1417,7 +1355,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-24-vibe-check-9cecf39df7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261124T230000Z
 DTEND:20261125T010000Z
 SUMMARY:VIBE Check
@@ -1433,8 +1371,8 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/vibe-check/\n\nV
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-11-25-lunchtime-art-talk-on-huguette-caland-dd52cee6ce@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261125T203054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261125T203057Z
 SUMMARY:Lunchtime Art Talk on Huguette Caland
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-huguet
@@ -1446,7 +1384,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:amoca-2026-11-27-black-friglaze-a-family-workshop-5ecdf78edd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261127T193000Z
 DTEND:20261127T203000Z
 SUMMARY:Black FriGlaze! – A Family Workshop
@@ -1462,7 +1400,7 @@ DESCRIPTION:American Museum of Ceramic Art · $35–$50 · https://www.amo
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-28-calm-morning-stopmotion-stories-of-famil-996371075f@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261128T170000Z
 DTEND:20261128T210000Z
 SUMMARY:Calm Morning: Stop-Motion Stories of Family
@@ -1475,7 +1413,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:ica_la-2026-11-28-day-without-art-2026-seeds-in-a-dying-co-c752aeb5cd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261128T190000Z
 SUMMARY:Day With(out) Art 2026: seeds in a dying colony
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -1486,7 +1424,7 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-28-gremlins-2f6bd218ae@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261128T190000Z
 DTEND:20261128T203000Z
 SUMMARY:Gremlins
@@ -1498,7 +1436,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-11-28-molaa-store-holiday-sale-museum-store-su-b6e1eccd2e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261128T190000Z
 DTEND:20261130T020000Z
 SUMMARY:MOLAA Store Holiday Sale & Museum Store Sunday
@@ -1512,7 +1450,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-29-europe-51-0fd1a54547@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261129T033000Z
 DTEND:20261129T063000Z
 SUMMARY:Europe ’51
@@ -1524,7 +1462,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-11-29-mandarin-tour-this-land-is-ba14b33dac@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261129
 SUMMARY:Mandarin Tour: THIS LAND IS ...
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -1534,7 +1472,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:janm-2026-11-29-museum-store-sunday-dc26f32c6b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261129T180000Z
 DTEND:20261129T233000Z
 SUMMARY:Museum Store Sunday
@@ -1545,7 +1483,7 @@ DESCRIPTION:Japanese American National Museum · https://www.janm.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:amoca-2026-11-29-museum-store-sunday-1e8634d901@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261129T190000Z
 SUMMARY:Museum Store Sunday
 LOCATION:399 N Garey Ave\, Pomona\, CA 91767
@@ -1560,7 +1498,7 @@ DESCRIPTION:American Museum of Ceramic Art · https://www.amoca.org/calend
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-11-29-family-day-stomp-rockets-ced892bda2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261129T213000Z
 DTEND:20261130T000000Z
 SUMMARY:Family Day: Stomp Rockets
@@ -1574,7 +1512,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/family-day-stomp
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-29-once-upon-a-time-in-hollywood-in-70mm-8639ce6088@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261129T220000Z
 SUMMARY:Once Upon a Time… in Hollywood in 70mm
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
@@ -1586,7 +1524,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-11-30-fear-la-paura-in-4k-15eb693d61@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261130T023000Z
 DTEND:20261130T063000Z
 SUMMARY:Fear (La Paura) in 4K
@@ -1598,7 +1536,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-12-01-joan-of-arc-at-the-stake-in-35mm-28af74a0de@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261201T033000Z
 DTEND:20261201T063000Z
 SUMMARY:Joan of Arc at the Stake in 35mm
@@ -1611,7 +1549,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-01-deadline-extended-student-forum-2027-app-e6f7971641@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261201
 SUMMARY:DEADLINE EXTENDED: Student Forum 2027 Applications Due
@@ -1627,7 +1565,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/student-forum-20
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-12-01-cocreate-studio-open-house-tours-fa8560d621@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261202T000000Z
 DTEND:20261202T003000Z
 SUMMARY:Co-Create Studio Open House Tours
@@ -1644,7 +1582,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-12-01-intersection-annual-winter-gathering-c47c791283@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261202T010000Z
 DTEND:20261202T030000Z
 SUMMARY:Intersection: Annual Winter Gathering
@@ -1661,7 +1599,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:the_broad-2026-12-01-world-aids-day-how-sex-positivity-saved-314a8f2781@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261202T033000Z
 DTEND:20261202T060000Z
 SUMMARY:World AIDS Day: How Sex Positivity Saved Lives
@@ -1678,7 +1616,7 @@ DESCRIPTION:The Broad · https://www.thebroad.org/events/world-aids-day-ho
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-02-locating-the-ladies-historical-european-66347fc389@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261202
 SUMMARY:Locating the Ladies: Historical European Women Artists at The Hunt
  ington
@@ -1691,8 +1629,8 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-02-lunchtime-art-talk-on-huguette-caland-db87ccad82@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261202T203054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261202T203057Z
 SUMMARY:Lunchtime Art Talk on Huguette Caland
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-huguet
@@ -1704,7 +1642,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-02-exhibition-tour-en-espaol-instanterevela-90f0434581@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261202T230000Z
 SUMMARY:Exhibition Tour en español: *Instante/revelacion: Moments in Mexi
  can Photography*
@@ -1718,19 +1656,19 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/exhibition-
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-02-ancient-objects-modern-histories-a-new-r-0e7955b3fd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261203T000000Z
 SUMMARY:Ancient Objects\, Modern Histories: A New Resource for Provenance 
  Research
-LOCATION:Online & Getty Villa
+LOCATION:Getty Villa & Online
 URL:https://www.getty.edu/calendar/ancient-objects-modern-histories
 DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/ancient-obj
  ects-modern-histories\n\nTalk
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-02-introducing-dorothy-dandridge-d6dfd5f642@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261203T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261203T033057Z
 SUMMARY:Introducing Dorothy Dandridge
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/introducing-dorothy-dandr
@@ -1742,7 +1680,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-03-racist-by-design-in-conversation-with-ke-3c555e33d3@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261203
 SUMMARY:Racist by Design: In Conversation with Kelly Lytle Hernández & Bi
  ll Deverell
@@ -1755,7 +1693,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-03-curators-tour-the-holy-family-at-home-68aff67fe0@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261203T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -1765,21 +1703,8 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
  n European art around 1500 with our exhibition curators
 END:VEVENT
 BEGIN:VEVENT
-UID:clockshop-2026-12-03-subterranean-convergence-film-screening-93f46a40b7@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261204T010000Z
-DTEND:20261204T030000Z
-SUMMARY:subterranean convergence: Film Screening
-LOCATION:2781 Casitas Ave\, Los Angeles\, CA 90039
-URL:https://clockshop.org/event/subterranean-convergence-film-screening/
-DESCRIPTION:Clockshop · https://clockshop.org/event/subterranean-converge
- nce-film-screening/\n\nsubterranean convergence In conjunction with LaRis
- sa Rogers’s subterranean convergence\, film curator Jheanelle Brown pre
- sents…
-END:VEVENT
-BEGIN:VEVENT
 UID:janm-2026-12-03-imagine-little-tokyo-writing-workshop-wi-5d9538b9b8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261204T020000Z
 DTEND:20261204T040000Z
 SUMMARY:Imagine Little Tokyo Writing Workshop with D.K. Furutani
@@ -1791,8 +1716,19 @@ DESCRIPTION:Japanese American National Museum · https://www.janm.org/even
  ops & Classes
 END:VEVENT
 BEGIN:VEVENT
+UID:clockshop-2026-12-03-subterranean-convergence-film-screening-93f46a40b7@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261204T020000Z
+SUMMARY:subterranean convergence: Film Screening
+LOCATION:2781 Casitas Ave\, Los Angeles\, CA 90039
+URL:https://clockshop.org/event/subterranean-convergence-film-screening/
+DESCRIPTION:Clockshop · https://clockshop.org/event/subterranean-converge
+ nce-film-screening/\n\nIn conjunction with LaRissa Rogers’s subterranea
+ n convergence\, film curator Jheanelle Brown presents…
+END:VEVENT
+BEGIN:VEVENT
 UID:ica_la-2026-12-03-first-draft-1389a149bf@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261204T030000Z
 SUMMARY:FIRST DRAFT
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -1802,8 +1738,8 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-03-la-bola-negra-9c486bbd38@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261204T033054Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261204T033057Z
 SUMMARY:La bola negra
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/la-bola-negra
@@ -1816,7 +1752,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-03-in-the-works-2026-162e8dfce7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261204T040000Z
 DTEND:20261204T060000Z
 SUMMARY:In The Works 2026
@@ -1835,7 +1771,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · $8–$1
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-04-norton-simon-the-collector-832bd80adb@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T010000Z
 DTEND:20261205T020000Z
 SUMMARY:Norton Simon\, the Collector
@@ -1847,7 +1783,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-12-04-the-winter-show-opening-reception-577c38d8de@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T020000Z
 DTEND:20261205T050000Z
 SUMMARY:The Winter Show Opening Reception
@@ -1865,7 +1801,7 @@ DESCRIPTION:Palos Verdes Art Center · https://pvartcenter.org/upcoming_ev
 END:VEVENT
 BEGIN:VEVENT
 UID:caam-2026-12-04-black-friday-holiday-party-f29ff3dd82@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T030000Z
 DTEND:20261205T050000Z
 SUMMARY:Black Friday Holiday Party
@@ -1879,7 +1815,7 @@ DESCRIPTION:California African American Museum · Free · https://www.even
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-05-family-workshop-huntington-holiday-post-c58a0ea8f6@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:Family Workshop: Huntington Holiday Post Office
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -1891,7 +1827,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-12-05-poppy-print-guild-letterpress-art-sale-462cb40645@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:Poppy Print Guild Letterpress Art Sale
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -1904,7 +1840,7 @@ DESCRIPTION:Armory Center for the Arts · https://armoryarts.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:side_street-2026-12-05-build-over-buy-intro-to-bandsaw-box-e0a57fc8cd@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T180000Z
 SUMMARY:Build Over Buy: Intro to Bandsaw Box
 LOCATION:730 N Fair Oaks Ave\, Pasadena\, CA 91103
@@ -1914,7 +1850,7 @@ DESCRIPTION:Side Street Projects · https://www.sidestreet.org/event-calen
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-12-05-hecho-con-amor-sweet-chocolate-tamales-s-6c5957893b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T180000Z
 SUMMARY:Hecho con Amor: Sweet Chocolate Tamales | SOLD OUT
 LOCATION:501 N Main St\, Los Angeles\, CA 90012
@@ -1924,7 +1860,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · https://lapca.org/event/chocola
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-12-05-2026-latino-comics-expo-638f2d8af8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T190000Z
 DTEND:20261207T020000Z
 SUMMARY:2026 Latino Comics Expo
@@ -1938,8 +1874,26 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
  mic arts in Southern California.
 END:VEVENT
 BEGIN:VEVENT
+UID:the_broad-2026-12-05-guadalupes-map-pointz-house-party-at-the-298897f90a@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261205T200000Z
+DTEND:20261206T020000Z
+SUMMARY:Guadalupe’s Map Pointz: House Party at The Broad
+LOCATION:221 S Grand Ave\, Los Angeles\, CA 90012
+URL:https://www.thebroad.org/events/guadalupes-map-pointz-house-party-broa
+ d
+DESCRIPTION:The Broad · https://www.thebroad.org/events/guadalupes-map-po
+ intz-house-party-broad\n\nStep into Guadalupe Rosales’s ’90s Los Ange
+ les with an afternoon of hard house\, sweet treats\, and art. Celebrate t
+ he opening of The Broad’s latest collection exhibition\, Has the myth b
+ een shattered \, at Guadalupe’s Map Pointz: House Party at The Broad . 
+ A throwback to the energy and style of Broad collection artist Guadalupe 
+ Rosales’s upbringing\, DJ Trajic \, BAE BAE \, and DJ Hi-C take you on 
+ a mus
+END:VEVENT
+BEGIN:VEVENT
 UID:la_plaza-2026-12-05-les-navegantes-tour-good-grief-visual-re-fee30fa76a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T200000Z
 SUMMARY:Les Navegantes Tour: Good Grief! Visual Representations of Grief a
  nd Activism | Free with RSVP
@@ -1950,7 +1904,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · Free · https://lapca.org/event
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-05-stellar-and-silver-mirror-seven-sisters-96945b8196@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261205T220000Z
 DTEND:20261206T003000Z
 SUMMARY:Stellar and Silver Mirror: Seven Sisters Productions in Concert
@@ -1965,8 +1919,18 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/seven-sisters/\n
   Written for soprano\, piano\, contraba
 END:VEVENT
 BEGIN:VEVENT
+UID:lacp-2026-12-05-lenscratch-the-first-twenty-years-inpers-8e631c67bd@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261205T230000Z
+SUMMARY:Lenscratch: The First Twenty Years – In-Person Reception RSVP
+LOCATION:1515 Wilcox Ave\, Los Angeles\, CA 90028
+URL:https://lacphoto.org/events/lenscratch-in-person-reception-rsvp/
+DESCRIPTION:Los Angeles Center of Photography · https://lacphoto.org/even
+ ts/lenscratch-in-person-reception-rsvp/
+END:VEVENT
+BEGIN:VEVENT
 UID:getty_center-2026-12-05-drawing-in-the-dark-7ca9a70de7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T010000Z
 SUMMARY:Drawing in the Dark
 LOCATION:Getty Center
@@ -1976,7 +1940,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/drawing-in-
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-05-music-in-the-time-of-manet-4963c0ac85@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T010000Z
 DTEND:20261206T020000Z
 SUMMARY:Music in the Time of Manet
@@ -1988,7 +1952,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-05-artistatwork-light-and-shadow-0cc59d6198@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T013000Z
 SUMMARY:Artist-at-Work: Light and Shadow
 LOCATION:Getty Center
@@ -1998,7 +1962,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-light-s
 END:VEVENT
 BEGIN:VEVENT
 UID:las_fotos_project-2026-12-05-lfps-posada-2026-74313acd51@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T020000Z
 DTEND:20261206T060000Z
 SUMMARY:LFP’s Posada 2026
@@ -2011,7 +1975,7 @@ DESCRIPTION:Las Fotos Project · https://www.lasfotosproject.org/events/po
 END:VEVENT
 BEGIN:VEVENT
 UID:torrance_art_museum-2026-12-05-mas-attack-0aa2d1480e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T020000Z
 SUMMARY:MAS Attack
 LOCATION:3320 Civic Center Dr\, Torrance\, CA 90503
@@ -2021,8 +1985,8 @@ DESCRIPTION:Torrance Art Museum · https://www.torranceartmuseum.com/mas-a
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-05-a-page-of-madness-74e779eea1@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261206T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261206T033057Z
 SUMMARY:A Page of Madness
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/page-madness
@@ -2033,7 +1997,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-06-hummingbirds-at-the-huntington-f6140ac31c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261206
 SUMMARY:Hummingbirds at The Huntington
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2043,7 +2007,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-06-reflective-writing-and-intuitive-collage-9856e21a88@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261206
 SUMMARY:Reflective Writing and Intuitive Collage
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2055,7 +2019,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:side_street-2026-12-06-build-over-buy-intro-to-bandsaw-box-08902684e5@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T180000Z
 SUMMARY:Build Over Buy: Intro to Bandsaw Box
 LOCATION:730 N Fair Oaks Ave\, Pasadena\, CA 91103
@@ -2065,8 +2029,8 @@ DESCRIPTION:Side Street Projects · https://www.sidestreet.org/event-calen
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-06-826lahammer-create-a-personal-monologue-1ba60fe9af@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261206T190055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261206T190057Z
 SUMMARY:826LA@Hammer: Create a Personal Monologue
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/826lahammer-create-person
@@ -2078,7 +2042,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:janm-2026-12-06-iconic-voices-art-hansens-favorite-oral-7ee48fd578@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T210000Z
 DTEND:20261206T230000Z
 SUMMARY:Iconic Voices: Art Hansen’s Favorite Oral Histories
@@ -2091,7 +2055,7 @@ DESCRIPTION:Japanese American National Museum · https://www.janm.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-06-call-it-evil-susan-neiman-and-paul-holde-31a0d2b7d2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T220000Z
 DTEND:20261207T000000Z
 SUMMARY:Call It Evil: Susan Neiman and Paul Holdengräber in Conversation
@@ -2109,8 +2073,8 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/call-it-evil-sus
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-06-huguette-caland-a-life-in-a-few-lines-an-55f013d6f9@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261206T220055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261206T220057Z
 SUMMARY:Huguette Caland: A Life in a Few Lines . . . and Other Twists and 
  Turns
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
@@ -2124,7 +2088,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-06-winter-choral-concert-21ebb9fe61@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261206T230000Z
 DTEND:20261207T003000Z
 SUMMARY:Winter Choral Concert
@@ -2142,17 +2106,17 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-06-joseph-wright-of-derby-painter-and-draft-ea0dbb3f91@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261207T000000Z
 SUMMARY:Joseph Wright of Derby: Painter and Draftsman
-LOCATION:Getty Center & Online
+LOCATION:Online & Getty Center
 URL:https://www.getty.edu/calendar/derby-painter-draftsman
 DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/derby-paint
  er-draftsman\n\nTalk
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2026-12-07-shop-and-sip-member-appreciation-day-f11aecb8fc@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261207T020000Z
 DTEND:20261207T040000Z
 SUMMARY:Shop and Sip: Member Appreciation Day
@@ -2165,8 +2129,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-06-thats-my-daddy-different-from-the-others-486da43ce6@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261207T030055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261207T030057Z
 SUMMARY:That's My Daddy / Different From the Others
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/thats-my-daddy-different-
@@ -2179,8 +2143,8 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-07-once-upon-a-time-in-harlem-5e87286984@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261208T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261208T033057Z
 SUMMARY:Once Upon a Time in Harlem
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/once-upon-time-harlem
@@ -2191,8 +2155,19 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
  director David Greaves & editor-producer Anne de Mare.
 END:VEVENT
 BEGIN:VEVENT
+UID:corita_art_center-2026-12-08-heroes-sheroes-us-bf9eff1cc4@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261209T020000Z
+DTEND:20261209T033000Z
+SUMMARY:heroes & sheroes & us
+LOCATION:St. Ignatius Loyola\, Wallace Hall
+URL:https://www.corita.org/event/in-conversation-heroes-sheroes-and-us
+DESCRIPTION:Corita Art Center · https://www.corita.org/event/in-conversat
+ ion-heroes-sheroes-and-us
+END:VEVENT
+BEGIN:VEVENT
 UID:williamson_scripps-2026-12-08-student-recital-b871a06e85@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261209T030000Z
 DTEND:20261209T050000Z
 SUMMARY:Student Recital
@@ -2205,8 +2180,8 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-08-clarissa-3274e4ab13@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261209T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261209T033057Z
 SUMMARY:Clarissa
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/clarissa
@@ -2218,7 +2193,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-09-chinese-medicinal-garden-open-house-c3d35adc2b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261209
 SUMMARY:Chinese Medicinal Garden Open House
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2228,7 +2203,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-09-drawing-from-the-gallery-e089904efa@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261209
 SUMMARY:Drawing from the Gallery
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2238,7 +2213,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-09-experience-the-art-of-q-gng-with-kathy-y-a5d6f45a1f@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261209
 SUMMARY:Experience the Art of Qì Gōng with Kathy Yep
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2247,8 +2222,20 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
   https://www.huntington.org/event/experience-art-qi-gong-kathy-yep
 END:VEVENT
 BEGIN:VEVENT
+UID:hammer-2026-12-09-lunchtime-art-talk-on-felipe-baeza-df2c436cde@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261209T203057Z
+SUMMARY:Lunchtime Art Talk on Felipe Baeza
+LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
+URL:https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-felipe
+ -baeza
+DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
+ lunchtime-art-talk-felipe-baeza\n\nCuratorial assistant Azul Silverio lea
+ ds an in-person discussion of Felipe Baeza's work.
+END:VEVENT
+BEGIN:VEVENT
 UID:molaa-2026-12-09-red-red-red-geometry-of-a-scar-identity-a43bf56a4d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261210T020000Z
 DTEND:20261210T030000Z
 SUMMARY:RED RED RED Geometry of a Scar: Identity\, Representation\, and th
@@ -2265,7 +2252,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:ica_la-2026-12-09-catalogue-launch-speaking-in-tongues-4d2af4da38@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261210T030000Z
 SUMMARY:Catalogue Launch: Speaking in Tongues
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -2276,8 +2263,8 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-09-the-harlem-globetrotters-bright-road-b80ce13135@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261210T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261210T033057Z
 SUMMARY:The Harlem Globetrotters / Bright Road
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/harlem-globetrotters-brig
@@ -2289,7 +2276,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-10-class-series-introduction-to-musicology-c1405b4964@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261210
 SUMMARY:Class Series: Introduction to Musicology in “This Land Is ...”
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2301,7 +2288,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-10-helen-frankenthalers-adriatic-1968-b1255fb6e1@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261210T210000Z
 DTEND:20261210T220000Z
 SUMMARY:Helen Frankenthaler’s Adriatic (1968)
@@ -2314,7 +2301,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:la_plaza-2026-12-10-sabor-a-mxico-e-italia-osso-bucco-and-sa-6a90bcca4c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261211T030000Z
 SUMMARY:Sabor a México e Italia: Osso Bucco and Saffron Masa Tamales | SO
  LD OUT
@@ -2326,7 +2313,7 @@ DESCRIPTION:LA Plaza de Cultura y Artes · https://lapca.org/event/osso-bu
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-10-student-recital-af0c1aed34@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261211T033000Z
 DTEND:20261211T050000Z
 SUMMARY:Student Recital
@@ -2339,7 +2326,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-11-the-art-of-kandy-sri-lankas-last-kingdom-5a78f55b54@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261211T210000Z
 DTEND:20261211T220000Z
 SUMMARY:The Art of Kandy: Sri Lanka’s Last Kingdom
@@ -2352,7 +2339,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:ica_la-2026-12-11-pov-tour-jia-yi-gu-on-carl-cheng-nature-95045630b6@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T020000Z
 SUMMARY:POV Tour: Jia Yi Gu on Carl Cheng: Nature Never Loses
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -2364,7 +2351,7 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:huntington-2026-12-12-restore-explore-forest-bathing-1dd2c26940@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:Restore + Explore: Forest Bathing
 LOCATION:1151 Oxford Rd\, San Marino\, CA 91108
@@ -2374,7 +2361,7 @@ DESCRIPTION:The Huntington Library\, Art Museum\, and Botanical Gardens ·
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2026-12-12-shoebox-workshop-with-dominique-moody-a95a79fdde@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:Shoebox Workshop with Dominique Moody
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -2387,7 +2374,7 @@ DESCRIPTION:Armory Center for the Arts · https://armoryarts.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:side_street-2026-12-12-free-oneoff-youth-woodworking-08a97d9aeb@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T180000Z
 SUMMARY:FREE One-Off Youth Woodworking
 LOCATION:730 N Fair Oaks Ave\, Pasadena\, CA 91103
@@ -2399,9 +2386,9 @@ DESCRIPTION:Side Street Projects · Free · https://www.sidestreet.org/eve
 END:VEVENT
 BEGIN:VEVENT
 UID:janm-2026-12-12-auntie-kristinas-guide-to-asian-american-086ed2faef@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T210000Z
-DTEND:20261212T230000Z
+DTEND:20261213T000000Z
 SUMMARY:Auntie Kristina’s Guide to Asian American Activism
 LOCATION:100 N Central Ave\, Los Angeles\, CA 90012
 URL:https://www.janm.org/events/2026-12-12/auntie-kristinas-guide-asian-am
@@ -2411,8 +2398,20 @@ DESCRIPTION:Japanese American National Museum · https://www.janm.org/even
  & Discussions
 END:VEVENT
 BEGIN:VEVENT
+UID:jaccc-2026-12-12-bokashi-composting-workshop-41bb2c3e46@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20261212T210000Z
+SUMMARY:Bokashi Composting Workshop
+LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
+URL:https://jaccc.org/events/the-okinawan-way-bokashi-composting-workshop/
+DESCRIPTION:Japanese American Cultural & Community Center · https://jaccc
+ .org/events/the-okinawan-way-bokashi-composting-workshop/\n\nDiscover bok
+ ashi composting\, an easy-to-learn Okinawan method that simplifies how yo
+ u reduce food waste at home.
+END:VEVENT
+BEGIN:VEVENT
 UID:corita_art_center-2026-12-12-coritas-legacy-a-panel-discussion-c5bfa48a5f@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T220000Z
 DTEND:20261212T230000Z
 SUMMARY:Corita's Legacy: A Panel Discussion
@@ -2423,7 +2422,7 @@ DESCRIPTION:Corita Art Center · https://www.corita.org/event/coritas-lega
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-12-nonconsenting-collaborators-with-gala-po-abda060c5a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T230000Z
 SUMMARY:*Non-Consenting Collaborators* with Gala Porras Kim
 LOCATION:Getty Center
@@ -2434,7 +2433,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/non-consent
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-12-second-saturday-sketching-93e32c3345@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261212T230000Z
 DTEND:20261213T010000Z
 SUMMARY:Second Saturday Sketching
@@ -2446,7 +2445,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-12-claremont-concert-orchestra-fall-concert-f7fe4bf625@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T033000Z
 DTEND:20261213T050000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -2464,8 +2463,8 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-12-tribute-to-director-stan-lathan-go-tell-b8940a6b97@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261213T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261213T033057Z
 SUMMARY:Tribute to Director Stan Lathan: Go Tell It on the Mountain
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/tribute-director-stan-lat
@@ -2477,7 +2476,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:angels_gate--raku-ceramics-d774cdf4c7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261213
 SUMMARY:Raku Ceramics
 LOCATION:3601 S Gaffey St\, San Pedro\, CA 90731
@@ -2487,7 +2486,7 @@ DESCRIPTION:Angels Gate Cultural Center · $60 · https://angelsgateart.or
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-12-13-corner-garden-plein-air-workshop-oil-pas-2c6e0a451c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T170000Z
 DTEND:20261213T190000Z
 SUMMARY:Corner Garden Plein Air Workshop: Oil pastels on heavyweigth drawi
@@ -2504,7 +2503,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-images-and-imagination-collage-workshop-0009c2d9f2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T190000Z
 SUMMARY:Images and Imagination: Collage Workshop (Bilingual)
 LOCATION:Getty Center
@@ -2514,7 +2513,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/images-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-12-13-molaa-members-book-club-december-e828c487ac@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T190000Z
 DTEND:20261213T203000Z
 SUMMARY:MOLAA Members Book Club - December
@@ -2529,7 +2528,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-13-artistatwork-serigraphy-artista-en-accin-62f8871fbb@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T193000Z
 SUMMARY:Artist-at-Work: Serigraphy | Artista en acción: Serigrafía
 LOCATION:Getty Center
@@ -2539,25 +2538,21 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/aaw-serigra
 END:VEVENT
 BEGIN:VEVENT
 UID:sparc-2026-12-13-workshop-celebrating-the-season-of-light-8c1560b1b4@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T203000Z
-DTEND:20261214T013000Z
-SUMMARY:[Workshop] Celebrating the Season of Light Monoprinting Workshop
+SUMMARY:Workshop: Celebrating the Season of Light Monoprinting Workshop
 LOCATION:685 Venice Blvd\, Venice\, CA 90291
 URL:https://sparcinla.org/event/workshop-celebrating-the-season-of-light-m
  onoprinting-workshop/
 DESCRIPTION:Social and Public Art Resource Center · Free · https://sparc
  inla.org/event/workshop-celebrating-the-season-of-light-monoprinting-work
- shop/\n\nSunday\, Dec 13 Join Us for a Free Community Art Workshop with E
- lsie Sims\, artist-in-residence Two Options: Workshop for all ages: 12:30
- pm – 2:30pm Workshop for all ages: 3:30pm – 5:30pm **SPACE IS LIMITED
-  Use this form to register for one of these two FREE workshops below. You
-  may register multiple people for a workshop. No experience needed\, all 
- supplies provided! All workshops take place at SPAR
+ shop/\n\nFree community art workshop with Elsie Sims\, artist-in-residenc
+ e\; two sessions\, 12:30pm–2:30pm and 3:30pm–5:30pm\, space is limite
+ d.
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-13-french-edition-thomasgermainjoseph-duviv-cdd739be27@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T210000Z
 DTEND:20261213T220000Z
 SUMMARY:French Edition: Thomas-Germain-Joseph Duvivier’s An Architect’
@@ -2572,7 +2567,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2026-12-13-claremont-concert-orchestra-fall-concert-ce14295f25@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T220000Z
 DTEND:20261213T233000Z
 SUMMARY:Claremont Concert Orchestra Fall Concerts
@@ -2590,7 +2585,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · Free ·
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-13-picture-book-workshops-with-stephanie-lu-70b926ccad@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261213T220000Z
 DTEND:20261213T230000Z
 SUMMARY:Picture Book Workshops with Stephanie Lunkewitz
@@ -2607,11 +2602,11 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/picture-book-wor
  y are open t
 END:VEVENT
 BEGIN:VEVENT
-UID:academy_museum-2026-12-14-short-films-by-the-promise-workshops-cla-e5be33949a@art-in-la
-DTSTAMP:20261116T170908Z
+UID:academy_museum-2026-12-14-here-and-now-short-films-by-the-promise-683decf805@art-in-la
+DTSTAMP:20261117T164945Z
 DTSTART:20261214T030000Z
 DTEND:20261214T050000Z
-SUMMARY:Short Films by the Promise Workshops Class of 2026
+SUMMARY:Here and Now: Short Films by the Promise Workshops Class of 2026
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
 URL:https://www.academymuseum.org/en/programs/detail/short-films-by-the-20
  26-cohort-of-the-promise-workshops-01a1a930-be7d-dacf-7074-de1eef263c9a
@@ -2621,8 +2616,8 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-13-malaga-the-decks-ran-red-4f12619c75@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261214T030055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261214T030057Z
 SUMMARY:Malaga / The Decks Ran Red
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/malaga-decks-ran-red
@@ -2633,7 +2628,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-15-curators-tour-every-minute-is-history-64ac824cfe@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261215T230000Z
 SUMMARY:Curator's Tour: *Every Minute is History*
 LOCATION:Getty Center
@@ -2644,8 +2639,8 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-16-lunchtime-art-talk-on-mavis-pusey-cf62bdf80d@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261216T203055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261216T203057Z
 SUMMARY:Lunchtime Art Talk on Mavis Pusey
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/lunchtime-art-talk-mavis-
@@ -2656,7 +2651,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2026-12-16-visita-guiada-con-la-curadora-instantere-57d1835c69@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261216T230000Z
 SUMMARY:Visita guiada con la curadora: *Instante/revelación* (español)
 LOCATION:Getty Center
@@ -2668,7 +2663,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/visita-guia
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-16-herhealings-monthly-sister-circle-f5a20c3f97@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261217T023000Z
 DTEND:20261217T033000Z
 SUMMARY:HerHealing’s Monthly Sister Circle
@@ -2682,7 +2677,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/herhealings-mont
 END:VEVENT
 BEGIN:VEVENT
 UID:ica_la-2026-12-16-quantumplating-carl-cheng-and-spiros-mic-20df8355e1@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261217T030000Z
 SUMMARY:Quantum-plating: Carl Cheng and Spiros Michalakis in Conversation
 LOCATION:1717 E 7th St\, Los Angeles\, CA 90021
@@ -2694,8 +2689,8 @@ DESCRIPTION:Institute of Contemporary Art\, Los Angeles · https://www.the
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-16-a-war-on-women-f6072884e6@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261217T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261217T033057Z
 SUMMARY:A War on Women
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/war-women
@@ -2706,7 +2701,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2026-12-19-tales-in-two-tongues-bilingual-russianen-7ea17949e6@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261219T183000Z
 DTEND:20261219T190000Z
 SUMMARY:Tales in Two Tongues: Bilingual Russian-English Storytime
@@ -2722,7 +2717,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/storytime/2026-1
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-19-making-history-manets-execution-of-maxim-97092fcd37@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261219T210000Z
 DTEND:20261219T220000Z
 SUMMARY:Making History: Manet’s Execution of Maximilian from the Nationa
@@ -2737,8 +2732,8 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-19-tamango-tarzans-peril-858f1b422b@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261220T033055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261220T033057Z
 SUMMARY:Tamango / Tarzan's Peril
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/tamango-tarzans-peril
@@ -2749,7 +2744,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:18th_street-2026-12-20-citizen-artist-reading-group-6fde45417b@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261220T180000Z
 DTEND:20261220T200000Z
 SUMMARY:Citizen Artist Reading Group
@@ -2766,7 +2761,7 @@ DESCRIPTION:18th Street Arts Center · Free · https://18thstreet.org/even
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2026-12-20-manet-tradition-influence-innovation-3c62395b15@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261220T210000Z
 DTEND:20261220T220000Z
 SUMMARY:Manet: Tradition\, Influence\, Innovation
@@ -2779,8 +2774,8 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:hammer-2026-12-20-carmen-jones-1a0fca1f9c@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20261221T030055Z
+DTSTAMP:20261117T164945Z
+DTSTART:20261221T030057Z
 SUMMARY:Carmen Jones
 LOCATION:10899 Wilshire Blvd\, Los Angeles\, CA 90024
 URL:https://hammer.ucla.edu/programs-events/2026/carmen-jones
@@ -2791,7 +2786,7 @@ DESCRIPTION:Hammer Museum · https://hammer.ucla.edu/programs-events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2026-12-21-red-cross-blood-drive-3792a2b3ff@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20261221T180000Z
 DTEND:20261221T230000Z
 SUMMARY:Red Cross Blood Drive
@@ -2808,7 +2803,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:pvac-2026-12-31-pvac-begins-organizational-transition-a098c85bf5@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20261231
 SUMMARY:PVAC BEGINS ORGANIZATIONAL TRANSITION
@@ -2826,7 +2821,7 @@ DESCRIPTION:Palos Verdes Art Center · https://pvartcenter.org/upcoming_ev
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-01-07-curators-tour-the-holy-family-at-home-05af6735ca@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270107T230000Z
 SUMMARY:Curator's Tour: *The Holy Family at Home*
 LOCATION:Getty Center
@@ -2837,7 +2832,7 @@ DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/curators-to
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2027-01-08-eisensteins-mexico-thunder-over-mexico-1-f8f0dff5c2@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270109T003000Z
 DTEND:20270109T025500Z
 SUMMARY:Eisenstein’s Mexico: Thunder over Mexico (1933) and Death Day (1
@@ -2850,38 +2845,8 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
  1934-1-8-2027-430PM#2027-01-08
 END:VEVENT
 BEGIN:VEVENT
-UID:jaccc-2027-01-09-soul-train-a-new-years-dance-party-shinn-2073088681@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART;VALUE=DATE:20270109
-SUMMARY:Soul Train A New Year's Dance Party & Shinnenkai
-LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
-URL:https://jaccc.org/events/soul-traina-new-years-dance-party-shinnenkai/
-DESCRIPTION:Japanese American Cultural & Community Center · $1–$750 · 
- https://jaccc.org/events/soul-traina-new-years-dance-party-shinnenkai/\n\
- n• 6:00 pm - 11:00 pm Doors: 6:00 pm | Dance: 7:30 pm Where Nishi Hongw
- anji Buddhist Temple 815 1st St.\, Los Angeles\, CA 90012 Price Sponsorsh
- ip Levels & Tickets: Soul Train Line: $2\,500 (Table of 10) Scramble Boar
- d: $1\,500 (Table of 10) Cha Cha Slide: $750 (Table of 10) TSOP: $75 (Ind
- ividual Ticket\, Unreserved Seating) Sponsorship Form Share About
-END:VEVENT
-BEGIN:VEVENT
-UID:jaccc-2027-01-09-10th-annual-cultural-ikebana-exhibition-f4a75afe5c@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART:20270109T190000Z
-SUMMARY:10th Annual Cultural Ikebana Exhibition
-LOCATION:244 S San Pedro St\, Los Angeles\, CA 90012
-URL:https://jaccc.org/events/10th-annual-cultural-ikebana-exhibition/
-DESCRIPTION:Japanese American Cultural & Community Center · https://jaccc
- .org/events/10th-annual-cultural-ikebana-exhibition/\n\n- 4:00 pm Opening
-  Ceremony: Sunday\, January 10\, 2027 • 11:00 am Where George J. Doizak
- i Gallery 244 South San Pedro St.\, Lobby\, Los Angeles\, CA 90012 Price 
- Free\, with RSVP. RSVP Share Photo by Courtney Mariko. About Celebrate th
- e New Year through the beauty of Japanese flower arrangements at the 10th
-  Annual Cultural Ikebana Exhibition \, presented
-END:VEVENT
-BEGIN:VEVENT
 UID:wende-2027-01-12-health-is-human-2bc24641f7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270112T170000Z
 DTEND:20270112T190000Z
 SUMMARY:Health is Human
@@ -2897,7 +2862,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/health-is-human/
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2027-01-15-henrigeorges-clouzots-inferno-2009-93a97f4a4d@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270116T003000Z
 DTEND:20270116T021000Z
 SUMMARY:Henri-Georges Clouzot’s “Inferno” (2009)
@@ -2910,7 +2875,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:armory_pasadena-2027-01-16-in-conversation-dominique-moody-and-lyne-f96b2b4aa3@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270116
 SUMMARY:In Conversation: Dominique Moody and Lynell George
 LOCATION:145 N Raymond Ave\, Pasadena\, CA 91103
@@ -2923,7 +2888,7 @@ DESCRIPTION:Armory Center for the Arts · https://armoryarts.org/calendar/
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2027-01-20-herhealings-monthly-sister-circle-73a529b786@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270121T023000Z
 DTEND:20270121T033000Z
 SUMMARY:HerHealing’s Monthly Sister Circle
@@ -2937,7 +2902,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/herhealings-mont
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2027-01-22-the-thief-and-the-cobbler-once-upon-a-ti-97c743655c@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270123T003000Z
 DTEND:20270123T020500Z
 SUMMARY:The Thief and the Cobbler: Once Upon a Time (1992/2013)
@@ -2949,21 +2914,8 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
  027-430PM#2027-01-22
 END:VEVENT
 BEGIN:VEVENT
-UID:clockshop-subterrane-subterranean-convergence-reading-room-7cca28f998@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270130
-SUMMARY:subterranean convergence: Reading Room
-LOCATION:2781 Casitas Ave\, Los Angeles\, CA 90039
-URL:https://clockshop.org/event/subterranean-convergence-reading-room/
-DESCRIPTION:Clockshop · https://clockshop.org/event/subterranean-converge
- nce-reading-room/\n\nsubterranean convergence Clockshop presents a tempor
- ary Reading Room at the Welcome Pavilion at LA State Historic Park\, near
-  the…
-END:VEVENT
-BEGIN:VEVENT
 UID:norton_simon-2027-01-29-decasia-2002-dc85cbbb49@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270130T003000Z
 DTEND:20270130T014000Z
 SUMMARY:Decasia (2002)
@@ -2975,7 +2927,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:norton_simon-2027-02-06-manet-and-degas-in-pieces-d9d91d9ffb@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270207T010000Z
 DTEND:20270207T020000Z
 SUMMARY:Manet and Degas in Pieces
@@ -2987,7 +2939,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:molaa-2027-02-09-evening-for-educators-spotlight-from-the-7bb775587a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270210T003000Z
 DTEND:20270210T023000Z
 SUMMARY:Evening for Educators: Spotlight from the MIA Collection: Beatriz 
@@ -3005,7 +2957,7 @@ DESCRIPTION:Museum of Latin American Art · https://molaa.org/events/2027/
 END:VEVENT
 BEGIN:VEVENT
 UID:williamson_scripps-2027-02-12-jenny-slate-in-conversation-with-scripps-e836bd7ef0@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270213T030000Z
 DTEND:20270213T040000Z
 SUMMARY:Jenny Slate in Conversation with Scripps Presents
@@ -3022,7 +2974,7 @@ DESCRIPTION:Ruth Chandler Williamson Gallery at Scripps College · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:human_resources-2027-02-15-jennifer-bewerses-a-gently-tilting-plane-05bc64da46@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270215T160000Z
 DTEND:20270216T010000Z
 SUMMARY:Jennifer Bewerse’s A Gently Tilting Planet
@@ -3033,8 +2985,20 @@ DESCRIPTION:Human Resources Los Angeles · https://www.h-r.la/event/a-gent
  to calendar Google Calendar iCalendar Outlook 365 Outlook Live
 END:VEVENT
 BEGIN:VEVENT
+UID:getty_center-2027-02-15-paul-r-williams-from-archive-to-exhibiti-c9352e387d@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20270216T013000Z
+SUMMARY:Paul R. Williams: From Archive to Exhibition at Palm Springs Museu
+ m of Art
+LOCATION:palm-springs-art-museum
+URL:https://www.getty.edu/calendar/paul-r-williams-from-archive-to-exhibit
+ ion-at-palm-springs-museum-of-art
+DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/paul-r-will
+ iams-from-archive-to-exhibition-at-palm-springs-museum-of-art\n\nTalk
+END:VEVENT
+BEGIN:VEVENT
 UID:wende-2027-02-17-herhealings-monthly-sister-circle-51753085eb@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270218T023000Z
 DTEND:20270218T033000Z
 SUMMARY:HerHealing’s Monthly Sister Circle
@@ -3047,8 +3011,24 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/herhealings-mont
  thers who get it\, this is your space!
 END:VEVENT
 BEGIN:VEVENT
+UID:the_broad-2027-02-27-vita-kari-unearthed-78cc8e84f4@art-in-la
+DTSTAMP:20261117T164945Z
+DTSTART:20270227T200000Z
+DTEND:20270228T020000Z
+SUMMARY:Vita Kari: Unearthed
+LOCATION:221 S Grand Ave\, Los Angeles\, CA 90012
+URL:https://www.thebroad.org/events/vita-kari-unearthed
+DESCRIPTION:The Broad · https://www.thebroad.org/events/vita-kari-unearth
+ ed\n\nDig into an imagined past with artist Vita Kari\, uncovering artifa
+ cts that place Deaf and hard-of-hearing experiences at the center of hist
+ ory. Unearthed is a one-day interactive workshop and durational performan
+ ce by Vita Kari . Participants uncover fabricated listening devices and a
+ rchival fragments from an imagined past where (d)/Deaf and Hard of Hearin
+ g people were always visible. After openin
+END:VEVENT
+BEGIN:VEVENT
 UID:norton_simon-2027-02-27-an-execution-imagined-maximilian-media-a-8058c40009@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270228T010000Z
 DTEND:20270228T020000Z
 SUMMARY:An Execution Imagined: Maximilian\, Media\, and the End of an Empi
@@ -3063,7 +3043,7 @@ DESCRIPTION:Norton Simon Museum · https://www.nortonsimon.org/calendar/20
 END:VEVENT
 BEGIN:VEVENT
 UID:skirball-2027-02-28-inventing-america-the-comic-book-revolut-ecbb759c8a@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270228
 SUMMARY:Inventing America: The Comic Book Revolution
@@ -3075,7 +3055,7 @@ DESCRIPTION:Skirball Cultural Center · https://www.skirball.org/museum/in
 END:VEVENT
 BEGIN:VEVENT
 UID:skirball-2027-02-28-jenny-yurshansky-what-we-carry-ade642435e@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270228
 SUMMARY:Jenny Yurshansky: What We Carry
@@ -3086,7 +3066,7 @@ DESCRIPTION:Skirball Cultural Center · https://www.skirball.org/museum/je
 END:VEVENT
 BEGIN:VEVENT
 UID:skirball-2027-02-28-patrisse-cullors-wishes-made-material-271ca9fb32@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270228
 SUMMARY:Patrisse Cullors: Wishes Made Material
@@ -3097,7 +3077,7 @@ DESCRIPTION:Skirball Cultural Center · https://www.skirball.org/museum/pa
 END:VEVENT
 BEGIN:VEVENT
 UID:skirball-2027-02-28-the-1960sa-generation-on-fire-judy-bacas-695a6125e7@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270228
 DTEND;VALUE=DATE:20270228
 SUMMARY:The 1960s—A Generation on Fire: Judy Baca's Great Wall of Los An
@@ -3110,7 +3090,7 @@ DESCRIPTION:Skirball Cultural Center · https://www.skirball.org/museum/19
 END:VEVENT
 BEGIN:VEVENT
 UID:academy_museum-2027-02-28-tactile-filmmaking-workshop-exquisite-mo-699c2e86e8@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270228T190000Z
 SUMMARY:Tactile Filmmaking Workshop: Exquisite Motion
 LOCATION:6067 Wilshire Blvd\, Los Angeles\, CA 90036
@@ -3122,7 +3102,7 @@ DESCRIPTION:Academy Museum of Motion Pictures · https://www.academymuseum
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2027-02-28-musicwords-la-curated-by-inna-faliks-1bc475ddbe@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270228T220000Z
 DTEND:20270301T000000Z
 SUMMARY:Music/Words LA: Curated by Inna Faliks
@@ -3138,21 +3118,19 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/music-words-la-c
 END:VEVENT
 BEGIN:VEVENT
 UID:clockshop-2027-03-06-subterranean-convergence-closing-recepti-603ae0033b@art-in-la
-DTSTAMP:20261116T170908Z
-DTSTART;VALUE=DATE:20270306
-DTEND;VALUE=DATE:20270306
+DTSTAMP:20261117T164945Z
+DTSTART:20270306T220000Z
 SUMMARY:subterranean convergence: Closing Reception and Conversation
 LOCATION:2781 Casitas Ave\, Los Angeles\, CA 90039
 URL:https://clockshop.org/event/subterranean-convergence-closing-reception
  -and-conversation/
 DESCRIPTION:Clockshop · https://clockshop.org/event/subterranean-converge
- nce-closing-reception-and-conversation/\n\nsubterranean convergence Artis
- t LaRissa Rogers will join artist and scholar Ayasha Guerin in conversati
- on\, moderated by…
+ nce-closing-reception-and-conversation/\n\nArtist LaRissa Rogers will joi
+ n artist and scholar Ayasha Guerin in conversation\, moderated by…
 END:VEVENT
 BEGIN:VEVENT
 UID:fulcrum-2027-03-07-tending-ecologies-attention-native-plant-d3bf22f126@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270307
 SUMMARY:Tending Ecologies: Attention ~ Native Plant Identification and Bot
  anical Art
@@ -3164,18 +3142,18 @@ DESCRIPTION:Fulcrum Arts · https://www.fulcrumarts.org/program/tending-ec
 END:VEVENT
 BEGIN:VEVENT
 UID:getty_center-2027-03-12-shining-a-new-light-on-joseph-wright-of-263f7ee4db@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270312T230000Z
 SUMMARY:Shining a New Light on Joseph Wright of Derby’s Two Boys with a 
  Bladder
-LOCATION:Online & Getty Center
+LOCATION:Getty Center & Online
 URL:https://www.getty.edu/calendar/derby-two-boys
 DESCRIPTION:The Getty Center · https://www.getty.edu/calendar/derby-two-b
  oys\n\nTalk
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2027-03-17-herhealings-monthly-sister-circle-ac38454289@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270318T013000Z
 DTEND:20270318T023000Z
 SUMMARY:HerHealing’s Monthly Sister Circle
@@ -3189,7 +3167,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/herhealings-mont
 END:VEVENT
 BEGIN:VEVENT
 UID:fulcrum-2027-04-11-tending-ecologies-renewal-seeds-fd39615cff@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20270411
 SUMMARY:Tending Ecologies: Renewal ~ Seeds
 LOCATION:1302 N El Centro Ave\, Los Angeles\, CA 90028
@@ -3199,7 +3177,7 @@ DESCRIPTION:Fulcrum Arts · https://www.fulcrumarts.org/program/tending-ec
 END:VEVENT
 BEGIN:VEVENT
 UID:wende-2027-05-08-musicwords-la-curated-by-inna-faliks-5e52f89ae6@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270508T210000Z
 DTEND:20270508T230000Z
 SUMMARY:Music/Words LA: Curated by Inna Faliks
@@ -3216,7 +3194,7 @@ DESCRIPTION:Wende Museum · https://wendemuseum.org/event/music-words-la-c
 END:VEVENT
 BEGIN:VEVENT
 UID:vincent_price-2027-05-08-8220new-voices8221-opening-reception-e713f6aac3@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART:20270508T210000Z
 DTEND:20270509T000000Z
 SUMMARY:“New Voices” opening reception
@@ -3232,7 +3210,7 @@ DESCRIPTION:Vincent Price Art Museum · Free · https://vpam.org/event/new
 END:VEVENT
 BEGIN:VEVENT
 UID:skirball-2028-01-02-common-ground-ca216d4065@art-in-la
-DTSTAMP:20261116T170908Z
+DTSTAMP:20261117T164945Z
 DTSTART;VALUE=DATE:20280102
 DTEND;VALUE=DATE:20280102
 SUMMARY:Common Ground
