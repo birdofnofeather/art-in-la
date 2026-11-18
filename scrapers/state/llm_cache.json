@@ -193,8 +193,8 @@
   ]
  },
  "v2|artcenter|events|https://www.artcenter.edu/about/exhibitions/overview.html": {
-  "at": "2026-11-17T16:47:53+00:00",
-  "hash": "1b4f7eb41ac2808153e9",
+  "at": "2026-11-18T16:17:47+00:00",
+  "hash": "9512d7628d567d5f6db1",
   "items": [
    {
     "description": "Created in collaboration with artist collective, Torolab. The unique exhibition examines the dynamics of life across the political and physical boundaries of the US/Mexico border.",
@@ -409,8 +409,8 @@
   ]
  },
  "v2|caam|exhibitions|https://caamuseum.org/exhibitions|rendered": {
-  "at": "2026-11-05T03:44:15+00:00",
-  "hash": "26dea1b8e5c7c15589f3",
+  "at": "2026-11-18T16:17:27+00:00",
+  "hash": "e622d79dcdc09570329d",
   "items": [
    {
     "description": null,
@@ -424,7 +424,7 @@
     "url": "https://caamuseum.org/exhibitions/2026/free-and-queer-black-californian-roots-of-gay-liberation"
    },
    {
-    "description": "On view at Art + Practice.",
+    "description": null,
     "end_date": "2027-02-27",
     "image": "https://caamuseum.org/content/3-exhibitions/43-2026/1-reggie-burrows-hodges-a-theater-of-dreams/screenshot-2026-09-03-at-2.56.13pm.png",
     "kind": "exhibition",
@@ -455,6 +455,28 @@
     "start_time": null,
     "title": "Sinners: Sounds That Summon",
     "url": "https://caamuseum.org/exhibitions/2026/sinners-sounds-that-summon"
+   },
+   {
+    "description": null,
+    "end_date": "2027-04-04",
+    "image": "https://caamuseum.org/content/3-exhibitions/43-2026/9-fred-wilson-reflections/screenshot-2026-09-10-at-2.35.47pm.png",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-17",
+    "start_time": null,
+    "title": "Fred Wilson: Reflections",
+    "url": "https://caamuseum.org/exhibitions/2026/fred-wilson-reflections"
+   },
+   {
+    "description": null,
+    "end_date": "2027-04-04",
+    "image": "https://caamuseum.org/content/3-exhibitions/43-2026/10-jamea-richmond-edwards-another-world-and-yet-the-same/screenshot-2026-09-10-at-2.00.14pm.png",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-17",
+    "start_time": null,
+    "title": "Jamea Richmond-Edwards: Another World and Yet the Same",
+    "url": "https://caamuseum.org/exhibitions/2026/jamea-richmond-edwards-another-world-and-yet-the-same"
    },
    {
     "description": null,
@@ -857,19 +879,30 @@
   ]
  },
  "v2|claremont_lewis|events|https://clmoa.org/events/": {
-  "at": "2026-11-11T15:09:16+00:00",
-  "hash": "5be1ed70eb702f6474e0",
+  "at": "2026-11-18T16:18:04+00:00",
+  "hash": "2a2fde05a892d9b21048",
   "items": [
    {
-    "description": "Critic and educator Richard Allen May III will moderate a panel discussion 5-7 pm on the enduring vision of Samella Lewis.",
-    "end_date": null,
-    "image": "https://clmoa.org/wp-content/uploads/2026/09/Samella-Lewis-Portrait-Scripps-1995_horzweb.jpg",
+    "description": "The artist collective Claremont Temporary will take over the Museum to present Temp Work with an opening reception 5-8 pm.",
+    "end_date": "2026-11-22",
+    "image": "https://clmoa.org/wp-content/uploads/2026/11/Aimee-Goguen-Sculpture_crop.jpg",
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-14",
+    "start_date": "2026-11-20",
     "start_time": "17:00",
-    "title": "Samella Lewis panel discussion",
-    "url": null
+    "title": "Temp Work",
+    "url": "https://clmoa.org/weekend-takeover-brings-temp-work-to-clma/"
+   },
+   {
+    "description": "A festive, guided watercolor workshop led by Miranda Rosso to craft four hand-illustrated holiday card designs.",
+    "end_date": null,
+    "image": "https://clmoa.org/wp-content/uploads/2025/01/2025-Art-Night-Out-4x5-f.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-10",
+    "start_time": "18:00",
+    "title": "Art Night Out: Deck the Cards",
+    "url": "https://clmoa-holiday-cards.eventbrite.com"
    }
   ]
  },
@@ -1001,8 +1034,8 @@
   "items": []
  },
  "v2|csun_galleries|events|https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events": {
-  "at": "2026-11-13T15:12:49+00:00",
-  "hash": "b94b50ab8313f98ada6d",
+  "at": "2026-11-18T16:18:01+00:00",
+  "hash": "d072a7592ce952172d21",
   "items": []
  },
  "v2|destination_crenshaw|events|https://destinationcrenshaw.la/news/": {
@@ -1519,8 +1552,8 @@
   ]
  },
  "v2|lbma|exhibitions|https://lbma.org/exhibitions/|rendered": {
-  "at": "2026-11-14T14:00:08+00:00",
-  "hash": "1022959e2bbdfdff8210",
+  "at": "2026-11-18T16:17:12+00:00",
+  "hash": "d0f72cd67a9c1ef1537b",
   "items": [
    {
     "description": null,
@@ -1543,6 +1576,17 @@
     "start_time": null,
     "title": "DABSMYLA presents Garden Party",
     "url": "https://lbma.org/exhibitions/dabsmyla"
+   },
+   {
+    "description": null,
+    "end_date": "2027-02-28",
+    "image": "https://lbma.org/client-uploads/transform/Exhibitions/Beyond-the-Page-LBUSD-exhibition/_squareTest/Beyond-the-page-2026-cover.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-11-15",
+    "start_time": null,
+    "title": "Beyond the Page: LBUSD Middle School Exhibition",
+    "url": "https://lbma.org/exhibitions/beyond-the-page-lbusd-middle-school-exhibition"
    }
   ]
  },
@@ -1947,8 +1991,8 @@
   ]
  },
  "v2|natural_history_museum|events|https://nhm.org/calendar|rendered": {
-  "at": "2026-11-05T03:44:55+00:00",
-  "hash": "c3810cd93bdb0aa4e0b2",
+  "at": "2026-11-18T16:18:15+00:00",
+  "hash": "71e8f246f98e64709f7c",
   "items": [
    {
     "description": "Ever pictured yourself reflected in bubbling asphalt? Wished you could meet the iconic mammoth family of Wilshire Boulevard? Now's your chance! Sink your saber teeth into this exclusive behind-the-scenes tour.",
@@ -1956,7 +2000,7 @@
     "image": "https://nhm.org/sites/default/files/styles/link_tile_slider/public/2026-02/Cholick-lbtp-tours1474_2502x1462_web.jpg?h=18906c29",
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-18",
     "start_time": "11:00",
     "title": "La Brea Tar Pits Insider Tour",
     "url": "https://tarpits.org/tar-pits-insider-museum-tour"
@@ -1964,13 +2008,13 @@
   ]
  },
  "v2|natural_history_museum|exhibitions|https://nhm.org/experience-nhm/exhibitions-natural-history-museum": {
-  "at": "2026-11-05T03:44:58+00:00",
-  "hash": "04507c46282bc25be832",
+  "at": "2026-11-18T16:18:17+00:00",
+  "hash": "cad2bc494de263479554",
   "items": []
  },
  "v2|natural_history_museum|exhibitions|https://nhm.org/experience-nhm/exhibitions-natural-history-museum|rendered": {
-  "at": "2026-11-05T03:45:04+00:00",
-  "hash": "ea1d026cc2ef482560ca",
+  "at": "2026-11-18T16:18:26+00:00",
+  "hash": "fc42491dd047810bc1c8",
   "items": []
  },
  "v2|navel|events|https://www.navel.la/programs": {
