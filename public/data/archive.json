@@ -14563,29 +14563,6 @@
     "_default_type": "other"
   },
   {
-    "id": "fowler-2026-08-20-exhibition-walkthroughmountain-spirits-2f5a9f5dbb",
-    "venue_id": "fowler",
-    "title": "Exhibition Walk-through:Mountain Spirits",
-    "description": "IN PERSON RSVP Gassia Armenian will lead a walk-through of Mountain Spirits,...",
-    "event_type": "tour",
-    "start": "2026-08-20T14:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://fowler.ucla.edu/events/exhibition-walk-through-mountain-spirits-4/?occurrence=2026-08-20",
-    "image": "https://fowler.ucla.edu/wp-content/uploads/2026/06/8-20-mt-spirits-walkthrough.png",
-    "artists": [],
-    "location_override": null,
-    "source": "fowler.ucla.edu",
-    "scraped_at": "2026-08-21T07:45:41+00:00",
-    "event_types": [
-      "tour"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "wende-2026-08-20-the-movement-playground-with-cantilever-ddc32dfda0",
     "venue_id": "wende",
     "title": "The Movement Playground with Cantilever Collective",
@@ -26636,6 +26613,32 @@
     "_default_type": "other"
   },
   {
+    "id": "getty_villa-2026-10-10-artistatwork-making-mosaics-artista-en-a-6348957a8c",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-10-10T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-10T13:23:34+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
+  },
+  {
     "id": "academy_museum-2026-10-10-the-little-vampire-in-35mm-3e2787beb3",
     "venue_id": "academy_museum",
     "title": "The Little Vampire in 35mm",
@@ -30882,6 +30885,32 @@
       "family"
     ],
     "_default_type": "other"
+  },
+  {
+    "id": "getty_villa-2026-10-24-artistatwork-making-mosaics-artista-en-a-d23768008c",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-10-24T11:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-24T11:54:04+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "calarts-2026-10-24-career-caf-grand-avenue-arts-all-access-1adda52ac6",
@@ -35825,6 +35854,30 @@
     "_asserted_type": "exhibition"
   },
   {
+    "id": "arroyo_arts-2026-11-11-beauties-of-hollywood-blvd-62c8ec38a0",
+    "venue_id": "arroyo_arts",
+    "title": "Beauties of Hollywood Blvd",
+    "description": "Beauties of Hollywood Blvd runs through November 20th at Outfitter Wig, 6626 Hollywood Blvd.",
+    "event_type": "exhibition",
+    "start": "2026-11-11",
+    "end": "2026-11-20",
+    "all_day": true,
+    "url": "https://arroyoartscollective.org/whats-new/",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "arroyoartscollective.org+llm",
+    "scraped_at": "2026-11-18T16:18:23+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "huntington-2026-11-11-chinese-medicinal-garden-open-house-dd60af7463",
     "venue_id": "huntington",
     "title": "Chinese Medicinal Garden Open House",
@@ -36095,29 +36148,6 @@
     "scraped_at": "2026-11-12T15:50:54+00:00",
     "event_types": [
       "lecture"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
-    "id": "fowler-2026-11-12-exhibition-walkthroughmountain-spirits-99b7464dcb",
-    "venue_id": "fowler",
-    "title": "Exhibition Walk-through:Mountain Spirits",
-    "description": "IN PERSON RSVP Exhibition co-curator Amy Landau and Paul Connor, director of...",
-    "event_type": "tour",
-    "start": "2026-11-12T12:00:00-08:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://fowler.ucla.edu/events/exhibition-walk-through-mountain-spirits-5/?occurrence=2026-11-12",
-    "image": "https://fowler.ucla.edu/wp-content/uploads/2026/09/11-12-spirits-tour.png",
-    "artists": [],
-    "location_override": null,
-    "source": "fowler.ucla.edu",
-    "scraped_at": "2026-11-12T15:51:06+00:00",
-    "event_types": [
-      "tour"
     ],
     "is_free": null,
     "price_text": null,
@@ -37181,6 +37211,32 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "getty_villa-2026-11-14-artistatwork-making-mosaics-artista-en-a-2c1c561a1c",
+    "venue_id": "getty_villa",
+    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
+    "description": "Demonstrations, Family",
+    "event_type": "workshop",
+    "start": "2026-11-14T11:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Villa",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-14T13:59:43+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other",
+    "_asserted_type": "workshop"
   },
   {
     "id": "academy_museum-2026-11-14-frankenweenie-in-35mm-871e30fbbd",
@@ -39152,5 +39208,359 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-20-la-book-launch-daughter-of-salt-by-leila-937950e6fd",
+    "venue_id": "beyond_baroque",
+    "title": "L.A. Book Launch: Daughter of Salt by Leila Farjami",
+    "description": "L.A. Book Launch for Daughter of Salt by Leila Farjami.",
+    "event_type": "lecture",
+    "start": "2026-11-20",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/daughter-of-salt-by-leila-farjami",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1793045116820-VFMMAOTZ854UJ6CE1GIL/Nov.20.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-20T15:59:02+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "armory_pasadena-2026-11-20-nurtured-flames-gather-film-screening-co-35c3f6068e",
+    "venue_id": "armory_pasadena",
+    "title": "Nurtured Flames: Gather— Film Screening & Community Conversation",
+    "description": "This public program will feature a screening of Gather (2020), a documentary exploring Native American food sovereignty, cultural resilience, and the reclamation of ancestral ecological knowledge.",
+    "event_type": "screening",
+    "start": "2026-11-20",
+    "end": null,
+    "all_day": true,
+    "url": "https://armoryarts.org/calendar/events/nurtured-flames-gather-film-screening-and-community-conversation",
+    "image": "https://armoryarts.org/assets/Events/Gather-png__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
+    "artists": [],
+    "location_override": null,
+    "source": "armoryarts.org",
+    "scraped_at": "2026-11-19T16:26:45+00:00",
+    "event_types": [
+      "screening",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-11-20-the-huntington-holiday-market-preview-b112baa161",
+    "venue_id": "huntington",
+    "title": "The Huntington Holiday Market Preview",
+    "description": "",
+    "event_type": "fair",
+    "start": "2026-11-20",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/huntington-holiday-market-preview",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2Frail%2FHU13Y8LZ.jpg%3Fh%3D320baf2c%26itok%3Dhq3RQHfy&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-19T16:26:23+00:00",
+    "event_types": [
+      "fair"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "cap_ucla-2026-11-20-cloud-gate-dance-theatre-of-taiwan-9d47b2976e",
+    "venue_id": "cap_ucla",
+    "title": "Cloud Gate Dance Theatre of Taiwan",
+    "description": "School Matinee Performance Grades 9-12 at Royce Hall.",
+    "event_type": "screening",
+    "start": "2026-11-20T11:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://cap.ucla.edu/event/design-sharing-cloud-gate-dance-theatre-taiwan",
+    "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/900x600_dfscloudgate.jpg?itok=HYE1_A9m",
+    "artists": [],
+    "location_override": null,
+    "source": "cap.ucla.edu+llm",
+    "scraped_at": "2026-11-20T16:00:15+00:00",
+    "event_types": [
+      "screening",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
+  },
+  {
+    "id": "norton_simon-2026-11-20-making-history-manets-execution-of-maxim-f9508017e8",
+    "venue_id": "norton_simon",
+    "title": "Making History: Manet’s Execution of Maximilian from the National Gallery, London",
+    "description": "",
+    "event_type": "tour",
+    "start": "2026-11-20T13:00:00-08:00",
+    "end": "2026-11-20T14:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.nortonsimon.org/calendar/2026/fall-2026/Making-History-Manets-Execution-of-Maximilian-from-the-National-Gallery-London-11-20-2026-100PM#2026-11-20",
+    "image": "https://www.nortonsimon.org/assets/events-images/manet_ngl_600x600__ScaleWidthWzMwMF0.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "nortonsimon.org",
+    "scraped_at": "2026-11-20T15:58:49+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "tour"
+  },
+  {
+    "id": "lacma-2026-11-20-modern-dance-figure-drawing-ce34994f12",
+    "venue_id": "lacma",
+    "title": "Modern Dance Figure Drawing",
+    "description": "At this guided workshop for adults, you’ll hone your figure-drawing skills and sketch a live modern dancer among works on view in LACMA’sModern Art Galleriesas we explore and depict movement, space, and the interp...",
+    "event_type": "workshop",
+    "start": "2026-11-20T14:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/modern-dance-figure-drawing",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/Screen%20Shot%202026-04-22%20at%205.37.48%20PM%20%281%29_0.png?VersionId=9JmCh8TGqVJMC2mQ20LEdFLy_tr3ubR_&itok=H86XiMJZ",
+    "artists": [],
+    "location_override": "BCAM, Level 3",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-20T15:58:18+00:00",
+    "event_types": [
+      "workshop",
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-20-behind-the-scenes-lighting-lacma-e3d379720d",
+    "venue_id": "lacma",
+    "title": "Behind the Scenes: Lighting LACMA",
+    "description": "How do you bring thousands of works of art to life with light?...",
+    "event_type": "lecture",
+    "start": "2026-11-20T16:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/bts-lighting",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/SF3776_07-Gallery6-20260319_0.jpg?VersionId=YMPTn50Df.j9GKUJZpGOBBj4IF01rMEK&itok=G5rQURKO",
+    "artists": [],
+    "location_override": "David Geffen Galleries",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-20T15:58:18+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "academy_museum-2026-11-21-dropin-workshop-for-teens-editing-for-ho-0a3984239e",
+    "venue_id": "academy_museum",
+    "title": "Drop-in Workshop for Teens: Editing for Horror Films",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-20T16:30:00-08:00",
+    "end": "2026-11-20T18:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/drop-in-workshop-for-teens-editing-for-horror-films-019fedc9-fff4-1802-c8d4-e26e00058df7",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/2U4uDcX1U8BtbcTwVqJTJA/9b3fb8325579ff134324bb5c40e80e24/1000015726.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-20T15:58:36+00:00",
+    "event_types": [
+      "screening",
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "screening"
+  },
+  {
+    "id": "pieter-2026-11-20-restore-with-mason-gray-83b1590e6e",
+    "venue_id": "pieter",
+    "title": "Restore with Mason Gray",
+    "description": "Restore with Mason Gray",
+    "event_type": "other",
+    "start": "2026-11-20T18:00:00-08:00",
+    "end": "2026-11-20T19:30:00-08:00",
+    "all_day": false,
+    "url": "https://pieterpasd.com/programs/restore-with-mason-gray-nov-20",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d30f87ab8d965a2edb3f85/1785780233020-28L8G9ZICO8EF2H10UZ6/RESTORE+1080+-+Mason+Rose.png",
+    "artists": [],
+    "location_override": "Pieter Performance Space, 2701 North Broadway",
+    "source": "pieterpasd.com",
+    "scraped_at": "2026-11-20T15:58:47+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-11-20-alumni-night-at-the-odyssey-theater-the-2a1d9ad2dd",
+    "venue_id": "calarts",
+    "title": "Alumni Night at the Odyssey Theater The Farce Awakens: Feydeau x 2 directed by Daniel Passer",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-20T19:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://alumninightattheodysseytheater.splashthat.com",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-20T15:58:54+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-11-20-musicwords-la-curated-by-inna-faliks-3b6315236a",
+    "venue_id": "wende",
+    "title": "Music/Words LA: Curated by Inna Faliks",
+    "description": "Music/Words LA returns to the Wende for a second season of live music and poetry. Pianist Inna Faliks opens the season with Breaking Screens, joined by cellist Ani Aznavoorian, London-based composer Gabriel Prokofiev, and poet Molly Bendall. Piano and cello meet Prokofiev’s electronic soundscapes in music by Prokofiev, Lera Auerbach, and Claude Debussy, alongside Bendall’s poetry. Faliks gave the world premiere of Prokofiev’s Concerto for Minimoog Synthesizer and Orchestra in Portugal and plays its US premiere with the Asheville Symphony on November 14, six days before this program. Watch clips of the concerto on Instagram here and here . Founded by Faliks in New York, Music/Words is a platform for artists working where music and text meet. This Los Angeles residency at the Wende builds ea",
+    "event_type": "performance",
+    "start": "2026-11-20T19:00:00-08:00",
+    "end": "2026-11-20T21:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/music-words-la-curated-by-inna-faliks/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/10/16x9-header-red-strips-cut-at-2x1@2x1.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-20T15:58:27+00:00",
+    "event_types": [
+      "performance",
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-21-journey-to-italy-viaggio-in-italia-in-4k-7f65353b21",
+    "venue_id": "academy_museum",
+    "title": "Journey to Italy (Viaggio in Italia) in 4K",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-20T19:30:00-08:00",
+    "end": "2026-11-20T22:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/journey-to-italy-019fceb5-ef5d-bf8f-6798-bb9bfde1aafd",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5eRFnhcQeKM43mpmjLXHPC/edb4fcf43ed37033c96946693cdc41ef/Nov5_VOYAGE_IN_ITALY_Rosselini1Janus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-20T15:58:36+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "cerritos_center-2026-11-20-an-evening-of-alton-brown-1b07504122",
+    "venue_id": "cerritos_center",
+    "title": "An Evening of Alton Brown",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-20T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.ticketmaster.com/an-evening-of-alton-brown-cerritos-california-11-20-2026/event/0B006496FB1B82F5",
+    "image": "https://www.cerritoscenter.com/media/g1hotq2d/e-1.png?width=400&height=400&v=1dd4a2c6958d9f0&format=webp",
+    "artists": [],
+    "location_override": null,
+    "source": "cerritoscenter.com",
+    "scraped_at": "2026-11-20T15:59:38+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
+  },
+  {
+    "id": "calarts-2026-11-20-beca-villanueva-bfa-midresidency-recital-2223b4d8da",
+    "venue_id": "calarts",
+    "title": "Beca Villanueva BFA Mid-Residency Recital",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-20T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/beca-villanueva-bfa-mid-residency-recital",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-20T15:58:54+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "cap_ucla-2026-11-20-gloria-cheng-and-ralph-van-raat-242381a561",
+    "venue_id": "cap_ucla",
+    "title": "Gloria Cheng and Ralph van Raat",
+    "description": "Resonant Encounters: Boulez, Feldman, Cage and Beyond, presented in partnership with Piano Spheres, at The Nimoy.",
+    "event_type": "performance",
+    "start": "2026-11-20T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://cap.ucla.edu/event/gloria-cheng-and-ralph-van-raat",
+    "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-07/900x600_gloriaralph.jpg?itok=oJhDnWFR",
+    "artists": [],
+    "location_override": null,
+    "source": "cap.ucla.edu+llm",
+    "scraped_at": "2026-11-20T16:00:15+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
   }
 ]

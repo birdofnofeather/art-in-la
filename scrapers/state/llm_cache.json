@@ -193,11 +193,11 @@
   ]
  },
  "v2|artcenter|events|https://www.artcenter.edu/about/exhibitions/overview.html": {
-  "at": "2026-11-20T15:59:18+00:00",
-  "hash": "1b4f7eb41ac2808153e9",
+  "at": "2026-11-21T15:11:03+00:00",
+  "hash": "9512d7628d567d5f6db1",
   "items": [
    {
-    "description": "Created in collaboration with artist collective, Torolab. The unique exhibition examines the dynamics of life across the political and physical boundaries of the US/Mexico border.",
+    "description": "The unique exhibition examines the dynamics of life across the political and physical boundaries of the US/Mexico border.",
     "end_date": "2027-03-06",
     "image": "https://cms.artcenter.edu/image/25080/b1/0.53,0.3/small",
     "kind": "exhibition",
@@ -492,44 +492,22 @@
   ]
  },
  "v2|cap_ucla|events|https://cap.ucla.edu/calendar": {
-  "at": "2026-11-15T14:37:16+00:00",
-  "hash": "e6431d3bb0abe457012e",
+  "at": "2026-11-21T15:11:44+00:00",
+  "hash": "d941c51362ec2320f382",
   "items": [
    {
-    "description": "School Matinee Performance Grades 9-12 at Royce Hall.",
-    "end_date": null,
-    "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/900x600_dfscloudgate.jpg?itok=HYE1_A9m",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-20",
-    "start_time": "11:00",
-    "title": "Cloud Gate Dance Theatre of Taiwan",
-    "url": "https://cap.ucla.edu/event/design-sharing-cloud-gate-dance-theatre-taiwan"
-   },
-   {
-    "description": "Resonant Encounters: Boulez, Feldman, Cage and Beyond, presented in partnership with Piano Spheres, at The Nimoy.",
-    "end_date": null,
-    "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-07/900x600_gloriaralph.jpg?itok=oJhDnWFR",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-20",
-    "start_time": "20:00",
-    "title": "Gloria Cheng and Ralph van Raat",
-    "url": "https://cap.ucla.edu/event/gloria-cheng-and-ralph-van-raat"
-   },
-   {
-    "description": "Blue Hour / Beckoning: A Double Bill at Royce Hall.",
+    "description": "Cloud Gate Dance Theatre of Taiwan performs a double bill at Royce Hall.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_cloudgate.jpg?itok=bOzHsz3w",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-21",
     "start_time": "20:00",
-    "title": "Cloud Gate Dance Theatre of Taiwan",
+    "title": "Blue Hour / Beckoning: A Double Bill",
     "url": "https://cap.ucla.edu/event/cloud-gate"
    },
    {
-    "description": "With Andrew Yee and Rothko String Quartet, at The Nimoy.",
+    "description": "With Andrew Yee and Rothko String Quartet.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/2026_05_PODIUM-Esslingen-637-foto-diana-lim_900x600.png.jpg?itok=8twgsuk_",
     "kind": "event",
@@ -540,7 +518,7 @@
     "url": "https://cap.ucla.edu/event/inti-figgis-vizueta"
    },
    {
-    "description": "Meow Meow performs at The Nimoy.",
+    "description": "Meow Meow live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/MeowMeow_FelineFestive%28c%29MagnusHastings_900x600.png.jpg?itok=JJKNDPXg",
     "kind": "event",
@@ -562,7 +540,7 @@
     "url": "https://cap.ucla.edu/event/crushing-wheelchairs"
    },
    {
-    "description": "SPELLLING performs at The Nimoy.",
+    "description": "SPELLLING live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_spellling.jpg?itok=98-JM1ih",
     "kind": "event",
@@ -573,7 +551,7 @@
     "url": "https://cap.ucla.edu/event/spellling"
    },
    {
-    "description": "Written by Kathy Acker and the Mekons, at The Nimoy.",
+    "description": "Written by Kathy Acker and the Mekons, performed at The Nimoy.",
     "end_date": "2027-01-09",
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_kingofpirates.jpg?itok=sJkbooa0",
     "kind": "event",
@@ -584,25 +562,25 @@
     "url": "https://cap.ucla.edu/event/pussy-king-pirates"
    },
    {
-    "description": "School Matinee Performance Grades 6-12 at The Nimoy, with Vijay Iyer.",
+    "description": "School matinee performance for grades 6-12 at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/900x600_DFSjennifervijay.jpg?itok=7q8yqpoz",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-01-15",
     "start_time": "10:45",
-    "title": "JENNIFER KOH, violin",
+    "title": "Design Sharing: Jennifer Koh and Vijay Iyer",
     "url": "https://cap.ucla.edu/event/design-sharing-jennifer-koh-and-vijay-iyer"
    },
    {
-    "description": "Music from Scenes of Living and Dying at The Nimoy, with Vijay Iyer.",
+    "description": "Jennifer Koh and Vijay Iyer live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_vijayjennifer.jpg?itok=rdmh-LQI",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-01-16",
     "start_time": "20:00",
-    "title": "JENNIFER KOH, violin",
+    "title": "Music from Scenes of Living and Dying",
     "url": "https://cap.ucla.edu/event/jennifer-koh-and-vijay-iyer"
    },
    {
@@ -617,7 +595,7 @@
     "url": "https://cap.ucla.edu/event/cuervo"
    },
    {
-    "description": "Live performance at the Freud Playhouse.",
+    "description": "Live performance at Freud Playhouse.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_kronos.jpg?itok=ghlWh2Rh",
     "kind": "event",
@@ -628,7 +606,7 @@
     "url": "https://cap.ucla.edu/event/kronos-quartet-2026-27"
    },
    {
-    "description": "School Matinee Performance Grades 4-8 at the Freud Playhouse.",
+    "description": "School matinee performance for grades 4-8 at Freud Playhouse.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/900x600_DFSkronos.jpg?itok=kWs0qQrh",
     "kind": "event",
@@ -639,7 +617,7 @@
     "url": "https://cap.ucla.edu/event/design-sharing-kronos-quartet"
    },
    {
-    "description": "Live performance at the Freud Playhouse.",
+    "description": "Live performance at Freud Playhouse.",
     "end_date": "2027-02-06",
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_catarina.jpg?itok=6XA5yTzb",
     "kind": "event",
@@ -650,7 +628,7 @@
     "url": "https://cap.ucla.edu/event/catarina"
    },
    {
-    "description": "School Matinee Performance Grades 5-8 at The Nimoy.",
+    "description": "School matinee performance for grades 5-8 at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/SO_2884_%28c%29Anja%20Schutz_banner_900x600.png.jpg?itok=ehl4DLKy",
     "kind": "event",
@@ -661,14 +639,14 @@
     "url": "https://cap.ucla.edu/event/design-sharing-so-percussion"
    },
    {
-    "description": "Just Like the World at The Nimoy.",
+    "description": "Helado Negro, Kate Stables and Sō Percussion live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/So-Percussion-and-Roberto-Carlos-Lange-Helado-Negro-by-Edwina-Hay-9416.jpg?itok=mY_6tUkE",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-02-10",
     "start_time": "20:00",
-    "title": "Helado Negro, Kate Stables and Sō Percussion",
+    "title": "Just Like the World",
     "url": "https://cap.ucla.edu/event/helado-negro-kate-stables-and-so-percussion"
    },
    {
@@ -683,36 +661,36 @@
     "url": "https://cap.ucla.edu/event/piano-spheres-performs-enno-poppes-rundfunk"
    },
    {
-    "description": "after it's over, it's gone in the air, at The Nimoy.",
+    "description": "Wild Up at The Nimoy live performance.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_wildup3.jpg?itok=E6aXyCMY",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-02-20",
     "start_time": "20:00",
-    "title": "Wild Up at The Nimoy",
+    "title": "after it's over, it's gone in the air.",
     "url": "https://cap.ucla.edu/event/wild-nimoy-2026-27"
    },
    {
-    "description": "Marks of RED at Royce Hall.",
+    "description": "Shamel Pitts | TRIBE live performance at Royce Hall.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_shamel.jpg?itok=HXIbtZzM",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-02-27",
     "start_time": "20:00",
-    "title": "Shamel Pitts | TRIBE",
+    "title": "Marks of RED",
     "url": "https://cap.ucla.edu/event/shamel-pitts-tribe"
    },
    {
-    "description": "La Vie Secrète des Vieux at The Nimoy.",
+    "description": "Mohamed El Khatib live performance at The Nimoy.",
     "end_date": "2027-03-05",
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_mohamed.jpg?itok=spa7QD53",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-03-04",
     "start_time": "20:00",
-    "title": "Mohamed El Khatib",
+    "title": "La Vie Secrète des Vieux",
     "url": "https://cap.ucla.edu/event/mohamed-el-khatib"
    },
    {
@@ -727,80 +705,80 @@
     "url": "https://cap.ucla.edu/event/roomful-teeth"
    },
    {
-    "description": "Or, The Whale at The Nimoy.",
+    "description": "Andrew Yee and Caroline Shaw live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_andrewcaroline.jpg?itok=RBlReg5-",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-03-27",
     "start_time": "20:00",
-    "title": "Andrew Yee and Caroline Shaw",
+    "title": "Or, The Whale",
     "url": "https://cap.ucla.edu/event/andrew-yee-and-caroline-shaw"
    },
    {
-    "description": "Music for Violas at The Nimoy.",
+    "description": "Nadia Sirota live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_nadia2.jpg?itok=zzWGTtZt",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-04-10",
     "start_time": "20:00",
-    "title": "Nadia Sirota",
+    "title": "Music for Violas",
     "url": "https://cap.ucla.edu/event/nadia-sirota"
    },
    {
-    "description": "School Matinee Performance Grades 6-12.",
+    "description": "School matinee performance for grades 6-12.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-08/900x600_DFSvari.jpg?itok=Q_A5Jmk7",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-04-16",
     "start_time": "10:45",
-    "title": "Varijashree Venugopal",
+    "title": "Design Sharing: Varijashree Venugopal",
     "url": "https://cap.ucla.edu/event/design-sharing-varijashree-venugopal"
    },
    {
-    "description": "Vari - Live at The Nimoy.",
+    "description": "Varijashree Venugopal live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_vari.jpg?itok=EWG1rhkD",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-04-16",
     "start_time": "20:00",
-    "title": "Varijashree Venugopal",
+    "title": "Vari - Live",
     "url": "https://cap.ucla.edu/event/varijashree-venugopal"
    },
    {
-    "description": "I Do Not Want What I Haven’t Got at The Nimoy.",
+    "description": "Dorian Wood live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_dorianwood.jpg?itok=25iriNBb",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-04-24",
     "start_time": "20:00",
-    "title": "Dorian Wood",
+    "title": "I Do Not Want What I Haven’t Got",
     "url": "https://cap.ucla.edu/event/dorian-wood"
    },
    {
-    "description": "Ear to the Ground at The Nimoy.",
+    "description": "Caleb Teicher and Nic Gareiss live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_calebnic.jpg?itok=MtaqmdLB",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-05-15",
     "start_time": "20:00",
-    "title": "Caleb Teicher and Nic Gareiss",
+    "title": "Ear to the Ground",
     "url": "https://cap.ucla.edu/event/ear-ground"
    },
    {
-    "description": "A Mouth Full of Dirt at The Nimoy.",
+    "description": "eucademix live performance at The Nimoy.",
     "end_date": null,
     "image": "https://cap.ucla.edu/sites/default/files/styles/event_teaser/public/2026-06/900x600_yukahonda.jpg?itok=njd2GpwL",
     "kind": "event",
     "price_text": null,
     "start_date": "2027-05-22",
     "start_time": "20:00",
-    "title": "eucademix",
+    "title": "A Mouth Full of Dirt",
     "url": "https://cap.ucla.edu/event/eucademix"
    }
   ]
@@ -867,30 +845,19 @@
   ]
  },
  "v2|claremont_lewis|events|https://clmoa.org/events/": {
-  "at": "2026-11-18T16:18:04+00:00",
-  "hash": "2a2fde05a892d9b21048",
+  "at": "2026-11-21T15:11:31+00:00",
+  "hash": "17bb46b20fdd4c3a5e39",
   "items": [
    {
-    "description": "The artist collective Claremont Temporary will take over the Museum to present Temp Work with an opening reception 5-8 pm.",
-    "end_date": "2026-11-22",
-    "image": "https://clmoa.org/wp-content/uploads/2026/11/Aimee-Goguen-Sculpture_crop.jpg",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-20",
-    "start_time": "17:00",
-    "title": "Temp Work",
-    "url": "https://clmoa.org/weekend-takeover-brings-temp-work-to-clma/"
-   },
-   {
-    "description": "A festive, guided watercolor workshop led by Miranda Rosso to craft four hand-illustrated holiday card designs.",
+    "description": "Members were invited to a reception with “Vintage Music” on the plaza and a preview of Furious Garden featuring new work by Deena Capparelli, Cj Jilek and Karen Kitchel that re-envision and re-construct familiar pastoral metaphors.",
     "end_date": null,
-    "image": "https://clmoa.org/wp-content/uploads/2025/01/2025-Art-Night-Out-4x5-f.jpg",
-    "kind": "event",
+    "image": null,
+    "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-12-10",
-    "start_time": "18:00",
-    "title": "Art Night Out: Deck the Cards",
-    "url": "https://clmoa-holiday-cards.eventbrite.com"
+    "start_date": "2021-09-04",
+    "start_time": null,
+    "title": "Furious Garden",
+    "url": null
    }
   ]
  },
@@ -1401,16 +1368,27 @@
   ]
  },
  "v2|japan_house|events|https://www.japanhousela.com/happenings/events/": {
-  "at": "2026-11-20T15:59:41+00:00",
-  "hash": "fff33292088b38d42f7a",
+  "at": "2026-11-21T15:11:22+00:00",
+  "hash": "dea630eec37987272978",
   "items": [
    {
-    "description": "Ongoing",
+    "description": "An evening with Koji Yanai on UNIQLO's film and social impact.",
     "end_date": null,
-    "image": "https://www.japanhousela.com/wp-content/uploads/2025/02/Mindfulness-Lounge-1280-1280x400.jpg",
+    "image": "https://www.japanhousela.com/wp-content/uploads/2026/11/UNIQLO-Dodgers-Heart-LifeWear-Featured-1280x400.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-02",
+    "start_time": null,
+    "title": "Made for All | UNIQLO’s Film & Social Impact",
+    "url": null
+   },
+   {
+    "description": null,
+    "end_date": null,
+    "image": "https://www.japanhousela.com/wp-content/uploads/2025/02/Mindfulness-Lounge-1280-655x328.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-20",
+    "start_date": "2025-02-01",
     "start_time": null,
     "title": "Mindfulness Lounge",
     "url": null
@@ -1418,7 +1396,7 @@
    {
     "description": null,
     "end_date": null,
-    "image": "https://www.japanhousela.com/wp-content/uploads/2026/09/JAPAN-CRAFT-Curator-Talk-Main-455x285.jpg",
+    "image": "https://www.japanhousela.com/wp-content/uploads/2026/09/JAPAN-CRAFT-Curator-Talk-Main-655x328.jpg",
     "kind": "event",
     "price_text": null,
     "start_date": "2026-11-07",
@@ -2460,8 +2438,8 @@
   ]
  },
  "v2|velaslavasay|events|https://www.panoramaonview.org/upcoming-events": {
-  "at": "2026-11-14T14:00:59+00:00",
-  "hash": "faff102f455c76f38b47",
+  "at": "2026-11-21T15:11:17+00:00",
+  "hash": "c3e27e8616b4d45c84d3",
   "items": [
    {
     "description": "Florence in Ruin: An Excavation is an installation that organizes and displays a psychic fixation on the Alameda Corridor and the Port of Long Beach as a terminal for corruption, paranoia, petroleum industries, and the transmission of art history.",
@@ -2527,8 +2505,8 @@
   ]
  },
  "v2|vincent_price|exhibitions|https://vpam.org/exhibitions/": {
-  "at": "2026-11-20T15:58:28+00:00",
-  "hash": "9758dad2dafc5ad1c289",
+  "at": "2026-11-21T15:10:19+00:00",
+  "hash": "f6331a5c3a473d9f6fa0",
   "items": [
    {
     "description": "Celebrating the life and work of Chicana artist, altarista, and educator Ofelia Esparza, whose cultural impact on East Los Angeles and beyond spans more than seven decades.",
@@ -2538,30 +2516,8 @@
     "price_text": null,
     "start_date": "2025-10-18",
     "start_time": null,
-    "title": "Ofelia Esparza: A Retrospective",
+    "title": "OFELIA ESPARZA: A RETROSPECTIVE",
     "url": "https://vpam.org/exhibitions/ofelia-esparza-a-retrospective/"
-   },
-   {
-    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
-    "end_date": "2027-05-22",
-    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-09-26",
-    "start_time": null,
-    "title": "Anida Yoeu Ali: The Buddhist Bug",
-    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
-   },
-   {
-    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
-    "end_date": "2027-06-12",
-    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2027-05-08",
-    "start_time": null,
-    "title": "New Voices: The 2027 District Wide Student Art Biennial",
-    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
    },
    {
     "description": "In their ongoing film and performance series Navigating the Archives Within, artists Francis and Anthony Almendárez examine how Latinx communities are represented and misrepresented.",
@@ -2584,6 +2540,28 @@
     "start_time": null,
     "title": "California Collectives: Asian American moderns, 1924-1965",
     "url": "https://vpam.org/exhibitions/california-collectives-asian-american-moderns-1924-1965/"
+   },
+   {
+    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
+    "end_date": "2027-05-22",
+    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-26",
+    "start_time": null,
+    "title": "Anida Yoeu Ali: The Buddhist Bug",
+    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
+   },
+   {
+    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
+    "end_date": "2027-06-12",
+    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-05-08",
+    "start_time": null,
+    "title": "New Voices: The 2027 District Wide Student Art Biennial",
+    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
    }
   ]
  },
