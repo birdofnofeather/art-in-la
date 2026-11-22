@@ -7,7 +7,7 @@ X-WR-CALNAME:Art in LA — Performing arts
 X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
 UID:center_theatre_group-2026-07-12-2026-la-writers-workshop-reading-series-44d356f7d3@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20260712
 DTEND;VALUE=DATE:20261206
 SUMMARY:2026 LA Writers' Workshop Reading Series
@@ -20,7 +20,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:pasadena_playhouse-2026-11-04-passing-strange-5eb5e56fb2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261129
 SUMMARY:Passing Strange
@@ -31,7 +31,7 @@ DESCRIPTION:Pasadena Playhouse · https://www.pasadenaplayhouse.org/show_e
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2026-11-05-when-yuri-met-malcolm-2ecea80c13@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261207
 SUMMARY:WHEN YURI MET MALCOLM
@@ -46,7 +46,7 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/jc
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2026-11-10-oh-mary-6c5215fc54@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261206
 SUMMARY:Oh\, Mary!
@@ -60,7 +60,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2026-11-11-destiny-of-desire-5fb1d38194@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261220
 SUMMARY:Destiny of Desire
@@ -73,7 +73,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:geffen_playhouse-2026-11-11-purpose-7644e2a1cf@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261111
 DTEND;VALUE=DATE:20261129
 SUMMARY:Purpose
@@ -83,7 +83,7 @@ DESCRIPTION:Geffen Playhouse · https://www.geffenplayhouse.org/tickets/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-11-20-ravel-falla-ortiz-02acabc0f5@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261122
 SUMMARY:Ravel\, Falla & Ortiz
@@ -96,7 +96,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2026-11-21-candide-81020612e4@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261213
 SUMMARY:Candide
@@ -107,7 +107,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:highways-2026-11-21-echo-lubimovka-c8aa25dd26@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Echo Lubimovka
@@ -116,43 +116,8 @@ URL:https://www.echolubimovka.com
 DESCRIPTION:Highways Performance Space · https://www.echolubimovka.com
 END:VEVENT
 BEGIN:VEVENT
-UID:cerritos_center-2026-11-21-sesame-street-live-elmos-got-the-moves-dc6bdef2a7@art-in-la
-DTSTAMP:20261121T151300Z
-DTSTART:20261121T220000Z
-SUMMARY:Sesame Street Live: Elmo’s Got the Moves!
-LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
-URL:https://www.ticketmaster.com/elmos-got-the-moves-cerritos-california-1
- 1-21-2026/event/0B006491CB744F7E
-DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
- aster.com/elmos-got-the-moves-cerritos-california-11-21-2026/event/0B0064
- 91CB744F7E
-END:VEVENT
-BEGIN:VEVENT
-UID:cap_ucla-2026-11-21-blue-hour-beckoning-a-double-bill-353905e5b2@art-in-la
-DTSTAMP:20261121T151300Z
-DTSTART:20261122T040000Z
-SUMMARY:Blue Hour / Beckoning: A Double Bill
-LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
-URL:https://cap.ucla.edu/event/cloud-gate
-DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/cloud-gate
- \n\nCloud Gate Dance Theatre of Taiwan performs a double bill at Royce Ha
- ll.
-END:VEVENT
-BEGIN:VEVENT
-UID:la_phil-2026-11-21-colburn-orchestra-73887f7516@art-in-la
-DTSTAMP:20261121T151300Z
-DTSTART:20261122T040000Z
-SUMMARY:Colburn Orchestra
-LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
-URL:https://www.laphil.com/events/instances/ygfhqgwt/2026-11-21/colburn-or
- chestra-7
-DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
- /www.laphil.com/events/instances/ygfhqgwt/2026-11-21/colburn-orchestra-7\
- n\nSounds About Town
-END:VEVENT
-BEGIN:VEVENT
 UID:la_phil-2026-11-24-the-mountain-goats-b411dbf44b@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261125T040000Z
 SUMMARY:The Mountain Goats
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -164,7 +129,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-11-27-home-alone-in-concert-f3536f7248@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Home Alone in Concert
@@ -177,7 +142,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-11-28-elf-in-concert-4eafdf6f71@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 SUMMARY:Elf in Concert
@@ -189,7 +154,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-01-holiday-brass-8d0f12eaf0@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261202T040000Z
 SUMMARY:Holiday Brass
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -201,7 +166,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-02-mannheim-steamroller-christmas-by-chip-d-490e4f7133@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261203T040000Z
 SUMMARY:Mannheim Steamroller Christmas by Chip Davis
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -213,7 +178,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:grand_performances-2026-12-03-grand-illuminations-opening-night-celebr-fed346402f@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261204T010000Z
 DTEND:20261204T050000Z
 SUMMARY:Grand Illuminations: Opening Night Celebration 2026
@@ -226,7 +191,7 @@ DESCRIPTION:Grand Performances · https://www.grandperformances.org/events
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-03-hilary-hahn-matthias-goerne-gloria-chien-1691d0b52d@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261204T040000Z
 SUMMARY:Hilary Hahn Matthias Goerne Gloria Chien
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -238,7 +203,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-03-tower-of-power-holidays-hits-929baa15c1@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261204T040000Z
 SUMMARY:Tower of Power: Holidays & Hits
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -248,7 +213,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:redcat-2026-12-04-calarts-winter-dance-festival-bernard-br-735479de49@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:CalArts Winter Dance Festival — Bernard Brown\, Crystal Jackson
@@ -260,7 +225,7 @@ DESCRIPTION:REDCAT · https://www.redcat.org/events/calarts-winter-dance-f
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-04-merryachi-christmas-d723e60f46@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261204
 SUMMARY:Merry-Achi Christmas
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -272,7 +237,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:highways-2026-12-04-fieldnotes-company-the-waiting-room-067900e70a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:fieldnotes company - The Waiting Room
@@ -284,7 +249,7 @@ DESCRIPTION:Highways Performance Space · https://www.highwaysperformance.
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2026-12-04-mujeres-de-mexico-stories-in-motion-140ad9f2f0@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261205T040000Z
 SUMMARY:Mujeres de Mexico: Stories in Motion
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -294,7 +259,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2026-12-04-inti-figgisvizuetas-music-for-transition-a7465eb635@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261205T040000Z
 SUMMARY:inti figgis-vizueta’s Music for Transitions
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -304,7 +269,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/inti-figgi
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-04-eroica-and-piano-concerto-no-1-with-duda-40a23728b5@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261205T040000Z
 SUMMARY:“Eroica” and Piano Concerto No. 1 with Dudamel
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -316,7 +281,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-05-neighborhood-concert-lancaster-performin-8f9b5cc73e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261205T210000Z
 SUMMARY:Neighborhood Concert: Lancaster Performing Arts Center
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -328,17 +293,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2026-12-05-feline-festive-40dc86ba50@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261206T040000Z
 SUMMARY:Feline Festive
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/meow-meow-2026-27
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/meow-meow-
- 2026-27\n\nMeow Meow live performance at The Nimoy.
+ 2026-27\n\nMeow Meow live performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-05-eroica-and-piano-concerto-no-2-with-duda-294bc14b0b@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261206T040000Z
 SUMMARY:“Eroica” and Piano Concerto No. 2 with Dudamel
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -350,7 +315,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-06-eroica-and-piano-concerto-no-3-with-duda-9573a7ec36@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261206T220000Z
 SUMMARY:“Eroica” and Piano Concerto No. 3 with Dudamel
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -362,7 +327,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:redcat-2026-12-06-2026-la-writers-workshop-reading-center-06d488a5db@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261206T233000Z
 SUMMARY:2026 LA Writers’ Workshop Reading… — Center Theatre Group
 LOCATION:631 W 2nd St\, Los Angeles\, CA 90012
@@ -372,7 +337,7 @@ DESCRIPTION:REDCAT · https://www.redcat.org/events/center-theatre-group-h
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2026-12-06-forever-tango-504845da0e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261207T020000Z
 SUMMARY:Forever Tango
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -382,7 +347,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2026-12-08-the-solo-project-eab358ec83@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:THE SOLO PROJECT
 LOCATION:120 Judge John Aiso St\, Los Angeles\, CA 90012
@@ -392,7 +357,7 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/th
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-08-kamasi-washington-c0dc4ef8f8@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261209T040000Z
 SUMMARY:Kamasi Washington
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -404,7 +369,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2026-12-09-christmas-dreaming-with-stella-cole-057e0ae46f@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261210T030000Z
 SUMMARY:Christmas Dreaming with Stella Cole
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -414,7 +379,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-09-the-last-testament-with-hlne-grimaud-f4a5764255@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261210T040000Z
 SUMMARY:The Last Testament with Hélène Grimaud
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -426,7 +391,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-10-dudamel-conducts-the-fifth-symphony-and-a6af5445cf@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261213
 SUMMARY:Dudamel Conducts the Fifth Symphony and Piano Concerto No. 4
@@ -439,7 +404,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:redcat-2026-12-11-a-recital-of-citations-mindy-seu-10b84bebef@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:A Recital of Citations — Mindy Seu
@@ -449,7 +414,7 @@ DESCRIPTION:REDCAT · https://www.redcat.org/events/recital-citations
 END:VEVENT
 BEGIN:VEVENT
 UID:highways-2026-12-11-beth-huelsenbeck-marissa-mahoney-render-bf0ef34a93@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:Beth Huelsenbeck & Marissa Mahoney - RENDER
 LOCATION:1651 18th St\, Santa Monica\, CA 90404
@@ -460,18 +425,18 @@ DESCRIPTION:Highways Performance Space · https://www.highwaysperformance.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2026-12-11-crushing-wheelchairs-a5ac359710@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T030000Z
 SUMMARY:Crushing Wheelchairs
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/crushing-wheelchairs
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/crushing-w
  heelchairs\n\nPOOR Magazine and Green Diamond Projects present a screenin
- g at The Nimoy.
+ g.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-11-neighborhood-concert-compton-college-d99a8aaa65@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T030000Z
 SUMMARY:Neighborhood Concert: Compton College
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -483,7 +448,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-11-jake-shimabukuros-holidays-in-hawaii-a6391660ac@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T040000Z
 SUMMARY:Jake Shimabukuro's Holidays in Hawai'i
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -493,7 +458,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2026-12-11-nella-cbaf0219a0@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T040000Z
 SUMMARY:Nella
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -503,7 +468,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2026-12-12-christmas-carol-goes-wrong-1fdd455fba@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20270110
 SUMMARY:Christmas Carol Goes Wrong
@@ -516,7 +481,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:highways-2026-12-12-jpeg-productions-the-martini-hour-prinst-544731a171@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:jpeg Productions - The Martini Hour: Prinston's Christmas Wish
 LOCATION:1651 18th St\, Santa Monica\, CA 90404
@@ -527,7 +492,7 @@ DESCRIPTION:Highways Performance Space · https://www.highwaysperformance.
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2026-12-12-brave-sounds-the-ride-with-ben-weber-6d8e4ca60c@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T230000Z
 DTEND:20261213T010000Z
 SUMMARY:Brave Sounds: The Ride with Ben Weber
@@ -538,7 +503,7 @@ DESCRIPTION:Pieter Performance Space · https://pieterpasd.com/programs/br
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-12-the-princess-bride-an-inconceivable-even-c20166eb9d@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261212T230000Z
 SUMMARY:The Princess Bride: An Inconceivable Evening with Cary Elwes
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -548,7 +513,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2026-12-12-david-benoit-a-tribute-to-charlie-brown-2b4081c81f@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261213T040000Z
 SUMMARY:David Benoit - A Tribute to Charlie Brown Christmas
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -558,17 +523,17 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2026-12-12-the-unknown-exalted-ed44324234@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261213T040000Z
 SUMMARY:The Unknown Exalted
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/spellling
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/spellling\
- n\nSPELLLING live performance at The Nimoy.
+ n\nSPELLLING live performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2026-12-13-atraviesa-groove-sessions-a6536eac0e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261213T190000Z
 DTEND:20261213T203000Z
 SUMMARY:aTRAVIESA Groove Sessions
@@ -583,7 +548,7 @@ DESCRIPTION:Pieter Performance Space · https://pieterpasd.com/programs/at
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-13-a-nostalgic-night-with-macaulay-culkin-f-85e4617bea@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261214T020000Z
 SUMMARY:A Nostalgic Night With Macaulay Culkin Following a Screening of Ho
  me Alone
@@ -594,7 +559,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-15-handels-messiah-with-le-concert-dastre-2bde43aada@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261216T030000Z
 SUMMARY:Handel’s Messiah with Le Concert d’Astrée
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -606,7 +571,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-16-chanticleer-6d0894a381@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261217T040000Z
 SUMMARY:Chanticleer
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -617,7 +582,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-16-home-for-the-holidays-2a4de6cec2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261217T040000Z
 SUMMARY:Home for the Holidays
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -627,7 +592,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-18-celebrating-christmas-with-handel-vivald-b4c148ff18@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261220
 SUMMARY:Celebrating Christmas with Handel & Vivaldi
@@ -640,7 +605,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2026-12-18-dave-koz-christmas-tour-2026-eb6b08c72d@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261219T040000Z
 SUMMARY:Dave Koz Christmas Tour 2026
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -650,7 +615,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-19-holiday-singalong-1cf07f4b5d@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20261219T193000Z
 SUMMARY:Holiday Sing-Along
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -662,7 +627,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2026-12-31-a-yacht-rock-nye-with-christopher-cross-3fb43f506a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270101T030000Z
 SUMMARY:A Yacht Rock NYE with Christopher Cross
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -674,7 +639,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cerritos_center-2027-01-02-smokey-robinson-legacy-of-love-tour-0383778685@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270103T040000Z
 SUMMARY:Smokey Robinson Legacy of Love Tour
 LOCATION:18000 Park Plaza Dr\, Cerritos\, CA 90703
@@ -684,7 +649,7 @@ DESCRIPTION:Cerritos Center for the Performing Arts · https://www.ticketm
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-08-daniel-harding-leads-strauss-be8cdb548b@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270110
 SUMMARY:Daniel Harding Leads Strauss
@@ -697,18 +662,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-01-08-pussy-king-of-the-pirates-5bf36b5c62@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270109T040000Z
 SUMMARY:Pussy\, King of the Pirates
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/pussy-king-pirates
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/pussy-king
- -pirates\n\nWritten by Kathy Acker and the Mekons\, performed at The Nimo
- y.
+ -pirates\n\nWritten by Kathy Acker and the Mekons.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-09-saintsans-the-carnival-of-the-animals-7ba2902822@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270109T190000Z
 SUMMARY:Saint-Saëns & The Carnival of the Animals
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -720,7 +684,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-10-michael-hey-958d8a22a1@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270111T033000Z
 SUMMARY:Michael Hey
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -732,7 +696,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-12-mozart-beethoven-schubert-e347fd2d4c@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270113T040000Z
 SUMMARY:Mozart\, Beethoven & Schubert
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -745,7 +709,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-14-the-emperor-concerto-and-symphony-no-4-64964eabaf@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270117
 SUMMARY:The “Emperor” Concerto and Symphony No. 4
@@ -757,19 +721,19 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
  -emperor-concerto-and-symphony-no-4
 END:VEVENT
 BEGIN:VEVENT
-UID:cap_ucla-2027-01-15-design-sharing-jennifer-koh-and-vijay-iy-c04cb33234@art-in-la
-DTSTAMP:20261121T151300Z
+UID:cap_ucla-2027-01-15-jennifer-koh-violin-e76d951dba@art-in-la
+DTSTAMP:20261122T151200Z
 DTSTART:20270115T184500Z
-SUMMARY:Design Sharing: Jennifer Koh and Vijay Iyer
+SUMMARY:JENNIFER KOH\, violin
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/design-sharing-jennifer-koh-and-vijay-iyer
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/design-sha
  ring-jennifer-koh-and-vijay-iyer\n\nSchool matinee performance for grades
-  6-12 at The Nimoy.
+  6-12 with Vijay Iyer.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-16-saintsans-the-carnival-of-the-animals-107d7fff58@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270116T190000Z
 SUMMARY:Saint-Saëns & The Carnival of the Animals
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -781,18 +745,18 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-01-16-music-from-scenes-of-living-and-dying-3c126fedfa@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270117T040000Z
 SUMMARY:Music from Scenes of Living and Dying
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/jennifer-koh-and-vijay-iyer
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/jennifer-k
- oh-and-vijay-iyer\n\nJennifer Koh and Vijay Iyer live performance at The 
- Nimoy.
+ oh-and-vijay-iyer\n\nJennifer Koh\, violin and Vijay Iyer\, composer\, pi
+ ano.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-17-gil-shaham-akira-eguchi-435a4f44f2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270118T033000Z
 SUMMARY:Gil Shaham Akira Eguchi
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -804,7 +768,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-21-mitsuko-uchida-esapekka-salonen-615c9d3c81@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270121
 DTEND;VALUE=DATE:20270124
 SUMMARY:Mitsuko Uchida & Esa-Pekka Salonen
@@ -817,17 +781,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-01-22-cuervo-d25c30ce99@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270123T040000Z
 SUMMARY:Cuervo
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/cuervo
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/cuervo\n\n
- Live performance at The Nimoy.
+ Live theater performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-01-22-how-to-survive-menopause-38cf158269@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270123T040000Z
 SUMMARY:How to Survive Menopause
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -837,7 +801,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-01-24-splintered-sunlight-a-tribute-to-the-gra-f177e01543@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270124T230000Z
 SUMMARY:Splintered Sunlight: A Tribute to the Grateful Dead
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -847,7 +811,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-26-a-day-in-the-life-07e21368ef@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270127T040000Z
 SUMMARY:A Day in the Life
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -859,7 +823,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-27-kodo-112423db4a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270128T040000Z
 SUMMARY:KODO
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -870,7 +834,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-01-29-salonen-leads-smith-sibelius-9f3a612367@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270131
 SUMMARY:Salonen Leads Smith & Sibelius
@@ -883,7 +847,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-01-30-an-evening-with-adam-kinzinger-fa5328fbe5@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270131T040000Z
 SUMMARY:An Evening with Adam Kinzinger
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -893,7 +857,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-01-31-kronos-quartet-c45a65851a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
 SUMMARY:Kronos Quartet
@@ -904,7 +868,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/kronos-qua
 END:VEVENT
 BEGIN:VEVENT
 UID:pieter-2027-01-31-intro-to-tango-with-jennifer-borcea-gabr-d538481ffb@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270131T210000Z
 DTEND:20270131T230000Z
 SUMMARY:Intro To Tango with Jennifer Borcea & Gabriel Magni
@@ -917,7 +881,7 @@ DESCRIPTION:Pieter Performance Space · https://pieterpasd.com/programs/in
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-01-31-featuring-kate-kortum-and-david-marino-aef8ebea7e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270201T020000Z
 SUMMARY:Featuring Kate Kortum and David Marino
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -927,7 +891,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:pasadena_playhouse-2027-02-03-dead-as-a-dodo-d1dde69a19@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270228
 SUMMARY:Dead as a Dodo
@@ -938,7 +902,7 @@ DESCRIPTION:Pasadena Playhouse · https://www.pasadenaplayhouse.org/show_e
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-05-one-morning-turns-into-an-eternity-with-d27bc1f185@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270207
 SUMMARY:One Morning Turns Into an Eternity with Esa-Pekka Salonen
@@ -951,17 +915,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-05-catarina-a3ece38199@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270206T040000Z
 SUMMARY:Catarina
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/catarina
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/catarina\n
- \nLive performance at Freud Playhouse.
+ \nLive theater performance at Freud Playhouse.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-06-making-meaning-ritual-in-contemporary-li-7df549d0f1@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270206T220000Z
 SUMMARY:Making Meaning: Ritual in Contemporary Life
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -973,7 +937,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-02-06-les-ballets-trockadero-de-monte-carlo-df4289d7be@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270207T040000Z
 SUMMARY:Les Ballets Trockadero de Monte Carlo
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -983,7 +947,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:a_noise_within-2027-02-07-as-you-like-it-33ed9c4a68@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270307
 SUMMARY:AS YOU LIKE IT
@@ -995,7 +959,7 @@ DESCRIPTION:A Noise Within · https://www.anoisewithin.org/play/as-you-lik
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-09-lunar-new-year-5ee7b58465@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270210T040000Z
 SUMMARY:Lunar New Year
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1007,29 +971,28 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-10-s-percussion-3c93bc12ce@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270210T184500Z
 SUMMARY:Sō Percussion
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/design-sharing-so-percussion
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/design-sha
- ring-so-percussion\n\nSchool matinee performance for grades 5-8 at The Ni
- moy.
+ ring-so-percussion\n\nSchool matinee performance for grades 5-8.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-10-just-like-the-world-a78a63c8cc@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270211T040000Z
 SUMMARY:Just Like the World
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/helado-negro-kate-stables-and-so-percussion
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/helado-neg
  ro-kate-stables-and-so-percussion\n\nHelado Negro\, Kate Stables and Sō 
- Percussion live performance at The Nimoy.
+ Percussion live performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-11-requiem-esapekka-salonen-conducts-mozart-c44e8b1677@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270211
 DTEND;VALUE=DATE:20270214
 SUMMARY:Requiem Esa-Pekka Salonen Conducts Mozart and Ligeti
@@ -1042,7 +1005,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-02-13-fiddler-on-the-roof-9d0a8192b9@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270314
 SUMMARY:Fiddler on the Roof
@@ -1055,7 +1018,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-13-piano-spheres-performs-enno-poppes-rundf-52d670b669@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270214T040000Z
 SUMMARY:Piano Spheres performs Enno Poppe's Rundfunk
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -1065,7 +1028,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/piano-sphe
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-18-fountains-and-pines-of-rome-5e08e585ec@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270221
 SUMMARY:Fountains and Pines of Rome
@@ -1078,7 +1041,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2027-02-18-kristina-wong-foodbankinfluencer-0166a5c891@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270307
 SUMMARY:KRISTINA WONG #FoodBankInfluencer
@@ -1090,7 +1053,7 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/kr
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-19-miles-davis-at-100-cool-beyond-273ea3dcb9@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270220T040000Z
 SUMMARY:Miles Davis at 100: Cool & Beyond
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1102,7 +1065,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-20-beethovens-fifth-2b700b9d9c@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270303
 SUMMARY:Beethoven’s Fifth
@@ -1114,17 +1077,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-20-after-its-over-its-gone-in-the-air-296e3e9fb8@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270221T040000Z
 SUMMARY:after it's over\, it's gone in the air.
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/wild-nimoy-2026-27
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/wild-nimoy
- -2026-27\n\nWild Up at The Nimoy live performance.
+ -2026-27\n\nWild Up live performance at The Nimoy.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-24-vkingur-lafsson-e7a53d4dc9@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270225T040000Z
 SUMMARY:Víkingur Ólafsson
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1136,7 +1099,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-25-wolfe-mattingly-ea2400e649@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270226T040000Z
 SUMMARY:Wolfe & Mattingly
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1148,7 +1111,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-26-vasks-prt-grecki-0e4141b4dd@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
 SUMMARY:Vasks\, Pärt & Górecki
@@ -1161,7 +1124,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-02-27-nabucco-f971c12b3e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270321
 SUMMARY:Nabucco
@@ -1172,17 +1135,17 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-02-27-marks-of-red-cb82ade274@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270228T040000Z
 SUMMARY:Marks of RED
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/shamel-pitts-tribe
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/shamel-pit
- ts-tribe\n\nShamel Pitts | TRIBE live performance at Royce Hall.
+ ts-tribe\n\nShamel Pitts | TRIBE live dance performance at Royce Hall.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-02-28-london-symphony-orchestra-with-antonio-p-d82baa12ba@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270301T033000Z
 SUMMARY:London Symphony Orchestra with Antonio Pappano
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1194,7 +1157,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-03-02-les-talens-lyriques-24e67d9c58@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270302
 SUMMARY:Les Talens Lyriques
 LOCATION:135 N Grand Ave\, Los Angeles\, CA 90012
@@ -1204,7 +1167,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-03-seongjin-cho-46c7bfee94@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270304T040000Z
 SUMMARY:Seong-Jin Cho
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1216,7 +1179,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-04-introducing-beethoven-221bbd378a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270304
 DTEND;VALUE=DATE:20270305
 SUMMARY:Introducing Beethoven
@@ -1229,17 +1192,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-03-04-la-vie-secrte-des-vieux-82b4378459@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270305T040000Z
 SUMMARY:La Vie Secrète des Vieux
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/mohamed-el-khatib
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/mohamed-el
- -khatib\n\nMohamed El Khatib live performance at The Nimoy.
+ -khatib\n\nMohamed El Khatib live installation-performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-06-with-film-minimalist-sound-minimalist-ci-29a1f9c784@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270307T010000Z
 SUMMARY:WITH FILM: Minimalist Sound — Minimalist Cinema
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1252,7 +1215,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-06-jensen-mcrae-af032f0145@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270307T040000Z
 SUMMARY:Jensen McRae
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1264,7 +1227,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-07-steve-reich-9702245bb2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270307T220000Z
 SUMMARY:Steve Reich
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1275,7 +1238,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-07-olivier-latry-ac77cdf5b2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270308T033000Z
 SUMMARY:Olivier Latry
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1287,7 +1250,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-09-daniil-trifonov-5624b7d5cc@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270310T040000Z
 SUMMARY:Daniil Trifonov
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1299,7 +1262,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-10-bria-skonberg-quintet-a23ea28cda@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270311T030000Z
 SUMMARY:Bria Skonberg Quintet
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1309,7 +1272,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-12-anna-handler-conducts-philip-glass-ab0a6da554@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
 SUMMARY:Anna Handler Conducts Philip Glass
@@ -1322,7 +1285,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-03-13-saturday-mornings-at-the-opera-mozart-op-242fc89a09@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270410
 SUMMARY:Saturday Mornings at the Opera: Mozart Opera Tales
@@ -1334,7 +1297,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-14-the-all-new-wizard-of-oz-on-ice-5eb459ed72@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270314T220000Z
 SUMMARY:The All New Wizard of Oz on Ice
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1344,7 +1307,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-14-allbeethoven-with-anna-handler-11eb48c9c6@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270315T023000Z
 SUMMARY:All-Beethoven with Anna Handler
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1357,7 +1320,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-16-john-adamsrhythmic-lines-c4f8c2fc60@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270317T030000Z
 SUMMARY:John Adams/Rhythmic Lines
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1369,7 +1332,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-03-17-john-proctor-is-the-villain-522e32fc76@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270425
 SUMMARY:John Proctor is the Villain
@@ -1383,7 +1346,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-18-mozart-brahms-738055bef6@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270318
 DTEND;VALUE=DATE:20270320
 SUMMARY:Mozart & Brahms
@@ -1395,7 +1358,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-18-songs-from-a-hat-fe727bd355@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270319T030000Z
 SUMMARY:Songs From a Hat
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1405,7 +1368,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-19-hiroshi-yoshimura-flora-green-4fa3b20b7e@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Hiroshi Yoshimura: Flora / Green
@@ -1418,7 +1381,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-20-body-live-live-music-topanga-tower-7edaf7e6dd@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 SUMMARY:BODY LIVE LIVE MUSIC: Topanga Tower
@@ -1431,7 +1394,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-20-flamenco-vivo-carlota-santana-quinto-ele-a64798a99c@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270321T030000Z
 SUMMARY:Flamenco Vivo Carlota Santana: Quinto Elemento
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1441,7 +1404,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-03-20-roomful-of-teeth-b79b11e5fc@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270321T030000Z
 SUMMARY:Roomful of Teeth
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -1451,7 +1414,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/roomful-te
 END:VEVENT
 BEGIN:VEVENT
 UID:a_noise_within-2027-03-21-great-expectations-508d5ff900@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270418
 SUMMARY:GREAT EXPECTATIONS
@@ -1463,7 +1426,7 @@ DESCRIPTION:A Noise Within · https://www.anoisewithin.org/play/great-expe
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-21-the-music-of-paul-mccartney-03f2b182c0@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270321T220000Z
 SUMMARY:The Music of Paul McCartney
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1473,7 +1436,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-25-dvoks-new-world-f8b9541ab4@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270327
 SUMMARY:Dvořák’s “New World”
@@ -1485,7 +1448,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-26-herbie-hancock-046406d1a4@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270327T030000Z
 SUMMARY:Herbie Hancock
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1497,7 +1460,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-26-tien-hsieh-7addf79f87@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270327T030000Z
 SUMMARY:Tien Hsieh
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1507,7 +1470,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-03-27-an-evening-with-jen-hatmaker-98afe7ba87@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270328T030000Z
 SUMMARY:An Evening with Jen Hatmaker
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1517,18 +1480,17 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-03-27-or-the-whale-ed85e4f912@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270328T030000Z
 SUMMARY:Or\, The Whale
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/andrew-yee-and-caroline-shaw
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/andrew-yee
- -and-caroline-shaw\n\nAndrew Yee and Caroline Shaw live performance at Th
- e Nimoy.
+ -and-caroline-shaw\n\nAndrew Yee and Caroline Shaw live performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-03-30-prokofiev-shostakovich-more-0e67895aa9@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270331T030000Z
 SUMMARY:Prokofiev\, Shostakovich & More
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1541,7 +1503,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-02-nicola-benedetti-plays-mendelssohn-2e9a775e41@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270402
 DTEND;VALUE=DATE:20270404
 SUMMARY:Nicola Benedetti Plays Mendelssohn
@@ -1554,7 +1516,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-06-meredith-monk-indras-net-b35513293a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270407T030000Z
 SUMMARY:Meredith Monk Indra’s Net
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1566,7 +1528,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-09-schumanns-piano-concerto-3db3de04a8@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270409
 DTEND;VALUE=DATE:20270411
 SUMMARY:Schumann’s Piano Concerto
@@ -1579,17 +1541,17 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-04-10-music-for-violas-b23628acf2@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270411T030000Z
 SUMMARY:Music for Violas
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/nadia-sirota
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/nadia-siro
- ta\n\nNadia Sirota live performance at The Nimoy.
+ ta\n\nNadia Sirota live performance.
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-04-13-riverdance-30-the-new-generation-46d512ac39@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270413
 DTEND;VALUE=DATE:20270418
 SUMMARY:Riverdance 30: The New Generation
@@ -1603,9 +1565,9 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:pasadena_playhouse-2027-04-14-real-women-have-curves-the-musical-af567d66e9@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270414
-DTEND;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
 SUMMARY:Real Women Have Curves: The Musical
 LOCATION:39 S El Molino Ave\, Pasadena\, CA 91101
 URL:https://www.pasadenaplayhouse.org/show_event/real-women-have-curves-th
@@ -1615,7 +1577,7 @@ DESCRIPTION:Pasadena Playhouse · https://www.pasadenaplayhouse.org/show_e
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-15-evgeny-kissin-fc0cc749d0@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270416T030000Z
 SUMMARY:Evgeny Kissin
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1627,7 +1589,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-16-john-adams-79d62b2769@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270418
 SUMMARY:John Adams
@@ -1637,10 +1599,10 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
  /www.laphil.com/events/instances/r5c63hjh/2027-04-16/john-adams
 END:VEVENT
 BEGIN:VEVENT
-UID:cap_ucla-2027-04-16-design-sharing-varijashree-venugopal-16975cbe69@art-in-la
-DTSTAMP:20261121T151300Z
+UID:cap_ucla-2027-04-16-varijashree-venugopal-837329cbd7@art-in-la
+DTSTAMP:20261122T151200Z
 DTSTART:20270416T174500Z
-SUMMARY:Design Sharing: Varijashree Venugopal
+SUMMARY:Varijashree Venugopal
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/design-sharing-varijashree-venugopal
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/design-sha
@@ -1648,7 +1610,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/design-sha
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-04-16-vari-live-3dff4caec6@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270417T030000Z
 SUMMARY:Vari - Live
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -1658,7 +1620,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/varijashre
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-04-17-turandot-a982042318@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270509
 SUMMARY:Turandot
@@ -1669,7 +1631,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-17-carlos-simons-dreaming-together-ad9b3a2ce4@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270417T180000Z
 SUMMARY:Carlos Simon’s Dreaming Together
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1681,7 +1643,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-17-with-music-minimalist-cinema-minimalist-2787bc8303@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270417T190000Z
 SUMMARY:WITH MUSIC: Minimalist Cinema — Minimalist Sound
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1693,7 +1655,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-20-bartk-dvok-51f6af6b5a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270421T030000Z
 SUMMARY:Bartók & Dvořák
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1705,7 +1667,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-04-22-erin-morley-lawrence-brownlee-76877653ef@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270422
 SUMMARY:Erin Morley & Lawrence Brownlee
 LOCATION:135 N Grand Ave\, Los Angeles\, CA 90012
@@ -1716,7 +1678,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-22-yuja-wang-d9acdee050@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270423T030000Z
 SUMMARY:Yuja Wang
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1728,7 +1690,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-23-rachmaninoffs-third-piano-concerto-ce4b3bd89a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270425
 SUMMARY:Rachmaninoff’s Third Piano Concerto
@@ -1741,7 +1703,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-24-carlos-simons-dreaming-together-1f05522741@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270424T180000Z
 SUMMARY:Carlos Simon’s Dreaming Together
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1753,7 +1715,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-04-24-i-do-not-want-what-i-havent-got-c548ced3f8@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270425T030000Z
 SUMMARY:I Do Not Want What I Haven’t Got
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -1763,7 +1725,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/dorian-woo
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-27-james-mcvinnies-power-switch-2b2778ae40@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270428T030000Z
 SUMMARY:James McVinnie’s Power Switch
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1775,7 +1737,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-04-29-schumanns-third-symphony-5373129ffd@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270501
 SUMMARY:Schumann’s Third Symphony
@@ -1788,7 +1750,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:a_noise_within-2027-05-02-trouble-in-mind-eda810df86@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270530
 SUMMARY:TROUBLE IN MIND
@@ -1800,7 +1762,7 @@ DESCRIPTION:A Noise Within · https://www.anoisewithin.org/play/trouble-in
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-05-02-momix-botanica-1e16a101de@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270503T010000Z
 SUMMARY:MOMIX: Botanica
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1810,7 +1772,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:carpenter_center-2027-05-05-ann-hampton-callaway-and-niki-haris-broa-43e15553cb@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270506T020000Z
 SUMMARY:Ann Hampton Callaway and Niki Haris: Broad Appeal
 LOCATION:6200 E Atherton St\, Long Beach\, CA 90815
@@ -1821,7 +1783,7 @@ DESCRIPTION:Carpenter Performing Arts Center · https://www.carpenterarts.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-06-dudamel-leads-prokofiev-stravinsky-c449897165@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270509
 SUMMARY:Dudamel Leads Prokofiev & Stravinsky
@@ -1834,7 +1796,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-05-06-the-babysitters-club-a-new-musical-5e5a013866@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270506
 DTEND;VALUE=DATE:20270613
 SUMMARY:The Baby-sitters Club: A New Musical
@@ -1847,7 +1809,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2027-05-08-redpoint-my-heart-b5602d0bb5@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:REDPOINT MY HEART
@@ -1859,7 +1821,7 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/re
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2027-05-08-stone-maiden-b4dc72c784@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270508
 DTEND;VALUE=DATE:20270509
 SUMMARY:STONE MAIDEN
@@ -1871,7 +1833,7 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/st
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-05-08-sondra-radvanovsky-1c2d2eaf06@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270508
 SUMMARY:Sondra Radvanovsky
 LOCATION:135 N Grand Ave\, Los Angeles\, CA 90012
@@ -1881,7 +1843,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-13-the-rite-of-spring-with-salonen-e6db054658@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270513
 DTEND;VALUE=DATE:20270516
 SUMMARY:The Rite of Spring with Salonen
@@ -1894,7 +1856,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:east_west_players-2027-05-15-soft-magical-tofu-boys-a393f24cbc@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270516
 SUMMARY:SOFT MAGICAL TOFU BOY(S)
@@ -1906,17 +1868,17 @@ DESCRIPTION:East West Players · https://www.eastwestplayers.org/events/sm
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-05-15-ear-to-the-ground-e3ea14ec63@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270516T030000Z
 SUMMARY:Ear to the Ground
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
 URL:https://cap.ucla.edu/event/ear-ground
 DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/ear-ground
- \n\nCaleb Teicher and Nic Gareiss live performance at The Nimoy.
+ \n\nCaleb Teicher and Nic Gareiss live dance performance at The Nimoy.
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-16-nathaniel-gumbs-e27a4bfd14@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270517T023000Z
 SUMMARY:Nathaniel Gumbs
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1928,7 +1890,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:ford_theatres-2027-05-18-agnes-obel-6eebd7f42b@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270519T030000Z
 SUMMARY:Agnes Obel
 LOCATION:2580 Cahuenga Blvd E\, Los Angeles\, CA 90068
@@ -1939,7 +1901,7 @@ DESCRIPTION:The Ford · https://www.theford.com/events/instances/dfe9ywaw/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-18-british-chamber-music-2a737b37ef@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270519T030000Z
 SUMMARY:British Chamber Music
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1951,7 +1913,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-20-chopins-first-piano-concerto-with-hayato-00229c4df4@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270523
 SUMMARY:Chopin’s First Piano Concerto with Hayato Sumino
@@ -1964,7 +1926,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-05-20-the-old-man-and-the-sea-fdafed2888@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270520
 DTEND;VALUE=DATE:20270523
 SUMMARY:The Old Man and the Sea
@@ -1975,7 +1937,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:cap_ucla-2027-05-22-a-mouth-full-of-dirt-66859964ee@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270523T030000Z
 SUMMARY:A Mouth Full of Dirt
 LOCATION:340 Royce Dr\, Los Angeles\, CA 90095
@@ -1985,7 +1947,7 @@ DESCRIPTION:CAP UCLA (Royce Hall) · https://cap.ucla.edu/event/eucademix\
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-25-water-dreams-and-air-songs-9a6e645669@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270526T030000Z
 SUMMARY:Water Dreams and Air Songs
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -1997,7 +1959,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-05-26-fences-fdbe152182@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270526
 DTEND;VALUE=DATE:20270703
 SUMMARY:Fences
@@ -2009,7 +1971,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-27-john-williams-mahler-with-anna-handler-ef6df43bea@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270527
 DTEND;VALUE=DATE:20270530
 SUMMARY:John Williams & Mahler with Anna Handler
@@ -2022,7 +1984,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:la_opera-2027-05-29-marriage-of-figaro-f99f2ece34@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270529
 DTEND;VALUE=DATE:20270620
 SUMMARY:Marriage of Figaro
@@ -2033,7 +1995,7 @@ DESCRIPTION:LA Opera (Dorothy Chandler Pavilion) · https://www.laopera.or
 END:VEVENT
 BEGIN:VEVENT
 UID:la_phil-2027-05-29-bernadette-peters-dc8b5b30fe@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270530T030000Z
 SUMMARY:Bernadette Peters
 LOCATION:111 S Grand Ave\, Los Angeles\, CA 90012
@@ -2045,7 +2007,7 @@ DESCRIPTION:Los Angeles Philharmonic (Walt Disney Concert Hall) · https:/
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-07-06-boop-the-musical-effa36326a@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270706
 DTEND;VALUE=DATE:20270801
 SUMMARY:BOOP!® The Musical
@@ -2058,7 +2020,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-09-02-spirited-away-b950d7fa99@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270902
 DTEND;VALUE=DATE:20271024
 SUMMARY:Spirited Away
@@ -2072,7 +2034,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:center_theatre_group-2027-09-08-the-turning-8cf0241122@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART;VALUE=DATE:20270908
 DTEND;VALUE=DATE:20271017
 SUMMARY:The Turning
@@ -2085,7 +2047,7 @@ DESCRIPTION:Center Theatre Group · https://www.centertheatregroup.org/sho
 END:VEVENT
 BEGIN:VEVENT
 UID:ford_theatres-2027-09-16-attack-of-the-space-people-cd70f17a61@art-in-la
-DTSTAMP:20261121T151300Z
+DTSTAMP:20261122T151200Z
 DTSTART:20270917T030000Z
 SUMMARY:Attack of the Space People!
 LOCATION:2580 Cahuenga Blvd E\, Los Angeles\, CA 90068
