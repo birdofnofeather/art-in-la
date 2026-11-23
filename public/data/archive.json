@@ -7065,27 +7065,6 @@
     "audience": []
   },
   {
-    "id": "huntington-2026-06-17-drawing-from-the-gallery-97e41086a7",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-06-17T17:30:00-07:00",
-    "end": "2026-06-17T20:00:00-07:00",
-    "all_day": false,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DKG0rvTpI&w=1080&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-06-18T07:09:04+00:00",
-    "event_types": [
-      "other"
-    ],
-    "_default_type": "other",
-    "audience": []
-  },
-  {
     "id": "academy_museum-2026-06-18-10th-anniversary-of-spa-night-e9211be309",
     "venue_id": "academy_museum",
     "title": "10th Anniversary of Spa Night",
@@ -16774,6 +16753,54 @@
     "_default_type": "screening"
   },
   {
+    "id": "lamag-2026-09-03-civilized-voices-at-barnsdall-art-park-f54b375abf",
+    "venue_id": "lamag",
+    "title": "Civilized Voices at Barnsdall Art Park",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-09-03",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://lamag.org/civilized-voices",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lamag.org",
+    "scraped_at": "2026-11-21T15:10:44+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
+    "id": "lamag-2026-09-03-susan-silton-c24b4ce5e0",
+    "venue_id": "lamag",
+    "title": "Susan Silton:",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-09-03",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://lamag.org/diving-into-the-wreck",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "lamag.org",
+    "scraped_at": "2026-11-21T15:10:44+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "getty_center-2026-09-03-exhibition-tour-stendahls-world-marketin-4416e90600",
     "venue_id": "getty_center",
     "title": "Exhibition Tour: Stendahl’s World: Marketing Ancient Mexico and Modern Art in Los Angeles",
@@ -17798,29 +17825,6 @@
     "location_override": null,
     "source": "museumoftolerance.com",
     "scraped_at": "2026-09-08T12:02:08+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
-    "id": "huntington-2026-09-09-drawing-from-the-gallery-0d702e4fe7",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-09-09",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-09-08T12:02:01+00:00",
     "event_types": [
       "other"
     ],
@@ -25348,57 +25352,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_center-2026-10-04-images-and-imagination-collage-workshop-d6b9dbc072",
-    "venue_id": "getty_center",
-    "title": "Images and Imagination: Collage Workshop (Bilingual)",
-    "description": "Art Making, Family",
-    "event_type": "workshop",
-    "start": "2026-10-04T11:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/images-imagination-collage",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-10-04T13:05:23+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other"
-  },
-  {
-    "id": "getty_center-2026-10-04-artistatwork-serigraphy-artista-en-accin-dc81871de0",
-    "venue_id": "getty_center",
-    "title": "Artist-at-Work: Serigraphy | Artista en acción: Serigrafía",
-    "description": "Demonstrations, Family",
-    "event_type": "workshop",
-    "start": "2026-10-04T11:30:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/aaw-serigraphy",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-10-04T13:05:23+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "workshop"
-  },
-  {
     "id": "calarts-2026-10-04-interview-portraitsexh-944e8e399b",
     "venue_id": "calarts",
     "title": "Interview Portraits",
@@ -25836,29 +25789,6 @@
     "scraped_at": "2026-10-06T14:01:25+00:00",
     "event_types": [
       "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
-    "id": "huntington-2026-10-07-drawing-from-the-gallery-999a1e2296",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-10-07",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-10-06T14:01:25+00:00",
-    "event_types": [
-      "other"
     ],
     "is_free": null,
     "price_text": null,
@@ -26611,32 +26541,6 @@
     "price_text": "Free",
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "getty_villa-2026-10-10-artistatwork-making-mosaics-artista-en-a-6348957a8c",
-    "venue_id": "getty_villa",
-    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
-    "description": "Demonstrations, Family",
-    "event_type": "workshop",
-    "start": "2026-10-10T11:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-10-10T13:23:34+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "workshop"
   },
   {
     "id": "academy_museum-2026-10-10-the-little-vampire-in-35mm-3e2787beb3",
@@ -30887,32 +30791,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_villa-2026-10-24-artistatwork-making-mosaics-artista-en-a-d23768008c",
-    "venue_id": "getty_villa",
-    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
-    "description": "Demonstrations, Family",
-    "event_type": "workshop",
-    "start": "2026-10-24T11:00:00-07:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-10-24T11:54:04+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "workshop"
-  },
-  {
     "id": "calarts-2026-10-24-career-caf-grand-avenue-arts-all-access-1adda52ac6",
     "venue_id": "calarts",
     "title": "Career Café: Grand Avenue Arts All Access",
@@ -32643,6 +32521,29 @@
     "_default_type": "other"
   },
   {
+    "id": "tsa_la-2026-10-31-murmuration-e74a6a973c",
+    "venue_id": "tsa_la",
+    "title": "Murmuration",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-10-31",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://www.tigerstrikesasteroid.com/la/murmuration",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "tigerstrikesasteroid.com",
+    "scraped_at": "2026-11-21T15:11:16+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "exhibition"
+  },
+  {
     "id": "huntington-2026-10-31-strange-science-b81e647cde",
     "venue_id": "huntington",
     "title": "Strange Science",
@@ -32827,6 +32728,29 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "monte_vista-2026-10-31-the-water-that-connects-us-b6c22c1a96",
+    "venue_id": "monte_vista",
+    "title": "The Water That Connects Us",
+    "description": "",
+    "event_type": "exhibition",
+    "start": "2026-10-31T19:00:00-07:00",
+    "end": "2026-11-22",
+    "all_day": false,
+    "url": "https://www.montevistaprojects.com",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "montevistaprojects.com",
+    "scraped_at": "2026-11-21T15:11:15+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "exhibition"
   },
   {
     "id": "hammer-2026-10-31-la-llorona-pulse-649a81ded6",
@@ -35191,31 +35115,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_center-2026-11-08-images-and-imagination-collage-workshop-fb5d957fb1",
-    "venue_id": "getty_center",
-    "title": "Images and Imagination: Collage Workshop (Bilingual)",
-    "description": "Art Making, Family",
-    "event_type": "workshop",
-    "start": "2026-11-08T11:00:00-08:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/images-imagination-collage",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-11-08T14:08:52+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other"
-  },
-  {
     "id": "molaa-2026-11-08-molaa-members-book-club-november-6157f03aa6",
     "venue_id": "molaa",
     "title": "MOLAA Members Book Club - November",
@@ -35262,32 +35161,6 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other"
-  },
-  {
-    "id": "getty_center-2026-11-08-artistatwork-serigraphy-artista-en-accin-01e88a8baa",
-    "venue_id": "getty_center",
-    "title": "Artist-at-Work: Serigraphy | Artista en acción: Serigrafía",
-    "description": "Demonstrations, Family",
-    "event_type": "workshop",
-    "start": "2026-11-08T11:30:00-08:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/aaw-serigraphy",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Center",
-    "source": "getty.edu",
-    "scraped_at": "2026-11-08T14:08:52+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "workshop"
   },
   {
     "id": "fowler-2026-11-08-story-time-around-the-world-ifugao-tales-79dd50f3c4",
@@ -37237,32 +37110,6 @@
     "_default_type": "other"
   },
   {
-    "id": "getty_villa-2026-11-14-artistatwork-making-mosaics-artista-en-a-2c1c561a1c",
-    "venue_id": "getty_villa",
-    "title": "Artist-at-Work: Making Mosaics | Artista en acción: Creación de mosaicos",
-    "description": "Demonstrations, Family",
-    "event_type": "workshop",
-    "start": "2026-11-14T11:00:00-08:00",
-    "end": null,
-    "all_day": false,
-    "url": "https://www.getty.edu/calendar/aaw-making-mosaics",
-    "image": null,
-    "artists": [],
-    "location_override": "Getty Villa",
-    "source": "getty.edu",
-    "scraped_at": "2026-11-14T13:59:43+00:00",
-    "event_types": [
-      "workshop"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [
-      "family"
-    ],
-    "_default_type": "other",
-    "_asserted_type": "workshop"
-  },
-  {
     "id": "academy_museum-2026-11-14-frankenweenie-in-35mm-871e30fbbd",
     "venue_id": "academy_museum",
     "title": "Frankenweenie in 35mm",
@@ -38533,29 +38380,6 @@
     "_default_type": "other"
   },
   {
-    "id": "huntington-2026-11-18-drawing-from-the-gallery-8ae2c17b94",
-    "venue_id": "huntington",
-    "title": "Drawing from the Gallery",
-    "description": "",
-    "event_type": "other",
-    "start": "2026-11-18",
-    "end": null,
-    "all_day": true,
-    "url": "https://www.huntington.org/event/drawing-the-gallery",
-    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DdSFD2kpL&w=3840&q=75",
-    "artists": [],
-    "location_override": null,
-    "source": "huntington.org",
-    "scraped_at": "2026-11-17T16:47:06+00:00",
-    "event_types": [
-      "other"
-    ],
-    "is_free": null,
-    "price_text": null,
-    "audience": [],
-    "_default_type": "other"
-  },
-  {
     "id": "museum_of_tolerance-2026-11-18-sheitel-beauty-in-the-hidden-6ba2dd5659",
     "venue_id": "museum_of_tolerance",
     "title": "Sheitel - Beauty in the Hidden",
@@ -39353,6 +39177,37 @@
     "_default_type": "other"
   },
   {
+    "id": "la_phil-2026-11-20-ravel-falla-ortiz-02acabc0f5",
+    "venue_id": "la_phil",
+    "title": "Ravel, Falla & Ortiz",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-20",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://www.laphil.com/events/instances/p2yr7rwf/2026-11-20/ravel-falla-and-ortiz",
+    "image": "https://images.baskercdn.com/laphil/media/v/1794330676535/2025_08_14_HB25_TchaikovskyFourth-14%20(2).jpg?w=250&h=250&f=cover&fx=49.54596320008805&fy=23.96268985252036",
+    "artists": [],
+    "location_override": null,
+    "source": "laphil.com",
+    "scraped_at": "2026-11-20T15:59:21+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 3,
+    "run_dates": [
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-22"
+    ],
+    "recurrence_note": "3 performances · Nov 20 – Nov 22"
+  },
+  {
     "id": "huntington-2026-11-20-the-huntington-holiday-market-preview-b112baa161",
     "venue_id": "huntington",
     "title": "The Huntington Holiday Market Preview",
@@ -39521,6 +39376,30 @@
     "_default_type": "screening"
   },
   {
+    "id": "claremont_lewis-2026-11-20-temp-work-885b8be99f",
+    "venue_id": "claremont_lewis",
+    "title": "Temp Work",
+    "description": "The artist collective Claremont Temporary takes over the Museum November 20 - November 22, 2026 with an opening reception Friday, November 20, 5-8 pm and a closing reception with a performance by REJUVENOIA on Sunday, November 22, 5-8 pm.",
+    "event_type": "exhibition",
+    "start": "2026-11-20T17:00:00-08:00",
+    "end": "2026-11-22",
+    "all_day": false,
+    "url": "https://clmoa.org/weekend-takeover-brings-temp-work-to-clma/",
+    "image": "https://clmoa.org/wp-content/uploads/2026/11/Aimee-Goguen-Sculpture_crop.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "clmoa.org+llm",
+    "scraped_at": "2026-11-22T15:09:07+00:00",
+    "event_types": [
+      "exhibition"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "exhibition"
+  },
+  {
     "id": "pieter-2026-11-20-restore-with-mason-gray-83b1590e6e",
     "venue_id": "pieter",
     "title": "Restore with Mason Gray",
@@ -39681,6 +39560,36 @@
     "price_text": null,
     "audience": [],
     "_default_type": "performance"
+  },
+  {
+    "id": "highways-2026-11-21-echo-lubimovka-c8aa25dd26",
+    "venue_id": "highways",
+    "title": "Echo Lubimovka",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-21",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://www.echolubimovka.com",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "highwaysperformance.org",
+    "scraped_at": "2026-11-20T16:00:12+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance",
+    "_run": true,
+    "run_count": 2,
+    "run_dates": [
+      "2026-11-21",
+      "2026-11-22"
+    ],
+    "recurrence_note": "2 performances · Nov 21 – Nov 22"
   },
   {
     "id": "beyond_baroque-2026-11-21-everything-strange-and-new-a-workshop-wi-18aebf8bf2",
@@ -40198,6 +40107,29 @@
     "_asserted_type": "screening"
   },
   {
+    "id": "academy_museum-2026-11-21-the-misfits-in-4k-with-kim-morgan-c80756aea7",
+    "venue_id": "academy_museum",
+    "title": "The Misfits in 4K with Kim Morgan",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-21T14:30:00-08:00",
+    "end": "2026-11-22",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-misfits-019fceb2-f294-8b76-65ba-9dfb991f3ebc",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/5Y7bAGri2GCi8O0oNOjOmj/3eb5910d02604e820ae3b6c83ae2a8e5/Nov16_MISFITS_Marilyn4MHL.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-21T15:10:28+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
     "id": "calarts-2026-11-21-calarts-reef-open-house-open-studio-bd5e7a6d65",
     "venue_id": "calarts",
     "title": "CalArts: Reef Open House & Open Studio",
@@ -40376,6 +40308,404 @@
     "location_override": null,
     "source": "calarts.edu",
     "scraped_at": "2026-11-21T15:10:41+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "beyond_baroque-2026-11-22-popup-poems-at-lacma-67c8822508",
+    "venue_id": "beyond_baroque",
+    "title": "Pop-Up Poems at LACMA",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-22",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.beyondbaroque.org/calendar/pop-up-poems-at-lacma",
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1794522460531-ZJCR84SGX79HJI866MEH/lacmaexnov22.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "beyondbaroque.org+llm",
+    "scraped_at": "2026-11-21T15:10:41+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "museum_of_tolerance-2026-11-22-susanne-reyto-951f479faa",
+    "venue_id": "museum_of_tolerance",
+    "title": "Susanne Reyto",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-22",
+    "end": "2026-11-22",
+    "all_day": true,
+    "url": "https://museumoftolerance.com/event/wtt-speaker-susanne-reyto-11.22.26",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "museumoftolerance.com",
+    "scraped_at": "2026-11-21T15:10:34+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-11-22-love-exclusive-photo-opportunity-02b682b8f2",
+    "venue_id": "huntington",
+    "title": "‘LOVE’ Exclusive Photo Opportunity",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-22",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/love-exclusive-photo-opportunity",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2Frail%2FHU140WP8.jpg%3Fh%3D56d0ca2e%26itok%3DVeiZWoD0&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-21T15:10:20+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "lacma-2026-11-22-popup-poems-e61a264f96",
+    "venue_id": "lacma",
+    "title": "Pop-Up Poems",
+    "description": "Drop in and let a poet write something just for you...",
+    "event_type": "workshop",
+    "start": "2026-11-22T11:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/pop-poems-nov-22",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-09/EX8979_PopularMechanics_Tony_002_RGB%20%281%29.jpg?VersionId=FbutOsjiqH9xenl6aAKnWtdxoMLFsorl&itok=caHBMReD",
+    "artists": [],
+    "location_override": "Smidt Welcome Plaza",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-22T15:07:51+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-11-22-thoku-documentary-trilogy-21229caa78",
+    "venue_id": "hammer",
+    "title": "Tōhoku Documentary Trilogy",
+    "description": "Screening of Ryusuke Hamaguchi's two-year oral history project of a dual natural disaster than triggered a nuclear accident.",
+    "event_type": "screening",
+    "start": "2026-11-22T11:00:46-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/tohoku-documentary-trilogy",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-10/Voices%20from%20the%20Waves.jpg?h=3a051132&itok=1C0tT8Pm",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-22T15:07:46+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "sparc-2026-11-22-workshop-autumn-leaf-monoprinting-worksh-79bafe9fa9",
+    "venue_id": "sparc",
+    "title": "[Workshop] Autumn Leaf Monoprinting Workshops",
+    "description": "Sunday, Nov 22 Join Us for a Free Community Art Workshop with Elsie Sims, artist-in-residence Two Workshop Options: Workshop for all ages: 12:30pm – 2:30pm Workshop for all ages: 3:30pm – 5:30pm SPACE IS LIMITED! Use this form to register for one of these two FREE workshops below. You may register multiple people for a workshop. No experience needed, all supplies provided! All workshops take place at SPARC at 685 Venice Blvd, Venice, CA 90291 Email us for more information at info@sparcinla.org or call (310) 822-9560 ext 113 Elsie Sim: Instagram https://www.instagram.com/elsiedyesimsart/ Website elsiedyesims.com",
+    "event_type": "workshop",
+    "start": "2026-11-22T12:30:00-08:00",
+    "end": "2026-11-22T17:30:00-08:00",
+    "all_day": false,
+    "url": "https://sparcinla.org/event/workshop-autumn-leaf-monoprinting-workshops/",
+    "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_LEAVEs_2026.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "sparcinla.org",
+    "scraped_at": "2026-11-22T15:08:17+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [
+      "family"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "molaa-2026-11-22-comics-the-heritage-of-a-latinoax-40de09a322",
+    "venue_id": "molaa",
+    "title": "Comics: The Heritage of a Latino/a/x",
+    "description": "Explore the vibrant history and cultural legacy of Latino/a/x creators with LBCC student Edgardo Delgadillo in his engaging lecture, Comics: The Heritage of a Latino/a/x . Discover how comics have given voice to Latino/a/x identity, community, and storytelling, from early pioneers to today’s groundbreaking artists. Join us for a lively look at how these stories have shaped, and continue to shape, American popular culture.",
+    "event_type": "lecture",
+    "start": "2026-11-22T13:00:00-08:00",
+    "end": "2026-11-22T15:00:00-08:00",
+    "all_day": false,
+    "url": "https://molaa.org/events/2026/11/22/comics-heritage",
+    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/e5dac901-ab63-4aba-b76d-b16cac4683bd/Latino+Comics+Expo+2026+WEB.jpg",
+    "artists": [],
+    "location_override": "Museum of Latin American Art, 628 Alamitos Avenue",
+    "source": "molaa.org",
+    "scraped_at": "2026-11-22T15:07:54+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "norton_simon-2026-11-22-rembrandt-painting-with-light-50be196b1a",
+    "venue_id": "norton_simon",
+    "title": "Rembrandt: Painting with Light",
+    "description": "",
+    "event_type": "tour",
+    "start": "2026-11-22T13:00:00-08:00",
+    "end": "2026-11-22T14:00:00-08:00",
+    "all_day": false,
+    "url": "https://www.nortonsimon.org/calendar/2026/fall-2026/Rembrandt-Painting-with-Light-11-22-2026-100PM#2026-11-22",
+    "image": "https://www.nortonsimon.org/assets/events-images/bb49bea5a9/Rembrandt-SelfPortrait-600x600__ScaleWidthWzMwMF0.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "nortonsimon.org",
+    "scraped_at": "2026-11-22T15:08:22+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "tour"
+  },
+  {
+    "id": "hammer-2026-11-22-artist-walkthrough-felipe-baeza-anima-a0d1b6df28",
+    "venue_id": "hammer",
+    "title": "Artist Walk-through: Felipe Baeza: Anima",
+    "description": "Artist Felipe Baeza and curators Jenn Bratovich and Alex Santana of Print Center New York lead a walk-through of the exhibition",
+    "event_type": "lecture",
+    "start": "2026-11-22T13:00:46-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/artist-walk-through-felipe-baeza-anima",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-05/HR_BeyongtheVessel-%5BAP1%5D-2024.jpg?h=94f9525d&itok=0c0f_VvG",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-22T15:07:46+00:00",
+    "event_types": [
+      "lecture",
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "lacma-2026-11-22-eileen-cowin-and-fred-tomaselli-on-makin-e9787fe70b",
+    "venue_id": "lacma",
+    "title": "Eileen Cowin and Fred Tomaselli on Making Art in Turbulent T...",
+    "description": "In conjunction with the exhibitionEileen Cowin: Between Panic and Paradise, hear from artists Eileen Cowin and Fred Tomaselli, moderated by LACMA curator Rebecca Morse, as they...",
+    "event_type": "lecture",
+    "start": "2026-11-22T14:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.lacma.org/event/eileen-cowin-turbulent-times",
+    "image": "https://www-images.lacma.org/s3fs-public/styles/card_16_9/public/2026-02/EX9537_17.jpg?VersionId=IeLzvVGy62K8.S9OTqeUp5HMTxym3DO_&itok=0F1TvlE3",
+    "artists": [],
+    "location_override": "BCAM, Level 2",
+    "source": "lacma.org",
+    "scraped_at": "2026-11-22T15:07:51+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "caam-2026-11-22-zine-workshop-jamea-richmondedwards-anot-951fbc390c",
+    "venue_id": "caam",
+    "title": "Zine Workshop: Jamea Richmond-Edwards: Another World and Yet the Same",
+    "description": "Create a zine with educators from Able ARTS Work.",
+    "event_type": "workshop",
+    "start": "2026-11-22T14:00:00-08:00",
+    "end": "2026-11-22T15:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.eventbrite.com/e/zine-workshop-jamea-richmond-edwards-another-world-and-yet-the-same-tickets-2004087115511",
+    "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196878174%2F214015320389%2F1%2Foriginal.20261029-184246?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=1b6feb6ef568059fb1f3696637189f68",
+    "artists": [],
+    "location_override": "California African American Museum",
+    "source": "eventbrite.com (CAAM)",
+    "scraped_at": "2026-11-22T15:08:21+00:00",
+    "event_types": [
+      "workshop"
+    ],
+    "is_free": true,
+    "price_text": "Free",
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "hammer-2026-11-22-shakespeares-most-misunderstood-play-rob-9c1dca88b1",
+    "venue_id": "hammer",
+    "title": "Shakespeare’s Most Misunderstood Play: Robert N. Watson on Hamlet",
+    "description": "UCLA English professor Robert N. Watson explains why Hamlet still haunts us. Along the way, he dismantles the most famous line in the English language: “To be or not to be” doesn’t mean what you think it does.",
+    "event_type": "lecture",
+    "start": "2026-11-22T14:00:46-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://hammer.ucla.edu/programs-events/2026/shakespeares-most-misunderstood-play-robert-n-watson-hamlet",
+    "image": "https://hammer.ucla.edu/sites/default/files/styles/program_series_teaser/public/2026-11/Digital_Programs_Hamlet.jpg?h=44b879e5&itok=7jyNW0aq",
+    "artists": [],
+    "location_override": null,
+    "source": "hammer.ucla.edu",
+    "scraped_at": "2026-11-22T15:07:46+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "lecture"
+  },
+  {
+    "id": "calarts-2026-11-22-song-garland-76ad277d5e",
+    "venue_id": "calarts",
+    "title": "Song Garland",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-22T17:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/song-garland",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-22T15:08:19+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "autry-2026-11-22-burbank-human-relations-council-night-at-b004da0ee1",
+    "venue_id": "autry",
+    "title": "Burbank Human Relations Council Night at The Autry Museum",
+    "description": "Community Partner Events",
+    "event_type": "other",
+    "start": "2026-11-22T17:30:00-08:00",
+    "end": "2026-11-22T20:00:00-08:00",
+    "all_day": false,
+    "url": "https://theautry.org/events/community-partner-events/burbank-human-relations-council-night-autry-museum",
+    "image": "https://theautry.org/sites/default/files/styles/golden_tiny/public/2026-10/ev_night-at-museum.png?h=4d533700&itok=a223DF85",
+    "artists": [],
+    "location_override": null,
+    "source": "theautry.org",
+    "scraped_at": "2026-11-22T15:08:06+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "getty_center-2026-11-22-getty-supper-club-la-belle-poque-742f7f2f97",
+    "venue_id": "getty_center",
+    "title": "Getty Supper Club: La Belle Époque",
+    "description": "Food",
+    "event_type": "other",
+    "start": "2026-11-22T18:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/getty-supper-club-la-belle-epoque",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-22T15:07:47+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "academy_museum-2026-11-23-the-flowers-of-st-francis-francesco-giul-98ef02b5d6",
+    "venue_id": "academy_museum",
+    "title": "The Flowers of St. Francis (Francesco, giullare di Dio) in 35mm",
+    "description": "",
+    "event_type": "screening",
+    "start": "2026-11-22T18:30:00-08:00",
+    "end": "2026-11-22T22:30:00-08:00",
+    "all_day": false,
+    "url": "https://www.academymuseum.org/en/programs/detail/the-flowers-of-st-francis-019fceb9-32b4-32a5-5370-e7362e42607c",
+    "image": "https://images.ctfassets.net/m3qyzuwrf176/3T8hrgeoXQ6eMLW8ugvj5O/794d0d6710a1281bed8158ca45222750/Nov22_FLOWERS_OF_ST_FRANCIS_Rossellini1Janus.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "academymuseum.org",
+    "scraped_at": "2026-11-22T15:08:03+00:00",
+    "event_types": [
+      "screening"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-11-22-xiaoying-shi-midres-recital-every-letter-bb231053c4",
+    "venue_id": "calarts",
+    "title": "Xiaoying Shi Mid-Res Recital: Every Letter I Sent You",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-11-22T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/xiaoying-shi-mid-res-recital-every-letter-i-sent-you",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-22T15:08:19+00:00",
     "event_types": [
       "performance"
     ],
