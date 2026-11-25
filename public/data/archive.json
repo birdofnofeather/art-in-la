@@ -2752,6 +2752,38 @@
     "audience": []
   },
   {
+    "id": "redcat-2026-01-28-the-last-tape-samuel-beckett-marcel-ad27fed909",
+    "venue_id": "redcat",
+    "title": "The Last Tape — Samuel Beckett, Marcel…",
+    "description": "",
+    "event_type": "performance",
+    "start": "2026-01-28",
+    "end": "2026-01-30",
+    "all_day": true,
+    "url": "https://www.redcat.org/events/last-tape",
+    "image": "https://www.redcat.org/sites/default/files/styles/small_4x3/public/2026-11/GSL-updated%20%282%29.png?h=b044a8f9&itok=eJCAvWZ7",
+    "artists": [],
+    "location_override": null,
+    "source": "redcat.org",
+    "scraped_at": "2026-11-25T17:52:31+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other",
+    "_asserted_type": "performance",
+    "_run": true,
+    "run_count": 3,
+    "run_dates": [
+      "2026-01-28",
+      "2026-01-29",
+      "2026-01-30"
+    ],
+    "recurrence_note": "3 performances · Jan 28 – Jan 30"
+  },
+  {
     "id": "moah-2026-01-31-opening-celebration-new-exhibitions-at-m-38f04d274c",
     "venue_id": "moah",
     "title": "Opening Celebration: New Exhibitions at MOAH and MOAH:CEDAR",
@@ -6974,6 +7006,27 @@
     "event_types": [
       "lecture"
     ],
+    "audience": []
+  },
+  {
+    "id": "huntington-2026-06-17-drawing-from-the-gallery-97e41086a7",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-06-17T17:30:00-07:00",
+    "end": "2026-06-17T20:00:00-07:00",
+    "all_day": false,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge_focal_point%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DKG0rvTpI&w=1080&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-06-18T07:09:04+00:00",
+    "event_types": [
+      "other"
+    ],
+    "_default_type": "other",
     "audience": []
   },
   {
@@ -17746,6 +17799,29 @@
     "_default_type": "other"
   },
   {
+    "id": "huntington-2026-09-09-drawing-from-the-gallery-0d702e4fe7",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-09-09",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-09-08T12:02:01+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "huntington-2026-09-09-experience-the-art-of-q-gng-with-kathy-y-71d6e83a9f",
     "venue_id": "huntington",
     "title": "Experience the Art of Qì Gōng with Kathy Yep",
@@ -21856,8 +21932,8 @@
     "price_text": null,
     "audience": [],
     "_default_type": "other",
-    "recurrence_note": "Also on Oct 6, Nov 3",
-    "recurrence_count": 3
+    "recurrence_note": "Also on Oct 6, Nov 3, Dec 9",
+    "recurrence_count": 4
   },
   {
     "id": "18th_street-2026-09-23-a-healing-story-circle-a-return-to-the-r-8726bc4a86",
@@ -23922,6 +23998,29 @@
     "_default_type": "screening"
   },
   {
+    "id": "getty_center-2026-09-30-exhibition-tour-en-espaol-instanterevela-5f23db94b5",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour en español: *Instante/revelacion: Moments in Mexican Photography*",
+    "description": "Adentran en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía en México",
+    "event_type": "tour",
+    "start": "2026-09-30T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-instante-revelacion-espanol",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-09-30T13:26:53+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "janm-2026-09-30-immigration-and-the-media-a-watanabe-dem-b02267f4d7",
     "venue_id": "janm",
     "title": "Immigration and the Media: A Watanabe Democracy Fellowship Conversation",
@@ -25678,6 +25777,29 @@
     "scraped_at": "2026-10-06T14:01:25+00:00",
     "event_types": [
       "workshop"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "huntington-2026-10-07-drawing-from-the-gallery-999a1e2296",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-10-07",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Flarge%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fitok%3DSwKy3xzf&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-10-06T14:01:25+00:00",
+    "event_types": [
+      "other"
     ],
     "is_free": null,
     "price_text": null,
@@ -32015,6 +32137,29 @@
     "_asserted_type": "tour"
   },
   {
+    "id": "getty_center-2026-10-29-exhibition-tour-en-espaol-instanterevela-78869ddf54",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour en español: *Instante/revelacion: Moments in Mexican Photography*",
+    "description": "Adentran en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía en México",
+    "event_type": "tour",
+    "start": "2026-10-29T15:00:00-07:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-instante-revelacion-espanol",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-10-29T13:59:34+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "moah-2026-10-29-myrties-chili-cookoff-at-the-western-hot-06a6eec8a4",
     "venue_id": "moah",
     "title": "Myrtie's Chili Cookoff at the Western Hotel Museum",
@@ -35686,6 +35831,29 @@
     "_default_type": "other"
   },
   {
+    "id": "getty_center-2026-11-11-exhibition-tour-en-espaol-instanterevela-7fb8e99285",
+    "venue_id": "getty_center",
+    "title": "Exhibition Tour en español: *Instante/revelacion: Moments in Mexican Photography*",
+    "description": "Adentran en el rico entramado de diálogos culturales y artísticos que han dado forma a la historia de la fotografía en México",
+    "event_type": "tour",
+    "start": "2026-11-11T15:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.getty.edu/calendar/exhibition-tour-instante-revelacion-espanol",
+    "image": null,
+    "artists": [],
+    "location_override": "Getty Center",
+    "source": "getty.edu",
+    "scraped_at": "2026-11-11T15:08:33+00:00",
+    "event_types": [
+      "tour"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "academy_museum-2026-11-12-war-for-the-planet-of-the-apes-3724ee98d3",
     "venue_id": "academy_museum",
     "title": "War for the Planet of the Apes",
@@ -38223,6 +38391,29 @@
     "_default_type": "other"
   },
   {
+    "id": "huntington-2026-11-18-drawing-from-the-gallery-8ae2c17b94",
+    "venue_id": "huntington",
+    "title": "Drawing from the Gallery",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-18",
+    "end": null,
+    "all_day": true,
+    "url": "https://www.huntington.org/event/drawing-the-gallery",
+    "image": "https://www.huntington.org/_next/image?url=https%3A%2F%2Fcms.huntington.org%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fevent_tombstone%2Fpublic%2F2024-12%2FEvening-for-Educators-Drawing-Like-Raqib-Shaw_0.jpg%3Fh%3D57024e64%26itok%3DdSFD2kpL&w=3840&q=75",
+    "artists": [],
+    "location_override": null,
+    "source": "huntington.org",
+    "scraped_at": "2026-11-17T16:47:06+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
     "id": "museum_of_tolerance-2026-11-18-sheitel-beauty-in-the-hidden-6ba2dd5659",
     "venue_id": "museum_of_tolerance",
     "title": "Sheitel - Beauty in the Hidden",
@@ -40720,5 +40911,122 @@
     "price_text": null,
     "audience": [],
     "_default_type": "screening"
+  },
+  {
+    "id": "calarts-2026-11-24-school-of-music-visiting-artist-jack-dav-e0b97431fb",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Jack Davey",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-24T15:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-jack-davey",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-24T18:45:09+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "wende-2026-11-24-vibe-check-9cecf39df7",
+    "venue_id": "wende",
+    "title": "VIBE Check",
+    "description": "VIBE Check is an interactive youth event designed for young people ages 14–18 to connect, share their voices, and explore topics that matter to them. Join us for an afternoon of engaging activities, prevention education, community connections, and meaningful conversations. Through interactive activities and a youth listening session, participants will have the opportunity to express their perspectives, connect with community resources, and engage in conversations about their futures, relationships, education, and well-being. Come connect, participate, and let your voice be heard!",
+    "event_type": "lecture",
+    "start": "2026-11-24T15:00:00-08:00",
+    "end": "2026-11-24T17:00:00-08:00",
+    "all_day": false,
+    "url": "https://wendemuseum.org/event/vibe-check/",
+    "image": "https://wendemuseum.org/wp-content/uploads/2026/11/VIBE-Check-flyer_16x9.jpg",
+    "artists": [],
+    "location_override": null,
+    "source": "wendemuseum.org",
+    "scraped_at": "2026-11-24T18:44:27+00:00",
+    "event_types": [
+      "lecture"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [
+      "teen"
+    ],
+    "_default_type": "other"
+  },
+  {
+    "id": "calarts-2026-11-24-school-of-music-visiting-artist-daniel-b-b51484b5e4",
+    "venue_id": "calarts",
+    "title": "School of Music Visiting Artist - Daniel Brew",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-24T18:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/school-music-visiting-artist-daniel-brew",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-24T18:45:09+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
+  },
+  {
+    "id": "la_phil-2026-11-24-the-mountain-goats-b411dbf44b",
+    "venue_id": "la_phil",
+    "title": "The Mountain Goats",
+    "description": "KCRW Series",
+    "event_type": "performance",
+    "start": "2026-11-24T20:00:00-08:00",
+    "end": null,
+    "all_day": false,
+    "url": "https://www.laphil.com/events/instances/v0bp0cf8/2026-11-24/the-mountain-goats",
+    "image": "https://images.baskercdn.com/laphil/media/v/1793833851275/MountainGoats_Admat-2-Hero-1080x1080.png?w=250&h=250&f=cover&fx=50&fy=50",
+    "artists": [],
+    "location_override": null,
+    "source": "laphil.com",
+    "scraped_at": "2026-11-24T18:45:36+00:00",
+    "event_types": [
+      "performance"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "performance"
+  },
+  {
+    "id": "calarts-2026-11-24-thangstgiving-dinner-show-83373580e7",
+    "venue_id": "calarts",
+    "title": "TH_ANGST_GIVING DINNER SHOW",
+    "description": "",
+    "event_type": "other",
+    "start": "2026-11-24T21:30:00-08:00",
+    "end": "2026-11-25T01:30:00-08:00",
+    "all_day": false,
+    "url": "https://calarts.edu/calarts-events/thangstgiving-dinner-show",
+    "image": null,
+    "artists": [],
+    "location_override": null,
+    "source": "calarts.edu",
+    "scraped_at": "2026-11-24T18:45:09+00:00",
+    "event_types": [
+      "other"
+    ],
+    "is_free": null,
+    "price_text": null,
+    "audience": [],
+    "_default_type": "other"
   }
 ]
