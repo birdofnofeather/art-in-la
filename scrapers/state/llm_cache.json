@@ -105,21 +105,9 @@
   ]
  },
  "v2|actual_size|events|https://www.actualsizela.com/": {
-  "at": "2026-11-05T03:45:05+00:00",
+  "at": "2026-11-26T17:38:13+00:00",
   "hash": "5b4c424ba59f560b1f85",
-  "items": [
-   {
-    "description": "A hub for digital security training and tools for protesters in Los Angeles, with free drop-in training throughout the day.",
-    "end_date": null,
-    "image": "https://static.wixstatic.com/media/5f9dc0_8f9ac98246b14247bc98eaae022063aa~mv2.gif",
-    "kind": "exhibition",
-    "price_text": "Free",
-    "start_date": "2020-06-06",
-    "start_time": "11:00",
-    "title": "Protective Protest Training Center",
-    "url": null
-   }
-  ]
+  "items": []
  },
  "v2|amoca|events|https://www.amoca.org/calendar/|rendered": {
   "at": "2026-11-05T03:44:41+00:00",
@@ -132,12 +120,12 @@
   "items": []
  },
  "v2|amoca|exhibitions|https://www.amoca.org/exhibitions/|rendered": {
-  "at": "2026-11-05T03:44:48+00:00",
+  "at": "2026-11-26T17:37:40+00:00",
   "hash": "439618c303c9c5415292",
   "items": []
  },
  "v2|armory_pasadena|exhibitions|https://armoryarts.org/exhibitions/current|rendered": {
-  "at": "2026-11-05T03:43:51+00:00",
+  "at": "2026-11-26T17:36:33+00:00",
   "hash": "625ae6d0085887662ea0",
   "items": [
    {
@@ -146,7 +134,7 @@
     "image": "https://armoryarts.org/assets/Exhibition/Images/fire-thumb-1__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-01-01",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "Nurtured Flames: The Medicine of Fire",
     "url": "https://armoryarts.org/exhibitions/2026/nurtured-flames"
@@ -157,7 +145,7 @@
     "image": "https://armoryarts.org/assets/Exhibition/Images/moody-web-thumb-1__ScaleMaxWidthWzM0Nl0_ScaleMaxHeightWzEzOV0.png",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-01-01",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "NOMAD: Dominique Moody and the Assemblage of Home",
     "url": "https://armoryarts.org/exhibitions/2026/nomad"
@@ -221,7 +209,7 @@
   ]
  },
  "v2|autry|exhibitions|https://theautry.org/exhibitions": {
-  "at": "2026-11-05T03:43:45+00:00",
+  "at": "2026-11-26T17:36:29+00:00",
   "hash": "7bd7e4257d6593a0807c",
   "items": [
    {
@@ -282,20 +270,9 @@
   ]
  },
  "v2|beyond_baroque|events|https://www.beyondbaroque.org/": {
-  "at": "2026-11-24T18:45:07+00:00",
-  "hash": "dd757ead4cd071b453ac",
+  "at": "2026-11-26T17:36:46+00:00",
+  "hash": "f3d169013c5e87f8c34b",
   "items": [
-   {
-    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-23",
-    "start_time": null,
-    "title": "Monday Night Fiction Workshop with Raquel Baker",
-    "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n-9n336-98ehr"
-   },
    {
     "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
     "end_date": null,
@@ -308,7 +285,7 @@
     "url": "https://www.beyondbaroque.org/calendar/wednesday-night-poetry-workshop8-17-dd9xz-mztaz-ybd4y-gpmej-55jw5-6t324-4tafx-xkzd6-4jwfx-a3t9b-ag9hr-4pb2k-kmrpg-23mre"
    },
    {
-    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
+    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback.",
     "end_date": null,
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
     "kind": "event",
@@ -374,7 +351,7 @@
     "url": "https://www.beyondbaroque.org/calendar/an-evening-with-what-books-press"
    },
    {
-    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback. Facilitated by Raquel Baker via Zoom. Registration required.",
+    "description": "A community writing workshop in which participants are asked to bring 2-3 pages of fiction to read and receive feedback.",
     "end_date": null,
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1768084968743-SSGDEN17AUDESV6L70C8/1.png",
     "kind": "event",
@@ -385,6 +362,17 @@
     "url": "https://www.beyondbaroque.org/calendar/monday-night-workshop8-17-tk445-6d8ng-ent4e-66gd3-fxsal-kgry5-5ngr3-zj4bm-nyrac-pdxhb-hbp2n-9n336-98ehr-3kr7k-88a5d"
    },
    {
+    "description": "The West Coast's longest-running free poetry workshop welcomes new and seasoned poets to share new work and provide feedback.",
+    "end_date": null,
+    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/1785369848490-QVZMWQH30W2370CU9IJ0/IG_rooja.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-12-09",
+    "start_time": null,
+    "title": "Wednesday Night Poetry Workshop with Rooja Mohassessy",
+    "url": "https://www.beyondbaroque.org/calendar/wednesday-night-poetry-workshop8-17-dd9xz-mztaz-ybd4y-gpmej-55jw5-6t324-4tafx-xkzd6-4jwfx-a3t9b-ag9hr-4pb2k-kmrpg-23mre-7z7hk-brnkf"
+   },
+   {
     "description": "Mike Kelley Gallery exhibition on view November 7, 2026 - January 16, 2027.",
     "end_date": "2027-01-16",
     "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/c3ceaf12-aff4-4951-abaf-c3a486922384/Tidal-Wave-4-imgg-gi3-yhhtl_1d.png",
@@ -393,17 +381,6 @@
     "start_date": "2026-11-07",
     "start_time": null,
     "title": "ABOLISH ICE! Roots, Raids and Resistance",
-    "url": null
-   },
-   {
-    "description": "Micol Hebron exhibition at proxy gallery on view October 24 - Dec 5, 2026.",
-    "end_date": "2026-12-05",
-    "image": "https://images.squarespace-cdn.com/content/v1/6962a4f3a17cc84c40eccde8/43cde167-0180-414c-818a-c74302f0497f/EVgallery.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-10-24",
-    "start_time": null,
-    "title": "Am I the Asshole?",
     "url": null
    }
   ]
@@ -929,7 +906,7 @@
   ]
  },
  "v2|coaxial|events|https://coaxialarts.org/events/": {
-  "at": "2026-11-05T03:45:02+00:00",
+  "at": "2026-11-26T17:38:11+00:00",
   "hash": "ca4179c0b1689deb6d58",
   "items": []
  },
@@ -956,11 +933,11 @@
   ]
  },
  "v2|crenshaw_dairy_mart|events|https://www.crenshawdairymart.com/exhibitions": {
-  "at": "2026-11-05T03:45:06+00:00",
+  "at": "2026-11-26T17:38:13+00:00",
   "hash": "1fc6bccbab04a8375eb1",
   "items": [
    {
-    "description": "Exhibition of the artist's prototypes and drawings reimagining public and private thresholds across Altadena, co-presented with Destination Crenshaw.",
+    "description": "An exhibition of the artist's prototypes and drawings reimagining public and private thresholds across Altadena, co-presented by Crenshaw Dairy Mart and Destination Crenshaw.",
     "end_date": "2026-11-15",
     "image": "https://images.squarespace-cdn.com/content/v1/5d54ceae9ce6c90001516251/1a6be9b2-d7d3-4f4c-8265-d73186e5c5e8/CDM_KD_10.12.260150.jpg",
     "kind": "exhibition",
@@ -978,17 +955,17 @@
   "items": []
  },
  "v2|csulb_kleefeld|events|https://www.csulb.edu/slide/kleefeld-contemporary-art-museum|rendered": {
-  "at": "2026-11-05T03:44:58+00:00",
+  "at": "2026-11-26T17:38:06+00:00",
   "hash": "b674df1d4ad96f8c7533",
   "items": []
  },
  "v2|csun_galleries|events|https://www.csun.edu/mike-curb-arts-media-communication/art-galleries/current-art-events": {
-  "at": "2026-11-18T16:18:01+00:00",
-  "hash": "d072a7592ce952172d21",
+  "at": "2026-11-26T17:37:37+00:00",
+  "hash": "c48c20b37cb0c6391fa2",
   "items": []
  },
  "v2|destination_crenshaw|events|https://destinationcrenshaw.la/news/": {
-  "at": "2026-11-05T03:43:49+00:00",
+  "at": "2026-11-26T17:36:28+00:00",
   "hash": "13a37452296a750f5dfe",
   "items": []
  },
@@ -1230,12 +1207,12 @@
   "items": []
  },
  "v2|iamla|exhibitions|https://www.iamla.org/temporary-exhibitions/": {
-  "at": "2026-11-05T03:44:45+00:00",
+  "at": "2026-11-26T17:38:04+00:00",
   "hash": "4cf83e4c98f49285f363",
   "items": []
  },
  "v2|in_situ|events|https://insituproject.org/": {
-  "at": "2026-11-05T03:45:08+00:00",
+  "at": "2026-11-26T17:38:15+00:00",
   "hash": "8eae8a596a553e7c432a",
   "items": []
  },
@@ -1616,12 +1593,12 @@
   ]
  },
  "v2|lucas_museum|events|https://lucasmuseum.org/": {
-  "at": "2026-11-05T03:44:49+00:00",
+  "at": "2026-11-26T17:37:46+00:00",
   "hash": "5fb94925854f2f05f265",
   "items": []
  },
  "v2|lucas_museum|events|https://lucasmuseum.org/|rendered": {
-  "at": "2026-11-05T03:44:55+00:00",
+  "at": "2026-11-26T17:37:53+00:00",
   "hash": "ecc84ae74af5d6823332",
   "items": []
  },
@@ -1676,7 +1653,7 @@
   ]
  },
  "v2|maaa|exhibitions|https://maaala.org/museum-2/exhibitions/": {
-  "at": "2026-11-05T03:44:45+00:00",
+  "at": "2026-11-26T17:37:45+00:00",
   "hash": "6f261b84e3b3f993fa04",
   "items": []
  },
@@ -1686,7 +1663,7 @@
   "items": []
  },
  "v2|moah|exhibitions|https://www.lancastermoah.org/exhibitions": {
-  "at": "2026-11-05T03:44:12+00:00",
+  "at": "2026-11-26T17:37:09+00:00",
   "hash": "77ce70cf276f8c7a0f17",
   "items": []
  },
@@ -1874,103 +1851,14 @@
   ]
  },
  "v2|molaa|exhibitions|https://molaa.org/exhibitions": {
-  "at": "2026-11-05T03:43:37+00:00",
+  "at": "2026-11-26T17:36:16+00:00",
   "hash": "2ade8584031fa36ecbcb",
   "items": []
  },
  "v2|molaa|exhibitions|https://molaa.org/exhibitions|rendered": {
-  "at": "2026-11-05T03:43:43+00:00",
+  "at": "2026-11-26T17:36:25+00:00",
   "hash": "4fd58cf071563d695455",
-  "items": [
-   {
-    "description": null,
-    "end_date": null,
-    "image": null,
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "Concrete Forms: A Look at the Brillembourg-Capriles Collection",
-    "url": null
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": null,
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "Sigils: Unveiling the Sacred in the MOLAA Permanent Collection",
-    "url": null
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": null,
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "RED RED RED, Geometry of a Scar",
-    "url": null
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": null,
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "Antonio Romero: Tropicalia{Vol2}",
-    "url": null
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/a2c10b14-c6ea-4e30-a18d-3bff534b9aa8/MOLAA+COLLECTION_in+gallery+work_LR.jpg?format=500w",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "MOLAA Collection Lab",
-    "url": "https://molaa.org/molaa-collection-lab"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1660582557821-YRDLLLUAA75VBX7YC5OI/2022-RG-Garden-Web-Exhibition-Thumbnail.jpg?format=500w",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "Robert Gumbiner Sculpture and Event Garden",
-    "url": "https://molaa.org/sculpture-garden"
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1698972174155-7ZMFN12ZCM76FSWZ139A/IMG_9775_web.jpg?format=500w",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "Betsabée Romero: Malacate de Asfalto",
-    "url": null
-   },
-   {
-    "description": null,
-    "end_date": null,
-    "image": "https://images.squarespace-cdn.com/content/v1/59b9c2b7d2b8570174037c16/1660582516566-1161CQS5UJ6HRZ3IURP3/2022-Afro-Latinx-Ch2-Web-Exhibition-Thumbnail.jpg?format=500w",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-11-05",
-    "start_time": null,
-    "title": "I Am: New Afro-Latinx Narratives",
-    "url": "https://molaa.org/i-am-new-afrolatinx-narratives-2022"
-   }
-  ]
+  "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/": {
   "at": "2026-11-25T17:53:56+00:00",
@@ -1978,7 +1866,7 @@
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/|rendered": {
-  "at": "2026-11-05T03:44:59+00:00",
+  "at": "2026-11-26T17:38:07+00:00",
   "hash": "d51ffc17c64a86714d66",
   "items": []
  },
@@ -2000,7 +1888,7 @@
   ]
  },
  "v2|murmurs|events|https://www.murmurs.la/programs": {
-  "at": "2026-11-05T03:44:56+00:00",
+  "at": "2026-11-26T17:38:09+00:00",
   "hash": "ee2830897896c5bc0736",
   "items": []
  },
@@ -2022,16 +1910,16 @@
   ]
  },
  "v2|natural_history_museum|events|https://nhm.org/calendar|rendered": {
-  "at": "2026-11-22T15:09:16+00:00",
-  "hash": "c3810cd93bdb0aa4e0b2",
+  "at": "2026-11-26T17:38:00+00:00",
+  "hash": "4c89736ca65f133f5a79",
   "items": [
    {
-    "description": "Ever pictured yourself reflected in bubbling asphalt? Wished you could meet the iconic mammoth family of Wilshire Boulevard? Now's your chance! Sink your saber teeth into this exclusive behind-the-scenes tour.",
+    "description": "Ever pictured yourself reflected in bubbling asphalt? Wished you could meet the iconic mammoth family of Wilshire Boulevard? Now's your chance! Sink your saber teeth into this exclusive behind-the-scenes tour. Get your backstage pass to the Ice Age.",
     "end_date": "2027-02-07",
     "image": "https://nhm.org/sites/default/files/styles/link_tile_slider/public/2026-02/Cholick-lbtp-tours1474_2502x1462_web.jpg?h=18906c29",
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-22",
+    "start_date": "2026-11-26",
     "start_time": "11:00",
     "title": "La Brea Tar Pits Insider Tour",
     "url": "https://tarpits.org/tar-pits-insider-museum-tour"
@@ -2044,16 +1932,16 @@
   "items": []
  },
  "v2|natural_history_museum|exhibitions|https://nhm.org/experience-nhm/exhibitions-natural-history-museum|rendered": {
-  "at": "2026-11-22T15:09:27+00:00",
-  "hash": "ea1d026cc2ef482560ca",
+  "at": "2026-11-26T17:38:10+00:00",
+  "hash": "952f6700fc513d254736",
   "items": []
  },
  "v2|navel|events|https://www.navel.la/programs": {
-  "at": "2026-11-05T03:45:01+00:00",
+  "at": "2026-11-26T17:38:09+00:00",
   "hash": "84edc99bebdf9a4b8d7d",
   "items": [
    {
-    "description": "ASSEMBLIES: Art into Action runs from April 12th to mid-July, 2022, with a Public Programming series and 5 pods.",
+    "description": "ASSEMBLIES: Art into Action runs from April 12th - mid-July, 2022, featuring a Public Programming series and 5 pods.",
     "end_date": "2022-07-15",
     "image": "https://images.squarespace-cdn.com/content/v1/618af4a06b9011102c939a14/1646349724217-SIZXVNOSI42U0Y1JQQKT/ASSEMBLIES_03_02_22_WEB_A_A_rev_2.png",
     "kind": "event",
@@ -2144,7 +2032,7 @@
   ]
  },
  "v2|pacific_asia_museum|exhibitions|https://pacificasiamuseum.usc.edu/exhibitions/": {
-  "at": "2026-11-05T03:43:59+00:00",
+  "at": "2026-11-26T17:36:41+00:00",
   "hash": "4919bb9eda6202f7304a",
   "items": [
    {
@@ -2153,7 +2041,7 @@
     "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/Lauren-YS-Expelled-scaled.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-09-01",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "Ten Years to Sharpen a Sword: Lauren YS Featuring Makoto",
     "url": "https://pacificasiamuseum.usc.edu/exhibitions/ten-years-to-sharpen-a-sword-lauren-ys-featuring-makoto/"
@@ -2164,7 +2052,7 @@
     "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/5-Hung-Liu-Portrait-of-a-Chinese-Self-2-scaled.jpeg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-09-01",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "Hung Liu: Secret Freedom",
     "url": "https://pacificasiamuseum.usc.edu/exhibitions/hung-liu-secret-freedom/"
@@ -2175,21 +2063,10 @@
     "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/05008001.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-09-01",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "We Are Connected: Highlights from the USC Pacific Asia Museum Himalayan Collection",
     "url": "https://pacificasiamuseum.usc.edu/exhibitions/we-are-connected-highlights-from-the-usc-pacific-asia-museum-himalayan-collection/"
-   },
-   {
-    "description": "A Photographic Fantasy explores early 20th-century images from Japan, highlighting cross-cultural influences after Japan opened to U.S. trade in the 1850s.",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/09/A-Photographed-Fantasy.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-09-01",
-    "start_time": null,
-    "title": "A Photographed Fantasy",
-    "url": "https://artsandculture.google.com/story/cQXhNWH_29qcFQ#new_tab"
    },
    {
     "description": "Gateway to Himalayan Art introduces the main forms, concepts, meanings, and religious traditions of Himalayan art with objects from the collection of the Rubin Museum of Himalayan Art, New York.",
@@ -2201,70 +2078,15 @@
     "start_time": null,
     "title": "Gateway to Himalayan Art",
     "url": "https://pacificasiamuseum.usc.edu/exhibitions/gateway-to-himalayan-art/"
-   },
-   {
-    "description": "Fans of East Asia follow the museum's fan collection to explore the history of a timeless cultural symbol that reflects its era.",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/05/77024008.REVERSE.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-01",
-    "start_time": null,
-    "title": "Fans of East Asia",
-    "url": "https://artsandculture.google.com/story/ygXBfIfYMso3dw#new_tab"
-   },
-   {
-    "description": "Every Breeze Tells a Story discovers the artistry and traditions that make Asian fans wonderfully surprising, drawing on the museum's fan collection.",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/05/73051007.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-01",
-    "start_time": null,
-    "title": "Every Breeze Tells a Story",
-    "url": "https://artsandculture.google.com/story/SAWRi2mGqRSdyg#new_tab"
-   },
-   {
-    "description": "Stitching Modernity explores how children's fashion in early 20th-century Japan influenced children's understanding of gender roles.",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/05/80039013_025.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-01",
-    "start_time": null,
-    "title": "Stitching Modernity",
-    "url": "https://artsandculture.google.com/story/GwVBRJMRJ7OtMQ#new_tab"
-   },
-   {
-    "description": "Uncovering the Past examines people and places during a turbulent period in the early 1900s.",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/05/80039011_005A.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-01",
-    "start_time": null,
-    "title": "Uncovering the Past",
-    "url": "https://artsandculture.google.com/story/qQWhV284BqIl8g#new_tab"
-   },
-   {
-    "description": "Faces of Empire and Resistance offers a glimpse into the people captured in historic glass-plate negatives during the Boxer Rebellion (1899–1901).",
-    "end_date": null,
-    "image": "https://pacificasiamuseum.usc.edu/wp-content/uploads/2026/05/80039013_106C.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-05-01",
-    "start_time": null,
-    "title": "Faces of Empire and Resistance",
-    "url": "https://artsandculture.google.com/story/DAUBlZ2diM9tmQ#new_tab"
    }
   ]
  },
  "v2|plaza_de_la_raza|events|https://www.plazadelaraza.org/": {
-  "at": "2026-11-05T03:45:03+00:00",
+  "at": "2026-11-26T17:38:11+00:00",
   "hash": "036a8c31ffbc8cbe0427",
   "items": [
    {
-    "description": "Dia De Los Muertos 2026 event listed under Upcoming Events.",
+    "description": null,
     "end_date": null,
     "image": "https://images.squarespace-cdn.com/content/v1/5769909d59cc685fff52347d/1791831243162-OYAW4KTP7L4TDL9QICBM/PDLR+DDLM+2026+flyer+for+digital_Page_1.jpg",
     "kind": "event",
@@ -2372,7 +2194,7 @@
   ]
  },
  "v2|the_mistake_room|events|https://www.tmr.la/": {
-  "at": "2026-11-05T03:45:01+00:00",
+  "at": "2026-11-26T17:38:09+00:00",
   "hash": "455833f498cbf4082a40",
   "items": []
  },
@@ -2382,12 +2204,12 @@
   "items": []
  },
  "v2|the_wallis|events|https://thewallis.org/whats-on": {
-  "at": "2026-11-05T03:45:11+00:00",
+  "at": "2026-11-26T17:38:18+00:00",
   "hash": "83d11f1b54439674fd6d",
   "items": []
  },
  "v2|tin_flats|events|https://tinflats.com/": {
-  "at": "2026-11-05T03:45:02+00:00",
+  "at": "2026-11-26T17:38:10+00:00",
   "hash": "a9ec042c98d7d7bb0a72",
   "items": []
  },
@@ -2437,7 +2259,7 @@
   ]
  },
  "v2|usc_fisher|exhibitions|https://fisher.usc.edu/exhibitions/": {
-  "at": "2026-11-05T03:43:48+00:00",
+  "at": "2026-11-26T17:36:31+00:00",
   "hash": "4661e0d4246cd85af2a7",
   "items": [
    {
@@ -2446,7 +2268,7 @@
     "image": "https://fisher.usc.edu/wp-content/uploads/sites/2/2026/07/prw-banner.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "Paul R. Williams: An Architect Considered",
     "url": "https://fisher.usc.edu/exhibitions/paul-r-williams-an-architect-considered-2/"
@@ -2457,7 +2279,7 @@
     "image": "https://fisher.usc.edu/wp-content/uploads/sites/2/2026/04/FPLN_DOC_DOI_512.webp",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-11-05",
+    "start_date": "2026-11-26",
     "start_time": null,
     "title": "Freedom Plane: Documents that Forged a Nation",
     "url": "https://fisher.usc.edu/exhibitions/freedom-plane-documents-that-forged-a-nation/"
@@ -2554,19 +2376,41 @@
   ]
  },
  "v2|vincent_price|exhibitions|https://vpam.org/exhibitions/": {
-  "at": "2026-11-23T19:03:40+00:00",
-  "hash": "f6331a5c3a473d9f6fa0",
+  "at": "2026-11-26T17:36:15+00:00",
+  "hash": "9758dad2dafc5ad1c289",
   "items": [
    {
-    "description": "Celebrating the life and work of Chicana artist, altarista, and educator Ofelia Esparza, whose cultural impact on East Los Angeles and beyond spans more than seven decades.",
-    "end_date": "2026-05-16",
-    "image": "https://vpam.org/wp-content/uploads/2025/09/Ofelia-Web-feature-image-v3-1.jpg",
+    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
+    "end_date": "2027-05-22",
+    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2025-10-18",
+    "start_date": "2026-09-26",
     "start_time": null,
-    "title": "OFELIA ESPARZA: A RETROSPECTIVE",
-    "url": "https://vpam.org/exhibitions/ofelia-esparza-a-retrospective/"
+    "title": "Anida Yoeu Ali: The Buddhist Bug",
+    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
+   },
+   {
+    "description": "Our ongoing permanent exhibition highlights the wide range of cultures represented in our Ancient American collection.",
+    "end_date": null,
+    "image": "https://vpam.org/wp-content/uploads/2025/07/home-ancient-1-temp.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2025-07-01",
+    "start_time": null,
+    "title": "Form and Function in the Ancient Americas",
+    "url": "https://vpam.org/exhibitions/permanent-exhibition/"
+   },
+   {
+    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
+    "end_date": "2027-06-12",
+    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-05-08",
+    "start_time": null,
+    "title": "New Voices: The 2027 District Wide Student Art Biennial",
+    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
    },
    {
     "description": "In their ongoing film and performance series Navigating the Archives Within, artists Francis and Anthony Almendárez examine how Latinx communities are represented and misrepresented.",
@@ -2580,7 +2424,7 @@
     "url": "https://vpam.org/exhibitions/francis-and-anthony-almendarez-navigating-the-archives-within-vol-2/"
    },
    {
-    "description": "California Collectives: Asian American Moderns, 1924–1965 examines the influence of Asian American artistic networks in California during a period of significant artistic change.",
+    "description": "California Collectives: Asian American Moderns, 1924–1965 examines the influence of Asian American artistic networks in California during a period of change.",
     "end_date": "2027-03-06",
     "image": "https://vpam.org/wp-content/uploads/2026/09/M2025_140-20250327-Access.jpg",
     "kind": "exhibition",
@@ -2589,38 +2433,16 @@
     "start_time": null,
     "title": "California Collectives: Asian American moderns, 1924-1965",
     "url": "https://vpam.org/exhibitions/california-collectives-asian-american-moderns-1924-1965/"
-   },
-   {
-    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
-    "end_date": "2027-05-22",
-    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2026-09-26",
-    "start_time": null,
-    "title": "Anida Yoeu Ali: The Buddhist Bug",
-    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
-   },
-   {
-    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
-    "end_date": "2027-06-12",
-    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2027-05-08",
-    "start_time": null,
-    "title": "New Voices: The 2027 District Wide Student Art Biennial",
-    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
    }
   ]
  },
  "v2|watts_towers|events|https://www.wattstowers.org/events": {
-  "at": "2026-11-05T03:45:03+00:00",
+  "at": "2026-11-26T17:38:12+00:00",
   "hash": "51e90350de346dbe1484",
   "items": []
  },
  "v2|weisman_pepperdine|exhibitions|https://arts.pepperdine.edu/museum/": {
-  "at": "2026-11-05T03:44:35+00:00",
+  "at": "2026-11-26T17:37:35+00:00",
   "hash": "f3dee910446a191b8780",
   "items": [
    {
