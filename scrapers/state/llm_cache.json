@@ -749,27 +749,20 @@
    }
   ]
  },
+ "v2|center_theatre_group|events|https://ctgla.queue-it.net/?c=ctgla&e=247protect&ver=javascript-4.4.3&cver=50&man=247%20Site%20Protection&enqueuetoken=eyJ0eXAiOiJRVDEiLCJlbmMiOiJBRVMyNTYiLCJpc3MiOjE3OTU3OTk5ODM4NzIsImV4cCI6MTc5NTgwMDIyMzg3MiwidGkiOiI5OTBlOTVhOC0xMGIxLTQ2OTEtODkwZS0yOTBjNzAyYzhiNzEiLCJjIjoiY3RnbGEiLCJlIjoiMjQ3cHJvdGVjdCIsImlwIjoiMy40Mi4xNTcuMTk1In0.iIqL4AVKyst2gh3yAFwpZA.W1WKGLMjklSSUkkkCJ4CkoIoGI6q5TeaWOB7tt4ryu8&t=https%3A%2F%2Fwww.centertheatregroup.org%2Ftickets%2F&kupver=cloudflare-4.4.2": {
+  "at": "2026-11-27T17:19:43+00:00",
+  "hash": "35d446481789c5279e85",
+  "items": []
+ },
  "v2|chinese_american_museum|events|https://camla.org/upcoming-events/": {
   "at": "2026-11-20T15:59:27+00:00",
   "hash": "74420ca2c4b5bc1926cb",
   "items": []
  },
  "v2|chinese_american_museum|events|https://camla.org/upcoming-events/|rendered": {
-  "at": "2026-11-14T14:01:00+00:00",
-  "hash": "3ec785e31b7d61034b6a",
-  "items": [
-   {
-    "description": "Join the Chinese American Museum and Ms. Rita from the Los Angeles Public Library’s Chinatown Branch for this month’s Kids’ Storytime on Tuesday, November 17, at 4pm PST, hosted virtually on Zoom.",
-    "end_date": null,
-    "image": "https://camla.org/wp-content/uploads/2026/11/KS-11.17.26-1-819x1024.png",
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-17",
-    "start_time": "16:00",
-    "title": "Kids’ Storytime",
-    "url": "https://camla.org/upcoming-events/"
-   }
-  ]
+  "at": "2026-11-27T17:19:24+00:00",
+  "hash": "74420ca2c4b5bc1926cb",
+  "items": []
  },
  "v2|chinese_american_museum|exhibitions|https://camla.org/current-exhibits/|rendered": {
   "at": "2026-11-07T13:48:56+00:00",
@@ -828,9 +821,21 @@
   ]
  },
  "v2|claremont_lewis|events|https://clmoa.org/events/|rendered": {
-  "at": "2026-11-15T14:36:58+00:00",
-  "hash": "23f2de464a963677e22b",
-  "items": []
+  "at": "2026-11-27T17:19:42+00:00",
+  "hash": "69130344767bf730207e",
+  "items": [
+   {
+    "description": "A festive, guided watercolor workshop led step-by-step by Miranda Rosso, with materials, refreshments, wine, beer, and finger food provided; 21+ event.",
+    "end_date": null,
+    "image": "https://clmoa.org/wp-content/uploads/2025/01/2025-Art-Night-Out-4x5-f.jpg",
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-10",
+    "start_time": "18:00",
+    "title": "Art Night Out: Deck the Cards",
+    "url": "https://clmoa-holiday-cards.eventbrite.com"
+   }
+  ]
  },
  "v2|claremont_lewis|exhibitions|https://clmoa.org/exhibitions/": {
   "at": "2026-11-17T16:48:24+00:00",
@@ -980,7 +985,7 @@
   "items": []
  },
  "v2|fowler|exhibitions|https://fowler.ucla.edu/exhibitions/": {
-  "at": "2026-11-06T14:56:10+00:00",
+  "at": "2026-11-27T17:18:34+00:00",
   "hash": "2f213759a62883dbe5a9",
   "items": [
    {
@@ -1006,8 +1011,8 @@
     "url": "https://fowler.ucla.edu/exhibitions/contemporary-maori-art/"
    },
    {
-    "description": "Runs August 9, 2026 through Summer 2027.",
-    "end_date": "2027-08-31",
+    "description": "August 9, 2026 – Summer 2027.",
+    "end_date": null,
     "image": "https://fowler.ucla.edu/wp-content/uploads/2026/06/rahee.png",
     "kind": "exhibition",
     "price_text": null,
@@ -1069,8 +1074,8 @@
   ]
  },
  "v2|hammer|exhibitions|https://hammer.ucla.edu/exhibitions/on-view": {
-  "at": "2026-11-24T18:44:21+00:00",
-  "hash": "548e1ce8b84501d9a5b4",
+  "at": "2026-11-27T17:18:23+00:00",
+  "hash": "a26d5af4f2c6cfb27bb0",
   "items": [
    {
     "description": "Lebanese by birth, French by marriage, and American by choice, Caland's life and work spanned continents and media, challenging the aesthetic and social conventions of her time in each place her diasporic migrations brought her.",
@@ -1217,8 +1222,8 @@
   "items": []
  },
  "v2|jaccc|events|https://jaccc.org/events/|rendered": {
-  "at": "2026-11-19T16:27:51+00:00",
-  "hash": "cefbcb7342cb5e0f23a0",
+  "at": "2026-11-27T17:19:05+00:00",
+  "hash": "5fb98ae3f45968196fbd",
   "items": [
    {
     "description": "A weekly Saturday market with fresh produce, EBT Market Match, and cultural experiences in the heart of Little Tokyo.",
@@ -1226,21 +1231,10 @@
     "image": null,
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-14",
+    "start_date": "2026-11-28",
     "start_time": null,
     "title": "Little Tokyo Farmers' Market",
     "url": "https://jaccc.org/events/little-tokyo-farmers-market-2026/"
-   },
-   {
-    "description": "Returning by popular demand, this two-session sashiko series led by Sanae Suzuki introduces the foundations of Japanese stitching alongside ...",
-    "end_date": null,
-    "image": null,
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-11-21",
-    "start_time": "10:00",
-    "title": "Sashiko with Sanae Suzuki",
-    "url": "https://jaccc.org/events/sashiko-with-sanae-suzuki/"
    },
    {
     "description": "Discover bokashi composting, an easy-to-learn Okinawan method that simplifies how you reduce food waste at home.",
@@ -1252,6 +1246,17 @@
     "start_time": "13:00",
     "title": "Bokashi Composting Workshop",
     "url": "https://jaccc.org/events/the-okinawan-way-bokashi-composting-workshop/"
+   },
+   {
+    "description": "Casa Kyoto returns this December with hands-on workshops celebrating Kyoto craftsmanship and the art of creating personalized holiday gifts.",
+    "end_date": "2026-12-20",
+    "image": null,
+    "kind": "event",
+    "price_text": null,
+    "start_date": "2026-12-18",
+    "start_time": null,
+    "title": "Casa Kyoto: Holiday Workshops",
+    "url": "https://jaccc.org/events/casa-kyoto-holiday-workshops/"
    }
   ]
  },
@@ -1861,8 +1866,8 @@
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/": {
-  "at": "2026-11-25T17:53:56+00:00",
-  "hash": "9aae37a0ca77d10f501e",
+  "at": "2026-11-27T17:19:37+00:00",
+  "hash": "9a8307fd3c9e52bd6ec4",
   "items": []
  },
  "v2|mona|events|https://www.neonmona.org/events/|rendered": {
@@ -1893,16 +1898,16 @@
   "items": []
  },
  "v2|natural_history_museum|events|https://nhm.org/calendar": {
-  "at": "2026-11-25T17:53:53+00:00",
-  "hash": "4c89736ca65f133f5a79",
+  "at": "2026-11-27T17:19:34+00:00",
+  "hash": "bd5fb447d12d5898037a",
   "items": [
    {
-    "description": "Behind-the-scenes tour of the La Brea Tar Pits offered weekly through 02/07/27, with tours on Fridays at 11 am and Sundays at 11 am and 2:30 pm.",
+    "description": "Ever pictured yourself reflected in bubbling asphalt? Wished you could meet the iconic mammoth family of Wilshire Boulevard? Now's your chance! Sink your saber teeth into this exclusive behind-the-scenes tour.",
     "end_date": "2027-02-07",
     "image": "https://nhm.org/sites/default/files/styles/link_tile_slider/public/2026-02/Cholick-lbtp-tours1474_2502x1462_web.jpg?h=18906c29",
     "kind": "event",
     "price_text": null,
-    "start_date": "2026-11-25",
+    "start_date": "2026-11-27",
     "start_time": "11:00",
     "title": "La Brea Tar Pits Insider Tour",
     "url": "https://tarpits.org/tar-pits-insider-museum-tour"
@@ -1927,8 +1932,8 @@
   ]
  },
  "v2|natural_history_museum|exhibitions|https://nhm.org/experience-nhm/exhibitions-natural-history-museum": {
-  "at": "2026-11-25T17:53:55+00:00",
-  "hash": "18b591e40151c467bf13",
+  "at": "2026-11-27T17:19:38+00:00",
+  "hash": "af9f23354c1b9e3d2fe4",
   "items": []
  },
  "v2|natural_history_museum|exhibitions|https://nhm.org/experience-nhm/exhibitions-natural-history-museum|rendered": {
@@ -2099,21 +2104,9 @@
   ]
  },
  "v2|pvac|events|https://pvartcenter.org/events|rendered": {
-  "at": "2026-11-17T16:47:08+00:00",
-  "hash": "c0e43ebb6300e39da730",
-  "items": [
-   {
-    "description": null,
-    "end_date": null,
-    "image": null,
-    "kind": "event",
-    "price_text": null,
-    "start_date": "2026-09-15",
-    "start_time": "10:01",
-    "title": "TEST",
-    "url": "https://pvartcenter.org/uncategorized/test/"
-   }
-  ]
+  "at": "2026-11-27T17:18:30+00:00",
+  "hash": "dc1889fac8e308e48daf",
+  "items": []
  },
  "v2|self_help_graphics|events|https://www.selfhelpgraphics.com/events-calendar|rendered": {
   "at": "2026-11-20T15:58:24+00:00",
@@ -2144,8 +2137,8 @@
   ]
  },
  "v2|sparc|events|https://sparcinla.org/calendar/|rendered": {
-  "at": "2026-11-14T14:00:28+00:00",
-  "hash": "f08a39930b60cf59a324",
+  "at": "2026-11-27T17:18:52+00:00",
+  "hash": "a05552b24e4c21460e21",
   "items": [
    {
     "description": "This exhibition follows the groundbreaking career of artist and educator Judith F. Baca and the creation of The Great Wall of Los Angeles.",
@@ -2153,7 +2146,7 @@
     "image": "https://sparcinla.org/wp-content/uploads/2026/03/SPARC50_the-BLUEPRINT_Horizontal_WEB.jpg",
     "kind": "exhibition",
     "price_text": "Free",
-    "start_date": "2026-11-10",
+    "start_date": "2026-11-19",
     "start_time": null,
     "title": "Exhibition: A People's Legacy: Public Memory, Social Justice, and The Great Wall of Los Angeles",
     "url": "https://sparcinla.org/event/exhibition-a-peoples-legacy-public-memory-social-justice-and-the-great-wall-of-los-angeles/"
@@ -2164,13 +2157,13 @@
     "image": "https://sparcinla.org/wp-content/uploads/2026/05/2025.05.15_Painting-Day-31_edtied.jpg",
     "kind": "exhibition",
     "price_text": "Free",
-    "start_date": "2026-11-10",
+    "start_date": "2026-11-19",
     "start_time": null,
     "title": "Exhibition: The 1980s: The Taste of Bitter Fruit",
     "url": "https://sparcinla.org/event/exhibition-the-1980s-the-taste-of-bitter-fruit/"
    },
    {
-    "description": "Free community art workshop with Elsie Sims, artist-in-residence; two sessions, 12:30pm–2:30pm and 3:30pm–5:30pm, space is limited.",
+    "description": "Join Us for a Free Community Art Workshop with Elsie Sims, artist-in-residence, Sunday, Nov 22.",
     "end_date": null,
     "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_LEAVEs_2026.jpg",
     "kind": "event",
@@ -2181,7 +2174,29 @@
     "url": "https://sparcinla.org/event/workshop-autumn-leaf-monoprinting-workshops/"
    },
    {
-    "description": "Free community art workshop with Elsie Sims, artist-in-residence; two sessions, 12:30pm–2:30pm and 3:30pm–5:30pm, space is limited.",
+    "description": "A ritual closing of the exhibition of community altars, led by Ritualistas Martha Lopez Ramirez and Candy Angel.",
+    "end_date": null,
+    "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_ofrenda.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-12-05",
+    "start_time": "14:00",
+    "title": "Ritual Closing: Día de Muertos Community Altars",
+    "url": "https://sparcinla.org/event/ritual-closing-dia-de-muertos-community-altars/"
+   },
+   {
+    "description": "SPARC's Holiday Sale on December 12 at Bergamot Station Arts Center featuring Fine Art prints and merchandise.",
+    "end_date": null,
+    "image": "https://sparcinla.org/wp-content/uploads/2026/11/holiday-sale-2.0.jpg",
+    "kind": "event",
+    "price_text": "Free",
+    "start_date": "2026-12-12",
+    "start_time": null,
+    "title": "2026 Holiday Sale & Gallery Open House",
+    "url": "https://sparcinla.org/event/2026-holiday-sale-gallery-open-house/"
+   },
+   {
+    "description": "Join Us for a Free Community Art Workshop with Elsie Sims, artist-in-residence, Sunday, Dec 13.",
     "end_date": null,
     "image": "https://sparcinla.org/wp-content/uploads/2026/11/SPARC_LIGHT_2026.jpg",
     "kind": "event",
@@ -2376,41 +2391,19 @@
   ]
  },
  "v2|vincent_price|exhibitions|https://vpam.org/exhibitions/": {
-  "at": "2026-11-26T17:36:15+00:00",
-  "hash": "9758dad2dafc5ad1c289",
+  "at": "2026-11-27T17:18:24+00:00",
+  "hash": "f6331a5c3a473d9f6fa0",
   "items": [
    {
-    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
-    "end_date": "2027-05-22",
-    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
+    "description": "Celebrating the life and work of Chicana artist, altarista, and educator Ofelia Esparza, whose cultural impact on East Los Angeles and beyond spans more than seven decades.",
+    "end_date": "2026-05-16",
+    "image": "https://vpam.org/wp-content/uploads/2025/09/Ofelia-Web-feature-image-v3-1.jpg",
     "kind": "exhibition",
     "price_text": null,
-    "start_date": "2026-09-26",
+    "start_date": "2025-10-18",
     "start_time": null,
-    "title": "Anida Yoeu Ali: The Buddhist Bug",
-    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
-   },
-   {
-    "description": "Our ongoing permanent exhibition highlights the wide range of cultures represented in our Ancient American collection.",
-    "end_date": null,
-    "image": "https://vpam.org/wp-content/uploads/2025/07/home-ancient-1-temp.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2025-07-01",
-    "start_time": null,
-    "title": "Form and Function in the Ancient Americas",
-    "url": "https://vpam.org/exhibitions/permanent-exhibition/"
-   },
-   {
-    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
-    "end_date": "2027-06-12",
-    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
-    "kind": "exhibition",
-    "price_text": null,
-    "start_date": "2027-05-08",
-    "start_time": null,
-    "title": "New Voices: The 2027 District Wide Student Art Biennial",
-    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
+    "title": "OFELIA ESPARZA: A RETROSPECTIVE",
+    "url": "https://vpam.org/exhibitions/ofelia-esparza-a-retrospective/"
    },
    {
     "description": "In their ongoing film and performance series Navigating the Archives Within, artists Francis and Anthony Almendárez examine how Latinx communities are represented and misrepresented.",
@@ -2424,7 +2417,7 @@
     "url": "https://vpam.org/exhibitions/francis-and-anthony-almendarez-navigating-the-archives-within-vol-2/"
    },
    {
-    "description": "California Collectives: Asian American Moderns, 1924–1965 examines the influence of Asian American artistic networks in California during a period of change.",
+    "description": "California Collectives: Asian American Moderns, 1924 –1965 examines the influence of Asian American artistic networks in California during a period of change.",
     "end_date": "2027-03-06",
     "image": "https://vpam.org/wp-content/uploads/2026/09/M2025_140-20250327-Access.jpg",
     "kind": "exhibition",
@@ -2433,6 +2426,28 @@
     "start_time": null,
     "title": "California Collectives: Asian American moderns, 1924-1965",
     "url": "https://vpam.org/exhibitions/california-collectives-asian-american-moderns-1924-1965/"
+   },
+   {
+    "description": "Anida Yoeu Ali's The Buddhist Bug is an expansive performance project that brings together myth, humor, spiritual inquiry, and the lived experience of displacement.",
+    "end_date": "2027-05-22",
+    "image": "https://vpam.org/wp-content/uploads/2026/06/Live-02-51-Bug_saam_0432-BruceTom-1-scaled.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2026-09-26",
+    "start_time": null,
+    "title": "Anida Yoeu Ali: The Buddhist Bug",
+    "url": "https://vpam.org/exhibitions/anida-yoeu-alithe-buddhist-bug/"
+   },
+   {
+    "description": "The 2027 District Wide Student Art Biennial spotlights works created by students between the Spring 2025 and Fall 2026 semesters.",
+    "end_date": "2027-06-12",
+    "image": "https://vpam.org/wp-content/uploads/2025/09/042526VPAM_NewVoices_013-scaled.jpg",
+    "kind": "exhibition",
+    "price_text": null,
+    "start_date": "2027-05-08",
+    "start_time": null,
+    "title": "New Voices: The 2027 District Wide Student Art Biennial",
+    "url": "https://vpam.org/exhibitions/new-voices-the-2027-district-wide-student-art-biennial/"
    }
   ]
  },
